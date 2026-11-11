@@ -1,0 +1,36 @@
+# 子程序 — L03538
+# 入口 L03538，RETURN L03570；名稱未對應，以入口命名
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L03538: Call QMLibrary.Delay(100)  # loc=2992 Runner=0x625fb0
+L03539: last_test = Sgn(vbTrue)  # loc=2993 Runner=0x626047
+L03540: if last_test == 0: goto L03569  # loc=2993 Runner=0x62611c
+L03541: Call QMLibrary.Delay(10000)  # loc=2994 Runner=0x625fb0
+L03542: Call QMLibrary.Delay(10000)  # loc=2995 Runner=0x625fb0
+L03543: Call QMLibrary.Delay(10000)  # loc=2996 Runner=0x625fb0
+L03544: Call QMLibrary.Delay(10000)  # loc=2998 Runner=0x625fb0
+L03545: Call QMLibrary.Delay(10000)  # loc=2999 Runner=0x625fb0
+L03546: Call QMLibrary.Delay(10000)  # loc=3000 Runner=0x625fb0
+L03547: Call QMLibrary.Delay(10000)  # loc=3002 Runner=0x625fb0
+L03548: Call QMLibrary.Delay(10000)  # loc=3003 Runner=0x625fb0
+L03549: Call QMLibrary.Delay(10000)  # loc=3004 Runner=0x625fb0
+L03550: Call QMLibrary.Delay(10000)  # loc=3006 Runner=0x625fb0
+L03551: Call QMLibrary.Delay(10000)  # loc=3007 Runner=0x625fb0
+L03552: Call QMLibrary.Delay(10000)  # loc=3008 Runner=0x625fb0
+L03553: Call QMLibrary.Delay(10000)  # loc=3010 Runner=0x625fb0
+L03554: Call QMLibrary.Delay(10000)  # loc=3011 Runner=0x625fb0
+L03555: Call QMLibrary.Delay(10000)  # loc=3012 Runner=0x625fb0
+L03556: Call QMLibrary.Delay(10000)  # loc=3014 Runner=0x625fb0
+L03557: Call QMLibrary.Delay(10000)  # loc=3015 Runner=0x625fb0
+L03558: Call QMLibrary.Delay(10000)  # loc=3016 Runner=0x625fb0
+L03559: Call QMLibrary.Delay(10000)  # loc=3018 Runner=0x625fb0
+L03560: Call QMLibrary.Delay(10000)  # loc=3019 Runner=0x625fb0
+L03561: Call QMLibrary.Delay(10000)  # loc=3020 Runner=0x625fb0
+L03562: Call QMLibrary.Delay(10000)  # loc=3022 Runner=0x625fb0
+L03563: Call QMLibrary.Delay(10000)  # loc=3023 Runner=0x625fb0
+L03564: Call QMLibrary.Delay(10000)  # loc=3024 Runner=0x625fb0
+L03565: Call QMLibrary.Delay(1000)  # loc=3026 Runner=0x625fb0
+L03566: Call QMLibrary.KeyPress("5",g_iSimulateModeInVBSBlock,1)  # loc=3027 Runner=0x625fb0
+L03567: Call QMLibrary.Delay(1000)  # loc=3028 Runner=0x625fb0
+L03568: goto L03539  # loc=3029 Runner=0x626126
+L03569: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=3030 Runner=0x625f7e
+L03570: return caller  # loc=3030 Runner=0x626275

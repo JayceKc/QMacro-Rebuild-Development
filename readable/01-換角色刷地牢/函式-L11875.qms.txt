@@ -1,0 +1,88 @@
+# 切換道具欄 — L11875
+# 入口 L11875，RETURN L11959；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L11875: Call QMLibrary.Delay(100)  # loc=10273 Runner=0x625fb0
+L11876: 傳回值 = global.get(〔道具欄〕)  # loc=10274 Runner=0x6266f4
+L11877: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10274 Runner=0x625f7e
+L11878: last_test = Sgn(目前呼叫框架.暫存槽(1)=0)  # loc=10274 Runner=0x626047
+L11879: if last_test == 0: goto L11882  # loc=10274 Runner=0x62611c
+L11880: Call QMLibrary.Delay(100)  # loc=10275 Runner=0x625fb0
+L11881: goto L11957  # loc=10275 Runner=0x626126
+L11882: 傳回值 = global.get(〔道具欄〕)  # loc=10276 Runner=0x6266f4
+L11883: 目前呼叫框架.暫存槽(2)=傳回值  # loc=10276 Runner=0x625f7e
+L11884: last_test = Sgn(目前呼叫框架.暫存槽(2)=1)  # loc=10276 Runner=0x626047
+L11885: if last_test == 0: goto L11901  # loc=10276 Runner=0x62611c
+L11886: Call QMLibrary.Delay(100)  # loc=10277 Runner=0x625fb0
+L11887: Call QMLibrary.TracePrint("切换道具栏1")  # loc=10278 Runner=0x625fb0
+L11888: Call QMLibrary.KeyDown("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10279 Runner=0x625fb0
+L11889: Call QMLibrary.Delay((100))  # loc=10280 Runner=0x625fb0
+L11890: Call QMLibrary.KeyDown("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10281 Runner=0x625fb0
+L11891: Call QMLibrary.Delay((100))  # loc=10282 Runner=0x625fb0
+L11892: Call QMLibrary.KeyDown("Q",g_iSimulateModeInVBSBlock,1)  # loc=10283 Runner=0x625fb0
+L11893: Call QMLibrary.Delay((100))  # loc=10284 Runner=0x625fb0
+L11894: Call QMLibrary.KeyDown("Q",g_iSimulateModeInVBSBlock,1)  # loc=10285 Runner=0x625fb0
+L11895: Call QMLibrary.Delay((100))  # loc=10286 Runner=0x625fb0
+L11896: Call QMLibrary.KeyUp("Q",g_iSimulateModeInVBSBlock,1)  # loc=10287 Runner=0x625fb0
+L11897: Call QMLibrary.Delay((100))  # loc=10288 Runner=0x625fb0
+L11898: Call QMLibrary.KeyUp("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10289 Runner=0x625fb0
+L11899: Call QMLibrary.Delay((500))  # loc=10290 Runner=0x625fb0
+L11900: goto L11957  # loc=10290 Runner=0x626126
+L11901: 傳回值 = global.get(〔道具欄〕)  # loc=10291 Runner=0x6266f4
+L11902: 目前呼叫框架.暫存槽(3)=傳回值  # loc=10291 Runner=0x625f7e
+L11903: last_test = Sgn(目前呼叫框架.暫存槽(3)=2)  # loc=10291 Runner=0x626047
+L11904: if last_test == 0: goto L11920  # loc=10291 Runner=0x62611c
+L11905: Call QMLibrary.Delay(100)  # loc=10292 Runner=0x625fb0
+L11906: Call QMLibrary.TracePrint("切换道具栏2")  # loc=10293 Runner=0x625fb0
+L11907: Call QMLibrary.KeyDown("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10294 Runner=0x625fb0
+L11908: Call QMLibrary.Delay((100))  # loc=10295 Runner=0x625fb0
+L11909: Call QMLibrary.KeyDown("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10296 Runner=0x625fb0
+L11910: Call QMLibrary.Delay((100))  # loc=10297 Runner=0x625fb0
+L11911: Call QMLibrary.KeyDown("W",g_iSimulateModeInVBSBlock,1)  # loc=10298 Runner=0x625fb0
+L11912: Call QMLibrary.Delay((100))  # loc=10299 Runner=0x625fb0
+L11913: Call QMLibrary.KeyDown("W",g_iSimulateModeInVBSBlock,1)  # loc=10300 Runner=0x625fb0
+L11914: Call QMLibrary.Delay((100))  # loc=10301 Runner=0x625fb0
+L11915: Call QMLibrary.KeyUp("W",g_iSimulateModeInVBSBlock,1)  # loc=10302 Runner=0x625fb0
+L11916: Call QMLibrary.Delay((100))  # loc=10303 Runner=0x625fb0
+L11917: Call QMLibrary.KeyUp("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10304 Runner=0x625fb0
+L11918: Call QMLibrary.Delay((500))  # loc=10305 Runner=0x625fb0
+L11919: goto L11957  # loc=10305 Runner=0x626126
+L11920: 傳回值 = global.get(〔道具欄〕)  # loc=10306 Runner=0x6266f4
+L11921: 目前呼叫框架.暫存槽(4)=傳回值  # loc=10306 Runner=0x625f7e
+L11922: last_test = Sgn(目前呼叫框架.暫存槽(4)=3)  # loc=10306 Runner=0x626047
+L11923: if last_test == 0: goto L11939  # loc=10306 Runner=0x62611c
+L11924: Call QMLibrary.Delay(100)  # loc=10307 Runner=0x625fb0
+L11925: Call QMLibrary.TracePrint("切换道具栏3")  # loc=10308 Runner=0x625fb0
+L11926: Call QMLibrary.KeyDown("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10309 Runner=0x625fb0
+L11927: Call QMLibrary.Delay((100))  # loc=10310 Runner=0x625fb0
+L11928: Call QMLibrary.KeyDown("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10311 Runner=0x625fb0
+L11929: Call QMLibrary.Delay((100))  # loc=10312 Runner=0x625fb0
+L11930: Call QMLibrary.KeyDown("E",g_iSimulateModeInVBSBlock,1)  # loc=10313 Runner=0x625fb0
+L11931: Call QMLibrary.Delay((100))  # loc=10314 Runner=0x625fb0
+L11932: Call QMLibrary.KeyDown("E",g_iSimulateModeInVBSBlock,1)  # loc=10315 Runner=0x625fb0
+L11933: Call QMLibrary.Delay((100))  # loc=10316 Runner=0x625fb0
+L11934: Call QMLibrary.KeyUp("E",g_iSimulateModeInVBSBlock,1)  # loc=10317 Runner=0x625fb0
+L11935: Call QMLibrary.Delay((100))  # loc=10318 Runner=0x625fb0
+L11936: Call QMLibrary.KeyUp("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10319 Runner=0x625fb0
+L11937: Call QMLibrary.Delay((500))  # loc=10320 Runner=0x625fb0
+L11938: goto L11957  # loc=10320 Runner=0x626126
+L11939: 傳回值 = global.get(〔道具欄〕)  # loc=10321 Runner=0x6266f4
+L11940: 目前呼叫框架.暫存槽(5)=傳回值  # loc=10321 Runner=0x625f7e
+L11941: last_test = Sgn(目前呼叫框架.暫存槽(5)=4)  # loc=10321 Runner=0x626047
+L11942: if last_test == 0: goto L11957  # loc=10321 Runner=0x62611c
+L11943: Call QMLibrary.Delay(100)  # loc=10322 Runner=0x625fb0
+L11944: Call QMLibrary.TracePrint("切换道具栏4")  # loc=10323 Runner=0x625fb0
+L11945: Call QMLibrary.KeyDown("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10324 Runner=0x625fb0
+L11946: Call QMLibrary.Delay((100))  # loc=10325 Runner=0x625fb0
+L11947: Call QMLibrary.KeyDown("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10326 Runner=0x625fb0
+L11948: Call QMLibrary.Delay((100))  # loc=10327 Runner=0x625fb0
+L11949: Call QMLibrary.KeyDown("R",g_iSimulateModeInVBSBlock,1)  # loc=10328 Runner=0x625fb0
+L11950: Call QMLibrary.Delay((100))  # loc=10329 Runner=0x625fb0
+L11951: Call QMLibrary.KeyDown("R",g_iSimulateModeInVBSBlock,1)  # loc=10330 Runner=0x625fb0
+L11952: Call QMLibrary.Delay((100))  # loc=10331 Runner=0x625fb0
+L11953: Call QMLibrary.KeyUp("R",g_iSimulateModeInVBSBlock,1)  # loc=10332 Runner=0x625fb0
+L11954: Call QMLibrary.Delay((100))  # loc=10333 Runner=0x625fb0
+L11955: Call QMLibrary.KeyUp("ctrl",g_iSimulateModeInVBSBlock,1)  # loc=10334 Runner=0x625fb0
+L11956: Call QMLibrary.Delay((500))  # loc=10335 Runner=0x625fb0
+L11957: Call QMLibrary.Delay(100)  # loc=10337 Runner=0x625fb0
+L11958: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=10338 Runner=0x625f7e
+L11959: return caller  # loc=10338 Runner=0x626275

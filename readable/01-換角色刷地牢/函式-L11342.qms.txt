@@ -1,0 +1,246 @@
+# 全部分解裝備 — L11342
+# 入口 L11342，RETURN L11584；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L11342: Call QMLibrary.Delay((1000))  # loc=9792 Runner=0x625fb0
+L11343: Call QMLibrary.KeyPress("I",g_iSimulateModeInVBSBlock,1)  # loc=9794 Runner=0x625fb0
+L11344: Call QMLibrary.Delay((2000))  # loc=9795 Runner=0x625fb0
+L11345: Call DM.MOVETO(1436,807)  # loc=9797 Runner=0x625fb0
+L11346: Call QMLibrary.Delay((200))  # loc=9798 Runner=0x625fb0
+L11347: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9799 Runner=0x625fb0
+L11348: Call QMLibrary.Delay((1000))  # loc=9800 Runner=0x625fb0
+L11349: Call DM.MOVETO(828,746)  # loc=9802 Runner=0x625fb0
+L11350: Call QMLibrary.Delay((200))  # loc=9803 Runner=0x625fb0
+L11351: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9804 Runner=0x625fb0
+L11352: Call QMLibrary.Delay((1000))  # loc=9805 Runner=0x625fb0
+L11353: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\dui1.bmp|C:\users\mymacro\dui2.bmp|C:\users\mymacro\dui3.bmp|C:\users\mymacro\dui4.bmp|C:\users\mymacro\dui5.bmp|C:\users\mymacro\dui6.bmp|C:\users\mymacro\dui7.bmp","191919",0.8,0,INTX,INTY)  # loc=9806 Runner=0x625fb0
+L11354: last_test = Sgn((INTX>=0))  # loc=9807 Runner=0x626047
+L11355: if last_test == 0: goto L11365  # loc=9807 Runner=0x62611c
+L11356: Call QMLibrary.Delay((50))  # loc=9808 Runner=0x625fb0
+L11357: XXX=INTX+140  # loc=9809 Runner=0x625f7e
+L11358: YYY=INTY+15  # loc=9810 Runner=0x625f7e
+L11359: Call QMLibrary.Delay((50))  # loc=9811 Runner=0x625fb0
+L11360: Call DM.MOVETO(XXX,YYY)  # loc=9812 Runner=0x625fb0
+L11361: Call QMLibrary.Delay((200))  # loc=9813 Runner=0x625fb0
+L11362: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9814 Runner=0x625fb0
+L11363: Call QMLibrary.Delay((1000))  # loc=9815 Runner=0x625fb0
+L11364: goto L11377  # loc=9816 Runner=0x626126
+L11365: Call QMLibrary.Delay((100))  # loc=9817 Runner=0x625fb0
+L11366: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\cuo1.bmp|C:\users\mymacro\cuo2.bmp|C:\users\mymacro\cuo7.bmp|C:\users\mymacro\cuo8.bmp|C:\users\mymacro\cuo3.bmp|C:\users\mymacro\cuo4.bmp|C:\users\mymacro\cuo5.bmp|C:\users\mymacro\cuo6.bmp","191919",0.8,0,INTX,INTY)  # loc=9818 Runner=0x625fb0
+L11367: last_test = Sgn((INTX>=0))  # loc=9819 Runner=0x626047
+L11368: if last_test == 0: goto L11377  # loc=9819 Runner=0x62611c
+L11369: Call QMLibrary.Delay((50))  # loc=9820 Runner=0x625fb0
+L11370: XXX=INTX+15  # loc=9821 Runner=0x625f7e
+L11371: YYY=INTY+15  # loc=9822 Runner=0x625f7e
+L11372: Call QMLibrary.Delay((50))  # loc=9823 Runner=0x625fb0
+L11373: Call DM.MOVETO(XXX,YYY)  # loc=9824 Runner=0x625fb0
+L11374: Call QMLibrary.Delay((200))  # loc=9825 Runner=0x625fb0
+L11375: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9826 Runner=0x625fb0
+L11376: Call QMLibrary.Delay((1000))  # loc=9827 Runner=0x625fb0
+L11377: Call QMLibrary.Delay((200))  # loc=9830 Runner=0x625fb0
+L11378: Call DM.MOVETO(934,747)  # loc=9832 Runner=0x625fb0
+L11379: Call QMLibrary.Delay((200))  # loc=9833 Runner=0x625fb0
+L11380: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9834 Runner=0x625fb0
+L11381: Call QMLibrary.Delay((1000))  # loc=9835 Runner=0x625fb0
+L11382: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\dui1.bmp|C:\users\mymacro\dui2.bmp|C:\users\mymacro\dui3.bmp|C:\users\mymacro\dui4.bmp|C:\users\mymacro\dui5.bmp|C:\users\mymacro\dui6.bmp|C:\users\mymacro\dui7.bmp","191919",0.8,0,INTX,INTY)  # loc=9836 Runner=0x625fb0
+L11383: last_test = Sgn((INTX>=0))  # loc=9837 Runner=0x626047
+L11384: if last_test == 0: goto L11394  # loc=9837 Runner=0x62611c
+L11385: Call QMLibrary.Delay((50))  # loc=9838 Runner=0x625fb0
+L11386: XXX=INTX+140  # loc=9839 Runner=0x625f7e
+L11387: YYY=INTY+15  # loc=9840 Runner=0x625f7e
+L11388: Call QMLibrary.Delay((50))  # loc=9841 Runner=0x625fb0
+L11389: Call DM.MOVETO(XXX,YYY)  # loc=9842 Runner=0x625fb0
+L11390: Call QMLibrary.Delay((200))  # loc=9843 Runner=0x625fb0
+L11391: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9844 Runner=0x625fb0
+L11392: Call QMLibrary.Delay((1000))  # loc=9845 Runner=0x625fb0
+L11393: goto L11406  # loc=9846 Runner=0x626126
+L11394: Call QMLibrary.Delay((100))  # loc=9847 Runner=0x625fb0
+L11395: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\cuo1.bmp|C:\users\mymacro\cuo2.bmp|C:\users\mymacro\cuo7.bmp|C:\users\mymacro\cuo8.bmp|C:\users\mymacro\cuo3.bmp|C:\users\mymacro\cuo4.bmp|C:\users\mymacro\cuo5.bmp|C:\users\mymacro\cuo6.bmp","191919",0.8,0,INTX,INTY)  # loc=9848 Runner=0x625fb0
+L11396: last_test = Sgn((INTX>=0))  # loc=9849 Runner=0x626047
+L11397: if last_test == 0: goto L11406  # loc=9849 Runner=0x62611c
+L11398: Call QMLibrary.Delay((50))  # loc=9850 Runner=0x625fb0
+L11399: XXX=INTX+15  # loc=9851 Runner=0x625f7e
+L11400: YYY=INTY+15  # loc=9852 Runner=0x625f7e
+L11401: Call QMLibrary.Delay((50))  # loc=9853 Runner=0x625fb0
+L11402: Call DM.MOVETO(XXX,YYY)  # loc=9854 Runner=0x625fb0
+L11403: Call QMLibrary.Delay((200))  # loc=9855 Runner=0x625fb0
+L11404: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9856 Runner=0x625fb0
+L11405: Call QMLibrary.Delay((1000))  # loc=9857 Runner=0x625fb0
+L11406: Call QMLibrary.Delay((200))  # loc=9860 Runner=0x625fb0
+L11407: Call DM.MOVETO(1027,747)  # loc=9862 Runner=0x625fb0
+L11408: Call QMLibrary.Delay((200))  # loc=9863 Runner=0x625fb0
+L11409: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9864 Runner=0x625fb0
+L11410: Call QMLibrary.Delay((1000))  # loc=9865 Runner=0x625fb0
+L11411: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\dui1.bmp|C:\users\mymacro\dui2.bmp|C:\users\mymacro\dui3.bmp|C:\users\mymacro\dui4.bmp|C:\users\mymacro\dui5.bmp|C:\users\mymacro\dui6.bmp|C:\users\mymacro\dui7.bmp","191919",0.8,0,INTX,INTY)  # loc=9866 Runner=0x625fb0
+L11412: last_test = Sgn((INTX>=0))  # loc=9867 Runner=0x626047
+L11413: if last_test == 0: goto L11423  # loc=9867 Runner=0x62611c
+L11414: Call QMLibrary.Delay((50))  # loc=9868 Runner=0x625fb0
+L11415: XXX=INTX+140  # loc=9869 Runner=0x625f7e
+L11416: YYY=INTY+15  # loc=9870 Runner=0x625f7e
+L11417: Call QMLibrary.Delay((50))  # loc=9871 Runner=0x625fb0
+L11418: Call DM.MOVETO(XXX,YYY)  # loc=9872 Runner=0x625fb0
+L11419: Call QMLibrary.Delay((200))  # loc=9873 Runner=0x625fb0
+L11420: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9874 Runner=0x625fb0
+L11421: Call QMLibrary.Delay((1000))  # loc=9875 Runner=0x625fb0
+L11422: goto L11435  # loc=9876 Runner=0x626126
+L11423: Call QMLibrary.Delay((100))  # loc=9877 Runner=0x625fb0
+L11424: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\cuo1.bmp|C:\users\mymacro\cuo2.bmp|C:\users\mymacro\cuo7.bmp|C:\users\mymacro\cuo8.bmp|C:\users\mymacro\cuo3.bmp|C:\users\mymacro\cuo4.bmp|C:\users\mymacro\cuo5.bmp|C:\users\mymacro\cuo6.bmp","191919",0.8,0,INTX,INTY)  # loc=9878 Runner=0x625fb0
+L11425: last_test = Sgn((INTX>=0))  # loc=9879 Runner=0x626047
+L11426: if last_test == 0: goto L11435  # loc=9879 Runner=0x62611c
+L11427: Call QMLibrary.Delay((50))  # loc=9880 Runner=0x625fb0
+L11428: XXX=INTX+15  # loc=9881 Runner=0x625f7e
+L11429: YYY=INTY+15  # loc=9882 Runner=0x625f7e
+L11430: Call QMLibrary.Delay((50))  # loc=9883 Runner=0x625fb0
+L11431: Call DM.MOVETO(XXX,YYY)  # loc=9884 Runner=0x625fb0
+L11432: Call QMLibrary.Delay((200))  # loc=9885 Runner=0x625fb0
+L11433: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9886 Runner=0x625fb0
+L11434: Call QMLibrary.Delay((1000))  # loc=9887 Runner=0x625fb0
+L11435: Call QMLibrary.Delay((200))  # loc=9890 Runner=0x625fb0
+L11436: Call DM.MOVETO(1081,747)  # loc=9892 Runner=0x625fb0
+L11437: Call QMLibrary.Delay((200))  # loc=9893 Runner=0x625fb0
+L11438: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9894 Runner=0x625fb0
+L11439: Call QMLibrary.Delay((1000))  # loc=9895 Runner=0x625fb0
+L11440: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\dui1.bmp|C:\users\mymacro\dui2.bmp|C:\users\mymacro\dui3.bmp|C:\users\mymacro\dui4.bmp|C:\users\mymacro\dui5.bmp|C:\users\mymacro\dui6.bmp|C:\users\mymacro\dui7.bmp","191919",0.8,0,INTX,INTY)  # loc=9896 Runner=0x625fb0
+L11441: last_test = Sgn((INTX>=0))  # loc=9897 Runner=0x626047
+L11442: if last_test == 0: goto L11452  # loc=9897 Runner=0x62611c
+L11443: Call QMLibrary.Delay((50))  # loc=9898 Runner=0x625fb0
+L11444: XXX=INTX+140  # loc=9899 Runner=0x625f7e
+L11445: YYY=INTY+15  # loc=9900 Runner=0x625f7e
+L11446: Call QMLibrary.Delay((50))  # loc=9901 Runner=0x625fb0
+L11447: Call DM.MOVETO(XXX,YYY)  # loc=9902 Runner=0x625fb0
+L11448: Call QMLibrary.Delay((200))  # loc=9903 Runner=0x625fb0
+L11449: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9904 Runner=0x625fb0
+L11450: Call QMLibrary.Delay((1000))  # loc=9905 Runner=0x625fb0
+L11451: goto L11464  # loc=9906 Runner=0x626126
+L11452: Call QMLibrary.Delay((100))  # loc=9907 Runner=0x625fb0
+L11453: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\cuo1.bmp|C:\users\mymacro\cuo2.bmp|C:\users\mymacro\cuo7.bmp|C:\users\mymacro\cuo8.bmp|C:\users\mymacro\cuo3.bmp|C:\users\mymacro\cuo4.bmp|C:\users\mymacro\cuo5.bmp|C:\users\mymacro\cuo6.bmp","191919",0.8,0,INTX,INTY)  # loc=9908 Runner=0x625fb0
+L11454: last_test = Sgn((INTX>=0))  # loc=9909 Runner=0x626047
+L11455: if last_test == 0: goto L11464  # loc=9909 Runner=0x62611c
+L11456: Call QMLibrary.Delay((50))  # loc=9910 Runner=0x625fb0
+L11457: XXX=INTX+15  # loc=9911 Runner=0x625f7e
+L11458: YYY=INTY+15  # loc=9912 Runner=0x625f7e
+L11459: Call QMLibrary.Delay((50))  # loc=9913 Runner=0x625fb0
+L11460: Call DM.MOVETO(XXX,YYY)  # loc=9914 Runner=0x625fb0
+L11461: Call QMLibrary.Delay((200))  # loc=9915 Runner=0x625fb0
+L11462: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9916 Runner=0x625fb0
+L11463: Call QMLibrary.Delay((1000))  # loc=9917 Runner=0x625fb0
+L11464: Call QMLibrary.Delay((200))  # loc=9920 Runner=0x625fb0
+L11465: Call DM.MOVETO(1167,748)  # loc=9922 Runner=0x625fb0
+L11466: Call QMLibrary.Delay((200))  # loc=9923 Runner=0x625fb0
+L11467: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9924 Runner=0x625fb0
+L11468: Call QMLibrary.Delay((1000))  # loc=9925 Runner=0x625fb0
+L11469: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\dui1.bmp|C:\users\mymacro\dui2.bmp|C:\users\mymacro\dui3.bmp|C:\users\mymacro\dui4.bmp|C:\users\mymacro\dui5.bmp|C:\users\mymacro\dui6.bmp|C:\users\mymacro\dui7.bmp","191919",0.8,0,INTX,INTY)  # loc=9926 Runner=0x625fb0
+L11470: last_test = Sgn((INTX>=0))  # loc=9927 Runner=0x626047
+L11471: if last_test == 0: goto L11481  # loc=9927 Runner=0x62611c
+L11472: Call QMLibrary.Delay((50))  # loc=9928 Runner=0x625fb0
+L11473: XXX=INTX+140  # loc=9929 Runner=0x625f7e
+L11474: YYY=INTY+15  # loc=9930 Runner=0x625f7e
+L11475: Call QMLibrary.Delay((50))  # loc=9931 Runner=0x625fb0
+L11476: Call DM.MOVETO(XXX,YYY)  # loc=9932 Runner=0x625fb0
+L11477: Call QMLibrary.Delay((200))  # loc=9933 Runner=0x625fb0
+L11478: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9934 Runner=0x625fb0
+L11479: Call QMLibrary.Delay((1000))  # loc=9935 Runner=0x625fb0
+L11480: goto L11493  # loc=9936 Runner=0x626126
+L11481: Call QMLibrary.Delay((100))  # loc=9937 Runner=0x625fb0
+L11482: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\cuo1.bmp|C:\users\mymacro\cuo2.bmp|C:\users\mymacro\cuo7.bmp|C:\users\mymacro\cuo8.bmp|C:\users\mymacro\cuo3.bmp|C:\users\mymacro\cuo4.bmp|C:\users\mymacro\cuo5.bmp|C:\users\mymacro\cuo6.bmp","191919",0.8,0,INTX,INTY)  # loc=9938 Runner=0x625fb0
+L11483: last_test = Sgn((INTX>=0))  # loc=9939 Runner=0x626047
+L11484: if last_test == 0: goto L11493  # loc=9939 Runner=0x62611c
+L11485: Call QMLibrary.Delay((50))  # loc=9940 Runner=0x625fb0
+L11486: XXX=INTX+15  # loc=9941 Runner=0x625f7e
+L11487: YYY=INTY+15  # loc=9942 Runner=0x625f7e
+L11488: Call QMLibrary.Delay((50))  # loc=9943 Runner=0x625fb0
+L11489: Call DM.MOVETO(XXX,YYY)  # loc=9944 Runner=0x625fb0
+L11490: Call QMLibrary.Delay((200))  # loc=9945 Runner=0x625fb0
+L11491: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9946 Runner=0x625fb0
+L11492: Call QMLibrary.Delay((1000))  # loc=9947 Runner=0x625fb0
+L11493: Call QMLibrary.Delay((200))  # loc=9950 Runner=0x625fb0
+L11494: last_test = Sgn(〔不分解古代〕=1)  # loc=9951 Runner=0x626047
+L11495: if last_test == 0: goto L11498  # loc=9951 Runner=0x62611c
+L11496: Call QMLibrary.Delay(100)  # loc=9952 Runner=0x625fb0
+L11497: goto L11526  # loc=9953 Runner=0x626126
+L11498: Call DM.MOVETO(1267,745)  # loc=9955 Runner=0x625fb0
+L11499: Call QMLibrary.Delay((200))  # loc=9956 Runner=0x625fb0
+L11500: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9957 Runner=0x625fb0
+L11501: Call QMLibrary.Delay((1000))  # loc=9958 Runner=0x625fb0
+L11502: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\dui1.bmp|C:\users\mymacro\dui2.bmp|C:\users\mymacro\dui3.bmp|C:\users\mymacro\dui3.bmp|C:\users\mymacro\dui4.bmp|C:\users\mymacro\dui5.bmp|C:\users\mymacro\dui6.bmp|C:\users\mymacro\dui7.bmp","191919",0.8,0,INTX,INTY)  # loc=9959 Runner=0x625fb0
+L11503: last_test = Sgn((INTX>=0))  # loc=9960 Runner=0x626047
+L11504: if last_test == 0: goto L11514  # loc=9960 Runner=0x62611c
+L11505: Call QMLibrary.Delay((50))  # loc=9961 Runner=0x625fb0
+L11506: XXX=INTX+140  # loc=9962 Runner=0x625f7e
+L11507: YYY=INTY+15  # loc=9963 Runner=0x625f7e
+L11508: Call QMLibrary.Delay((50))  # loc=9964 Runner=0x625fb0
+L11509: Call DM.MOVETO(XXX,YYY)  # loc=9965 Runner=0x625fb0
+L11510: Call QMLibrary.Delay((200))  # loc=9966 Runner=0x625fb0
+L11511: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9967 Runner=0x625fb0
+L11512: Call QMLibrary.Delay((1000))  # loc=9968 Runner=0x625fb0
+L11513: goto L11526  # loc=9969 Runner=0x626126
+L11514: Call QMLibrary.Delay((100))  # loc=9970 Runner=0x625fb0
+L11515: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\cuo1.bmp|C:\users\mymacro\cuo2.bmp|C:\users\mymacro\cuo7.bmp|C:\users\mymacro\cuo8.bmp|C:\users\mymacro\cuo3.bmp","191919",0.8,0,INTX,INTY)  # loc=9971 Runner=0x625fb0
+L11516: last_test = Sgn((INTX>=0))  # loc=9972 Runner=0x626047
+L11517: if last_test == 0: goto L11526  # loc=9972 Runner=0x62611c
+L11518: Call QMLibrary.Delay((50))  # loc=9973 Runner=0x625fb0
+L11519: XXX=INTX+15  # loc=9974 Runner=0x625f7e
+L11520: YYY=INTY+15  # loc=9975 Runner=0x625f7e
+L11521: Call QMLibrary.Delay((50))  # loc=9976 Runner=0x625fb0
+L11522: Call DM.MOVETO(XXX,YYY)  # loc=9977 Runner=0x625fb0
+L11523: Call QMLibrary.Delay((200))  # loc=9978 Runner=0x625fb0
+L11524: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9979 Runner=0x625fb0
+L11525: Call QMLibrary.Delay((1000))  # loc=9980 Runner=0x625fb0
+L11526: Call QMLibrary.Delay((200))  # loc=9985 Runner=0x625fb0
+L11527: Call DM.MOVETO(1230,802)  # loc=9986 Runner=0x625fb0
+L11528: Call QMLibrary.Delay((200))  # loc=9987 Runner=0x625fb0
+L11529: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9988 Runner=0x625fb0
+L11530: Call QMLibrary.Delay((1000))  # loc=9989 Runner=0x625fb0
+L11531: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\dui1.bmp|C:\users\mymacro\dui2.bmp|C:\users\mymacro\dui3.bmp|C:\users\mymacro\dui4.bmp|C:\users\mymacro\dui5.bmp|C:\users\mymacro\dui6.bmp|C:\users\mymacro\dui7.bmp","191919",0.8,0,INTX,INTY)  # loc=9991 Runner=0x625fb0
+L11532: last_test = Sgn((INTX>=0))  # loc=9992 Runner=0x626047
+L11533: if last_test == 0: goto L11543  # loc=9992 Runner=0x62611c
+L11534: Call QMLibrary.Delay((50))  # loc=9993 Runner=0x625fb0
+L11535: XXX=INTX+15  # loc=9994 Runner=0x625f7e
+L11536: YYY=INTY+15  # loc=9995 Runner=0x625f7e
+L11537: Call QMLibrary.Delay((50))  # loc=9996 Runner=0x625fb0
+L11538: Call DM.MOVETO(XXX,YYY)  # loc=9997 Runner=0x625fb0
+L11539: Call QMLibrary.Delay((200))  # loc=9998 Runner=0x625fb0
+L11540: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9999 Runner=0x625fb0
+L11541: Call QMLibrary.Delay((1000))  # loc=10000 Runner=0x625fb0
+L11542: goto L11555  # loc=10001 Runner=0x626126
+L11543: Call QMLibrary.Delay((100))  # loc=10002 Runner=0x625fb0
+L11544: DM_RET=DM.FINDPIC(700,370,1245,725,"C:\users\mymacro\cuo1.bmp|C:\users\mymacro\cuo2.bmp|C:\users\mymacro\cuo7.bmp|C:\users\mymacro\cuo8.bmp|C:\users\mymacro\cuo3.bmp|C:\users\mymacro\cuo4.bmp|C:\users\mymacro\cuo5.bmp|C:\users\mymacro\cuo6.bmp","191919",0.8,0,INTX,INTY)  # loc=10003 Runner=0x625fb0
+L11545: last_test = Sgn((INTX>=0))  # loc=10004 Runner=0x626047
+L11546: if last_test == 0: goto L11555  # loc=10004 Runner=0x62611c
+L11547: Call QMLibrary.Delay((50))  # loc=10005 Runner=0x625fb0
+L11548: XXX=INTX-100  # loc=10006 Runner=0x625f7e
+L11549: YYY=INTY+15  # loc=10007 Runner=0x625f7e
+L11550: Call QMLibrary.Delay((50))  # loc=10008 Runner=0x625fb0
+L11551: Call DM.MOVETO(XXX,YYY)  # loc=10009 Runner=0x625fb0
+L11552: Call QMLibrary.Delay((200))  # loc=10010 Runner=0x625fb0
+L11553: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=10011 Runner=0x625fb0
+L11554: Call QMLibrary.Delay((1000))  # loc=10012 Runner=0x625fb0
+L11555: Call QMLibrary.Delay((2000))  # loc=10015 Runner=0x625fb0
+L11556: Call QMLibrary.KeyPress("Esc",g_iSimulateModeInVBSBlock,1)  # loc=10016 Runner=0x625fb0
+L11557: Call QMLibrary.Delay((500))  # loc=10017 Runner=0x625fb0
+L11558: Call QMLibrary.KeyPress("Esc",g_iSimulateModeInVBSBlock,1)  # loc=10018 Runner=0x625fb0
+L11559: Call QMLibrary.Delay((1000))  # loc=10019 Runner=0x625fb0
+L11560: last_test = Sgn(vbTrue)  # loc=10020 Runner=0x626047
+L11561: if last_test == 0: goto L11582  # loc=10020 Runner=0x62611c
+L11562: Call QMLibrary.Delay((100))  # loc=10021 Runner=0x625fb0
+L11563: 傳回值 = global.get(〔天選〕)  # loc=10022 Runner=0x6266f4
+L11564: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10022 Runner=0x625fb0
+L11565: DM_RET=DM.FINDCOLOR(160,1,260,25,目前呼叫框架.暫存槽(1) & "-151515",0.9,0,INTX,INTY)  # loc=10022 Runner=0x625f7e
+L11566: last_test = Sgn((INTX>=0))  # loc=10023 Runner=0x626047
+L11567: if last_test == 0: goto L11570  # loc=10023 Runner=0x62611c
+L11568: Call QMLibrary.Delay((50))  # loc=10024 Runner=0x625fb0
+L11569: goto L11582  # loc=10025 Runner=0x626126
+L11570: Call QMLibrary.Delay((100))  # loc=10027 Runner=0x625fb0
+L11571: Call QMLibrary.KeyPress("Esc",g_iSimulateModeInVBSBlock,1)  # loc=10028 Runner=0x625fb0
+L11572: Call QMLibrary.Delay((100))  # loc=10029 Runner=0x625fb0
+L11573: Call DM.MOVETO(958,975)  # loc=10030 Runner=0x625fb0
+L11574: Call QMLibrary.Delay((200))  # loc=10031 Runner=0x625fb0
+L11575: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=10032 Runner=0x625fb0
+L11576: Call QMLibrary.Delay((200))  # loc=10033 Runner=0x625fb0
+L11577: Call DM.MOVETO(958,975)  # loc=10034 Runner=0x625fb0
+L11578: Call QMLibrary.Delay((200))  # loc=10035 Runner=0x625fb0
+L11579: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=10036 Runner=0x625fb0
+L11580: Call QMLibrary.Delay((1000))  # loc=10037 Runner=0x625fb0
+L11581: goto L11560  # loc=10038 Runner=0x626126
+L11582: Call QMLibrary.Delay((200))  # loc=10039 Runner=0x625fb0
+L11583: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=10040 Runner=0x625f7e
+L11584: return caller  # loc=10040 Runner=0x626275

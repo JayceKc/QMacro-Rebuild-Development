@@ -1,0 +1,390 @@
+# 找圖四 — L12002
+# 入口 L12002，RETURN L12388；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L12002: Call QMLibrary.Delay((100))  # loc=10381 Runner=0x625fb0
+L12003: 目前呼叫框架.暫存槽(1)=0  # loc=10382 Runner=0x625f7e
+L12004: 傳回值=目前呼叫框架.暫存槽(1)  # loc=10382 Runner=0x625f7e
+L12005: global.set(〔層數〕, 傳回值)  # loc=10382 Runner=0x626783
+L12006: 目前呼叫框架.暫存槽(1)=4  # loc=10383 Runner=0x625f7e
+L12007: 傳回值=目前呼叫框架.暫存槽(1)  # loc=10383 Runner=0x625f7e
+L12008: global.set(〔按鈕界面〕, 傳回值)  # loc=10383 Runner=0x626783
+L12009: Call QMLibrary.Delay((50))  # loc=10384 Runner=0x625fb0
+L12010: Call QMLibrary.TracePrint(("图4到了"))  # loc=10385 Runner=0x625fb0
+L12011: 〔找圖三次數〕=0  # loc=10386 Runner=0x625f7e
+L12012: 〔找圖四次數〕=0  # loc=10387 Runner=0x625f7e
+L12013: 〔找到圖三〕=0  # loc=10388 Runner=0x625f7e
+L12014: 目前呼叫框架.暫存槽(1)=0  # loc=10389 Runner=0x625f7e
+L12015: 傳回值=目前呼叫框架.暫存槽(1)  # loc=10389 Runner=0x625f7e
+L12016: global.set(〔找到圖四〕, 傳回值)  # loc=10389 Runner=0x626783
+L12017: 目前呼叫框架.暫存槽(1)=0  # loc=10390 Runner=0x625f7e
+L12018: 傳回值=目前呼叫框架.暫存槽(1)  # loc=10390 Runner=0x625f7e
+L12019: global.set(〔圖三〕, 傳回值)  # loc=10390 Runner=0x626783
+L12020: 目前呼叫框架.暫存槽(1)=0  # loc=10391 Runner=0x625f7e
+L12021: 傳回值=目前呼叫框架.暫存槽(1)  # loc=10391 Runner=0x625f7e
+L12022: global.set(〔圖四〕, 傳回值)  # loc=10391 Runner=0x626783
+L12023: Call QMLibrary.Delay((50))  # loc=10392 Runner=0x625fb0
+L12024: Set 新呼叫框架=New 框架類別_〔找綠色〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=10393 Runner=0x625f7e
+L12025: call L03623; resume L12026  # loc=10393 Runner=0x6261f2
+L12026: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10393 Runner=0x625f7e
+L12027: Call QMLibrary.TracePrint(("图4找过*色"))  # loc=10394 Runner=0x625fb0
+L12028: Call QMLibrary.Delay((500))  # loc=10395 Runner=0x625fb0
+L12029: last_test = Sgn(vbTrue)  # loc=10396 Runner=0x626047
+L12030: if last_test == 0: goto L12273  # loc=10396 Runner=0x62611c
+L12031: Call QMLibrary.Delay((100))  # loc=10397 Runner=0x625fb0
+L12032: Call QMLibrary.TracePrint(("开始找T4地图"))  # loc=10398 Runner=0x625fb0
+L12033: Call QMLibrary.Delay((100))  # loc=10399 Runner=0x625fb0
+L12034: DM_RET=DM.FINDCOLOR(1594,113,1596,117,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10400 Runner=0x625fb0
+L12035: last_test = Sgn((INTX>0))  # loc=10401 Runner=0x626047
+L12036: if last_test == 0: goto L12091  # loc=10401 Runner=0x62611c
+L12037: Call QMLibrary.Delay((50))  # loc=10402 Runner=0x625fb0
+L12038: DM_RET=DM.FINDCOLOR(1637,106,1640,110,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10403 Runner=0x625fb0
+L12039: last_test = Sgn((INTX>0))  # loc=10404 Runner=0x626047
+L12040: if last_test == 0: goto L12091  # loc=10404 Runner=0x62611c
+L12041: Call QMLibrary.Delay((50))  # loc=10405 Runner=0x625fb0
+L12042: DM_RET=DM.FINDCOLOR(1682,96,1684,100,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10406 Runner=0x625fb0
+L12043: last_test = Sgn((INTX>0))  # loc=10407 Runner=0x626047
+L12044: if last_test == 0: goto L12091  # loc=10407 Runner=0x62611c
+L12045: Call QMLibrary.Delay((50))  # loc=10408 Runner=0x625fb0
+L12046: DM_RET=DM.FINDCOLOR(1713,94,1716,98,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10409 Runner=0x625fb0
+L12047: last_test = Sgn((INTX>0))  # loc=10410 Runner=0x626047
+L12048: if last_test == 0: goto L12091  # loc=10410 Runner=0x62611c
+L12049: Call QMLibrary.Delay((50))  # loc=10411 Runner=0x625fb0
+L12050: DM_RET=DM.FINDCOLOR(172,113,1729,116,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10412 Runner=0x625fb0
+L12051: last_test = Sgn((INTX>0))  # loc=10413 Runner=0x626047
+L12052: if last_test == 0: goto L12091  # loc=10413 Runner=0x62611c
+L12053: Call QMLibrary.Delay((50))  # loc=10414 Runner=0x625fb0
+L12054: DM_RET=DM.FINDCOLOR(1600,50,1618,89,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10415 Runner=0x625fb0
+L12055: last_test = Sgn((INTX<0))  # loc=10416 Runner=0x626047
+L12056: if last_test == 0: goto L12091  # loc=10416 Runner=0x62611c
+L12057: Call QMLibrary.Delay((50))  # loc=10417 Runner=0x625fb0
+L12058: DM_RET=DM.FINDCOLOR(1657,57,1721,71,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10418 Runner=0x625fb0
+L12059: last_test = Sgn((INTX<0))  # loc=10419 Runner=0x626047
+L12060: if last_test == 0: goto L12091  # loc=10419 Runner=0x62611c
+L12061: Call QMLibrary.Delay((50))  # loc=10420 Runner=0x625fb0
+L12062: DM_RET=DM.FINDCOLOR(1733,53,1841,79,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10421 Runner=0x625fb0
+L12063: last_test = Sgn((INTX<0))  # loc=10422 Runner=0x626047
+L12064: if last_test == 0: goto L12091  # loc=10422 Runner=0x62611c
+L12065: Call QMLibrary.Delay((50))  # loc=10423 Runner=0x625fb0
+L12066: DM_RET=DM.FINDCOLOR(1751,99,1846,117,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10424 Runner=0x625fb0
+L12067: last_test = Sgn((INTX<0))  # loc=10425 Runner=0x626047
+L12068: if last_test == 0: goto L12091  # loc=10425 Runner=0x62611c
+L12069: Call QMLibrary.Delay((50))  # loc=10426 Runner=0x625fb0
+L12070: DM_RET=DM.FINDCOLOR(1602,138,1691,273,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10427 Runner=0x625fb0
+L12071: last_test = Sgn((INTX<0))  # loc=10428 Runner=0x626047
+L12072: if last_test == 0: goto L12091  # loc=10428 Runner=0x62611c
+L12073: Call QMLibrary.Delay((50))  # loc=10429 Runner=0x625fb0
+L12074: DM_RET=DM.FINDCOLOR(1697,216,1857,273,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10430 Runner=0x625fb0
+L12075: last_test = Sgn((INTX<0))  # loc=10431 Runner=0x626047
+L12076: if last_test == 0: goto L12091  # loc=10431 Runner=0x62611c
+L12077: Call QMLibrary.Delay((50))  # loc=10432 Runner=0x625fb0
+L12078: DM_RET=DM.FINDCOLOR(1800,122,1860,198,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10433 Runner=0x625fb0
+L12079: last_test = Sgn((INTX<0))  # loc=10434 Runner=0x626047
+L12080: if last_test == 0: goto L12091  # loc=10434 Runner=0x62611c
+L12081: Call QMLibrary.Delay((50))  # loc=10435 Runner=0x625fb0
+L12082: 目前呼叫框架.暫存槽(1)=1  # loc=10436 Runner=0x625f7e
+L12083: 傳回值=目前呼叫框架.暫存槽(1)  # loc=10436 Runner=0x625f7e
+L12084: global.set(〔找到圖四〕, 傳回值)  # loc=10436 Runner=0x626783
+L12085: Call QMLibrary.TracePrint(("401"))  # loc=10437 Runner=0x625fb0
+L12086: 目前呼叫框架.暫存槽(2)=401  # loc=10438 Runner=0x625f7e
+L12087: 傳回值=目前呼叫框架.暫存槽(2)  # loc=10438 Runner=0x625f7e
+L12088: global.set(〔圖四〕, 傳回值)  # loc=10438 Runner=0x626783
+L12089: Call QMLibrary.Delay((50))  # loc=10439 Runner=0x625fb0
+L12090: goto L12273  # loc=10440 Runner=0x626126
+L12091: Call QMLibrary.Delay((100))  # loc=10453 Runner=0x625fb0
+L12092: DM_RET=DM.FINDCOLOR(1772,48,1776,51,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10454 Runner=0x625fb0
+L12093: last_test = Sgn((INTX>0))  # loc=10455 Runner=0x626047
+L12094: if last_test == 0: goto L12141  # loc=10455 Runner=0x62611c
+L12095: Call QMLibrary.Delay((50))  # loc=10456 Runner=0x625fb0
+L12096: DM_RET=DM.FINDCOLOR(1755,72,1759,75,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10457 Runner=0x625fb0
+L12097: last_test = Sgn((INTX>0))  # loc=10458 Runner=0x626047
+L12098: if last_test == 0: goto L12141  # loc=10458 Runner=0x62611c
+L12099: Call QMLibrary.Delay((50))  # loc=10459 Runner=0x625fb0
+L12100: DM_RET=DM.FINDCOLOR(1781,75,1785,78,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10460 Runner=0x625fb0
+L12101: last_test = Sgn((INTX>0))  # loc=10461 Runner=0x626047
+L12102: if last_test == 0: goto L12141  # loc=10461 Runner=0x62611c
+L12103: Call QMLibrary.Delay((50))  # loc=10462 Runner=0x625fb0
+L12104: DM_RET=DM.FINDCOLOR(1723,108,1727,111,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10463 Runner=0x625fb0
+L12105: last_test = Sgn((INTX>0))  # loc=10464 Runner=0x626047
+L12106: if last_test == 0: goto L12141  # loc=10464 Runner=0x62611c
+L12107: Call QMLibrary.Delay((50))  # loc=10465 Runner=0x625fb0
+L12108: DM_RET=DM.FINDCOLOR(1769,67,1772,70,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10466 Runner=0x625fb0
+L12109: last_test = Sgn((INTX>0))  # loc=10467 Runner=0x626047
+L12110: if last_test == 0: goto L12141  # loc=10467 Runner=0x62611c
+L12111: Call QMLibrary.Delay((50))  # loc=10468 Runner=0x625fb0
+L12112: DM_RET=DM.FINDCOLOR(1619,55,1726,76,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10469 Runner=0x625fb0
+L12113: last_test = Sgn((INTX<0))  # loc=10470 Runner=0x626047
+L12114: if last_test == 0: goto L12141  # loc=10470 Runner=0x62611c
+L12115: Call QMLibrary.Delay((50))  # loc=10471 Runner=0x625fb0
+L12116: DM_RET=DM.FINDCOLOR(1620,106,1686,260,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10472 Runner=0x625fb0
+L12117: last_test = Sgn((INTX<0))  # loc=10473 Runner=0x626047
+L12118: if last_test == 0: goto L12141  # loc=10473 Runner=0x62611c
+L12119: Call QMLibrary.Delay((50))  # loc=10474 Runner=0x625fb0
+L12120: DM_RET=DM.FINDCOLOR(1718,222,1859,271,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10475 Runner=0x625fb0
+L12121: last_test = Sgn((INTX<0))  # loc=10476 Runner=0x626047
+L12122: if last_test == 0: goto L12141  # loc=10476 Runner=0x62611c
+L12123: Call QMLibrary.Delay((50))  # loc=10477 Runner=0x625fb0
+L12124: DM_RET=DM.FINDCOLOR(1818,51,1875,207,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10478 Runner=0x625fb0
+L12125: last_test = Sgn((INTX<0))  # loc=10479 Runner=0x626047
+L12126: if last_test == 0: goto L12141  # loc=10479 Runner=0x62611c
+L12127: Call QMLibrary.Delay((50))  # loc=10480 Runner=0x625fb0
+L12128: DM_RET=DM.FINDCOLOR(17850,120,1787,123,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10481 Runner=0x625fb0
+L12129: last_test = Sgn((INTX<0))  # loc=10482 Runner=0x626047
+L12130: if last_test == 0: goto L12141  # loc=10482 Runner=0x62611c
+L12131: Call QMLibrary.Delay((50))  # loc=10483 Runner=0x625fb0
+L12132: 目前呼叫框架.暫存槽(3)=1  # loc=10484 Runner=0x625f7e
+L12133: 傳回值=目前呼叫框架.暫存槽(3)  # loc=10484 Runner=0x625f7e
+L12134: global.set(〔找到圖四〕, 傳回值)  # loc=10484 Runner=0x626783
+L12135: Call QMLibrary.TracePrint(("402"))  # loc=10485 Runner=0x625fb0
+L12136: 目前呼叫框架.暫存槽(4)=402  # loc=10486 Runner=0x625f7e
+L12137: 傳回值=目前呼叫框架.暫存槽(4)  # loc=10486 Runner=0x625f7e
+L12138: global.set(〔圖四〕, 傳回值)  # loc=10486 Runner=0x626783
+L12139: Call QMLibrary.Delay((50))  # loc=10487 Runner=0x625fb0
+L12140: goto L12273  # loc=10488 Runner=0x626126
+L12141: Call QMLibrary.Delay((100))  # loc=10499 Runner=0x625fb0
+L12142: DM_RET=DM.FINDCOLOR(1620,131,1624,134,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10500 Runner=0x625fb0
+L12143: last_test = Sgn((INTX>0))  # loc=10501 Runner=0x626047
+L12144: if last_test == 0: goto L12179  # loc=10501 Runner=0x62611c
+L12145: Call QMLibrary.Delay((50))  # loc=10502 Runner=0x625fb0
+L12146: DM_RET=DM.FINDCOLOR(1658,140,1662,144,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10503 Runner=0x625fb0
+L12147: last_test = Sgn((INTX>0))  # loc=10504 Runner=0x626047
+L12148: if last_test == 0: goto L12179  # loc=10504 Runner=0x62611c
+L12149: Call QMLibrary.Delay((50))  # loc=10505 Runner=0x625fb0
+L12150: DM_RET=DM.FINDCOLOR(1697,128,1710,136,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10506 Runner=0x625fb0
+L12151: last_test = Sgn((INTX>0))  # loc=10507 Runner=0x626047
+L12152: if last_test == 0: goto L12179  # loc=10507 Runner=0x62611c
+L12153: Call QMLibrary.Delay((50))  # loc=10508 Runner=0x625fb0
+L12154: DM_RET=DM.FINDCOLOR(1608,51,1863,103,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10509 Runner=0x625fb0
+L12155: last_test = Sgn((INTX<0))  # loc=10510 Runner=0x626047
+L12156: if last_test == 0: goto L12179  # loc=10510 Runner=0x62611c
+L12157: Call QMLibrary.Delay((50))  # loc=10511 Runner=0x625fb0
+L12158: DM_RET=DM.FINDCOLOR(1610,169,1686,275,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10512 Runner=0x625fb0
+L12159: last_test = Sgn((INTX<0))  # loc=10513 Runner=0x626047
+L12160: if last_test == 0: goto L12179  # loc=10513 Runner=0x62611c
+L12161: Call QMLibrary.Delay((50))  # loc=10514 Runner=0x625fb0
+L12162: DM_RET=DM.FINDCOLOR(1795,126,1869,275,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10515 Runner=0x625fb0
+L12163: last_test = Sgn((INTX<0))  # loc=10516 Runner=0x626047
+L12164: if last_test == 0: goto L12179  # loc=10516 Runner=0x62611c
+L12165: Call QMLibrary.Delay((50))  # loc=10517 Runner=0x625fb0
+L12166: DM_RET=DM.FINDCOLOR(1694,222,1788,273,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10518 Runner=0x625fb0
+L12167: last_test = Sgn((INTX<0))  # loc=10519 Runner=0x626047
+L12168: if last_test == 0: goto L12179  # loc=10519 Runner=0x62611c
+L12169: Call QMLibrary.Delay((50))  # loc=10520 Runner=0x625fb0
+L12170: 目前呼叫框架.暫存槽(5)=1  # loc=10521 Runner=0x625f7e
+L12171: 傳回值=目前呼叫框架.暫存槽(5)  # loc=10521 Runner=0x625f7e
+L12172: global.set(〔找到圖四〕, 傳回值)  # loc=10521 Runner=0x626783
+L12173: Call QMLibrary.TracePrint(("403"))  # loc=10522 Runner=0x625fb0
+L12174: 目前呼叫框架.暫存槽(6)=403  # loc=10523 Runner=0x625f7e
+L12175: 傳回值=目前呼叫框架.暫存槽(6)  # loc=10523 Runner=0x625f7e
+L12176: global.set(〔圖四〕, 傳回值)  # loc=10523 Runner=0x626783
+L12177: Call QMLibrary.Delay((50))  # loc=10524 Runner=0x625fb0
+L12178: goto L12273  # loc=10525 Runner=0x626126
+L12179: Call QMLibrary.Delay((100))  # loc=10533 Runner=0x625fb0
+L12180: DM_RET=DM.FINDCOLOR(1600,92,1607,96,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10534 Runner=0x625fb0
+L12181: last_test = Sgn((INTX>0))  # loc=10535 Runner=0x626047
+L12182: if last_test == 0: goto L12233  # loc=10535 Runner=0x62611c
+L12183: Call QMLibrary.Delay((50))  # loc=10536 Runner=0x625fb0
+L12184: DM_RET=DM.FINDCOLOR(1645,107,1652,112,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10537 Runner=0x625fb0
+L12185: last_test = Sgn((INTX>0))  # loc=10538 Runner=0x626047
+L12186: if last_test == 0: goto L12233  # loc=10538 Runner=0x62611c
+L12187: Call QMLibrary.Delay((50))  # loc=10539 Runner=0x625fb0
+L12188: DM_RET=DM.FINDCOLOR(1693,142,1700,151,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10540 Runner=0x625fb0
+L12189: last_test = Sgn((INTX>0))  # loc=10541 Runner=0x626047
+L12190: if last_test == 0: goto L12233  # loc=10541 Runner=0x62611c
+L12191: Call QMLibrary.Delay((50))  # loc=10542 Runner=0x625fb0
+L12192: DM_RET=DM.FINDCOLOR(1608,142,1613,147,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10543 Runner=0x625fb0
+L12193: last_test = Sgn((INTX>0))  # loc=10544 Runner=0x626047
+L12194: if last_test == 0: goto L12233  # loc=10544 Runner=0x62611c
+L12195: Call QMLibrary.Delay((50))  # loc=10545 Runner=0x625fb0
+L12196: DM_RET=DM.FINDCOLOR(1610,184,1616,188,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10546 Runner=0x625fb0
+L12197: last_test = Sgn((INTX>0))  # loc=10547 Runner=0x626047
+L12198: if last_test == 0: goto L12233  # loc=10547 Runner=0x62611c
+L12199: Call QMLibrary.Delay((50))  # loc=10548 Runner=0x625fb0
+L12200: DM_RET=DM.FINDCOLOR(1655,183,1662,187,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10549 Runner=0x625fb0
+L12201: last_test = Sgn((INTX>0))  # loc=10550 Runner=0x626047
+L12202: if last_test == 0: goto L12233  # loc=10550 Runner=0x62611c
+L12203: Call QMLibrary.Delay((50))  # loc=10551 Runner=0x625fb0
+L12204: DM_RET=DM.FINDCOLOR(1659,148,1665,155,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10552 Runner=0x625fb0
+L12205: last_test = Sgn((INTX>0))  # loc=10553 Runner=0x626047
+L12206: if last_test == 0: goto L12233  # loc=10553 Runner=0x62611c
+L12207: Call QMLibrary.Delay((50))  # loc=10554 Runner=0x625fb0
+L12208: DM_RET=DM.FINDCOLOR(1601,43,1672,58,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10555 Runner=0x625fb0
+L12209: last_test = Sgn((INTX<0))  # loc=10556 Runner=0x626047
+L12210: if last_test == 0: goto L12233  # loc=10556 Runner=0x62611c
+L12211: Call QMLibrary.Delay((50))  # loc=10557 Runner=0x625fb0
+L12212: DM_RET=DM.FINDCOLOR(1694,44,1764,97,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10558 Runner=0x625fb0
+L12213: last_test = Sgn((INTX<0))  # loc=10559 Runner=0x626047
+L12214: if last_test == 0: goto L12233  # loc=10559 Runner=0x62611c
+L12215: Call QMLibrary.Delay((50))  # loc=10560 Runner=0x625fb0
+L12216: DM_RET=DM.FINDCOLOR(1781,46,1880,282,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10561 Runner=0x625fb0
+L12217: last_test = Sgn((INTX<0))  # loc=10562 Runner=0x626047
+L12218: if last_test == 0: goto L12233  # loc=10562 Runner=0x62611c
+L12219: Call QMLibrary.Delay((50))  # loc=10563 Runner=0x625fb0
+L12220: DM_RET=DM.FINDCOLOR(1600,234,1765,284,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10564 Runner=0x625fb0
+L12221: last_test = Sgn((INTX<0))  # loc=10565 Runner=0x626047
+L12222: if last_test == 0: goto L12233  # loc=10565 Runner=0x62611c
+L12223: Call QMLibrary.Delay((50))  # loc=10566 Runner=0x625fb0
+L12224: 目前呼叫框架.暫存槽(7)=1  # loc=10567 Runner=0x625f7e
+L12225: 傳回值=目前呼叫框架.暫存槽(7)  # loc=10567 Runner=0x625f7e
+L12226: global.set(〔找到圖四〕, 傳回值)  # loc=10567 Runner=0x626783
+L12227: Call QMLibrary.TracePrint(("404"))  # loc=10568 Runner=0x625fb0
+L12228: 目前呼叫框架.暫存槽(8)=404  # loc=10569 Runner=0x625f7e
+L12229: 傳回值=目前呼叫框架.暫存槽(8)  # loc=10569 Runner=0x625f7e
+L12230: global.set(〔圖四〕, 傳回值)  # loc=10569 Runner=0x626783
+L12231: Call QMLibrary.Delay((50))  # loc=10570 Runner=0x625fb0
+L12232: goto L12273  # loc=10571 Runner=0x626126
+L12233: Call QMLibrary.Delay((100))  # loc=10583 Runner=0x625fb0
+L12234: DM_RET=DM.FINDCOLOR(1778,120,1787,132,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10584 Runner=0x625fb0
+L12235: last_test = Sgn((INTX>0))  # loc=10585 Runner=0x626047
+L12236: if last_test == 0: goto L12271  # loc=10585 Runner=0x62611c
+L12237: Call QMLibrary.Delay((50))  # loc=10586 Runner=0x625fb0
+L12238: DM_RET=DM.FINDCOLOR(1837,98,1847,109,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10587 Runner=0x625fb0
+L12239: last_test = Sgn((INTX>0))  # loc=10588 Runner=0x626047
+L12240: if last_test == 0: goto L12271  # loc=10588 Runner=0x62611c
+L12241: Call QMLibrary.Delay((50))  # loc=10589 Runner=0x625fb0
+L12242: DM_RET=DM.FINDCOLOR(1600,42,1840,70,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10590 Runner=0x625fb0
+L12243: last_test = Sgn((INTX<0))  # loc=10591 Runner=0x626047
+L12244: if last_test == 0: goto L12271  # loc=10591 Runner=0x62611c
+L12245: Call QMLibrary.Delay((50))  # loc=10592 Runner=0x625fb0
+L12246: DM_RET=DM.FINDCOLOR(1599,69,1793,94,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10593 Runner=0x625fb0
+L12247: last_test = Sgn((INTX<0))  # loc=10594 Runner=0x626047
+L12248: if last_test == 0: goto L12271  # loc=10594 Runner=0x62611c
+L12249: Call QMLibrary.Delay((50))  # loc=10595 Runner=0x625fb0
+L12250: DM_RET=DM.FINDCOLOR(1602,95,1706,278,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10596 Runner=0x625fb0
+L12251: last_test = Sgn((INTX<0))  # loc=10597 Runner=0x626047
+L12252: if last_test == 0: goto L12271  # loc=10597 Runner=0x62611c
+L12253: Call QMLibrary.Delay((50))  # loc=10598 Runner=0x625fb0
+L12254: DM_RET=DM.FINDCOLOR(1716,204,1880,283,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10599 Runner=0x625fb0
+L12255: last_test = Sgn((INTX<0))  # loc=10600 Runner=0x626047
+L12256: if last_test == 0: goto L12271  # loc=10600 Runner=0x62611c
+L12257: Call QMLibrary.Delay((50))  # loc=10601 Runner=0x625fb0
+L12258: DM_RET=DM.FINDCOLOR(1816,147,1883,191,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=10602 Runner=0x625fb0
+L12259: last_test = Sgn((INTX<0))  # loc=10603 Runner=0x626047
+L12260: if last_test == 0: goto L12271  # loc=10603 Runner=0x62611c
+L12261: Call QMLibrary.Delay((50))  # loc=10604 Runner=0x625fb0
+L12262: 目前呼叫框架.暫存槽(9)=1  # loc=10605 Runner=0x625f7e
+L12263: 傳回值=目前呼叫框架.暫存槽(9)  # loc=10605 Runner=0x625f7e
+L12264: global.set(〔找到圖四〕, 傳回值)  # loc=10605 Runner=0x626783
+L12265: Call QMLibrary.TracePrint(("405"))  # loc=10606 Runner=0x625fb0
+L12266: 目前呼叫框架.暫存槽(10)=405  # loc=10607 Runner=0x625f7e
+L12267: 傳回值=目前呼叫框架.暫存槽(10)  # loc=10607 Runner=0x625f7e
+L12268: global.set(〔圖四〕, 傳回值)  # loc=10607 Runner=0x626783
+L12269: Call QMLibrary.Delay((50))  # loc=10608 Runner=0x625fb0
+L12270: goto L12273  # loc=10609 Runner=0x626126
+L12271: Call QMLibrary.Delay((50))  # loc=10617 Runner=0x625fb0
+L12272: goto L12029  # loc=10618 Runner=0x626126
+L12273: Call QMLibrary.Delay((100))  # loc=10633 Runner=0x625fb0
+L12274: 傳回值 = global.get(〔圖四〕)  # loc=10634 Runner=0x6266f4
+L12275: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10634 Runner=0x625f7e
+L12276: last_test = Sgn((目前呼叫框架.暫存槽(1)=401))  # loc=10634 Runner=0x626047
+L12277: if last_test == 0: goto L12294  # loc=10634 Runner=0x62611c
+L12278: Call QMLibrary.TracePrint(("四零一"))  # loc=10635 Runner=0x625fb0
+L12279: Call QMLibrary.Delay((50))  # loc=10636 Runner=0x625fb0
+L12280: 目前呼叫框架.暫存槽(2)=401  # loc=10637 Runner=0x625f7e
+L12281: 傳回值=目前呼叫框架.暫存槽(2)  # loc=10637 Runner=0x625f7e
+L12282: global.set(〔卡點〕, 傳回值)  # loc=10637 Runner=0x626783
+L12283: Call DM.MOVETO(750,188)  # loc=10638 Runner=0x625fb0
+L12284: Call QMLibrary.Delay((223))  # loc=10639 Runner=0x625fb0
+L12285: Call QMLibrary.MouseClick(5,g_iSimulateModeInVBSBlock,1)  # loc=10640 Runner=0x625fb0
+L12286: Call QMLibrary.Delay((70))  # loc=10641 Runner=0x625fb0
+L12287: Call QMLibrary.MouseClick(8,g_iSimulateModeInVBSBlock,1)  # loc=10642 Runner=0x625fb0
+L12288: Call QMLibrary.Delay((1003))  # loc=10643 Runner=0x625fb0
+L12289: Call QMLibrary.MouseClick(5,g_iSimulateModeInVBSBlock,1)  # loc=10644 Runner=0x625fb0
+L12290: Call QMLibrary.Delay((70))  # loc=10645 Runner=0x625fb0
+L12291: Call QMLibrary.MouseClick(8,g_iSimulateModeInVBSBlock,1)  # loc=10646 Runner=0x625fb0
+L12292: Call QMLibrary.Delay((703))  # loc=10647 Runner=0x625fb0
+L12293: goto L12383  # loc=10647 Runner=0x626126
+L12294: 傳回值 = global.get(〔圖四〕)  # loc=10648 Runner=0x6266f4
+L12295: 目前呼叫框架.暫存槽(3)=傳回值  # loc=10648 Runner=0x625f7e
+L12296: last_test = Sgn((目前呼叫框架.暫存槽(3)=402))  # loc=10648 Runner=0x626047
+L12297: if last_test == 0: goto L12320  # loc=10648 Runner=0x62611c
+L12298: Call QMLibrary.TracePrint(("四零二"))  # loc=10649 Runner=0x625fb0
+L12299: Call QMLibrary.Delay((50))  # loc=10650 Runner=0x625fb0
+L12300: 目前呼叫框架.暫存槽(4)=402  # loc=10651 Runner=0x625f7e
+L12301: 傳回值=目前呼叫框架.暫存槽(4)  # loc=10651 Runner=0x625f7e
+L12302: global.set(〔卡點〕, 傳回值)  # loc=10651 Runner=0x626783
+L12303: Call DM.MOVETO(350,252)  # loc=10652 Runner=0x625fb0
+L12304: Call QMLibrary.Delay((223))  # loc=10653 Runner=0x625fb0
+L12305: Call QMLibrary.MouseClick(5,g_iSimulateModeInVBSBlock,1)  # loc=10654 Runner=0x625fb0
+L12306: Call QMLibrary.Delay((70))  # loc=10655 Runner=0x625fb0
+L12307: Call QMLibrary.MouseClick(8,g_iSimulateModeInVBSBlock,1)  # loc=10656 Runner=0x625fb0
+L12308: Call QMLibrary.Delay((110))  # loc=10657 Runner=0x625fb0
+L12309: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=10658 Runner=0x625fb0
+L12310: Call QMLibrary.Delay((2403))  # loc=10659 Runner=0x625fb0
+L12311: Call DM.MOVETO(704,277)  # loc=10660 Runner=0x625fb0
+L12312: Call QMLibrary.Delay((123))  # loc=10661 Runner=0x625fb0
+L12313: Call QMLibrary.MouseClick(5,g_iSimulateModeInVBSBlock,1)  # loc=10662 Runner=0x625fb0
+L12314: Call QMLibrary.Delay((70))  # loc=10663 Runner=0x625fb0
+L12315: Call QMLibrary.MouseClick(8,g_iSimulateModeInVBSBlock,1)  # loc=10664 Runner=0x625fb0
+L12316: Call QMLibrary.Delay((270))  # loc=10665 Runner=0x625fb0
+L12317: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=10666 Runner=0x625fb0
+L12318: Call QMLibrary.Delay((1203))  # loc=10667 Runner=0x625fb0
+L12319: goto L12383  # loc=10667 Runner=0x626126
+L12320: 傳回值 = global.get(〔圖四〕)  # loc=10668 Runner=0x6266f4
+L12321: 目前呼叫框架.暫存槽(5)=傳回值  # loc=10668 Runner=0x625f7e
+L12322: last_test = Sgn((目前呼叫框架.暫存槽(5)=403))  # loc=10668 Runner=0x626047
+L12323: if last_test == 0: goto L12342  # loc=10668 Runner=0x62611c
+L12324: Call QMLibrary.TracePrint(("四零三"))  # loc=10669 Runner=0x625fb0
+L12325: Call QMLibrary.Delay((50))  # loc=10670 Runner=0x625fb0
+L12326: 目前呼叫框架.暫存槽(6)=403  # loc=10671 Runner=0x625f7e
+L12327: 傳回值=目前呼叫框架.暫存槽(6)  # loc=10671 Runner=0x625f7e
+L12328: global.set(〔卡點〕, 傳回值)  # loc=10671 Runner=0x626783
+L12329: Call DM.MOVETO(625,145)  # loc=10672 Runner=0x625fb0
+L12330: Call QMLibrary.Delay((150))  # loc=10673 Runner=0x625fb0
+L12331: Call QMLibrary.MouseClick(5,g_iSimulateModeInVBSBlock,1)  # loc=10674 Runner=0x625fb0
+L12332: Call QMLibrary.Delay((70))  # loc=10675 Runner=0x625fb0
+L12333: Call QMLibrary.MouseClick(8,g_iSimulateModeInVBSBlock,1)  # loc=10676 Runner=0x625fb0
+L12334: Call QMLibrary.Delay((1300))  # loc=10677 Runner=0x625fb0
+L12335: Call DM.MOVETO(622,196)  # loc=10678 Runner=0x625fb0
+L12336: Call QMLibrary.Delay((150))  # loc=10679 Runner=0x625fb0
+L12337: Call QMLibrary.MouseClick(5,g_iSimulateModeInVBSBlock,1)  # loc=10680 Runner=0x625fb0
+L12338: Call QMLibrary.Delay((70))  # loc=10681 Runner=0x625fb0
+L12339: Call QMLibrary.MouseClick(8,g_iSimulateModeInVBSBlock,1)  # loc=10682 Runner=0x625fb0
+L12340: Call QMLibrary.Delay((1000))  # loc=10683 Runner=0x625fb0
+L12341: goto L12383  # loc=10683 Runner=0x626126
+L12342: 傳回值 = global.get(〔圖四〕)  # loc=10684 Runner=0x6266f4
+L12343: 目前呼叫框架.暫存槽(7)=傳回值  # loc=10684 Runner=0x625f7e
+L12344: last_test = Sgn((目前呼叫框架.暫存槽(7)=404))  # loc=10684 Runner=0x626047
+L12345: if last_test == 0: goto L12362  # loc=10684 Runner=0x62611c
+L12346: Call QMLibrary.TracePrint(("四零四"))  # loc=10685 Runner=0x625fb0
+L12347: Call QMLibrary.Delay((50))  # loc=10686 Runner=0x625fb0
+L12348: 目前呼叫框架.暫存槽(8)=404  # loc=10687 Runner=0x625f7e
+L12349: 傳回值=目前呼叫框架.暫存槽(8)  # loc=10687 Runner=0x625f7e
+L12350: global.set(〔卡點〕, 傳回值)  # loc=10687 Runner=0x626783
+L12351: Call DM.MOVETO(666,488)  # loc=10688 Runner=0x625fb0
+L12352: Call QMLibrary.Delay((150))  # loc=10689 Runner=0x625fb0
+L12353: Call QMLibrary.MouseClick(5,g_iSimulateModeInVBSBlock,1)  # loc=10690 Runner=0x625fb0
+L12354: Call QMLibrary.Delay((70))  # loc=10691 Runner=0x625fb0
+L12355: Call QMLibrary.MouseClick(8,g_iSimulateModeInVBSBlock,1)  # loc=10692 Runner=0x625fb0
+L12356: Call QMLibrary.Delay((500))  # loc=10693 Runner=0x625fb0
+L12357: Call QMLibrary.MouseClick(5,g_iSimulateModeInVBSBlock,1)  # loc=10694 Runner=0x625fb0
+L12358: Call QMLibrary.Delay((70))  # loc=10695 Runner=0x625fb0
+L12359: Call QMLibrary.MouseClick(8,g_iSimulateModeInVBSBlock,1)  # loc=10696 Runner=0x625fb0
+L12360: Call QMLibrary.Delay((1000))  # loc=10697 Runner=0x625fb0
+L12361: goto L12383  # loc=10697 Runner=0x626126
+L12362: 傳回值 = global.get(〔圖四〕)  # loc=10698 Runner=0x6266f4
+L12363: 目前呼叫框架.暫存槽(9)=傳回值  # loc=10698 Runner=0x625f7e
+L12364: last_test = Sgn((目前呼叫框架.暫存槽(9)=405))  # loc=10698 Runner=0x626047
+L12365: if last_test == 0: goto L12383  # loc=10698 Runner=0x62611c
+L12366: Call QMLibrary.TracePrint(("四零五"))  # loc=10699 Runner=0x625fb0
+L12367: Call QMLibrary.Delay((50))  # loc=10700 Runner=0x625fb0
+L12368: 目前呼叫框架.暫存槽(10)=405  # loc=10701 Runner=0x625f7e
+L12369: 傳回值=目前呼叫框架.暫存槽(10)  # loc=10701 Runner=0x625f7e
+L12370: global.set(〔卡點〕, 傳回值)  # loc=10701 Runner=0x626783
+L12371: Call DM.MOVETO(1334,332)  # loc=10702 Runner=0x625fb0
+L12372: Call QMLibrary.Delay((150))  # loc=10703 Runner=0x625fb0
+L12373: Call QMLibrary.MouseClick(5,g_iSimulateModeInVBSBlock,1)  # loc=10704 Runner=0x625fb0
+L12374: Call QMLibrary.Delay((70))  # loc=10705 Runner=0x625fb0
+L12375: Call QMLibrary.MouseClick(8,g_iSimulateModeInVBSBlock,1)  # loc=10706 Runner=0x625fb0
+L12376: Call QMLibrary.Delay((1300))  # loc=10707 Runner=0x625fb0
+L12377: Call DM.MOVETO(1292,413)  # loc=10708 Runner=0x625fb0
+L12378: Call QMLibrary.Delay((150))  # loc=10709 Runner=0x625fb0
+L12379: Call QMLibrary.MouseClick(5,g_iSimulateModeInVBSBlock,1)  # loc=10710 Runner=0x625fb0
+L12380: Call QMLibrary.Delay((70))  # loc=10711 Runner=0x625fb0
+L12381: Call QMLibrary.MouseClick(8,g_iSimulateModeInVBSBlock,1)  # loc=10712 Runner=0x625fb0
+L12382: Call QMLibrary.Delay((300))  # loc=10713 Runner=0x625fb0
+L12383: Call QMLibrary.Delay((100))  # loc=10715 Runner=0x625fb0
+L12384: Call DM.MOVETO(960,560)  # loc=10716 Runner=0x625fb0
+L12385: Call QMLibrary.Delay((200))  # loc=10717 Runner=0x625fb0
+L12386: Call QMLibrary.Delay((100))  # loc=10719 Runner=0x625fb0
+L12387: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=10720 Runner=0x625f7e
+L12388: return caller  # loc=10720 Runner=0x626275

@@ -1,0 +1,1 @@
+public static class CubeMainDigests {public const string Program="23fc895222d88367ea1afedc5929a06196444c14b01842eebeaf6e62fb8c7b64";public const string Cases="ce26a1b5ac93b7418b8ad7096060c9df5297b0ae882c79f0bc20ce1376026572";public const int CaseCount=31;}

@@ -1,0 +1,55 @@
+# 子程序 — L01485
+# 入口 L01485，RETURN L01536；名稱未對應，以入口命名
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L01485: Call QMLibrary.Delay((100))  # loc=1172 Runner=0x625fb0
+L01486: SET DM=CREATEOBJECT("dm.dmsoft")  # loc=1173 Runner=0x625f7e
+L01487: Call DM.SETSHOWERRORMSG(0)  # loc=1174 Runner=0x625fb0
+L01488: X1=638  # loc=1175 Runner=0x625f7e
+L01489: Y1=959  # loc=1176 Runner=0x625f7e
+L01490: X2=642  # loc=1177 Runner=0x625f7e
+L01491: Y2=972  # loc=1178 Runner=0x625f7e
+L01492: Call QMLibrary.Delay((100))  # loc=1179 Runner=0x625fb0
+L01493: last_test = Sgn(vbTrue)  # loc=1180 Runner=0x626047
+L01494: if last_test == 0: goto L01534  # loc=1180 Runner=0x62611c
+L01495: Call QMLibrary.Delay((300))  # loc=1181 Runner=0x625fb0
+L01496: DM_RET=DM.FINDCOLOR(X1,Y1,X2,Y2,"91100A-050505|8F110F-050505|980700-050505|900501-050505|640302-050505|930403-050505|6B0603-050505|670604-050505|780805-050505|840906-050505|8E0A06-050505|AA0C07-050505|900A07-050505|A80D08-050505|A70E08-050505|B83425-050505|AC372D-050505",0.9,0,INTX,INTY)  # loc=1182 Runner=0x625fb0
+L01497: last_test = Sgn((INTX>=0))  # loc=1183 Runner=0x626047
+L01498: if last_test == 0: goto L01502  # loc=1183 Runner=0x62611c
+L01499: Call QMLibrary.Delay((200))  # loc=1184 Runner=0x625fb0
+L01500: 〔不吃藥〕=0  # loc=1186 Runner=0x625f7e
+L01501: goto L01533  # loc=1187 Runner=0x626126
+L01502: Call QMLibrary.Delay((100))  # loc=1188 Runner=0x625fb0
+L01503: 〔不吃藥〕=〔不吃藥〕+1  # loc=1189 Runner=0x625f7e
+L01504: last_test = Sgn((〔不吃藥〕>=3))  # loc=1190 Runner=0x626047
+L01505: if last_test == 0: goto L01533  # loc=1190 Runner=0x62611c
+L01506: Call QMLibrary.Delay((50))  # loc=1191 Runner=0x625fb0
+L01507: 〔不吃藥〕=0  # loc=1192 Runner=0x625f7e
+L01508: 傳回值 = global.get(〔吃藥F1鍵〕)  # loc=1193 Runner=0x6266f4
+L01509: 目前呼叫框架.暫存槽(1)=傳回值  # loc=1193 Runner=0x625f7e
+L01510: last_test = Sgn(目前呼叫框架.暫存槽(1)=1)  # loc=1193 Runner=0x626047
+L01511: if last_test == 0: goto L01520  # loc=1193 Runner=0x62611c
+L01512: Call QMLibrary.TracePrint(("按下F1吃药"))  # loc=1194 Runner=0x625fb0
+L01513: Call QMLibrary.Delay((100))  # loc=1195 Runner=0x625fb0
+L01514: Call QMLibrary.KeyPress("F1",g_iSimulateModeInVBSBlock,1)  # loc=1196 Runner=0x625fb0
+L01515: Call QMLibrary.Delay((100))  # loc=1197 Runner=0x625fb0
+L01516: Call QMLibrary.KeyDown("F1",g_iSimulateModeInVBSBlock,1)  # loc=1198 Runner=0x625fb0
+L01517: Call QMLibrary.Delay((50))  # loc=1199 Runner=0x625fb0
+L01518: Call QMLibrary.KeyUp("F1",g_iSimulateModeInVBSBlock,1)  # loc=1200 Runner=0x625fb0
+L01519: Call QMLibrary.Delay((1000))  # loc=1201 Runner=0x625fb0
+L01520: Call QMLibrary.Delay((100))  # loc=1203 Runner=0x625fb0
+L01521: 傳回值 = global.get(〔吃藥1鍵〕)  # loc=1204 Runner=0x6266f4
+L01522: 目前呼叫框架.暫存槽(2)=傳回值  # loc=1204 Runner=0x625f7e
+L01523: last_test = Sgn(目前呼叫框架.暫存槽(2)=1)  # loc=1204 Runner=0x626047
+L01524: if last_test == 0: goto L01533  # loc=1204 Runner=0x62611c
+L01525: Call QMLibrary.TracePrint(("按下1吃药"))  # loc=1205 Runner=0x625fb0
+L01526: Call QMLibrary.Delay((100))  # loc=1206 Runner=0x625fb0
+L01527: Call QMLibrary.KeyPress("1",g_iSimulateModeInVBSBlock,1)  # loc=1207 Runner=0x625fb0
+L01528: Call QMLibrary.Delay((100))  # loc=1208 Runner=0x625fb0
+L01529: Call QMLibrary.KeyDown("1",g_iSimulateModeInVBSBlock,1)  # loc=1209 Runner=0x625fb0
+L01530: Call QMLibrary.Delay((50))  # loc=1210 Runner=0x625fb0
+L01531: Call QMLibrary.KeyUp("1",g_iSimulateModeInVBSBlock,1)  # loc=1211 Runner=0x625fb0
+L01532: Call QMLibrary.Delay((1000))  # loc=1212 Runner=0x625fb0
+L01533: goto L01493  # loc=1213 Runner=0x626126
+L01534: Call QMLibrary.Delay((100))  # loc=1217 Runner=0x625fb0
+L01535: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=1218 Runner=0x625f7e
+L01536: return caller  # loc=1218 Runner=0x626275

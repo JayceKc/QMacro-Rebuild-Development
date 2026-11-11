@@ -1,0 +1,184 @@
+# 模組 01 的主流程尾段
+
+## 主流程保留尾段 L562..L740
+
+L562 temporary=F2730835_2229_445E_97C7_l3F761277lDA(17)  // op=2, loc=352, SL=461, field_3=1
+L563 寫入共享鍵 VF2C2A4BE7378756D = temporary  // op=28, loc=352, SL=462, field_3=1
+L564 F2730835_2229_445E_97C7_l3F761277lDA(18)=0  // op=2, loc=353, SL=466, field_3=1
+L565 temporary=F2730835_2229_445E_97C7_l3F761277lDA(18)  // op=2, loc=353, SL=464, field_3=1
+L566 寫入共享鍵 V98B8D0C8A4B7C89D4D6A65757378756D = temporary  // op=28, loc=353, SL=465, field_3=1
+L567 F2730835_2229_445E_97C7_l3F761277lDA(19)=0  // op=2, loc=354, SL=469, field_3=1
+L568 temporary=F2730835_2229_445E_97C7_l3F761277lDA(19)  // op=2, loc=354, SL=467, field_3=1
+L569 寫入共享鍵 VF2C2D0967378756D = temporary  // op=28, loc=354, SL=468, field_3=1
+L570 Call QMLibrary.Delay((100))  // op=30, loc=355, SL=470, field_3=1
+L571 F2730835_2229_445E_97C7_l3F761277lDA(20)=2  // op=2, loc=356, SL=473, field_3=1
+L572 temporary=F2730835_2229_445E_97C7_l3F761277lDA(20)  // op=2, loc=356, SL=471, field_3=1
+L573 寫入共享鍵 VFF89AF887378756D = temporary  // op=28, loc=356, SL=472, field_3=1
+L574 Call QMLibrary.TracePrint(("-----主控-----开始打怪二层"))  // op=30, loc=357, SL=474, field_3=1
+L575 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF2C0AFC9C78ACCBB4D6A65757378756D 並保留父框架  // op=2, loc=358, SL=475, field_3=1
+L576 呼叫 L1591，返回 L577  // op=12, loc=358, SL=None, field_3=1
+L577 F2730835_2229_445E_97C7_l3F761277lDA(21)=temporary  // op=2, loc=358, SL=476, field_3=1
+L578 Call QMLibrary.Delay((100))  // op=30, loc=359, SL=477, field_3=1
+L579 F2730835_2229_445E_97C7_l3F761277lDA(22)=3  // op=2, loc=360, SL=480, field_3=1
+L580 temporary=F2730835_2229_445E_97C7_l3F761277lDA(22)  // op=2, loc=360, SL=478, field_3=1
+L581 寫入共享鍵 VFF89AF887378756D = temporary  // op=28, loc=360, SL=479, field_3=1
+L582 Call QMLibrary.TracePrint(("-----主控-----第一次找图三"))  // op=30, loc=361, SL=481, field_3=1
+L583 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V98B8A8C9BB85756D 並保留父框架  // op=2, loc=362, SL=482, field_3=1
+L584 呼叫 L5120，返回 L585  // op=12, loc=362, SL=None, field_3=1
+L585 F2730835_2229_445E_97C7_l3F761277lDA(23)=temporary  // op=2, loc=362, SL=483, field_3=1
+L586 Call QMLibrary.Delay((100))  // op=30, loc=363, SL=484, field_3=1
+L587 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF2C0AFC9C78ACCBB4D6A65757378756D 並保留父框架  // op=2, loc=364, SL=485, field_3=1
+L588 呼叫 L1591，返回 L589  // op=12, loc=364, SL=None, field_3=1
+L589 F2730835_2229_445E_97C7_l3F761277lDA(24)=temporary  // op=2, loc=364, SL=486, field_3=1
+L590 Call QMLibrary.Delay((1000))  // op=30, loc=365, SL=487, field_3=1
+L591 F2730835_2229_445E_97C7_l3F761277lDA(25)=0  // op=2, loc=366, SL=490, field_3=1
+L592 temporary=F2730835_2229_445E_97C7_l3F761277lDA(25)  // op=2, loc=366, SL=488, field_3=1
+L593 寫入共享鍵 V9BB2B5B7CCD2BFD14D6A65757378756D = temporary  // op=28, loc=366, SL=489, field_3=1
+L594 V86C8D4CBB3A3C9ABF9A4AF887378756D=99  // op=2, loc=367, SL=491, field_3=1
+L595 Call QMLibrary.Delay((50))  // op=30, loc=368, SL=492, field_3=1
+L596 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=369, SL=493, field_3=1
+L597 F2730835_2229_445E_97C7_l3F761277lDA(26)=temporary  // op=2, loc=369, SL=494, field_3=1
+L598 Call QMLibrary.ThreadControl((F2730835_2229_445E_97C7_l3F761277lDA(26)), 1)  // op=30, loc=369, SL=495, field_3=1
+L599 Call QMLibrary.Delay((50))  // op=30, loc=370, SL=496, field_3=1
+L600 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=371, SL=497, field_3=1
+L601 F2730835_2229_445E_97C7_l3F761277lDA(27)=temporary  // op=2, loc=371, SL=498, field_3=1
+L602 Call QMLibrary.ThreadControl((F2730835_2229_445E_97C7_l3F761277lDA(27)), 1)  // op=30, loc=371, SL=499, field_3=1
+L603 Call QMLibrary.Delay((50))  // op=30, loc=372, SL=500, field_3=1
+L604 temporary = 讀取共享鍵 VFEBEB7DC3A3C756D  // op=27, loc=373, SL=501, field_3=1
+L605 F2730835_2229_445E_97C7_l3F761277lDA(28)=temporary  // op=2, loc=373, SL=502, field_3=1
+L606 Call QMLibrary.ThreadControl((F2730835_2229_445E_97C7_l3F761277lDA(28)), 1)  // op=30, loc=373, SL=503, field_3=1
+L607 Call QMLibrary.Delay((50))  // op=30, loc=374, SL=504, field_3=1
+L608 temporary = 讀取共享鍵 VFEBED5ACC4AEC4A59FC32C317378756D  // op=27, loc=375, SL=505, field_3=1
+L609 F2730835_2229_445E_97C7_l3F761277lDA(29)=temporary  // op=2, loc=375, SL=506, field_3=1
+L610 Call QMLibrary.ThreadControl((F2730835_2229_445E_97C7_l3F761277lDA(29)), 1)  // op=30, loc=375, SL=507, field_3=1
+L611 Call QMLibrary.Delay((50))  // op=30, loc=376, SL=508, field_3=1
+L612 temporary = 讀取共享鍵 VFDDE223C3778756D  // op=27, loc=377, SL=509, field_3=1
+L613 F2730835_2229_445E_97C7_l3F761277lDA(30)=temporary  // op=2, loc=377, SL=510, field_3=1
+L614 Call QMLibrary.ThreadControl((F2730835_2229_445E_97C7_l3F761277lDA(30)), 1)  // op=30, loc=377, SL=511, field_3=1
+L615 Call QMLibrary.Delay((50))  // op=30, loc=378, SL=512, field_3=1
+L616 temporary = 讀取共享鍵 VFF89AF887378756D  // op=27, loc=379, SL=513, field_3=1
+L617 F2730835_2229_445E_97C7_l3F761277lDA(31)=temporary  // op=2, loc=379, SL=514, field_3=1
+L618 condition = Sgn(F2730835_2229_445E_97C7_l3F761277lDA(31)>2)  // op=4, loc=379, SL=515, field_3=1
+L619 條件為零則跳 L624，否則 L620  // op=6, loc=379, SL=None, field_3=1
+L620 Call QMLibrary.Delay((50))  // op=30, loc=380, SL=516, field_3=1
+L621 temporary = 讀取共享鍵 V98B8AE8BBEC43C294D6A65757378756D  // op=27, loc=381, SL=517, field_3=1
+L622 F2730835_2229_445E_97C7_l3F761277lDA(32)=temporary  // op=2, loc=381, SL=518, field_3=1
+L623 Call QMLibrary.ThreadControl(F2730835_2229_445E_97C7_l3F761277lDA(32), 0)  // op=30, loc=381, SL=519, field_3=1
+L624 Call QMLibrary.Delay((200))  // op=30, loc=383, SL=520, field_3=1
+L625 F2730835_2229_445E_97C7_l3F761277lDA(33)=0  // op=2, loc=384, SL=523, field_3=1
+L626 temporary=F2730835_2229_445E_97C7_l3F761277lDA(33)  // op=2, loc=384, SL=521, field_3=1
+L627 寫入共享鍵 V9BB2B5B7CCD2BFD14D6A65757378756D = temporary  // op=28, loc=384, SL=522, field_3=1
+L628 Call QMLibrary.Delay((100))  // op=30, loc=385, SL=524, field_3=1
+L629 Call QMLibrary.TracePrint(("-----主控-----三层打完切角色"))  // op=30, loc=386, SL=525, field_3=1
+L630 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V8597D796C78AB8878ABAD8B2BAD3756D 並保留父框架  // op=2, loc=387, SL=526, field_3=1
+L631 呼叫 L11284，返回 L632  // op=12, loc=387, SL=None, field_3=1
+L632 F2730835_2229_445E_97C7_l3F761277lDA(34)=temporary  // op=2, loc=387, SL=527, field_3=1
+L633 Call QMLibrary.Delay((100))  // op=30, loc=388, SL=528, field_3=1
+L634 condition = Sgn(vbTrue)  // op=4, loc=389, SL=529, field_3=1
+L635 條件為零則跳 L706，否則 L636  // op=6, loc=389, SL=None, field_3=1
+L636 Call QMLibrary.Delay(100)  // op=30, loc=390, SL=530, field_3=1
+L637 Call QMLibrary.TracePrint(("-----主控-----切角色"))  // op=30, loc=391, SL=531, field_3=1
+L638 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V8ABAD8B2BAD3756D 並保留父框架  // op=2, loc=392, SL=532, field_3=1
+L639 呼叫 L8795，返回 L640  // op=12, loc=392, SL=None, field_3=1
+L640 F2730835_2229_445E_97C7_l3F761277lDA(35)=temporary  // op=2, loc=392, SL=533, field_3=1
+L641 Call QMLibrary.Delay((1000))  // op=30, loc=393, SL=534, field_3=1
+L642 Call QMLibrary.TracePrint(("-----主控-----找*色"))  // op=30, loc=394, SL=535, field_3=1
+L643 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V98B8A7B9BAD3756D 並保留父框架  // op=2, loc=395, SL=536, field_3=1
+L644 呼叫 L3623，返回 L645  // op=12, loc=395, SL=None, field_3=1
+L645 F2730835_2229_445E_97C7_l3F761277lDA(36)=temporary  // op=2, loc=395, SL=537, field_3=1
+L646 Call QMLibrary.Delay((15000))  // op=30, loc=396, SL=538, field_3=1
+L647 Call QMLibrary.TracePrint(("-----主控-----找按钮对话"))  // op=30, loc=397, SL=539, field_3=1
+L648 condition = Sgn((VF68BB1C47378756D=0))  // op=4, loc=398, SL=540, field_3=1
+L649 條件為零則跳 L655，否則 L650  // op=6, loc=398, SL=None, field_3=1
+L650 Call QMLibrary.Delay((100))  // op=30, loc=399, SL=541, field_3=1
+L651 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V98B8D5C1B6DD756D 並保留父框架  // op=2, loc=400, SL=542, field_3=1
+L652 呼叫 L3642，返回 L653  // op=12, loc=400, SL=None, field_3=1
+L653 F2730835_2229_445E_97C7_l3F761277lDA(37)=temporary  // op=2, loc=400, SL=543, field_3=1
+L654 跳往 L668  // op=16, loc=400, SL=None, field_3=1
+L655 condition = Sgn((VF68BB1C47378756D=1))  // op=4, loc=401, SL=544, field_3=1
+L656 條件為零則跳 L662，否則 L657  // op=6, loc=401, SL=None, field_3=1
+L657 Call QMLibrary.Delay((100))  // op=30, loc=402, SL=545, field_3=1
+L658 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V98B8D3A1C8C8756D 並保留父框架  // op=2, loc=403, SL=546, field_3=1
+L659 呼叫 L3838，返回 L660  // op=12, loc=403, SL=None, field_3=1
+L660 F2730835_2229_445E_97C7_l3F761277lDA(38)=temporary  // op=2, loc=403, SL=547, field_3=1
+L661 跳往 L668  // op=16, loc=403, SL=None, field_3=1
+L662 condition = Sgn((VF68BB1C47378756D=2))  // op=4, loc=404, SL=548, field_3=1
+L663 條件為零則跳 L668，否則 L664  // op=6, loc=404, SL=None, field_3=1
+L664 Call QMLibrary.Delay((100))  // op=30, loc=405, SL=549, field_3=1
+L665 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V98B8D5C1B6DD756D 並保留父框架  // op=2, loc=406, SL=550, field_3=1
+L666 呼叫 L3642，返回 L667  // op=12, loc=406, SL=None, field_3=1
+L667 F2730835_2229_445E_97C7_l3F761277lDA(39)=temporary  // op=2, loc=406, SL=551, field_3=1
+L668 Call QMLibrary.Delay((100))  // op=30, loc=408, SL=552, field_3=1
+L669 Call QMLibrary.TracePrint(("-----主控-----修理"))  // op=30, loc=409, SL=553, field_3=1
+L670 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V9DB4A5987378756D 並保留父框架  // op=2, loc=410, SL=554, field_3=1
+L671 呼叫 L3479，返回 L672  // op=12, loc=410, SL=None, field_3=1
+L672 F2730835_2229_445E_97C7_l3F761277lDA(40)=temporary  // op=2, loc=410, SL=555, field_3=1
+L673 Call QMLibrary.Delay((100))  // op=30, loc=411, SL=556, field_3=1
+L674 condition = Sgn((V8B92AAD7A5A4BDA3839B65757378756D=1))  // op=4, loc=412, SL=557, field_3=1
+L675 條件為零則跳 L682，否則 L676  // op=6, loc=412, SL=None, field_3=1
+L676 Call QMLibrary.Delay((100))  // op=30, loc=413, SL=558, field_3=1
+L677 Call QMLibrary.TracePrint(("-----主控-----气息周任务"))  // op=30, loc=414, SL=559, field_3=1
+L678 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF0B9B3A9BBB6BB9C4D6A65757378756D 並保留父框架  // op=2, loc=415, SL=560, field_3=1
+L679 呼叫 L10955，返回 L680  // op=12, loc=415, SL=None, field_3=1
+L680 F2730835_2229_445E_97C7_l3F761277lDA(41)=temporary  // op=2, loc=415, SL=561, field_3=1
+L681 跳往 L683  // op=16, loc=416, SL=None, field_3=1
+L682 Call QMLibrary.Delay((50))  // op=30, loc=417, SL=562, field_3=1
+L683 Call QMLibrary.Delay((100))  // op=30, loc=419, SL=563, field_3=1
+L684 condition = Sgn((VF4C1DE947378756D=1))  // op=4, loc=420, SL=564, field_3=1
+L685 條件為零則跳 L692，否則 L686  // op=6, loc=420, SL=None, field_3=1
+L686 Call QMLibrary.Delay((100))  // op=30, loc=421, SL=565, field_3=1
+L687 Call QMLibrary.TracePrint(("-----主控-----公会签到"))  // op=30, loc=422, SL=566, field_3=1
+L688 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF4C1DE94B4D1C0D04D6A65757378756D 並保留父框架  // op=2, loc=423, SL=567, field_3=1
+L689 呼叫 L11169，返回 L690  // op=12, loc=423, SL=None, field_3=1
+L690 F2730835_2229_445E_97C7_l3F761277lDA(42)=temporary  // op=2, loc=423, SL=568, field_3=1
+L691 跳往 L693  // op=16, loc=424, SL=None, field_3=1
+L692 Call QMLibrary.Delay((50))  // op=30, loc=425, SL=569, field_3=1
+L693 Call QMLibrary.Delay((100))  // op=30, loc=427, SL=570, field_3=1
+L694 Call QMLibrary.TracePrint(("-----主控-----按钮点击进本"))  // op=30, loc=428, SL=571, field_3=1
+L695 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VFDDEA0D0C69BCE9AF092D4CB7378756D 並保留父框架  // op=2, loc=429, SL=572, field_3=1
+L696 呼叫 L1020，返回 L697  // op=12, loc=429, SL=None, field_3=1
+L697 F2730835_2229_445E_97C7_l3F761277lDA(43)=temporary  // op=2, loc=429, SL=573, field_3=1
+L698 Call QMLibrary.Delay((100))  // op=30, loc=430, SL=574, field_3=1
+L699 temporary = 讀取共享鍵 V8ED1B6A5B580BACFF9A4AF887378756D  // op=27, loc=431, SL=575, field_3=1
+L700 F2730835_2229_445E_97C7_l3F761277lDA(44)=temporary  // op=2, loc=431, SL=576, field_3=1
+L701 condition = Sgn(F2730835_2229_445E_97C7_l3F761277lDA(44)=0)  // op=4, loc=431, SL=577, field_3=1
+L702 條件為零則跳 L705，否則 L703  // op=6, loc=431, SL=None, field_3=1
+L703 Call QMLibrary.Delay((100))  // op=30, loc=432, SL=578, field_3=1
+L704 跳往 L706  // op=16, loc=433, SL=None, field_3=1
+L705 跳往 L634  // op=16, loc=434, SL=None, field_3=1
+L706 Call QMLibrary.Delay((100))  // op=30, loc=436, SL=579, field_3=1
+L707 Call QMLibrary.Delay((100))  // op=30, loc=438, SL=580, field_3=1
+L708 temporary = 讀取共享鍵 VFDDEA0D0CE9FB68B4D6A65757378756D  // op=27, loc=439, SL=581, field_3=1
+L709 F2730835_2229_445E_97C7_l3F761277lDA(45)=temporary  // op=2, loc=439, SL=582, field_3=1
+L710 condition = Sgn(F2730835_2229_445E_97C7_l3F761277lDA(45)=3)  // op=4, loc=439, SL=583, field_3=1
+L711 條件為零則跳 L720，否則 L712  // op=6, loc=439, SL=None, field_3=1
+L712 Call QMLibrary.Delay((100))  // op=30, loc=440, SL=584, field_3=1
+L713 F2730835_2229_445E_97C7_l3F761277lDA(46)=1  // op=2, loc=441, SL=587, field_3=1
+L714 temporary=F2730835_2229_445E_97C7_l3F761277lDA(46)  // op=2, loc=441, SL=585, field_3=1
+L715 寫入共享鍵 VFF89AF887378756D = temporary  // op=28, loc=441, SL=586, field_3=1
+L716 F2730835_2229_445E_97C7_l3F761277lDA(47)=0  // op=2, loc=442, SL=590, field_3=1
+L717 temporary=F2730835_2229_445E_97C7_l3F761277lDA(47)  // op=2, loc=442, SL=588, field_3=1
+L718 寫入共享鍵 V98B8D0C8A4B7C89D4D6A65757378756D = temporary  // op=28, loc=442, SL=589, field_3=1
+L719 Call QMLibrary.TracePrint(("-----主控-----开始打怪一层"))  // op=30, loc=443, SL=591, field_3=1
+L720 Call QMLibrary.Delay((100))  // op=30, loc=445, SL=592, field_3=1
+L721 F2730835_2229_445E_97C7_l3F761277lDA(48)=0  // op=2, loc=446, SL=595, field_3=1
+L722 temporary=F2730835_2229_445E_97C7_l3F761277lDA(48)  // op=2, loc=446, SL=593, field_3=1
+L723 寫入共享鍵 V9BB2B5B7CCD2BFD14D6A65757378756D = temporary  // op=28, loc=446, SL=594, field_3=1
+L724 Call QMLibrary.Delay((100))  // op=30, loc=447, SL=596, field_3=1
+L725 temporary = 讀取共享鍵 VFDDEA0D0CE9FB68B4D6A65757378756D  // op=27, loc=448, SL=597, field_3=1
+L726 F2730835_2229_445E_97C7_l3F761277lDA(49)=temporary  // op=2, loc=448, SL=598, field_3=1
+L727 condition = Sgn(F2730835_2229_445E_97C7_l3F761277lDA(49)=4)  // op=4, loc=448, SL=599, field_3=1
+L728 條件為零則跳 L733，否則 L729  // op=6, loc=448, SL=None, field_3=1
+L729 Call QMLibrary.Delay((50))  // op=30, loc=449, SL=600, field_3=1
+L730 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V98B8A8C9B8BC756D 並保留父框架  // op=2, loc=450, SL=601, field_3=1
+L731 呼叫 L12002，返回 L732  // op=12, loc=450, SL=None, field_3=1
+L732 F2730835_2229_445E_97C7_l3F761277lDA(50)=temporary  // op=2, loc=450, SL=602, field_3=1
+L733 Call QMLibrary.Delay((100))  // op=30, loc=452, SL=603, field_3=1
+L734 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF2C0AFC9C78ACCBB4D6A65757378756D 並保留父框架  // op=2, loc=453, SL=604, field_3=1
+L735 呼叫 L1591，返回 L736  // op=12, loc=453, SL=None, field_3=1
+L736 F2730835_2229_445E_97C7_l3F761277lDA(51)=temporary  // op=2, loc=453, SL=605, field_3=1
+L737 Call QMLibrary.Delay((100))  // op=30, loc=454, SL=606, field_3=1
+L738 Call QMLibrary.TracePrint(("----------结束循环-----------"))  // op=30, loc=455, SL=607, field_3=1
+L739 Call QMLibrary.Delay((100))  // op=30, loc=456, SL=608, field_3=1
+L740 跳往 L433  // op=16, loc=457, SL=None, field_3=1
+

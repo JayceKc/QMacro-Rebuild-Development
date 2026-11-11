@@ -1,0 +1,15 @@
+# 吃百分比藥空轉 — L02101
+# 入口 L02101，RETURN L02112；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L02101: Call QMLibrary.Delay((100))  # loc=1743 Runner=0x625fb0
+L02102: Call QMLibrary.Delay((100))  # loc=1744 Runner=0x625fb0
+L02103: last_test = Sgn(vbTrue)  # loc=1745 Runner=0x626047
+L02104: if last_test == 0: goto L02110  # loc=1745 Runner=0x62611c
+L02105: Call QMLibrary.Delay((6000))  # loc=1746 Runner=0x625fb0
+L02106: Call QMLibrary.Delay((5000))  # loc=1747 Runner=0x625fb0
+L02107: Call QMLibrary.Delay((10000))  # loc=1748 Runner=0x625fb0
+L02108: Call QMLibrary.Delay((8000))  # loc=1749 Runner=0x625fb0
+L02109: goto L02103  # loc=1750 Runner=0x626126
+L02110: Call QMLibrary.Delay((100))  # loc=1751 Runner=0x625fb0
+L02111: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=1752 Runner=0x625f7e
+L02112: return caller  # loc=1752 Runner=0x626275

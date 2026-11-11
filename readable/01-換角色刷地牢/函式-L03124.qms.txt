@@ -1,0 +1,15 @@
+# 吃百分比藥空轉 — L03124
+# 入口 L03124，RETURN L03135；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L03124: Call QMLibrary.Delay((100))  # loc=2500 Runner=0x625fb0
+L03125: Call QMLibrary.Delay((100))  # loc=2501 Runner=0x625fb0
+L03126: last_test = Sgn(vbTrue)  # loc=2502 Runner=0x626047
+L03127: if last_test == 0: goto L03133  # loc=2502 Runner=0x62611c
+L03128: Call QMLibrary.Delay((6000))  # loc=2503 Runner=0x625fb0
+L03129: Call QMLibrary.Delay((5000))  # loc=2504 Runner=0x625fb0
+L03130: Call QMLibrary.Delay((10000))  # loc=2505 Runner=0x625fb0
+L03131: Call QMLibrary.Delay((8000))  # loc=2506 Runner=0x625fb0
+L03132: goto L03126  # loc=2507 Runner=0x626126
+L03133: Call QMLibrary.Delay((100))  # loc=2508 Runner=0x625fb0
+L03134: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=2509 Runner=0x625f7e
+L03135: return caller  # loc=2509 Runner=0x626275

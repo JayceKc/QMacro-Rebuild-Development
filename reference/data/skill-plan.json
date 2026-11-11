@@ -1,0 +1,7845 @@
+{
+  "source_sha256": "dd547e8d5d3f5a7599a0c114846256b1df0f13dec826dd3900482fff938261ac",
+  "record_range": [
+    355,
+    1324
+  ],
+  "modes": [
+    {
+      "name": "使用 Z 技能",
+      "entry": 959
+    },
+    {
+      "name": "不使用 Z 技能",
+      "entry": 1054
+    },
+    {
+      "name": "更多 Z 技能",
+      "entry": 1136
+    },
+    {
+      "name": "使用 X 技能",
+      "entry": 1231
+    }
+  ],
+  "actions": [
+    {
+      "record": 355,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 356,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint(\"随机技能一\")",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint(\"随机技能一\")"
+    },
+    {
+      "record": 357,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 358,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 359,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 368
+    },
+    {
+      "record": 360,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 361,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 362,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 363,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 364,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 365,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 366,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 367,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 373
+    },
+    {
+      "record": 368,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 369,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 370,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 371,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 372,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 373,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 374,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 375,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 384
+    },
+    {
+      "record": 376,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 377,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 378,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 379,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 380,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 381,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 382,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 383,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 389
+    },
+    {
+      "record": 384,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 385,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 386,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 387,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 388,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 389,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 390,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 391,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 400
+    },
+    {
+      "record": 392,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 393,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 394,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 395,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 396,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 397,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 398,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 399,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 405
+    },
+    {
+      "record": 400,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 401,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 402,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 403,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 404,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 405,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 406,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 407,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 416
+    },
+    {
+      "record": 408,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 409,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 410,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 411,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 412,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 413,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 414,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 415,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 421
+    },
+    {
+      "record": 416,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 417,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 418,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 419,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 420,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 421,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 422,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 423,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 424,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 425,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 426,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 427,
+      "opcode": 27,
+      "source": "〔按G嗎〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "press_g"
+    },
+    {
+      "record": 428,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(1)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[1]",
+      "expression": "value"
+    },
+    {
+      "record": 429,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(1)=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[1]==1"
+    },
+    {
+      "record": 430,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 438
+    },
+    {
+      "record": 431,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 432,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "G"
+    },
+    {
+      "record": 433,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 434,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "G"
+    },
+    {
+      "record": 435,
+      "opcode": 27,
+      "source": "GMS",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "g_seconds"
+    },
+    {
+      "record": 436,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(2)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[2]",
+      "expression": "value"
+    },
+    {
+      "record": 437,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((目前呼叫框架.暫存槽(2)*1000))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(slot[2]*1000)"
+    },
+    {
+      "record": 438,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 439,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 440,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 449
+    },
+    {
+      "record": 441,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 442,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 443,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 444,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 445,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 446,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 447,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 448,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 454
+    },
+    {
+      "record": 449,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 450,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 451,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 452,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 453,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 454,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 455,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 456,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 465
+    },
+    {
+      "record": 457,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 458,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 459,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 460,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 461,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 462,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 463,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 464,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 470
+    },
+    {
+      "record": 465,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 466,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 467,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 468,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 469,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 470,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 471,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 472,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 481
+    },
+    {
+      "record": 473,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 474,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 475,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 476,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 477,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 478,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 479,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 480,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 486
+    },
+    {
+      "record": 481,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 482,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 483,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 484,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 485,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 486,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 487,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 488,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 497
+    },
+    {
+      "record": 489,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 490,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 491,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 492,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 493,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 494,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 495,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 496,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 502
+    },
+    {
+      "record": 497,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 498,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 499,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 500,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 501,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 502,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 503,
+      "opcode": 2,
+      "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+      "handler": "0x625f7e",
+      "kind": "frame_return_value"
+    },
+    {
+      "record": 504,
+      "opcode": 13,
+      "source": "",
+      "handler": "0x626275",
+      "kind": "return"
+    },
+    {
+      "record": 505,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 656
+    },
+    {
+      "record": 506,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 507,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint(\"随机技能二\")",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint(\"随机技能二\")"
+    },
+    {
+      "record": 508,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 509,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 510,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 519
+    },
+    {
+      "record": 511,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 512,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 513,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 514,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 515,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 516,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 517,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 518,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 524
+    },
+    {
+      "record": 519,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 520,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 521,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 522,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 523,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 524,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 525,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 526,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 535
+    },
+    {
+      "record": 527,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 528,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 529,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 530,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 531,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 532,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 533,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 534,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 540
+    },
+    {
+      "record": 535,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 536,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 537,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 538,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 539,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 540,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 541,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 542,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 551
+    },
+    {
+      "record": 543,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 544,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 545,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 546,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 547,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 548,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 549,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 550,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 556
+    },
+    {
+      "record": 551,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 552,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 553,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 554,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 555,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 556,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 557,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 558,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 567
+    },
+    {
+      "record": 559,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 560,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 561,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 562,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 563,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 564,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 565,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 566,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 572
+    },
+    {
+      "record": 567,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 568,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 569,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 570,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 571,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 572,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 573,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 574,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 575,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 576,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 577,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 578,
+      "opcode": 27,
+      "source": "〔按G嗎〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "press_g"
+    },
+    {
+      "record": 579,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(1)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[1]",
+      "expression": "value"
+    },
+    {
+      "record": 580,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(1)=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[1]==1"
+    },
+    {
+      "record": 581,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 589
+    },
+    {
+      "record": 582,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 583,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "G"
+    },
+    {
+      "record": 584,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 585,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "G"
+    },
+    {
+      "record": 586,
+      "opcode": 27,
+      "source": "GMS",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "g_seconds"
+    },
+    {
+      "record": 587,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(2)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[2]",
+      "expression": "value"
+    },
+    {
+      "record": 588,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((目前呼叫框架.暫存槽(2)*1000))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(slot[2]*1000)"
+    },
+    {
+      "record": 589,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 590,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 591,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 600
+    },
+    {
+      "record": 592,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 593,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 594,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 595,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 596,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 597,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 598,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 599,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 605
+    },
+    {
+      "record": 600,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 601,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 602,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 603,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 604,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 605,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 606,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 607,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 616
+    },
+    {
+      "record": 608,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 609,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 610,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 611,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 612,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 613,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 614,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 615,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 621
+    },
+    {
+      "record": 616,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 617,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 618,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 619,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 620,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 621,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 622,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 623,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 632
+    },
+    {
+      "record": 624,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 625,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 626,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 627,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 628,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 629,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 630,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 631,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 637
+    },
+    {
+      "record": 632,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 633,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 634,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 635,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 636,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 637,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 638,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 639,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 648
+    },
+    {
+      "record": 640,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 641,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 642,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 643,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 644,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 645,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 646,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 647,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 653
+    },
+    {
+      "record": 648,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 649,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 650,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 651,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 652,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 653,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 654,
+      "opcode": 2,
+      "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+      "handler": "0x625f7e",
+      "kind": "frame_return_value"
+    },
+    {
+      "record": 655,
+      "opcode": 13,
+      "source": "",
+      "handler": "0x626275",
+      "kind": "return"
+    },
+    {
+      "record": 656,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 807
+    },
+    {
+      "record": 657,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 658,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint(\"随机技能三\")",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint(\"随机技能三\")"
+    },
+    {
+      "record": 659,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 660,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 661,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 670
+    },
+    {
+      "record": 662,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 663,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 664,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 665,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 666,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 667,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 668,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 669,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 675
+    },
+    {
+      "record": 670,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 671,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 672,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 673,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 674,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 675,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 676,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 677,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 686
+    },
+    {
+      "record": 678,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 679,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 680,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 681,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 682,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 683,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 684,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 685,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 691
+    },
+    {
+      "record": 686,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 687,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 688,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 689,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 690,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 691,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 692,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 693,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 702
+    },
+    {
+      "record": 694,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 695,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 696,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 697,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 698,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 699,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 700,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 701,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 707
+    },
+    {
+      "record": 702,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 703,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 704,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 705,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 706,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 707,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 708,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 709,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 718
+    },
+    {
+      "record": 710,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 711,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 712,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 713,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 714,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 715,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 716,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 717,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 723
+    },
+    {
+      "record": 718,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 719,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 720,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 721,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 722,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 723,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 724,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 725,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 726,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 727,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 728,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 729,
+      "opcode": 27,
+      "source": "〔按G嗎〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "press_g"
+    },
+    {
+      "record": 730,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(1)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[1]",
+      "expression": "value"
+    },
+    {
+      "record": 731,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(1)=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[1]==1"
+    },
+    {
+      "record": 732,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 740
+    },
+    {
+      "record": 733,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 734,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "G"
+    },
+    {
+      "record": 735,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 736,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "G"
+    },
+    {
+      "record": 737,
+      "opcode": 27,
+      "source": "GMS",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "g_seconds"
+    },
+    {
+      "record": 738,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(2)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[2]",
+      "expression": "value"
+    },
+    {
+      "record": 739,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((目前呼叫框架.暫存槽(2)*1000))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(slot[2]*1000)"
+    },
+    {
+      "record": 740,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 741,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 742,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 751
+    },
+    {
+      "record": 743,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 744,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 745,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 746,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 747,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 748,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 749,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 750,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 756
+    },
+    {
+      "record": 751,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 752,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 753,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 754,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 755,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 756,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 757,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 758,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 767
+    },
+    {
+      "record": 759,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 760,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 761,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 762,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 763,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 764,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 765,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 766,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 772
+    },
+    {
+      "record": 767,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 768,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 769,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 770,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 771,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 772,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 773,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 774,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 783
+    },
+    {
+      "record": 775,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 776,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 777,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 778,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 779,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 780,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 781,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 782,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 788
+    },
+    {
+      "record": 783,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 784,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 785,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 786,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 787,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 788,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 789,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 790,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 799
+    },
+    {
+      "record": 791,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 792,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 793,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 794,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 795,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 796,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 797,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 798,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 804
+    },
+    {
+      "record": 799,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 800,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 801,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 802,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 803,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 804,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 805,
+      "opcode": 2,
+      "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+      "handler": "0x625f7e",
+      "kind": "frame_return_value"
+    },
+    {
+      "record": 806,
+      "opcode": 13,
+      "source": "",
+      "handler": "0x626275",
+      "kind": "return"
+    },
+    {
+      "record": 807,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 958
+    },
+    {
+      "record": 808,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 809,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint(\"随机技能四\")",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint(\"随机技能四\")"
+    },
+    {
+      "record": 810,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 811,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 812,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 821
+    },
+    {
+      "record": 813,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 814,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 815,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 816,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 817,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 818,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 819,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 820,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 826
+    },
+    {
+      "record": 821,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 822,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 823,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 824,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"R\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "R"
+    },
+    {
+      "record": 825,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 826,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 827,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 828,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 837
+    },
+    {
+      "record": 829,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 830,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 831,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 832,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 833,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 834,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 835,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 836,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 842
+    },
+    {
+      "record": 837,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 838,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 839,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 840,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"W\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "W"
+    },
+    {
+      "record": 841,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 842,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 843,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 844,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 853
+    },
+    {
+      "record": 845,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 846,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 847,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 848,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 849,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 850,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 851,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 852,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 858
+    },
+    {
+      "record": 853,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 854,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 855,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 856,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"F\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "F"
+    },
+    {
+      "record": 857,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 858,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 859,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 860,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 869
+    },
+    {
+      "record": 861,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 862,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 863,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 864,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 865,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 866,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 867,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 868,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 874
+    },
+    {
+      "record": 869,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 870,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 871,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 872,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"S\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "S"
+    },
+    {
+      "record": 873,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 874,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 875,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 876,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 877,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 878,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 879,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 880,
+      "opcode": 27,
+      "source": "〔按G嗎〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "press_g"
+    },
+    {
+      "record": 881,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(1)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[1]",
+      "expression": "value"
+    },
+    {
+      "record": 882,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(1)=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[1]==1"
+    },
+    {
+      "record": 883,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 891
+    },
+    {
+      "record": 884,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 885,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "G"
+    },
+    {
+      "record": 886,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 887,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "G"
+    },
+    {
+      "record": 888,
+      "opcode": 27,
+      "source": "GMS",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "g_seconds"
+    },
+    {
+      "record": 889,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(2)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[2]",
+      "expression": "value"
+    },
+    {
+      "record": 890,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((目前呼叫框架.暫存槽(2)*1000))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(slot[2]*1000)"
+    },
+    {
+      "record": 891,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 892,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 893,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 902
+    },
+    {
+      "record": 894,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 895,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 896,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 897,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 898,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 899,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 900,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 901,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 907
+    },
+    {
+      "record": 902,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 903,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 904,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 905,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"A\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "A"
+    },
+    {
+      "record": 906,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 907,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 908,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 909,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 918
+    },
+    {
+      "record": 910,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 911,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 912,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 913,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 914,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 915,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 916,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 917,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 923
+    },
+    {
+      "record": 918,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 919,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 920,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 921,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"D\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "D"
+    },
+    {
+      "record": 922,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 923,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 924,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 925,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 934
+    },
+    {
+      "record": 926,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 927,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 928,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 929,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 930,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 931,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 932,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 933,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 939
+    },
+    {
+      "record": 934,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 935,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 936,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 937,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"E\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "E"
+    },
+    {
+      "record": 938,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 939,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 940,
+      "opcode": 4,
+      "source": "Sgn(SJ=0 or SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0 or SJ==1"
+    },
+    {
+      "record": 941,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 950
+    },
+    {
+      "record": 942,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 943,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 944,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 945,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 946,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 947,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 948,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 949,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 955
+    },
+    {
+      "record": 950,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 951,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 952,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 953,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Q\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Q"
+    },
+    {
+      "record": 954,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 955,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 956,
+      "opcode": 2,
+      "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+      "handler": "0x625f7e",
+      "kind": "frame_return_value"
+    },
+    {
+      "record": 957,
+      "opcode": 13,
+      "source": "",
+      "handler": "0x626275",
+      "kind": "return"
+    },
+    {
+      "record": 958,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1053
+    },
+    {
+      "record": 959,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((300))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(300)"
+    },
+    {
+      "record": 960,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"使用Z技能\"))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"使用Z技能\"))"
+    },
+    {
+      "record": 961,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((300))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(300)"
+    },
+    {
+      "record": 962,
+      "opcode": 2,
+      "source": "〔循環了幾次〕=9",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "cycle",
+      "expression": "9"
+    },
+    {
+      "record": 963,
+      "opcode": 4,
+      "source": "Sgn(vbTrue)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "True"
+    },
+    {
+      "record": 964,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1050
+    },
+    {
+      "record": 965,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 966,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 967,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(1)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[1]",
+      "expression": "value"
+    },
+    {
+      "record": 968,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(1)=0)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[1]==0"
+    },
+    {
+      "record": 969,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 975
+    },
+    {
+      "record": 970,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 971,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 972,
+      "opcode": 2,
+      "source": "YC=INT(116*RND+66)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 116,
+      "base": 66
+    },
+    {
+      "record": 973,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 974,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1001
+    },
+    {
+      "record": 975,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 976,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(2)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[2]",
+      "expression": "value"
+    },
+    {
+      "record": 977,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(2)=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[2]==1"
+    },
+    {
+      "record": 978,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 984
+    },
+    {
+      "record": 979,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 980,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 981,
+      "opcode": 2,
+      "source": "YC=INT(220*RND+270)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 220,
+      "base": 270
+    },
+    {
+      "record": 982,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 983,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1001
+    },
+    {
+      "record": 984,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 985,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(3)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[3]",
+      "expression": "value"
+    },
+    {
+      "record": 986,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(3)=2)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[3]==2"
+    },
+    {
+      "record": 987,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 993
+    },
+    {
+      "record": 988,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 989,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 990,
+      "opcode": 2,
+      "source": "YC=INT(600*RND+600)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 600,
+      "base": 600
+    },
+    {
+      "record": 991,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 992,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1001
+    },
+    {
+      "record": 993,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 994,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(4)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[4]",
+      "expression": "value"
+    },
+    {
+      "record": 995,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(4)=3)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[4]==3"
+    },
+    {
+      "record": 996,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1001
+    },
+    {
+      "record": 997,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 998,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 999,
+      "opcode": 2,
+      "source": "YC=INT(1000*RND+1300)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 1000,
+      "base": 1300
+    },
+    {
+      "record": 1000,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1001,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1002,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"使用Z技能延迟\" & YC & \"ms\"))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"使用Z技能延迟\" & YC & \"ms\"))"
+    },
+    {
+      "record": 1003,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1004,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1005,
+      "opcode": 2,
+      "source": "SJ=INT(4*RND+0)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "SJ",
+      "width": 4,
+      "base": 0
+    },
+    {
+      "record": 1006,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1007,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"随机\" & SJ))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"随机\" & SJ))"
+    },
+    {
+      "record": 1008,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((500))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(500)"
+    },
+    {
+      "record": 1009,
+      "opcode": 4,
+      "source": "Sgn(〔循環了幾次〕>=3)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "cycle>=3"
+    },
+    {
+      "record": 1010,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1018
+    },
+    {
+      "record": 1011,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 1012,
+      "opcode": 2,
+      "source": "〔循環了幾次〕=0",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "cycle",
+      "expression": "0"
+    },
+    {
+      "record": 1013,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1014,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Z\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Z"
+    },
+    {
+      "record": 1015,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1016,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Z\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Z"
+    },
+    {
+      "record": 1017,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1018,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1019,
+      "opcode": 4,
+      "source": "Sgn(SJ=0)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0"
+    },
+    {
+      "record": 1020,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1026
+    },
+    {
+      "record": 1021,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1022,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能一〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1023,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 355
+    },
+    {
+      "record": 1024,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(5)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[5]",
+      "expression": "value"
+    },
+    {
+      "record": 1025,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1046
+    },
+    {
+      "record": 1026,
+      "opcode": 4,
+      "source": "Sgn(SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==1"
+    },
+    {
+      "record": 1027,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1033
+    },
+    {
+      "record": 1028,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1029,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能二〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1030,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 506
+    },
+    {
+      "record": 1031,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(6)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[6]",
+      "expression": "value"
+    },
+    {
+      "record": 1032,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1046
+    },
+    {
+      "record": 1033,
+      "opcode": 4,
+      "source": "Sgn(SJ=2)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==2"
+    },
+    {
+      "record": 1034,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1040
+    },
+    {
+      "record": 1035,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1036,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能三〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1037,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 657
+    },
+    {
+      "record": 1038,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(7)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[7]",
+      "expression": "value"
+    },
+    {
+      "record": 1039,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1046
+    },
+    {
+      "record": 1040,
+      "opcode": 4,
+      "source": "Sgn(SJ=3)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==3"
+    },
+    {
+      "record": 1041,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1046
+    },
+    {
+      "record": 1042,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1043,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能四〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1044,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 808
+    },
+    {
+      "record": 1045,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(8)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[8]",
+      "expression": "value"
+    },
+    {
+      "record": 1046,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 1047,
+      "opcode": 2,
+      "source": "〔循環了幾次〕=〔循環了幾次〕+1",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "cycle",
+      "expression": "cycle+1"
+    },
+    {
+      "record": 1048,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1049,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 963
+    },
+    {
+      "record": 1050,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1051,
+      "opcode": 2,
+      "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+      "handler": "0x625f7e",
+      "kind": "frame_return_value"
+    },
+    {
+      "record": 1052,
+      "opcode": 13,
+      "source": "",
+      "handler": "0x626275",
+      "kind": "return"
+    },
+    {
+      "record": 1053,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1135
+    },
+    {
+      "record": 1054,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((300))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(300)"
+    },
+    {
+      "record": 1055,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"不使用Z技能\"))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"不使用Z技能\"))"
+    },
+    {
+      "record": 1056,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((300))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(300)"
+    },
+    {
+      "record": 1057,
+      "opcode": 4,
+      "source": "Sgn(vbTrue)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "True"
+    },
+    {
+      "record": 1058,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1132
+    },
+    {
+      "record": 1059,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 1060,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1061,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(1)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[1]",
+      "expression": "value"
+    },
+    {
+      "record": 1062,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(1)=0)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[1]==0"
+    },
+    {
+      "record": 1063,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1069
+    },
+    {
+      "record": 1064,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1065,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1066,
+      "opcode": 2,
+      "source": "YC=INT(116*RND+66)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 116,
+      "base": 66
+    },
+    {
+      "record": 1067,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1068,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1095
+    },
+    {
+      "record": 1069,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1070,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(2)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[2]",
+      "expression": "value"
+    },
+    {
+      "record": 1071,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(2)=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[2]==1"
+    },
+    {
+      "record": 1072,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1078
+    },
+    {
+      "record": 1073,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1074,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1075,
+      "opcode": 2,
+      "source": "YC=INT(220*RND+270)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 220,
+      "base": 270
+    },
+    {
+      "record": 1076,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1077,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1095
+    },
+    {
+      "record": 1078,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1079,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(3)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[3]",
+      "expression": "value"
+    },
+    {
+      "record": 1080,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(3)=2)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[3]==2"
+    },
+    {
+      "record": 1081,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1087
+    },
+    {
+      "record": 1082,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1083,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1084,
+      "opcode": 2,
+      "source": "YC=INT(400*RND+600)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 400,
+      "base": 600
+    },
+    {
+      "record": 1085,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1086,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1095
+    },
+    {
+      "record": 1087,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1088,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(4)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[4]",
+      "expression": "value"
+    },
+    {
+      "record": 1089,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(4)=3)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[4]==3"
+    },
+    {
+      "record": 1090,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1095
+    },
+    {
+      "record": 1091,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1092,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1093,
+      "opcode": 2,
+      "source": "YC=INT(1000*RND+1300)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 1000,
+      "base": 1300
+    },
+    {
+      "record": 1094,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1095,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1096,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"不使用Z技能延迟\" & YC & \"ms\"))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"不使用Z技能延迟\" & YC & \"ms\"))"
+    },
+    {
+      "record": 1097,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1098,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1099,
+      "opcode": 2,
+      "source": "SJ=INT(4*RND+0)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "SJ",
+      "width": 4,
+      "base": 0
+    },
+    {
+      "record": 1100,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1101,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"随机\" & SJ))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"随机\" & SJ))"
+    },
+    {
+      "record": 1102,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1103,
+      "opcode": 4,
+      "source": "Sgn(SJ=0)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0"
+    },
+    {
+      "record": 1104,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1110
+    },
+    {
+      "record": 1105,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1106,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能一〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1107,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 355
+    },
+    {
+      "record": 1108,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(5)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[5]",
+      "expression": "value"
+    },
+    {
+      "record": 1109,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1130
+    },
+    {
+      "record": 1110,
+      "opcode": 4,
+      "source": "Sgn(SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==1"
+    },
+    {
+      "record": 1111,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1117
+    },
+    {
+      "record": 1112,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1113,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能二〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1114,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 506
+    },
+    {
+      "record": 1115,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(6)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[6]",
+      "expression": "value"
+    },
+    {
+      "record": 1116,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1130
+    },
+    {
+      "record": 1117,
+      "opcode": 4,
+      "source": "Sgn(SJ=2)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==2"
+    },
+    {
+      "record": 1118,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1124
+    },
+    {
+      "record": 1119,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1120,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能三〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1121,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 657
+    },
+    {
+      "record": 1122,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(7)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[7]",
+      "expression": "value"
+    },
+    {
+      "record": 1123,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1130
+    },
+    {
+      "record": 1124,
+      "opcode": 4,
+      "source": "Sgn(SJ=3)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==3"
+    },
+    {
+      "record": 1125,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1130
+    },
+    {
+      "record": 1126,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1127,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能四〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1128,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 808
+    },
+    {
+      "record": 1129,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(8)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[8]",
+      "expression": "value"
+    },
+    {
+      "record": 1130,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 1131,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1057
+    },
+    {
+      "record": 1132,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1133,
+      "opcode": 2,
+      "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+      "handler": "0x625f7e",
+      "kind": "frame_return_value"
+    },
+    {
+      "record": 1134,
+      "opcode": 13,
+      "source": "",
+      "handler": "0x626275",
+      "kind": "return"
+    },
+    {
+      "record": 1135,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1230
+    },
+    {
+      "record": 1136,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((300))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(300)"
+    },
+    {
+      "record": 1137,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"更多Z技能\"))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"更多Z技能\"))"
+    },
+    {
+      "record": 1138,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((300))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(300)"
+    },
+    {
+      "record": 1139,
+      "opcode": 2,
+      "source": "〔循環了幾次〕=9",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "cycle",
+      "expression": "9"
+    },
+    {
+      "record": 1140,
+      "opcode": 4,
+      "source": "Sgn(vbTrue)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "True"
+    },
+    {
+      "record": 1141,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1227
+    },
+    {
+      "record": 1142,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 1143,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1144,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(1)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[1]",
+      "expression": "value"
+    },
+    {
+      "record": 1145,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(1)=0)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[1]==0"
+    },
+    {
+      "record": 1146,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1152
+    },
+    {
+      "record": 1147,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1148,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1149,
+      "opcode": 2,
+      "source": "YC=INT(116*RND+66)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 116,
+      "base": 66
+    },
+    {
+      "record": 1150,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1151,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1178
+    },
+    {
+      "record": 1152,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1153,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(2)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[2]",
+      "expression": "value"
+    },
+    {
+      "record": 1154,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(2)=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[2]==1"
+    },
+    {
+      "record": 1155,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1161
+    },
+    {
+      "record": 1156,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1157,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1158,
+      "opcode": 2,
+      "source": "YC=INT(220*RND+270)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 220,
+      "base": 270
+    },
+    {
+      "record": 1159,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1160,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1178
+    },
+    {
+      "record": 1161,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1162,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(3)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[3]",
+      "expression": "value"
+    },
+    {
+      "record": 1163,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(3)=2)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[3]==2"
+    },
+    {
+      "record": 1164,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1170
+    },
+    {
+      "record": 1165,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1166,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1167,
+      "opcode": 2,
+      "source": "YC=INT(400*RND+600)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 400,
+      "base": 600
+    },
+    {
+      "record": 1168,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1169,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1178
+    },
+    {
+      "record": 1170,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1171,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(4)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[4]",
+      "expression": "value"
+    },
+    {
+      "record": 1172,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(4)=3)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[4]==3"
+    },
+    {
+      "record": 1173,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1178
+    },
+    {
+      "record": 1174,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1175,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1176,
+      "opcode": 2,
+      "source": "YC=INT(1000*RND+1300)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 1000,
+      "base": 1300
+    },
+    {
+      "record": 1177,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1178,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1179,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"更多Z技能延迟\" & YC & \"ms\"))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"更多Z技能延迟\" & YC & \"ms\"))"
+    },
+    {
+      "record": 1180,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1181,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1182,
+      "opcode": 2,
+      "source": "SJ=INT(4*RND+0)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "SJ",
+      "width": 4,
+      "base": 0
+    },
+    {
+      "record": 1183,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1184,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"随机\" & SJ))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"随机\" & SJ))"
+    },
+    {
+      "record": 1185,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((500))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(500)"
+    },
+    {
+      "record": 1186,
+      "opcode": 4,
+      "source": "Sgn(〔循環了幾次〕>=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "cycle>=1"
+    },
+    {
+      "record": 1187,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1195
+    },
+    {
+      "record": 1188,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 1189,
+      "opcode": 2,
+      "source": "〔循環了幾次〕=0",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "cycle",
+      "expression": "0"
+    },
+    {
+      "record": 1190,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1191,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Z\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Z"
+    },
+    {
+      "record": 1192,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1193,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"Z\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "Z"
+    },
+    {
+      "record": 1194,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1195,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1196,
+      "opcode": 4,
+      "source": "Sgn(SJ=0)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0"
+    },
+    {
+      "record": 1197,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1203
+    },
+    {
+      "record": 1198,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1199,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能一〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1200,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 355
+    },
+    {
+      "record": 1201,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(5)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[5]",
+      "expression": "value"
+    },
+    {
+      "record": 1202,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1223
+    },
+    {
+      "record": 1203,
+      "opcode": 4,
+      "source": "Sgn(SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==1"
+    },
+    {
+      "record": 1204,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1210
+    },
+    {
+      "record": 1205,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1206,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能二〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1207,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 506
+    },
+    {
+      "record": 1208,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(6)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[6]",
+      "expression": "value"
+    },
+    {
+      "record": 1209,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1223
+    },
+    {
+      "record": 1210,
+      "opcode": 4,
+      "source": "Sgn(SJ=2)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==2"
+    },
+    {
+      "record": 1211,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1217
+    },
+    {
+      "record": 1212,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1213,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能三〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1214,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 657
+    },
+    {
+      "record": 1215,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(7)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[7]",
+      "expression": "value"
+    },
+    {
+      "record": 1216,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1223
+    },
+    {
+      "record": 1217,
+      "opcode": 4,
+      "source": "Sgn(SJ=3)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==3"
+    },
+    {
+      "record": 1218,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1223
+    },
+    {
+      "record": 1219,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1220,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能四〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1221,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 808
+    },
+    {
+      "record": 1222,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(8)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[8]",
+      "expression": "value"
+    },
+    {
+      "record": 1223,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 1224,
+      "opcode": 2,
+      "source": "〔循環了幾次〕=〔循環了幾次〕+1",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "cycle",
+      "expression": "cycle+1"
+    },
+    {
+      "record": 1225,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1226,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1140
+    },
+    {
+      "record": 1227,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1228,
+      "opcode": 2,
+      "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+      "handler": "0x625f7e",
+      "kind": "frame_return_value"
+    },
+    {
+      "record": 1229,
+      "opcode": 13,
+      "source": "",
+      "handler": "0x626275",
+      "kind": "return"
+    },
+    {
+      "record": 1230,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1325
+    },
+    {
+      "record": 1231,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((300))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(300)"
+    },
+    {
+      "record": 1232,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"使用X技能\"))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"使用X技能\"))"
+    },
+    {
+      "record": 1233,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((300))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(300)"
+    },
+    {
+      "record": 1234,
+      "opcode": 2,
+      "source": "〔循環了幾次〕=9",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "cycle",
+      "expression": "9"
+    },
+    {
+      "record": 1235,
+      "opcode": 4,
+      "source": "Sgn(vbTrue)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "True"
+    },
+    {
+      "record": 1236,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1322
+    },
+    {
+      "record": 1237,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 1238,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1239,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(1)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[1]",
+      "expression": "value"
+    },
+    {
+      "record": 1240,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(1)=0)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[1]==0"
+    },
+    {
+      "record": 1241,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1247
+    },
+    {
+      "record": 1242,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1243,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1244,
+      "opcode": 2,
+      "source": "YC=INT(116*RND+66)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 116,
+      "base": 66
+    },
+    {
+      "record": 1245,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1246,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1273
+    },
+    {
+      "record": 1247,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1248,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(2)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[2]",
+      "expression": "value"
+    },
+    {
+      "record": 1249,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(2)=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[2]==1"
+    },
+    {
+      "record": 1250,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1256
+    },
+    {
+      "record": 1251,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1252,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1253,
+      "opcode": 2,
+      "source": "YC=INT(220*RND+270)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 220,
+      "base": 270
+    },
+    {
+      "record": 1254,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1255,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1273
+    },
+    {
+      "record": 1256,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1257,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(3)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[3]",
+      "expression": "value"
+    },
+    {
+      "record": 1258,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(3)=2)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[3]==2"
+    },
+    {
+      "record": 1259,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1265
+    },
+    {
+      "record": 1260,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1261,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1262,
+      "opcode": 2,
+      "source": "YC=INT(400*RND+600)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 400,
+      "base": 600
+    },
+    {
+      "record": 1263,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1264,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1273
+    },
+    {
+      "record": 1265,
+      "opcode": 27,
+      "source": "〔按鍵快慢〕",
+      "handler": "0x6266f4",
+      "kind": "global",
+      "name": "speed"
+    },
+    {
+      "record": 1266,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(4)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[4]",
+      "expression": "value"
+    },
+    {
+      "record": 1267,
+      "opcode": 4,
+      "source": "Sgn(目前呼叫框架.暫存槽(4)=3)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "slot[4]==3"
+    },
+    {
+      "record": 1268,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1273
+    },
+    {
+      "record": 1269,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1270,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1271,
+      "opcode": 2,
+      "source": "YC=INT(1000*RND+1300)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "YC",
+      "width": 1000,
+      "base": 1300
+    },
+    {
+      "record": 1272,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((50))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(50)"
+    },
+    {
+      "record": 1273,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1274,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"使用X技能延迟\" & YC & \"ms\"))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"使用X技能延迟\" & YC & \"ms\"))"
+    },
+    {
+      "record": 1275,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1276,
+      "opcode": 2,
+      "source": "Randomize",
+      "handler": "0x625f7e",
+      "kind": "randomize",
+      "note": "新執行器每次啟動播種一次；保留分布，不重現 VBScript 的計時種子序列"
+    },
+    {
+      "record": 1277,
+      "opcode": 2,
+      "source": "SJ=INT(4*RND+0)",
+      "handler": "0x625f7e",
+      "kind": "random",
+      "name": "SJ",
+      "width": 4,
+      "base": 0
+    },
+    {
+      "record": 1278,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1279,
+      "opcode": 30,
+      "source": "Call QMLibrary.TracePrint((\"随机\" & SJ))",
+      "handler": "0x625fb0",
+      "kind": "log",
+      "text": "Call QMLibrary.TracePrint((\"随机\" & SJ))"
+    },
+    {
+      "record": 1280,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((500))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(500)"
+    },
+    {
+      "record": 1281,
+      "opcode": 4,
+      "source": "Sgn(〔循環了幾次〕>=3)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "cycle>=3"
+    },
+    {
+      "record": 1282,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1290
+    },
+    {
+      "record": 1283,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 1284,
+      "opcode": 2,
+      "source": "〔循環了幾次〕=0",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "cycle",
+      "expression": "0"
+    },
+    {
+      "record": 1285,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1286,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"X\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "X"
+    },
+    {
+      "record": 1287,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1288,
+      "opcode": 30,
+      "source": "Call QMLibrary.KeyPress(\"X\",g_iSimulateModeInVBSBlock,1)",
+      "handler": "0x625fb0",
+      "kind": "key",
+      "key": "X"
+    },
+    {
+      "record": 1289,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1290,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1291,
+      "opcode": 4,
+      "source": "Sgn(SJ=0)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==0"
+    },
+    {
+      "record": 1292,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1298
+    },
+    {
+      "record": 1293,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1294,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能一〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1295,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 355
+    },
+    {
+      "record": 1296,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(5)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[5]",
+      "expression": "value"
+    },
+    {
+      "record": 1297,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1318
+    },
+    {
+      "record": 1298,
+      "opcode": 4,
+      "source": "Sgn(SJ=1)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==1"
+    },
+    {
+      "record": 1299,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1305
+    },
+    {
+      "record": 1300,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1301,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能二〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1302,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 506
+    },
+    {
+      "record": 1303,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(6)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[6]",
+      "expression": "value"
+    },
+    {
+      "record": 1304,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1318
+    },
+    {
+      "record": 1305,
+      "opcode": 4,
+      "source": "Sgn(SJ=2)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==2"
+    },
+    {
+      "record": 1306,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1312
+    },
+    {
+      "record": 1307,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1308,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能三〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1309,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 657
+    },
+    {
+      "record": 1310,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(7)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[7]",
+      "expression": "value"
+    },
+    {
+      "record": 1311,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1318
+    },
+    {
+      "record": 1312,
+      "opcode": 4,
+      "source": "Sgn(SJ=3)",
+      "handler": "0x626047",
+      "kind": "test",
+      "expression": "SJ==3"
+    },
+    {
+      "record": 1313,
+      "opcode": 6,
+      "source": "",
+      "handler": "0x62611c",
+      "kind": "if_zero",
+      "target": 1318
+    },
+    {
+      "record": 1314,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1315,
+      "opcode": 2,
+      "source": "Set 新呼叫框架=New 框架類別_〔隨機技能四〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架",
+      "handler": "0x625f7e",
+      "kind": "frame_prepare"
+    },
+    {
+      "record": 1316,
+      "opcode": 12,
+      "source": "",
+      "handler": "0x6261f2",
+      "kind": "call",
+      "target": 808
+    },
+    {
+      "record": 1317,
+      "opcode": 2,
+      "source": "目前呼叫框架.暫存槽(8)=傳回值",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "slot[8]",
+      "expression": "value"
+    },
+    {
+      "record": 1318,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((200))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(200)"
+    },
+    {
+      "record": 1319,
+      "opcode": 2,
+      "source": "〔循環了幾次〕=〔循環了幾次〕+1",
+      "handler": "0x625f7e",
+      "kind": "assign",
+      "destination": "cycle",
+      "expression": "cycle+1"
+    },
+    {
+      "record": 1320,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((YC))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(YC)"
+    },
+    {
+      "record": 1321,
+      "opcode": 16,
+      "source": "",
+      "handler": "0x626126",
+      "kind": "jump",
+      "target": 1235
+    },
+    {
+      "record": 1322,
+      "opcode": 30,
+      "source": "Call QMLibrary.Delay((100))",
+      "handler": "0x625fb0",
+      "kind": "delay",
+      "expression": "(100)"
+    },
+    {
+      "record": 1323,
+      "opcode": 2,
+      "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+      "handler": "0x625f7e",
+      "kind": "frame_return_value"
+    },
+    {
+      "record": 1324,
+      "opcode": 13,
+      "source": "",
+      "handler": "0x626275",
+      "kind": "return"
+    }
+  ],
+  "original_engine_reused": false
+}

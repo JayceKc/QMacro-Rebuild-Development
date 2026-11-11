@@ -1,0 +1,142 @@
+{
+  "ok": true,
+  "image_sha256": "a3099a9c7673af72b3899020cd8c6f9c2e944a3cd70e559c8f99362b3d7acecc",
+  "wrapper_va": "0x65e490",
+  "cases": [
+    {
+      "parent_present": false,
+      "restart_argument": 0,
+      "calls": [
+        {
+          "helper": "0x623e20",
+          "selector_vtable": "0x759910",
+          "root_context": "0x71001000",
+          "notification": 0
+        }
+      ]
+    },
+    {
+      "parent_present": false,
+      "restart_argument": 1,
+      "calls": [
+        {
+          "helper": "0x623e20",
+          "selector_vtable": "0x759910",
+          "root_context": "0x71001000",
+          "notification": 0
+        },
+        {
+          "helper": "0x628100",
+          "context": "0x71001000",
+          "entry_argument": 0
+        }
+      ]
+    },
+    {
+      "parent_present": false,
+      "restart_argument": -1,
+      "calls": [
+        {
+          "helper": "0x623e20",
+          "selector_vtable": "0x759910",
+          "root_context": "0x71001000",
+          "notification": 0
+        },
+        {
+          "helper": "0x628100",
+          "context": "0x71001000",
+          "entry_argument": 0
+        }
+      ]
+    },
+    {
+      "parent_present": false,
+      "restart_argument": 65536,
+      "calls": [
+        {
+          "helper": "0x623e20",
+          "selector_vtable": "0x759910",
+          "root_context": "0x71001000",
+          "notification": 0
+        },
+        {
+          "helper": "0x628100",
+          "context": "0x71001000",
+          "entry_argument": 0
+        }
+      ]
+    },
+    {
+      "parent_present": true,
+      "restart_argument": 0,
+      "calls": [
+        {
+          "helper": "0x623e20",
+          "selector_vtable": "0x759910",
+          "root_context": "0x71006000",
+          "notification": 0
+        }
+      ]
+    },
+    {
+      "parent_present": true,
+      "restart_argument": 1,
+      "calls": [
+        {
+          "helper": "0x623e20",
+          "selector_vtable": "0x759910",
+          "root_context": "0x71006000",
+          "notification": 0
+        },
+        {
+          "helper": "0x628100",
+          "context": "0x71001000",
+          "entry_argument": 0
+        }
+      ]
+    },
+    {
+      "parent_present": true,
+      "restart_argument": -1,
+      "calls": [
+        {
+          "helper": "0x623e20",
+          "selector_vtable": "0x759910",
+          "root_context": "0x71006000",
+          "notification": 0
+        },
+        {
+          "helper": "0x628100",
+          "context": "0x71001000",
+          "entry_argument": 0
+        }
+      ]
+    },
+    {
+      "parent_present": true,
+      "restart_argument": 65536,
+      "calls": [
+        {
+          "helper": "0x623e20",
+          "selector_vtable": "0x759910",
+          "root_context": "0x71006000",
+          "notification": 0
+        },
+        {
+          "helper": "0x628100",
+          "context": "0x71001000",
+          "entry_argument": 0
+        }
+      ]
+    }
+  ],
+  "preserved_source_usage": {
+    "Call QMLibrary.ExitScript(0)": 90,
+    "Call QMLibrary.ExitScript(1)": 3
+  },
+  "restart_comparison": "full 32-bit argument nonzero",
+  "system_apis_called": false,
+  "original_process_started": false,
+  "limit": "Helper calls intercepted, not executed. Root-family stop, reinitialization, and native scheduling remain unverified.",
+  "dry_host_policy": "Accept explicit/default zero; reject nonzero with an unresolved lifecycle error."
+}

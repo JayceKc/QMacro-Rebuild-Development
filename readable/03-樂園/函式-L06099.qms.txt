@@ -1,0 +1,229 @@
+# 子程序 — L06099
+# 入口 L06099，RETURN L06324；名稱未對應，以入口命名
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L06099: Call QMLibrary.Delay((100))  # loc=5417 Runner=0x625fb0
+L06100: last_test = Sgn((〔重連〕=1))  # loc=5418 Runner=0x626047
+L06101: if last_test == 0: goto L06222  # loc=5418 Runner=0x62611c
+L06102: Call QMLibrary.Delay((200))  # loc=5419 Runner=0x625fb0
+L06103: DM_RET=DM.FINDPIC(1,1,1919,1079,"C:\users\mymacro\wgqid1.bmp|C:\users\mymacro\wgqid2.bmp|C:\users\mymacro\wgqid3.bmp|C:\users\mymacro\wgqid4.bmp","222222",0.9,0,INTX,INTY)  # loc=5420 Runner=0x625fb0
+L06104: last_test = Sgn((INTX>=0))  # loc=5421 Runner=0x626047
+L06105: if last_test == 0: goto L06156  # loc=5421 Runner=0x62611c
+L06106: Call QMLibrary.Delay((100))  # loc=5422 Runner=0x625fb0
+L06107: Call QMLibrary.TracePrint("play1")  # loc=5423 Runner=0x625fb0
+L06108: CLX=INTX+25  # loc=5424 Runner=0x625f7e
+L06109: CLY=INTY+12  # loc=5425 Runner=0x625f7e
+L06110: Call QMLibrary.Delay((100))  # loc=5426 Runner=0x625fb0
+L06111: Call DM.MOVETO(CLX,CLY)  # loc=5427 Runner=0x625fb0
+L06112: Call QMLibrary.Delay((200))  # loc=5428 Runner=0x625fb0
+L06113: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=5429 Runner=0x625fb0
+L06114: Call QMLibrary.Delay((10000))  # loc=5430 Runner=0x625fb0
+L06115: Call QMLibrary.Delay((10000))  # loc=5431 Runner=0x625fb0
+L06116: Call QMLibrary.Delay((10000))  # loc=5432 Runner=0x625fb0
+L06117: Call QMLibrary.TracePrint(("00:30"))  # loc=5433 Runner=0x625fb0
+L06118: Call QMLibrary.Delay((10000))  # loc=5434 Runner=0x625fb0
+L06119: Call QMLibrary.Delay((10000))  # loc=5435 Runner=0x625fb0
+L06120: Call QMLibrary.Delay((10000))  # loc=5436 Runner=0x625fb0
+L06121: Call QMLibrary.TracePrint(("01:00"))  # loc=5437 Runner=0x625fb0
+L06122: Call QMLibrary.Delay((10000))  # loc=5438 Runner=0x625fb0
+L06123: Call QMLibrary.Delay((10000))  # loc=5439 Runner=0x625fb0
+L06124: Call QMLibrary.Delay((10000))  # loc=5440 Runner=0x625fb0
+L06125: Call QMLibrary.TracePrint(("01:30"))  # loc=5441 Runner=0x625fb0
+L06126: Call QMLibrary.Delay((10000))  # loc=5442 Runner=0x625fb0
+L06127: Call QMLibrary.Delay((10000))  # loc=5443 Runner=0x625fb0
+L06128: Call QMLibrary.Delay((10000))  # loc=5444 Runner=0x625fb0
+L06129: Call QMLibrary.TracePrint(("02:00"))  # loc=5445 Runner=0x625fb0
+L06130: Call QMLibrary.Delay((10000))  # loc=5446 Runner=0x625fb0
+L06131: Call QMLibrary.Delay((10000))  # loc=5447 Runner=0x625fb0
+L06132: Call QMLibrary.Delay((10000))  # loc=5448 Runner=0x625fb0
+L06133: Call QMLibrary.TracePrint(("02:30"))  # loc=5449 Runner=0x625fb0
+L06134: Call QMLibrary.Delay((10000))  # loc=5450 Runner=0x625fb0
+L06135: Call QMLibrary.Delay((10000))  # loc=5451 Runner=0x625fb0
+L06136: Call QMLibrary.Delay((10000))  # loc=5452 Runner=0x625fb0
+L06137: Call QMLibrary.TracePrint(("03:00"))  # loc=5453 Runner=0x625fb0
+L06138: Call QMLibrary.Delay((10000))  # loc=5454 Runner=0x625fb0
+L06139: Call QMLibrary.Delay((10000))  # loc=5455 Runner=0x625fb0
+L06140: Call QMLibrary.Delay((10000))  # loc=5456 Runner=0x625fb0
+L06141: Call QMLibrary.TracePrint(("03:30"))  # loc=5457 Runner=0x625fb0
+L06142: Call QMLibrary.Delay((10000))  # loc=5458 Runner=0x625fb0
+L06143: Call QMLibrary.Delay((10000))  # loc=5459 Runner=0x625fb0
+L06144: Call QMLibrary.Delay((10000))  # loc=5460 Runner=0x625fb0
+L06145: Call QMLibrary.TracePrint(("04:00"))  # loc=5461 Runner=0x625fb0
+L06146: Call QMLibrary.Delay((10000))  # loc=5462 Runner=0x625fb0
+L06147: Call QMLibrary.Delay((10000))  # loc=5463 Runner=0x625fb0
+L06148: Call QMLibrary.Delay((10000))  # loc=5464 Runner=0x625fb0
+L06149: Call QMLibrary.TracePrint(("04:30"))  # loc=5465 Runner=0x625fb0
+L06150: Call QMLibrary.Delay((10000))  # loc=5466 Runner=0x625fb0
+L06151: Call QMLibrary.Delay((10000))  # loc=5467 Runner=0x625fb0
+L06152: Call QMLibrary.Delay((10000))  # loc=5468 Runner=0x625fb0
+L06153: Call QMLibrary.TracePrint(("05:00"))  # loc=5469 Runner=0x625fb0
+L06154: Call QMLibrary.Delay((100))  # loc=5470 Runner=0x625fb0
+L06155: goto L06222  # loc=5471 Runner=0x626126
+L06156: Call QMLibrary.Delay((200))  # loc=5472 Runner=0x625fb0
+L06157: DM_RET=DM.FINDPIC(1234,420,1919,1079,"C:\users\mymacro\wgtb1.bmp|C:\users\mymacro\wgtb2.bmp","222222",0.9,0,INTX,INTY)  # loc=5473 Runner=0x625fb0
+L06158: last_test = Sgn((INTX>=0))  # loc=5474 Runner=0x626047
+L06159: if last_test == 0: goto L06222  # loc=5474 Runner=0x62611c
+L06160: Call QMLibrary.Delay((100))  # loc=5475 Runner=0x625fb0
+L06161: Call QMLibrary.TracePrint("sttb1")  # loc=5476 Runner=0x625fb0
+L06162: CLX=INTX+5  # loc=5477 Runner=0x625f7e
+L06163: CLY=INTY+5  # loc=5478 Runner=0x625f7e
+L06164: Call QMLibrary.Delay((100))  # loc=5479 Runner=0x625fb0
+L06165: Call DM.MOVETO(CLX,CLY)  # loc=5480 Runner=0x625fb0
+L06166: Call QMLibrary.Delay((200))  # loc=5481 Runner=0x625fb0
+L06167: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=5482 Runner=0x625fb0
+L06168: Call QMLibrary.Delay((3000))  # loc=5483 Runner=0x625fb0
+L06169: DM_RET=DM.FINDPIC(1234,420,1919,1079,"C:\users\mymacro\wgark1.bmp|C:\users\mymacro\wgark2.bmp","222222",0.9,0,INTX,INTY)  # loc=5484 Runner=0x625fb0
+L06170: last_test = Sgn((INTX>=0))  # loc=5485 Runner=0x626047
+L06171: if last_test == 0: goto L06221  # loc=5485 Runner=0x62611c
+L06172: Call QMLibrary.Delay((100))  # loc=5486 Runner=0x625fb0
+L06173: Call QMLibrary.TracePrint("lostark1")  # loc=5487 Runner=0x625fb0
+L06174: CLX=INTX+12  # loc=5488 Runner=0x625f7e
+L06175: CLY=INTY+5  # loc=5489 Runner=0x625f7e
+L06176: Call QMLibrary.Delay((100))  # loc=5490 Runner=0x625fb0
+L06177: Call DM.MOVETO(CLX,CLY)  # loc=5491 Runner=0x625fb0
+L06178: Call QMLibrary.Delay((200))  # loc=5492 Runner=0x625fb0
+L06179: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=5493 Runner=0x625fb0
+L06180: Call QMLibrary.Delay((10000))  # loc=5494 Runner=0x625fb0
+L06181: Call QMLibrary.Delay((10000))  # loc=5495 Runner=0x625fb0
+L06182: Call QMLibrary.Delay((10000))  # loc=5496 Runner=0x625fb0
+L06183: Call QMLibrary.TracePrint(("00:30"))  # loc=5497 Runner=0x625fb0
+L06184: Call QMLibrary.Delay((10000))  # loc=5498 Runner=0x625fb0
+L06185: Call QMLibrary.Delay((10000))  # loc=5499 Runner=0x625fb0
+L06186: Call QMLibrary.Delay((10000))  # loc=5500 Runner=0x625fb0
+L06187: Call QMLibrary.TracePrint(("01:00"))  # loc=5501 Runner=0x625fb0
+L06188: Call QMLibrary.Delay((10000))  # loc=5502 Runner=0x625fb0
+L06189: Call QMLibrary.Delay((10000))  # loc=5503 Runner=0x625fb0
+L06190: Call QMLibrary.Delay((10000))  # loc=5504 Runner=0x625fb0
+L06191: Call QMLibrary.TracePrint(("01:30"))  # loc=5505 Runner=0x625fb0
+L06192: Call QMLibrary.Delay((10000))  # loc=5506 Runner=0x625fb0
+L06193: Call QMLibrary.Delay((10000))  # loc=5507 Runner=0x625fb0
+L06194: Call QMLibrary.Delay((10000))  # loc=5508 Runner=0x625fb0
+L06195: Call QMLibrary.TracePrint(("02:00"))  # loc=5509 Runner=0x625fb0
+L06196: Call QMLibrary.Delay((10000))  # loc=5510 Runner=0x625fb0
+L06197: Call QMLibrary.Delay((10000))  # loc=5511 Runner=0x625fb0
+L06198: Call QMLibrary.Delay((10000))  # loc=5512 Runner=0x625fb0
+L06199: Call QMLibrary.TracePrint(("02:30"))  # loc=5513 Runner=0x625fb0
+L06200: Call QMLibrary.Delay((10000))  # loc=5514 Runner=0x625fb0
+L06201: Call QMLibrary.Delay((10000))  # loc=5515 Runner=0x625fb0
+L06202: Call QMLibrary.Delay((10000))  # loc=5516 Runner=0x625fb0
+L06203: Call QMLibrary.TracePrint(("03:00"))  # loc=5517 Runner=0x625fb0
+L06204: Call QMLibrary.Delay((10000))  # loc=5518 Runner=0x625fb0
+L06205: Call QMLibrary.Delay((10000))  # loc=5519 Runner=0x625fb0
+L06206: Call QMLibrary.Delay((10000))  # loc=5520 Runner=0x625fb0
+L06207: Call QMLibrary.TracePrint(("03:30"))  # loc=5521 Runner=0x625fb0
+L06208: Call QMLibrary.Delay((10000))  # loc=5522 Runner=0x625fb0
+L06209: Call QMLibrary.Delay((10000))  # loc=5523 Runner=0x625fb0
+L06210: Call QMLibrary.Delay((10000))  # loc=5524 Runner=0x625fb0
+L06211: Call QMLibrary.TracePrint(("04:00"))  # loc=5525 Runner=0x625fb0
+L06212: Call QMLibrary.Delay((10000))  # loc=5526 Runner=0x625fb0
+L06213: Call QMLibrary.Delay((10000))  # loc=5527 Runner=0x625fb0
+L06214: Call QMLibrary.Delay((10000))  # loc=5528 Runner=0x625fb0
+L06215: Call QMLibrary.TracePrint(("04:30"))  # loc=5529 Runner=0x625fb0
+L06216: Call QMLibrary.Delay((10000))  # loc=5530 Runner=0x625fb0
+L06217: Call QMLibrary.Delay((10000))  # loc=5531 Runner=0x625fb0
+L06218: Call QMLibrary.Delay((10000))  # loc=5532 Runner=0x625fb0
+L06219: Call QMLibrary.TracePrint(("05:00"))  # loc=5533 Runner=0x625fb0
+L06220: Call QMLibrary.Delay((100))  # loc=5534 Runner=0x625fb0
+L06221: Call QMLibrary.Delay((200))  # loc=5536 Runner=0x625fb0
+L06222: Call QMLibrary.Delay((200))  # loc=5540 Runner=0x625fb0
+L06223: Call QMLibrary.Delay((50))  # loc=5541 Runner=0x625fb0
+L06224: Randomize  # loc=5542 Runner=0x625f7e
+L06225: YDX=INT(5*RND+35)  # loc=5543 Runner=0x625f7e
+L06226: Randomize  # loc=5544 Runner=0x625f7e
+L06227: YDY=INT(10*RND+10)  # loc=5545 Runner=0x625f7e
+L06228: Call QMLibrary.Delay((50))  # loc=5546 Runner=0x625fb0
+L06229: Call DM.MOVETO(YDX,YDY)  # loc=5547 Runner=0x625fb0
+L06230: Call QMLibrary.Delay((300))  # loc=5548 Runner=0x625fb0
+L06231: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=5549 Runner=0x625fb0
+L06232: Call QMLibrary.Delay((1000))  # loc=5550 Runner=0x625fb0
+L06233: Call QMLibrary.Delay((100))  # loc=5551 Runner=0x625fb0
+L06234: Call DM.MOVETO(958,975)  # loc=5552 Runner=0x625fb0
+L06235: Call QMLibrary.Delay((500))  # loc=5553 Runner=0x625fb0
+L06236: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=5554 Runner=0x625fb0
+L06237: Call QMLibrary.Delay((1000))  # loc=5555 Runner=0x625fb0
+L06238: last_test = Sgn((〔重連〕=1))  # loc=5556 Runner=0x626047
+L06239: if last_test == 0: goto L06321  # loc=5556 Runner=0x62611c
+L06240: Call QMLibrary.Delay((2000))  # loc=5557 Runner=0x625fb0
+L06241: DM_RET=DM.FINDCOLOR(781,154,786,162,"FFFFFF-050505|FAFAFD-050505|FAFBFD-050505|F7FAFD-050505",1,0,INTX,INTY)  # loc=5558 Runner=0x625fb0
+L06242: last_test = Sgn((INTX>=0))  # loc=5559 Runner=0x626047
+L06243: if last_test == 0: goto L06320  # loc=5559 Runner=0x62611c
+L06244: Call QMLibrary.Delay((100))  # loc=5560 Runner=0x625fb0
+L06245: DM_RET=DM.FINDCOLOR(869,130,874,140,"FFFFFF-050505|FAFAFD-050505|FAFBFD-050505|F7FAFD-050505",1,0,INTX,INTY)  # loc=5561 Runner=0x625fb0
+L06246: last_test = Sgn((INTX>=0))  # loc=5562 Runner=0x626047
+L06247: if last_test == 0: goto L06320  # loc=5562 Runner=0x62611c
+L06248: Call QMLibrary.Delay((100))  # loc=5563 Runner=0x625fb0
+L06249: DM_RET=DM.FINDCOLOR(1014,124,1019,129,"FFFFFF-050505|FAFAFD-050505|FAFBFD-050505|F7FAFD-050505",1,0,INTX,INTY)  # loc=5564 Runner=0x625fb0
+L06250: last_test = Sgn((INTX>=0))  # loc=5565 Runner=0x626047
+L06251: if last_test == 0: goto L06320  # loc=5565 Runner=0x62611c
+L06252: Call QMLibrary.Delay((100))  # loc=5566 Runner=0x625fb0
+L06253: DM_RET=DM.FINDCOLOR(1191,119,1195,124,"FFFFFF-050505|FAFAFD-050505|FAFBFD-050505|F7FAFD-050505",1,0,INTX,INTY)  # loc=5567 Runner=0x625fb0
+L06254: last_test = Sgn((INTX>=0))  # loc=5568 Runner=0x626047
+L06255: if last_test == 0: goto L06320  # loc=5568 Runner=0x62611c
+L06256: Call QMLibrary.Delay((100))  # loc=5569 Runner=0x625fb0
+L06257: DM_RET=DM.FINDCOLOR(748,584,1217,610,"FFFFFF-050505",0.9,0,INTX,INTY)  # loc=5570 Runner=0x625fb0
+L06258: last_test = Sgn((INTX>=0))  # loc=5571 Runner=0x626047
+L06259: if last_test == 0: goto L06320  # loc=5571 Runner=0x62611c
+L06260: Call QMLibrary.Delay((100))  # loc=5572 Runner=0x625fb0
+L06261: Call QMLibrary.Delay((50))  # loc=5573 Runner=0x625fb0
+L06262: Randomize  # loc=5574 Runner=0x625f7e
+L06263: YDX=INT(5*RND+35)  # loc=5575 Runner=0x625f7e
+L06264: Randomize  # loc=5576 Runner=0x625f7e
+L06265: YDY=INT(10*RND+10)  # loc=5577 Runner=0x625f7e
+L06266: Call QMLibrary.Delay((50))  # loc=5578 Runner=0x625fb0
+L06267: Call DM.MOVETO(YDX,YDY)  # loc=5579 Runner=0x625fb0
+L06268: Call QMLibrary.Delay((2000))  # loc=5580 Runner=0x625fb0
+L06269: DM_RET=DM.FINDCOLOR(887,907,1021,939,"2F3A46-050505|2E3944-050505|29343F-050505|26313B-050505|27323C-050505",0.9,0,INTX,INTY)  # loc=5581 Runner=0x625fb0
+L06270: last_test = Sgn((INTX>=0))  # loc=5582 Runner=0x626047
+L06271: if last_test == 0: goto L06320  # loc=5582 Runner=0x62611c
+L06272: Call QMLibrary.Delay((100))  # loc=5583 Runner=0x625fb0
+L06273: Call DM.MOVETO(953,919)  # loc=5584 Runner=0x625fb0
+L06274: Call QMLibrary.Delay((1000))  # loc=5585 Runner=0x625fb0
+L06275: DM_RET=DM.FINDCOLOR(887,907,1021,939,"3A4D5E-050505|394C5D-050505|324354-050505|364758-050505|3C4F61-050505",0.9,0,INTX,INTY)  # loc=5586 Runner=0x625fb0
+L06276: last_test = Sgn((INTX>=0))  # loc=5587 Runner=0x626047
+L06277: if last_test == 0: goto L06320  # loc=5587 Runner=0x62611c
+L06278: Call QMLibrary.Delay((100))  # loc=5588 Runner=0x625fb0
+L06279: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=5589 Runner=0x625fb0
+L06280: Call QMLibrary.Delay((700))  # loc=5590 Runner=0x625fb0
+L06281: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=5591 Runner=0x625fb0
+L06282: Call QMLibrary.Delay((2000))  # loc=5592 Runner=0x625fb0
+L06283: Call QMLibrary.Delay((50))  # loc=5593 Runner=0x625fb0
+L06284: Randomize  # loc=5594 Runner=0x625f7e
+L06285: YDX=INT(5*RND+35)  # loc=5595 Runner=0x625f7e
+L06286: Randomize  # loc=5596 Runner=0x625f7e
+L06287: YDY=INT(10*RND+10)  # loc=5597 Runner=0x625f7e
+L06288: Call QMLibrary.Delay((50))  # loc=5598 Runner=0x625fb0
+L06289: Call DM.MOVETO(YDX,YDY)  # loc=5599 Runner=0x625fb0
+L06290: Call QMLibrary.Delay((5000))  # loc=5600 Runner=0x625fb0
+L06291: last_test = Sgn(vbTrue)  # loc=5601 Runner=0x626047
+L06292: if last_test == 0: goto L06320  # loc=5601 Runner=0x62611c
+L06293: Call QMLibrary.Delay((500))  # loc=5602 Runner=0x625fb0
+L06294: Call QMLibrary.Delay((50))  # loc=5603 Runner=0x625fb0
+L06295: Randomize  # loc=5604 Runner=0x625f7e
+L06296: YDX=INT(5*RND+35)  # loc=5605 Runner=0x625f7e
+L06297: Randomize  # loc=5606 Runner=0x625f7e
+L06298: YDY=INT(10*RND+10)  # loc=5607 Runner=0x625f7e
+L06299: Call QMLibrary.Delay((50))  # loc=5608 Runner=0x625fb0
+L06300: Call DM.MOVETO(YDX,YDY)  # loc=5609 Runner=0x625fb0
+L06301: Call QMLibrary.Delay((500))  # loc=5610 Runner=0x625fb0
+L06302: DM_RET=DM.FINDCOLOR(756,994,940,1028,"2F3A46-050505|2E3944-050505|29343F-050505|26313B-050505|27323C-050505",0.9,0,INTX,INTY)  # loc=5611 Runner=0x625fb0
+L06303: last_test = Sgn((INTX>=0))  # loc=5612 Runner=0x626047
+L06304: if last_test == 0: goto L06319  # loc=5612 Runner=0x62611c
+L06305: Call QMLibrary.Delay((100))  # loc=5613 Runner=0x625fb0
+L06306: Call DM.MOVETO(852,1012)  # loc=5614 Runner=0x625fb0
+L06307: Call QMLibrary.Delay((1000))  # loc=5615 Runner=0x625fb0
+L06308: DM_RET=DM.FINDCOLOR(756,994,940,1028,"3A4D5E-050505|394C5D-050505|324354-050505|364758-050505|3C4F61-050505",0.9,0,INTX,INTY)  # loc=5616 Runner=0x625fb0
+L06309: last_test = Sgn((INTX>=0))  # loc=5617 Runner=0x626047
+L06310: if last_test == 0: goto L06319  # loc=5617 Runner=0x62611c
+L06311: Call QMLibrary.Delay((100))  # loc=5618 Runner=0x625fb0
+L06312: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=5619 Runner=0x625fb0
+L06313: Call QMLibrary.Delay((700))  # loc=5620 Runner=0x625fb0
+L06314: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=5621 Runner=0x625fb0
+L06315: Call QMLibrary.Delay((100))  # loc=5622 Runner=0x625fb0
+L06316: Call QMLibrary.TracePrint("重连成功")  # loc=5623 Runner=0x625fb0
+L06317: Call QMLibrary.Delay((15000))  # loc=5624 Runner=0x625fb0
+L06318: goto L06320  # loc=5625 Runner=0x626126
+L06319: goto L06291  # loc=5626 Runner=0x626126
+L06320: goto L06322  # loc=5627 Runner=0x626126
+L06321: Call QMLibrary.Delay((100))  # loc=5637 Runner=0x625fb0
+L06322: Call QMLibrary.Delay((100))  # loc=5639 Runner=0x625fb0
+L06323: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=5640 Runner=0x625f7e
+L06324: return caller  # loc=5640 Runner=0x626275

@@ -1,0 +1,28 @@
+# 子程序 — L00890
+# 入口 L00890，RETURN L00914；名稱未對應，以入口命名
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L00890: Call QMLibrary.Delay((100))  # loc=831 Runner=0x625fb0
+L00891: SET DM=CREATEOBJECT("dm.dmsoft")  # loc=832 Runner=0x625f7e
+L00892: Call DM.SETSHOWERRORMSG(0)  # loc=833 Runner=0x625fb0
+L00893: Call QMLibrary.Delay(100)  # loc=834 Runner=0x625fb0
+L00894: last_test = Sgn(vbTrue)  # loc=835 Runner=0x626047
+L00895: if last_test == 0: goto L00913  # loc=835 Runner=0x62611c
+L00896: Call QMLibrary.Delay(500)  # loc=836 Runner=0x625fb0
+L00897: 傳回值 = global.get(〔天選〕)  # loc=837 Runner=0x6266f4
+L00898: 目前呼叫框架.暫存槽(1)=傳回值  # loc=837 Runner=0x625fb0
+L00899: DM_RET=DM.FINDCOLOR(160,1,260,25,目前呼叫框架.暫存槽(1) & "-151515",0.9,0,INTX,INTY)  # loc=837 Runner=0x625f7e
+L00900: last_test = Sgn((INTX>0))  # loc=838 Runner=0x626047
+L00901: if last_test == 0: goto L00912  # loc=838 Runner=0x62611c
+L00902: Call QMLibrary.Delay((50))  # loc=839 Runner=0x625fb0
+L00903: DM_RET=DM.FINDPIC(938,606,983,652,"C:\users\mymacro\kuangG1.bmp|C:\users\mymacro\kuangG2.bmp|C:\users\mymacro\kuangG3.bmp|C:\users\mymacro\kuangG4.bmp","151515",0.8,0,INTX,INTY)  # loc=840 Runner=0x625fb0
+L00904: last_test = Sgn((INTX>=0))  # loc=841 Runner=0x626047
+L00905: if last_test == 0: goto L00912  # loc=841 Runner=0x62611c
+L00906: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=842 Runner=0x625fb0
+L00907: Call QMLibrary.Delay(50)  # loc=843 Runner=0x625fb0
+L00908: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=844 Runner=0x625fb0
+L00909: Call QMLibrary.Delay(70)  # loc=845 Runner=0x625fb0
+L00910: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=846 Runner=0x625fb0
+L00911: Call QMLibrary.Delay(100)  # loc=847 Runner=0x625fb0
+L00912: goto L00894  # loc=848 Runner=0x626126
+L00913: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=849 Runner=0x625f7e
+L00914: return caller  # loc=850 Runner=0x626275

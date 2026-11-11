@@ -1,0 +1,1 @@
+public static class CallbackProgramDigests { public const string Module06="a45f0fafe45984a5260712ab56d7fa85af9f0523f00743ff1905ce3547123cfa"; public const string Module10="5735d6f1f999787e42481a1bc9a6756976a5b18ff836a22e444413001f2f0b8f"; }

@@ -1,0 +1,51 @@
+# 停止打怪 — L01691
+# 入口 L01691，RETURN L01738；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L01691: Call QMLibrary.Delay((50))  # loc=1269 Runner=0x625fb0
+L01692: 傳回值 = global.get(〔層數〕)  # loc=1270 Runner=0x6266f4
+L01693: 目前呼叫框架.暫存槽(1)=傳回值  # loc=1270 Runner=0x625f7e
+L01694: last_test = Sgn(目前呼叫框架.暫存槽(1)>2)  # loc=1270 Runner=0x626047
+L01695: if last_test == 0: goto L01701  # loc=1270 Runner=0x62611c
+L01696: Call QMLibrary.Delay((50))  # loc=1271 Runner=0x625fb0
+L01697: 傳回值 = global.get(〔找塔圖ID〕)  # loc=1272 Runner=0x6266f4
+L01698: 目前呼叫框架.暫存槽(2)=傳回值  # loc=1272 Runner=0x625f7e
+L01699: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(2), 0)  # loc=1272 Runner=0x625fb0
+L01700: Call QMLibrary.Delay((100))  # loc=1273 Runner=0x625fb0
+L01701: Call QMLibrary.Delay((50))  # loc=1275 Runner=0x625fb0
+L01702: 傳回值 = global.get(〔找到紫門〕)  # loc=1276 Runner=0x6266f4
+L01703: 目前呼叫框架.暫存槽(1)=傳回值  # loc=1276 Runner=0x625f7e
+L01704: last_test = Sgn((目前呼叫框架.暫存槽(1)=1))  # loc=1276 Runner=0x626047
+L01705: if last_test == 0: goto L01710  # loc=1276 Runner=0x62611c
+L01706: Call QMLibrary.Delay((50))  # loc=1277 Runner=0x625fb0
+L01707: 傳回值 = global.get(〔紫門打完撿東西ID〕)  # loc=1278 Runner=0x6266f4
+L01708: 目前呼叫框架.暫存槽(2)=傳回值  # loc=1278 Runner=0x625f7e
+L01709: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(2), 0)  # loc=1278 Runner=0x625fb0
+L01710: Call QMLibrary.Delay((100))  # loc=1280 Runner=0x625fb0
+L01711: 傳回值 = global.get(〔吃藥ID〕)  # loc=1281 Runner=0x6266f4
+L01712: 目前呼叫框架.暫存槽(1)=傳回值  # loc=1281 Runner=0x625f7e
+L01713: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=1281 Runner=0x625fb0
+L01714: Call QMLibrary.Delay((50))  # loc=1282 Runner=0x625fb0
+L01715: 傳回值 = global.get(〔吃百分比藥ID〕)  # loc=1283 Runner=0x6266f4
+L01716: 目前呼叫框架.暫存槽(1)=傳回值  # loc=1283 Runner=0x625f7e
+L01717: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=1283 Runner=0x625fb0
+L01718: Call QMLibrary.Delay((50))  # loc=1284 Runner=0x625fb0
+L01719: 傳回值 = global.get(〔找怪ID〕)  # loc=1285 Runner=0x6266f4
+L01720: 目前呼叫框架.暫存槽(1)=傳回值  # loc=1285 Runner=0x625f7e
+L01721: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=1285 Runner=0x625fb0
+L01722: Call QMLibrary.Delay((50))  # loc=1286 Runner=0x625fb0
+L01723: 傳回值 = global.get(〔放技能ID〕)  # loc=1287 Runner=0x6266f4
+L01724: 目前呼叫框架.暫存槽(1)=傳回值  # loc=1287 Runner=0x625f7e
+L01725: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=1287 Runner=0x625fb0
+L01726: Call QMLibrary.Delay((50))  # loc=1288 Runner=0x625fb0
+L01727: 傳回值 = global.get(〔按GID〕)  # loc=1289 Runner=0x6266f4
+L01728: 目前呼叫框架.暫存槽(1)=傳回值  # loc=1289 Runner=0x625f7e
+L01729: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=1289 Runner=0x625fb0
+L01730: Call QMLibrary.Delay((50))  # loc=1290 Runner=0x625fb0
+L01731: 傳回值 = global.get(〔監控死亡ID〕)  # loc=1291 Runner=0x6266f4
+L01732: 目前呼叫框架.暫存槽(1)=傳回值  # loc=1291 Runner=0x625f7e
+L01733: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=1291 Runner=0x625fb0
+L01734: Call QMLibrary.Delay((200))  # loc=1292 Runner=0x625fb0
+L01735: Call QMLibrary.TracePrint(("打怪线程已全部关闭"))  # loc=1293 Runner=0x625fb0
+L01736: Call QMLibrary.Delay((100))  # loc=1294 Runner=0x625fb0
+L01737: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=1295 Runner=0x625f7e
+L01738: return caller  # loc=1295 Runner=0x626275

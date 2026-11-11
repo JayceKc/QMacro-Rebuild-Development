@@ -1,0 +1,22 @@
+# 找怪 — L00117
+# 入口 L00117，RETURN L00135；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L00117: Call QMLibrary.Delay((200))  # loc=119 Runner=0x625fb0
+L00118: SET DM=CREATEOBJECT("dm.dmsoft")  # loc=120 Runner=0x625f7e
+L00119: Call DM.SETSHOWERRORMSG(0)  # loc=121 Runner=0x625fb0
+L00120: Call QMLibrary.Delay((200))  # loc=122 Runner=0x625fb0
+L00121: last_test = Sgn(vbTrue)  # loc=123 Runner=0x626047
+L00122: if last_test == 0: goto L00133  # loc=123 Runner=0x62611c
+L00123: Call QMLibrary.Delay((500))  # loc=124 Runner=0x625fb0
+L00124: DM_RET=DM.FINDPIC(316,110,1530,840,"C:\users\mymacro\xuetiao1.bmp|C:\users\mymacro\xuetiao2.bmp|C:\users\mymacro\xuetiao5.bmp","151515",0.9,2,INTX,INTY)  # loc=125 Runner=0x625fb0
+L00125: last_test = Sgn((INTX>=0))  # loc=126 Runner=0x626047
+L00126: if last_test == 0: goto L00132  # loc=126 Runner=0x62611c
+L00127: Call QMLibrary.Delay((50))  # loc=127 Runner=0x625fb0
+L00128: INTY=INTY+70  # loc=128 Runner=0x625f7e
+L00129: Call QMLibrary.Delay((50))  # loc=129 Runner=0x625fb0
+L00130: Call QMLibrary.MouseMove(INTX,INTY,g_iSimulateModeInVBSBlock,0)  # loc=130 Runner=0x625fb0
+L00131: Call QMLibrary.Delay((100))  # loc=131 Runner=0x625fb0
+L00132: goto L00121  # loc=132 Runner=0x626126
+L00133: Call QMLibrary.Delay((100))  # loc=134 Runner=0x625fb0
+L00134: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=135 Runner=0x625f7e
+L00135: return caller  # loc=135 Runner=0x626275

@@ -1,0 +1,342 @@
+{
+  "module": 10,
+  "name": "10-自動按技能",
+  "bindings": [
+    {
+      "property": "Form1.ComboBox1.ListIndex",
+      "sl": 44,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "direct_local_dataflow",
+      "destination": "〔吃藥〕",
+      "sources": [
+        44,
+        45,
+        46
+      ],
+      "expression": "〔吃藥〕=〔索引〕(暫存槽(1))",
+      "index_array": {
+        "sl": 42,
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "source_strings": [
+        {
+          "sl": 44,
+          "readable": "Form1.ComboBox1.ListIndex"
+        },
+        {
+          "sl": 45,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 46,
+          "readable": "〔吃藥〕=〔索引〕(暫存槽(1))"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.ComboBox2.ListIndex",
+      "sl": 48,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "direct_local_dataflow",
+      "destination": "〔技能釋放〕",
+      "sources": [
+        48,
+        49,
+        50
+      ],
+      "expression": "〔技能釋放〕=〔索引〕(暫存槽(1))",
+      "index_array": {
+        "sl": 42,
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "source_strings": [
+        {
+          "sl": 48,
+          "readable": "Form1.ComboBox2.ListIndex"
+        },
+        {
+          "sl": 49,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 50,
+          "readable": "〔技能釋放〕=〔索引〕(暫存槽(1))"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.ComboBox3.ListIndex",
+      "sl": 52,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "direct_shared_dataflow",
+      "destination": "〔按鍵快慢〕",
+      "sources": [
+        52,
+        53,
+        56,
+        54,
+        55
+      ],
+      "expression": "暫存槽(2)=〔索引〕(暫存槽(1))",
+      "source_strings": [
+        {
+          "sl": 52,
+          "readable": "Form1.ComboBox3.ListIndex"
+        },
+        {
+          "sl": 53,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 56,
+          "readable": "暫存槽(2)=〔索引〕(暫存槽(1))"
+        },
+        {
+          "sl": 54,
+          "readable": "傳回值=暫存槽(2)"
+        },
+        {
+          "sl": 55,
+          "readable": "〔按鍵快慢〕"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.InputBox1.Text",
+      "sl": 63,
+      "control_exists": true,
+      "surviving_records": [
+        {
+          "record": 67,
+          "op": 37
+        }
+      ],
+      "classification": "unresolved",
+      "destination": null,
+      "sources": [
+        63,
+        64
+      ],
+      "source_strings": [
+        {
+          "sl": 63,
+          "readable": "Form1.InputBox1.Text"
+        },
+        {
+          "sl": 64,
+          "readable": "目前呼叫框架.暫存槽(1)=傳回值"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.InputBox1.Text",
+      "sl": 66,
+      "control_exists": true,
+      "surviving_records": [
+        {
+          "record": 71,
+          "op": 38
+        }
+      ],
+      "classification": "surviving_ui_write",
+      "destination": null,
+      "sources": [
+        66
+      ],
+      "source_strings": [
+        {
+          "sl": 66,
+          "readable": "Form1.InputBox1.Text"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.InputBox1.Text",
+      "sl": 69,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "direct_shared_dataflow",
+      "destination": "GMS",
+      "sources": [
+        69,
+        70,
+        73,
+        71,
+        72
+      ],
+      "expression": "暫存槽(2)=暫存槽(1)",
+      "source_strings": [
+        {
+          "sl": 69,
+          "readable": "Form1.InputBox1.Text"
+        },
+        {
+          "sl": 70,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 73,
+          "readable": "暫存槽(2)=暫存槽(1)"
+        },
+        {
+          "sl": 71,
+          "readable": "傳回值=暫存槽(2)"
+        },
+        {
+          "sl": 72,
+          "readable": "GMS"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.CheckBox4.Value",
+      "sl": 75,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "conditional_read",
+      "destination": null,
+      "sources": [
+        75,
+        76,
+        77
+      ],
+      "condition": "Sgn(暫存槽(1)=1)",
+      "source_strings": [
+        {
+          "sl": 75,
+          "readable": "Form1.CheckBox4.Value"
+        },
+        {
+          "sl": 76,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 77,
+          "readable": "Sgn(暫存槽(1)=1)"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.CheckBox1.Value",
+      "sl": 136,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "conditional_read",
+      "destination": null,
+      "sources": [
+        136,
+        137,
+        138
+      ],
+      "condition": "Sgn(暫存槽(1)=1)",
+      "source_strings": [
+        {
+          "sl": 136,
+          "readable": "Form1.CheckBox1.Value"
+        },
+        {
+          "sl": 137,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 138,
+          "readable": "Sgn(暫存槽(1)=1)"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.CheckBox2.Value",
+      "sl": 146,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "conditional_read",
+      "destination": null,
+      "sources": [
+        146,
+        147,
+        148
+      ],
+      "condition": "Sgn(暫存槽(1)=1)",
+      "source_strings": [
+        {
+          "sl": 146,
+          "readable": "Form1.CheckBox2.Value"
+        },
+        {
+          "sl": 147,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 148,
+          "readable": "Sgn(暫存槽(1)=1)"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.CheckBox3.Value",
+      "sl": 156,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "conditional_read",
+      "destination": null,
+      "sources": [
+        156,
+        157,
+        158
+      ],
+      "condition": "Sgn(暫存槽(1)=1)",
+      "source_strings": [
+        {
+          "sl": 156,
+          "readable": "Form1.CheckBox3.Value"
+        },
+        {
+          "sl": 157,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 158,
+          "readable": "Sgn(暫存槽(1)=1)"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    }
+  ],
+  "branch_operands_recovered": false
+}

@@ -1,0 +1,143 @@
+# 隨機技能二 — L01107
+# 入口 L01107，RETURN L01246；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L01107: Call QMLibrary.Delay((100))  # loc=910 Runner=0x625fb0
+L01108: Call QMLibrary.KeyPress("T",g_iSimulateModeInVBSBlock,1)  # loc=911 Runner=0x625fb0
+L01109: Call QMLibrary.Delay((YC))  # loc=912 Runner=0x625fb0
+L01110: Call QMLibrary.KeyPress("T",g_iSimulateModeInVBSBlock,1)  # loc=913 Runner=0x625fb0
+L01111: Call QMLibrary.Delay((YC))  # loc=914 Runner=0x625fb0
+L01112: Call QMLibrary.TracePrint("随机技能二")  # loc=915 Runner=0x625fb0
+L01113: Call QMLibrary.Delay((YC))  # loc=917 Runner=0x625fb0
+L01114: last_test = Sgn(SJ=0 or SJ=1)  # loc=918 Runner=0x626047
+L01115: if last_test == 0: goto L01124  # loc=918 Runner=0x62611c
+L01116: Call QMLibrary.Delay((YC))  # loc=919 Runner=0x625fb0
+L01117: Call QMLibrary.KeyPress("S",g_iSimulateModeInVBSBlock,1)  # loc=920 Runner=0x625fb0
+L01118: Call QMLibrary.Delay((YC))  # loc=921 Runner=0x625fb0
+L01119: Call QMLibrary.KeyPress("S",g_iSimulateModeInVBSBlock,1)  # loc=922 Runner=0x625fb0
+L01120: Call QMLibrary.Delay((YC))  # loc=923 Runner=0x625fb0
+L01121: Call QMLibrary.KeyPress("S",g_iSimulateModeInVBSBlock,1)  # loc=924 Runner=0x625fb0
+L01122: Call QMLibrary.Delay((YC))  # loc=925 Runner=0x625fb0
+L01123: goto L01129  # loc=926 Runner=0x626126
+L01124: Call QMLibrary.Delay((YC))  # loc=927 Runner=0x625fb0
+L01125: Call QMLibrary.KeyPress("S",g_iSimulateModeInVBSBlock,1)  # loc=928 Runner=0x625fb0
+L01126: Call QMLibrary.Delay((YC))  # loc=929 Runner=0x625fb0
+L01127: Call QMLibrary.KeyPress("S",g_iSimulateModeInVBSBlock,1)  # loc=930 Runner=0x625fb0
+L01128: Call QMLibrary.Delay((YC))  # loc=931 Runner=0x625fb0
+L01129: Call QMLibrary.Delay((YC))  # loc=934 Runner=0x625fb0
+L01130: last_test = Sgn(SJ=0 or SJ=1)  # loc=935 Runner=0x626047
+L01131: if last_test == 0: goto L01140  # loc=935 Runner=0x62611c
+L01132: Call QMLibrary.Delay((YC))  # loc=936 Runner=0x625fb0
+L01133: Call QMLibrary.KeyPress("F",g_iSimulateModeInVBSBlock,1)  # loc=937 Runner=0x625fb0
+L01134: Call QMLibrary.Delay((YC))  # loc=938 Runner=0x625fb0
+L01135: Call QMLibrary.KeyPress("F",g_iSimulateModeInVBSBlock,1)  # loc=939 Runner=0x625fb0
+L01136: Call QMLibrary.Delay((YC))  # loc=940 Runner=0x625fb0
+L01137: Call QMLibrary.KeyPress("F",g_iSimulateModeInVBSBlock,1)  # loc=941 Runner=0x625fb0
+L01138: Call QMLibrary.Delay((YC))  # loc=942 Runner=0x625fb0
+L01139: goto L01145  # loc=943 Runner=0x626126
+L01140: Call QMLibrary.Delay((YC))  # loc=944 Runner=0x625fb0
+L01141: Call QMLibrary.KeyPress("F",g_iSimulateModeInVBSBlock,1)  # loc=945 Runner=0x625fb0
+L01142: Call QMLibrary.Delay((YC))  # loc=946 Runner=0x625fb0
+L01143: Call QMLibrary.KeyPress("F",g_iSimulateModeInVBSBlock,1)  # loc=947 Runner=0x625fb0
+L01144: Call QMLibrary.Delay((YC))  # loc=948 Runner=0x625fb0
+L01145: Call QMLibrary.Delay((YC))  # loc=951 Runner=0x625fb0
+L01146: last_test = Sgn(SJ=0 or SJ=1)  # loc=952 Runner=0x626047
+L01147: if last_test == 0: goto L01156  # loc=952 Runner=0x62611c
+L01148: Call QMLibrary.Delay((YC))  # loc=953 Runner=0x625fb0
+L01149: Call QMLibrary.KeyPress("Q",g_iSimulateModeInVBSBlock,1)  # loc=954 Runner=0x625fb0
+L01150: Call QMLibrary.Delay((YC))  # loc=955 Runner=0x625fb0
+L01151: Call QMLibrary.KeyPress("Q",g_iSimulateModeInVBSBlock,1)  # loc=956 Runner=0x625fb0
+L01152: Call QMLibrary.Delay((YC))  # loc=957 Runner=0x625fb0
+L01153: Call QMLibrary.KeyPress("Q",g_iSimulateModeInVBSBlock,1)  # loc=958 Runner=0x625fb0
+L01154: Call QMLibrary.Delay((YC))  # loc=959 Runner=0x625fb0
+L01155: goto L01161  # loc=960 Runner=0x626126
+L01156: Call QMLibrary.Delay((YC))  # loc=961 Runner=0x625fb0
+L01157: Call QMLibrary.KeyPress("Q",g_iSimulateModeInVBSBlock,1)  # loc=962 Runner=0x625fb0
+L01158: Call QMLibrary.Delay((YC))  # loc=963 Runner=0x625fb0
+L01159: Call QMLibrary.KeyPress("Q",g_iSimulateModeInVBSBlock,1)  # loc=964 Runner=0x625fb0
+L01160: Call QMLibrary.Delay((YC))  # loc=965 Runner=0x625fb0
+L01161: Call QMLibrary.Delay((YC))  # loc=968 Runner=0x625fb0
+L01162: last_test = Sgn(SJ=0 or SJ=1)  # loc=969 Runner=0x626047
+L01163: if last_test == 0: goto L01172  # loc=969 Runner=0x62611c
+L01164: Call QMLibrary.Delay((YC))  # loc=970 Runner=0x625fb0
+L01165: Call QMLibrary.KeyPress("D",g_iSimulateModeInVBSBlock,1)  # loc=971 Runner=0x625fb0
+L01166: Call QMLibrary.Delay((YC))  # loc=972 Runner=0x625fb0
+L01167: Call QMLibrary.KeyPress("D",g_iSimulateModeInVBSBlock,1)  # loc=973 Runner=0x625fb0
+L01168: Call QMLibrary.Delay((YC))  # loc=974 Runner=0x625fb0
+L01169: Call QMLibrary.KeyPress("D",g_iSimulateModeInVBSBlock,1)  # loc=975 Runner=0x625fb0
+L01170: Call QMLibrary.Delay((YC))  # loc=976 Runner=0x625fb0
+L01171: goto L01177  # loc=977 Runner=0x626126
+L01172: Call QMLibrary.Delay((YC))  # loc=978 Runner=0x625fb0
+L01173: Call QMLibrary.KeyPress("D",g_iSimulateModeInVBSBlock,1)  # loc=979 Runner=0x625fb0
+L01174: Call QMLibrary.Delay((YC))  # loc=980 Runner=0x625fb0
+L01175: Call QMLibrary.KeyPress("D",g_iSimulateModeInVBSBlock,1)  # loc=981 Runner=0x625fb0
+L01176: Call QMLibrary.Delay((YC))  # loc=982 Runner=0x625fb0
+L01177: Call QMLibrary.Delay((YC))  # loc=985 Runner=0x625fb0
+L01178: Call QMLibrary.Delay((YC))  # loc=986 Runner=0x625fb0
+L01179: Call QMLibrary.Delay((YC))  # loc=987 Runner=0x625fb0
+L01180: Call QMLibrary.Delay((YC))  # loc=988 Runner=0x625fb0
+L01181: last_test = Sgn(SJ=0 or SJ=1)  # loc=989 Runner=0x626047
+L01182: if last_test == 0: goto L01191  # loc=989 Runner=0x62611c
+L01183: Call QMLibrary.Delay((YC))  # loc=990 Runner=0x625fb0
+L01184: Call QMLibrary.KeyPress("A",g_iSimulateModeInVBSBlock,1)  # loc=991 Runner=0x625fb0
+L01185: Call QMLibrary.Delay((YC))  # loc=992 Runner=0x625fb0
+L01186: Call QMLibrary.KeyPress("A",g_iSimulateModeInVBSBlock,1)  # loc=993 Runner=0x625fb0
+L01187: Call QMLibrary.Delay((YC))  # loc=994 Runner=0x625fb0
+L01188: Call QMLibrary.KeyPress("A",g_iSimulateModeInVBSBlock,1)  # loc=995 Runner=0x625fb0
+L01189: Call QMLibrary.Delay((YC))  # loc=996 Runner=0x625fb0
+L01190: goto L01196  # loc=997 Runner=0x626126
+L01191: Call QMLibrary.Delay((YC))  # loc=998 Runner=0x625fb0
+L01192: Call QMLibrary.KeyPress("A",g_iSimulateModeInVBSBlock,1)  # loc=999 Runner=0x625fb0
+L01193: Call QMLibrary.Delay((YC))  # loc=1000 Runner=0x625fb0
+L01194: Call QMLibrary.KeyPress("A",g_iSimulateModeInVBSBlock,1)  # loc=1001 Runner=0x625fb0
+L01195: Call QMLibrary.Delay((YC))  # loc=1002 Runner=0x625fb0
+L01196: Call QMLibrary.Delay((YC))  # loc=1005 Runner=0x625fb0
+L01197: last_test = Sgn(SJ=0 or SJ=1)  # loc=1006 Runner=0x626047
+L01198: if last_test == 0: goto L01207  # loc=1006 Runner=0x62611c
+L01199: Call QMLibrary.Delay((YC))  # loc=1007 Runner=0x625fb0
+L01200: Call QMLibrary.KeyPress("E",g_iSimulateModeInVBSBlock,1)  # loc=1008 Runner=0x625fb0
+L01201: Call QMLibrary.Delay((YC))  # loc=1009 Runner=0x625fb0
+L01202: Call QMLibrary.KeyPress("E",g_iSimulateModeInVBSBlock,1)  # loc=1010 Runner=0x625fb0
+L01203: Call QMLibrary.Delay((YC))  # loc=1011 Runner=0x625fb0
+L01204: Call QMLibrary.KeyPress("E",g_iSimulateModeInVBSBlock,1)  # loc=1012 Runner=0x625fb0
+L01205: Call QMLibrary.Delay((YC))  # loc=1013 Runner=0x625fb0
+L01206: goto L01212  # loc=1014 Runner=0x626126
+L01207: Call QMLibrary.Delay((YC))  # loc=1015 Runner=0x625fb0
+L01208: Call QMLibrary.KeyPress("E",g_iSimulateModeInVBSBlock,1)  # loc=1016 Runner=0x625fb0
+L01209: Call QMLibrary.Delay((YC))  # loc=1017 Runner=0x625fb0
+L01210: Call QMLibrary.KeyPress("E",g_iSimulateModeInVBSBlock,1)  # loc=1018 Runner=0x625fb0
+L01211: Call QMLibrary.Delay((YC))  # loc=1019 Runner=0x625fb0
+L01212: Call QMLibrary.Delay((YC))  # loc=1022 Runner=0x625fb0
+L01213: last_test = Sgn(SJ=0 or SJ=1)  # loc=1023 Runner=0x626047
+L01214: if last_test == 0: goto L01223  # loc=1023 Runner=0x62611c
+L01215: Call QMLibrary.Delay((YC))  # loc=1024 Runner=0x625fb0
+L01216: Call QMLibrary.KeyPress("R",g_iSimulateModeInVBSBlock,1)  # loc=1025 Runner=0x625fb0
+L01217: Call QMLibrary.Delay((YC))  # loc=1026 Runner=0x625fb0
+L01218: Call QMLibrary.KeyPress("R",g_iSimulateModeInVBSBlock,1)  # loc=1027 Runner=0x625fb0
+L01219: Call QMLibrary.Delay((YC))  # loc=1028 Runner=0x625fb0
+L01220: Call QMLibrary.KeyPress("R",g_iSimulateModeInVBSBlock,1)  # loc=1029 Runner=0x625fb0
+L01221: Call QMLibrary.Delay((YC))  # loc=1030 Runner=0x625fb0
+L01222: goto L01228  # loc=1031 Runner=0x626126
+L01223: Call QMLibrary.Delay((YC))  # loc=1032 Runner=0x625fb0
+L01224: Call QMLibrary.KeyPress("R",g_iSimulateModeInVBSBlock,1)  # loc=1033 Runner=0x625fb0
+L01225: Call QMLibrary.Delay((YC))  # loc=1034 Runner=0x625fb0
+L01226: Call QMLibrary.KeyPress("R",g_iSimulateModeInVBSBlock,1)  # loc=1035 Runner=0x625fb0
+L01227: Call QMLibrary.Delay((YC))  # loc=1036 Runner=0x625fb0
+L01228: Call QMLibrary.Delay((YC))  # loc=1039 Runner=0x625fb0
+L01229: last_test = Sgn(SJ=0 or SJ=1)  # loc=1040 Runner=0x626047
+L01230: if last_test == 0: goto L01239  # loc=1040 Runner=0x62611c
+L01231: Call QMLibrary.Delay((YC))  # loc=1041 Runner=0x625fb0
+L01232: Call QMLibrary.KeyPress("W",g_iSimulateModeInVBSBlock,1)  # loc=1042 Runner=0x625fb0
+L01233: Call QMLibrary.Delay((YC))  # loc=1043 Runner=0x625fb0
+L01234: Call QMLibrary.KeyPress("W",g_iSimulateModeInVBSBlock,1)  # loc=1044 Runner=0x625fb0
+L01235: Call QMLibrary.Delay((YC))  # loc=1045 Runner=0x625fb0
+L01236: Call QMLibrary.KeyPress("W",g_iSimulateModeInVBSBlock,1)  # loc=1046 Runner=0x625fb0
+L01237: Call QMLibrary.Delay((YC))  # loc=1047 Runner=0x625fb0
+L01238: goto L01244  # loc=1048 Runner=0x626126
+L01239: Call QMLibrary.Delay((YC))  # loc=1049 Runner=0x625fb0
+L01240: Call QMLibrary.KeyPress("W",g_iSimulateModeInVBSBlock,1)  # loc=1050 Runner=0x625fb0
+L01241: Call QMLibrary.Delay((YC))  # loc=1051 Runner=0x625fb0
+L01242: Call QMLibrary.KeyPress("W",g_iSimulateModeInVBSBlock,1)  # loc=1052 Runner=0x625fb0
+L01243: Call QMLibrary.Delay((YC))  # loc=1053 Runner=0x625fb0
+L01244: Call QMLibrary.Delay((100))  # loc=1055 Runner=0x625fb0
+L01245: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=1056 Runner=0x625f7e
+L01246: return caller  # loc=1056 Runner=0x626275

@@ -1,0 +1,37 @@
+# 檢查新舊ALTQ L6657..L6689
+
+每行標示原操作碼、位置、文字索引與第四欄。共享別名為重建名稱，檔名與原文字常數依原資料保留。
+
+L6657 Call QMLibrary.Delay((100))  // op=30, loc=5787, SL=5697, field_3=0
+L6658 DM_RET=DM.FINDPIC(916,112,1008,147,"C:\users\mymacro\huodong1.bmp|C:\users\mymacro\huodong2.bmp","050505",0.9,0,INTX,INTY)  // op=30, loc=5789, SL=5698, field_3=0
+L6659 condition = Sgn((INTX>0))  // op=4, loc=5790, SL=5699, field_3=0
+L6660 若條件為零則跳 L6664，否則前往 L6661  // op=6, loc=5790, SL=None, field_3=0
+L6661 Call QMLibrary.Delay((100))  // op=30, loc=5791, SL=5700, field_3=0
+L6662 Call QMLibrary.KeyPress("Esc",g_iSimulateModeInVBSBlock,1)  // op=30, loc=5792, SL=5701, field_3=0
+L6663 Call QMLibrary.Delay((1500))  // op=30, loc=5793, SL=5702, field_3=0
+L6664 Call QMLibrary.Delay((100))  // op=30, loc=5795, SL=5703, field_3=0
+L6665 DM_RET=DM.FINDPIC(912,122,1010,159,"C:\users\mymacro\mulu1.bmp|C:\users\mymacro\mulu2.bmp","050505",0.9,0,INTX,INTY)  // op=30, loc=5796, SL=5704, field_3=0
+L6666 condition = Sgn((INTX>0))  // op=4, loc=5797, SL=5705, field_3=0
+L6667 若條件為零則跳 L6688，否則前往 L6668  // op=6, loc=5797, SL=None, field_3=0
+L6668 Call QMLibrary.Delay((100))  // op=30, loc=5798, SL=5706, field_3=0
+L6669 Call QMLibrary.TracePrint(("找到玩法目录"))  // op=30, loc=5799, SL=5707, field_3=0
+L6670 DM_RET=DM.FINDPIC(587,418,686,455,"C:\users\mymacro\dilao1.bmp|C:\users\mymacro\dilao2.bmp","050505",0.9,0,INTX,INTY)  // op=30, loc=5800, SL=5708, field_3=0
+L6671 condition = Sgn((INTX>0))  // op=4, loc=5801, SL=5709, field_3=0
+L6672 若條件為零則跳 L6688，否則前往 L6673  // op=6, loc=5801, SL=None, field_3=0
+L6673 Call QMLibrary.Delay((50))  // op=30, loc=5802, SL=5710, field_3=0
+L6674 Call QMLibrary.TracePrint(("找到混沌地牢"))  // op=30, loc=5803, SL=5711, field_3=0
+L6675 Call QMLibrary.Delay((200))  // op=30, loc=5804, SL=5712, field_3=0
+L6676 Call DM.MOVETO(1407,198)  // op=30, loc=5806, SL=5713, field_3=0
+L6677 Call QMLibrary.Delay((200))  // op=30, loc=5807, SL=5714, field_3=0
+L6678 Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5808, SL=5715, field_3=0
+L6679 Call QMLibrary.Delay((1000))  // op=30, loc=5809, SL=5716, field_3=0
+L6680 Call DM.MOVETO(807,532)  // op=30, loc=5811, SL=5717, field_3=0
+L6681 Call QMLibrary.Delay((200))  // op=30, loc=5812, SL=5718, field_3=0
+L6682 Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5813, SL=5719, field_3=0
+L6683 Call QMLibrary.Delay((1000))  // op=30, loc=5814, SL=5720, field_3=0
+L6684 Call DM.MOVETO(954,677)  // op=30, loc=5816, SL=5721, field_3=0
+L6685 Call QMLibrary.Delay((200))  // op=30, loc=5817, SL=5722, field_3=0
+L6686 Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5818, SL=5723, field_3=0
+L6687 Call QMLibrary.Delay((1000))  // op=30, loc=5819, SL=5724, field_3=0
+L6688 讀取子框架的回傳欄位至 temporary，然後還原父框架  // op=2, loc=5820, SL=5725, field_3=0
+L6689 返回呼叫堆疊中的下一個位置  // op=13, loc=5821, SL=None, field_3=0

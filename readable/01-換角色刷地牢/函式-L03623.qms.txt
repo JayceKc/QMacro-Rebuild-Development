@@ -1,0 +1,21 @@
+# 找綠色 — L03623
+# 入口 L03623，RETURN L03640；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L03623: Call QMLibrary.Delay((100))  # loc=2946 Runner=0x625fb0
+L03624: last_test = Sgn(vbTrue)  # loc=2947 Runner=0x626047
+L03625: if last_test == 0: goto L03636  # loc=2947 Runner=0x62611c
+L03626: Call QMLibrary.Delay((100))  # loc=2948 Runner=0x625fb0
+L03627: 傳回值 = global.get(〔天選〕)  # loc=2949 Runner=0x6266f4
+L03628: 目前呼叫框架.暫存槽(1)=傳回值  # loc=2949 Runner=0x625fb0
+L03629: DM_RET=DM.FINDCOLOR(160,1,260,25,目前呼叫框架.暫存槽(1) & "-151515",0.9,0,INTX,INTY)  # loc=2949 Runner=0x625f7e
+L03630: last_test = Sgn((INTX>=0))  # loc=2950 Runner=0x626047
+L03631: if last_test == 0: goto L03634  # loc=2950 Runner=0x62611c
+L03632: Call QMLibrary.Delay((50))  # loc=2951 Runner=0x625fb0
+L03633: goto L03636  # loc=2952 Runner=0x626126
+L03634: Call QMLibrary.Delay((50))  # loc=2954 Runner=0x625fb0
+L03635: goto L03624  # loc=2955 Runner=0x626126
+L03636: Call QMLibrary.Delay((100))  # loc=2957 Runner=0x625fb0
+L03637: Call QMLibrary.TracePrint(("找到*色"))  # loc=2958 Runner=0x625fb0
+L03638: Call QMLibrary.Delay((100))  # loc=2959 Runner=0x625fb0
+L03639: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=2960 Runner=0x625f7e
+L03640: return caller  # loc=2960 Runner=0x626275

@@ -1,0 +1,3365 @@
+[
+  {
+    "module": 1,
+    "entry": 62,
+    "boundary": 163,
+    "rows": [
+      {
+        "record": 62,
+        "location": 1,
+        "field_3": 1,
+        "candidate_opcode": null,
+        "kind": "unknown_entry",
+        "source_sl": null,
+        "source": null,
+        "inferred": true
+      },
+      {
+        "record": 63,
+        "location": 3,
+        "field_3": 1,
+        "candidate_opcode": 31,
+        "kind": "load_file_intent",
+        "source_sl": 60,
+        "source": "FILE\nIf IsEmpty(FILE) Then Set FILE=CreateObject(\"QMPlugin.File\")",
+        "inferred": true
+      },
+      {
+        "record": 64,
+        "location": 3,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "create_folder_intent",
+        "source_sl": 61,
+        "source": "Call FILE.CREATEFOLDER(\"C:\\方舟混沌\\\")",
+        "inferred": true
+      },
+      {
+        "record": 65,
+        "location": 4,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "delay",
+        "source_sl": 62,
+        "source": "Call QMLibrary.Delay((100))",
+        "inferred": true
+      },
+      {
+        "record": 66,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 24,
+        "kind": "worker_start",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 68
+      },
+      {
+        "record": 67,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 16,
+        "kind": "jump",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 71
+      },
+      {
+        "record": 68,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "worker_frame",
+        "source_sl": 63,
+        "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V9BB2A381A3D9CCCB89B665757378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+        "inferred": true
+      },
+      {
+        "record": 69,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 12,
+        "kind": "worker_call",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 11725
+      },
+      {
+        "record": 70,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 23,
+        "kind": "worker_end",
+        "source_sl": null,
+        "source": null,
+        "inferred": true
+      },
+      {
+        "record": 71,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "worker_id_slot",
+        "source_sl": 64,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 72,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "copy_worker_id",
+        "source_sl": 67,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=F2730835_2229_445E_97C7_l3F761277lDA(1)",
+        "inferred": true
+      },
+      {
+        "record": 73,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_worker_id",
+        "source_sl": 65,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 74,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "write_worker_id",
+        "source_sl": 66,
+        "source": "V9BB2A381A3D9CCCB89B62C317378756D",
+        "inferred": true,
+        "key": "V9BB2A381A3D9CCCB89B62C317378756D",
+        "shared": true
+      },
+      {
+        "record": 75,
+        "location": 6,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "delay",
+        "source_sl": 68,
+        "source": "Call QMLibrary.Delay(1000)",
+        "inferred": true
+      },
+      {
+        "record": 76,
+        "location": 7,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "open_log_intent",
+        "source_sl": 69,
+        "source": "Call QMLibrary.OpenLog(\"C:\\方舟混沌\\运行日志-日常.log\")",
+        "inferred": true
+      },
+      {
+        "record": 77,
+        "location": 8,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "delay",
+        "source_sl": 70,
+        "source": "Call QMLibrary.Delay((50))",
+        "inferred": true
+      },
+      {
+        "record": 78,
+        "location": 12,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 71,
+        "source": "SET WS=CREATEOBJECT(\"Wscript.Shell\")",
+        "inferred": true
+      },
+      {
+        "record": 79,
+        "location": 13,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 72,
+        "source": "Call WS.RUN(\"regsvr32 atl.dll /s\")",
+        "inferred": true
+      },
+      {
+        "record": 80,
+        "location": 14,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 73,
+        "source": "SET WS=nothing",
+        "inferred": true
+      },
+      {
+        "record": 81,
+        "location": 16,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 74,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 82,
+        "location": 17,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 75,
+        "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\\fz\",\"fz.dll\")",
+        "inferred": true
+      },
+      {
+        "record": 83,
+        "location": 18,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 76,
+        "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\",\"fzreg.dll\")",
+        "inferred": true
+      },
+      {
+        "record": 84,
+        "location": 19,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 77,
+        "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\",\"*.bmp\")",
+        "inferred": true
+      },
+      {
+        "record": 85,
+        "location": 20,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 78,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 86,
+        "location": 22,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 79,
+        "source": "Call QMLibrary.TracePrint(QMLibrary.CallAPI2(\"C:\\users\\mymacro\\fzreg.dll\", \"SetDllPathW\", \"C:\\users\\mymacro\\fz\\fz.dll\", 0))",
+        "inferred": true
+      },
+      {
+        "record": 87,
+        "location": 24,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 80,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 88,
+        "location": 25,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 81,
+        "source": "SET DM=CREATEOBJECT(\"dm.dmsoft\")",
+        "inferred": true
+      },
+      {
+        "record": 89,
+        "location": 26,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 82,
+        "source": "Call DM.SETSHOWERRORMSG(0)",
+        "inferred": true
+      },
+      {
+        "record": 90,
+        "location": 27,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 83,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 91,
+        "location": 28,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 84,
+        "source": "VFD8CD4CB7378756D=DM.VER()",
+        "inferred": true
+      },
+      {
+        "record": 92,
+        "location": 30,
+        "field_3": 1,
+        "candidate_opcode": 4,
+        "kind": "version_test",
+        "source_sl": 85,
+        "source": "Sgn((VFD8CD4CB7378756D=7.2450))",
+        "inferred": true
+      },
+      {
+        "record": 93,
+        "location": 30,
+        "field_3": 1,
+        "candidate_opcode": 6,
+        "kind": "if_version_mismatch",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 96
+      },
+      {
+        "record": 94,
+        "location": 31,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "version_success",
+        "source_sl": 86,
+        "source": "Call QMLibrary.TracePrint((\"成功\"))",
+        "inferred": true
+      },
+      {
+        "record": 95,
+        "location": 32,
+        "field_3": 1,
+        "candidate_opcode": 16,
+        "kind": "jump",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 97
+      },
+      {
+        "record": 96,
+        "location": 33,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "version_failure",
+        "source_sl": 87,
+        "source": "Call QMLibrary.TracePrint((\"失败\"))",
+        "inferred": true
+      },
+      {
+        "record": 97,
+        "location": 35,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 88,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 98,
+        "location": 36,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 89,
+        "source": "V8799D49F7378756D=DM.ENABLEREALMOUSE(2,10,60)",
+        "inferred": true
+      },
+      {
+        "record": 99,
+        "location": 37,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 90,
+        "source": "Call QMLibrary.TracePrint(\"鼠标\" & V8799D49F7378756D)",
+        "inferred": true
+      },
+      {
+        "record": 100,
+        "location": 38,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 91,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 101,
+        "location": 39,
+        "field_3": 1,
+        "candidate_opcode": null,
+        "kind": "empty_source",
+        "source_sl": 92,
+        "source": "",
+        "inferred": true
+      },
+      {
+        "record": 102,
+        "location": 40,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 93,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 103,
+        "location": 41,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 94,
+        "source": "V869DB7887378756D=ARRAY(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40)",
+        "inferred": true
+      },
+      {
+        "record": 104,
+        "location": 42,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 95,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 105,
+        "location": 43,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 96,
+        "source": "Form1.ComboBox1.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox1.ListIndex"
+      },
+      {
+        "record": 106,
+        "location": 43,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 97,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 107,
+        "location": 43,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 98,
+        "source": "VFEBEB7DC7378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VFEBEB7DC7378756D",
+        "property": "Form1.ComboBox1.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 108,
+        "location": 44,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 99,
+        "source": "Form1.ComboBox2.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox2.ListIndex"
+      },
+      {
+        "record": 109,
+        "location": 44,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 100,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 110,
+        "location": 44,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 101,
+        "source": "VF1D6A1A9B9B5C2A84D6A65757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF1D6A1A9B9B5C2A84D6A65757378756D",
+        "property": "Form1.ComboBox2.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 111,
+        "location": 45,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 102,
+        "source": "Form1.ComboBox3.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox3.ListIndex"
+      },
+      {
+        "record": 112,
+        "location": 45,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 103,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 113,
+        "location": 45,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 104,
+        "source": "VF0ADACDECCD2BFD14D6A65757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF0ADACDECCD2BFD14D6A65757378756D",
+        "property": "Form1.ComboBox3.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 114,
+        "location": 46,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 105,
+        "source": "Form1.ComboBox4.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox4.ListIndex"
+      },
+      {
+        "record": 115,
+        "location": 46,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 106,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 116,
+        "location": 46,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 107,
+        "source": "VF0ADACDECE99BF954D6A65757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF0ADACDECE99BF954D6A65757378756D",
+        "property": "Form1.ComboBox4.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 117,
+        "location": 47,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 108,
+        "source": "Form1.ComboBox5.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox5.ListIndex"
+      },
+      {
+        "record": 118,
+        "location": 47,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 109,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 119,
+        "location": 47,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 110,
+        "source": "VF08BAF8DA5D6CF9E4D6A65757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF08BAF8DA5D6CF9E4D6A65757378756D",
+        "property": "Form1.ComboBox5.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 120,
+        "location": 48,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 111,
+        "source": "Form1.ComboBox6.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox6.ListIndex"
+      },
+      {
+        "record": 121,
+        "location": 48,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 112,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 122,
+        "location": 48,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 113,
+        "source": "VF49CD6D67378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF49CD6D67378756D",
+        "property": "Form1.ComboBox6.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 123,
+        "location": 49,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 114,
+        "source": "Form1.ComboBox7.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox7.ListIndex"
+      },
+      {
+        "record": 124,
+        "location": 49,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 115,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 125,
+        "location": 49,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 116,
+        "source": "VF4C1DE947378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF4C1DE947378756D",
+        "property": "Form1.ComboBox7.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 126,
+        "location": 50,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 117,
+        "source": "Form1.ComboBox8.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox8.ListIndex"
+      },
+      {
+        "record": 127,
+        "location": 50,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 118,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 128,
+        "location": 50,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 121,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox8.ListIndex"
+      },
+      {
+        "record": 129,
+        "location": 50,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 119,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 130,
+        "location": 50,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 120,
+        "source": "VF39FB5A4B9B5C2A84D6A65757378756D",
+        "inferred": true,
+        "key": "VF39FB5A4B9B5C2A84D6A65757378756D",
+        "property": "Form1.ComboBox8.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 131,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 122,
+        "source": "Form1.ComboBox9.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox9.ListIndex"
+      },
+      {
+        "record": 132,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 123,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 133,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 126,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox9.ListIndex"
+      },
+      {
+        "record": 134,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 124,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 135,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 125,
+        "source": "VF5DEDE9B7378756D",
+        "inferred": true,
+        "key": "VF5DEDE9B7378756D",
+        "property": "Form1.ComboBox9.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 136,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 127,
+        "source": "Form1.ComboBox10.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox10.ListIndex"
+      },
+      {
+        "record": 137,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 128,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 138,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 129,
+        "source": "VFEBED5ACC4AEC4A59FC365757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VFEBED5ACC4AEC4A59FC365757378756D",
+        "property": "Form1.ComboBox10.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 139,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 130,
+        "source": "Form1.ComboBox11.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox11.ListIndex"
+      },
+      {
+        "record": 140,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 131,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 141,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 134,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox11.ListIndex"
+      },
+      {
+        "record": 142,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 132,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 143,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 133,
+        "source": "VF8AADBAAB3C0756D",
+        "inferred": true,
+        "key": "VF8AADBAAB3C0756D",
+        "property": "Form1.ComboBox11.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 144,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 135,
+        "source": "Form1.ComboBox12.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox12.ListIndex"
+      },
+      {
+        "record": 145,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 136,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 146,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 139,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox12.ListIndex"
+      },
+      {
+        "record": 147,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 137,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 148,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 138,
+        "source": "V80D6AEB1A3A8C89586B3D3BD7378756D",
+        "inferred": true,
+        "key": "V80D6AEB1A3A8C89586B3D3BD7378756D",
+        "property": "Form1.ComboBox12.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 149,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 140,
+        "source": "Form1.ComboBox13.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox13.ListIndex"
+      },
+      {
+        "record": 150,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 141,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 151,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 144,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox13.ListIndex"
+      },
+      {
+        "record": 152,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 142,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 153,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 143,
+        "source": "VF1D6A1A9B5CDB7A74D6A65757378756D",
+        "inferred": true,
+        "key": "VF1D6A1A9B5CDB7A74D6A65757378756D",
+        "property": "Form1.ComboBox13.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 154,
+        "location": 56,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 145,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 155,
+        "location": 57,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 146,
+        "source": "Form1.ComboBox99.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox99.ListIndex"
+      },
+      {
+        "record": 156,
+        "location": 57,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 147,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 157,
+        "location": 57,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 148,
+        "source": "VF68BB1C47378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF68BB1C47378756D",
+        "property": "Form1.ComboBox99.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 158,
+        "location": 58,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 149,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 159,
+        "location": 59,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 152,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=QMLibrary.GetGlobalVar(\"MMVerifyCode\", 0)",
+        "inferred": true,
+        "property": null
+      },
+      {
+        "record": 160,
+        "location": 59,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "read_setting",
+        "source_sl": 150,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(1)",
+        "inferred": true
+      },
+      {
+        "record": 161,
+        "location": 59,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "sdk_write",
+        "source_sl": 151,
+        "source": "V8186B4D47378756D",
+        "inferred": true,
+        "key": "V8186B4D47378756D",
+        "property": null,
+        "shared": true
+      },
+      {
+        "record": 162,
+        "location": 60,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 153,
+        "source": "Call QMLibrary.Delay((100))",
+        "inferred": true
+      }
+    ],
+    "settings": [
+      {
+        "property": "Form1.ComboBox1.ListIndex",
+        "source_sl": 96,
+        "key": "VFEBEB7DC7378756D",
+        "original_name": "吃药",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox2.ListIndex",
+        "source_sl": 99,
+        "key": "VF1D6A1A9B9B5C2A84D6A65757378756D",
+        "original_name": "技能释放",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox3.ListIndex",
+        "source_sl": 102,
+        "key": "VF0ADACDECCD2BFD14D6A65757378756D",
+        "original_name": "角色开始",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox4.ListIndex",
+        "source_sl": 105,
+        "key": "VF0ADACDECE99BF954D6A65757378756D",
+        "original_name": "角色结束",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox5.ListIndex",
+        "source_sl": 108,
+        "key": "VF08BAF8DA5D6CF9E4D6A65757378756D",
+        "original_name": "结束之后",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox6.ListIndex",
+        "source_sl": 111,
+        "key": "VF49CD6D67378756D",
+        "original_name": "滚常",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox7.ListIndex",
+        "source_sl": 114,
+        "key": "VF4C1DE947378756D",
+        "original_name": "公会",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox8.ListIndex",
+        "source_sl": 117,
+        "key": "VF39FB5A4B9B5C2A84D6A65757378756D",
+        "original_name": "觉醒释放",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox9.ListIndex",
+        "source_sl": 122,
+        "key": "VF5DEDE9B7378756D",
+        "original_name": "复活",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox10.ListIndex",
+        "source_sl": 127,
+        "key": "VFEBED5ACC4AEC4A59FC365757378756D",
+        "original_name": "吃百分比药",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox11.ListIndex",
+        "source_sl": 130,
+        "key": "VF8AADBAAB3C0756D",
+        "original_name": "道具栏",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox12.ListIndex",
+        "source_sl": 135,
+        "key": "V80D6AEB1A3A8C89586B3D3BD7378756D",
+        "original_name": "图四行进速度",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox13.ListIndex",
+        "source_sl": 140,
+        "key": "VF1D6A1A9B5CDB7A74D6A65757378756D",
+        "original_name": "技能频率",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox99.ListIndex",
+        "source_sl": 146,
+        "key": "VF68BB1C47378756D",
+        "original_name": "会员",
+        "shared": false
+      }
+    ],
+    "version_at": 92,
+    "worker_reference": 1655,
+    "worker_record": 66,
+    "worker_class": "F2730835_2229_445E_97C7_13F761277lDA_V9BB2A381A3D9CCCB89B665757378756D",
+    "worker_entry": 68,
+    "worker_body": 11725,
+    "retained_callback": null,
+    "unresolved": [
+      62,
+      101
+    ],
+    "source_program_sha256": "73383f6ab26a90b6a70526618d43eef5634c613649ebb3d803d6d1fc523f151c",
+    "original_values_recovered": 0
+  },
+  {
+    "module": 3,
+    "entry": 40,
+    "boundary": 122,
+    "rows": [
+      {
+        "record": 40,
+        "location": 1,
+        "field_3": 1,
+        "candidate_opcode": null,
+        "kind": "unknown_entry",
+        "source_sl": null,
+        "source": null,
+        "inferred": true
+      },
+      {
+        "record": 41,
+        "location": 3,
+        "field_3": 1,
+        "candidate_opcode": 31,
+        "kind": "load_file_intent",
+        "source_sl": 38,
+        "source": "FILE\nIf IsEmpty(FILE) Then Set FILE=CreateObject(\"QMPlugin.File\")",
+        "inferred": true
+      },
+      {
+        "record": 42,
+        "location": 3,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "create_folder_intent",
+        "source_sl": 39,
+        "source": "Call FILE.CREATEFOLDER(\"C:\\方舟混沌\\\")",
+        "inferred": true
+      },
+      {
+        "record": 43,
+        "location": 4,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "delay",
+        "source_sl": 40,
+        "source": "Call QMLibrary.Delay((100))",
+        "inferred": true
+      },
+      {
+        "record": 44,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 24,
+        "kind": "worker_start",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 46
+      },
+      {
+        "record": 45,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 16,
+        "kind": "jump",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 49
+      },
+      {
+        "record": 46,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "worker_frame",
+        "source_sl": 41,
+        "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V9BB2A381A3D9CCCB89B665757378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+        "inferred": true
+      },
+      {
+        "record": 47,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 12,
+        "kind": "worker_call",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 5885
+      },
+      {
+        "record": 48,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 23,
+        "kind": "worker_end",
+        "source_sl": null,
+        "source": null,
+        "inferred": true
+      },
+      {
+        "record": 49,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "worker_id_slot",
+        "source_sl": 42,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 50,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "write_worker_id",
+        "source_sl": 43,
+        "source": "V9BB2A381A3D9CCCB89B62C317378756D=F2730835_2229_445E_97C7_l3F761277lDA(1)",
+        "inferred": true,
+        "key": "V9BB2A381A3D9CCCB89B62C317378756D",
+        "shared": false
+      },
+      {
+        "record": 51,
+        "location": 6,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "delay",
+        "source_sl": 44,
+        "source": "Call QMLibrary.Delay(1000)",
+        "inferred": true
+      },
+      {
+        "record": 52,
+        "location": 7,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "open_log_intent",
+        "source_sl": 45,
+        "source": "Call QMLibrary.OpenLog(\"C:\\方舟混沌\\LEYUAN.log\")",
+        "inferred": true
+      },
+      {
+        "record": 53,
+        "location": 8,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "delay",
+        "source_sl": 46,
+        "source": "Call QMLibrary.Delay((50))",
+        "inferred": true
+      },
+      {
+        "record": 54,
+        "location": 12,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 47,
+        "source": "SET WS=CREATEOBJECT(\"Wscript.Shell\")",
+        "inferred": true
+      },
+      {
+        "record": 55,
+        "location": 13,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 48,
+        "source": "Call WS.RUN(\"regsvr32 atl.dll /s\")",
+        "inferred": true
+      },
+      {
+        "record": 56,
+        "location": 14,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 49,
+        "source": "SET WS=nothing",
+        "inferred": true
+      },
+      {
+        "record": 57,
+        "location": 16,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 50,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 58,
+        "location": 17,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 51,
+        "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\\fz\",\"fz.dll\")",
+        "inferred": true
+      },
+      {
+        "record": 59,
+        "location": 18,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 52,
+        "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\",\"fzreg.dll\")",
+        "inferred": true
+      },
+      {
+        "record": 60,
+        "location": 19,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 53,
+        "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\",\"*.bmp\")",
+        "inferred": true
+      },
+      {
+        "record": 61,
+        "location": 20,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 54,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 62,
+        "location": 22,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 55,
+        "source": "Call QMLibrary.TracePrint(QMLibrary.CallAPI2(\"C:\\users\\mymacro\\fzreg.dll\", \"SetDllPathW\", \"C:\\users\\mymacro\\fz\\fz.dll\", 0))",
+        "inferred": true
+      },
+      {
+        "record": 63,
+        "location": 24,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 56,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 64,
+        "location": 25,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 57,
+        "source": "SET DM=CREATEOBJECT(\"dm.dmsoft\")",
+        "inferred": true
+      },
+      {
+        "record": 65,
+        "location": 26,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 58,
+        "source": "Call DM.SETSHOWERRORMSG(0)",
+        "inferred": true
+      },
+      {
+        "record": 66,
+        "location": 27,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 59,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 67,
+        "location": 28,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 60,
+        "source": "VFD8CD4CB7378756D=DM.VER()",
+        "inferred": true
+      },
+      {
+        "record": 68,
+        "location": 30,
+        "field_3": 1,
+        "candidate_opcode": 4,
+        "kind": "version_test",
+        "source_sl": 61,
+        "source": "Sgn((VFD8CD4CB7378756D=7.2450))",
+        "inferred": true
+      },
+      {
+        "record": 69,
+        "location": 30,
+        "field_3": 1,
+        "candidate_opcode": 6,
+        "kind": "if_version_mismatch",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 72
+      },
+      {
+        "record": 70,
+        "location": 31,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "version_success",
+        "source_sl": 62,
+        "source": "Call QMLibrary.TracePrint((\"成功\"))",
+        "inferred": true
+      },
+      {
+        "record": 71,
+        "location": 32,
+        "field_3": 1,
+        "candidate_opcode": 16,
+        "kind": "jump",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 73
+      },
+      {
+        "record": 72,
+        "location": 33,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "version_failure",
+        "source_sl": 63,
+        "source": "Call QMLibrary.TracePrint((\"失败\"))",
+        "inferred": true
+      },
+      {
+        "record": 73,
+        "location": 35,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 64,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 74,
+        "location": 36,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 65,
+        "source": "V8799D49F7378756D=DM.ENABLEREALMOUSE(2,10,60)",
+        "inferred": true
+      },
+      {
+        "record": 75,
+        "location": 37,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 66,
+        "source": "Call QMLibrary.TracePrint(\"鼠标\" & V8799D49F7378756D)",
+        "inferred": true
+      },
+      {
+        "record": 76,
+        "location": 38,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 67,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 77,
+        "location": 39,
+        "field_3": 1,
+        "candidate_opcode": null,
+        "kind": "empty_source",
+        "source_sl": 68,
+        "source": "",
+        "inferred": true
+      },
+      {
+        "record": 78,
+        "location": 40,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 69,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 79,
+        "location": 41,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 70,
+        "source": "V869DB7887378756D=ARRAY(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40)",
+        "inferred": true
+      },
+      {
+        "record": 80,
+        "location": 42,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 71,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 81,
+        "location": 43,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 72,
+        "source": "Form1.ComboBox1.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox1.ListIndex"
+      },
+      {
+        "record": 82,
+        "location": 43,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 73,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 83,
+        "location": 43,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 74,
+        "source": "V9BB6D6D67378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "V9BB6D6D67378756D",
+        "property": "Form1.ComboBox1.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 84,
+        "location": 44,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 75,
+        "source": "Form1.ComboBox2.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox2.ListIndex"
+      },
+      {
+        "record": 85,
+        "location": 44,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 76,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 86,
+        "location": 44,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 77,
+        "source": "VF1D6A1A9B9B5C2A84D6A65757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF1D6A1A9B9B5C2A84D6A65757378756D",
+        "property": "Form1.ComboBox2.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 87,
+        "location": 45,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 78,
+        "source": "Form1.ComboBox3.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox3.ListIndex"
+      },
+      {
+        "record": 88,
+        "location": 45,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 79,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 89,
+        "location": 45,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 80,
+        "source": "VF0ADACDECCD2BFD14D6A65757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF0ADACDECCD2BFD14D6A65757378756D",
+        "property": "Form1.ComboBox3.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 90,
+        "location": 46,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 81,
+        "source": "Form1.ComboBox4.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox4.ListIndex"
+      },
+      {
+        "record": 91,
+        "location": 46,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 82,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 92,
+        "location": 46,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 83,
+        "source": "VF0ADACDECE99BF954D6A65757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF0ADACDECE99BF954D6A65757378756D",
+        "property": "Form1.ComboBox4.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 93,
+        "location": 47,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 84,
+        "source": "Form1.ComboBox5.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox5.ListIndex"
+      },
+      {
+        "record": 94,
+        "location": 47,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 85,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 95,
+        "location": 47,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 86,
+        "source": "VF08BAF8DA5D6CF9E4D6A65757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF08BAF8DA5D6CF9E4D6A65757378756D",
+        "property": "Form1.ComboBox5.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 96,
+        "location": 48,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 87,
+        "source": "Form1.ComboBox6.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox6.ListIndex"
+      },
+      {
+        "record": 97,
+        "location": 48,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 88,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 98,
+        "location": 48,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 89,
+        "source": "VF6A9DBC6C8C1BFAA819EB0C87378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF6A9DBC6C8C1BFAA819EB0C87378756D",
+        "property": "Form1.ComboBox6.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 99,
+        "location": 49,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 90,
+        "source": "Form1.ComboBox8.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox8.ListIndex"
+      },
+      {
+        "record": 100,
+        "location": 49,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 91,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 101,
+        "location": 49,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 94,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox8.ListIndex"
+      },
+      {
+        "record": 102,
+        "location": 49,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 92,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 103,
+        "location": 49,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 93,
+        "source": "VF39FB5A4B9B5C2A84D6A65757378756D",
+        "inferred": true,
+        "key": "VF39FB5A4B9B5C2A84D6A65757378756D",
+        "property": "Form1.ComboBox8.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 104,
+        "location": 50,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 95,
+        "source": "Form1.ComboBox10.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox10.ListIndex"
+      },
+      {
+        "record": 105,
+        "location": 50,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 96,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 106,
+        "location": 50,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 97,
+        "source": "VFEBED5ACC4AEC4A59FC365757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VFEBED5ACC4AEC4A59FC365757378756D",
+        "property": "Form1.ComboBox10.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 107,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 98,
+        "source": "Form1.ComboBox11.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox11.ListIndex"
+      },
+      {
+        "record": 108,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 99,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 109,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 102,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox11.ListIndex"
+      },
+      {
+        "record": 110,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 100,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 111,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 101,
+        "source": "VF8AADBAAB3C0756D",
+        "inferred": true,
+        "key": "VF8AADBAAB3C0756D",
+        "property": "Form1.ComboBox11.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 112,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 103,
+        "source": "Form1.ComboBox13.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox13.ListIndex"
+      },
+      {
+        "record": 113,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 104,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 114,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 107,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox13.ListIndex"
+      },
+      {
+        "record": 115,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 105,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 116,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 106,
+        "source": "VF1D6A1A9B5CDB7A74D6A65757378756D",
+        "inferred": true,
+        "key": "VF1D6A1A9B5CDB7A74D6A65757378756D",
+        "property": "Form1.ComboBox13.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 117,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 108,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 118,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 111,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=QMLibrary.GetGlobalVar(\"MMVerifyCode\", 0)",
+        "inferred": true,
+        "property": null
+      },
+      {
+        "record": 119,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "read_setting",
+        "source_sl": 109,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(1)",
+        "inferred": true
+      },
+      {
+        "record": 120,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "sdk_write",
+        "source_sl": 110,
+        "source": "V8186B4D47378756D",
+        "inferred": true,
+        "key": "V8186B4D47378756D",
+        "property": null,
+        "shared": true
+      },
+      {
+        "record": 121,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 112,
+        "source": "Call QMLibrary.Delay((100))",
+        "inferred": true
+      }
+    ],
+    "settings": [
+      {
+        "property": "Form1.ComboBox1.ListIndex",
+        "source_sl": 72,
+        "key": "V9BB6D6D67378756D",
+        "original_name": "周常",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox2.ListIndex",
+        "source_sl": 75,
+        "key": "VF1D6A1A9B9B5C2A84D6A65757378756D",
+        "original_name": "技能释放",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox3.ListIndex",
+        "source_sl": 78,
+        "key": "VF0ADACDECCD2BFD14D6A65757378756D",
+        "original_name": "角色开始",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox4.ListIndex",
+        "source_sl": 81,
+        "key": "VF0ADACDECE99BF954D6A65757378756D",
+        "original_name": "角色结束",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox5.ListIndex",
+        "source_sl": 84,
+        "key": "VF08BAF8DA5D6CF9E4D6A65757378756D",
+        "original_name": "结束之后",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox6.ListIndex",
+        "source_sl": 87,
+        "key": "VF6A9DBC6C8C1BFAA819EB0C87378756D",
+        "original_name": "幻境还是挑战",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox8.ListIndex",
+        "source_sl": 90,
+        "key": "VF39FB5A4B9B5C2A84D6A65757378756D",
+        "original_name": "觉醒释放",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox10.ListIndex",
+        "source_sl": 95,
+        "key": "VFEBED5ACC4AEC4A59FC365757378756D",
+        "original_name": "吃百分比药",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox11.ListIndex",
+        "source_sl": 98,
+        "key": "VF8AADBAAB3C0756D",
+        "original_name": "道具栏",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox13.ListIndex",
+        "source_sl": 103,
+        "key": "VF1D6A1A9B5CDB7A74D6A65757378756D",
+        "original_name": "技能频率",
+        "shared": true
+      }
+    ],
+    "version_at": 68,
+    "worker_reference": 858,
+    "worker_record": 44,
+    "worker_class": "F2730835_2229_445E_97C7_13F761277lDA_V9BB2A381A3D9CCCB89B665757378756D",
+    "worker_entry": 46,
+    "worker_body": 5885,
+    "retained_callback": null,
+    "unresolved": [
+      40,
+      77
+    ],
+    "source_program_sha256": "80b9c5724214dce32a3cb2e848843152caca456270a51cf4f76bc8f62c1b6295",
+    "original_values_recovered": 0
+  },
+  {
+    "module": 6,
+    "entry": 56,
+    "boundary": 164,
+    "rows": [
+      {
+        "record": 56,
+        "location": 1,
+        "field_3": 1,
+        "candidate_opcode": null,
+        "kind": "unknown_entry",
+        "source_sl": null,
+        "source": null,
+        "inferred": true
+      },
+      {
+        "record": 57,
+        "location": 3,
+        "field_3": 1,
+        "candidate_opcode": 31,
+        "kind": "load_file_intent",
+        "source_sl": 54,
+        "source": "FILE\nIf IsEmpty(FILE) Then Set FILE=CreateObject(\"QMPlugin.File\")",
+        "inferred": true
+      },
+      {
+        "record": 58,
+        "location": 3,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "create_folder_intent",
+        "source_sl": 55,
+        "source": "Call FILE.CREATEFOLDER(\"C:\\方舟混沌\\\")",
+        "inferred": true
+      },
+      {
+        "record": 59,
+        "location": 4,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "delay",
+        "source_sl": 56,
+        "source": "Call QMLibrary.Delay((100))",
+        "inferred": true
+      },
+      {
+        "record": 60,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 24,
+        "kind": "worker_start",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 62
+      },
+      {
+        "record": 61,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 16,
+        "kind": "jump",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 65
+      },
+      {
+        "record": 62,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "worker_frame",
+        "source_sl": 57,
+        "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V9BB2A381A3D9CCCB89B665757378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+        "inferred": true
+      },
+      {
+        "record": 63,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 12,
+        "kind": "worker_call",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 8621
+      },
+      {
+        "record": 64,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 23,
+        "kind": "worker_end",
+        "source_sl": null,
+        "source": null,
+        "inferred": true
+      },
+      {
+        "record": 65,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "worker_id_slot",
+        "source_sl": 58,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 66,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "copy_worker_id",
+        "source_sl": 61,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=F2730835_2229_445E_97C7_l3F761277lDA(1)",
+        "inferred": true
+      },
+      {
+        "record": 67,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_worker_id",
+        "source_sl": 59,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 68,
+        "location": 5,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "write_worker_id",
+        "source_sl": 60,
+        "source": "V9BB2A381A3D9CCCB89B62C317378756D",
+        "inferred": true,
+        "key": "V9BB2A381A3D9CCCB89B62C317378756D",
+        "shared": true
+      },
+      {
+        "record": 69,
+        "location": 6,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "delay",
+        "source_sl": 62,
+        "source": "Call QMLibrary.Delay(1000)",
+        "inferred": true
+      },
+      {
+        "record": 70,
+        "location": 7,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "open_log_intent",
+        "source_sl": 63,
+        "source": "Call QMLibrary.OpenLog(\"C:\\方舟混沌\\运行日志.log\")",
+        "inferred": true
+      },
+      {
+        "record": 71,
+        "location": 8,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "delay",
+        "source_sl": 64,
+        "source": "Call QMLibrary.Delay((50))",
+        "inferred": true
+      },
+      {
+        "record": 72,
+        "location": 9,
+        "field_3": 1,
+        "candidate_opcode": 16,
+        "kind": "jump",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 87
+      },
+      {
+        "record": 87,
+        "location": 20,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 73,
+        "source": "SET WS=CREATEOBJECT(\"Wscript.Shell\")",
+        "inferred": true
+      },
+      {
+        "record": 88,
+        "location": 21,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 74,
+        "source": "Call WS.RUN(\"regsvr32 atl.dll /s\")",
+        "inferred": true
+      },
+      {
+        "record": 89,
+        "location": 22,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 75,
+        "source": "SET WS=nothing",
+        "inferred": true
+      },
+      {
+        "record": 90,
+        "location": 24,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 76,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 91,
+        "location": 25,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 77,
+        "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\\fz\",\"fz.dll\")",
+        "inferred": true
+      },
+      {
+        "record": 92,
+        "location": 26,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 78,
+        "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\",\"fzreg.dll\")",
+        "inferred": true
+      },
+      {
+        "record": 93,
+        "location": 27,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 79,
+        "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\",\"*.bmp\")",
+        "inferred": true
+      },
+      {
+        "record": 94,
+        "location": 28,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 80,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 95,
+        "location": 30,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 81,
+        "source": "Call QMLibrary.TracePrint(QMLibrary.CallAPI2(\"C:\\users\\mymacro\\fzreg.dll\", \"SetDllPathW\", \"C:\\users\\mymacro\\fz\\fz.dll\", 0))",
+        "inferred": true
+      },
+      {
+        "record": 96,
+        "location": 31,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 82,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 97,
+        "location": 33,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 83,
+        "source": "SET DM=CREATEOBJECT(\"dm.dmsoft\")",
+        "inferred": true
+      },
+      {
+        "record": 98,
+        "location": 34,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 84,
+        "source": "Call DM.SETSHOWERRORMSG(0)",
+        "inferred": true
+      },
+      {
+        "record": 99,
+        "location": 35,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 85,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 100,
+        "location": 36,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 86,
+        "source": "VFD8CD4CB7378756D=DM.VER()",
+        "inferred": true
+      },
+      {
+        "record": 101,
+        "location": 38,
+        "field_3": 1,
+        "candidate_opcode": 4,
+        "kind": "version_test",
+        "source_sl": 87,
+        "source": "Sgn((VFD8CD4CB7378756D=7.2450))",
+        "inferred": true
+      },
+      {
+        "record": 102,
+        "location": 38,
+        "field_3": 1,
+        "candidate_opcode": 6,
+        "kind": "if_version_mismatch",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 105
+      },
+      {
+        "record": 103,
+        "location": 39,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "version_success",
+        "source_sl": 88,
+        "source": "Call QMLibrary.TracePrint((\"成功\"))",
+        "inferred": true
+      },
+      {
+        "record": 104,
+        "location": 40,
+        "field_3": 1,
+        "candidate_opcode": 16,
+        "kind": "jump",
+        "source_sl": null,
+        "source": null,
+        "inferred": true,
+        "target": 106
+      },
+      {
+        "record": 105,
+        "location": 41,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "version_failure",
+        "source_sl": 89,
+        "source": "Call QMLibrary.TracePrint((\"失败\"))",
+        "inferred": true
+      },
+      {
+        "record": 106,
+        "location": 43,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 90,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 107,
+        "location": 44,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 91,
+        "source": "V8799D49F7378756D=DM.ENABLEREALMOUSE(2,10,60)",
+        "inferred": true
+      },
+      {
+        "record": 108,
+        "location": 45,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 92,
+        "source": "Call QMLibrary.TracePrint(\"鼠标\" & V8799D49F7378756D)",
+        "inferred": true
+      },
+      {
+        "record": 109,
+        "location": 46,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 93,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 110,
+        "location": 47,
+        "field_3": 1,
+        "candidate_opcode": null,
+        "kind": "empty_source",
+        "source_sl": 94,
+        "source": "",
+        "inferred": true
+      },
+      {
+        "record": 111,
+        "location": 48,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 95,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 112,
+        "location": 49,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "intent",
+        "source_sl": 96,
+        "source": "V869DB7887378756D=ARRAY(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)",
+        "inferred": true
+      },
+      {
+        "record": 113,
+        "location": 50,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 97,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 114,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 98,
+        "source": "Form1.ComboBox1.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox1.ListIndex"
+      },
+      {
+        "record": 115,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 99,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 116,
+        "location": 51,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 100,
+        "source": "VFEBEB7DC7378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VFEBEB7DC7378756D",
+        "property": "Form1.ComboBox1.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 117,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 101,
+        "source": "Form1.ComboBox2.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox2.ListIndex"
+      },
+      {
+        "record": 118,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 102,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 119,
+        "location": 52,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 103,
+        "source": "VF1D6A1A9B9B5C2A84D6A65757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VF1D6A1A9B9B5C2A84D6A65757378756D",
+        "property": "Form1.ComboBox2.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 120,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 104,
+        "source": "Form1.ComboBox3.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox3.ListIndex"
+      },
+      {
+        "record": 121,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 105,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 122,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 108,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox3.ListIndex"
+      },
+      {
+        "record": 123,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 106,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 124,
+        "location": 53,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 107,
+        "source": "VFD8CD4CBA2D9A19C4D6A65757378756D",
+        "inferred": true,
+        "key": "VFD8CD4CBA2D9A19C4D6A65757378756D",
+        "property": "Form1.ComboBox3.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 125,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 111,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=V869DB7887378756D(FORM1.COMBOBOX4.LISTINDEX)",
+        "inferred": true,
+        "property": "Form1.ComboBox4.ListIndex"
+      },
+      {
+        "record": 126,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "read_setting",
+        "source_sl": 109,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(1)",
+        "inferred": true
+      },
+      {
+        "record": 127,
+        "location": 54,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 110,
+        "source": "VF0DBA58DC7B6BF904D6A65757378756D",
+        "inferred": true,
+        "key": "VF0DBA58DC7B6BF904D6A65757378756D",
+        "property": "Form1.ComboBox4.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 128,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 112,
+        "source": "Form1.ComboBox5.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox5.ListIndex"
+      },
+      {
+        "record": 129,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 113,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 130,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 116,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox5.ListIndex"
+      },
+      {
+        "record": 131,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 114,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 132,
+        "location": 55,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 115,
+        "source": "VF39FB5A4B9B5C2A84D6A65757378756D",
+        "inferred": true,
+        "key": "VF39FB5A4B9B5C2A84D6A65757378756D",
+        "property": "Form1.ComboBox5.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 133,
+        "location": 56,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "setting_write",
+        "source_sl": 117,
+        "source": "V86C8D9CDC7B6A5B38D8765757378756D=V869DB7887378756D(FORM1.COMBOBOX6.LISTINDEX)",
+        "inferred": true,
+        "key": "V86C8D9CDC7B6A5B38D8765757378756D",
+        "property": "Form1.ComboBox6.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 134,
+        "location": 57,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 118,
+        "source": "Form1.ComboBox7.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox7.ListIndex"
+      },
+      {
+        "record": 135,
+        "location": 57,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 119,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 136,
+        "location": 57,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "setting_write",
+        "source_sl": 120,
+        "source": "VFEBED5ACC4AEC4A59FC365757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "key": "VFEBED5ACC4AEC4A59FC365757378756D",
+        "property": "Form1.ComboBox7.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 137,
+        "location": 58,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 121,
+        "source": "Form1.ComboBox8.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox8.ListIndex"
+      },
+      {
+        "record": 138,
+        "location": 58,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 122,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 139,
+        "location": 58,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 125,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox8.ListIndex"
+      },
+      {
+        "record": 140,
+        "location": 58,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 123,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 141,
+        "location": 58,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 124,
+        "source": "VF5DEDE9B7378756D",
+        "inferred": true,
+        "key": "VF5DEDE9B7378756D",
+        "property": "Form1.ComboBox8.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 142,
+        "location": 59,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 126,
+        "source": "Form1.ComboBox11.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox11.ListIndex"
+      },
+      {
+        "record": 143,
+        "location": 59,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 127,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 144,
+        "location": 59,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 130,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox11.ListIndex"
+      },
+      {
+        "record": 145,
+        "location": 59,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 128,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 146,
+        "location": 59,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 129,
+        "source": "VF8AADBAAB3C0756D",
+        "inferred": true,
+        "key": "VF8AADBAAB3C0756D",
+        "property": "Form1.ComboBox11.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 147,
+        "location": 60,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 131,
+        "source": "Form1.ComboBox12.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox12.ListIndex"
+      },
+      {
+        "record": 148,
+        "location": 60,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 132,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 149,
+        "location": 60,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 135,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox12.ListIndex"
+      },
+      {
+        "record": 150,
+        "location": 60,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 133,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 151,
+        "location": 60,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 134,
+        "source": "V80D6AEB1A3A8C89586B3D3BD7378756D",
+        "inferred": true,
+        "key": "V80D6AEB1A3A8C89586B3D3BD7378756D",
+        "property": "Form1.ComboBox12.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 152,
+        "location": 61,
+        "field_3": 1,
+        "candidate_opcode": 37,
+        "kind": "read_ui",
+        "source_sl": 136,
+        "source": "Form1.ComboBox13.ListIndex",
+        "inferred": true,
+        "property": "Form1.ComboBox13.ListIndex"
+      },
+      {
+        "record": 153,
+        "location": 61,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "ui_slot",
+        "source_sl": 137,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "inferred": true
+      },
+      {
+        "record": 154,
+        "location": 61,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 140,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))",
+        "inferred": true,
+        "property": "Form1.ComboBox13.ListIndex"
+      },
+      {
+        "record": 155,
+        "location": 61,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "read_setting",
+        "source_sl": 138,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(2)",
+        "inferred": true
+      },
+      {
+        "record": 156,
+        "location": 61,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "setting_write",
+        "source_sl": 139,
+        "source": "VF1D6A1A9B5CDB7A74D6A65757378756D",
+        "inferred": true,
+        "key": "VF1D6A1A9B5CDB7A74D6A65757378756D",
+        "property": "Form1.ComboBox13.ListIndex",
+        "shared": true
+      },
+      {
+        "record": 157,
+        "location": 62,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 141,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 158,
+        "location": 63,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "setting_write",
+        "source_sl": 142,
+        "source": "VF68BB1C47378756D=V869DB7887378756D(FORM1.COMBOBOX99.LISTINDEX)",
+        "inferred": true,
+        "key": "VF68BB1C47378756D",
+        "property": "Form1.ComboBox99.ListIndex",
+        "shared": false
+      },
+      {
+        "record": 159,
+        "location": 64,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 143,
+        "source": "Call QMLibrary.Delay(100)",
+        "inferred": true
+      },
+      {
+        "record": 160,
+        "location": 65,
+        "field_3": 1,
+        "candidate_opcode": 2,
+        "kind": "prepare_setting",
+        "source_sl": 146,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=QMLibrary.GetGlobalVar(\"MMVerifyCode\", 0)",
+        "inferred": true,
+        "property": null
+      },
+      {
+        "record": 161,
+        "location": 65,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "read_setting",
+        "source_sl": 144,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(1)",
+        "inferred": true
+      },
+      {
+        "record": 162,
+        "location": 65,
+        "field_3": 1,
+        "candidate_opcode": 28,
+        "kind": "sdk_write",
+        "source_sl": 145,
+        "source": "V8186B4D47378756D",
+        "inferred": true,
+        "key": "V8186B4D47378756D",
+        "property": null,
+        "shared": true
+      },
+      {
+        "record": 163,
+        "location": 66,
+        "field_3": 1,
+        "candidate_opcode": 30,
+        "kind": "intent",
+        "source_sl": 147,
+        "source": "Call QMLibrary.Delay((100))",
+        "inferred": true
+      }
+    ],
+    "settings": [
+      {
+        "property": "Form1.ComboBox1.ListIndex",
+        "source_sl": 98,
+        "key": "VFEBEB7DC7378756D",
+        "original_name": "吃药",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox2.ListIndex",
+        "source_sl": 101,
+        "key": "VF1D6A1A9B9B5C2A84D6A65757378756D",
+        "original_name": "技能释放",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox3.ListIndex",
+        "source_sl": 104,
+        "key": "VFD8CD4CBA2D9A19C4D6A65757378756D",
+        "original_name": "版本选择",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox4.ListIndex",
+        "source_sl": 111,
+        "key": "VF0DBA58DC7B6BF904D6A65757378756D",
+        "original_name": "奖励次数",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox5.ListIndex",
+        "source_sl": 112,
+        "key": "VF39FB5A4B9B5C2A84D6A65757378756D",
+        "original_name": "觉醒释放",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox6.ListIndex",
+        "source_sl": 117,
+        "key": "V86C8D9CDC7B6A5B38D8765757378756D",
+        "original_name": "刷几次修理",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox7.ListIndex",
+        "source_sl": 118,
+        "key": "VFEBED5ACC4AEC4A59FC365757378756D",
+        "original_name": "吃百分比药",
+        "shared": false
+      },
+      {
+        "property": "Form1.ComboBox8.ListIndex",
+        "source_sl": 121,
+        "key": "VF5DEDE9B7378756D",
+        "original_name": "复活",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox11.ListIndex",
+        "source_sl": 126,
+        "key": "VF8AADBAAB3C0756D",
+        "original_name": "道具栏",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox12.ListIndex",
+        "source_sl": 131,
+        "key": "V80D6AEB1A3A8C89586B3D3BD7378756D",
+        "original_name": "图四行进速度",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox13.ListIndex",
+        "source_sl": 136,
+        "key": "VF1D6A1A9B5CDB7A74D6A65757378756D",
+        "original_name": "技能频率",
+        "shared": true
+      },
+      {
+        "property": "Form1.ComboBox99.ListIndex",
+        "source_sl": 142,
+        "key": "VF68BB1C47378756D",
+        "original_name": "会员",
+        "shared": false
+      }
+    ],
+    "version_at": 101,
+    "worker_reference": 1503,
+    "worker_record": 60,
+    "worker_class": "F2730835_2229_445E_97C7_13F761277lDA_V9BB2A381A3D9CCCB89B665757378756D",
+    "worker_entry": 62,
+    "worker_body": 8621,
+    "retained_callback": [
+      {
+        "record": 73,
+        "opcode": 2,
+        "source_sl": 65,
+        "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V0B25373842563738193E2A3B4256362104292E757378756D::Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA"
+      },
+      {
+        "record": 74,
+        "opcode": 31,
+        "source_sl": 54,
+        "source": "FILE\nIf IsEmpty(FILE) Then Set FILE=CreateObject(\"QMPlugin.File\")"
+      },
+      {
+        "record": 75,
+        "opcode": 30,
+        "source_sl": 66,
+        "source": "Call FILE.DELETEFOLDER(\"C:\\方舟混沌\")"
+      },
+      {
+        "record": 76,
+        "opcode": 31,
+        "source_sl": 54,
+        "source": "FILE\nIf IsEmpty(FILE) Then Set FILE=CreateObject(\"QMPlugin.File\")"
+      },
+      {
+        "record": 77,
+        "opcode": 30,
+        "source_sl": 67,
+        "source": "Call FILE.DELETEFOLDER(\"C:\\Users\\mymacro\")"
+      },
+      {
+        "record": 78,
+        "opcode": 31,
+        "source_sl": 54,
+        "source": "FILE\nIf IsEmpty(FILE) Then Set FILE=CreateObject(\"QMPlugin.File\")"
+      },
+      {
+        "record": 79,
+        "opcode": 30,
+        "source_sl": 68,
+        "source": "Call FILE.DELETEFOLDER(\"C:\\Users\\Administrator\\AppData\\Roaming\\qmacro\")"
+      },
+      {
+        "record": 80,
+        "opcode": 31,
+        "source_sl": 54,
+        "source": "FILE\nIf IsEmpty(FILE) Then Set FILE=CreateObject(\"QMPlugin.File\")"
+      },
+      {
+        "record": 81,
+        "opcode": 30,
+        "source_sl": 69,
+        "source": "Call FILE.DELETEFOLDER(\"C:\\Users\\Administrator\\AppData\\Roaming\\MyMacro\")"
+      },
+      {
+        "record": 82,
+        "opcode": 31,
+        "source_sl": 54,
+        "source": "FILE\nIf IsEmpty(FILE) Then Set FILE=CreateObject(\"QMPlugin.File\")"
+      },
+      {
+        "record": 83,
+        "opcode": 30,
+        "source_sl": 70,
+        "source": "Call FILE.DELETEFOLDER(\"C:\\Users\\Administrator\\AppData\\Roaming\\MacroCommerce\")"
+      },
+      {
+        "record": 84,
+        "opcode": 30,
+        "source_sl": 71,
+        "source": "Call QMLibrary.MessageNotify(1,\"缓存文件已删除\")"
+      },
+      {
+        "record": 85,
+        "opcode": 2,
+        "source_sl": 72,
+        "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA.F273O835_2229_445E_97C7_l3F76l277lDA:Set F2730835_2229_445E_97C7_13F76l277lDA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_l3F7612771DA.F2730835_2229_445E_97C7_13F76l2771DA:Set F2730835_2229_445E_97C7_13F76l277lDA=Nothing"
+      },
+      {
+        "record": 86,
+        "opcode": 13,
+        "source_sl": null,
+        "source": null
+      }
+    ],
+    "unresolved": [
+      56,
+      110
+    ],
+    "source_program_sha256": "a45f0fafe45984a5260712ab56d7fa85af9f0523f00743ff1905ce3547123cfa",
+    "original_values_recovered": 0
+  }
+]

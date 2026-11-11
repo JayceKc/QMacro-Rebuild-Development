@@ -1,0 +1,51 @@
+# 不跟隨找怪 — L06691
+# 入口 L06691，RETURN L06738；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L06691: Call QMLibrary.Delay((200))  # loc=5824 Runner=0x625fb0
+L06692: SET DM=CREATEOBJECT("dm.dmsoft")  # loc=5825 Runner=0x625f7e
+L06693: Call DM.SETSHOWERRORMSG(0)  # loc=5826 Runner=0x625fb0
+L06694: Call QMLibrary.Delay(100)  # loc=5827 Runner=0x625fb0
+L06695: 〔鼠標〕=DM.ENABLEREALMOUSE(2,10,60)  # loc=5828 Runner=0x625fb0
+L06696: Call QMLibrary.TracePrint("鼠标" & 〔鼠標〕)  # loc=5829 Runner=0x625fb0
+L06697: Call QMLibrary.Delay(100)  # loc=5830 Runner=0x625fb0
+L06698: Call QMLibrary.Delay((200))  # loc=5831 Runner=0x625fb0
+L06699: Call QMLibrary.Delay((100))  # loc=5832 Runner=0x625fb0
+L06700: last_test = Sgn(vbTrue)  # loc=5833 Runner=0x626047
+L06701: if last_test == 0: goto L06736  # loc=5833 Runner=0x62611c
+L06702: Call QMLibrary.Delay((100))  # loc=5834 Runner=0x625fb0
+L06703: DM_RET=DM.FINDPIC(316,110,1120,530,"C:\users\mymacro\xuetiao1.bmp|C:\users\mymacro\xuetiao2.bmp|C:\users\mymacro\xuetiao5.bmp|C:\users\mymacro\xuetiao101.bmp|C:\users\mymacro\xuetiao102.bmp|C:\users\mymacro\xuetiao103.bmp|C:\users\mymacro\xuetiao104.bmp|C:\users\mymacro\xuetiao105.bmp|C:\users\mymacro\xuetiao106.bmp","151515",0.9,2,INTX,INTY)  # loc=5836 Runner=0x625fb0
+L06704: last_test = Sgn((INTX>=0))  # loc=5837 Runner=0x626047
+L06705: if last_test == 0: goto L06714  # loc=5837 Runner=0x62611c
+L06706: Call QMLibrary.Delay((50))  # loc=5838 Runner=0x625fb0
+L06707: INTX=INTX+40  # loc=5839 Runner=0x625f7e
+L06708: INTY=INTY+70  # loc=5840 Runner=0x625f7e
+L06709: Call QMLibrary.Delay((50))  # loc=5841 Runner=0x625fb0
+L06710: Call DM.MOVETO(INTX,INTY)  # loc=5842 Runner=0x625fb0
+L06711: Call QMLibrary.Delay((100))  # loc=5843 Runner=0x625fb0
+L06712: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=5844 Runner=0x625fb0
+L06713: Call QMLibrary.Delay((50))  # loc=5845 Runner=0x625fb0
+L06714: Call QMLibrary.Delay((100))  # loc=5862 Runner=0x625fb0
+L06715: DM_RET=DM.FINDPIC(800,110,1530,530,"C:\users\mymacro\xuetiao1.bmp|C:\users\mymacro\xuetiao2.bmp|C:\users\mymacro\xuetiao5.bmp|C:\users\mymacro\xuetiao101.bmp|C:\users\mymacro\xuetiao102.bmp|C:\users\mymacro\xuetiao103.bmp|C:\users\mymacro\xuetiao104.bmp|C:\users\mymacro\xuetiao105.bmp|C:\users\mymacro\xuetiao106.bmp","151515",0.9,1,INTX,INTY)  # loc=5864 Runner=0x625fb0
+L06716: last_test = Sgn((INTX>=0))  # loc=5865 Runner=0x626047
+L06717: if last_test == 0: goto L06726  # loc=5865 Runner=0x62611c
+L06718: Call QMLibrary.Delay((50))  # loc=5866 Runner=0x625fb0
+L06719: INTX=INTX+40  # loc=5867 Runner=0x625f7e
+L06720: INTY=INTY+70  # loc=5868 Runner=0x625f7e
+L06721: Call QMLibrary.Delay((50))  # loc=5869 Runner=0x625fb0
+L06722: Call DM.MOVETO(INTX,INTY)  # loc=5870 Runner=0x625fb0
+L06723: Call QMLibrary.Delay((100))  # loc=5871 Runner=0x625fb0
+L06724: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=5872 Runner=0x625fb0
+L06725: Call QMLibrary.Delay((50))  # loc=5873 Runner=0x625fb0
+L06726: Call QMLibrary.Delay((100))  # loc=5890 Runner=0x625fb0
+L06727: DM_RET=DM.FINDPIC(316,700,1530,910,"C:\users\mymacro\xuetiao1.bmp|C:\users\mymacro\xuetiao2.bmp|C:\users\mymacro\xuetiao5.bmp|C:\users\mymacro\xuetiao101.bmp|C:\users\mymacro\xuetiao102.bmp|C:\users\mymacro\xuetiao103.bmp|C:\users\mymacro\xuetiao104.bmp|C:\users\mymacro\xuetiao105.bmp|C:\users\mymacro\xuetiao106.bmp","151515",0.9,0,INTX,INTY)  # loc=5892 Runner=0x625fb0
+L06728: last_test = Sgn((INTX>=0))  # loc=5893 Runner=0x626047
+L06729: if last_test == 0: goto L06735  # loc=5893 Runner=0x62611c
+L06730: Call QMLibrary.Delay((50))  # loc=5894 Runner=0x625fb0
+L06731: Call DM.MOVETO(INTX,INTY)  # loc=5895 Runner=0x625fb0
+L06732: Call QMLibrary.Delay((100))  # loc=5896 Runner=0x625fb0
+L06733: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=5897 Runner=0x625fb0
+L06734: Call QMLibrary.Delay((50))  # loc=5898 Runner=0x625fb0
+L06735: goto L06700  # loc=5899 Runner=0x626126
+L06736: Call QMLibrary.Delay((100))  # loc=5901 Runner=0x625fb0
+L06737: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=5902 Runner=0x625f7e
+L06738: return caller  # loc=5902 Runner=0x626275

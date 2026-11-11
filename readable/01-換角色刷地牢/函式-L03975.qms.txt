@@ -1,0 +1,86 @@
+# 檢查服務器界面 — L03975
+# 入口 L03975，RETURN L04057；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L03975: Call QMLibrary.Delay((500))  # loc=3273 Runner=0x625fb0
+L03976: DM_RET=DM.FINDCOLOR(726,132,731,156,"FFFFFF-050505|FAFAFD-050505|FAFBFD-050505|F7FAFD-050505",1,0,INTX,INTY)  # loc=3274 Runner=0x625fb0
+L03977: last_test = Sgn((INTX>=0))  # loc=3275 Runner=0x626047
+L03978: if last_test == 0: goto L04055  # loc=3275 Runner=0x62611c
+L03979: Call QMLibrary.Delay((100))  # loc=3276 Runner=0x625fb0
+L03980: DM_RET=DM.FINDCOLOR(794,163,799,171,"FFFFFF-050505|FAFAFD-050505|FAFBFD-050505|F7FAFD-050505",1,0,INTX,INTY)  # loc=3277 Runner=0x625fb0
+L03981: last_test = Sgn((INTX>=0))  # loc=3278 Runner=0x626047
+L03982: if last_test == 0: goto L04055  # loc=3278 Runner=0x62611c
+L03983: Call QMLibrary.Delay((100))  # loc=3279 Runner=0x625fb0
+L03984: DM_RET=DM.FINDCOLOR(1081,155,1086,161,"FFFFFF-050505|FAFAFD-050505|FAFBFD-050505|F7FAFD-050505",1,0,INTX,INTY)  # loc=3280 Runner=0x625fb0
+L03985: last_test = Sgn((INTX>=0))  # loc=3281 Runner=0x626047
+L03986: if last_test == 0: goto L04055  # loc=3281 Runner=0x62611c
+L03987: Call QMLibrary.Delay((100))  # loc=3282 Runner=0x625fb0
+L03988: DM_RET=DM.FINDCOLOR(1155,144,1161,157,"FFFFFF-050505|FAFAFD-050505|FAFBFD-050505|F7FAFD-050505",1,0,INTX,INTY)  # loc=3283 Runner=0x625fb0
+L03989: last_test = Sgn((INTX>=0))  # loc=3284 Runner=0x626047
+L03990: if last_test == 0: goto L04055  # loc=3284 Runner=0x62611c
+L03991: Call QMLibrary.Delay((100))  # loc=3285 Runner=0x625fb0
+L03992: DM_RET=DM.FINDCOLOR(748,584,1217,610,"FFFFFF-050505",0.9,0,INTX,INTY)  # loc=3286 Runner=0x625fb0
+L03993: last_test = Sgn((INTX>=0))  # loc=3287 Runner=0x626047
+L03994: if last_test == 0: goto L04055  # loc=3287 Runner=0x62611c
+L03995: Call QMLibrary.Delay((100))  # loc=3288 Runner=0x625fb0
+L03996: Call QMLibrary.Delay((50))  # loc=3289 Runner=0x625fb0
+L03997: Randomize  # loc=3290 Runner=0x625f7e
+L03998: YDX=INT(5*RND+35)  # loc=3291 Runner=0x625f7e
+L03999: Randomize  # loc=3292 Runner=0x625f7e
+L04000: YDY=INT(10*RND+10)  # loc=3293 Runner=0x625f7e
+L04001: Call QMLibrary.Delay((50))  # loc=3294 Runner=0x625fb0
+L04002: Call DM.MOVETO(YDX,YDY)  # loc=3295 Runner=0x625fb0
+L04003: Call QMLibrary.Delay((2000))  # loc=3296 Runner=0x625fb0
+L04004: DM_RET=DM.FINDCOLOR(887,907,1021,939,"2F3A46-050505|2E3944-050505|29343F-050505|26313B-050505|27323C-050505",0.9,0,INTX,INTY)  # loc=3297 Runner=0x625fb0
+L04005: last_test = Sgn((INTX>=0))  # loc=3298 Runner=0x626047
+L04006: if last_test == 0: goto L04055  # loc=3298 Runner=0x62611c
+L04007: Call QMLibrary.Delay((100))  # loc=3299 Runner=0x625fb0
+L04008: Call DM.MOVETO(953,919)  # loc=3300 Runner=0x625fb0
+L04009: Call QMLibrary.Delay((1000))  # loc=3301 Runner=0x625fb0
+L04010: DM_RET=DM.FINDCOLOR(887,907,1021,939,"3A4D5E-050505|394C5D-050505|324354-050505|364758-050505|3C4F61-050505",0.9,0,INTX,INTY)  # loc=3302 Runner=0x625fb0
+L04011: last_test = Sgn((INTX>=0))  # loc=3303 Runner=0x626047
+L04012: if last_test == 0: goto L04055  # loc=3303 Runner=0x62611c
+L04013: Call QMLibrary.Delay((100))  # loc=3304 Runner=0x625fb0
+L04014: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=3305 Runner=0x625fb0
+L04015: Call QMLibrary.Delay((700))  # loc=3306 Runner=0x625fb0
+L04016: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=3307 Runner=0x625fb0
+L04017: Call QMLibrary.Delay((2000))  # loc=3308 Runner=0x625fb0
+L04018: Call QMLibrary.Delay((50))  # loc=3309 Runner=0x625fb0
+L04019: Randomize  # loc=3310 Runner=0x625f7e
+L04020: YDX=INT(5*RND+35)  # loc=3311 Runner=0x625f7e
+L04021: Randomize  # loc=3312 Runner=0x625f7e
+L04022: YDY=INT(10*RND+10)  # loc=3313 Runner=0x625f7e
+L04023: Call QMLibrary.Delay((50))  # loc=3314 Runner=0x625fb0
+L04024: Call DM.MOVETO(YDX,YDY)  # loc=3315 Runner=0x625fb0
+L04025: Call QMLibrary.Delay((5000))  # loc=3316 Runner=0x625fb0
+L04026: last_test = Sgn(vbTrue)  # loc=3317 Runner=0x626047
+L04027: if last_test == 0: goto L04055  # loc=3317 Runner=0x62611c
+L04028: Call QMLibrary.Delay((500))  # loc=3318 Runner=0x625fb0
+L04029: Call QMLibrary.Delay((50))  # loc=3319 Runner=0x625fb0
+L04030: Randomize  # loc=3320 Runner=0x625f7e
+L04031: YDX=INT(5*RND+35)  # loc=3321 Runner=0x625f7e
+L04032: Randomize  # loc=3322 Runner=0x625f7e
+L04033: YDY=INT(10*RND+10)  # loc=3323 Runner=0x625f7e
+L04034: Call QMLibrary.Delay((50))  # loc=3324 Runner=0x625fb0
+L04035: Call DM.MOVETO(YDX,YDY)  # loc=3325 Runner=0x625fb0
+L04036: Call QMLibrary.Delay((500))  # loc=3326 Runner=0x625fb0
+L04037: DM_RET=DM.FINDCOLOR(756,994,940,1028,"2F3A46-050505|2E3944-050505|29343F-050505|26313B-050505|27323C-050505",0.9,0,INTX,INTY)  # loc=3327 Runner=0x625fb0
+L04038: last_test = Sgn((INTX>=0))  # loc=3328 Runner=0x626047
+L04039: if last_test == 0: goto L04054  # loc=3328 Runner=0x62611c
+L04040: Call QMLibrary.Delay((100))  # loc=3329 Runner=0x625fb0
+L04041: Call DM.MOVETO(852,1012)  # loc=3330 Runner=0x625fb0
+L04042: Call QMLibrary.Delay((1000))  # loc=3331 Runner=0x625fb0
+L04043: DM_RET=DM.FINDCOLOR(756,994,940,1028,"3A4D5E-050505|394C5D-050505|324354-050505|364758-050505|3C4F61-050505",0.9,0,INTX,INTY)  # loc=3332 Runner=0x625fb0
+L04044: last_test = Sgn((INTX>=0))  # loc=3333 Runner=0x626047
+L04045: if last_test == 0: goto L04054  # loc=3333 Runner=0x62611c
+L04046: Call QMLibrary.Delay((100))  # loc=3334 Runner=0x625fb0
+L04047: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=3335 Runner=0x625fb0
+L04048: Call QMLibrary.Delay((700))  # loc=3336 Runner=0x625fb0
+L04049: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=3337 Runner=0x625fb0
+L04050: Call QMLibrary.Delay((100))  # loc=3338 Runner=0x625fb0
+L04051: Call QMLibrary.TracePrint("重连成功")  # loc=3339 Runner=0x625fb0
+L04052: Call QMLibrary.Delay((15000))  # loc=3340 Runner=0x625fb0
+L04053: goto L04055  # loc=3341 Runner=0x626126
+L04054: goto L04026  # loc=3342 Runner=0x626126
+L04055: Call QMLibrary.Delay((100))  # loc=3352 Runner=0x625fb0
+L04056: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=3353 Runner=0x625f7e
+L04057: return caller  # loc=3353 Runner=0x626275

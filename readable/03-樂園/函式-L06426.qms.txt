@@ -1,0 +1,33 @@
+# 子程序 — L06426
+# 入口 L06426，RETURN L06455；名稱未對應，以入口命名
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L06426: 目前呼叫框架.A1=目前呼叫框架.〔左坐標〕  # loc=5 Runner=0x625f7e
+L06427: 目前呼叫框架.B1=目前呼叫框架.〔上坐標〕  # loc=6 Runner=0x625f7e
+L06428: 目前呼叫框架.C1=目前呼叫框架.〔右坐標〕  # loc=7 Runner=0x625f7e
+L06429: 目前呼叫框架.D1=目前呼叫框架.〔下坐標〕  # loc=8 Runner=0x625f7e
+L06430: 目前呼叫框架.A=目前呼叫框架.A1  # loc=10 Runner=0x625f7e
+L06431: 目前呼叫框架.B=目前呼叫框架.B1  # loc=10 Runner=0x625f7e
+L06432: 目前呼叫框架.C=目前呼叫框架.C1  # loc=10 Runner=0x625f7e
+L06433: 目前呼叫框架.D=目前呼叫框架.D1  # loc=10 Runner=0x625f7e
+L06434: 目前呼叫框架.N=0  # loc=12 Runner=0x625f7e
+L06435: F278O335_2229_445E_97C7_l3F76l2771DA__6=目前呼叫框架.X  # loc=14 Runner=0x625f7e
+L06436: F278O335_2229_445E_97C7_l3F76l2771DA__7=目前呼叫框架.Y  # loc=14 Runner=0x625f7e
+L06437: Call FindPic(目前呼叫框架.A,目前呼叫框架.B,目前呼叫框架.C,目前呼叫框架.D,目前呼叫框架.〔圖片路徑〕,目前呼叫框架.〔相似度〕,F278O335_2229_445E_97C7_l3F76l2771DA__6,F278O335_2229_445E_97C7_l3F76l2771DA__7)  # loc=14 Runner=0x625fb0
+L06438: 目前呼叫框架.X=F278O335_2229_445E_97C7_l3F76l2771DA__6  # loc=14 Runner=0x625f7e
+L06439: 目前呼叫框架.Y=F278O335_2229_445E_97C7_l3F76l2771DA__7  # loc=14 Runner=0x625f7e
+L06440: last_test = Sgn((目前呼叫框架.X>=0 and 目前呼叫框架.Y>=0 and 目前呼叫框架.Y=目前呼叫框架.B and 目前呼叫框架.A=目前呼叫框架.A1) Or (目前呼叫框架.X>=0 and 目前呼叫框架.Y>=0 and 目前呼叫框架.Y=目前呼叫框架.B and 目前呼叫框架.A<>目前呼叫框架.A1) Or (目前呼叫框架.X>=0 and 目前呼叫框架.Y>=0 and 目前呼叫框架.A=目前呼叫框架.A1 and 目前呼叫框架.Y<>目前呼叫框架.B))  # loc=15 Runner=0x626047
+L06441: if last_test == 0: goto L06448  # loc=15 Runner=0x62611c
+L06442: 目前呼叫框架.N=目前呼叫框架.N+1  # loc=16 Runner=0x625f7e
+L06443: 目前呼叫框架.H=目前呼叫框架.Y  # loc=16 Runner=0x625f7e
+L06444: 目前呼叫框架.A=目前呼叫框架.X+1  # loc=16 Runner=0x625f7e
+L06445: 目前呼叫框架.B=目前呼叫框架.Y  # loc=16 Runner=0x625f7e
+L06446: goto L06435  # loc=17 Runner=0x626e48
+L06447: goto L06453  # loc=17 Runner=0x626126
+L06448: last_test = Sgn(目前呼叫框架.A>目前呼叫框架.A1)  # loc=18 Runner=0x626047
+L06449: if last_test == 0: goto L06453  # loc=18 Runner=0x62611c
+L06450: 目前呼叫框架.A=目前呼叫框架.A1  # loc=19 Runner=0x625f7e
+L06451: 目前呼叫框架.B=目前呼叫框架.H+1  # loc=19 Runner=0x625f7e
+L06452: goto L06435  # loc=20 Runner=0x626e48
+L06453: 目前呼叫框架.函式回傳欄位=目前呼叫框架.N  # loc=22 Runner=0x625f7e
+L06454: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=23 Runner=0x625f7e
+L06455: return caller  # loc=23 Runner=0x626275

@@ -1,0 +1,116 @@
+# 紫門打完撿東西 — L11586
+# 入口 L11586，RETURN L11698；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L11586: Call QMLibrary.Delay((200))  # loc=10042 Runner=0x625fb0
+L11587: SET DM=CREATEOBJECT("dm.dmsoft")  # loc=10043 Runner=0x625f7e
+L11588: Call DM.SETSHOWERRORMSG(0)  # loc=10044 Runner=0x625fb0
+L11589: Call QMLibrary.Delay((200))  # loc=10045 Runner=0x625fb0
+L11590: 傳回值 = global.get(〔按GID〕)  # loc=10046 Runner=0x6266f4
+L11591: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10046 Runner=0x625f7e
+L11592: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=10046 Runner=0x625fb0
+L11593: Call QMLibrary.Delay((50))  # loc=10047 Runner=0x625fb0
+L11594: 傳回值 = global.get(〔層數〕)  # loc=10048 Runner=0x6266f4
+L11595: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10048 Runner=0x625f7e
+L11596: last_test = Sgn(目前呼叫框架.暫存槽(1)>2)  # loc=10048 Runner=0x626047
+L11597: if last_test == 0: goto L11602  # loc=10048 Runner=0x62611c
+L11598: Call QMLibrary.Delay((50))  # loc=10049 Runner=0x625fb0
+L11599: 傳回值 = global.get(〔找塔圖ID〕)  # loc=10050 Runner=0x6266f4
+L11600: 目前呼叫框架.暫存槽(2)=傳回值  # loc=10050 Runner=0x625f7e
+L11601: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(2), 0)  # loc=10050 Runner=0x625fb0
+L11602: Call QMLibrary.Delay((100))  # loc=10052 Runner=0x625fb0
+L11603: Call QMLibrary.Delay((100))  # loc=10054 Runner=0x625fb0
+L11604: 〔BOSS死了〕=0  # loc=10055 Runner=0x625f7e
+L11605: last_test = Sgn(vbTrue)  # loc=10056 Runner=0x626047
+L11606: if last_test == 0: goto L11622  # loc=10056 Runner=0x62611c
+L11607: Call QMLibrary.Delay((100))  # loc=10057 Runner=0x625fb0
+L11608: last_test = Sgn((〔BOSS死了〕>=2))  # loc=10058 Runner=0x626047
+L11609: if last_test == 0: goto L11612  # loc=10058 Runner=0x62611c
+L11610: Call QMLibrary.Delay((50))  # loc=10059 Runner=0x625fb0
+L11611: goto L11622  # loc=10060 Runner=0x626126
+L11612: Call QMLibrary.Delay((200))  # loc=10062 Runner=0x625fb0
+L11613: DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss.bmp|C:\users\mymacro\boss3.bmp|C:\users\mymacro\boss4.bmp","151515",0.8,0,INTX,INTY)  # loc=10063 Runner=0x625fb0
+L11614: last_test = Sgn((INTX>=0))  # loc=10064 Runner=0x626047
+L11615: if last_test == 0: goto L11619  # loc=10064 Runner=0x62611c
+L11616: Call QMLibrary.Delay((50))  # loc=10065 Runner=0x625fb0
+L11617: 〔BOSS死了〕=0  # loc=10066 Runner=0x625f7e
+L11618: goto L11621  # loc=10067 Runner=0x626126
+L11619: Call QMLibrary.Delay((50))  # loc=10068 Runner=0x625fb0
+L11620: 〔BOSS死了〕=〔BOSS死了〕+1  # loc=10069 Runner=0x625f7e
+L11621: goto L11605  # loc=10070 Runner=0x626126
+L11622: Call QMLibrary.TracePrint(("紫门打完捡东西"))  # loc=10072 Runner=0x625fb0
+L11623: Call QMLibrary.Delay((50))  # loc=10073 Runner=0x625fb0
+L11624: 傳回值 = global.get(〔按GID〕)  # loc=10074 Runner=0x6266f4
+L11625: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10074 Runner=0x625f7e
+L11626: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=10074 Runner=0x625fb0
+L11627: Call QMLibrary.Delay((50))  # loc=10075 Runner=0x625fb0
+L11628: 傳回值 = global.get(〔找怪ID〕)  # loc=10076 Runner=0x6266f4
+L11629: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10076 Runner=0x625f7e
+L11630: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=10076 Runner=0x625fb0
+L11631: Call QMLibrary.Delay((50))  # loc=10077 Runner=0x625fb0
+L11632: 傳回值 = global.get(〔放技能ID〕)  # loc=10078 Runner=0x6266f4
+L11633: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10078 Runner=0x625f7e
+L11634: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=10078 Runner=0x625fb0
+L11635: Call QMLibrary.Delay((50))  # loc=10079 Runner=0x625fb0
+L11636: 傳回值 = global.get(〔吃藥ID〕)  # loc=10080 Runner=0x6266f4
+L11637: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10080 Runner=0x625f7e
+L11638: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=10080 Runner=0x625fb0
+L11639: Call QMLibrary.Delay((50))  # loc=10081 Runner=0x625fb0
+L11640: 傳回值 = global.get(〔吃百分比藥ID〕)  # loc=10082 Runner=0x6266f4
+L11641: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10082 Runner=0x625f7e
+L11642: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=10082 Runner=0x625fb0
+L11643: Call QMLibrary.Delay((5000))  # loc=10083 Runner=0x625fb0
+L11644: DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss.bmp|C:\users\mymacro\boss3.bmp|C:\users\mymacro\boss4.bmp","151515",0.8,0,INTX,INTY)  # loc=10084 Runner=0x625fb0
+L11645: last_test = Sgn((INTX>=0))  # loc=10085 Runner=0x626047
+L11646: if last_test == 0: goto L11666  # loc=10085 Runner=0x62611c
+L11647: Call QMLibrary.Delay((100))  # loc=10086 Runner=0x625fb0
+L11648: 傳回值 = global.get(〔放技能ID〕)  # loc=10087 Runner=0x6266f4
+L11649: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10087 Runner=0x625f7e
+L11650: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 2)  # loc=10087 Runner=0x625fb0
+L11651: Call QMLibrary.Delay((1000))  # loc=10088 Runner=0x625fb0
+L11652: 傳回值 = global.get(〔吃藥ID〕)  # loc=10089 Runner=0x6266f4
+L11653: 目前呼叫框架.暫存槽(2)=傳回值  # loc=10089 Runner=0x625f7e
+L11654: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(2)), 2)  # loc=10089 Runner=0x625fb0
+L11655: Call QMLibrary.Delay((1000))  # loc=10090 Runner=0x625fb0
+L11656: 傳回值 = global.get(〔吃百分比藥ID〕)  # loc=10091 Runner=0x6266f4
+L11657: 目前呼叫框架.暫存槽(3)=傳回值  # loc=10091 Runner=0x625f7e
+L11658: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(3)), 2)  # loc=10091 Runner=0x625fb0
+L11659: Call QMLibrary.Delay((1000))  # loc=10092 Runner=0x625fb0
+L11660: 傳回值 = global.get(〔找怪ID〕)  # loc=10093 Runner=0x6266f4
+L11661: 目前呼叫框架.暫存槽(4)=傳回值  # loc=10093 Runner=0x625f7e
+L11662: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(4)), 2)  # loc=10093 Runner=0x625fb0
+L11663: Call QMLibrary.Delay((1000))  # loc=10094 Runner=0x625fb0
+L11664: goto L11603  # loc=10095 Runner=0x626e48
+L11665: goto L11688  # loc=10096 Runner=0x626126
+L11666: Call QMLibrary.Delay((200))  # loc=10097 Runner=0x625fb0
+L11667: DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss1.bmp","090909",0.9,0,INTX,INTY)  # loc=10098 Runner=0x625fb0
+L11668: last_test = Sgn((INTX>=0))  # loc=10099 Runner=0x626047
+L11669: if last_test == 0: goto L11688  # loc=10099 Runner=0x62611c
+L11670: Call QMLibrary.Delay((100))  # loc=10100 Runner=0x625fb0
+L11671: 傳回值 = global.get(〔放技能ID〕)  # loc=10101 Runner=0x6266f4
+L11672: 目前呼叫框架.暫存槽(5)=傳回值  # loc=10101 Runner=0x625f7e
+L11673: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(5)), 2)  # loc=10101 Runner=0x625fb0
+L11674: Call QMLibrary.Delay((1000))  # loc=10102 Runner=0x625fb0
+L11675: 傳回值 = global.get(〔吃藥ID〕)  # loc=10103 Runner=0x6266f4
+L11676: 目前呼叫框架.暫存槽(6)=傳回值  # loc=10103 Runner=0x625f7e
+L11677: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(6)), 2)  # loc=10103 Runner=0x625fb0
+L11678: Call QMLibrary.Delay((1000))  # loc=10104 Runner=0x625fb0
+L11679: 傳回值 = global.get(〔吃百分比藥ID〕)  # loc=10105 Runner=0x6266f4
+L11680: 目前呼叫框架.暫存槽(7)=傳回值  # loc=10105 Runner=0x625f7e
+L11681: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(7)), 2)  # loc=10105 Runner=0x625fb0
+L11682: Call QMLibrary.Delay((1000))  # loc=10106 Runner=0x625fb0
+L11683: 傳回值 = global.get(〔找怪ID〕)  # loc=10107 Runner=0x6266f4
+L11684: 目前呼叫框架.暫存槽(8)=傳回值  # loc=10107 Runner=0x625f7e
+L11685: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(8)), 2)  # loc=10107 Runner=0x625fb0
+L11686: Call QMLibrary.Delay((1000))  # loc=10108 Runner=0x625fb0
+L11687: goto L11603  # loc=10109 Runner=0x626e48
+L11688: Call QMLibrary.Delay((100))  # loc=10112 Runner=0x625fb0
+L11689: 傳回值 = global.get(〔找怪ID〕)  # loc=10113 Runner=0x6266f4
+L11690: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10113 Runner=0x625f7e
+L11691: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 2)  # loc=10113 Runner=0x625fb0
+L11692: Call QMLibrary.Delay((1000))  # loc=10114 Runner=0x625fb0
+L11693: 傳回值 = global.get(〔按GID〕)  # loc=10115 Runner=0x6266f4
+L11694: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10115 Runner=0x625f7e
+L11695: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 2)  # loc=10115 Runner=0x625fb0
+L11696: Call QMLibrary.Delay((1000))  # loc=10116 Runner=0x625fb0
+L11697: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=10117 Runner=0x625f7e
+L11698: return caller  # loc=10117 Runner=0x626275

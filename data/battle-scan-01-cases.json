@@ -1,0 +1,141 @@
+{
+  "cases": [
+    {
+      "id": 1,
+      "label": "空畫面",
+      "entry": 13574,
+      "last": 13603,
+      "frame_fields": {
+        "V9A99B28DC292756D": 100,
+        "V84A5B28DC292756D": 20,
+        "V9EB8B28DC292756D": 110,
+        "V82A8B28DC292756D": 30,
+        "V80D6A3D9B1CFCBDB4D6A65757378756D": "fixture.bmp",
+        "V828AAEB3C5B0756D": 0.8
+      },
+      "worker_wrapper": false,
+      "expected_count": 0,
+      "builtin_points": [
+        [
+          -1,
+          -1
+        ]
+      ],
+      "shared": {},
+      "values": {
+        "DM_RET": 7
+      },
+      "default_found": true,
+      "miss_budget": {},
+      "return_overrides": {},
+      "random_upper": false,
+      "max_body_steps": 140
+    },
+    {
+      "id": 2,
+      "label": "換列後繼續",
+      "entry": 13574,
+      "last": 13603,
+      "frame_fields": {
+        "V9A99B28DC292756D": 100,
+        "V84A5B28DC292756D": 20,
+        "V9EB8B28DC292756D": 110,
+        "V82A8B28DC292756D": 30,
+        "V80D6A3D9B1CFCBDB4D6A65757378756D": "fixture.bmp",
+        "V828AAEB3C5B0756D": 0.8
+      },
+      "worker_wrapper": false,
+      "expected_count": 3,
+      "builtin_points": [
+        [
+          101,
+          20
+        ],
+        [
+          105,
+          20
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          104,
+          22
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "shared": {},
+      "values": {
+        "DM_RET": 7
+      },
+      "default_found": true,
+      "miss_budget": {},
+      "return_overrides": {},
+      "random_upper": false,
+      "max_body_steps": 140
+    },
+    {
+      "id": 3,
+      "label": "略過同列限制外的結果",
+      "entry": 13574,
+      "last": 13603,
+      "frame_fields": {
+        "V9A99B28DC292756D": 100,
+        "V84A5B28DC292756D": 20,
+        "V9EB8B28DC292756D": 110,
+        "V82A8B28DC292756D": 30,
+        "V80D6A3D9B1CFCBDB4D6A65757378756D": "fixture.bmp",
+        "V828AAEB3C5B0756D": 0.8
+      },
+      "worker_wrapper": false,
+      "expected_count": 2,
+      "builtin_points": [
+        [
+          101,
+          20
+        ],
+        [
+          104,
+          21
+        ],
+        [
+          104,
+          21
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "shared": {},
+      "values": {
+        "DM_RET": 7
+      },
+      "default_found": true,
+      "miss_budget": {},
+      "return_overrides": {},
+      "random_upper": false,
+      "max_body_steps": 140
+    }
+  ],
+  "ranges": [
+    [
+      13574,
+      13603
+    ]
+  ],
+  "boundaries": {},
+  "synthetic_context": true
+}

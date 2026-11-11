@@ -1,0 +1,24 @@
+# 子程序 — L03488
+# 入口 L03488，RETURN L03508；名稱未對應，以入口命名
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L03488: Call QMLibrary.Delay(100)  # loc=2936 Runner=0x625fb0
+L03489: last_test = Sgn(vbTrue)  # loc=2937 Runner=0x626047
+L03490: if last_test == 0: goto L03507  # loc=2937 Runner=0x62611c
+L03491: Call QMLibrary.Delay(10000)  # loc=2938 Runner=0x625fb0
+L03492: Call QMLibrary.Delay(10000)  # loc=2939 Runner=0x625fb0
+L03493: Call QMLibrary.Delay(10000)  # loc=2940 Runner=0x625fb0
+L03494: Call QMLibrary.Delay(10000)  # loc=2942 Runner=0x625fb0
+L03495: Call QMLibrary.Delay(10000)  # loc=2943 Runner=0x625fb0
+L03496: Call QMLibrary.Delay(10000)  # loc=2944 Runner=0x625fb0
+L03497: Call QMLibrary.Delay(10000)  # loc=2946 Runner=0x625fb0
+L03498: Call QMLibrary.Delay(10000)  # loc=2947 Runner=0x625fb0
+L03499: Call QMLibrary.Delay(10000)  # loc=2948 Runner=0x625fb0
+L03500: Call QMLibrary.Delay(10000)  # loc=2950 Runner=0x625fb0
+L03501: Call QMLibrary.Delay(10000)  # loc=2951 Runner=0x625fb0
+L03502: Call QMLibrary.Delay(10000)  # loc=2952 Runner=0x625fb0
+L03503: Call QMLibrary.Delay(1000)  # loc=2954 Runner=0x625fb0
+L03504: Call QMLibrary.KeyPress("5",g_iSimulateModeInVBSBlock,1)  # loc=2955 Runner=0x625fb0
+L03505: Call QMLibrary.Delay(1000)  # loc=2956 Runner=0x625fb0
+L03506: goto L03489  # loc=2957 Runner=0x626126
+L03507: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=2958 Runner=0x625f7e
+L03508: return caller  # loc=2958 Runner=0x626275

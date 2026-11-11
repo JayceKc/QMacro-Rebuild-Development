@@ -1,0 +1,39 @@
+# 子程序 — L06444
+# 入口 L06444，RETURN L06479；名稱未對應，以入口命名
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L06444: Call QMLibrary.Delay((50))  # loc=5585 Runner=0x625fb0
+L06445: last_test = Sgn(vbTrue)  # loc=5586 Runner=0x626047
+L06446: if last_test == 0: goto L06456  # loc=5586 Runner=0x62611c
+L06447: Call QMLibrary.Delay((50))  # loc=5587 Runner=0x625fb0
+L06448: DM_RET=DM.FINDPIC(1050,907,1159,949,"C:\users\mymacro\chenm1.bmp|C:\users\mymacro\chenm2.bmp|C:\users\mymacro\chenm3.bmp","191919",0.9,0,INTX,INTY)  # loc=5589 Runner=0x625fb0
+L06449: last_test = Sgn((INTX>=0))  # loc=5590 Runner=0x626047
+L06450: if last_test == 0: goto L06453  # loc=5590 Runner=0x62611c
+L06451: Call QMLibrary.Delay(1000)  # loc=5591 Runner=0x625fb0
+L06452: goto L06455  # loc=5592 Runner=0x626126
+L06453: Call QMLibrary.Delay(1000)  # loc=5593 Runner=0x625fb0
+L06454: goto L06456  # loc=5594 Runner=0x626126
+L06455: goto L06445  # loc=5595 Runner=0x626126
+L06456: Call QMLibrary.Delay((50))  # loc=5597 Runner=0x625fb0
+L06457: DM_RET=DM.CAPTURE(691,987,715,1007,"C:\Users\mymacro\Q.bmp")  # loc=5598 Runner=0x625fb0
+L06458: Call QMLibrary.Delay((100))  # loc=5599 Runner=0x625fb0
+L06459: DM_RET=DM.CAPTURE(739,988,763,1007,"C:\Users\mymacro\W.bmp")  # loc=5600 Runner=0x625fb0
+L06460: Call QMLibrary.Delay((100))  # loc=5601 Runner=0x625fb0
+L06461: DM_RET=DM.CAPTURE(786,989,807,1007,"C:\Users\mymacro\E.bmp")  # loc=5602 Runner=0x625fb0
+L06462: Call QMLibrary.Delay((100))  # loc=5603 Runner=0x625fb0
+L06463: DM_RET=DM.CAPTURE(832,989,859,1007,"C:\Users\mymacro\R.bmp")  # loc=5604 Runner=0x625fb0
+L06464: Call QMLibrary.Delay((100))  # loc=5605 Runner=0x625fb0
+L06465: DM_RET=DM.CAPTURE(714,1033,739,1054,"C:\Users\mymacro\A.bmp")  # loc=5606 Runner=0x625fb0
+L06466: Call QMLibrary.Delay((100))  # loc=5607 Runner=0x625fb0
+L06467: DM_RET=DM.CAPTURE(761,1035,783,1053,"C:\Users\mymacro\S.bmp")  # loc=5608 Runner=0x625fb0
+L06468: Call QMLibrary.Delay((100))  # loc=5609 Runner=0x625fb0
+L06469: DM_RET=DM.CAPTURE(808,1034,832,1052,"C:\Users\mymacro\D.bmp")  # loc=5610 Runner=0x625fb0
+L06470: Call QMLibrary.Delay((100))  # loc=5611 Runner=0x625fb0
+L06471: DM_RET=DM.CAPTURE(854,1034,877,1053,"C:\Users\mymacro\F.bmp")  # loc=5612 Runner=0x625fb0
+L06472: Call QMLibrary.Delay((50))  # loc=5613 Runner=0x625fb0
+L06473: 目前呼叫框架.暫存槽(1)=1  # loc=5614 Runner=0x625f7e
+L06474: 傳回值=目前呼叫框架.暫存槽(1)  # loc=5614 Runner=0x625f7e
+L06475: global.set(〔刷新技能〕, 傳回值)  # loc=5614 Runner=0x626783
+L06476: Call QMLibrary.TracePrint("检查技能完成")  # loc=5615 Runner=0x625fb0
+L06477: Call QMLibrary.Delay((50))  # loc=5616 Runner=0x625fb0
+L06478: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=5617 Runner=0x625f7e
+L06479: return caller  # loc=5617 Runner=0x626275

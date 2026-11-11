@@ -1,0 +1,115 @@
+"""Generate provenance-linked cube pseudocode and conservative static CFGs."""
+import hashlib,json,re
+from pathlib import Path
+from export_cube_routines import PROJECT,RANGES,FRAME,ARRAY,TEMP,SLOT
+
+
+def graph(actions,entry):
+    by={a['record']:a for a in actions};edges={};back=[]
+    for at,a in by.items():
+        k=a['kind']
+        if k in ('return','exit_script'):out=[]
+        elif k=='jump':out=[a['target']]
+        elif k=='if_zero':
+            prev=by.get(at-1,{})
+            const=prev.get('source','').lower().replace(' ','') if prev.get('source') else ''
+            out=[at+1] if const=='sgn(vbtrue)' else [a['target']] if const=='sgn(vbfalse)' else [at+1,a['target']]
+        else:out=[at+1]
+        if any(t not in by for t in out):raise ValueError(('Unreviewed boundary',at,out))
+        edges[at]=out
+        back.extend({'record':at,'target':t} for t in out if t<=at)
+    seen=set();todo=[entry]
+    while todo:
+        at=todo.pop()
+        if at in seen:continue
+        seen.add(at);todo.extend(edges[at])
+    return {'entry':entry,'edges':edges,'potentially_reachable':sorted(seen),'excluded_by_exit_or_constant_branch':sorted(set(by)-seen),'back_edges':back,
+            'scope':'Conservative static reachability, both unknown condition outcomes; not observed runtime coverage.'}
+
+
+def main():
+    path=PROJECT/'data/cube-routines.json';p=json.loads(path.read_text('utf8'))
+    out=PROJECT/'analysis/cube';out.mkdir(exist_ok=True,parents=True)
+    alias={FRAME+'.'+ARRAY:'frame.slots',TEMP:'temporary'}
+    known={'V8186B4D47378756D':'sdk_marker','V9FC0A2A5CEBFBCC64D6A65757378756D':'next_character',
+           'VF0ADACDECE99BF954D6A65757378756D':'last_character','VF0ADACDECCD2BFD14D6A65757378756D':'first_character',
+           'V8080D6BCA5D6CF9E4D6A65757378756D':'completion_mode','V8080D6BCC7B6BF904D6A65757378756D':'run_counter'}
+    tokens=set()
+    for a in p['actions']:
+        for part in re.split(r'("(?:[^"]|"")*")',a.get('source') or '')[::2]:
+            tokens.update(re.findall(r'\b(?:V[A-F0-9_]+|F273[A-Za-z0-9_]+)\b',part))
+    for n,t in enumerate(sorted(tokens),1):
+        if t not in (FRAME,TEMP,ARRAY):alias[t]=known.get(t,'symbol_'+str(n).zfill(2))
+    # Substitute whole identifiers outside strings; compound frame access first.
+    def readable(text):
+        parts=re.split(r'("(?:[^"]|"")*")',text)
+        for i in range(0,len(parts),2):
+            parts[i]=parts[i].replace(FRAME+'.'+ARRAY,'frame.slots')
+            parts[i]=re.sub(r'\b[A-Za-z_][A-Za-z0-9_]*\b',lambda m:alias.get(m[0],m[0]),parts[i])
+        return ''.join(parts)
+    results=[]
+    for first,last,name in RANGES:
+        actions=[a for a in p['actions'] if first<=a['record']<=last];g=graph(actions,first);g.update(name=name,last=last)
+        results.append(g)
+        lines=[f'# 魔方：{name} L{first}..L{last}','',
+               '逐筆偽碼／事件模型；非可直接執行的原QMS。symbol名稱與語義名稱均由重建提供。',
+               '原文字與全部欄位見 data/cube-routines.json；此檔未做簡繁轉換字串常數，以保留原找圖檔名與記錄文字。','']
+        for a in actions:
+            at=a['record'];k=a['kind']
+            if k=='if_zero':text=f'若 condition = 0，跳到 L{a["target"]}；否則 L{at+1}'
+            elif k=='jump':text=f'跳到 L{a["target"]}'
+            elif k=='test':text='condition = '+readable(a['source'])
+            elif k=='read_global':text=f'temporary = 讀共享值 {known.get(a["key"],alias.get(a["key"],a["key"]))} [原鍵 {a["key"]}]'
+            elif k=='write_global':text=f'寫共享值 {known.get(a["key"],a["key"])} = temporary'
+            elif k=='return':text='返回呼叫者（不是整個程式結束）'
+            elif k=='frame_restore_intent':text='還原呼叫框架／傳回暫存值的原語句：'+readable(a['source'])
+            elif k=='load_service_intent':text='若 SYS 為 Empty，要求載入 QMPlugin.Sys（事件模型不載入外掛）'
+            else:text=readable(a['source'])
+            lines.append(f'L{at}: {text}  // op={a["opcode"]}, loc={a["location"]}, SL={a["source_sl"]}, field_3={a["field_3"]}')
+        (out/f'{first}-{name}_逐筆偽碼.txt').write_text('\n'.join(lines)+'\n',encoding='utf8')
+    evidence={'module':7,'source_program_sha256':p['source_program_sha256'],'plan_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
+              'records':2135,'conditions':110,'routines':results,'callers':p['callers'],'aliases':alias,
+              'alias_semantics_inferred':True,'native_equivalence_verified':False,'full_module_restored':False}
+    report=json.loads((PROJECT/'verification/cube-original-vs-rebuild.json').read_text('utf8'))
+    evidence['controlled_original_body_verified']=p['original_body_guest_verified']
+    evidence['controlled_original_body_evidence']=p.get('controlled_original_body_evidence')
+    evidence['uncovered_records']=sorted({a['record'] for a in p['actions']}-set(report['covered_records']))
+    assert evidence['uncovered_records']==sorted({at for g in results for at in g['excluded_by_exit_or_constant_branch']})
+    (out/'cube-control-flow.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+    guide=['# 魔方：接周任務、換角色與完成後操作','',
+           '三段共2,135筆保留指令已轉成封閉事件模型與逐筆偽碼。191組固定副本原文案例／26,668外部事件與自有模型一致，另核對逐筆PC、停止位置、共享值讀寫與最終共享值；110個條件中108個兩側皆有案例，另外兩個為固定vbTrue。這不是整套遊戲功能已完成。','',
+           '## 閱讀與入口','',
+           '- [接周任務 L857..1493](857-接周任務_逐筆偽碼.txt)：637筆、29條件，沒有內部反向邊。',
+           '- [換角色 L5020..6442](5020-換角色_逐筆偽碼.txt)：1,423筆、77條件、兩條反向邊。',
+           '- [完成後操作 L6740..6814](6740-完成後的操作_逐筆偽碼.txt)：75筆、4條件，沒有內部反向邊。',
+           '- [全部原始欄位、文字與事件](../../data/cube-routines.json)、[控制流與39個呼叫位置](cube-control-flow.json)、[自有事件直譯器](../../source/qmacro_cube.py)。','',
+           '這三個子程序本體沒有op12子呼叫，也沒有啟動／控制執行緒的指令。模組其他位置有39個op12直接呼叫它們；JSON列出呼叫前一筆框架建立與後一筆傳回值儲存的位置，但這不表示所有呼叫者已恢復。三段不是三個獨立入口程式。','',
+           '## 接周任務','',
+           'L858..892依第一個共享設定等於1、2或3，且run_counter分別>=1、>=2或>=3時，直接跳L1491的框架還原與返回。不能把這個上限判斷改成所有模式都只做一次。',
+           'L894先清一個本地狀態，L896..913依另外的共享值和run_counter <3／>=3更新它；L917以OR組合本地狀態與另一共享設定才決定進入點擊流程。這些共享設定的介面名稱尚未核實，偽碼以symbol名稱保留，沒有替它們編造預設值。',
+           '後段含11個DM.FINDPIC、65個DM.MOVETO、120個MouseClick與280個Delay呼叫。找圖依原INTX/INTY分支；11組隨機點擊座標分別INT(30*RND+INTX)、INT(20*RND+INTY)，不能固定成圖片左上角。','',
+           '## 換角色','',
+           'L5022/5025/5028依原TracePrint文字推定first_character、last_character、next_character。L5036只在next_character > last_character時走完成分支；相等仍進換角。這些名稱是語義重建，原鍵和字串完整保留。',
+           'L5132..5193為第一個等待迴圈，以SDK色碼及其他固定色碼判斷畫面；L6421..6431為換角確認迴圈。SDK讀取發生在迴圈內，不應啟動時只讀一次。特別注意L5153命中會經L5156/5157回首迴圈，並非直接通過；對應受控案例已確認這條反向等待路徑。事件模型不代入SDK色碼，缺少共享值或畫面觀測必須由呼叫端供應。',
+           'L5196..6350附近依next_character選擇找圖與點擊路徑，原數字條件逐筆保留。L6398..6402把next_character加1寫回共享值；L6403..6405清零run_counter；L6406清本地狀態。這些寫回會影響後續接周任務，不能只更新畫面而遺漏共享資料。','',
+           '## 完成後操作與停止邊界','',
+           '共享completion_mode每一條ElseIf都重新讀取。穩定值0：等待後ExitScript(0)；1：按F8兩次後停止；2：依固定座標點擊、按Enter，再停止；3：要求QMPlugin.Sys並呼叫SYS.EXITOS(1)，再停止；其他值走預設停止。換角色超出末角時也有對應分支；mode1另依本地狀態決定是否先點擊退出副本。',
+           'SYS.EXITOS(1)在此只標記原呼叫及參數，並未執行或把Windows效果當作已驗證。ExitScript(0)之後的跳轉／Delay仍保留在逐筆檔，但正常停止的路徑不再繼續執行。','',
+           '## 框架、介面與外掛界線','',
+           '三段尾端皆有原框架還原語句與op13返回。Python模型把前者列為frame_restore_intent；副本174個返回案例確認明示新建且父物件為Nothing時，原框架還原為Nothing、傳回值為Empty。一般巢狀父框架生命週期仍未等同驗證，呼叫端必須明示提供frame_slots及先前本地值。完成後操作所有受控路徑先ExitScript，因此其尾端返回並未實際執行。',
+           '本批沒有介面事件註冊／等待指令；不能由此推論整個魔方模組沒有介面。主流程、15個原工作入口及其他子程序尚需串接。原模組500筆缺失仍保留。',
+           '目前依賴包括共享值提供者、DM找圖／找色、滑鼠／鍵盤與延遲、記錄、SYS外掛。自有模型僅產事件，不讀取桌面、不送遊戲操作、不延遲、不載COM、不關機。',
+           'CubeMachine的write_global是事件：宿主需把key/value套用至自己提供的共享值儲存後再呼叫下一步。模型不會暗中改寫呼叫端的共享來源；測試run函式明示套用這兩筆寫回。read_global(key,record)可依原位置提供動態值，沒有把多次讀取合併成快取。',
+           '便攜核對：python -m unittest discover -s source -p "test_qmacro_cube.py"。重播與比對腳本為source/replay_cube_cases.py及source/compare_cube_cases.py，使用已保存的副本觀測，不會在本機執行原腳本。','',
+           '## 191組原文副本核對範圍','',
+           '資料見data/cube-cases.json、verification/original-cube-routines.json與verification/cube-original-vs-rebuild.json。191案例中174返回、14停止、3個受控擷取上限。110條件的218條有效邊全部有觀測（108雙邊、2個固定True單邊）。2,120筆已執行；15筆未執行位置為5053、5076、5115、5116、5126、5127、6747、6758、6797、6798、6808、6809、6812、6813、6814，皆由本批入口在ExitScript後不可達，仍完整保留原指令。',
+           '原VBScript文字由固定副本的Windows引擎執行，分派使用自有RecordVm；沒有執行原Runner原生程式／DM／SYS。op31的SYS載入由記錄物件供應，未執行原CreateObject。SDK是明示合成資料；Randomize與RND原賦值先執行，再依原界限覆寫成受控值，不能宣稱真RNG或時間等同。3個等待案例只在擷取上限停止觀察，不代表原迴圈自行停止。',
+           '額外案例確認L908再次讀取counter時值可與L901不同；L911假分支不能因穩定設定測試從未發生就刪除。角色25且last_character=25會跳過24個選擇分支而繼續原後段，模型保留此行為，沒有自行夾成角色24。','',
+           '## 靜態控制流範圍','',
+           'cube-control-flow.json會排除ExitScript後的邊與Sgn(vbTrue)的假分支；其他條件同時保留兩邊。因此potentially_reachable是保守靜態可能性，不是實測覆蓋或每個分支都確實可達。缺失前綴也可能有其他入口。','']
+    for g in results:guide.append(f'- {g["name"]}：靜態可能到達{len(g["potentially_reachable"])}筆；排除{g["excluded_by_exit_or_constant_branch"]}；反向邊{g["back_edges"]}。')
+    (out/'魔方_可讀流程.md').write_text('\n'.join(guide)+'\n',encoding='utf8')
+    print(json.dumps({'records':2135,'routines':[{k:g[k] for k in ('name','entry','last','back_edges')} for g in results]},ensure_ascii=False))
+
+
+if __name__=='__main__':main()

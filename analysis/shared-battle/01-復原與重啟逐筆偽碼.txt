@@ -1,0 +1,1370 @@
+# 模組 01 的復原與重新啟動
+
+## 覺醒 L742..L836
+
+L742 Call QMLibrary.Delay((100))  // op=30, loc=459, SL=609, field_3=0
+L743 SET DM=CREATEOBJECT("dm.dmsoft")  // op=2, loc=460, SL=610, field_3=0
+L744 Call DM.SETSHOWERRORMSG(0)  // op=30, loc=461, SL=611, field_3=0
+L745 Call QMLibrary.TracePrint(("觉醒.已启动"))  // op=30, loc=462, SL=612, field_3=0
+L746 Call QMLibrary.Delay((100))  // op=30, loc=463, SL=613, field_3=0
+L747 temporary = 讀取共享鍵 VF39FB5A4B9B5C2A84D6A65757378756D  // op=27, loc=464, SL=614, field_3=0
+L748 frame.slots(1)=temporary  // op=2, loc=464, SL=615, field_3=0
+L749 condition = Sgn(frame.slots(1)=0)  // op=4, loc=464, SL=616, field_3=0
+L750 條件為零則跳 L782，否則 L751  // op=6, loc=464, SL=None, field_3=0
+L751 condition = Sgn(vbTrue)  // op=4, loc=465, SL=617, field_3=0
+L752 條件為零則跳 L781，否則 L753  // op=6, loc=465, SL=None, field_3=0
+L753 Call QMLibrary.Delay((1000))  // op=30, loc=466, SL=618, field_3=0
+L754 DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss.bmp|C:\users\mymacro\boss3.bmp|C:\users\mymacro\boss4.bmp","151515",0.8,0,INTX,INTY)  // op=30, loc=468, SL=619, field_3=0
+L755 condition = Sgn((INTX>=0))  // op=4, loc=469, SL=620, field_3=0
+L756 條件為零則跳 L780，否則 L757  // op=6, loc=469, SL=None, field_3=0
+L757 Call QMLibrary.Delay((500))  // op=30, loc=471, SL=621, field_3=0
+L758 DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\bstou.bmp","000000",0.7,0,INTX,INTY)  // op=30, loc=472, SL=622, field_3=0
+L759 condition = Sgn((INTX<0))  // op=4, loc=473, SL=623, field_3=0
+L760 條件為零則跳 L780，否則 L761  // op=6, loc=473, SL=None, field_3=0
+L761 Call QMLibrary.Delay((500))  // op=30, loc=474, SL=624, field_3=0
+L762 DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\bstou.bmp","000000",0.7,0,INTX,INTY)  // op=30, loc=475, SL=625, field_3=0
+L763 condition = Sgn((INTX<0))  // op=4, loc=476, SL=626, field_3=0
+L764 條件為零則跳 L780，否則 L765  // op=6, loc=476, SL=None, field_3=0
+L765 Call QMLibrary.Delay((100))  // op=30, loc=477, SL=627, field_3=0
+L766 DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss.bmp|C:\users\mymacro\boss3.bmp|C:\users\mymacro\boss4.bmp","151515",0.8,0,INTX,INTY)  // op=30, loc=478, SL=628, field_3=0
+L767 condition = Sgn((INTX>=0))  // op=4, loc=479, SL=629, field_3=0
+L768 條件為零則跳 L780，否則 L769  // op=6, loc=479, SL=None, field_3=0
+L769 Call QMLibrary.Delay((50))  // op=30, loc=481, SL=630, field_3=0
+L770 Call QMLibrary.TracePrint(("第二次确认很近.确认释放觉醒技能"))  // op=30, loc=482, SL=631, field_3=0
+L771 Call QMLibrary.Delay((100))  // op=30, loc=483, SL=632, field_3=0
+L772 Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  // op=30, loc=484, SL=633, field_3=0
+L773 Call QMLibrary.Delay((100))  // op=30, loc=485, SL=634, field_3=0
+L774 Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  // op=30, loc=486, SL=635, field_3=0
+L775 Call QMLibrary.Delay((100))  // op=30, loc=487, SL=636, field_3=0
+L776 Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  // op=30, loc=488, SL=637, field_3=0
+L777 Call QMLibrary.Delay((100))  // op=30, loc=489, SL=638, field_3=0
+L778 Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  // op=30, loc=490, SL=639, field_3=0
+L779 Call QMLibrary.Delay((100))  // op=30, loc=491, SL=640, field_3=0
+L780 跳往 L751  // op=16, loc=492, SL=None, field_3=0
+L781 跳往 L834  // op=16, loc=493, SL=None, field_3=0
+L782 temporary = 讀取共享鍵 VF39FB5A4B9B5C2A84D6A65757378756D  // op=27, loc=497, SL=641, field_3=0
+L783 frame.slots(2)=temporary  // op=2, loc=497, SL=642, field_3=0
+L784 condition = Sgn(frame.slots(2)=1)  // op=4, loc=497, SL=643, field_3=0
+L785 條件為零則跳 L792，否則 L786  // op=6, loc=497, SL=None, field_3=0
+L786 condition = Sgn(vbTrue)  // op=4, loc=498, SL=644, field_3=0
+L787 條件為零則跳 L791，否則 L788  // op=6, loc=498, SL=None, field_3=0
+L788 Call QMLibrary.Delay(5000)  // op=30, loc=499, SL=645, field_3=0
+L789 Call QMLibrary.Delay(5000)  // op=30, loc=500, SL=646, field_3=0
+L790 跳往 L786  // op=16, loc=501, SL=None, field_3=0
+L791 跳往 L834  // op=16, loc=501, SL=None, field_3=0
+L792 temporary = 讀取共享鍵 VF39FB5A4B9B5C2A84D6A65757378756D  // op=27, loc=502, SL=647, field_3=0
+L793 frame.slots(3)=temporary  // op=2, loc=502, SL=648, field_3=0
+L794 condition = Sgn(frame.slots(3)=2)  // op=4, loc=502, SL=649, field_3=0
+L795 條件為零則跳 L834，否則 L796  // op=6, loc=502, SL=None, field_3=0
+L796 condition = Sgn(vbTrue)  // op=4, loc=503, SL=650, field_3=0
+L797 條件為零則跳 L834，否則 L798  // op=6, loc=503, SL=None, field_3=0
+L798 Call QMLibrary.Delay((1000))  // op=30, loc=504, SL=651, field_3=0
+L799 DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss.bmp|C:\users\mymacro\boss3.bmp|C:\users\mymacro\boss4.bmp","151515",0.8,0,INTX,INTY)  // op=30, loc=506, SL=652, field_3=0
+L800 condition = Sgn((INTX>=0))  // op=4, loc=507, SL=653, field_3=0
+L801 條件為零則跳 L833，否則 L802  // op=6, loc=507, SL=None, field_3=0
+L802 Call QMLibrary.Delay((300))  // op=30, loc=509, SL=654, field_3=0
+L803 DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\bstou.bmp","000000",0.7,0,INTX,INTY)  // op=30, loc=510, SL=655, field_3=0
+L804 condition = Sgn((INTX<0))  // op=4, loc=511, SL=656, field_3=0
+L805 條件為零則跳 L833，否則 L806  // op=6, loc=511, SL=None, field_3=0
+L806 Call QMLibrary.Delay((300))  // op=30, loc=512, SL=657, field_3=0
+L807 Call FindPic(1592,37,1892,297,"C:\users\mymacro\bstou.bmp",0.5,INTX,INTY)  // op=30, loc=513, SL=658, field_3=0
+L808 condition = Sgn((INTX<0))  // op=4, loc=514, SL=659, field_3=0
+L809 條件為零則跳 L833，否則 L810  // op=6, loc=514, SL=None, field_3=0
+L810 Call QMLibrary.Delay((300))  // op=30, loc=516, SL=660, field_3=0
+L811 DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\bstou.bmp","000000",0.7,0,INTX,INTY)  // op=30, loc=517, SL=661, field_3=0
+L812 condition = Sgn((INTX<0))  // op=4, loc=518, SL=662, field_3=0
+L813 條件為零則跳 L833，否則 L814  // op=6, loc=518, SL=None, field_3=0
+L814 Call QMLibrary.Delay((300))  // op=30, loc=519, SL=663, field_3=0
+L815 Call FindPic(1592,37,1892,297,"C:\users\mymacro\bstou.bmp",0.5,INTX,INTY)  // op=30, loc=520, SL=664, field_3=0
+L816 condition = Sgn((INTX<0))  // op=4, loc=521, SL=665, field_3=0
+L817 條件為零則跳 L833，否則 L818  // op=6, loc=521, SL=None, field_3=0
+L818 Call QMLibrary.Delay((100))  // op=30, loc=522, SL=666, field_3=0
+L819 DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss.bmp|C:\users\mymacro\boss3.bmp|C:\users\mymacro\boss4.bmp","151515",0.8,0,INTX,INTY)  // op=30, loc=523, SL=667, field_3=0
+L820 condition = Sgn((INTX>=0))  // op=4, loc=524, SL=668, field_3=0
+L821 條件為零則跳 L833，否則 L822  // op=6, loc=524, SL=None, field_3=0
+L822 Call QMLibrary.Delay((50))  // op=30, loc=526, SL=669, field_3=0
+L823 Call QMLibrary.TracePrint(("第二次确认很近.确认释放觉醒技能"))  // op=30, loc=527, SL=670, field_3=0
+L824 Call QMLibrary.Delay((100))  // op=30, loc=528, SL=671, field_3=0
+L825 Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  // op=30, loc=529, SL=672, field_3=0
+L826 Call QMLibrary.Delay((100))  // op=30, loc=530, SL=673, field_3=0
+L827 Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  // op=30, loc=531, SL=674, field_3=0
+L828 Call QMLibrary.Delay((100))  // op=30, loc=532, SL=675, field_3=0
+L829 Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  // op=30, loc=533, SL=676, field_3=0
+L830 Call QMLibrary.Delay((100))  // op=30, loc=534, SL=677, field_3=0
+L831 Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  // op=30, loc=535, SL=678, field_3=0
+L832 Call QMLibrary.Delay((100))  // op=30, loc=536, SL=679, field_3=0
+L833 跳往 L796  // op=16, loc=537, SL=None, field_3=0
+L834 Call QMLibrary.Delay((100))  // op=30, loc=545, SL=680, field_3=0
+L835 取回傳值至 temporary 並恢復父框架  // op=2, loc=546, SL=681, field_3=0
+L836 返回呼叫者  // op=13, loc=546, SL=None, field_3=0
+
+## 死亡處理 L838..L1018
+
+L838 Call QMLibrary.Delay((100))  // op=30, loc=548, SL=682, field_3=0
+L839 SET DM=CREATEOBJECT("dm.dmsoft")  // op=2, loc=549, SL=683, field_3=0
+L840 Call DM.SETSHOWERRORMSG(0)  // op=30, loc=550, SL=684, field_3=0
+L841 Call QMLibrary.Delay((100))  // op=30, loc=551, SL=685, field_3=0
+L842 Call QMLibrary.Delay(100)  // op=30, loc=552, SL=686, field_3=0
+L843 V8799D49F7378756D=DM.ENABLEREALMOUSE(2,10,60)  // op=30, loc=553, SL=687, field_3=0
+L844 Call QMLibrary.TracePrint("鼠标" & V8799D49F7378756D)  // op=30, loc=554, SL=688, field_3=0
+L845 Call QMLibrary.Delay(100)  // op=30, loc=555, SL=689, field_3=0
+L846 Call QMLibrary.OpenLog("C:\方舟混沌\运行日志.log")  // op=30, loc=556, SL=690, field_3=0
+L847 Call QMLibrary.Delay((100))  // op=30, loc=557, SL=691, field_3=0
+L848 temporary = 讀取共享鍵 VF5DEDE9B7378756D  // op=27, loc=558, SL=692, field_3=0
+L849 frame.slots(1)=temporary  // op=2, loc=558, SL=693, field_3=0
+L850 condition = Sgn(frame.slots(1)=1)  // op=4, loc=558, SL=694, field_3=0
+L851 條件為零則跳 L854，否則 L852  // op=6, loc=558, SL=None, field_3=0
+L852 Call QMLibrary.Delay((100))  // op=30, loc=559, SL=695, field_3=0
+L853 V9E9AA6DECBCCCE834D6A65757378756D=1  // op=2, loc=560, SL=696, field_3=0
+L854 Call QMLibrary.TracePrint(("监控死亡.已启动"))  // op=30, loc=562, SL=697, field_3=0
+L855 Call QMLibrary.Delay((5000))  // op=30, loc=563, SL=698, field_3=0
+L856 condition = Sgn(vbTrue)  // op=4, loc=564, SL=699, field_3=0
+L857 條件為零則跳 L1016，否則 L858  // op=6, loc=564, SL=None, field_3=0
+L858 Call QMLibrary.Delay((3000))  // op=30, loc=565, SL=700, field_3=0
+L859 temporary = 讀取共享鍵 V8186B4D47378756D  // op=27, loc=566, SL=701, field_3=0
+L860 frame.slots(1)=temporary  // op=30, loc=566, SL=702, field_3=0
+L861 DM_RET=DM.FINDCOLOR(160,1,260,25,frame.slots(1) & "-151515",0.9,0,INTX,INTY)  // op=2, loc=566, SL=703, field_3=0
+L862 condition = Sgn((INTX>=0))  // op=4, loc=567, SL=704, field_3=0
+L863 條件為零則跳 L1015，否則 L864  // op=6, loc=567, SL=None, field_3=0
+L864 Call QMLibrary.Delay((1000))  // op=30, loc=569, SL=705, field_3=0
+L865 DM_RET=DM.FINDPIC(1420,288,1490,550,"C:\users\mymacro\si.bmp","050505",0.8,0,INTX,INTY)  // op=30, loc=570, SL=706, field_3=0
+L866 condition = Sgn((INTX>=0))  // op=4, loc=571, SL=707, field_3=0
+L867 條件為零則跳 L1015，否則 L868  // op=6, loc=571, SL=None, field_3=0
+L868 Call QMLibrary.Delay((1000))  // op=30, loc=573, SL=708, field_3=0
+L869 temporary = 讀取共享鍵 V8186B4D47378756D  // op=27, loc=574, SL=709, field_3=0
+L870 frame.slots(2)=temporary  // op=30, loc=574, SL=710, field_3=0
+L871 DM_RET=DM.FINDCOLOR(160,1,260,25,frame.slots(2) & "-151515",0.9,0,INTX,INTY)  // op=2, loc=574, SL=711, field_3=0
+L872 condition = Sgn((INTX>=0))  // op=4, loc=575, SL=712, field_3=0
+L873 條件為零則跳 L1015，否則 L874  // op=6, loc=575, SL=None, field_3=0
+L874 Call QMLibrary.Delay((1000))  // op=30, loc=577, SL=713, field_3=0
+L875 DM_RET=DM.FINDCOLOR(1210,162,1400,209,"FFD200-050505",0.9,0,INTX,INTY)  // op=30, loc=578, SL=714, field_3=0
+L876 condition = Sgn((INTX>=0))  // op=4, loc=579, SL=715, field_3=0
+L877 條件為零則跳 L1015，否則 L878  // op=6, loc=579, SL=None, field_3=0
+L878 Call QMLibrary.Delay((1000))  // op=30, loc=581, SL=716, field_3=0
+L879 temporary = 讀取共享鍵 V8186B4D47378756D  // op=27, loc=582, SL=717, field_3=0
+L880 frame.slots(3)=temporary  // op=30, loc=582, SL=718, field_3=0
+L881 DM_RET=DM.FINDCOLOR(160,1,260,25,frame.slots(3) & "-151515",0.9,0,INTX,INTY)  // op=2, loc=582, SL=719, field_3=0
+L882 condition = Sgn((INTX>=0))  // op=4, loc=583, SL=720, field_3=0
+L883 條件為零則跳 L1015，否則 L884  // op=6, loc=583, SL=None, field_3=0
+L884 Call QMLibrary.Delay((1500))  // op=30, loc=585, SL=721, field_3=0
+L885 DM_RET=DM.FINDPIC(1420,288,1490,550,"C:\users\mymacro\si.bmp","050505",0.8,0,INTX,INTY)  // op=30, loc=586, SL=722, field_3=0
+L886 condition = Sgn((INTX>=0))  // op=4, loc=587, SL=723, field_3=0
+L887 條件為零則跳 L1015，否則 L888  // op=6, loc=587, SL=None, field_3=0
+L888 Call QMLibrary.Delay((1500))  // op=30, loc=589, SL=724, field_3=0
+L889 temporary = 讀取共享鍵 V8186B4D47378756D  // op=27, loc=590, SL=725, field_3=0
+L890 frame.slots(4)=temporary  // op=30, loc=590, SL=726, field_3=0
+L891 DM_RET=DM.FINDCOLOR(160,1,260,25,frame.slots(4) & "-151515",0.9,0,INTX,INTY)  // op=2, loc=590, SL=727, field_3=0
+L892 condition = Sgn((INTX>=0))  // op=4, loc=591, SL=728, field_3=0
+L893 條件為零則跳 L1015，否則 L894  // op=6, loc=591, SL=None, field_3=0
+L894 Call QMLibrary.Delay((1500))  // op=30, loc=593, SL=729, field_3=0
+L895 DM_RET=DM.FINDCOLOR(1210,162,1400,209,"FFD200-050505",0.9,0,INTX,INTY)  // op=30, loc=594, SL=730, field_3=0
+L896 condition = Sgn((INTX>=0))  // op=4, loc=595, SL=731, field_3=0
+L897 條件為零則跳 L1015，否則 L898  // op=6, loc=595, SL=None, field_3=0
+L898 Call QMLibrary.Delay((50))  // op=30, loc=596, SL=732, field_3=0
+L899 Call QMLibrary.TracePrint(("监控死亡.第八次判定.确定人物死亡执行复活操作"))  // op=30, loc=597, SL=733, field_3=0
+L900 Call QMLibrary.Delay((50))  // op=30, loc=598, SL=734, field_3=0
+L901 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=599, SL=735, field_3=0
+L902 frame.slots(5)=temporary  // op=2, loc=599, SL=736, field_3=0
+L903 Call QMLibrary.ThreadControl((frame.slots(5)), 1)  // op=30, loc=599, SL=737, field_3=0
+L904 Call QMLibrary.Delay((50))  // op=30, loc=600, SL=738, field_3=0
+L905 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=601, SL=739, field_3=0
+L906 frame.slots(6)=temporary  // op=2, loc=601, SL=740, field_3=0
+L907 Call QMLibrary.ThreadControl((frame.slots(6)), 1)  // op=30, loc=601, SL=741, field_3=0
+L908 Call QMLibrary.Delay((50))  // op=30, loc=602, SL=742, field_3=0
+L909 temporary = 讀取共享鍵 VFEBEB7DC3A3C756D  // op=27, loc=603, SL=743, field_3=0
+L910 frame.slots(7)=temporary  // op=2, loc=603, SL=744, field_3=0
+L911 Call QMLibrary.ThreadControl((frame.slots(7)), 1)  // op=30, loc=603, SL=745, field_3=0
+L912 Call QMLibrary.Delay((50))  // op=30, loc=604, SL=746, field_3=0
+L913 temporary = 讀取共享鍵 VFEBED5ACC4AEC4A59FC32C317378756D  // op=27, loc=605, SL=747, field_3=0
+L914 frame.slots(8)=temporary  // op=2, loc=605, SL=748, field_3=0
+L915 Call QMLibrary.ThreadControl((frame.slots(8)), 1)  // op=30, loc=605, SL=749, field_3=0
+L916 Call QMLibrary.Delay((50))  // op=30, loc=606, SL=750, field_3=0
+L917 temporary = 讀取共享鍵 VFDDE223C3778756D  // op=27, loc=607, SL=751, field_3=0
+L918 frame.slots(9)=temporary  // op=2, loc=607, SL=752, field_3=0
+L919 Call QMLibrary.ThreadControl((frame.slots(9)), 1)  // op=30, loc=607, SL=753, field_3=0
+L920 Call QMLibrary.Delay((50))  // op=30, loc=608, SL=754, field_3=0
+L921 temporary = 讀取共享鍵 VFF89AF887378756D  // op=27, loc=609, SL=755, field_3=0
+L922 frame.slots(10)=temporary  // op=2, loc=609, SL=756, field_3=0
+L923 condition = Sgn(frame.slots(10)>2)  // op=4, loc=609, SL=757, field_3=0
+L924 條件為零則跳 L929，否則 L925  // op=6, loc=609, SL=None, field_3=0
+L925 Call QMLibrary.Delay((50))  // op=30, loc=610, SL=758, field_3=0
+L926 temporary = 讀取共享鍵 V98B8AE8BBEC43C294D6A65757378756D  // op=27, loc=611, SL=759, field_3=0
+L927 frame.slots(11)=temporary  // op=2, loc=611, SL=760, field_3=0
+L928 Call QMLibrary.ThreadControl(frame.slots(11), 0)  // op=30, loc=611, SL=761, field_3=0
+L929 Call QMLibrary.Delay((50))  // op=30, loc=613, SL=762, field_3=0
+L930 temporary = 讀取共享鍵 V98B8D0C8A4B7B6A84D6A65757378756D  // op=27, loc=614, SL=763, field_3=0
+L931 frame.slots(12)=temporary  // op=2, loc=614, SL=764, field_3=0
+L932 condition = Sgn((frame.slots(12)=1))  // op=4, loc=614, SL=765, field_3=0
+L933 條件為零則跳 L938，否則 L934  // op=6, loc=614, SL=None, field_3=0
+L934 Call QMLibrary.Delay((50))  // op=30, loc=615, SL=766, field_3=0
+L935 temporary = 讀取共享鍵 V9AA5A6B0C78AB887F19BD3DEBD8F3C294D6A65757378756D  // op=27, loc=616, SL=767, field_3=0
+L936 frame.slots(13)=temporary  // op=2, loc=616, SL=768, field_3=0
+L937 Call QMLibrary.ThreadControl((frame.slots(13)), 1)  // op=30, loc=616, SL=769, field_3=0
+L938 Call QMLibrary.Delay((1000))  // op=30, loc=618, SL=770, field_3=0
+L939 temporary = 讀取共享鍵 VFDDEA0D0CE9FB68B4D6A65757378756D  // op=27, loc=619, SL=771, field_3=0
+L940 frame.slots(14)=temporary  // op=2, loc=619, SL=772, field_3=0
+L941 condition = Sgn(V9E9AA6DECBCCCE834D6A65757378756D=1 or frame.slots(14)=4)  // op=4, loc=619, SL=773, field_3=0
+L942 條件為零則跳 L953，否則 L943  // op=6, loc=619, SL=None, field_3=0
+L943 Call QMLibrary.Delay((50))  // op=30, loc=620, SL=774, field_3=0
+L944 Call DM.MOVETO(1377,345)  // op=30, loc=621, SL=775, field_3=0
+L945 Call QMLibrary.Delay((500))  // op=30, loc=622, SL=776, field_3=0
+L946 Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  // op=30, loc=623, SL=777, field_3=0
+L947 Call QMLibrary.Delay((200))  // op=30, loc=624, SL=778, field_3=0
+L948 Call DM.MOVETO(1377,345)  // op=30, loc=625, SL=779, field_3=0
+L949 Call QMLibrary.Delay((300))  // op=30, loc=626, SL=780, field_3=0
+L950 Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  // op=30, loc=627, SL=781, field_3=0
+L951 Call QMLibrary.Delay((200))  // op=30, loc=628, SL=782, field_3=0
+L952 跳往 L962  // op=16, loc=629, SL=None, field_3=0
+L953 Call QMLibrary.Delay((50))  // op=30, loc=630, SL=783, field_3=0
+L954 Call DM.MOVETO(1377,420)  // op=30, loc=631, SL=784, field_3=0
+L955 Call QMLibrary.Delay((500))  // op=30, loc=632, SL=785, field_3=0
+L956 Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  // op=30, loc=633, SL=786, field_3=0
+L957 Call QMLibrary.Delay((200))  // op=30, loc=634, SL=787, field_3=0
+L958 Call DM.MOVETO(1377,420)  // op=30, loc=635, SL=788, field_3=0
+L959 Call QMLibrary.Delay((300))  // op=30, loc=636, SL=789, field_3=0
+L960 Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  // op=30, loc=637, SL=790, field_3=0
+L961 Call QMLibrary.Delay((200))  // op=30, loc=638, SL=791, field_3=0
+L962 Call QMLibrary.Delay((100))  // op=30, loc=640, SL=792, field_3=0
+L963 Randomize  // op=2, loc=641, SL=793, field_3=0
+L964 X=INT(200*RND+885)  // op=2, loc=642, SL=794, field_3=0
+L965 Randomize  // op=2, loc=643, SL=795, field_3=0
+L966 Y=INT(100*RND+551)  // op=2, loc=644, SL=796, field_3=0
+L967 Call QMLibrary.Delay((50))  // op=30, loc=645, SL=797, field_3=0
+L968 Call DM.MOVETO(X,Y)  // op=30, loc=646, SL=798, field_3=0
+L969 Call QMLibrary.Delay((500))  // op=30, loc=647, SL=799, field_3=0
+L970 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=648, SL=800, field_3=0
+L971 frame.slots(15)=temporary  // op=2, loc=648, SL=801, field_3=0
+L972 Call QMLibrary.ThreadControl((frame.slots(15)), 2)  // op=30, loc=648, SL=802, field_3=0
+L973 Call QMLibrary.Delay((1000))  // op=30, loc=649, SL=803, field_3=0
+L974 temporary = 讀取共享鍵 V98B8D0C8A4B7B6A84D6A65757378756D  // op=27, loc=650, SL=804, field_3=0
+L975 frame.slots(16)=temporary  // op=2, loc=650, SL=805, field_3=0
+L976 condition = Sgn((frame.slots(16)=1))  // op=4, loc=650, SL=806, field_3=0
+L977 條件為零則跳 L983，否則 L978  // op=6, loc=650, SL=None, field_3=0
+L978 Call QMLibrary.Delay((100))  // op=30, loc=651, SL=807, field_3=0
+L979 temporary = 讀取共享鍵 V9AA5A6B0C78AB887F19BD3DEBD8F3C294D6A65757378756D  // op=27, loc=652, SL=808, field_3=0
+L980 frame.slots(17)=temporary  // op=2, loc=652, SL=809, field_3=0
+L981 Call QMLibrary.ThreadControl((frame.slots(17)), 2)  // op=30, loc=652, SL=810, field_3=0
+L982 Call QMLibrary.Delay((1000))  // op=30, loc=653, SL=811, field_3=0
+L983 Call QMLibrary.Delay((100))  // op=30, loc=655, SL=812, field_3=0
+L984 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=656, SL=813, field_3=0
+L985 frame.slots(18)=temporary  // op=2, loc=656, SL=814, field_3=0
+L986 Call QMLibrary.ThreadControl((frame.slots(18)), 2)  // op=30, loc=656, SL=815, field_3=0
+L987 Call QMLibrary.Delay((1000))  // op=30, loc=657, SL=816, field_3=0
+L988 temporary = 讀取共享鍵 VFEBEB7DC3A3C756D  // op=27, loc=658, SL=817, field_3=0
+L989 frame.slots(19)=temporary  // op=2, loc=658, SL=818, field_3=0
+L990 Call QMLibrary.ThreadControl((frame.slots(19)), 2)  // op=30, loc=658, SL=819, field_3=0
+L991 Call QMLibrary.Delay((1000))  // op=30, loc=659, SL=820, field_3=0
+L992 temporary = 讀取共享鍵 VFEBED5ACC4AEC4A59FC32C317378756D  // op=27, loc=660, SL=821, field_3=0
+L993 frame.slots(20)=temporary  // op=2, loc=660, SL=822, field_3=0
+L994 Call QMLibrary.ThreadControl((frame.slots(20)), 2)  // op=30, loc=660, SL=823, field_3=0
+L995 Call QMLibrary.Delay((1000))  // op=30, loc=661, SL=824, field_3=0
+L996 temporary = 讀取共享鍵 VFDDE223C3778756D  // op=27, loc=662, SL=825, field_3=0
+L997 frame.slots(21)=temporary  // op=2, loc=662, SL=826, field_3=0
+L998 Call QMLibrary.ThreadControl((frame.slots(21)), 2)  // op=30, loc=662, SL=827, field_3=0
+L999 Call QMLibrary.Delay((1000))  // op=30, loc=663, SL=828, field_3=0
+L1000 temporary = 讀取共享鍵 VFF89AF887378756D  // op=27, loc=664, SL=829, field_3=0
+L1001 frame.slots(22)=temporary  // op=2, loc=664, SL=830, field_3=0
+L1002 condition = Sgn(frame.slots(22)>2)  // op=4, loc=664, SL=831, field_3=0
+L1003 條件為零則跳 L1014，否則 L1004  // op=6, loc=664, SL=None, field_3=0
+L1004 Call QMLibrary.Delay((50))  // op=30, loc=665, SL=832, field_3=0
+L1005 要求啟動 L1007 的工作，將工作 ID 放入 temporary  // op=24, loc=666, SL=None, field_3=0
+L1006 跳往 L1010  // op=16, loc=666, SL=None, field_3=0
+L1007 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V98B8AE8BBEC4756D 並保留父框架  // op=2, loc=666, SL=833, field_3=0
+L1008 呼叫 L6783，返回 L1009  // op=12, loc=666, SL=None, field_3=0
+L1009 到達工作本輪的結束位置  // op=23, loc=666, SL=None, field_3=0
+L1010 frame.slots(23)=temporary  // op=2, loc=666, SL=834, field_3=0
+L1011 frame.slots(24)=frame.slots(23)  // op=2, loc=666, SL=837, field_3=0
+L1012 temporary=frame.slots(24)  // op=2, loc=666, SL=835, field_3=0
+L1013 寫入共享鍵 V98B8AE8BBEC43C294D6A65757378756D = temporary  // op=28, loc=666, SL=836, field_3=0
+L1014 Call QMLibrary.Delay((5000))  // op=30, loc=668, SL=838, field_3=0
+L1015 跳往 L856  // op=16, loc=669, SL=None, field_3=0
+L1016 Call QMLibrary.Delay((100))  // op=30, loc=678, SL=839, field_3=0
+L1017 取回傳值至 temporary 並恢復父框架  // op=2, loc=679, SL=840, field_3=0
+L1018 返回呼叫者  // op=13, loc=679, SL=None, field_3=0
+
+## 塔場 L6783..L7704
+
+L6783 Call QMLibrary.Delay((2000))  // op=30, loc=5835, SL=5519, field_3=0
+L6784 Call QMLibrary.OpenLog("C:\方舟混沌\运行日志.log")  // op=30, loc=5836, SL=5520, field_3=0
+L6785 Call QMLibrary.Delay((1000))  // op=30, loc=5837, SL=5521, field_3=0
+L6786 Call QMLibrary.TracePrint(("找塔图.已开启"))  // op=30, loc=5838, SL=5522, field_3=0
+L6787 SET DM=CREATEOBJECT("dm.dmsoft")  // op=2, loc=5839, SL=5523, field_3=0
+L6788 Call DM.SETSHOWERRORMSG(0)  // op=30, loc=5840, SL=5524, field_3=0
+L6789 Call QMLibrary.Delay(100)  // op=30, loc=5841, SL=5525, field_3=0
+L6790 V8799D49F7378756D=DM.ENABLEREALMOUSE(2,10,60)  // op=30, loc=5842, SL=5526, field_3=0
+L6791 Call QMLibrary.TracePrint("鼠标" & V8799D49F7378756D)  // op=30, loc=5843, SL=5527, field_3=0
+L6792 Call QMLibrary.Delay(100)  // op=30, loc=5844, SL=5528, field_3=0
+L6793 Call QMLibrary.Delay((100))  // op=30, loc=5845, SL=5529, field_3=0
+L6794 XX1=1743.0  // op=2, loc=5846, SL=5530, field_3=0
+L6795 YY1=168.0  // op=2, loc=5847, SL=5531, field_3=0
+L6796 V88A365757378756D=3.1415926  // op=2, loc=5848, SL=5532, field_3=0
+L6797 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=5849, SL=5533, field_3=0
+L6798 frame.slots(1)=0  // op=2, loc=5850, SL=5536, field_3=0
+L6799 temporary=frame.slots(1)  // op=2, loc=5850, SL=5534, field_3=0
+L6800 寫入共享鍵 VF2C2A4BE7378756D = temporary  // op=28, loc=5850, SL=5535, field_3=0
+L6801 Call QMLibrary.Delay((2000))  // op=30, loc=5851, SL=5537, field_3=0
+L6802 condition = Sgn(vbTrue)  // op=4, loc=5852, SL=5538, field_3=0
+L6803 條件為零則跳 L7702，否則 L6804  // op=6, loc=5852, SL=None, field_3=0
+L6804 Call QMLibrary.Delay((50))  // op=30, loc=5853, SL=5539, field_3=0
+L6805 INTXX=0  // op=2, loc=5854, SL=5540, field_3=0
+L6806 INTYY=0  // op=2, loc=5855, SL=5541, field_3=0
+L6807 Call QMLibrary.Delay((50))  // op=30, loc=5856, SL=5542, field_3=0
+L6808 Call QMLibrary.Delay((500))  // op=30, loc=5857, SL=5543, field_3=0
+L6809 DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\ta.bmp|C:\users\mymacro\ta2.bmp","050505",0.6,0,INTXX,INTYY)  // op=30, loc=5859, SL=5544, field_3=0
+L6810 condition = Sgn((INTXX>0))  // op=4, loc=5860, SL=5545, field_3=0
+L6811 條件為零則跳 L7700，否則 L6812  // op=6, loc=5860, SL=None, field_3=0
+L6812 Call QMLibrary.Delay((100))  // op=30, loc=5861, SL=5546, field_3=0
+L6813 Call QMLibrary.TracePrint(("第一次塔找到,停止打怪"))  // op=30, loc=5862, SL=5547, field_3=0
+L6814 Call QMLibrary.Delay((50))  // op=30, loc=5863, SL=5548, field_3=0
+L6815 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=5864, SL=5549, field_3=0
+L6816 frame.slots(1)=temporary  // op=2, loc=5864, SL=5550, field_3=0
+L6817 Call QMLibrary.ThreadControl((frame.slots(1)), 1)  // op=30, loc=5864, SL=5551, field_3=0
+L6818 Call QMLibrary.Delay((100))  // op=30, loc=5865, SL=5552, field_3=0
+L6819 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=5866, SL=5553, field_3=0
+L6820 frame.slots(2)=temporary  // op=2, loc=5866, SL=5554, field_3=0
+L6821 Call QMLibrary.ThreadControl((frame.slots(2)), 1)  // op=30, loc=5866, SL=5555, field_3=0
+L6822 Call QMLibrary.Delay((500))  // op=30, loc=5867, SL=5556, field_3=0
+L6823 condition = Sgn(vbTrue)  // op=4, loc=5868, SL=5557, field_3=0
+L6824 條件為零則跳 L7700，否則 L6825  // op=6, loc=5868, SL=None, field_3=0
+L6825 Call QMLibrary.Delay((50))  // op=30, loc=5869, SL=5558, field_3=0
+L6826 Call QMLibrary.Delay((50))  // op=30, loc=5871, SL=5559, field_3=0
+L6827 INTXX=0  // op=2, loc=5872, SL=5560, field_3=0
+L6828 INTYY=0  // op=2, loc=5873, SL=5561, field_3=0
+L6829 Call QMLibrary.Delay((50))  // op=30, loc=5874, SL=5562, field_3=0
+L6830 Call QMLibrary.Delay((100))  // op=30, loc=5875, SL=5563, field_3=0
+L6831 condition = Sgn((V9AB5ABCEC7B6BF904D6A65757378756D>10))  // op=4, loc=5876, SL=5564, field_3=0
+L6832 條件為零則跳 L7405，否則 L6833  // op=6, loc=5876, SL=None, field_3=0
+L6833 Call QMLibrary.Delay((100))  // op=30, loc=5877, SL=5565, field_3=0
+L6834 temporary = 讀取共享鍵 VF2C2A4BE7378756D  // op=27, loc=5878, SL=5566, field_3=0
+L6835 frame.slots(3)=temporary  // op=2, loc=5878, SL=5567, field_3=0
+L6836 frame.slots(4)=frame.slots(3)+1  // op=2, loc=5878, SL=5570, field_3=0
+L6837 temporary=frame.slots(4)  // op=2, loc=5878, SL=5568, field_3=0
+L6838 寫入共享鍵 VF2C2A4BE7378756D = temporary  // op=28, loc=5878, SL=5569, field_3=0
+L6839 temporary = 讀取共享鍵 VF2C2A4BE7378756D  // op=27, loc=5879, SL=5571, field_3=0
+L6840 frame.slots(5)=temporary  // op=2, loc=5879, SL=5572, field_3=0
+L6841 Call QMLibrary.TracePrint(("三层卡了次数" & frame.slots(5)))  // op=30, loc=5879, SL=5573, field_3=0
+L6842 Call QMLibrary.TracePrint(("走位次数" & V9AB5ABCEC7B6BF904D6A65757378756D))  // op=30, loc=5880, SL=5574, field_3=0
+L6843 Call QMLibrary.Delay((50))  // op=30, loc=5881, SL=5575, field_3=0
+L6844 DM_RET=DM.FINDPIC(293,45,1511,347,"C:\users\mymacro\tfliehen1.bmp|C:\users\mymacro\tfliehen2.bmp|C:\users\mymacro\tfliehen3.bmp|C:\users\mymacro\tfliehen4.bmp|C:\users\mymacro\tfliehen5.bmp|C:\users\mymacro\tfliehen6.bmp","151515",0.8,1,INTXX,INTYY)  // op=30, loc=5883, SL=5576, field_3=0
+L6845 condition = Sgn((INTXX>0))  // op=4, loc=5884, SL=5577, field_3=0
+L6846 條件為零則跳 L6884，否則 L6847  // op=6, loc=5884, SL=None, field_3=0
+L6847 Call QMLibrary.Delay((50))  // op=30, loc=5885, SL=5578, field_3=0
+L6848 Call DM.MOVETO(INTXX+30,INTYY)  // op=30, loc=5886, SL=5579, field_3=0
+L6849 Call QMLibrary.Delay((100))  // op=30, loc=5887, SL=5580, field_3=0
+L6850 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5888, SL=5581, field_3=0
+L6851 Call QMLibrary.Delay((1000))  // op=30, loc=5889, SL=5582, field_3=0
+L6852 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=5890, SL=5583, field_3=0
+L6853 frame.slots(6)=0  // op=2, loc=5891, SL=5586, field_3=0
+L6854 temporary=frame.slots(6)  // op=2, loc=5891, SL=5584, field_3=0
+L6855 寫入共享鍵 VF2C2A4BE7378756D = temporary  // op=28, loc=5891, SL=5585, field_3=0
+L6856 Call QMLibrary.Delay((1000))  // op=30, loc=5892, SL=5587, field_3=0
+L6857 DM_RET=DM.FINDPIC(500,50,1460,700,"C:\users\mymacro\tfliehen1.bmp|C:\users\mymacro\tfliehen2.bmp|C:\users\mymacro\tfliehen3.bmp|C:\users\mymacro\tfliehen4.bmp|C:\users\mymacro\tfliehen5.bmp|C:\users\mymacro\tfliehen6.bmp","151515",0.8,1,INTXX,INTYY)  // op=30, loc=5893, SL=5588, field_3=0
+L6858 condition = Sgn((INTXX>0))  // op=4, loc=5894, SL=5589, field_3=0
+L6859 條件為零則跳 L6867，否則 L6860  // op=6, loc=5894, SL=None, field_3=0
+L6860 Call QMLibrary.Delay((50))  // op=30, loc=5895, SL=5590, field_3=0
+L6861 condition = Sgn(INTYY<590)  // op=4, loc=5896, SL=5591, field_3=0
+L6862 條件為零則跳 L6865，否則 L6863  // op=6, loc=5896, SL=None, field_3=0
+L6863 Call DM.MOVETO(INTXX+30,INTYY+200)  // op=30, loc=5897, SL=5592, field_3=0
+L6864 跳往 L6866  // op=16, loc=5898, SL=None, field_3=0
+L6865 Call DM.MOVETO(INTXX+30,INTYY+90)  // op=30, loc=5899, SL=5593, field_3=0
+L6866 跳往 L6869  // op=16, loc=5900, SL=None, field_3=0
+L6867 Call QMLibrary.Delay((50))  // op=30, loc=5902, SL=5594, field_3=0
+L6868 Call DM.MOVETO(960,560)  // op=30, loc=5903, SL=5595, field_3=0
+L6869 Call QMLibrary.Delay((200))  // op=30, loc=5905, SL=5596, field_3=0
+L6870 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=5906, SL=5597, field_3=0
+L6871 frame.slots(7)=temporary  // op=2, loc=5906, SL=5598, field_3=0
+L6872 Call QMLibrary.ThreadControl((frame.slots(7)), 2)  // op=30, loc=5906, SL=5599, field_3=0
+L6873 Call QMLibrary.Delay((1000))  // op=30, loc=5907, SL=5600, field_3=0
+L6874 condition = Sgn(INTXX>0)  // op=4, loc=5908, SL=5601, field_3=0
+L6875 條件為零則跳 L6877，否則 L6876  // op=6, loc=5908, SL=None, field_3=0
+L6876 Call QMLibrary.Delay((2000))  // op=30, loc=5909, SL=5602, field_3=0
+L6877 Call DM.MOVETO(960,560)  // op=30, loc=5911, SL=5603, field_3=0
+L6878 Call QMLibrary.Delay((100))  // op=30, loc=5912, SL=5604, field_3=0
+L6879 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=5913, SL=5605, field_3=0
+L6880 frame.slots(8)=temporary  // op=2, loc=5913, SL=5606, field_3=0
+L6881 Call QMLibrary.ThreadControl((frame.slots(8)), 2)  // op=30, loc=5913, SL=5607, field_3=0
+L6882 Call QMLibrary.Delay((5000))  // op=30, loc=5914, SL=5608, field_3=0
+L6883 跳往 L7700  // op=16, loc=5915, SL=None, field_3=0
+L6884 DM_RET=DM.FINDPIC(1,348,1919,790,"C:\users\mymacro\tfliehen1.bmp|C:\users\mymacro\tfliehen2.bmp|C:\users\mymacro\tfliehen3.bmp|C:\users\mymacro\tfliehen4.bmp|C:\users\mymacro\tfliehen5.bmp|C:\users\mymacro\tfliehen6.bmp","151515",0.8,1,INTXX,INTYY)  // op=30, loc=5918, SL=5609, field_3=0
+L6885 condition = Sgn((INTXX>0))  // op=4, loc=5919, SL=5610, field_3=0
+L6886 條件為零則跳 L6924，否則 L6887  // op=6, loc=5919, SL=None, field_3=0
+L6887 Call QMLibrary.Delay((50))  // op=30, loc=5920, SL=5611, field_3=0
+L6888 Call DM.MOVETO(INTXX+30,INTYY)  // op=30, loc=5921, SL=5612, field_3=0
+L6889 Call QMLibrary.Delay((100))  // op=30, loc=5922, SL=5613, field_3=0
+L6890 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5923, SL=5614, field_3=0
+L6891 Call QMLibrary.Delay((1000))  // op=30, loc=5924, SL=5615, field_3=0
+L6892 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=5925, SL=5616, field_3=0
+L6893 frame.slots(9)=0  // op=2, loc=5926, SL=5619, field_3=0
+L6894 temporary=frame.slots(9)  // op=2, loc=5926, SL=5617, field_3=0
+L6895 寫入共享鍵 VF2C2A4BE7378756D = temporary  // op=28, loc=5926, SL=5618, field_3=0
+L6896 Call QMLibrary.Delay((1000))  // op=30, loc=5927, SL=5620, field_3=0
+L6897 DM_RET=DM.FINDPIC(500,50,1460,700,"C:\users\mymacro\tfliehen1.bmp|C:\users\mymacro\tfliehen2.bmp|C:\users\mymacro\tfliehen3.bmp|C:\users\mymacro\tfliehen4.bmp|C:\users\mymacro\tfliehen5.bmp|C:\users\mymacro\tfliehen6.bmp","151515",0.8,1,INTXX,INTYY)  // op=30, loc=5928, SL=5621, field_3=0
+L6898 condition = Sgn((INTXX>0))  // op=4, loc=5929, SL=5622, field_3=0
+L6899 條件為零則跳 L6907，否則 L6900  // op=6, loc=5929, SL=None, field_3=0
+L6900 Call QMLibrary.Delay((50))  // op=30, loc=5930, SL=5623, field_3=0
+L6901 condition = Sgn(INTYY<590)  // op=4, loc=5931, SL=5624, field_3=0
+L6902 條件為零則跳 L6905，否則 L6903  // op=6, loc=5931, SL=None, field_3=0
+L6903 Call DM.MOVETO(INTXX+30,INTYY+200)  // op=30, loc=5932, SL=5625, field_3=0
+L6904 跳往 L6906  // op=16, loc=5933, SL=None, field_3=0
+L6905 Call DM.MOVETO(INTXX+30,INTYY+90)  // op=30, loc=5934, SL=5626, field_3=0
+L6906 跳往 L6909  // op=16, loc=5935, SL=None, field_3=0
+L6907 Call QMLibrary.Delay((50))  // op=30, loc=5937, SL=5627, field_3=0
+L6908 Call DM.MOVETO(960,560)  // op=30, loc=5938, SL=5628, field_3=0
+L6909 Call QMLibrary.Delay((200))  // op=30, loc=5940, SL=5629, field_3=0
+L6910 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=5941, SL=5630, field_3=0
+L6911 frame.slots(10)=temporary  // op=2, loc=5941, SL=5631, field_3=0
+L6912 Call QMLibrary.ThreadControl((frame.slots(10)), 2)  // op=30, loc=5941, SL=5632, field_3=0
+L6913 Call QMLibrary.Delay((1000))  // op=30, loc=5942, SL=5633, field_3=0
+L6914 condition = Sgn(INTXX>0)  // op=4, loc=5943, SL=5634, field_3=0
+L6915 條件為零則跳 L6917，否則 L6916  // op=6, loc=5943, SL=None, field_3=0
+L6916 Call QMLibrary.Delay((2000))  // op=30, loc=5944, SL=5635, field_3=0
+L6917 Call DM.MOVETO(960,560)  // op=30, loc=5946, SL=5636, field_3=0
+L6918 Call QMLibrary.Delay((100))  // op=30, loc=5947, SL=5637, field_3=0
+L6919 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=5948, SL=5638, field_3=0
+L6920 frame.slots(11)=temporary  // op=2, loc=5948, SL=5639, field_3=0
+L6921 Call QMLibrary.ThreadControl((frame.slots(11)), 2)  // op=30, loc=5948, SL=5640, field_3=0
+L6922 Call QMLibrary.Delay((5000))  // op=30, loc=5949, SL=5641, field_3=0
+L6923 跳往 L7700  // op=16, loc=5950, SL=None, field_3=0
+L6924 Call QMLibrary.Delay((100))  // op=30, loc=5952, SL=5642, field_3=0
+L6925 temporary = 讀取共享鍵 VF2C2A4BE7378756D  // op=27, loc=5953, SL=5643, field_3=0
+L6926 frame.slots(12)=temporary  // op=2, loc=5953, SL=5644, field_3=0
+L6927 condition = Sgn((frame.slots(12)>1))  // op=4, loc=5953, SL=5645, field_3=0
+L6928 條件為零則跳 L7015，否則 L6929  // op=6, loc=5953, SL=None, field_3=0
+L6929 Call QMLibrary.Delay((50))  // op=30, loc=5954, SL=5646, field_3=0
+L6930 Call QMLibrary.TracePrint(("三层卡了第二次"))  // op=30, loc=5955, SL=5647, field_3=0
+L6931 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=5956, SL=5648, field_3=0
+L6932 frame.slots(13)=0  // op=2, loc=5957, SL=5651, field_3=0
+L6933 temporary=frame.slots(13)  // op=2, loc=5957, SL=5649, field_3=0
+L6934 寫入共享鍵 VF2C2A4BE7378756D = temporary  // op=28, loc=5957, SL=5650, field_3=0
+L6935 Call QMLibrary.Delay((50))  // op=30, loc=5958, SL=5652, field_3=0
+L6936 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=5959, SL=5653, field_3=0
+L6937 frame.slots(14)=temporary  // op=2, loc=5959, SL=5654, field_3=0
+L6938 condition = Sgn((frame.slots(14)=304))  // op=4, loc=5959, SL=5655, field_3=0
+L6939 條件為零則跳 L6978，否則 L6940  // op=6, loc=5959, SL=None, field_3=0
+L6940 Call QMLibrary.Delay((50))  // op=30, loc=5960, SL=5656, field_3=0
+L6941 Call QMLibrary.TracePrint(("卡点304"))  // op=30, loc=5961, SL=5657, field_3=0
+L6942 Call DM.MOVETO(1522,638)  // op=30, loc=5962, SL=5658, field_3=0
+L6943 Call QMLibrary.Delay((100))  // op=30, loc=5963, SL=5659, field_3=0
+L6944 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5964, SL=5660, field_3=0
+L6945 Call QMLibrary.Delay((2000))  // op=30, loc=5965, SL=5661, field_3=0
+L6946 Call DM.MOVETO(1522,638)  // op=30, loc=5966, SL=5662, field_3=0
+L6947 Call QMLibrary.Delay((100))  // op=30, loc=5967, SL=5663, field_3=0
+L6948 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5968, SL=5664, field_3=0
+L6949 Call QMLibrary.Delay((2000))  // op=30, loc=5969, SL=5665, field_3=0
+L6950 Call DM.MOVETO(1522,638)  // op=30, loc=5970, SL=5666, field_3=0
+L6951 Call QMLibrary.Delay((100))  // op=30, loc=5971, SL=5667, field_3=0
+L6952 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5972, SL=5668, field_3=0
+L6953 Call QMLibrary.Delay((2000))  // op=30, loc=5973, SL=5669, field_3=0
+L6954 Call DM.MOVETO(200,420)  // op=30, loc=5974, SL=5670, field_3=0
+L6955 Call QMLibrary.Delay((100))  // op=30, loc=5975, SL=5671, field_3=0
+L6956 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5976, SL=5672, field_3=0
+L6957 Call QMLibrary.Delay((2500))  // op=30, loc=5977, SL=5673, field_3=0
+L6958 Call DM.MOVETO(722,685)  // op=30, loc=5978, SL=5674, field_3=0
+L6959 Call QMLibrary.Delay((100))  // op=30, loc=5979, SL=5675, field_3=0
+L6960 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5980, SL=5676, field_3=0
+L6961 Call QMLibrary.Delay((1000))  // op=30, loc=5981, SL=5677, field_3=0
+L6962 Call DM.MOVETO(722,685)  // op=30, loc=5982, SL=5678, field_3=0
+L6963 Call QMLibrary.Delay((100))  // op=30, loc=5983, SL=5679, field_3=0
+L6964 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5984, SL=5680, field_3=0
+L6965 Call QMLibrary.Delay((1000))  // op=30, loc=5985, SL=5681, field_3=0
+L6966 Call DM.MOVETO(960,560)  // op=30, loc=5986, SL=5682, field_3=0
+L6967 Call QMLibrary.Delay((200))  // op=30, loc=5987, SL=5683, field_3=0
+L6968 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=5988, SL=5684, field_3=0
+L6969 frame.slots(15)=temporary  // op=2, loc=5988, SL=5685, field_3=0
+L6970 Call QMLibrary.ThreadControl((frame.slots(15)), 2)  // op=30, loc=5988, SL=5686, field_3=0
+L6971 Call QMLibrary.Delay((1000))  // op=30, loc=5989, SL=5687, field_3=0
+L6972 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=5990, SL=5688, field_3=0
+L6973 frame.slots(16)=temporary  // op=2, loc=5990, SL=5689, field_3=0
+L6974 Call QMLibrary.ThreadControl((frame.slots(16)), 2)  // op=30, loc=5990, SL=5690, field_3=0
+L6975 Call QMLibrary.Delay((5000))  // op=30, loc=5991, SL=5691, field_3=0
+L6976 跳往 L7700  // op=16, loc=5992, SL=None, field_3=0
+L6977 跳往 L7015  // op=16, loc=5993, SL=None, field_3=0
+L6978 Call QMLibrary.Delay((50))  // op=30, loc=6008, SL=5692, field_3=0
+L6979 Call QMLibrary.Delay((200))  // op=30, loc=6009, SL=5693, field_3=0
+L6980 Call DM.MOVETO(956,166)  // op=30, loc=6010, SL=5694, field_3=0
+L6981 Call QMLibrary.Delay((100))  // op=30, loc=6011, SL=5695, field_3=0
+L6982 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6012, SL=5696, field_3=0
+L6983 Call QMLibrary.Delay((500))  // op=30, loc=6013, SL=5697, field_3=0
+L6984 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6014, SL=5698, field_3=0
+L6985 Call QMLibrary.Delay((1500))  // op=30, loc=6015, SL=5699, field_3=0
+L6986 Call DM.MOVETO(1220,902)  // op=30, loc=6016, SL=5700, field_3=0
+L6987 Call QMLibrary.Delay((100))  // op=30, loc=6017, SL=5701, field_3=0
+L6988 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6018, SL=5702, field_3=0
+L6989 Call QMLibrary.Delay((500))  // op=30, loc=6019, SL=5703, field_3=0
+L6990 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6020, SL=5704, field_3=0
+L6991 Call QMLibrary.Delay((1500))  // op=30, loc=6021, SL=5705, field_3=0
+L6992 Call DM.MOVETO(965,860)  // op=30, loc=6022, SL=5706, field_3=0
+L6993 Call QMLibrary.Delay((100))  // op=30, loc=6023, SL=5707, field_3=0
+L6994 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6024, SL=5708, field_3=0
+L6995 Call QMLibrary.Delay((500))  // op=30, loc=6025, SL=5709, field_3=0
+L6996 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6026, SL=5710, field_3=0
+L6997 Call QMLibrary.Delay((1500))  // op=30, loc=6027, SL=5711, field_3=0
+L6998 Call DM.MOVETO(300,650)  // op=30, loc=6028, SL=5712, field_3=0
+L6999 Call QMLibrary.Delay((100))  // op=30, loc=6029, SL=5713, field_3=0
+L7000 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6030, SL=5714, field_3=0
+L7001 Call QMLibrary.Delay((500))  // op=30, loc=6031, SL=5715, field_3=0
+L7002 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6032, SL=5716, field_3=0
+L7003 Call QMLibrary.Delay((1500))  // op=30, loc=6033, SL=5717, field_3=0
+L7004 Call DM.MOVETO(960,560)  // op=30, loc=6034, SL=5718, field_3=0
+L7005 Call QMLibrary.Delay((200))  // op=30, loc=6035, SL=5719, field_3=0
+L7006 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=6036, SL=5720, field_3=0
+L7007 frame.slots(17)=temporary  // op=2, loc=6036, SL=5721, field_3=0
+L7008 Call QMLibrary.ThreadControl((frame.slots(17)), 2)  // op=30, loc=6036, SL=5722, field_3=0
+L7009 Call QMLibrary.Delay((1000))  // op=30, loc=6037, SL=5723, field_3=0
+L7010 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=6038, SL=5724, field_3=0
+L7011 frame.slots(18)=temporary  // op=2, loc=6038, SL=5725, field_3=0
+L7012 Call QMLibrary.ThreadControl((frame.slots(18)), 2)  // op=30, loc=6038, SL=5726, field_3=0
+L7013 Call QMLibrary.Delay((5000))  // op=30, loc=6039, SL=5727, field_3=0
+L7014 跳往 L7700  // op=16, loc=6040, SL=None, field_3=0
+L7015 Call QMLibrary.Delay((100))  // op=30, loc=6043, SL=5728, field_3=0
+L7016 Call QMLibrary.TracePrint(("有标记的卡点第一次走位"))  // op=30, loc=6044, SL=5729, field_3=0
+L7017 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6045, SL=5730, field_3=0
+L7018 frame.slots(19)=temporary  // op=2, loc=6045, SL=5731, field_3=0
+L7019 condition = Sgn((frame.slots(19)=302))  // op=4, loc=6045, SL=5732, field_3=0
+L7020 條件為零則跳 L7038，否則 L7021  // op=6, loc=6045, SL=None, field_3=0
+L7021 Call QMLibrary.Delay((50))  // op=30, loc=6046, SL=5733, field_3=0
+L7022 Call QMLibrary.TracePrint(("卡点302"))  // op=30, loc=6047, SL=5734, field_3=0
+L7023 Call DM.MOVETO(945,185)  // op=30, loc=6048, SL=5735, field_3=0
+L7024 Call QMLibrary.Delay((100))  // op=30, loc=6049, SL=5736, field_3=0
+L7025 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6050, SL=5737, field_3=0
+L7026 Call QMLibrary.Delay((1800))  // op=30, loc=6051, SL=5738, field_3=0
+L7027 Call DM.MOVETO(796,211)  // op=30, loc=6052, SL=5739, field_3=0
+L7028 Call QMLibrary.Delay((100))  // op=30, loc=6053, SL=5740, field_3=0
+L7029 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6054, SL=5741, field_3=0
+L7030 Call QMLibrary.Delay((1800))  // op=30, loc=6055, SL=5742, field_3=0
+L7031 Call DM.MOVETO(422,523)  // op=30, loc=6056, SL=5743, field_3=0
+L7032 Call QMLibrary.Delay((100))  // op=30, loc=6057, SL=5744, field_3=0
+L7033 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6058, SL=5745, field_3=0
+L7034 Call QMLibrary.Delay((1500))  // op=30, loc=6059, SL=5746, field_3=0
+L7035 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6060, SL=5747, field_3=0
+L7036 跳往 L6826  // op=5, loc=6061, SL=None, field_3=0
+L7037 跳往 L7345  // op=16, loc=6061, SL=None, field_3=0
+L7038 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6062, SL=5748, field_3=0
+L7039 frame.slots(20)=temporary  // op=2, loc=6062, SL=5749, field_3=0
+L7040 condition = Sgn((frame.slots(20)=301))  // op=4, loc=6062, SL=5750, field_3=0
+L7041 條件為零則跳 L7073，否則 L7042  // op=6, loc=6062, SL=None, field_3=0
+L7042 Call QMLibrary.Delay((50))  // op=30, loc=6063, SL=5751, field_3=0
+L7043 Call QMLibrary.TracePrint(("卡点301"))  // op=30, loc=6064, SL=5752, field_3=0
+L7044 Call DM.MOVETO(944,489)  // op=30, loc=6065, SL=5753, field_3=0
+L7045 Call QMLibrary.Delay((100))  // op=30, loc=6066, SL=5754, field_3=0
+L7046 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6067, SL=5755, field_3=0
+L7047 Call QMLibrary.Delay((300))  // op=30, loc=6068, SL=5756, field_3=0
+L7048 Call DM.MOVETO(1723,360)  // op=30, loc=6069, SL=5757, field_3=0
+L7049 Call QMLibrary.Delay((100))  // op=30, loc=6070, SL=5758, field_3=0
+L7050 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6071, SL=5759, field_3=0
+L7051 Call QMLibrary.Delay((3000))  // op=30, loc=6072, SL=5760, field_3=0
+L7052 Call DM.MOVETO(1703,360)  // op=30, loc=6073, SL=5761, field_3=0
+L7053 Call QMLibrary.Delay((100))  // op=30, loc=6074, SL=5762, field_3=0
+L7054 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6075, SL=5763, field_3=0
+L7055 Call QMLibrary.Delay((3000))  // op=30, loc=6076, SL=5764, field_3=0
+L7056 Call DM.MOVETO(804,894)  // op=30, loc=6077, SL=5765, field_3=0
+L7057 Call QMLibrary.Delay((100))  // op=30, loc=6078, SL=5766, field_3=0
+L7058 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6079, SL=5767, field_3=0
+L7059 Call QMLibrary.Delay((2000))  // op=30, loc=6080, SL=5768, field_3=0
+L7060 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6081, SL=5769, field_3=0
+L7061 Call QMLibrary.Delay((2000))  // op=30, loc=6082, SL=5770, field_3=0
+L7062 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6083, SL=5771, field_3=0
+L7063 Call QMLibrary.Delay((2000))  // op=30, loc=6084, SL=5772, field_3=0
+L7064 Call DM.MOVETO(555,656)  // op=30, loc=6085, SL=5773, field_3=0
+L7065 Call QMLibrary.Delay((100))  // op=30, loc=6086, SL=5774, field_3=0
+L7066 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6087, SL=5775, field_3=0
+L7067 Call QMLibrary.Delay((300))  // op=30, loc=6088, SL=5776, field_3=0
+L7068 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6089, SL=5777, field_3=0
+L7069 Call QMLibrary.Delay((2000))  // op=30, loc=6090, SL=5778, field_3=0
+L7070 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6091, SL=5779, field_3=0
+L7071 跳往 L6826  // op=5, loc=6092, SL=None, field_3=0
+L7072 跳往 L7345  // op=16, loc=6092, SL=None, field_3=0
+L7073 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6093, SL=5780, field_3=0
+L7074 frame.slots(21)=temporary  // op=2, loc=6093, SL=5781, field_3=0
+L7075 condition = Sgn((frame.slots(21)=303))  // op=4, loc=6093, SL=5782, field_3=0
+L7076 條件為零則跳 L7102，否則 L7077  // op=6, loc=6093, SL=None, field_3=0
+L7077 Call QMLibrary.Delay((50))  // op=30, loc=6094, SL=5783, field_3=0
+L7078 Call QMLibrary.TracePrint(("卡点303"))  // op=30, loc=6095, SL=5784, field_3=0
+L7079 Call DM.MOVETO(611,55)  // op=30, loc=6096, SL=5785, field_3=0
+L7080 Call QMLibrary.Delay((100))  // op=30, loc=6097, SL=5786, field_3=0
+L7081 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6098, SL=5787, field_3=0
+L7082 Call QMLibrary.Delay((5000))  // op=30, loc=6099, SL=5788, field_3=0
+L7083 Call DM.MOVETO(1425,60)  // op=30, loc=6100, SL=5789, field_3=0
+L7084 Call QMLibrary.Delay((100))  // op=30, loc=6101, SL=5790, field_3=0
+L7085 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6102, SL=5791, field_3=0
+L7086 Call QMLibrary.Delay((3500))  // op=30, loc=6103, SL=5792, field_3=0
+L7087 Call DM.MOVETO(93,530)  // op=30, loc=6104, SL=5793, field_3=0
+L7088 Call QMLibrary.Delay((100))  // op=30, loc=6105, SL=5794, field_3=0
+L7089 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6106, SL=5795, field_3=0
+L7090 Call QMLibrary.Delay((6000))  // op=30, loc=6107, SL=5796, field_3=0
+L7091 Call DM.MOVETO(1270,50)  // op=30, loc=6108, SL=5797, field_3=0
+L7092 Call QMLibrary.Delay((100))  // op=30, loc=6109, SL=5798, field_3=0
+L7093 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6110, SL=5799, field_3=0
+L7094 Call QMLibrary.Delay((4000))  // op=30, loc=6111, SL=5800, field_3=0
+L7095 Call DM.MOVETO(1150,370)  // op=30, loc=6112, SL=5801, field_3=0
+L7096 Call QMLibrary.Delay((100))  // op=30, loc=6113, SL=5802, field_3=0
+L7097 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6114, SL=5803, field_3=0
+L7098 Call QMLibrary.Delay((1500))  // op=30, loc=6115, SL=5804, field_3=0
+L7099 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6116, SL=5805, field_3=0
+L7100 跳往 L6826  // op=5, loc=6117, SL=None, field_3=0
+L7101 跳往 L7345  // op=16, loc=6117, SL=None, field_3=0
+L7102 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6118, SL=5806, field_3=0
+L7103 frame.slots(22)=temporary  // op=2, loc=6118, SL=5807, field_3=0
+L7104 condition = Sgn((frame.slots(22)=304))  // op=4, loc=6118, SL=5808, field_3=0
+L7105 條件為零則跳 L7140，否則 L7106  // op=6, loc=6118, SL=None, field_3=0
+L7106 Call QMLibrary.Delay((50))  // op=30, loc=6119, SL=5809, field_3=0
+L7107 Call QMLibrary.TracePrint(("卡点304"))  // op=30, loc=6120, SL=5810, field_3=0
+L7108 Call DM.MOVETO(1133,897)  // op=30, loc=6121, SL=5811, field_3=0
+L7109 Call QMLibrary.Delay((100))  // op=30, loc=6122, SL=5812, field_3=0
+L7110 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6123, SL=5813, field_3=0
+L7111 Call QMLibrary.Delay((3500))  // op=30, loc=6124, SL=5814, field_3=0
+L7112 Call DM.MOVETO(1082,897)  // op=30, loc=6125, SL=5815, field_3=0
+L7113 Call QMLibrary.Delay((100))  // op=30, loc=6126, SL=5816, field_3=0
+L7114 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6127, SL=5817, field_3=0
+L7115 Call QMLibrary.Delay((3000))  // op=30, loc=6128, SL=5818, field_3=0
+L7116 Call DM.MOVETO(2,341)  // op=30, loc=6129, SL=5819, field_3=0
+L7117 Call QMLibrary.Delay((500))  // op=30, loc=6130, SL=5820, field_3=0
+L7118 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6131, SL=5821, field_3=0
+L7119 Call QMLibrary.Delay((100))  // op=30, loc=6132, SL=5822, field_3=0
+L7120 Call DM.MOVETO(2,386)  // op=30, loc=6133, SL=5823, field_3=0
+L7121 Call QMLibrary.Delay((50))  // op=30, loc=6134, SL=5824, field_3=0
+L7122 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6135, SL=5825, field_3=0
+L7123 Call QMLibrary.Delay((100))  // op=30, loc=6136, SL=5826, field_3=0
+L7124 Call DM.MOVETO(2,436)  // op=30, loc=6137, SL=5827, field_3=0
+L7125 Call QMLibrary.Delay((50))  // op=30, loc=6138, SL=5828, field_3=0
+L7126 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6139, SL=5829, field_3=0
+L7127 Call QMLibrary.Delay((100))  // op=30, loc=6140, SL=5830, field_3=0
+L7128 Call DM.MOVETO(2,479)  // op=30, loc=6141, SL=5831, field_3=0
+L7129 Call QMLibrary.Delay((50))  // op=30, loc=6142, SL=5832, field_3=0
+L7130 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6143, SL=5833, field_3=0
+L7131 Call QMLibrary.Delay((100))  // op=30, loc=6144, SL=5834, field_3=0
+L7132 Call DM.MOVETO(2,529)  // op=30, loc=6145, SL=5835, field_3=0
+L7133 Call QMLibrary.Delay((50))  // op=30, loc=6146, SL=5836, field_3=0
+L7134 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6147, SL=5837, field_3=0
+L7135 Call QMLibrary.Delay((100))  // op=30, loc=6148, SL=5838, field_3=0
+L7136 Call QMLibrary.Delay((3000))  // op=30, loc=6149, SL=5839, field_3=0
+L7137 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6150, SL=5840, field_3=0
+L7138 跳往 L6826  // op=5, loc=6151, SL=None, field_3=0
+L7139 跳往 L7345  // op=16, loc=6151, SL=None, field_3=0
+L7140 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6152, SL=5841, field_3=0
+L7141 frame.slots(23)=temporary  // op=2, loc=6152, SL=5842, field_3=0
+L7142 condition = Sgn((frame.slots(23)=305))  // op=4, loc=6152, SL=5843, field_3=0
+L7143 條件為零則跳 L7157，否則 L7144  // op=6, loc=6152, SL=None, field_3=0
+L7144 Call QMLibrary.Delay((50))  // op=30, loc=6153, SL=5844, field_3=0
+L7145 Call QMLibrary.TracePrint(("卡点305"))  // op=30, loc=6154, SL=5845, field_3=0
+L7146 Call DM.MOVETO(1440,440)  // op=30, loc=6155, SL=5846, field_3=0
+L7147 Call QMLibrary.Delay((100))  // op=30, loc=6156, SL=5847, field_3=0
+L7148 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6157, SL=5848, field_3=0
+L7149 Call QMLibrary.Delay((4000))  // op=30, loc=6158, SL=5849, field_3=0
+L7150 Call DM.MOVETO(960,910)  // op=30, loc=6159, SL=5850, field_3=0
+L7151 Call QMLibrary.Delay((100))  // op=30, loc=6160, SL=5851, field_3=0
+L7152 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6161, SL=5852, field_3=0
+L7153 Call QMLibrary.Delay((3000))  // op=30, loc=6162, SL=5853, field_3=0
+L7154 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6163, SL=5854, field_3=0
+L7155 跳往 L6826  // op=5, loc=6164, SL=None, field_3=0
+L7156 跳往 L7345  // op=16, loc=6164, SL=None, field_3=0
+L7157 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6165, SL=5855, field_3=0
+L7158 frame.slots(24)=temporary  // op=2, loc=6165, SL=5856, field_3=0
+L7159 condition = Sgn((frame.slots(24)=308))  // op=4, loc=6165, SL=5857, field_3=0
+L7160 條件為零則跳 L7174，否則 L7161  // op=6, loc=6165, SL=None, field_3=0
+L7161 Call QMLibrary.Delay((50))  // op=30, loc=6166, SL=5858, field_3=0
+L7162 Call QMLibrary.TracePrint(("卡点308"))  // op=30, loc=6167, SL=5859, field_3=0
+L7163 Call DM.MOVETO(995,59)  // op=30, loc=6168, SL=5860, field_3=0
+L7164 Call QMLibrary.Delay((100))  // op=30, loc=6169, SL=5861, field_3=0
+L7165 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6170, SL=5862, field_3=0
+L7166 Call QMLibrary.Delay((4000))  // op=30, loc=6171, SL=5863, field_3=0
+L7167 Call DM.MOVETO(260,512)  // op=30, loc=6172, SL=5864, field_3=0
+L7168 Call QMLibrary.Delay((100))  // op=30, loc=6173, SL=5865, field_3=0
+L7169 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6174, SL=5866, field_3=0
+L7170 Call QMLibrary.Delay((3500))  // op=30, loc=6175, SL=5867, field_3=0
+L7171 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6176, SL=5868, field_3=0
+L7172 跳往 L6826  // op=5, loc=6177, SL=None, field_3=0
+L7173 跳往 L7345  // op=16, loc=6177, SL=None, field_3=0
+L7174 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6178, SL=5869, field_3=0
+L7175 frame.slots(25)=temporary  // op=2, loc=6178, SL=5870, field_3=0
+L7176 condition = Sgn((frame.slots(25)=309))  // op=4, loc=6178, SL=5871, field_3=0
+L7177 條件為零則跳 L7187，否則 L7178  // op=6, loc=6178, SL=None, field_3=0
+L7178 Call QMLibrary.Delay((50))  // op=30, loc=6179, SL=5872, field_3=0
+L7179 Call QMLibrary.TracePrint(("卡点309"))  // op=30, loc=6180, SL=5873, field_3=0
+L7180 Call DM.MOVETO(640,480)  // op=30, loc=6181, SL=5874, field_3=0
+L7181 Call QMLibrary.Delay((100))  // op=30, loc=6182, SL=5875, field_3=0
+L7182 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6183, SL=5876, field_3=0
+L7183 Call QMLibrary.Delay((1500))  // op=30, loc=6184, SL=5877, field_3=0
+L7184 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6185, SL=5878, field_3=0
+L7185 跳往 L6826  // op=5, loc=6186, SL=None, field_3=0
+L7186 跳往 L7345  // op=16, loc=6186, SL=None, field_3=0
+L7187 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6187, SL=5879, field_3=0
+L7188 frame.slots(26)=temporary  // op=2, loc=6187, SL=5880, field_3=0
+L7189 condition = Sgn((frame.slots(26)=311))  // op=4, loc=6187, SL=5881, field_3=0
+L7190 條件為零則跳 L7216，否則 L7191  // op=6, loc=6187, SL=None, field_3=0
+L7191 Call QMLibrary.Delay((50))  // op=30, loc=6188, SL=5882, field_3=0
+L7192 Call QMLibrary.TracePrint(("卡点311"))  // op=30, loc=6189, SL=5883, field_3=0
+L7193 Call DM.MOVETO(1239,811)  // op=30, loc=6190, SL=5884, field_3=0
+L7194 Call QMLibrary.Delay((100))  // op=30, loc=6191, SL=5885, field_3=0
+L7195 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6192, SL=5886, field_3=0
+L7196 Call QMLibrary.Delay((1000))  // op=30, loc=6193, SL=5887, field_3=0
+L7197 Call DM.MOVETO(1239,811)  // op=30, loc=6194, SL=5888, field_3=0
+L7198 Call QMLibrary.Delay((100))  // op=30, loc=6195, SL=5889, field_3=0
+L7199 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6196, SL=5890, field_3=0
+L7200 Call QMLibrary.Delay((1000))  // op=30, loc=6197, SL=5891, field_3=0
+L7201 Call DM.MOVETO(827,663)  // op=30, loc=6198, SL=5892, field_3=0
+L7202 Call QMLibrary.Delay((100))  // op=30, loc=6199, SL=5893, field_3=0
+L7203 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6200, SL=5894, field_3=0
+L7204 Call QMLibrary.Delay((1000))  // op=30, loc=6201, SL=5895, field_3=0
+L7205 Call DM.MOVETO(827,663)  // op=30, loc=6202, SL=5896, field_3=0
+L7206 Call QMLibrary.Delay((100))  // op=30, loc=6203, SL=5897, field_3=0
+L7207 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6204, SL=5898, field_3=0
+L7208 Call QMLibrary.Delay((1000))  // op=30, loc=6205, SL=5899, field_3=0
+L7209 Call DM.MOVETO(827,663)  // op=30, loc=6206, SL=5900, field_3=0
+L7210 Call QMLibrary.Delay((100))  // op=30, loc=6207, SL=5901, field_3=0
+L7211 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6208, SL=5902, field_3=0
+L7212 Call QMLibrary.Delay((1000))  // op=30, loc=6209, SL=5903, field_3=0
+L7213 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6210, SL=5904, field_3=0
+L7214 跳往 L6826  // op=5, loc=6211, SL=None, field_3=0
+L7215 跳往 L7345  // op=16, loc=6211, SL=None, field_3=0
+L7216 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6212, SL=5905, field_3=0
+L7217 frame.slots(27)=temporary  // op=2, loc=6212, SL=5906, field_3=0
+L7218 condition = Sgn((frame.slots(27)=313))  // op=4, loc=6212, SL=5907, field_3=0
+L7219 條件為零則跳 L7245，否則 L7220  // op=6, loc=6212, SL=None, field_3=0
+L7220 Call QMLibrary.Delay((50))  // op=30, loc=6213, SL=5908, field_3=0
+L7221 Call QMLibrary.TracePrint(("卡点313"))  // op=30, loc=6214, SL=5909, field_3=0
+L7222 Call DM.MOVETO(1400,700)  // op=30, loc=6215, SL=5910, field_3=0
+L7223 Call QMLibrary.Delay((100))  // op=30, loc=6216, SL=5911, field_3=0
+L7224 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6217, SL=5912, field_3=0
+L7225 Call QMLibrary.Delay((1000))  // op=30, loc=6218, SL=5913, field_3=0
+L7226 Call DM.MOVETO(1400,700)  // op=30, loc=6219, SL=5914, field_3=0
+L7227 Call QMLibrary.Delay((100))  // op=30, loc=6220, SL=5915, field_3=0
+L7228 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6221, SL=5916, field_3=0
+L7229 Call QMLibrary.Delay((1000))  // op=30, loc=6222, SL=5917, field_3=0
+L7230 Call DM.MOVETO(1400,700)  // op=30, loc=6223, SL=5918, field_3=0
+L7231 Call QMLibrary.Delay((100))  // op=30, loc=6224, SL=5919, field_3=0
+L7232 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6225, SL=5920, field_3=0
+L7233 Call QMLibrary.Delay((1000))  // op=30, loc=6226, SL=5921, field_3=0
+L7234 Call DM.MOVETO(650,686)  // op=30, loc=6227, SL=5922, field_3=0
+L7235 Call QMLibrary.Delay((100))  // op=30, loc=6228, SL=5923, field_3=0
+L7236 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6229, SL=5924, field_3=0
+L7237 Call QMLibrary.Delay((1000))  // op=30, loc=6230, SL=5925, field_3=0
+L7238 Call DM.MOVETO(650,686)  // op=30, loc=6231, SL=5926, field_3=0
+L7239 Call QMLibrary.Delay((100))  // op=30, loc=6232, SL=5927, field_3=0
+L7240 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6233, SL=5928, field_3=0
+L7241 Call QMLibrary.Delay((1000))  // op=30, loc=6234, SL=5929, field_3=0
+L7242 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6235, SL=5930, field_3=0
+L7243 跳往 L6826  // op=5, loc=6236, SL=None, field_3=0
+L7244 跳往 L7345  // op=16, loc=6236, SL=None, field_3=0
+L7245 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6237, SL=5931, field_3=0
+L7246 frame.slots(28)=temporary  // op=2, loc=6237, SL=5932, field_3=0
+L7247 condition = Sgn((frame.slots(28)=314))  // op=4, loc=6237, SL=5933, field_3=0
+L7248 條件為零則跳 L7274，否則 L7249  // op=6, loc=6237, SL=None, field_3=0
+L7249 Call QMLibrary.Delay((50))  // op=30, loc=6238, SL=5934, field_3=0
+L7250 Call QMLibrary.TracePrint(("卡点314"))  // op=30, loc=6239, SL=5935, field_3=0
+L7251 Call DM.MOVETO(1430,200)  // op=30, loc=6240, SL=5936, field_3=0
+L7252 Call QMLibrary.Delay((100))  // op=30, loc=6241, SL=5937, field_3=0
+L7253 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6242, SL=5938, field_3=0
+L7254 Call QMLibrary.Delay((4000))  // op=30, loc=6243, SL=5939, field_3=0
+L7255 Call DM.MOVETO(1070,911)  // op=30, loc=6244, SL=5940, field_3=0
+L7256 Call QMLibrary.Delay((100))  // op=30, loc=6245, SL=5941, field_3=0
+L7257 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6246, SL=5942, field_3=0
+L7258 Call QMLibrary.Delay((2000))  // op=30, loc=6247, SL=5943, field_3=0
+L7259 Call DM.MOVETO(1316,928)  // op=30, loc=6248, SL=5944, field_3=0
+L7260 Call QMLibrary.Delay((100))  // op=30, loc=6249, SL=5945, field_3=0
+L7261 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6250, SL=5946, field_3=0
+L7262 Call QMLibrary.Delay((2000))  // op=30, loc=6251, SL=5947, field_3=0
+L7263 Call DM.MOVETO(1316,928)  // op=30, loc=6252, SL=5948, field_3=0
+L7264 Call QMLibrary.Delay((100))  // op=30, loc=6253, SL=5949, field_3=0
+L7265 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6254, SL=5950, field_3=0
+L7266 Call QMLibrary.Delay((2000))  // op=30, loc=6255, SL=5951, field_3=0
+L7267 Call DM.MOVETO(1316,928)  // op=30, loc=6256, SL=5952, field_3=0
+L7268 Call QMLibrary.Delay((100))  // op=30, loc=6257, SL=5953, field_3=0
+L7269 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6258, SL=5954, field_3=0
+L7270 Call QMLibrary.Delay((2000))  // op=30, loc=6259, SL=5955, field_3=0
+L7271 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6260, SL=5956, field_3=0
+L7272 跳往 L6826  // op=5, loc=6261, SL=None, field_3=0
+L7273 跳往 L7345  // op=16, loc=6261, SL=None, field_3=0
+L7274 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6262, SL=5957, field_3=0
+L7275 frame.slots(29)=temporary  // op=2, loc=6262, SL=5958, field_3=0
+L7276 condition = Sgn((frame.slots(29)=317))  // op=4, loc=6262, SL=5959, field_3=0
+L7277 條件為零則跳 L7331，否則 L7278  // op=6, loc=6262, SL=None, field_3=0
+L7278 Call QMLibrary.Delay((50))  // op=30, loc=6263, SL=5960, field_3=0
+L7279 Call QMLibrary.TracePrint(("卡点317"))  // op=30, loc=6264, SL=5961, field_3=0
+L7280 Call DM.MOVETO(875,867)  // op=30, loc=6265, SL=5962, field_3=0
+L7281 Call QMLibrary.Delay((100))  // op=30, loc=6266, SL=5963, field_3=0
+L7282 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6267, SL=5964, field_3=0
+L7283 Call QMLibrary.Delay((1500))  // op=30, loc=6268, SL=5965, field_3=0
+L7284 Call DM.MOVETO(875,867)  // op=30, loc=6269, SL=5966, field_3=0
+L7285 Call QMLibrary.Delay((100))  // op=30, loc=6270, SL=5967, field_3=0
+L7286 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6271, SL=5968, field_3=0
+L7287 Call QMLibrary.Delay((1500))  // op=30, loc=6272, SL=5969, field_3=0
+L7288 Call DM.MOVETO(875,867)  // op=30, loc=6273, SL=5970, field_3=0
+L7289 Call QMLibrary.Delay((100))  // op=30, loc=6274, SL=5971, field_3=0
+L7290 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6275, SL=5972, field_3=0
+L7291 Call QMLibrary.Delay((1500))  // op=30, loc=6276, SL=5973, field_3=0
+L7292 Call DM.MOVETO(875,867)  // op=30, loc=6277, SL=5974, field_3=0
+L7293 Call QMLibrary.Delay((100))  // op=30, loc=6278, SL=5975, field_3=0
+L7294 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6279, SL=5976, field_3=0
+L7295 Call QMLibrary.Delay((1500))  // op=30, loc=6280, SL=5977, field_3=0
+L7296 Call DM.MOVETO(875,867)  // op=30, loc=6281, SL=5978, field_3=0
+L7297 Call QMLibrary.Delay((100))  // op=30, loc=6282, SL=5979, field_3=0
+L7298 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6283, SL=5980, field_3=0
+L7299 Call QMLibrary.Delay((1500))  // op=30, loc=6284, SL=5981, field_3=0
+L7300 Call DM.MOVETO(875,867)  // op=30, loc=6285, SL=5982, field_3=0
+L7301 Call QMLibrary.Delay((100))  // op=30, loc=6286, SL=5983, field_3=0
+L7302 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6287, SL=5984, field_3=0
+L7303 Call QMLibrary.Delay((1500))  // op=30, loc=6288, SL=5985, field_3=0
+L7304 Call DM.MOVETO(324,395)  // op=30, loc=6289, SL=5986, field_3=0
+L7305 Call QMLibrary.Delay((100))  // op=30, loc=6290, SL=5987, field_3=0
+L7306 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6291, SL=5988, field_3=0
+L7307 Call QMLibrary.Delay((3000))  // op=30, loc=6292, SL=5989, field_3=0
+L7308 Call DM.MOVETO(324,395)  // op=30, loc=6293, SL=5990, field_3=0
+L7309 Call QMLibrary.Delay((100))  // op=30, loc=6294, SL=5991, field_3=0
+L7310 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6295, SL=5992, field_3=0
+L7311 Call QMLibrary.Delay((3000))  // op=30, loc=6296, SL=5993, field_3=0
+L7312 Call DM.MOVETO(324,395)  // op=30, loc=6297, SL=5994, field_3=0
+L7313 Call QMLibrary.Delay((100))  // op=30, loc=6298, SL=5995, field_3=0
+L7314 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6299, SL=5996, field_3=0
+L7315 Call QMLibrary.Delay((3000))  // op=30, loc=6300, SL=5997, field_3=0
+L7316 Call DM.MOVETO(1762,361)  // op=30, loc=6301, SL=5998, field_3=0
+L7317 Call QMLibrary.Delay((100))  // op=30, loc=6302, SL=5999, field_3=0
+L7318 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6303, SL=6000, field_3=0
+L7319 Call QMLibrary.Delay((3300))  // op=30, loc=6304, SL=6001, field_3=0
+L7320 Call DM.MOVETO(1762,361)  // op=30, loc=6305, SL=6002, field_3=0
+L7321 Call QMLibrary.Delay((100))  // op=30, loc=6306, SL=6003, field_3=0
+L7322 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6307, SL=6004, field_3=0
+L7323 Call QMLibrary.Delay((3300))  // op=30, loc=6308, SL=6005, field_3=0
+L7324 Call DM.MOVETO(888,188)  // op=30, loc=6309, SL=6006, field_3=0
+L7325 Call QMLibrary.Delay((100))  // op=30, loc=6310, SL=6007, field_3=0
+L7326 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6311, SL=6008, field_3=0
+L7327 Call QMLibrary.Delay((4000))  // op=30, loc=6312, SL=6009, field_3=0
+L7328 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6313, SL=6010, field_3=0
+L7329 跳往 L6826  // op=5, loc=6314, SL=None, field_3=0
+L7330 跳往 L7345  // op=16, loc=6314, SL=None, field_3=0
+L7331 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6315, SL=6011, field_3=0
+L7332 frame.slots(30)=temporary  // op=2, loc=6315, SL=6012, field_3=0
+L7333 condition = Sgn((frame.slots(30)=319))  // op=4, loc=6315, SL=6013, field_3=0
+L7334 條件為零則跳 L7345，否則 L7335  // op=6, loc=6315, SL=None, field_3=0
+L7335 Call QMLibrary.Delay((50))  // op=30, loc=6316, SL=6014, field_3=0
+L7336 Call QMLibrary.TracePrint(("卡点319"))  // op=30, loc=6317, SL=6015, field_3=0
+L7337 Call DM.MOVETO(1234,709)  // op=30, loc=6318, SL=6016, field_3=0
+L7338 Call QMLibrary.Delay((100))  // op=30, loc=6319, SL=6017, field_3=0
+L7339 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6320, SL=6018, field_3=0
+L7340 Call QMLibrary.Delay((700))  // op=30, loc=6321, SL=6019, field_3=0
+L7341 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6322, SL=6020, field_3=0
+L7342 Call QMLibrary.Delay((1500))  // op=30, loc=6323, SL=6021, field_3=0
+L7343 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6324, SL=6022, field_3=0
+L7344 跳往 L6826  // op=5, loc=6325, SL=None, field_3=0
+L7345 Call QMLibrary.Delay((200))  // op=30, loc=6327, SL=6023, field_3=0
+L7346 DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\ta.bmp|C:\users\mymacro\ta2.bmp","050505",0.6,0,INTXX,INTYY)  // op=30, loc=6329, SL=6024, field_3=0
+L7347 condition = Sgn((INTXX>0))  // op=4, loc=6330, SL=6025, field_3=0
+L7348 條件為零則跳 L7351，否則 L7349  // op=6, loc=6330, SL=None, field_3=0
+L7349 Call QMLibrary.Delay((200))  // op=30, loc=6331, SL=6026, field_3=0
+L7350 跳往 L7377  // op=16, loc=6332, SL=None, field_3=0
+L7351 Call QMLibrary.Delay((300))  // op=30, loc=6333, SL=6027, field_3=0
+L7352 DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\ta.bmp|C:\users\mymacro\ta2.bmp","050505",0.6,0,INTXX,INTYY)  // op=30, loc=6334, SL=6028, field_3=0
+L7353 condition = Sgn((INTXX<0))  // op=4, loc=6335, SL=6029, field_3=0
+L7354 條件為零則跳 L7357，否則 L7355  // op=6, loc=6335, SL=None, field_3=0
+L7355 Call QMLibrary.Delay((300))  // op=30, loc=6336, SL=6030, field_3=0
+L7356 跳往 L7377  // op=16, loc=6337, SL=None, field_3=0
+L7357 Call QMLibrary.Delay((200))  // op=30, loc=6338, SL=6031, field_3=0
+L7358 DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\ta.bmp|C:\users\mymacro\ta2.bmp","050505",0.6,0,INTXX,INTYY)  // op=30, loc=6339, SL=6032, field_3=0
+L7359 condition = Sgn((INTXX<0))  // op=4, loc=6340, SL=6033, field_3=0
+L7360 條件為零則跳 L7363，否則 L7361  // op=6, loc=6340, SL=None, field_3=0
+L7361 Call QMLibrary.Delay((200))  // op=30, loc=6341, SL=6034, field_3=0
+L7362 跳往 L7377  // op=16, loc=6342, SL=None, field_3=0
+L7363 Call QMLibrary.Delay((500))  // op=30, loc=6343, SL=6035, field_3=0
+L7364 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6344, SL=6036, field_3=0
+L7365 Call QMLibrary.Delay((100))  // op=30, loc=6345, SL=6037, field_3=0
+L7366 Call DM.MOVETO(960,560)  // op=30, loc=6346, SL=6038, field_3=0
+L7367 Call QMLibrary.Delay((200))  // op=30, loc=6347, SL=6039, field_3=0
+L7368 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=6348, SL=6040, field_3=0
+L7369 frame.slots(31)=temporary  // op=2, loc=6348, SL=6041, field_3=0
+L7370 Call QMLibrary.ThreadControl((frame.slots(31)), 2)  // op=30, loc=6348, SL=6042, field_3=0
+L7371 Call QMLibrary.Delay((1000))  // op=30, loc=6349, SL=6043, field_3=0
+L7372 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=6350, SL=6044, field_3=0
+L7373 frame.slots(32)=temporary  // op=2, loc=6350, SL=6045, field_3=0
+L7374 Call QMLibrary.ThreadControl((frame.slots(32)), 2)  // op=30, loc=6350, SL=6046, field_3=0
+L7375 Call QMLibrary.Delay((5000))  // op=30, loc=6351, SL=6047, field_3=0
+L7376 跳往 L7700  // op=16, loc=6352, SL=None, field_3=0
+L7377 Call QMLibrary.Delay((100))  // op=30, loc=6356, SL=6048, field_3=0
+L7378 Call DM.MOVETO(956,166)  // op=30, loc=6357, SL=6049, field_3=0
+L7379 Call QMLibrary.Delay((100))  // op=30, loc=6358, SL=6050, field_3=0
+L7380 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6359, SL=6051, field_3=0
+L7381 Call QMLibrary.Delay((500))  // op=30, loc=6360, SL=6052, field_3=0
+L7382 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6361, SL=6053, field_3=0
+L7383 Call QMLibrary.Delay((1500))  // op=30, loc=6362, SL=6054, field_3=0
+L7384 Call DM.MOVETO(1220,902)  // op=30, loc=6363, SL=6055, field_3=0
+L7385 Call QMLibrary.Delay((100))  // op=30, loc=6364, SL=6056, field_3=0
+L7386 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6365, SL=6057, field_3=0
+L7387 Call QMLibrary.Delay((500))  // op=30, loc=6366, SL=6058, field_3=0
+L7388 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6367, SL=6059, field_3=0
+L7389 Call QMLibrary.Delay((1500))  // op=30, loc=6368, SL=6060, field_3=0
+L7390 Call DM.MOVETO(965,860)  // op=30, loc=6369, SL=6061, field_3=0
+L7391 Call QMLibrary.Delay((100))  // op=30, loc=6370, SL=6062, field_3=0
+L7392 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6371, SL=6063, field_3=0
+L7393 Call QMLibrary.Delay((500))  // op=30, loc=6372, SL=6064, field_3=0
+L7394 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6373, SL=6065, field_3=0
+L7395 Call QMLibrary.Delay((1500))  // op=30, loc=6374, SL=6066, field_3=0
+L7396 Call DM.MOVETO(300,650)  // op=30, loc=6375, SL=6067, field_3=0
+L7397 Call QMLibrary.Delay((100))  // op=30, loc=6376, SL=6068, field_3=0
+L7398 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6377, SL=6069, field_3=0
+L7399 Call QMLibrary.Delay((500))  // op=30, loc=6378, SL=6070, field_3=0
+L7400 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6379, SL=6071, field_3=0
+L7401 Call QMLibrary.Delay((1000))  // op=30, loc=6380, SL=6072, field_3=0
+L7402 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6381, SL=6073, field_3=0
+L7403 Call QMLibrary.Delay((500))  // op=30, loc=6382, SL=6074, field_3=0
+L7404 跳往 L6826  // op=5, loc=6383, SL=None, field_3=0
+L7405 Call QMLibrary.Delay((100))  // op=30, loc=6385, SL=6075, field_3=0
+L7406 Call QMLibrary.Delay((50))  // op=30, loc=6386, SL=6076, field_3=0
+L7407 DM_RET=DM.FINDPIC(293,45,1511,347,"C:\users\mymacro\tfliehen1.bmp|C:\users\mymacro\tfliehen2.bmp|C:\users\mymacro\tfliehen3.bmp|C:\users\mymacro\tfliehen4.bmp|C:\users\mymacro\tfliehen5.bmp|C:\users\mymacro\tfliehen6.bmp","151515",0.8,1,INTXX,INTYY)  // op=30, loc=6388, SL=6077, field_3=0
+L7408 condition = Sgn((INTXX>0))  // op=4, loc=6389, SL=6078, field_3=0
+L7409 條件為零則跳 L7443，否則 L7410  // op=6, loc=6389, SL=None, field_3=0
+L7410 Call QMLibrary.Delay((50))  // op=30, loc=6390, SL=6079, field_3=0
+L7411 Call DM.MOVETO(INTXX+30,INTYY)  // op=30, loc=6391, SL=6080, field_3=0
+L7412 Call QMLibrary.Delay((100))  // op=30, loc=6392, SL=6081, field_3=0
+L7413 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6393, SL=6082, field_3=0
+L7414 Call QMLibrary.Delay((1000))  // op=30, loc=6394, SL=6083, field_3=0
+L7415 Call QMLibrary.Delay((1000))  // op=30, loc=6395, SL=6084, field_3=0
+L7416 DM_RET=DM.FINDPIC(500,50,1460,700,"C:\users\mymacro\tfliehen1.bmp|C:\users\mymacro\tfliehen2.bmp|C:\users\mymacro\tfliehen3.bmp|C:\users\mymacro\tfliehen4.bmp|C:\users\mymacro\tfliehen5.bmp|C:\users\mymacro\tfliehen6.bmp","151515",0.8,1,INTXX,INTYY)  // op=30, loc=6396, SL=6085, field_3=0
+L7417 condition = Sgn((INTXX>0))  // op=4, loc=6397, SL=6086, field_3=0
+L7418 條件為零則跳 L7426，否則 L7419  // op=6, loc=6397, SL=None, field_3=0
+L7419 Call QMLibrary.Delay((50))  // op=30, loc=6398, SL=6087, field_3=0
+L7420 condition = Sgn(INTYY<590)  // op=4, loc=6399, SL=6088, field_3=0
+L7421 條件為零則跳 L7424，否則 L7422  // op=6, loc=6399, SL=None, field_3=0
+L7422 Call DM.MOVETO(INTXX+30,INTYY+200)  // op=30, loc=6400, SL=6089, field_3=0
+L7423 跳往 L7425  // op=16, loc=6401, SL=None, field_3=0
+L7424 Call DM.MOVETO(INTXX+30,INTYY+90)  // op=30, loc=6402, SL=6090, field_3=0
+L7425 跳往 L7428  // op=16, loc=6403, SL=None, field_3=0
+L7426 Call QMLibrary.Delay((50))  // op=30, loc=6405, SL=6091, field_3=0
+L7427 Call DM.MOVETO(960,560)  // op=30, loc=6406, SL=6092, field_3=0
+L7428 Call QMLibrary.Delay((200))  // op=30, loc=6408, SL=6093, field_3=0
+L7429 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=6409, SL=6094, field_3=0
+L7430 frame.slots(33)=temporary  // op=2, loc=6409, SL=6095, field_3=0
+L7431 Call QMLibrary.ThreadControl((frame.slots(33)), 2)  // op=30, loc=6409, SL=6096, field_3=0
+L7432 Call QMLibrary.Delay((1000))  // op=30, loc=6410, SL=6097, field_3=0
+L7433 condition = Sgn(INTXX>0)  // op=4, loc=6411, SL=6098, field_3=0
+L7434 條件為零則跳 L7436，否則 L7435  // op=6, loc=6411, SL=None, field_3=0
+L7435 Call QMLibrary.Delay((2000))  // op=30, loc=6412, SL=6099, field_3=0
+L7436 Call DM.MOVETO(960,560)  // op=30, loc=6414, SL=6100, field_3=0
+L7437 Call QMLibrary.Delay((100))  // op=30, loc=6415, SL=6101, field_3=0
+L7438 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=6416, SL=6102, field_3=0
+L7439 frame.slots(34)=temporary  // op=2, loc=6416, SL=6103, field_3=0
+L7440 Call QMLibrary.ThreadControl((frame.slots(34)), 2)  // op=30, loc=6416, SL=6104, field_3=0
+L7441 Call QMLibrary.Delay((5000))  // op=30, loc=6417, SL=6105, field_3=0
+L7442 跳往 L6826  // op=5, loc=6418, SL=None, field_3=0
+L7443 DM_RET=DM.FINDPIC(1,348,1919,790,"C:\users\mymacro\tfliehen1.bmp|C:\users\mymacro\tfliehen2.bmp|C:\users\mymacro\tfliehen3.bmp|C:\users\mymacro\tfliehen4.bmp|C:\users\mymacro\tfliehen5.bmp|C:\users\mymacro\tfliehen6.bmp","151515",0.8,1,INTXX,INTYY)  // op=30, loc=6421, SL=6106, field_3=0
+L7444 condition = Sgn((INTXX>0))  // op=4, loc=6422, SL=6107, field_3=0
+L7445 條件為零則跳 L7479，否則 L7446  // op=6, loc=6422, SL=None, field_3=0
+L7446 Call QMLibrary.Delay((50))  // op=30, loc=6423, SL=6108, field_3=0
+L7447 Call DM.MOVETO(INTXX+30,INTYY)  // op=30, loc=6424, SL=6109, field_3=0
+L7448 Call QMLibrary.Delay((100))  // op=30, loc=6425, SL=6110, field_3=0
+L7449 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6426, SL=6111, field_3=0
+L7450 Call QMLibrary.Delay((1000))  // op=30, loc=6427, SL=6112, field_3=0
+L7451 Call QMLibrary.Delay((1000))  // op=30, loc=6428, SL=6113, field_3=0
+L7452 DM_RET=DM.FINDPIC(500,50,1460,700,"C:\users\mymacro\tfliehen1.bmp|C:\users\mymacro\tfliehen2.bmp|C:\users\mymacro\tfliehen3.bmp|C:\users\mymacro\tfliehen4.bmp|C:\users\mymacro\tfliehen5.bmp|C:\users\mymacro\tfliehen6.bmp","151515",0.8,1,INTXX,INTYY)  // op=30, loc=6429, SL=6114, field_3=0
+L7453 condition = Sgn((INTXX>0))  // op=4, loc=6430, SL=6115, field_3=0
+L7454 條件為零則跳 L7462，否則 L7455  // op=6, loc=6430, SL=None, field_3=0
+L7455 Call QMLibrary.Delay((50))  // op=30, loc=6431, SL=6116, field_3=0
+L7456 condition = Sgn(INTYY<590)  // op=4, loc=6432, SL=6117, field_3=0
+L7457 條件為零則跳 L7460，否則 L7458  // op=6, loc=6432, SL=None, field_3=0
+L7458 Call DM.MOVETO(INTXX+30,INTYY+200)  // op=30, loc=6433, SL=6118, field_3=0
+L7459 跳往 L7461  // op=16, loc=6434, SL=None, field_3=0
+L7460 Call DM.MOVETO(INTXX+30,INTYY+90)  // op=30, loc=6435, SL=6119, field_3=0
+L7461 跳往 L7464  // op=16, loc=6436, SL=None, field_3=0
+L7462 Call QMLibrary.Delay((50))  // op=30, loc=6438, SL=6120, field_3=0
+L7463 Call DM.MOVETO(960,560)  // op=30, loc=6439, SL=6121, field_3=0
+L7464 Call QMLibrary.Delay((200))  // op=30, loc=6441, SL=6122, field_3=0
+L7465 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=6442, SL=6123, field_3=0
+L7466 frame.slots(35)=temporary  // op=2, loc=6442, SL=6124, field_3=0
+L7467 Call QMLibrary.ThreadControl((frame.slots(35)), 2)  // op=30, loc=6442, SL=6125, field_3=0
+L7468 Call QMLibrary.Delay((1000))  // op=30, loc=6443, SL=6126, field_3=0
+L7469 condition = Sgn(INTXX>0)  // op=4, loc=6444, SL=6127, field_3=0
+L7470 條件為零則跳 L7472，否則 L7471  // op=6, loc=6444, SL=None, field_3=0
+L7471 Call QMLibrary.Delay((2000))  // op=30, loc=6445, SL=6128, field_3=0
+L7472 Call DM.MOVETO(960,560)  // op=30, loc=6447, SL=6129, field_3=0
+L7473 Call QMLibrary.Delay((100))  // op=30, loc=6448, SL=6130, field_3=0
+L7474 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=6449, SL=6131, field_3=0
+L7475 frame.slots(36)=temporary  // op=2, loc=6449, SL=6132, field_3=0
+L7476 Call QMLibrary.ThreadControl((frame.slots(36)), 2)  // op=30, loc=6449, SL=6133, field_3=0
+L7477 Call QMLibrary.Delay((5000))  // op=30, loc=6450, SL=6134, field_3=0
+L7478 跳往 L6826  // op=5, loc=6451, SL=None, field_3=0
+L7479 V9AB5ABCEC7B6BF904D6A65757378756D=V9AB5ABCEC7B6BF904D6A65757378756D+1  // op=2, loc=6453, SL=6135, field_3=0
+L7480 Call QMLibrary.TracePrint(("走位次数" & V9AB5ABCEC7B6BF904D6A65757378756D))  // op=30, loc=6454, SL=6136, field_3=0
+L7481 DM_RET=DM.FINDPIC(1610,60,1880,286,"C:\users\mymacro\ta.bmp|C:\users\mymacro\ta2.bmp","050505",0.6,0,INTXX,INTYY)  // op=30, loc=6456, SL=6137, field_3=0
+L7482 condition = Sgn((INTXX>0))  // op=4, loc=6457, SL=6138, field_3=0
+L7483 條件為零則跳 L7491，否則 L7484  // op=6, loc=6457, SL=None, field_3=0
+L7484 Call QMLibrary.TracePrint(("找塔"))  // op=30, loc=6458, SL=6139, field_3=0
+L7485 Call QMLibrary.Delay((50))  // op=30, loc=6459, SL=6140, field_3=0
+L7486 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6460, SL=6141, field_3=0
+L7487 呼叫 L7879，返回 L7488  // op=12, loc=6460, SL=None, field_3=0
+L7488 frame.slots(37)=temporary  // op=2, loc=6460, SL=6142, field_3=0
+L7489 Call QMLibrary.Delay((50))  // op=30, loc=6461, SL=6143, field_3=0
+L7490 跳往 L6826  // op=5, loc=6462, SL=None, field_3=0
+L7491 Call QMLibrary.Delay((50))  // op=30, loc=6464, SL=6144, field_3=0
+L7492 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6465, SL=6145, field_3=0
+L7493 frame.slots(38)=temporary  // op=2, loc=6465, SL=6146, field_3=0
+L7494 condition = Sgn(frame.slots(38)=313)  // op=4, loc=6465, SL=6147, field_3=0
+L7495 條件為零則跳 L7519，否則 L7496  // op=6, loc=6465, SL=None, field_3=0
+L7496 Call QMLibrary.Delay((50))  // op=30, loc=6466, SL=6148, field_3=0
+L7497 DM_RET=DM.FINDCOLOR(1610,60,1880,286,"DE3239-080808|EC373E-080808|E64042-080808|F56366-080808",1,4,INTXX,INTYY)  // op=30, loc=6467, SL=6149, field_3=0
+L7498 condition = Sgn((INTXX>0))  // op=4, loc=6468, SL=6150, field_3=0
+L7499 條件為零則跳 L7507，否則 L7500  // op=6, loc=6468, SL=None, field_3=0
+L7500 Call QMLibrary.TracePrint(("找塔001"))  // op=30, loc=6469, SL=6151, field_3=0
+L7501 Call QMLibrary.Delay((50))  // op=30, loc=6470, SL=6152, field_3=0
+L7502 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6471, SL=6153, field_3=0
+L7503 呼叫 L7879，返回 L7504  // op=12, loc=6471, SL=None, field_3=0
+L7504 frame.slots(39)=temporary  // op=2, loc=6471, SL=6154, field_3=0
+L7505 Call QMLibrary.Delay((50))  // op=30, loc=6472, SL=6155, field_3=0
+L7506 跳往 L6826  // op=5, loc=6473, SL=None, field_3=0
+L7507 Call QMLibrary.Delay((50))  // op=30, loc=6475, SL=6156, field_3=0
+L7508 DM_RET=DM.FINDCOLOR(1610,60,1880,286,"b97675-080808|c47a78-080808|C37977-080808|AC6B69-080808|FF8591-080808|FAA6B4-080808|EDBAC2-080808|efbbc4-080808|E4B2BA-080808|F5AFBC-080808|E6ABB4-050505|F5A9BA-050505|E3B1BD-050505|BA6C71-050505|AB797A-050505",1,4,INTXX,INTYY)  // op=30, loc=6476, SL=6157, field_3=0
+L7509 condition = Sgn((INTXX>0))  // op=4, loc=6477, SL=6158, field_3=0
+L7510 條件為零則跳 L7518，否則 L7511  // op=6, loc=6477, SL=None, field_3=0
+L7511 Call QMLibrary.TracePrint(("找塔002"))  // op=30, loc=6478, SL=6159, field_3=0
+L7512 Call QMLibrary.Delay((50))  // op=30, loc=6479, SL=6160, field_3=0
+L7513 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6480, SL=6161, field_3=0
+L7514 呼叫 L7879，返回 L7515  // op=12, loc=6480, SL=None, field_3=0
+L7515 frame.slots(40)=temporary  // op=2, loc=6480, SL=6162, field_3=0
+L7516 Call QMLibrary.Delay((50))  // op=30, loc=6481, SL=6163, field_3=0
+L7517 跳往 L6826  // op=5, loc=6482, SL=None, field_3=0
+L7518 跳往 L7541  // op=16, loc=6483, SL=None, field_3=0
+L7519 Call QMLibrary.Delay((50))  // op=30, loc=6485, SL=6164, field_3=0
+L7520 DM_RET=DM.FINDCOLOR(1610,60,1880,286,"DE3239-080808|EC373E-080808|E64042-080808|F56366-080808",1,4,INTXX,INTYY)  // op=30, loc=6486, SL=6165, field_3=0
+L7521 condition = Sgn((INTXX>0))  // op=4, loc=6487, SL=6166, field_3=0
+L7522 條件為零則跳 L7530，否則 L7523  // op=6, loc=6487, SL=None, field_3=0
+L7523 Call QMLibrary.TracePrint(("找塔001"))  // op=30, loc=6488, SL=6167, field_3=0
+L7524 Call QMLibrary.Delay((50))  // op=30, loc=6489, SL=6168, field_3=0
+L7525 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6490, SL=6169, field_3=0
+L7526 呼叫 L7879，返回 L7527  // op=12, loc=6490, SL=None, field_3=0
+L7527 frame.slots(41)=temporary  // op=2, loc=6490, SL=6170, field_3=0
+L7528 Call QMLibrary.Delay((50))  // op=30, loc=6491, SL=6171, field_3=0
+L7529 跳往 L6826  // op=5, loc=6492, SL=None, field_3=0
+L7530 Call QMLibrary.Delay((50))  // op=30, loc=6494, SL=6172, field_3=0
+L7531 DM_RET=DM.FINDCOLOR(1610,60,1880,286,"b97675-080808|c47a78-080808|C37977-080808|AC6B69-080808|FF8591-080808|FAA6B4-080808|EDBAC2-080808|efbbc4-080808|E4B2BA-080808|F5AFBC-080808|E6ABB4-050505|F5A9BA-050505|E3B1BD-050505|BA6C71-050505|AB797A-050505",1,4,INTXX,INTYY)  // op=30, loc=6495, SL=6173, field_3=0
+L7532 condition = Sgn((INTXX>0))  // op=4, loc=6496, SL=6174, field_3=0
+L7533 條件為零則跳 L7541，否則 L7534  // op=6, loc=6496, SL=None, field_3=0
+L7534 Call QMLibrary.TracePrint(("找塔002"))  // op=30, loc=6497, SL=6175, field_3=0
+L7535 Call QMLibrary.Delay((50))  // op=30, loc=6498, SL=6176, field_3=0
+L7536 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6499, SL=6177, field_3=0
+L7537 呼叫 L7879，返回 L7538  // op=12, loc=6499, SL=None, field_3=0
+L7538 frame.slots(42)=temporary  // op=2, loc=6499, SL=6178, field_3=0
+L7539 Call QMLibrary.Delay((50))  // op=30, loc=6500, SL=6179, field_3=0
+L7540 跳往 L6826  // op=5, loc=6501, SL=None, field_3=0
+L7541 Call QMLibrary.Delay((50))  // op=30, loc=6504, SL=6180, field_3=0
+L7542 Call FindColorEx(1610,60,1880,286,"6767FA",1,0.8,INTXX,INTYY)  // op=30, loc=6505, SL=6181, field_3=0
+L7543 condition = Sgn((INTXX>0))  // op=4, loc=6506, SL=6182, field_3=0
+L7544 條件為零則跳 L7552，否則 L7545  // op=6, loc=6506, SL=None, field_3=0
+L7545 Call QMLibrary.TracePrint(("找塔3"))  // op=30, loc=6507, SL=6183, field_3=0
+L7546 Call QMLibrary.Delay((50))  // op=30, loc=6508, SL=6184, field_3=0
+L7547 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6509, SL=6185, field_3=0
+L7548 呼叫 L7879，返回 L7549  // op=12, loc=6509, SL=None, field_3=0
+L7549 frame.slots(43)=temporary  // op=2, loc=6509, SL=6186, field_3=0
+L7550 Call QMLibrary.Delay((50))  // op=30, loc=6510, SL=6187, field_3=0
+L7551 跳往 L6826  // op=5, loc=6511, SL=None, field_3=0
+L7552 Call QMLibrary.Delay((50))  // op=30, loc=6513, SL=6188, field_3=0
+L7553 Call FindColorEx(1610,60,1880,286,"4038F3",1,0.8,INTXX,INTYY)  // op=30, loc=6514, SL=6189, field_3=0
+L7554 condition = Sgn((INTXX>0))  // op=4, loc=6515, SL=6190, field_3=0
+L7555 條件為零則跳 L7563，否則 L7556  // op=6, loc=6515, SL=None, field_3=0
+L7556 Call QMLibrary.TracePrint(("找塔4"))  // op=30, loc=6516, SL=6191, field_3=0
+L7557 Call QMLibrary.Delay((50))  // op=30, loc=6517, SL=6192, field_3=0
+L7558 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6518, SL=6193, field_3=0
+L7559 呼叫 L7879，返回 L7560  // op=12, loc=6518, SL=None, field_3=0
+L7560 frame.slots(44)=temporary  // op=2, loc=6518, SL=6194, field_3=0
+L7561 Call QMLibrary.Delay((50))  // op=30, loc=6519, SL=6195, field_3=0
+L7562 跳往 L6826  // op=5, loc=6520, SL=None, field_3=0
+L7563 Call QMLibrary.Delay((50))  // op=30, loc=6522, SL=6196, field_3=0
+L7564 Call FindColorEx(1610,60,1880,286,"9483FF",1,0.8,INTXX,INTYY)  // op=30, loc=6523, SL=6197, field_3=0
+L7565 condition = Sgn((INTXX>0))  // op=4, loc=6524, SL=6198, field_3=0
+L7566 條件為零則跳 L7574，否則 L7567  // op=6, loc=6524, SL=None, field_3=0
+L7567 Call QMLibrary.TracePrint(("找塔5"))  // op=30, loc=6525, SL=6199, field_3=0
+L7568 Call QMLibrary.Delay((50))  // op=30, loc=6526, SL=6200, field_3=0
+L7569 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6527, SL=6201, field_3=0
+L7570 呼叫 L7879，返回 L7571  // op=12, loc=6527, SL=None, field_3=0
+L7571 frame.slots(45)=temporary  // op=2, loc=6527, SL=6202, field_3=0
+L7572 Call QMLibrary.Delay((50))  // op=30, loc=6528, SL=6203, field_3=0
+L7573 跳往 L6826  // op=5, loc=6529, SL=None, field_3=0
+L7574 Call QMLibrary.Delay((50))  // op=30, loc=6540, SL=6204, field_3=0
+L7575 Call FindColorEx(1610,60,1880,286,"7373C0",1,0.8,INTXX,INTYY)  // op=30, loc=6541, SL=6205, field_3=0
+L7576 condition = Sgn((INTXX>0))  // op=4, loc=6542, SL=6206, field_3=0
+L7577 條件為零則跳 L7585，否則 L7578  // op=6, loc=6542, SL=None, field_3=0
+L7578 Call QMLibrary.TracePrint(("找塔7"))  // op=30, loc=6543, SL=6207, field_3=0
+L7579 Call QMLibrary.Delay((50))  // op=30, loc=6544, SL=6208, field_3=0
+L7580 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6545, SL=6209, field_3=0
+L7581 呼叫 L7879，返回 L7582  // op=12, loc=6545, SL=None, field_3=0
+L7582 frame.slots(46)=temporary  // op=2, loc=6545, SL=6210, field_3=0
+L7583 Call QMLibrary.Delay((50))  // op=30, loc=6546, SL=6211, field_3=0
+L7584 跳往 L6826  // op=5, loc=6547, SL=None, field_3=0
+L7585 Call QMLibrary.Delay((50))  // op=30, loc=6549, SL=6212, field_3=0
+L7586 Call FindColorEx(1610,60,1880,286,"747BB0",1,0.9,INTXX,INTYY)  // op=30, loc=6550, SL=6213, field_3=0
+L7587 condition = Sgn((INTXX>0))  // op=4, loc=6551, SL=6214, field_3=0
+L7588 條件為零則跳 L7596，否則 L7589  // op=6, loc=6551, SL=None, field_3=0
+L7589 Call QMLibrary.TracePrint(("找塔8"))  // op=30, loc=6552, SL=6215, field_3=0
+L7590 Call QMLibrary.Delay((50))  // op=30, loc=6553, SL=6216, field_3=0
+L7591 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6554, SL=6217, field_3=0
+L7592 呼叫 L7879，返回 L7593  // op=12, loc=6554, SL=None, field_3=0
+L7593 frame.slots(47)=temporary  // op=2, loc=6554, SL=6218, field_3=0
+L7594 Call QMLibrary.Delay((50))  // op=30, loc=6555, SL=6219, field_3=0
+L7595 跳往 L6826  // op=5, loc=6556, SL=None, field_3=0
+L7596 Call QMLibrary.Delay((50))  // op=30, loc=6558, SL=6220, field_3=0
+L7597 Call FindColorEx(1610,60,1880,286,"BAA9E8",1,0.8,INTXX,INTYY)  // op=30, loc=6559, SL=6221, field_3=0
+L7598 condition = Sgn((INTXX>0))  // op=4, loc=6560, SL=6222, field_3=0
+L7599 條件為零則跳 L7607，否則 L7600  // op=6, loc=6560, SL=None, field_3=0
+L7600 Call QMLibrary.TracePrint(("找塔1"))  // op=30, loc=6561, SL=6223, field_3=0
+L7601 Call QMLibrary.Delay((50))  // op=30, loc=6562, SL=6224, field_3=0
+L7602 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6563, SL=6225, field_3=0
+L7603 呼叫 L7879，返回 L7604  // op=12, loc=6563, SL=None, field_3=0
+L7604 frame.slots(48)=temporary  // op=2, loc=6563, SL=6226, field_3=0
+L7605 Call QMLibrary.Delay((50))  // op=30, loc=6564, SL=6227, field_3=0
+L7606 跳往 L6826  // op=5, loc=6565, SL=None, field_3=0
+L7607 Call QMLibrary.Delay((50))  // op=30, loc=6567, SL=6228, field_3=0
+L7608 Call FindColorEx(1610,60,1880,286,"9D8DFF",1,0.8,INTXX,INTYY)  // op=30, loc=6568, SL=6229, field_3=0
+L7609 condition = Sgn((INTXX>0))  // op=4, loc=6569, SL=6230, field_3=0
+L7610 條件為零則跳 L7618，否則 L7611  // op=6, loc=6569, SL=None, field_3=0
+L7611 Call QMLibrary.TracePrint(("找塔2"))  // op=30, loc=6570, SL=6231, field_3=0
+L7612 Call QMLibrary.Delay((50))  // op=30, loc=6571, SL=6232, field_3=0
+L7613 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6572, SL=6233, field_3=0
+L7614 呼叫 L7879，返回 L7615  // op=12, loc=6572, SL=None, field_3=0
+L7615 frame.slots(49)=temporary  // op=2, loc=6572, SL=6234, field_3=0
+L7616 Call QMLibrary.Delay((50))  // op=30, loc=6573, SL=6235, field_3=0
+L7617 跳往 L6826  // op=5, loc=6574, SL=None, field_3=0
+L7618 Call QMLibrary.Delay((50))  // op=30, loc=6576, SL=6236, field_3=0
+L7619 temporary = 讀取共享鍵 VF2C2D0967378756D  // op=27, loc=6577, SL=6237, field_3=0
+L7620 frame.slots(50)=temporary  // op=2, loc=6577, SL=6238, field_3=0
+L7621 condition = Sgn(frame.slots(50)=313)  // op=4, loc=6577, SL=6239, field_3=0
+L7622 條件為零則跳 L7646，否則 L7623  // op=6, loc=6577, SL=None, field_3=0
+L7623 Call QMLibrary.Delay((50))  // op=30, loc=6578, SL=6240, field_3=0
+L7624 DM_RET=DM.FINDCOLOR(1610,60,1880,286,"DE3239-080808|EC373E-080808|E64042-080808|F56366-080808",1,8,INTXX,INTYY)  // op=30, loc=6579, SL=6241, field_3=0
+L7625 condition = Sgn((INTXX>0))  // op=4, loc=6580, SL=6242, field_3=0
+L7626 條件為零則跳 L7634，否則 L7627  // op=6, loc=6580, SL=None, field_3=0
+L7627 Call QMLibrary.TracePrint(("找塔001"))  // op=30, loc=6581, SL=6243, field_3=0
+L7628 Call QMLibrary.Delay((50))  // op=30, loc=6582, SL=6244, field_3=0
+L7629 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6583, SL=6245, field_3=0
+L7630 呼叫 L7879，返回 L7631  // op=12, loc=6583, SL=None, field_3=0
+L7631 frame.slots(51)=temporary  // op=2, loc=6583, SL=6246, field_3=0
+L7632 Call QMLibrary.Delay((50))  // op=30, loc=6584, SL=6247, field_3=0
+L7633 跳往 L6826  // op=5, loc=6585, SL=None, field_3=0
+L7634 Call QMLibrary.Delay((50))  // op=30, loc=6587, SL=6248, field_3=0
+L7635 DM_RET=DM.FINDCOLOR(1610,60,1880,286,"b97675-080808|c47a78-080808|C37977-080808|AC6B69-080808|FF8591-080808|FAA6B4-080808|EDBAC2-080808|efbbc4-080808|E4B2BA-080808|F5AFBC-080808|E6ABB4-050505|F5A9BA-050505|E3B1BD-050505|BA6C71-050505|AB797A-050505",1,8,INTXX,INTYY)  // op=30, loc=6588, SL=6249, field_3=0
+L7636 condition = Sgn((INTXX>0))  // op=4, loc=6589, SL=6250, field_3=0
+L7637 條件為零則跳 L7645，否則 L7638  // op=6, loc=6589, SL=None, field_3=0
+L7638 Call QMLibrary.TracePrint(("找塔002"))  // op=30, loc=6590, SL=6251, field_3=0
+L7639 Call QMLibrary.Delay((50))  // op=30, loc=6591, SL=6252, field_3=0
+L7640 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6592, SL=6253, field_3=0
+L7641 呼叫 L7879，返回 L7642  // op=12, loc=6592, SL=None, field_3=0
+L7642 frame.slots(52)=temporary  // op=2, loc=6592, SL=6254, field_3=0
+L7643 Call QMLibrary.Delay((50))  // op=30, loc=6593, SL=6255, field_3=0
+L7644 跳往 L6826  // op=5, loc=6594, SL=None, field_3=0
+L7645 跳往 L7668  // op=16, loc=6595, SL=None, field_3=0
+L7646 Call QMLibrary.Delay((50))  // op=30, loc=6597, SL=6256, field_3=0
+L7647 DM_RET=DM.FINDCOLOR(1610,60,1880,286,"DE3239-080808|EC373E-080808|E64042-080808|F56366-080808",1,4,INTXX,INTYY)  // op=30, loc=6598, SL=6257, field_3=0
+L7648 condition = Sgn((INTXX>0))  // op=4, loc=6599, SL=6258, field_3=0
+L7649 條件為零則跳 L7657，否則 L7650  // op=6, loc=6599, SL=None, field_3=0
+L7650 Call QMLibrary.TracePrint(("找塔001"))  // op=30, loc=6600, SL=6259, field_3=0
+L7651 Call QMLibrary.Delay((50))  // op=30, loc=6601, SL=6260, field_3=0
+L7652 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6602, SL=6261, field_3=0
+L7653 呼叫 L7879，返回 L7654  // op=12, loc=6602, SL=None, field_3=0
+L7654 frame.slots(53)=temporary  // op=2, loc=6602, SL=6262, field_3=0
+L7655 Call QMLibrary.Delay((50))  // op=30, loc=6603, SL=6263, field_3=0
+L7656 跳往 L6826  // op=5, loc=6604, SL=None, field_3=0
+L7657 Call QMLibrary.Delay((50))  // op=30, loc=6606, SL=6264, field_3=0
+L7658 DM_RET=DM.FINDCOLOR(1610,60,1880,286,"b97675-080808|c47a78-080808|C37977-080808|AC6B69-080808|FF8591-080808|FAA6B4-080808|EDBAC2-080808|efbbc4-080808|E4B2BA-080808|F5AFBC-080808|E6ABB4-050505|F5A9BA-050505|E3B1BD-050505|BA6C71-050505|AB797A-050505",1,4,INTXX,INTYY)  // op=30, loc=6607, SL=6265, field_3=0
+L7659 condition = Sgn((INTXX>0))  // op=4, loc=6608, SL=6266, field_3=0
+L7660 條件為零則跳 L7668，否則 L7661  // op=6, loc=6608, SL=None, field_3=0
+L7661 Call QMLibrary.TracePrint(("找塔002"))  // op=30, loc=6609, SL=6267, field_3=0
+L7662 Call QMLibrary.Delay((50))  // op=30, loc=6610, SL=6268, field_3=0
+L7663 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_VF1ACAE96A4A7BE9380D665757378756D 並保留父框架  // op=2, loc=6611, SL=6269, field_3=0
+L7664 呼叫 L7879，返回 L7665  // op=12, loc=6611, SL=None, field_3=0
+L7665 frame.slots(54)=temporary  // op=2, loc=6611, SL=6270, field_3=0
+L7666 Call QMLibrary.Delay((50))  // op=30, loc=6612, SL=6271, field_3=0
+L7667 跳往 L6826  // op=5, loc=6613, SL=None, field_3=0
+L7668 Call QMLibrary.Delay((300))  // op=30, loc=6616, SL=6272, field_3=0
+L7669 Call QMLibrary.TracePrint(("塔色都没找到"))  // op=30, loc=6617, SL=6273, field_3=0
+L7670 DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\ta.bmp|C:\users\mymacro\ta2.bmp","050505",0.6,0,INTXX,INTYY)  // op=30, loc=6619, SL=6274, field_3=0
+L7671 condition = Sgn((INTXX<0))  // op=4, loc=6620, SL=6275, field_3=0
+L7672 條件為零則跳 L7694，否則 L7673  // op=6, loc=6620, SL=None, field_3=0
+L7673 Call QMLibrary.Delay((300))  // op=30, loc=6621, SL=6276, field_3=0
+L7674 Call QMLibrary.TracePrint(("塔色都没找到>>>第一次没找到塔图"))  // op=30, loc=6622, SL=6277, field_3=0
+L7675 DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\ta.bmp|C:\users\mymacro\ta2.bmp","050505",0.6,0,INTXX,INTYY)  // op=30, loc=6623, SL=6278, field_3=0
+L7676 condition = Sgn((INTXX<0))  // op=4, loc=6624, SL=6279, field_3=0
+L7677 條件為零則跳 L7694，否則 L7678  // op=6, loc=6624, SL=None, field_3=0
+L7678 Call QMLibrary.Delay((200))  // op=30, loc=6625, SL=6280, field_3=0
+L7679 Call QMLibrary.TracePrint(("塔色都没找到>>>第二次没找到塔图>>>>>激活打怪"))  // op=30, loc=6626, SL=6281, field_3=0
+L7680 Call QMLibrary.Delay((50))  // op=30, loc=6627, SL=6282, field_3=0
+L7681 V9AB5ABCEC7B6BF904D6A65757378756D=0  // op=2, loc=6628, SL=6283, field_3=0
+L7682 Call QMLibrary.Delay((50))  // op=30, loc=6629, SL=6284, field_3=0
+L7683 Call DM.MOVETO(960,560)  // op=30, loc=6630, SL=6285, field_3=0
+L7684 Call QMLibrary.Delay((200))  // op=30, loc=6631, SL=6286, field_3=0
+L7685 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=6632, SL=6287, field_3=0
+L7686 frame.slots(55)=temporary  // op=2, loc=6632, SL=6288, field_3=0
+L7687 Call QMLibrary.ThreadControl((frame.slots(55)), 2)  // op=30, loc=6632, SL=6289, field_3=0
+L7688 Call QMLibrary.Delay((1000))  // op=30, loc=6633, SL=6290, field_3=0
+L7689 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=6634, SL=6291, field_3=0
+L7690 frame.slots(56)=temporary  // op=2, loc=6634, SL=6292, field_3=0
+L7691 Call QMLibrary.ThreadControl((frame.slots(56)), 2)  // op=30, loc=6634, SL=6293, field_3=0
+L7692 Call QMLibrary.Delay((5000))  // op=30, loc=6635, SL=6294, field_3=0
+L7693 跳往 L7700  // op=16, loc=6636, SL=None, field_3=0
+L7694 Call QMLibrary.Delay((200))  // op=30, loc=6639, SL=6295, field_3=0
+L7695 Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  // op=30, loc=6640, SL=6296, field_3=0
+L7696 Call QMLibrary.Delay((300))  // op=30, loc=6641, SL=6297, field_3=0
+L7697 Call QMLibrary.Delay((100))  // op=30, loc=6642, SL=6298, field_3=0
+L7698 跳往 L6826  // op=5, loc=6643, SL=None, field_3=0
+L7699 跳往 L6823  // op=16, loc=6644, SL=None, field_3=0
+L7700 Call QMLibrary.Delay((200))  // op=30, loc=6646, SL=6299, field_3=0
+L7701 跳往 L6802  // op=16, loc=6647, SL=None, field_3=0
+L7702 Call QMLibrary.Delay((100))  // op=30, loc=6648, SL=6300, field_3=0
+L7703 取回傳值至 temporary 並恢復父框架  // op=2, loc=6649, SL=6301, field_3=0
+L7704 返回呼叫者  // op=13, loc=6649, SL=None, field_3=0
+
+## 重新啟動 L11725..L11873
+
+L11725 Call QMLibrary.Delay((100))  // op=30, loc=10141, SL=9641, field_3=0
+L11726 Call QMLibrary.TracePrint(("监控重启>>>开始"))  // op=30, loc=10142, SL=9642, field_3=0
+L11727 Call QMLibrary.Delay((100))  // op=30, loc=10143, SL=9643, field_3=0
+L11728 Call QMLibrary.Delay((10000))  // op=30, loc=10144, SL=9644, field_3=0
+L11729 Call QMLibrary.Delay((10000))  // op=30, loc=10145, SL=9645, field_3=0
+L11730 Call QMLibrary.Delay((10000))  // op=30, loc=10146, SL=9646, field_3=0
+L11731 Call QMLibrary.TracePrint(("00:30"))  // op=30, loc=10147, SL=9647, field_3=0
+L11732 Call QMLibrary.Delay((10000))  // op=30, loc=10148, SL=9648, field_3=0
+L11733 Call QMLibrary.Delay((10000))  // op=30, loc=10149, SL=9649, field_3=0
+L11734 Call QMLibrary.Delay((10000))  // op=30, loc=10150, SL=9650, field_3=0
+L11735 Call QMLibrary.TracePrint(("01:00"))  // op=30, loc=10151, SL=9651, field_3=0
+L11736 Call QMLibrary.Delay((10000))  // op=30, loc=10152, SL=9652, field_3=0
+L11737 Call QMLibrary.Delay((10000))  // op=30, loc=10153, SL=9653, field_3=0
+L11738 Call QMLibrary.Delay((10000))  // op=30, loc=10154, SL=9654, field_3=0
+L11739 Call QMLibrary.TracePrint(("01:30"))  // op=30, loc=10155, SL=9655, field_3=0
+L11740 Call QMLibrary.Delay((10000))  // op=30, loc=10156, SL=9656, field_3=0
+L11741 Call QMLibrary.Delay((10000))  // op=30, loc=10157, SL=9657, field_3=0
+L11742 Call QMLibrary.Delay((10000))  // op=30, loc=10158, SL=9658, field_3=0
+L11743 Call QMLibrary.TracePrint(("02:00"))  // op=30, loc=10159, SL=9659, field_3=0
+L11744 Call QMLibrary.Delay((10000))  // op=30, loc=10160, SL=9660, field_3=0
+L11745 Call QMLibrary.Delay((10000))  // op=30, loc=10161, SL=9661, field_3=0
+L11746 Call QMLibrary.Delay((10000))  // op=30, loc=10162, SL=9662, field_3=0
+L11747 Call QMLibrary.TracePrint(("02:30"))  // op=30, loc=10163, SL=9663, field_3=0
+L11748 Call QMLibrary.Delay((10000))  // op=30, loc=10164, SL=9664, field_3=0
+L11749 Call QMLibrary.Delay((10000))  // op=30, loc=10165, SL=9665, field_3=0
+L11750 Call QMLibrary.Delay((10000))  // op=30, loc=10166, SL=9666, field_3=0
+L11751 Call QMLibrary.TracePrint(("03:00"))  // op=30, loc=10167, SL=9667, field_3=0
+L11752 Call QMLibrary.Delay((10000))  // op=30, loc=10168, SL=9668, field_3=0
+L11753 Call QMLibrary.Delay((10000))  // op=30, loc=10169, SL=9669, field_3=0
+L11754 Call QMLibrary.Delay((10000))  // op=30, loc=10170, SL=9670, field_3=0
+L11755 Call QMLibrary.TracePrint(("03:30"))  // op=30, loc=10171, SL=9671, field_3=0
+L11756 Call QMLibrary.Delay((10000))  // op=30, loc=10172, SL=9672, field_3=0
+L11757 Call QMLibrary.Delay((10000))  // op=30, loc=10173, SL=9673, field_3=0
+L11758 Call QMLibrary.Delay((10000))  // op=30, loc=10174, SL=9674, field_3=0
+L11759 Call QMLibrary.TracePrint(("04:00"))  // op=30, loc=10175, SL=9675, field_3=0
+L11760 Call QMLibrary.Delay((10000))  // op=30, loc=10176, SL=9676, field_3=0
+L11761 Call QMLibrary.Delay((10000))  // op=30, loc=10177, SL=9677, field_3=0
+L11762 Call QMLibrary.Delay((10000))  // op=30, loc=10178, SL=9678, field_3=0
+L11763 Call QMLibrary.TracePrint(("04:30"))  // op=30, loc=10179, SL=9679, field_3=0
+L11764 Call QMLibrary.Delay((10000))  // op=30, loc=10180, SL=9680, field_3=0
+L11765 Call QMLibrary.Delay((10000))  // op=30, loc=10181, SL=9681, field_3=0
+L11766 Call QMLibrary.Delay((10000))  // op=30, loc=10182, SL=9682, field_3=0
+L11767 Call QMLibrary.TracePrint(("05:00"))  // op=30, loc=10183, SL=9683, field_3=0
+L11768 Call QMLibrary.Delay((10000))  // op=30, loc=10184, SL=9684, field_3=0
+L11769 Call QMLibrary.Delay((10000))  // op=30, loc=10185, SL=9685, field_3=0
+L11770 Call QMLibrary.Delay((10000))  // op=30, loc=10186, SL=9686, field_3=0
+L11771 Call QMLibrary.TracePrint(("05:30"))  // op=30, loc=10187, SL=9687, field_3=0
+L11772 Call QMLibrary.Delay((10000))  // op=30, loc=10188, SL=9688, field_3=0
+L11773 Call QMLibrary.Delay((10000))  // op=30, loc=10189, SL=9689, field_3=0
+L11774 Call QMLibrary.Delay((10000))  // op=30, loc=10190, SL=9690, field_3=0
+L11775 Call QMLibrary.TracePrint(("06:00"))  // op=30, loc=10191, SL=9691, field_3=0
+L11776 Call QMLibrary.Delay((10000))  // op=30, loc=10192, SL=9692, field_3=0
+L11777 Call QMLibrary.Delay((10000))  // op=30, loc=10193, SL=9693, field_3=0
+L11778 Call QMLibrary.Delay((10000))  // op=30, loc=10194, SL=9694, field_3=0
+L11779 Call QMLibrary.TracePrint(("06:30"))  // op=30, loc=10195, SL=9695, field_3=0
+L11780 Call QMLibrary.Delay((10000))  // op=30, loc=10196, SL=9696, field_3=0
+L11781 Call QMLibrary.Delay((10000))  // op=30, loc=10197, SL=9697, field_3=0
+L11782 Call QMLibrary.Delay((10000))  // op=30, loc=10198, SL=9698, field_3=0
+L11783 Call QMLibrary.TracePrint(("07:00"))  // op=30, loc=10199, SL=9699, field_3=0
+L11784 Call QMLibrary.Delay((10000))  // op=30, loc=10200, SL=9700, field_3=0
+L11785 Call QMLibrary.Delay((10000))  // op=30, loc=10201, SL=9701, field_3=0
+L11786 Call QMLibrary.Delay((10000))  // op=30, loc=10202, SL=9702, field_3=0
+L11787 Call QMLibrary.TracePrint(("07:30"))  // op=30, loc=10203, SL=9703, field_3=0
+L11788 Call QMLibrary.Delay((10000))  // op=30, loc=10204, SL=9704, field_3=0
+L11789 Call QMLibrary.Delay((10000))  // op=30, loc=10205, SL=9705, field_3=0
+L11790 Call QMLibrary.Delay((10000))  // op=30, loc=10206, SL=9706, field_3=0
+L11791 Call QMLibrary.TracePrint(("08:00"))  // op=30, loc=10207, SL=9707, field_3=0
+L11792 Call QMLibrary.Delay((10000))  // op=30, loc=10208, SL=9708, field_3=0
+L11793 Call QMLibrary.Delay((10000))  // op=30, loc=10209, SL=9709, field_3=0
+L11794 Call QMLibrary.Delay((10000))  // op=30, loc=10210, SL=9710, field_3=0
+L11795 Call QMLibrary.TracePrint(("08:30"))  // op=30, loc=10211, SL=9711, field_3=0
+L11796 Call QMLibrary.Delay((10000))  // op=30, loc=10212, SL=9712, field_3=0
+L11797 Call QMLibrary.Delay((10000))  // op=30, loc=10213, SL=9713, field_3=0
+L11798 Call QMLibrary.Delay((10000))  // op=30, loc=10214, SL=9714, field_3=0
+L11799 Call QMLibrary.TracePrint(("09:00"))  // op=30, loc=10215, SL=9715, field_3=0
+L11800 Call QMLibrary.Delay((10000))  // op=30, loc=10216, SL=9716, field_3=0
+L11801 Call QMLibrary.Delay((10000))  // op=30, loc=10217, SL=9717, field_3=0
+L11802 Call QMLibrary.Delay((10000))  // op=30, loc=10218, SL=9718, field_3=0
+L11803 Call QMLibrary.TracePrint(("09:30"))  // op=30, loc=10219, SL=9719, field_3=0
+L11804 Call QMLibrary.Delay((10000))  // op=30, loc=10220, SL=9720, field_3=0
+L11805 Call QMLibrary.Delay((10000))  // op=30, loc=10221, SL=9721, field_3=0
+L11806 Call QMLibrary.Delay((10000))  // op=30, loc=10222, SL=9722, field_3=0
+L11807 Call QMLibrary.TracePrint(("10:00"))  // op=30, loc=10223, SL=9723, field_3=0
+L11808 Call QMLibrary.Delay((300))  // op=30, loc=10224, SL=9724, field_3=0
+L11809 建立子框架 F2730835_2229_445E_97C7_13F761277lDA_V1B52553145393455795D56424B4F405B0944ABABBCA6B3AC89D1D8ADBEC4756D 並保留父框架  // op=2, loc=10225, SL=9725, field_3=0
+L11810 呼叫 L13605，返回 L11811  // op=12, loc=10225, SL=None, field_3=0
+L11811 Call QMLibrary.Delay((300))  // op=30, loc=10226, SL=9726, field_3=0
+L11812 Call QMLibrary.TracePrint(("监控重启>>>结束>>>截图游戏画面,并重启主程序"))  // op=30, loc=10227, SL=9727, field_3=0
+L11813 Call QMLibrary.Delay((300))  // op=30, loc=10228, SL=9728, field_3=0
+L11814 temporary = 讀取共享鍵 VFAAFD9C9B7A43C294D6A65757378756D  // op=27, loc=10229, SL=9729, field_3=0
+L11815 frame.slots(1)=temporary  // op=2, loc=10229, SL=9730, field_3=0
+L11816 Call QMLibrary.ThreadControl(frame.slots(1), 0)  // op=30, loc=10229, SL=9731, field_3=0
+L11817 Call QMLibrary.Delay((200))  // op=30, loc=10230, SL=9732, field_3=0
+L11818 temporary = 讀取共享鍵 V98B8DCA33A3C756D  // op=27, loc=10231, SL=9733, field_3=0
+L11819 frame.slots(1)=temporary  // op=2, loc=10231, SL=9734, field_3=0
+L11820 Call QMLibrary.ThreadControl(frame.slots(1), 0)  // op=30, loc=10231, SL=9735, field_3=0
+L11821 Call QMLibrary.Delay((200))  // op=30, loc=10232, SL=9736, field_3=0
+L11822 temporary = 讀取共享鍵 VFEBEB7DC3A3C756D  // op=27, loc=10233, SL=9737, field_3=0
+L11823 frame.slots(1)=temporary  // op=2, loc=10233, SL=9738, field_3=0
+L11824 Call QMLibrary.ThreadControl(frame.slots(1), 0)  // op=30, loc=10233, SL=9739, field_3=0
+L11825 Call QMLibrary.Delay((200))  // op=30, loc=10234, SL=9740, field_3=0
+L11826 temporary = 讀取共享鍵 VFEBED5ACC4AEC4A59FC32C317378756D  // op=27, loc=10235, SL=9741, field_3=0
+L11827 frame.slots(1)=temporary  // op=2, loc=10235, SL=9742, field_3=0
+L11828 Call QMLibrary.ThreadControl(frame.slots(1), 0)  // op=30, loc=10235, SL=9743, field_3=0
+L11829 Call QMLibrary.Delay((200))  // op=30, loc=10236, SL=9744, field_3=0
+L11830 temporary = 讀取共享鍵 VFDDE223C3778756D  // op=27, loc=10237, SL=9745, field_3=0
+L11831 frame.slots(1)=temporary  // op=2, loc=10237, SL=9746, field_3=0
+L11832 Call QMLibrary.ThreadControl(frame.slots(1), 0)  // op=30, loc=10237, SL=9747, field_3=0
+L11833 Call QMLibrary.Delay((200))  // op=30, loc=10238, SL=9748, field_3=0
+L11834 temporary = 讀取共享鍵 VF18ADAADB8B8B89B042E65757378756D  // op=27, loc=10239, SL=9749, field_3=0
+L11835 frame.slots(1)=temporary  // op=2, loc=10239, SL=9750, field_3=0
+L11836 Call QMLibrary.ThreadControl(frame.slots(1), 0)  // op=30, loc=10239, SL=9751, field_3=0
+L11837 Call QMLibrary.Delay((200))  // op=30, loc=10240, SL=9752, field_3=0
+L11838 temporary = 讀取共享鍵 V98B8AE8BBEC43C294D6A65757378756D  // op=27, loc=10241, SL=9753, field_3=0
+L11839 frame.slots(1)=temporary  // op=2, loc=10241, SL=9754, field_3=0
+L11840 Call QMLibrary.ThreadControl(frame.slots(1), 0)  // op=30, loc=10241, SL=9755, field_3=0
+L11841 Call QMLibrary.Delay((200))  // op=30, loc=10242, SL=9756, field_3=0
+L11842 temporary = 讀取共享鍵 V9AA5A6B0C78AB887F19BD3DEBD8F3C294D6A65757378756D  // op=27, loc=10243, SL=9757, field_3=0
+L11843 frame.slots(1)=temporary  // op=2, loc=10243, SL=9758, field_3=0
+L11844 Call QMLibrary.ThreadControl(frame.slots(1), 0)  // op=30, loc=10243, SL=9759, field_3=0
+L11845 Call QMLibrary.Delay((200))  // op=30, loc=10244, SL=9760, field_3=0
+L11846 Call QMLibrary.Delay((1000))  // op=30, loc=10245, SL=9761, field_3=0
+L11847 Call QMLibrary.MouseMove(40,20,g_iSimulateModeInVBSBlock,0)  // op=30, loc=10246, SL=9762, field_3=0
+L11848 Call QMLibrary.Delay((500))  // op=30, loc=10247, SL=9763, field_3=0
+L11849 Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  // op=30, loc=10248, SL=9764, field_3=0
+L11850 Call QMLibrary.Delay((1500))  // op=30, loc=10249, SL=9765, field_3=0
+L11851 Call FindColorEx(160,1,260,25,"31D74A",0,0.9,INTX,INTY)  // op=30, loc=10250, SL=9766, field_3=0
+L11852 condition = Sgn((INTX>=0))  // op=4, loc=10251, SL=9767, field_3=0
+L11853 條件為零則跳 L11856，否則 L11854  // op=6, loc=10251, SL=None, field_3=0
+L11854 Call QMLibrary.Delay((100))  // op=30, loc=10252, SL=9768, field_3=0
+L11855 跳往 L11865  // op=16, loc=10253, SL=None, field_3=0
+L11856 Call QMLibrary.Delay((500))  // op=30, loc=10254, SL=9769, field_3=0
+L11857 Call FindColorEx(160,1,260,25,"33D74A",0,0.9,INTX,INTY)  // op=30, loc=10255, SL=9770, field_3=0
+L11858 condition = Sgn((INTX>=0))  // op=4, loc=10256, SL=9771, field_3=0
+L11859 條件為零則跳 L11862，否則 L11860  // op=6, loc=10256, SL=None, field_3=0
+L11860 Call QMLibrary.Delay((100))  // op=30, loc=10257, SL=9772, field_3=0
+L11861 跳往 L11865  // op=16, loc=10258, SL=None, field_3=0
+L11862 Call QMLibrary.Delay((100))  // op=30, loc=10259, SL=9773, field_3=0
+L11863 Call QMLibrary.KeyPress("Esc",g_iSimulateModeInVBSBlock,1)  // op=30, loc=10260, SL=9774, field_3=0
+L11864 Call QMLibrary.Delay((3000))  // op=30, loc=10261, SL=9775, field_3=0
+L11865 Call QMLibrary.Delay((500))  // op=30, loc=10264, SL=9776, field_3=0
+L11866 Call QMLibrary.MouseMove(958,975,g_iSimulateModeInVBSBlock,0)  // op=30, loc=10265, SL=9777, field_3=0
+L11867 Call QMLibrary.Delay((500))  // op=30, loc=10266, SL=9778, field_3=0
+L11868 Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  // op=30, loc=10267, SL=9779, field_3=0
+L11869 Call QMLibrary.Delay((1000))  // op=30, loc=10268, SL=9780, field_3=0
+L11870 Call QMLibrary.ExitScript(1)  // op=30, loc=10269, SL=9781, field_3=0
+L11871 Call QMLibrary.Delay((300))  // op=30, loc=10270, SL=9782, field_3=0
+L11872 取回傳值至 temporary 並恢復父框架  // op=2, loc=10271, SL=9783, field_3=0
+L11873 返回呼叫者  // op=13, loc=10271, SL=None, field_3=0
+
+## 擷取畫面 L13605..L13609
+
+L13605 F2730835_2229_445E_97C7_l3F7612771DA.V87DBD9917378756D=YEAR(NOW) & MONTH(NOW) & DAY(NOW) & HOUR(NOW) & MINUTE(NOW) & SECOND(NOW)  // op=2, loc=1048603, SL=11287, field_3=0
+L13606 PIC
+If IsEmpty(PIC) Then Set PIC=CreateObject("QMPlugin.Pic")  // op=31, loc=1048604, SL=11288, field_3=0
+L13607 Call PIC.PRINTSCREEN(F2730835_2229_445E_97C7_l3F7612771DA.V9A99B28DC292756D,F2730835_2229_445E_97C7_l3F7612771DA.V84A5B28DC292756D,F2730835_2229_445E_97C7_l3F7612771DA.V9EB8B28DC292756D,F2730835_2229_445E_97C7_l3F7612771DA.V82A8B28DC292756D,F2730835_2229_445E_97C7_l3F7612771DA.VFCC9D193BEC4B3C18FDDDBC37378756D & F2730835_2229_445E_97C7_l3F7612771DA.V87DBD9917378756D & "." & F2730835_2229_445E_97C7_l3F7612771DA.V83AED98BCB89BFD04D6A65757378756D)  // op=30, loc=1048604, SL=11289, field_3=0
+L13608 取回傳值至 temporary 並恢復父框架  // op=2, loc=1048576, SL=11290, field_3=0
+L13609 返回呼叫者  // op=13, loc=1048576, SL=None, field_3=0
+

@@ -1,0 +1,1 @@
+public static class CubeWorkerDigests {public const string Program="23fc895222d88367ea1afedc5929a06196444c14b01842eebeaf6e62fb8c7b64";public const string Cases="8ad7b433c338f2ad1fb3bdf98b3ad9524e507becb6827870f70df33f37a40a50";public const int CaseCount=28;}

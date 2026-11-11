@@ -1,0 +1,220 @@
+# 圖402檢測跳躍 — L09962
+# 入口 L09962，RETURN L10178；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L09962: Call QMLibrary.Delay((30))  # loc=8584 Runner=0x625fb0
+L09963: 傳回值 = global.get(〔圖四〕)  # loc=8585 Runner=0x6266f4
+L09964: 目前呼叫框架.暫存槽(1)=傳回值  # loc=8585 Runner=0x625f7e
+L09965: last_test = Sgn(目前呼叫框架.暫存槽(1)=402)  # loc=8585 Runner=0x626047
+L09966: if last_test == 0: goto L10176  # loc=8585 Runner=0x62611c
+L09967: Call QMLibrary.Delay((50))  # loc=8586 Runner=0x625fb0
+L09968: DM_RET=DM.FINDCOLOR(1666,40,1890,75,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTXX,INTYY)  # loc=8589 Runner=0x625fb0
+L09969: last_test = Sgn((INTXX<0))  # loc=8590 Runner=0x626047
+L09970: if last_test == 0: goto L09973  # loc=8590 Runner=0x62611c
+L09971: Call QMLibrary.Delay((50))  # loc=8591 Runner=0x625fb0
+L09972: goto L10176  # loc=8592 Runner=0x626126
+L09973: Call QMLibrary.Delay((50))  # loc=8593 Runner=0x625fb0
+L09974: DM_RET=DM.FINDCOLOR(1604,251,1833,288,"A39D8D-050505|A29D8E-050505|A39D91-050505|A39D8F-050505|A49B92-050505",1,0,INTX,INTY)  # loc=8594 Runner=0x625fb0
+L09975: last_test = Sgn((INTX>0))  # loc=8595 Runner=0x626047
+L09976: if last_test == 0: goto L10176  # loc=8595 Runner=0x62611c
+L09977: Call QMLibrary.Delay((20))  # loc=8596 Runner=0x625fb0
+L09978: DM_RET=DM.FINDPIC(1610,40,1880,286,"C:\users\mymacro\TIAOYUE1.bmp|C:\users\mymacro\TIAOYUE2.bmp","070707",0.8,0,INTX,INTY)  # loc=8597 Runner=0x625fb0
+L09979: last_test = Sgn((INTX>0))  # loc=8598 Runner=0x626047
+L09980: if last_test == 0: goto L09983  # loc=8598 Runner=0x62611c
+L09981: Call QMLibrary.Delay((50))  # loc=8599 Runner=0x625fb0
+L09982: goto L10176  # loc=8600 Runner=0x626126
+L09983: Call QMLibrary.Delay((20))  # loc=8601 Runner=0x625fb0
+L09984: DM_RET=DM.FINDCOLOR(1716,118,1787,188,"DCF569-070707|E1F562-070707|D8F567-070707|E3FB73-050505|E1F768-070707",1,5,INTXX,INTYY)  # loc=8602 Runner=0x625fb0
+L09985: last_test = Sgn((INTXX>0))  # loc=8603 Runner=0x626047
+L09986: if last_test == 0: goto L10176  # loc=8603 Runner=0x62611c
+L09987: Call QMLibrary.Delay((20))  # loc=8604 Runner=0x625fb0
+L09988: last_test = Sgn(INTYY>165)  # loc=8605 Runner=0x626047
+L09989: if last_test == 0: goto L10067  # loc=8605 Runner=0x62611c
+L09990: Call QMLibrary.Delay((20))  # loc=8606 Runner=0x625fb0
+L09991: 〔超過〕=〔超過〕+1  # loc=8607 Runner=0x625f7e
+L09992: Call QMLibrary.Delay((20))  # loc=8608 Runner=0x625fb0
+L09993: last_test = Sgn(〔超過〕<2)  # loc=8609 Runner=0x626047
+L09994: if last_test == 0: goto L10002  # loc=8609 Runner=0x62611c
+L09995: Call DM.MOVETO(952,739)  # loc=8610 Runner=0x625fb0
+L09996: Call QMLibrary.Delay((50))  # loc=8611 Runner=0x625fb0
+L09997: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8612 Runner=0x625fb0
+L09998: Call QMLibrary.Delay((200))  # loc=8613 Runner=0x625fb0
+L09999: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8614 Runner=0x625fb0
+L10000: Call QMLibrary.Delay((250))  # loc=8615 Runner=0x625fb0
+L10001: goto L10067  # loc=8615 Runner=0x626126
+L10002: last_test = Sgn(〔超過〕>=2)  # loc=8616 Runner=0x626047
+L10003: if last_test == 0: goto L10067  # loc=8616 Runner=0x62611c
+L10004: Call QMLibrary.Delay((50))  # loc=8617 Runner=0x625fb0
+L10005: 〔超過〕=0  # loc=8618 Runner=0x625f7e
+L10006: 傳回值 = global.get(〔放技能ID〕)  # loc=8619 Runner=0x6266f4
+L10007: 目前呼叫框架.暫存槽(2)=傳回值  # loc=8619 Runner=0x625f7e
+L10008: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(2)), 1)  # loc=8619 Runner=0x625fb0
+L10009: Call QMLibrary.TracePrint("暂停")  # loc=8620 Runner=0x625fb0
+L10010: Call QMLibrary.Delay((2000))  # loc=8621 Runner=0x625fb0
+L10011: Call DM.MOVETO(952,739)  # loc=8622 Runner=0x625fb0
+L10012: Call QMLibrary.Delay((50))  # loc=8623 Runner=0x625fb0
+L10013: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8624 Runner=0x625fb0
+L10014: Call QMLibrary.Delay((200))  # loc=8625 Runner=0x625fb0
+L10015: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8626 Runner=0x625fb0
+L10016: Call QMLibrary.Delay((250))  # loc=8627 Runner=0x625fb0
+L10017: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8628 Runner=0x625fb0
+L10018: Call QMLibrary.Delay((1000))  # loc=8629 Runner=0x625fb0
+L10019: DM_RET=DM.FINDPIC(1,30,1593,994,"C:\users\mymacro\TIAOBIAO1.bmp|C:\users\mymacro\TIAOBIAO2.bmp|C:\users\mymacro\TIAOBIAO3.bmp|C:\users\mymacro\TIAOBIAO4.bmp|C:\users\mymacro\TIAOBIAO5.bmp|C:\users\mymacro\TIAOBIAO6.bmp|C:\users\mymacro\TIAOBIAO7.bmp|C:\users\mymacro\TIAOBIAO8.bmp|C:\users\mymacro\TIAOBIAO9.bmp|C:\users\mymacro\TIAOBIAo10.bmp|C:\users\mymacro\TIAOBIAO11.bmp|C:\users\mymacro\TIAOBIAO12.bmp|C:\users\mymacro\TIAOBIAO13.bmp|C:\users\mymacro\TIAOBIAO14.bmp","181818",0.8,3,INTX,INTY)  # loc=8630 Runner=0x625fb0
+L10020: last_test = Sgn((INTX>0))  # loc=8631 Runner=0x626047
+L10021: if last_test == 0: goto L10061  # loc=8631 Runner=0x62611c
+L10022: Call QMLibrary.Delay((50))  # loc=8632 Runner=0x625fb0
+L10023: Call DM.MOVETO(INTX,INTY)  # loc=8633 Runner=0x625fb0
+L10024: Call QMLibrary.Delay((150))  # loc=8634 Runner=0x625fb0
+L10025: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8635 Runner=0x625fb0
+L10026: Call QMLibrary.Delay(2500)  # loc=8636 Runner=0x625fb0
+L10027: DM_RET=DM.FINDPIC(676,122,1266,725,"C:\users\mymacro\TIAOG1.bmp|C:\users\mymacro\TIAOG2.bmp|C:\users\mymacro\TIAOG3.bmp","070707",0.8,0,INTX,INTY)  # loc=8637 Runner=0x625fb0
+L10028: last_test = Sgn((INTX>0))  # loc=8638 Runner=0x626047
+L10029: if last_test == 0: goto L10060  # loc=8638 Runner=0x62611c
+L10030: Call QMLibrary.Delay((1500))  # loc=8639 Runner=0x625fb0
+L10031: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8640 Runner=0x625fb0
+L10032: Call QMLibrary.Delay((100))  # loc=8641 Runner=0x625fb0
+L10033: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8642 Runner=0x625fb0
+L10034: Call QMLibrary.Delay((2000))  # loc=8643 Runner=0x625fb0
+L10035: DM_RET=DM.FINDPIC(676,122,1266,725,"C:\users\mymacro\TIAOG1.bmp|C:\users\mymacro\TIAOG2.bmp|C:\users\mymacro\TIAOG3.bmp","080808",0.8,0,INTX,INTY)  # loc=8644 Runner=0x625fb0
+L10036: last_test = Sgn((INTX>0))  # loc=8645 Runner=0x626047
+L10037: if last_test == 0: goto L10043  # loc=8645 Runner=0x62611c
+L10038: Call QMLibrary.Delay((100))  # loc=8646 Runner=0x625fb0
+L10039: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8647 Runner=0x625fb0
+L10040: Call QMLibrary.Delay((100))  # loc=8648 Runner=0x625fb0
+L10041: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8649 Runner=0x625fb0
+L10042: Call QMLibrary.Delay((2000))  # loc=8650 Runner=0x625fb0
+L10043: Call DM.MOVETO(1345,250)  # loc=8652 Runner=0x625fb0
+L10044: Call QMLibrary.Delay((150))  # loc=8653 Runner=0x625fb0
+L10045: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8654 Runner=0x625fb0
+L10046: Call QMLibrary.Delay((550))  # loc=8655 Runner=0x625fb0
+L10047: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8656 Runner=0x625fb0
+L10048: Call QMLibrary.Delay(500)  # loc=8657 Runner=0x625fb0
+L10049: 傳回值 = global.get(〔放技能ID〕)  # loc=8658 Runner=0x6266f4
+L10050: 目前呼叫框架.暫存槽(3)=傳回值  # loc=8658 Runner=0x625f7e
+L10051: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(3)), 2)  # loc=8658 Runner=0x625fb0
+L10052: Call QMLibrary.TracePrint("继续")  # loc=8659 Runner=0x625fb0
+L10053: Call QMLibrary.Delay((1000))  # loc=8660 Runner=0x625fb0
+L10054: Call DM.MOVETO(1345,250)  # loc=8661 Runner=0x625fb0
+L10055: Call QMLibrary.Delay((150))  # loc=8662 Runner=0x625fb0
+L10056: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8663 Runner=0x625fb0
+L10057: Call QMLibrary.Delay(500)  # loc=8664 Runner=0x625fb0
+L10058: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8665 Runner=0x625fb0
+L10059: Call QMLibrary.Delay(500)  # loc=8666 Runner=0x625fb0
+L10060: goto L10067  # loc=8667 Runner=0x626126
+L10061: Call QMLibrary.Delay((50))  # loc=8669 Runner=0x625fb0
+L10062: 傳回值 = global.get(〔放技能ID〕)  # loc=8670 Runner=0x6266f4
+L10063: 目前呼叫框架.暫存槽(4)=傳回值  # loc=8670 Runner=0x625f7e
+L10064: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(4)), 2)  # loc=8670 Runner=0x625fb0
+L10065: Call QMLibrary.TracePrint("继续")  # loc=8671 Runner=0x625fb0
+L10066: Call QMLibrary.Delay((1000))  # loc=8672 Runner=0x625fb0
+L10067: Call QMLibrary.Delay((50))  # loc=8676 Runner=0x625fb0
+L10068: DM_RET=DM.FINDPIC(676,122,1266,725,"C:\users\mymacro\TIAOG1.bmp|C:\users\mymacro\TIAOG2.bmp|C:\users\mymacro\TIAOG3.bmp","070707",0.8,0,INTX,INTY)  # loc=8677 Runner=0x625fb0
+L10069: last_test = Sgn((INTX>0))  # loc=8678 Runner=0x626047
+L10070: if last_test == 0: goto L10107  # loc=8678 Runner=0x62611c
+L10071: Call QMLibrary.Delay((50))  # loc=8679 Runner=0x625fb0
+L10072: 傳回值 = global.get(〔放技能ID〕)  # loc=8680 Runner=0x6266f4
+L10073: 目前呼叫框架.暫存槽(5)=傳回值  # loc=8680 Runner=0x625f7e
+L10074: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(5)), 1)  # loc=8680 Runner=0x625fb0
+L10075: Call QMLibrary.TracePrint("暂停")  # loc=8681 Runner=0x625fb0
+L10076: Call QMLibrary.Delay((2000))  # loc=8682 Runner=0x625fb0
+L10077: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8683 Runner=0x625fb0
+L10078: Call QMLibrary.Delay((100))  # loc=8684 Runner=0x625fb0
+L10079: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8685 Runner=0x625fb0
+L10080: Call QMLibrary.Delay((2000))  # loc=8686 Runner=0x625fb0
+L10081: DM_RET=DM.FINDPIC(676,122,1266,725,"C:\users\mymacro\TIAOG1.bmp|C:\users\mymacro\TIAOG2.bmp|C:\users\mymacro\TIAOG3.bmp","080808",0.8,0,INTX,INTY)  # loc=8687 Runner=0x625fb0
+L10082: last_test = Sgn((INTX>0))  # loc=8688 Runner=0x626047
+L10083: if last_test == 0: goto L10089  # loc=8688 Runner=0x62611c
+L10084: Call QMLibrary.Delay((100))  # loc=8689 Runner=0x625fb0
+L10085: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8690 Runner=0x625fb0
+L10086: Call QMLibrary.Delay((100))  # loc=8691 Runner=0x625fb0
+L10087: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8692 Runner=0x625fb0
+L10088: Call QMLibrary.Delay((2000))  # loc=8693 Runner=0x625fb0
+L10089: Call DM.MOVETO(1345,250)  # loc=8695 Runner=0x625fb0
+L10090: Call QMLibrary.Delay((150))  # loc=8696 Runner=0x625fb0
+L10091: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8697 Runner=0x625fb0
+L10092: Call QMLibrary.Delay((550))  # loc=8698 Runner=0x625fb0
+L10093: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8699 Runner=0x625fb0
+L10094: Call QMLibrary.Delay(500)  # loc=8700 Runner=0x625fb0
+L10095: 傳回值 = global.get(〔放技能ID〕)  # loc=8701 Runner=0x6266f4
+L10096: 目前呼叫框架.暫存槽(6)=傳回值  # loc=8701 Runner=0x625f7e
+L10097: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(6)), 2)  # loc=8701 Runner=0x625fb0
+L10098: Call QMLibrary.TracePrint("继续")  # loc=8702 Runner=0x625fb0
+L10099: Call QMLibrary.Delay((1000))  # loc=8703 Runner=0x625fb0
+L10100: Call DM.MOVETO(1345,250)  # loc=8704 Runner=0x625fb0
+L10101: Call QMLibrary.Delay((150))  # loc=8705 Runner=0x625fb0
+L10102: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8706 Runner=0x625fb0
+L10103: Call QMLibrary.Delay(500)  # loc=8707 Runner=0x625fb0
+L10104: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8708 Runner=0x625fb0
+L10105: Call QMLibrary.Delay(500)  # loc=8709 Runner=0x625fb0
+L10106: goto L10170  # loc=8710 Runner=0x626126
+L10107: Call QMLibrary.Delay((100))  # loc=8711 Runner=0x625fb0
+L10108: DM_RET=DM.FINDPIC(1,30,1593,994,"C:\users\mymacro\TIAOBIAO0.bmp|C:\users\mymacro\TIAOBIAO1.bmp|C:\users\mymacro\TIAOBIAO2.bmp|C:\users\mymacro\TIAOBIAO3.bmp|C:\users\mymacro\TIAOBIAO4.bmp|C:\users\mymacro\TIAOBIAO5.bmp|C:\users\mymacro\TIAOBIAO6.bmp|C:\users\mymacro\TIAOBIAO7.bmp|C:\users\mymacro\TIAOBIAO8.bmp|C:\users\mymacro\TIAOBIAO9.bmp|C:\users\mymacro\TIAOBIAO10.bmp|C:\users\mymacro\TIAOBIAO11.bmp","080808",0.9,0,INTX,INTY)  # loc=8712 Runner=0x625fb0
+L10109: last_test = Sgn((INTX>0))  # loc=8713 Runner=0x626047
+L10110: if last_test == 0: goto L10170  # loc=8713 Runner=0x62611c
+L10111: Call QMLibrary.Delay((50))  # loc=8714 Runner=0x625fb0
+L10112: 傳回值 = global.get(〔放技能ID〕)  # loc=8715 Runner=0x6266f4
+L10113: 目前呼叫框架.暫存槽(7)=傳回值  # loc=8715 Runner=0x625f7e
+L10114: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(7)), 1)  # loc=8715 Runner=0x625fb0
+L10115: Call QMLibrary.TracePrint("暂停")  # loc=8716 Runner=0x625fb0
+L10116: Call QMLibrary.Delay((2000))  # loc=8717 Runner=0x625fb0
+L10117: Call DM.MOVETO(960,540)  # loc=8718 Runner=0x625fb0
+L10118: Call QMLibrary.Delay((150))  # loc=8719 Runner=0x625fb0
+L10119: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8720 Runner=0x625fb0
+L10120: Call QMLibrary.Delay(2500)  # loc=8721 Runner=0x625fb0
+L10121: DM_RET=DM.FINDPIC(1,30,1593,994,"C:\users\mymacro\TIAOBIAO0.bmp|C:\users\mymacro\TIAOBIAO1.bmp|C:\users\mymacro\TIAOBIAO2.bmp|C:\users\mymacro\TIAOBIAO3.bmp|C:\users\mymacro\TIAOBIAO4.bmp|C:\users\mymacro\TIAOBIAO5.bmp|C:\users\mymacro\TIAOBIAO6.bmp|C:\users\mymacro\TIAOBIAO7.bmp|C:\users\mymacro\TIAOBIAO8.bmp|C:\users\mymacro\TIAOBIAO9.bmp|C:\users\mymacro\TIAOBIAO10.bmp|C:\users\mymacro\TIAOBIAO11.bmp","080808",0.9,0,INTX,INTY)  # loc=8722 Runner=0x625fb0
+L10122: last_test = Sgn((INTX>0))  # loc=8723 Runner=0x626047
+L10123: if last_test == 0: goto L10129  # loc=8723 Runner=0x62611c
+L10124: Call QMLibrary.Delay((50))  # loc=8724 Runner=0x625fb0
+L10125: Call DM.MOVETO(INTX,INTY)  # loc=8725 Runner=0x625fb0
+L10126: Call QMLibrary.Delay((200))  # loc=8726 Runner=0x625fb0
+L10127: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8727 Runner=0x625fb0
+L10128: Call QMLibrary.Delay(1000)  # loc=8728 Runner=0x625fb0
+L10129: Call QMLibrary.Delay(1000)  # loc=8730 Runner=0x625fb0
+L10130: DM_RET=DM.FINDPIC(676,122,1266,725,"C:\users\mymacro\TIAOG1.bmp|C:\users\mymacro\TIAOG2.bmp|C:\users\mymacro\TIAOG3.bmp","070707",0.8,0,INTX,INTY)  # loc=8731 Runner=0x625fb0
+L10131: last_test = Sgn((INTX>0))  # loc=8732 Runner=0x626047
+L10132: if last_test == 0: goto L10164  # loc=8732 Runner=0x62611c
+L10133: Call QMLibrary.Delay((300))  # loc=8733 Runner=0x625fb0
+L10134: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8734 Runner=0x625fb0
+L10135: Call QMLibrary.Delay((100))  # loc=8735 Runner=0x625fb0
+L10136: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8736 Runner=0x625fb0
+L10137: Call QMLibrary.Delay((2000))  # loc=8737 Runner=0x625fb0
+L10138: DM_RET=DM.FINDPIC(676,122,1266,725,"C:\users\mymacro\TIAOG1.bmp|C:\users\mymacro\TIAOG2.bmp|C:\users\mymacro\TIAOG3.bmp","080808",0.8,0,INTX,INTY)  # loc=8738 Runner=0x625fb0
+L10139: last_test = Sgn((INTX>0))  # loc=8739 Runner=0x626047
+L10140: if last_test == 0: goto L10146  # loc=8739 Runner=0x62611c
+L10141: Call QMLibrary.Delay((100))  # loc=8740 Runner=0x625fb0
+L10142: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8741 Runner=0x625fb0
+L10143: Call QMLibrary.Delay((100))  # loc=8742 Runner=0x625fb0
+L10144: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=8743 Runner=0x625fb0
+L10145: Call QMLibrary.Delay((2000))  # loc=8744 Runner=0x625fb0
+L10146: Call DM.MOVETO(1345,250)  # loc=8746 Runner=0x625fb0
+L10147: Call QMLibrary.Delay((150))  # loc=8747 Runner=0x625fb0
+L10148: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8748 Runner=0x625fb0
+L10149: Call QMLibrary.Delay((550))  # loc=8749 Runner=0x625fb0
+L10150: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8750 Runner=0x625fb0
+L10151: Call QMLibrary.Delay(500)  # loc=8751 Runner=0x625fb0
+L10152: 傳回值 = global.get(〔放技能ID〕)  # loc=8752 Runner=0x6266f4
+L10153: 目前呼叫框架.暫存槽(8)=傳回值  # loc=8752 Runner=0x625f7e
+L10154: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(8)), 2)  # loc=8752 Runner=0x625fb0
+L10155: Call QMLibrary.TracePrint("继续")  # loc=8753 Runner=0x625fb0
+L10156: Call QMLibrary.Delay((1000))  # loc=8754 Runner=0x625fb0
+L10157: Call DM.MOVETO(1345,250)  # loc=8755 Runner=0x625fb0
+L10158: Call QMLibrary.Delay((150))  # loc=8756 Runner=0x625fb0
+L10159: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8757 Runner=0x625fb0
+L10160: Call QMLibrary.Delay(500)  # loc=8758 Runner=0x625fb0
+L10161: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=8759 Runner=0x625fb0
+L10162: Call QMLibrary.Delay(500)  # loc=8760 Runner=0x625fb0
+L10163: goto L10170  # loc=8761 Runner=0x626126
+L10164: Call QMLibrary.Delay((50))  # loc=8762 Runner=0x625fb0
+L10165: 傳回值 = global.get(〔放技能ID〕)  # loc=8763 Runner=0x6266f4
+L10166: 目前呼叫框架.暫存槽(9)=傳回值  # loc=8763 Runner=0x625f7e
+L10167: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(9)), 2)  # loc=8763 Runner=0x625fb0
+L10168: Call QMLibrary.TracePrint("继续")  # loc=8764 Runner=0x625fb0
+L10169: Call QMLibrary.Delay((1000))  # loc=8765 Runner=0x625fb0
+L10170: Call QMLibrary.Delay(300)  # loc=8769 Runner=0x625fb0
+L10171: 傳回值 = global.get(〔放技能ID〕)  # loc=8770 Runner=0x6266f4
+L10172: 目前呼叫框架.暫存槽(10)=傳回值  # loc=8770 Runner=0x625f7e
+L10173: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(10)), 2)  # loc=8770 Runner=0x625fb0
+L10174: Call QMLibrary.TracePrint("继续")  # loc=8771 Runner=0x625fb0
+L10175: Call QMLibrary.Delay((200))  # loc=8772 Runner=0x625fb0
+L10176: Call QMLibrary.Delay((30))  # loc=8778 Runner=0x625fb0
+L10177: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=8779 Runner=0x625f7e
+L10178: return caller  # loc=8779 Runner=0x626275

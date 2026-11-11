@@ -1,0 +1,80 @@
+# 魔方：完成後的操作 L6740..L6814
+
+逐筆偽碼／事件模型；非可直接執行的原QMS。symbol名稱與語義名稱均由重建提供。
+原文字與全部欄位見 data/cube-routines.json；此檔未做簡繁轉換字串常數，以保留原找圖檔名與記錄文字。
+
+L6740: Call QMLibrary.Delay(100)  // op=30, loc=5904, SL=5768, field_3=0
+L6741: temporary = 讀共享值 completion_mode [原鍵 V8080D6BCA5D6CF9E4D6A65757378756D]  // op=27, loc=5905, SL=5769, field_3=0
+L6742: frame.slots(1)=temporary  // op=2, loc=5905, SL=5770, field_3=0
+L6743: condition = Sgn(frame.slots(1)=0)  // op=4, loc=5905, SL=5771, field_3=0
+L6744: 若 condition = 0，跳到 L6748；否則 L6745  // op=6, loc=5905, SL=None, field_3=0
+L6745: Call QMLibrary.Delay(1000)  // op=30, loc=5906, SL=5772, field_3=0
+L6746: Call QMLibrary.ExitScript(0)  // op=30, loc=5907, SL=5773, field_3=0
+L6747: 跳到 L6812  // op=16, loc=5907, SL=None, field_3=0
+L6748: temporary = 讀共享值 completion_mode [原鍵 V8080D6BCA5D6CF9E4D6A65757378756D]  // op=27, loc=5908, SL=5774, field_3=0
+L6749: frame.slots(2)=temporary  // op=2, loc=5908, SL=5775, field_3=0
+L6750: condition = Sgn(frame.slots(2)=1)  // op=4, loc=5908, SL=5776, field_3=0
+L6751: 若 condition = 0，跳到 L6759；否則 L6752  // op=6, loc=5908, SL=None, field_3=0
+L6752: Call QMLibrary.Delay(1000)  // op=30, loc=5909, SL=5777, field_3=0
+L6753: Call QMLibrary.KeyPress("F8",g_iSimulateModeInVBSBlock,1)  // op=30, loc=5910, SL=5778, field_3=0
+L6754: Call QMLibrary.Delay(1000)  // op=30, loc=5911, SL=5779, field_3=0
+L6755: Call QMLibrary.KeyPress("F8",g_iSimulateModeInVBSBlock,1)  // op=30, loc=5912, SL=5780, field_3=0
+L6756: Call QMLibrary.Delay(1000)  // op=30, loc=5913, SL=5781, field_3=0
+L6757: Call QMLibrary.ExitScript(0)  // op=30, loc=5914, SL=5782, field_3=0
+L6758: 跳到 L6812  // op=16, loc=5914, SL=None, field_3=0
+L6759: temporary = 讀共享值 completion_mode [原鍵 V8080D6BCA5D6CF9E4D6A65757378756D]  // op=27, loc=5915, SL=5783, field_3=0
+L6760: frame.slots(3)=temporary  // op=2, loc=5915, SL=5784, field_3=0
+L6761: condition = Sgn(frame.slots(3)=2)  // op=4, loc=5915, SL=5785, field_3=0
+L6762: 若 condition = 0，跳到 L6799；否則 L6763  // op=6, loc=5915, SL=None, field_3=0
+L6763: Call QMLibrary.Delay(1000)  // op=30, loc=5916, SL=5786, field_3=0
+L6764: Call DM.MOVETO(1880,1027)  // op=30, loc=5917, SL=5787, field_3=0
+L6765: Call QMLibrary.Delay(1000)  // op=30, loc=5918, SL=5788, field_3=0
+L6766: Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5919, SL=5789, field_3=0
+L6767: Call QMLibrary.Delay(100)  // op=30, loc=5920, SL=5790, field_3=0
+L6768: Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5921, SL=5791, field_3=0
+L6769: Call QMLibrary.Delay(2000)  // op=30, loc=5922, SL=5792, field_3=0
+L6770: Call DM.MOVETO(1860,920)  // op=30, loc=5923, SL=5793, field_3=0
+L6771: Call QMLibrary.Delay(300)  // op=30, loc=5924, SL=5794, field_3=0
+L6772: Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5925, SL=5795, field_3=0
+L6773: Call QMLibrary.Delay(100)  // op=30, loc=5926, SL=5796, field_3=0
+L6774: Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5927, SL=5797, field_3=0
+L6775: Call QMLibrary.Delay(300)  // op=30, loc=5928, SL=5798, field_3=0
+L6776: Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5929, SL=5799, field_3=0
+L6777: Call QMLibrary.Delay(100)  // op=30, loc=5930, SL=5800, field_3=0
+L6778: Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5931, SL=5801, field_3=0
+L6779: Call QMLibrary.Delay(4000)  // op=30, loc=5932, SL=5802, field_3=0
+L6780: Call DM.MOVETO(1515,740)  // op=30, loc=5933, SL=5803, field_3=0
+L6781: Call QMLibrary.Delay(500)  // op=30, loc=5934, SL=5804, field_3=0
+L6782: Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5935, SL=5805, field_3=0
+L6783: Call QMLibrary.Delay(100)  // op=30, loc=5936, SL=5806, field_3=0
+L6784: Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5937, SL=5807, field_3=0
+L6785: Call QMLibrary.Delay(700)  // op=30, loc=5938, SL=5808, field_3=0
+L6786: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5939, SL=5809, field_3=0
+L6787: Call QMLibrary.Delay(2000)  // op=30, loc=5940, SL=5810, field_3=0
+L6788: Call QMLibrary.KeyPress("Enter",g_iSimulateModeInVBSBlock,1)  // op=30, loc=5949, SL=5811, field_3=0
+L6789: Call QMLibrary.Delay(300)  // op=30, loc=5950, SL=5812, field_3=0
+L6790: Call DM.MOVETO(896,571)  // op=30, loc=5951, SL=5813, field_3=0
+L6791: Call QMLibrary.Delay(300)  // op=30, loc=5952, SL=5814, field_3=0
+L6792: Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5953, SL=5815, field_3=0
+L6793: Call QMLibrary.Delay(100)  // op=30, loc=5954, SL=5816, field_3=0
+L6794: Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)  // op=30, loc=5955, SL=5817, field_3=0
+L6795: Call QMLibrary.Delay(700)  // op=30, loc=5956, SL=5818, field_3=0
+L6796: Call QMLibrary.ExitScript(0)  // op=30, loc=5957, SL=5819, field_3=0
+L6797: Call QMLibrary.Delay(100)  // op=30, loc=5958, SL=5820, field_3=0
+L6798: 跳到 L6812  // op=16, loc=5958, SL=None, field_3=0
+L6799: temporary = 讀共享值 completion_mode [原鍵 V8080D6BCA5D6CF9E4D6A65757378756D]  // op=27, loc=5959, SL=5821, field_3=0
+L6800: frame.slots(4)=temporary  // op=2, loc=5959, SL=5822, field_3=0
+L6801: condition = Sgn(frame.slots(4)=3)  // op=4, loc=5959, SL=5823, field_3=0
+L6802: 若 condition = 0，跳到 L6810；否則 L6803  // op=6, loc=5959, SL=None, field_3=0
+L6803: Call QMLibrary.Delay(300)  // op=30, loc=5960, SL=5824, field_3=0
+L6804: 若 SYS 為 Empty，要求載入 QMPlugin.Sys（事件模型不載入外掛）  // op=31, loc=5962, SL=4346, field_3=0
+L6805: Call SYS.EXITOS(1)  // op=30, loc=5962, SL=5825, field_3=0
+L6806: Call QMLibrary.Delay((100))  // op=30, loc=5963, SL=5826, field_3=0
+L6807: Call QMLibrary.ExitScript(0)  // op=30, loc=5964, SL=5827, field_3=0
+L6808: Call QMLibrary.Delay(300)  // op=30, loc=5965, SL=5828, field_3=0
+L6809: 跳到 L6812  // op=16, loc=5966, SL=None, field_3=0
+L6810: Call QMLibrary.Delay(1000)  // op=30, loc=5967, SL=5829, field_3=0
+L6811: Call QMLibrary.ExitScript(0)  // op=30, loc=5968, SL=5830, field_3=0
+L6812: Call QMLibrary.Delay(100)  // op=30, loc=5970, SL=5831, field_3=0
+L6813: 還原呼叫框架／傳回暫存值的原語句：temporary=F2730835_2229_445E_97C7_l3F7612771DA.symbol_06:Set symbol_02=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_l3F7612771DA.symbol_01:Set symbol_02=Nothing  // op=2, loc=0, SL=5832, field_3=0
+L6814: 返回呼叫者（不是整個程式結束）  // op=13, loc=0, SL=None, field_3=0

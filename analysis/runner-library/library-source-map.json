@@ -1,0 +1,1493 @@
+{
+  "image_sha256": "a3099a9c7673af72b3899020cd8c6f9c2e944a3cd70e559c8f99362b3d7acecc",
+  "source_va": "0x8d0e78",
+  "source_end_va": "0x8d353d",
+  "source_bytes": 9925,
+  "raw_sha256": "49cacec27421d5d1dc1fc1cd6bf8eb2419ad55c979cd7d8fd75d8cbe897200f7",
+  "source_encoding": "gb18030 strict; original bytes retained",
+  "function_count": 86,
+  "functions": [
+    {
+      "name": "SetSimMode",
+      "kind": "Function",
+      "line": 11,
+      "source": "Function SetSimMode(SimMode)\ng_iSimulateModeInVBSBlock = SimMode\nEnd Function\n",
+      "qmlibrary_calls": []
+    },
+    {
+      "name": "KeyPress",
+      "kind": "Function",
+      "line": 15,
+      "source": "Function KeyPress(KeyCode, Count)\n\tQMLibrary.KeyPress KeyCode, g_iSimulateModeInVBSBlock, Count \nEnd Function\n",
+      "qmlibrary_calls": [
+        "KeyPress"
+      ]
+    },
+    {
+      "name": "KeyDown",
+      "kind": "Function",
+      "line": 19,
+      "source": "Function KeyDown(KeyCode, Count)\n\tQMLibrary.KeyDown KeyCode, g_iSimulateModeInVBSBlock, Count \nEnd Function\n",
+      "qmlibrary_calls": [
+        "KeyDown"
+      ]
+    },
+    {
+      "name": "KeyUp",
+      "kind": "Function",
+      "line": 23,
+      "source": "Function KeyUp(KeyCode, Count)\n\tQMLibrary.KeyUp KeyCode, g_iSimulateModeInVBSBlock, Count \nEnd Function\n",
+      "qmlibrary_calls": [
+        "KeyUp"
+      ]
+    },
+    {
+      "name": "KeyGroup",
+      "kind": "Function",
+      "line": 27,
+      "source": "Function KeyGroup(KeyCodes)\n\tQMLibrary.KeyGroup KeyCodes, g_iSimulateModeInVBSBlock\nEnd Function\n",
+      "qmlibrary_calls": [
+        "KeyGroup"
+      ]
+    },
+    {
+      "name": "LeftClick",
+      "kind": "Function",
+      "line": 31,
+      "source": "Function LeftClick(Count)\n\tQMLibrary.MouseClick 0, g_iSimulateModeInVBSBlock, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "RightClick",
+      "kind": "Function",
+      "line": 35,
+      "source": "Function RightClick(Count)\n\tQMLibrary.MouseClick 2, g_iSimulateModeInVBSBlock, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "MiddleClick",
+      "kind": "Function",
+      "line": 39,
+      "source": "Function MiddleClick(Count)\n\tQMLibrary.MouseClick 1, g_iSimulateModeInVBSBlock, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "LeftDoubleClick",
+      "kind": "Function",
+      "line": 43,
+      "source": "Function LeftDoubleClick(Count)\n\tQMLibrary.MouseClick 9, g_iSimulateModeInVBSBlock, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "LeftDown",
+      "kind": "Function",
+      "line": 47,
+      "source": "Function LeftDown(Count)\n\tQMLibrary.MouseClick 3, g_iSimulateModeInVBSBlock, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "LeftUp",
+      "kind": "Function",
+      "line": 51,
+      "source": "Function LeftUp(Count)\n\tQMLibrary.MouseClick 6, g_iSimulateModeInVBSBlock, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "RightDown",
+      "kind": "Function",
+      "line": 55,
+      "source": "Function RightDown(Count)\n\tQMLibrary.MouseClick 5, g_iSimulateModeInVBSBlock, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "RightUp",
+      "kind": "Function",
+      "line": 59,
+      "source": "Function RightUp(Count)\n\tQMLibrary.MouseClick 8, g_iSimulateModeInVBSBlock, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "MoveTo",
+      "kind": "Function",
+      "line": 63,
+      "source": "Function MoveTo(MoveX, MoveY)\n\tQMLibrary.MouseMove MoveX, MoveY, g_iSimulateModeInVBSBlock, 0\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseMove"
+      ]
+    },
+    {
+      "name": "MoveR",
+      "kind": "Function",
+      "line": 67,
+      "source": "Function MoveR(MoveX, MoveY)\n\tQMLibrary.MouseMove MoveX, MoveY, g_iSimulateModeInVBSBlock, 1\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseMove"
+      ]
+    },
+    {
+      "name": "MouseWheel",
+      "kind": "Function",
+      "line": 71,
+      "source": "Function MouseWheel(Movement)\n\tQMLibrary.MouseWheel Movement, g_iSimulateModeInVBSBlock\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseWheel"
+      ]
+    },
+    {
+      "name": "KeyPressH",
+      "kind": "Function",
+      "line": 75,
+      "source": "Function KeyPressH(KeyCode, Count)\n\tQMLibrary.KeyPress KeyCode, 1, Count \nEnd Function\n",
+      "qmlibrary_calls": [
+        "KeyPress"
+      ]
+    },
+    {
+      "name": "KeyDownH",
+      "kind": "Function",
+      "line": 79,
+      "source": "Function KeyDownH(KeyCode, Count)\n\tQMLibrary.KeyDown KeyCode, 1, Count \nEnd Function\n",
+      "qmlibrary_calls": [
+        "KeyDown"
+      ]
+    },
+    {
+      "name": "KeyUpH",
+      "kind": "Function",
+      "line": 83,
+      "source": "Function KeyUpH(KeyCode, Count)\n\tQMLibrary.KeyUp KeyCode, 1, Count \nEnd Function\n",
+      "qmlibrary_calls": [
+        "KeyUp"
+      ]
+    },
+    {
+      "name": "LeftClickH",
+      "kind": "Function",
+      "line": 87,
+      "source": "Function LeftClickH(Count)\n\tQMLibrary.MouseClick 0, 1, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "RightClickH",
+      "kind": "Function",
+      "line": 91,
+      "source": "Function RightClickH(Count)\n\tQMLibrary.MouseClick 2, 1, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "MiddleClickH",
+      "kind": "Function",
+      "line": 95,
+      "source": "Function MiddleClickH(Count)\n\tQMLibrary.MouseClick 1, 1, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "LeftDoubleClickH",
+      "kind": "Function",
+      "line": 99,
+      "source": "Function LeftDoubleClickH(Count)\n\tQMLibrary.MouseClick 9, 1, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "LeftDownH",
+      "kind": "Function",
+      "line": 103,
+      "source": "Function LeftDownH(Count)\n\tQMLibrary.MouseClick 3, 1, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "LeftUpH",
+      "kind": "Function",
+      "line": 107,
+      "source": "Function LeftUpH(Count)\n\tQMLibrary.MouseClick 6, 1, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "RightDownH",
+      "kind": "Function",
+      "line": 111,
+      "source": "Function RightDownH(Count)\n\tQMLibrary.MouseClick 5, 1, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "RightUpH",
+      "kind": "Function",
+      "line": 115,
+      "source": "Function RightUpH(Count)\n\tQMLibrary.MouseClick 8, 1, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "MoveToH",
+      "kind": "Function",
+      "line": 119,
+      "source": "Function MoveToH(MoveX, MoveY)\n\tQMLibrary.MouseMove MoveX, MoveY, 1, 0\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseMove"
+      ]
+    },
+    {
+      "name": "MoveRH",
+      "kind": "Function",
+      "line": 123,
+      "source": "Function MoveRH(MoveX, MoveY)\n\tQMLibrary.MouseMove MoveX, MoveY, 1, 1\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseMove"
+      ]
+    },
+    {
+      "name": "MouseWheelH",
+      "kind": "Function",
+      "line": 127,
+      "source": "Function MouseWheelH(Movement)\n\tQMLibrary.MouseWheel Movement, 1\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseWheel"
+      ]
+    },
+    {
+      "name": "KeyPressS",
+      "kind": "Function",
+      "line": 131,
+      "source": "Function KeyPressS(KeyCode, Count)\n\tQMLibrary.KeyPress KeyCode, 2, Count \nEnd Function\n",
+      "qmlibrary_calls": [
+        "KeyPress"
+      ]
+    },
+    {
+      "name": "KeyDownS",
+      "kind": "Function",
+      "line": 135,
+      "source": "Function KeyDownS(KeyCode, Count)\n\tQMLibrary.KeyDown KeyCode, 2, Count \nEnd Function\n",
+      "qmlibrary_calls": [
+        "KeyDown"
+      ]
+    },
+    {
+      "name": "KeyUpS",
+      "kind": "Function",
+      "line": 139,
+      "source": "Function KeyUpS(KeyCode, Count)\n\tQMLibrary.KeyUp KeyCode, 2, Count \nEnd Function\n",
+      "qmlibrary_calls": [
+        "KeyUp"
+      ]
+    },
+    {
+      "name": "LeftClickS",
+      "kind": "Function",
+      "line": 143,
+      "source": "Function LeftClickS(Count)\n\tQMLibrary.MouseClick 0, 2, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "RightClickS",
+      "kind": "Function",
+      "line": 147,
+      "source": "Function RightClickS(Count)\n\tQMLibrary.MouseClick 2, 2, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "MiddleClickS",
+      "kind": "Function",
+      "line": 151,
+      "source": "Function MiddleClickS(Count)\n\tQMLibrary.MouseClick 1, 2, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "LeftDoubleClickS",
+      "kind": "Function",
+      "line": 155,
+      "source": "Function LeftDoubleClickS(Count)\n\tQMLibrary.MouseClick 9, 2, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "LeftDownS",
+      "kind": "Function",
+      "line": 159,
+      "source": "Function LeftDownS(Count)\n\tQMLibrary.MouseClick 3, 2, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "LeftUpS",
+      "kind": "Function",
+      "line": 163,
+      "source": "Function LeftUpS(Count)\n\tQMLibrary.MouseClick 6, 2, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "RightDownS",
+      "kind": "Function",
+      "line": 167,
+      "source": "Function RightDownS(Count)\n\tQMLibrary.MouseClick 5, 2, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "RightUpS",
+      "kind": "Function",
+      "line": 171,
+      "source": "Function RightUpS(Count)\n\tQMLibrary.MouseClick 8, 2, Count\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseClick"
+      ]
+    },
+    {
+      "name": "MoveToS",
+      "kind": "Function",
+      "line": 175,
+      "source": "Function MoveToS(MoveX, MoveY)\n\tQMLibrary.MouseMove MoveX, MoveY, 2, 0\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseMove"
+      ]
+    },
+    {
+      "name": "MoveRS",
+      "kind": "Function",
+      "line": 179,
+      "source": "Function MoveRS(MoveX, MoveY)\n\tQMLibrary.MouseMove MoveX, MoveY, 2, 1\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseMove"
+      ]
+    },
+    {
+      "name": "MouseWheelS",
+      "kind": "Function",
+      "line": 183,
+      "source": "Function MouseWheelS(Movement)\n\tQMLibrary.MouseWheel Movement, 2\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MouseWheel"
+      ]
+    },
+    {
+      "name": "SaveMousePos",
+      "kind": "Function",
+      "line": 187,
+      "source": "Function SaveMousePos\n\tQMLibrary.MousePosSaveRestore 1\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MousePosSaveRestore"
+      ]
+    },
+    {
+      "name": "RestoreMousePos",
+      "kind": "Function",
+      "line": 191,
+      "source": "Function RestoreMousePos\n\tQMLibrary.MousePosSaveRestore 0\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MousePosSaveRestore"
+      ]
+    },
+    {
+      "name": "LockMouse",
+      "kind": "Function",
+      "line": 195,
+      "source": "Function LockMouse\n\tQMLibrary.MousePosLockUnlock 1\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MousePosLockUnlock"
+      ]
+    },
+    {
+      "name": "UnlockMouse",
+      "kind": "Function",
+      "line": 199,
+      "source": "Function UnlockMouse\n\tQMLibrary.MousePosLockUnlock 0\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MousePosLockUnlock"
+      ]
+    },
+    {
+      "name": "WaitKey",
+      "kind": "Function",
+      "line": 203,
+      "source": "Function WaitKey\n\tWaitKey = QMLibrary.ScanKeyMouse(1,1)\nEnd Function\n",
+      "qmlibrary_calls": [
+        "ScanKeyMouse"
+      ]
+    },
+    {
+      "name": "GetLastKey",
+      "kind": "Function",
+      "line": 207,
+      "source": "Function GetLastKey\n\tGetLastKey = QMLibrary.ScanKeyMouse(0,1)\nEnd Function\n",
+      "qmlibrary_calls": [
+        "ScanKeyMouse"
+      ]
+    },
+    {
+      "name": "WaitClick",
+      "kind": "Function",
+      "line": 211,
+      "source": "Function WaitClick\n\tWaitClick = QMLibrary.ScanKeyMouse(1,0)\nEnd Function\n",
+      "qmlibrary_calls": [
+        "ScanKeyMouse"
+      ]
+    },
+    {
+      "name": "GetLastClick",
+      "kind": "Function",
+      "line": 215,
+      "source": "Function GetLastClick\n\tGetLastClick = QMLibrary.ScanKeyMouse(0,0)\nEnd Function\n",
+      "qmlibrary_calls": [
+        "ScanKeyMouse"
+      ]
+    },
+    {
+      "name": "Delay",
+      "kind": "Function",
+      "line": 219,
+      "source": "Function Delay(DelayTime)\n\tQMLibrary.Delay DelayTime\nEnd Function\n",
+      "qmlibrary_calls": [
+        "Delay"
+      ]
+    },
+    {
+      "name": "MessageBox",
+      "kind": "Function",
+      "line": 223,
+      "source": "Function MessageBox(MessageText)\n\tQMLibrary.MessageNotify 1,MessageText\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MessageNotify"
+      ]
+    },
+    {
+      "name": "SayString",
+      "kind": "Function",
+      "line": 227,
+      "source": "Function SayString(MessageText)\n\tQMLibrary.SayString MessageText, 0\nEnd Function\n",
+      "qmlibrary_calls": [
+        "SayString"
+      ]
+    },
+    {
+      "name": "Beep",
+      "kind": "Function",
+      "line": 231,
+      "source": "Function Beep\n\tQMLibrary.MessageNotify 0,\"\"\nEnd Function\n",
+      "qmlibrary_calls": [
+        "MessageNotify"
+      ]
+    },
+    {
+      "name": "EndScript",
+      "kind": "Function",
+      "line": 235,
+      "source": "Function EndScript\n\tQMLibrary.EndScript\nEnd Function\n",
+      "qmlibrary_calls": [
+        "EndScript"
+      ]
+    },
+    {
+      "name": "PutAttachment",
+      "kind": "Function",
+      "line": 239,
+      "source": "Function PutAttachment(PutPath)\n\tQMLibrary.PutAttachment PutPath\nEnd Function\n",
+      "qmlibrary_calls": [
+        "PutAttachment"
+      ]
+    },
+    {
+      "name": "TracePrint",
+      "kind": "Function",
+      "line": 243,
+      "source": "Function TracePrint(PrintContent)\n\tQMLibrary.TracePrint PrintContent\nEnd Function\n",
+      "qmlibrary_calls": [
+        "TracePrint"
+      ]
+    },
+    {
+      "name": "LogStart",
+      "kind": "Function",
+      "line": 247,
+      "source": "Function LogStart(LogFileName)\n\tQMLibrary.OpenLog  LogFileName\nEnd Function\n",
+      "qmlibrary_calls": [
+        "OpenLog"
+      ]
+    },
+    {
+      "name": "LogStop",
+      "kind": "Function",
+      "line": 251,
+      "source": "Function LogStop()\n\tQMLibrary.CloseLog\nEnd Function\n",
+      "qmlibrary_calls": [
+        "CloseLog"
+      ]
+    },
+    {
+      "name": "ExitScript",
+      "kind": "Function",
+      "line": 255,
+      "source": "Function ExitScript()\n\tQMLibrary.ExitScript\t0\nEnd Function\n",
+      "qmlibrary_calls": [
+        "ExitScript"
+      ]
+    },
+    {
+      "name": "RestartScript",
+      "kind": "Function",
+      "line": 259,
+      "source": "Function RestartScript()\n\tQMLibrary.ExitScript\t1\nEnd Function\n",
+      "qmlibrary_calls": [
+        "ExitScript"
+      ]
+    },
+    {
+      "name": "StopThread",
+      "kind": "Function",
+      "line": 263,
+      "source": "Function StopThread(ThreadID)\n\tQMLibrary.ThreadControl ThreadID, 0\nEnd Function\n",
+      "qmlibrary_calls": [
+        "ThreadControl"
+      ]
+    },
+    {
+      "name": "PauseThread",
+      "kind": "Function",
+      "line": 267,
+      "source": "Function PauseThread(ThreadID)\n\tQMLibrary.ThreadControl ThreadID, 1\nEnd Function\n",
+      "qmlibrary_calls": [
+        "ThreadControl"
+      ]
+    },
+    {
+      "name": "ContinueThread",
+      "kind": "Function",
+      "line": 271,
+      "source": "Function ContinueThread(ThreadID)\n\tQMLibrary.ThreadControl ThreadID, 2\nEnd Function\n",
+      "qmlibrary_calls": [
+        "ThreadControl"
+      ]
+    },
+    {
+      "name": "GetThreadId",
+      "kind": "Function",
+      "line": 275,
+      "source": "Function GetThreadId()\n\tGetThreadId = QMLibrary.GetThreadId()\nEnd Function\n",
+      "qmlibrary_calls": [
+        "GetThreadId"
+      ]
+    },
+    {
+      "name": "GetMacroID",
+      "kind": "Function",
+      "line": 279,
+      "source": "Function GetMacroID()\n\tGetMacroID = QMLibrary.GetMacroID()\nEnd Function\n",
+      "qmlibrary_calls": [
+        "GetMacroID"
+      ]
+    },
+    {
+      "name": "GetExeDir",
+      "kind": "Function",
+      "line": 283,
+      "source": "Function GetExeDir()\n\tGetExeDir = QMLibrary.GetExeDir()\nEnd Function\n",
+      "qmlibrary_calls": [
+        "GetExeDir"
+      ]
+    },
+    {
+      "name": "GetEnv",
+      "kind": "Function",
+      "line": 287,
+      "source": "Function GetEnv(Name)\n\tGetEnv = QMLibrary.GetEnvironmentVariable(Name) \nEnd Function\n",
+      "qmlibrary_calls": [
+        "GetEnvironmentVariable"
+      ]
+    },
+    {
+      "name": "GetEnvironmentVar",
+      "kind": "Function",
+      "line": 291,
+      "source": "Function GetEnvironmentVar(Name)\n\tGetEnvironmentVar = GetEnv(Name)\nEnd Function\n",
+      "qmlibrary_calls": []
+    },
+    {
+      "name": "SetEnv",
+      "kind": "Function",
+      "line": 295,
+      "source": "Function SetEnv(Name, Value)\n\tSetEnv = QMLibrary.SetEnvironmentVariable(Name,Value) \nEnd Function\n",
+      "qmlibrary_calls": [
+        "SetEnvironmentVariable"
+      ]
+    },
+    {
+      "name": "SetEnvironmentVar",
+      "kind": "Function",
+      "line": 299,
+      "source": "Function SetEnvironmentVar(Name, Value)\n\tSetEnvironmentVar = SetEnv(Name, Value)\nEnd Function\n",
+      "qmlibrary_calls": []
+    },
+    {
+      "name": "CompColor",
+      "kind": "Function",
+      "line": 303,
+      "source": "Function CompColor(XPos, YPos, ColorToComp, CompType)\n\tCompColor = QMLibrary.CompColor(XPos, YPos, ColorToComp, CompType)\nEnd Function\n",
+      "qmlibrary_calls": [
+        "CompColor"
+      ]
+    },
+    {
+      "name": "RunApp",
+      "kind": "Function",
+      "line": 307,
+      "source": "Function RunApp(AppPath)\t'这个函数用来运行一个外部程序\n\tCall QMLibrary.RunApp(AppPath)\nEnd Function\n",
+      "qmlibrary_calls": [
+        "RunApp"
+      ]
+    },
+    {
+      "name": "GetCursorPos",
+      "kind": "Function",
+      "line": 311,
+      "source": "Function GetCursorPos(ByRef CursorX,ByRef CursorY)\t'这个函数用来得到鼠标当前位置\n\tCursorPos = QMLibrary.GetCursorPos()\n\tCursorY = CursorPos Mod 8192\n\tCursorX = CInt(CursorPos / 8192)\nEnd Function\n",
+      "qmlibrary_calls": [
+        "GetCursorPos"
+      ]
+    },
+    {
+      "name": "GetPixelColor",
+      "kind": "Function",
+      "line": 317,
+      "source": "Function GetPixelColor(PosX,PosY)\t'这个函数得到某个指定点的颜色（用字符串表示）\n\tGetPixelColor = QMLibrary.GetPixelColor(PosX,PosY)\nEnd Function\n",
+      "qmlibrary_calls": [
+        "GetPixelColor"
+      ]
+    },
+    {
+      "name": "FindColor",
+      "kind": "Function",
+      "line": 321,
+      "source": "Function FindColor(iLeft,iTop,iRight,iBottom,szColor,ByRef FoundX,ByRef FoundY)\t'这个函数用来从某个矩形范围内查找指定的颜色，按从左到右，从上到下的顺序查找\n\tFoundPixel = QMLibrary.FindColor(iLeft,iTop,iRight,iBottom,szColor,0)\n\tFoundX = CInt(FoundPixel / 8192)\n\tFoundY = FoundPixel Mod 8192\n\tFindColor = FoundPixel\nEnd Function\n",
+      "qmlibrary_calls": [
+        "FindColor"
+      ]
+    },
+    {
+      "name": "FindCenterColor",
+      "kind": "Function",
+      "line": 328,
+      "source": "Function FindCenterColor(iLeft,iTop,iRight,iBottom,szColor,ByRef FoundX,ByRef FoundY)\t'这个函数用来从某个矩形范围内查找指定的颜色，按从中间到四周的顺序查找\n\tFoundPixel = QMLibrary.FindColor(iLeft,iTop,iRight,iBottom,szColor,1)\n\tFoundX = CInt(FoundPixel / 8192)\n\tFoundY = FoundPixel Mod 8192\n\tFindCenterColor = FoundPixel\nend Function\n",
+      "qmlibrary_calls": [
+        "FindColor"
+      ]
+    },
+    {
+      "name": "FindColorEx",
+      "kind": "Function",
+      "line": 335,
+      "source": "Function FindColorEx(iLeft,iTop,iRight,iBottom,szColor,iType,fSimilar,ByRef FoundX,ByRef FoundY)\t'这个函数用来从某个矩形范围内模糊查找指定的颜色\n\tFoundPixel = QMLibrary.FindColor(iLeft,iTop,iRight,iBottom,szColor,iType,fSimilar)\n\tFoundX = CInt(FoundPixel / 8192)\n\tFoundY = FoundPixel Mod 8192\n\tFindColorEx = FoundPixel\nEnd Function\n",
+      "qmlibrary_calls": [
+        "FindColor"
+      ]
+    },
+    {
+      "name": "ReadMemory",
+      "kind": "Function",
+      "line": 342,
+      "source": "Function ReadMemory(dwAddress, iType, ByRef ReadValue)  '这个函数用于读取当前进程的内存地址\n\tIf iType=0 Then\n\t\tReadValue = CByte(QMLibrary.ReadMemory(dwAddress, iType))\n\tElse\n\t\tReadValue = CLng(QMLibrary.ReadMemory(dwAddress, iType))\n\tEnd If \nEnd Function\n",
+      "qmlibrary_calls": [
+        "ReadMemory"
+      ]
+    },
+    {
+      "name": "FindPic",
+      "kind": "Function",
+      "line": 350,
+      "source": "Function FindPic(iLeft,iTop,iRight,iBottom,szFileName,fSimilar,ByRef FoundX,ByRef FoundY)\n'这个函数用于在屏幕范围内查找图片\n\tFoundPixel = QMLibrary.FindPic(iLeft,iTop,iRight,iBottom,szFileName,fSimilar)\n\tFoundX = CInt(FoundPixel / 8192)\n\tFoundY = FoundPixel Mod 8192\n\tFindPic = FoundPixel\nEnd Function\n",
+      "qmlibrary_calls": [
+        "FindPic"
+      ]
+    },
+    {
+      "name": "FindPicEx",
+      "kind": "Function",
+      "line": 358,
+      "source": "Function FindPicEx(iLeft,iTop,iRight,iBottom,szFileName,fSimilar,szTransparentColor,ByRef FoundX,ByRef FoundY)\n'这个函数用于在屏幕范围内查找图片,支持自定义透明色\n\tFoundPixel = QMLibrary.FindPic(iLeft,iTop,iRight,iBottom,szFileName,fSimilar,szTransparentColor)\n\tFoundX = CInt(FoundPixel / 8192)\n\tFoundY = FoundPixel Mod 8192\n\tFindPicEx = FoundPixel\nEnd Function\n",
+      "qmlibrary_calls": [
+        "FindPic"
+      ]
+    },
+    {
+      "name": "GetCursorShape",
+      "kind": "Function",
+      "line": 366,
+      "source": "Function GetCursorShape(iType)\n'这个函数得到当前鼠标的形状特征（用一个整数表示，对这个整数进行比较，相当于对鼠标形状进行比较）\n\tGetCursorShape=CLng(QMLibrary.GetCursorShape(iType))\nEnd Function\n",
+      "qmlibrary_calls": [
+        "GetCursorShape"
+      ]
+    },
+    {
+      "name": "GetScreenResolution",
+      "kind": "Function",
+      "line": 372,
+      "source": "Function GetScreenResolution(ByRef ScreenX, ByRef ScreenY)\t'这个函数用于得到当前屏幕分辨率  ==>今后请使用GetSysInfo.dll插件\n\tResolution = QMLibrary.GetScreenResolution()\n\tScreenX = CInt(Resolution / 8192)\n\tScreenY = Resolution Mod 8192\nEnd Function\n",
+      "qmlibrary_calls": [
+        "GetScreenResolution"
+      ]
+    },
+    {
+      "name": "SetCursorPos",
+      "kind": "Function",
+      "line": 378,
+      "source": "Function SetCursorPos(CursorX,CursorY)\t'这个函数用来设置鼠标当前位置  ====>今后请使用按键精灵的MoveTo命令\n\tQMLibrary.MouseMove CursorX, CursorY, 0, 0\nEnd function\n",
+      "qmlibrary_calls": [
+        "MouseMove"
+      ]
+    }
+  ],
+  "used_subset": [
+    {
+      "name": "GetCursorPos",
+      "kind": "Function",
+      "line": 311,
+      "source": "Function GetCursorPos(ByRef CursorX,ByRef CursorY)\t'这个函数用来得到鼠标当前位置\n\tCursorPos = QMLibrary.GetCursorPos()\n\tCursorY = CursorPos Mod 8192\n\tCursorX = CInt(CursorPos / 8192)\nEnd Function\n",
+      "qmlibrary_calls": [
+        "GetCursorPos"
+      ]
+    },
+    {
+      "name": "FindColorEx",
+      "kind": "Function",
+      "line": 335,
+      "source": "Function FindColorEx(iLeft,iTop,iRight,iBottom,szColor,iType,fSimilar,ByRef FoundX,ByRef FoundY)\t'这个函数用来从某个矩形范围内模糊查找指定的颜色\n\tFoundPixel = QMLibrary.FindColor(iLeft,iTop,iRight,iBottom,szColor,iType,fSimilar)\n\tFoundX = CInt(FoundPixel / 8192)\n\tFoundY = FoundPixel Mod 8192\n\tFindColorEx = FoundPixel\nEnd Function\n",
+      "qmlibrary_calls": [
+        "FindColor"
+      ]
+    },
+    {
+      "name": "FindPic",
+      "kind": "Function",
+      "line": 350,
+      "source": "Function FindPic(iLeft,iTop,iRight,iBottom,szFileName,fSimilar,ByRef FoundX,ByRef FoundY)\n'这个函数用于在屏幕范围内查找图片\n\tFoundPixel = QMLibrary.FindPic(iLeft,iTop,iRight,iBottom,szFileName,fSimilar)\n\tFoundX = CInt(FoundPixel / 8192)\n\tFoundY = FoundPixel Mod 8192\n\tFindPic = FoundPixel\nEnd Function\n",
+      "qmlibrary_calls": [
+        "FindPic"
+      ]
+    }
+  ],
+  "used_calls": [
+    {
+      "module": 1,
+      "source_sl": 658,
+      "name": "FindPic",
+      "records": [
+        807
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\bstou.bmp\",0.5,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 664,
+      "name": "FindPic",
+      "records": [
+        815
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\bstou.bmp\",0.5,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3333,
+      "name": "FindPic",
+      "records": [
+        4084
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\201.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3369,
+      "name": "FindPic",
+      "records": [
+        4132
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\202.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3375,
+      "name": "FindPic",
+      "records": [
+        4140
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\203.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3405,
+      "name": "FindPic",
+      "records": [
+        4180
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\204.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3411,
+      "name": "FindPic",
+      "records": [
+        4188
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\205.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3417,
+      "name": "FindPic",
+      "records": [
+        4196
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\206.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3423,
+      "name": "FindPic",
+      "records": [
+        4204
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\207.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3432,
+      "name": "FindPic",
+      "records": [
+        4216
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\209.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3438,
+      "name": "FindPic",
+      "records": [
+        4224
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\210.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3447,
+      "name": "FindPic",
+      "records": [
+        4236
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\211.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3453,
+      "name": "FindPic",
+      "records": [
+        4244
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\213.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3459,
+      "name": "FindPic",
+      "records": [
+        4252
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\214.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3465,
+      "name": "FindPic",
+      "records": [
+        4260
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\215.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3477,
+      "name": "FindPic",
+      "records": [
+        4276
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\208.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3480,
+      "name": "FindColorEx",
+      "records": [
+        4280
+      ],
+      "source": "Call FindColorEx(470,265,670,630,\"9D9E60\",0,0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3495,
+      "name": "FindPic",
+      "records": [
+        4300
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\216.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3498,
+      "name": "FindPic",
+      "records": [
+        4304
+      ],
+      "source": "Call FindPic(750,750,1000,900,\"C:\\users\\mymacro\\216-2.bmp\",0.8,INTX16,INTY16)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3513,
+      "name": "FindPic",
+      "records": [
+        4324
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\212.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3516,
+      "name": "FindPic",
+      "records": [
+        4328
+      ],
+      "source": "Call FindPic(1080,160,1430,410,\"C:\\users\\mymacro\\212-2.bmp\",0.8,INTX12,INTY12)"
+    },
+    {
+      "module": 1,
+      "source_sl": 3522,
+      "name": "FindColorEx",
+      "records": [
+        4336
+      ],
+      "source": "Call FindColorEx(17,326,237,499,\"978744\",0,0.8,INTX122,INTY122)"
+    },
+    {
+      "module": 1,
+      "source_sl": 6181,
+      "name": "FindColorEx",
+      "records": [
+        7542
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"6767FA\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 6189,
+      "name": "FindColorEx",
+      "records": [
+        7553
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"4038F3\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 6197,
+      "name": "FindColorEx",
+      "records": [
+        7564
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"9483FF\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 6205,
+      "name": "FindColorEx",
+      "records": [
+        7575
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"7373C0\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 6213,
+      "name": "FindColorEx",
+      "records": [
+        7586
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"747BB0\",1,0.9,INTXX,INTYY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 6221,
+      "name": "FindColorEx",
+      "records": [
+        7597
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"BAA9E8\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 6229,
+      "name": "FindColorEx",
+      "records": [
+        7608
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"9D8DFF\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 9766,
+      "name": "FindColorEx",
+      "records": [
+        11851
+      ],
+      "source": "Call FindColorEx(160,1,260,25,\"31D74A\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 9770,
+      "name": "FindColorEx",
+      "records": [
+        11857
+      ],
+      "source": "Call FindColorEx(160,1,260,25,\"33D74A\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 1,
+      "source_sl": 11276,
+      "name": "FindPic",
+      "records": [
+        13585
+      ],
+      "source": "Call FindPic(F2730835_2229_445E_97C7_l3F7612771DA.A,F2730835_2229_445E_97C7_l3F7612771DA.B,F2730835_2229_445E_97C7_l3F7612771DA.C,F2730835_2229_445E_97C7_l3F7612771DA.D,F2730835_2229_445E_97C7_l3F7612771DA.V80D6A3D9B1CFCBDB4D6A65757378756D,F2730835_2229_445E_97C7_l3F7612771DA.V828AAEB3C5B0756D,F278O335_2229_445E_97C7_l3F76l2771DA__6,F278O335_2229_445E_97C7_l3F76l2771DA__7)"
+    },
+    {
+      "module": 3,
+      "source_sl": 5029,
+      "name": "FindColorEx",
+      "records": [
+        5995
+      ],
+      "source": "Call FindColorEx(160,1,260,25,\"31D74A\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 3,
+      "source_sl": 5424,
+      "name": "FindPic",
+      "records": [
+        6437
+      ],
+      "source": "Call FindPic(F2730835_2229_445E_97C7_l3F7612771DA.A,F2730835_2229_445E_97C7_l3F7612771DA.B,F2730835_2229_445E_97C7_l3F7612771DA.C,F2730835_2229_445E_97C7_l3F7612771DA.D,F2730835_2229_445E_97C7_l3F7612771DA.V80D6A3D9B1CFCBDB4D6A65757378756D,F2730835_2229_445E_97C7_l3F7612771DA.V828AAEB3C5B0756D,F278O335_2229_445E_97C7_l3F76l2771DA__6,F278O335_2229_445E_97C7_l3F76l2771DA__7)"
+    },
+    {
+      "module": 5,
+      "source_sl": 4,
+      "name": "GetCursorPos",
+      "records": [],
+      "source": "Call GetCursorPos(MX,MY)"
+    },
+    {
+      "module": 5,
+      "source_sl": 233,
+      "name": "FindColorEx",
+      "records": [],
+      "source": "Call FindColorEx(887,917,912,930,\"40752B\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 5,
+      "source_sl": 236,
+      "name": "FindColorEx",
+      "records": [],
+      "source": "Call FindColorEx(887,917,912,930,\"35DF86\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 5,
+      "source_sl": 239,
+      "name": "FindColorEx",
+      "records": [],
+      "source": "Call FindColorEx(887,917,912,930,\"31B972\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 5,
+      "source_sl": 242,
+      "name": "FindColorEx",
+      "records": [],
+      "source": "Call FindColorEx(887,917,912,930,\"3F722A\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 523,
+      "name": "FindPic",
+      "records": [
+        638
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\bstou.bmp\",0.5,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 529,
+      "name": "FindPic",
+      "records": [
+        646
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\bstou.bmp\",0.5,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3179,
+      "name": "FindPic",
+      "records": [
+        3889
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\201.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3215,
+      "name": "FindPic",
+      "records": [
+        3937
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\202.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3221,
+      "name": "FindPic",
+      "records": [
+        3945
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\203.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3251,
+      "name": "FindPic",
+      "records": [
+        3985
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\204.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3257,
+      "name": "FindPic",
+      "records": [
+        3993
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\205.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3263,
+      "name": "FindPic",
+      "records": [
+        4001
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\206.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3269,
+      "name": "FindPic",
+      "records": [
+        4009
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\207.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3278,
+      "name": "FindPic",
+      "records": [
+        4021
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\209.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3284,
+      "name": "FindPic",
+      "records": [
+        4029
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\210.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3293,
+      "name": "FindPic",
+      "records": [
+        4041
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\211.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3299,
+      "name": "FindPic",
+      "records": [
+        4049
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\213.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3305,
+      "name": "FindPic",
+      "records": [
+        4057
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\214.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3311,
+      "name": "FindPic",
+      "records": [
+        4065
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\215.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3323,
+      "name": "FindPic",
+      "records": [
+        4081
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\208.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3326,
+      "name": "FindColorEx",
+      "records": [
+        4085
+      ],
+      "source": "Call FindColorEx(470,265,670,630,\"9D9E60\",0,0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3341,
+      "name": "FindPic",
+      "records": [
+        4105
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\216.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3344,
+      "name": "FindPic",
+      "records": [
+        4109
+      ],
+      "source": "Call FindPic(750,750,1000,900,\"C:\\users\\mymacro\\216-2.bmp\",0.8,INTX16,INTY16)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3359,
+      "name": "FindPic",
+      "records": [
+        4129
+      ],
+      "source": "Call FindPic(1592,37,1892,297,\"C:\\users\\mymacro\\212.bmp\",0.8,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3362,
+      "name": "FindPic",
+      "records": [
+        4133
+      ],
+      "source": "Call FindPic(1080,160,1430,410,\"C:\\users\\mymacro\\212-2.bmp\",0.8,INTX12,INTY12)"
+    },
+    {
+      "module": 6,
+      "source_sl": 3368,
+      "name": "FindColorEx",
+      "records": [
+        4141
+      ],
+      "source": "Call FindColorEx(17,326,237,499,\"978744\",0,0.8,INTX122,INTY122)"
+    },
+    {
+      "module": 6,
+      "source_sl": 6051,
+      "name": "FindColorEx",
+      "records": [
+        7379
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"6767FA\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 6059,
+      "name": "FindColorEx",
+      "records": [
+        7390
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"4038F3\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 6067,
+      "name": "FindColorEx",
+      "records": [
+        7401
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"9483FF\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 6075,
+      "name": "FindColorEx",
+      "records": [
+        7412
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"7373C0\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 6083,
+      "name": "FindColorEx",
+      "records": [
+        7423
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"747BB0\",1,0.9,INTXX,INTYY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 6091,
+      "name": "FindColorEx",
+      "records": [
+        7434
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"BAA9E8\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 6099,
+      "name": "FindColorEx",
+      "records": [
+        7445
+      ],
+      "source": "Call FindColorEx(1610,60,1880,286,\"9D8DFF\",1,0.8,INTXX,INTYY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 7087,
+      "name": "FindColorEx",
+      "records": [
+        8730
+      ],
+      "source": "Call FindColorEx(160,1,260,25,\"31D74A\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 7091,
+      "name": "FindColorEx",
+      "records": [
+        8736
+      ],
+      "source": "Call FindColorEx(160,1,260,25,\"33D74A\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 6,
+      "source_sl": 8425,
+      "name": "FindPic",
+      "records": [
+        10269
+      ],
+      "source": "Call FindPic(F2730835_2229_445E_97C7_l3F7612771DA.A,F2730835_2229_445E_97C7_l3F7612771DA.B,F2730835_2229_445E_97C7_l3F7612771DA.C,F2730835_2229_445E_97C7_l3F7612771DA.D,F2730835_2229_445E_97C7_l3F7612771DA.V80D6A3D9B1CFCBDB4D6A65757378756D,F2730835_2229_445E_97C7_l3F7612771DA.V828AAEB3C5B0756D,F278O335_2229_445E_97C7_l3F76l2771DA__6,F278O335_2229_445E_97C7_l3F76l2771DA__7)"
+    },
+    {
+      "module": 8,
+      "source_sl": 1171,
+      "name": "FindColorEx",
+      "records": [
+        1356
+      ],
+      "source": "Call FindColorEx(875,917,896,932,\"40752B\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 8,
+      "source_sl": 1174,
+      "name": "FindColorEx",
+      "records": [
+        1361
+      ],
+      "source": "Call FindColorEx(875,917,896,932,\"35DF86\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 8,
+      "source_sl": 1177,
+      "name": "FindColorEx",
+      "records": [
+        1366
+      ],
+      "source": "Call FindColorEx(875,917,896,932,\"31B972\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 8,
+      "source_sl": 1180,
+      "name": "FindColorEx",
+      "records": [
+        1371
+      ],
+      "source": "Call FindColorEx(875,917,896,932,\"3F722A\",0,0.9,INTX,INTY)"
+    },
+    {
+      "module": 10,
+      "source_sl": 1297,
+      "name": "GetCursorPos",
+      "records": [
+        1603
+      ],
+      "source": "Call GetCursorPos(MX,MY)"
+    }
+  ],
+  "normalization": "CRCRLF/CRLF to LF for the readable copy only.",
+  "usage_scan": "Parenthesized, unqualified names from the 86-function library in preserved SL strings; not a proof against dynamic calls or missing records.",
+  "initialization_present_in_full_text": true,
+  "original_code_executed": false,
+  "limits": [
+    "The full source includes native COM initialization and is delivered as inert .txt, not automatically executed.",
+    "Three used global wrappers are retained as source; this extraction does not execute them. Native QMLibrary.FindColor differs from dm.FindColor.",
+    "User-authored original comments are not inferred from stock-library comments."
+  ]
+}

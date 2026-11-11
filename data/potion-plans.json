@@ -1,0 +1,1992 @@
+{
+  "module": 10,
+  "source": "account/10/qmcfile-streams/Script.decoded.bin",
+  "source_sha256": "dd547e8d5d3f5a7599a0c114846256b1df0f13dec826dd3900482fff938261ac",
+  "plans": [
+    {
+      "entry": 1326,
+      "last": 1377,
+      "hp_label_percent": 11,
+      "name_status": "標籤依保留主流程類別次序及血條座標對應；入口原名配對仍需其他模組或執行證據核對",
+      "rect": [
+        652,
+        959,
+        656,
+        972
+      ],
+      "actions": [
+        {
+          "record": 1326,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1028,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1327,
+          "opcode": 2,
+          "source": "SET DM=CREATEOBJECT(\"dm.dmsoft\")",
+          "handler": "0x625f7e",
+          "loc": 1029,
+          "kind": "require_color_backend"
+        },
+        {
+          "record": 1328,
+          "opcode": 30,
+          "source": "Call DM.SETSHOWERRORMSG(0)",
+          "handler": "0x625fb0",
+          "loc": 1030,
+          "kind": "set_error_display"
+        },
+        {
+          "record": 1329,
+          "opcode": 2,
+          "source": "X1=652",
+          "handler": "0x625f7e",
+          "loc": 1031,
+          "kind": "assign",
+          "destination": "X1",
+          "expression": "652"
+        },
+        {
+          "record": 1330,
+          "opcode": 2,
+          "source": "Y1=959",
+          "handler": "0x625f7e",
+          "loc": 1032,
+          "kind": "assign",
+          "destination": "Y1",
+          "expression": "959"
+        },
+        {
+          "record": 1331,
+          "opcode": 2,
+          "source": "X2=656",
+          "handler": "0x625f7e",
+          "loc": 1033,
+          "kind": "assign",
+          "destination": "X2",
+          "expression": "656"
+        },
+        {
+          "record": 1332,
+          "opcode": 2,
+          "source": "Y2=972",
+          "handler": "0x625f7e",
+          "loc": 1034,
+          "kind": "assign",
+          "destination": "Y2",
+          "expression": "972"
+        },
+        {
+          "record": 1333,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1035,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1334,
+          "opcode": 4,
+          "source": "Sgn(vbTrue)",
+          "handler": "0x626047",
+          "loc": 1036,
+          "kind": "test",
+          "expression": "True"
+        },
+        {
+          "record": 1335,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1036,
+          "kind": "if_zero",
+          "target": 1375
+        },
+        {
+          "record": 1336,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((300))",
+          "handler": "0x625fb0",
+          "loc": 1037,
+          "kind": "delay",
+          "expression": "(300)"
+        },
+        {
+          "record": 1337,
+          "opcode": 30,
+          "source": "DM_RET=DM.FINDCOLOR(X1,Y1,X2,Y2,\"91100A-050505|8F110F-050505|980700-050505|900501-050505|640302-050505|930403-050505|6B0603-050505|670604-050505|780805-050505|840906-050505|8E0A06-050505|AA0C07-050505|900A07-050505|A80D08-050505|A70E08-050505|B83425-050505|AC372D-050505\",0.9,0,INTX,INTY)",
+          "handler": "0x625fb0",
+          "loc": 1038,
+          "kind": "find_color",
+          "color": "91100A-050505|8F110F-050505|980700-050505|900501-050505|640302-050505|930403-050505|6B0603-050505|670604-050505|780805-050505|840906-050505|8E0A06-050505|AA0C07-050505|900A07-050505|A80D08-050505|A70E08-050505|B83425-050505|AC372D-050505",
+          "similarity": 0.9,
+          "direction": 0,
+          "dispid": 38,
+          "vtable_byte_offset": 176
+        },
+        {
+          "record": 1338,
+          "opcode": 4,
+          "source": "Sgn((INTX>=0))",
+          "handler": "0x626047",
+          "loc": 1039,
+          "kind": "test",
+          "expression": "(INTX>=0)"
+        },
+        {
+          "record": 1339,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1039,
+          "kind": "if_zero",
+          "target": 1343
+        },
+        {
+          "record": 1340,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((200))",
+          "handler": "0x625fb0",
+          "loc": 1040,
+          "kind": "delay",
+          "expression": "(200)"
+        },
+        {
+          "record": 1341,
+          "opcode": 2,
+          "source": "〔不吃藥〕=0",
+          "handler": "0x625f7e",
+          "loc": 1042,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "0"
+        },
+        {
+          "record": 1342,
+          "opcode": 16,
+          "source": "",
+          "handler": "0x626126",
+          "loc": 1043,
+          "kind": "jump",
+          "target": 1374
+        },
+        {
+          "record": 1343,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1044,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1344,
+          "opcode": 2,
+          "source": "〔不吃藥〕=〔不吃藥〕+1",
+          "handler": "0x625f7e",
+          "loc": 1045,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "misses+1"
+        },
+        {
+          "record": 1345,
+          "opcode": 4,
+          "source": "Sgn((〔不吃藥〕>=3))",
+          "handler": "0x626047",
+          "loc": 1046,
+          "kind": "test",
+          "expression": "(misses>=3)"
+        },
+        {
+          "record": 1346,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1046,
+          "kind": "if_zero",
+          "target": 1374
+        },
+        {
+          "record": 1347,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1047,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1348,
+          "opcode": 2,
+          "source": "〔不吃藥〕=0",
+          "handler": "0x625f7e",
+          "loc": 1048,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "0"
+        },
+        {
+          "record": 1349,
+          "opcode": 27,
+          "source": "〔吃藥F1鍵〕",
+          "handler": "0x6266f4",
+          "loc": 1049,
+          "kind": "global",
+          "name": "use_f1"
+        },
+        {
+          "record": 1350,
+          "opcode": 2,
+          "source": "目前呼叫框架.暫存槽(1)=傳回值",
+          "handler": "0x625f7e",
+          "loc": 1049,
+          "kind": "assign",
+          "destination": "slot[1]",
+          "expression": "value"
+        },
+        {
+          "record": 1351,
+          "opcode": 4,
+          "source": "Sgn(目前呼叫框架.暫存槽(1)=1)",
+          "handler": "0x626047",
+          "loc": 1049,
+          "kind": "test",
+          "expression": "slot[1]==1"
+        },
+        {
+          "record": 1352,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1049,
+          "kind": "if_zero",
+          "target": 1361
+        },
+        {
+          "record": 1353,
+          "opcode": 30,
+          "source": "Call QMLibrary.TracePrint((\"按下F1吃药\"))",
+          "handler": "0x625fb0",
+          "loc": 1050,
+          "kind": "log",
+          "text": "Call QMLibrary.TracePrint((\"按下F1吃药\"))"
+        },
+        {
+          "record": 1354,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1051,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1355,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyPress(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1052,
+          "kind": "key",
+          "key": "F1"
+        },
+        {
+          "record": 1356,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1053,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1357,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyDown(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1054,
+          "kind": "key_down",
+          "key": "F1"
+        },
+        {
+          "record": 1358,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1055,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1359,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyUp(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1056,
+          "kind": "key_up",
+          "key": "F1"
+        },
+        {
+          "record": 1360,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((1000))",
+          "handler": "0x625fb0",
+          "loc": 1057,
+          "kind": "delay",
+          "expression": "(1000)"
+        },
+        {
+          "record": 1361,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1059,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1362,
+          "opcode": 27,
+          "source": "〔吃藥1鍵〕",
+          "handler": "0x6266f4",
+          "loc": 1060,
+          "kind": "global",
+          "name": "use_one"
+        },
+        {
+          "record": 1363,
+          "opcode": 2,
+          "source": "目前呼叫框架.暫存槽(2)=傳回值",
+          "handler": "0x625f7e",
+          "loc": 1060,
+          "kind": "assign",
+          "destination": "slot[2]",
+          "expression": "value"
+        },
+        {
+          "record": 1364,
+          "opcode": 4,
+          "source": "Sgn(目前呼叫框架.暫存槽(2)=1)",
+          "handler": "0x626047",
+          "loc": 1060,
+          "kind": "test",
+          "expression": "slot[2]==1"
+        },
+        {
+          "record": 1365,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1060,
+          "kind": "if_zero",
+          "target": 1374
+        },
+        {
+          "record": 1366,
+          "opcode": 30,
+          "source": "Call QMLibrary.TracePrint((\"按下1吃药\"))",
+          "handler": "0x625fb0",
+          "loc": 1061,
+          "kind": "log",
+          "text": "Call QMLibrary.TracePrint((\"按下1吃药\"))"
+        },
+        {
+          "record": 1367,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1062,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1368,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyPress(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1063,
+          "kind": "key",
+          "key": "1"
+        },
+        {
+          "record": 1369,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1064,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1370,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyDown(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1065,
+          "kind": "key_down",
+          "key": "1"
+        },
+        {
+          "record": 1371,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1066,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1372,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyUp(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1067,
+          "kind": "key_up",
+          "key": "1"
+        },
+        {
+          "record": 1373,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((1000))",
+          "handler": "0x625fb0",
+          "loc": 1068,
+          "kind": "delay",
+          "expression": "(1000)"
+        },
+        {
+          "record": 1374,
+          "opcode": 16,
+          "source": "",
+          "handler": "0x626126",
+          "loc": 1069,
+          "kind": "jump",
+          "target": 1334
+        },
+        {
+          "record": 1375,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1073,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1376,
+          "opcode": 2,
+          "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+          "handler": "0x625f7e",
+          "loc": 1074,
+          "kind": "frame_return_value"
+        },
+        {
+          "record": 1377,
+          "opcode": 13,
+          "source": "",
+          "handler": "0x626275",
+          "loc": 1074,
+          "kind": "return"
+        }
+      ],
+      "coordinates_only_used_as_presence": true,
+      "original_records_missing": false,
+      "runtime_color_backend_verified": false,
+      "matcher_native_fixture_replay_report": "verification/backend-replay.json",
+      "live_game_capture_verified": false
+    },
+    {
+      "entry": 1379,
+      "last": 1430,
+      "hp_label_percent": 40,
+      "name_status": "標籤依保留主流程類別次序及血條座標對應；入口原名配對仍需其他模組或執行證據核對",
+      "rect": [
+        724,
+        959,
+        728,
+        972
+      ],
+      "actions": [
+        {
+          "record": 1379,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1076,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1380,
+          "opcode": 2,
+          "source": "SET DM=CREATEOBJECT(\"dm.dmsoft\")",
+          "handler": "0x625f7e",
+          "loc": 1077,
+          "kind": "require_color_backend"
+        },
+        {
+          "record": 1381,
+          "opcode": 30,
+          "source": "Call DM.SETSHOWERRORMSG(0)",
+          "handler": "0x625fb0",
+          "loc": 1078,
+          "kind": "set_error_display"
+        },
+        {
+          "record": 1382,
+          "opcode": 2,
+          "source": "X1=724",
+          "handler": "0x625f7e",
+          "loc": 1079,
+          "kind": "assign",
+          "destination": "X1",
+          "expression": "724"
+        },
+        {
+          "record": 1383,
+          "opcode": 2,
+          "source": "Y1=959",
+          "handler": "0x625f7e",
+          "loc": 1080,
+          "kind": "assign",
+          "destination": "Y1",
+          "expression": "959"
+        },
+        {
+          "record": 1384,
+          "opcode": 2,
+          "source": "X2=728",
+          "handler": "0x625f7e",
+          "loc": 1081,
+          "kind": "assign",
+          "destination": "X2",
+          "expression": "728"
+        },
+        {
+          "record": 1385,
+          "opcode": 2,
+          "source": "Y2=972",
+          "handler": "0x625f7e",
+          "loc": 1082,
+          "kind": "assign",
+          "destination": "Y2",
+          "expression": "972"
+        },
+        {
+          "record": 1386,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1083,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1387,
+          "opcode": 4,
+          "source": "Sgn(vbTrue)",
+          "handler": "0x626047",
+          "loc": 1084,
+          "kind": "test",
+          "expression": "True"
+        },
+        {
+          "record": 1388,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1084,
+          "kind": "if_zero",
+          "target": 1428
+        },
+        {
+          "record": 1389,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((300))",
+          "handler": "0x625fb0",
+          "loc": 1085,
+          "kind": "delay",
+          "expression": "(300)"
+        },
+        {
+          "record": 1390,
+          "opcode": 30,
+          "source": "DM_RET=DM.FINDCOLOR(X1,Y1,X2,Y2,\"91100A-050505|8F110F-050505|980700-050505|900501-050505|640302-050505|930403-050505|6B0603-050505|670604-050505|780805-050505|840906-050505|8E0A06-050505|AA0C07-050505|900A07-050505|A80D08-050505|A70E08-050505|B83425-050505|AC372D-050505\",0.9,0,INTX,INTY)",
+          "handler": "0x625fb0",
+          "loc": 1086,
+          "kind": "find_color",
+          "color": "91100A-050505|8F110F-050505|980700-050505|900501-050505|640302-050505|930403-050505|6B0603-050505|670604-050505|780805-050505|840906-050505|8E0A06-050505|AA0C07-050505|900A07-050505|A80D08-050505|A70E08-050505|B83425-050505|AC372D-050505",
+          "similarity": 0.9,
+          "direction": 0,
+          "dispid": 38,
+          "vtable_byte_offset": 176
+        },
+        {
+          "record": 1391,
+          "opcode": 4,
+          "source": "Sgn((INTX>=0))",
+          "handler": "0x626047",
+          "loc": 1087,
+          "kind": "test",
+          "expression": "(INTX>=0)"
+        },
+        {
+          "record": 1392,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1087,
+          "kind": "if_zero",
+          "target": 1396
+        },
+        {
+          "record": 1393,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((200))",
+          "handler": "0x625fb0",
+          "loc": 1088,
+          "kind": "delay",
+          "expression": "(200)"
+        },
+        {
+          "record": 1394,
+          "opcode": 2,
+          "source": "〔不吃藥〕=0",
+          "handler": "0x625f7e",
+          "loc": 1090,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "0"
+        },
+        {
+          "record": 1395,
+          "opcode": 16,
+          "source": "",
+          "handler": "0x626126",
+          "loc": 1091,
+          "kind": "jump",
+          "target": 1427
+        },
+        {
+          "record": 1396,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1092,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1397,
+          "opcode": 2,
+          "source": "〔不吃藥〕=〔不吃藥〕+1",
+          "handler": "0x625f7e",
+          "loc": 1093,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "misses+1"
+        },
+        {
+          "record": 1398,
+          "opcode": 4,
+          "source": "Sgn((〔不吃藥〕>=3))",
+          "handler": "0x626047",
+          "loc": 1094,
+          "kind": "test",
+          "expression": "(misses>=3)"
+        },
+        {
+          "record": 1399,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1094,
+          "kind": "if_zero",
+          "target": 1427
+        },
+        {
+          "record": 1400,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1095,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1401,
+          "opcode": 2,
+          "source": "〔不吃藥〕=0",
+          "handler": "0x625f7e",
+          "loc": 1096,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "0"
+        },
+        {
+          "record": 1402,
+          "opcode": 27,
+          "source": "〔吃藥F1鍵〕",
+          "handler": "0x6266f4",
+          "loc": 1097,
+          "kind": "global",
+          "name": "use_f1"
+        },
+        {
+          "record": 1403,
+          "opcode": 2,
+          "source": "目前呼叫框架.暫存槽(1)=傳回值",
+          "handler": "0x625f7e",
+          "loc": 1097,
+          "kind": "assign",
+          "destination": "slot[1]",
+          "expression": "value"
+        },
+        {
+          "record": 1404,
+          "opcode": 4,
+          "source": "Sgn(目前呼叫框架.暫存槽(1)=1)",
+          "handler": "0x626047",
+          "loc": 1097,
+          "kind": "test",
+          "expression": "slot[1]==1"
+        },
+        {
+          "record": 1405,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1097,
+          "kind": "if_zero",
+          "target": 1414
+        },
+        {
+          "record": 1406,
+          "opcode": 30,
+          "source": "Call QMLibrary.TracePrint((\"按下F1吃药\"))",
+          "handler": "0x625fb0",
+          "loc": 1098,
+          "kind": "log",
+          "text": "Call QMLibrary.TracePrint((\"按下F1吃药\"))"
+        },
+        {
+          "record": 1407,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1099,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1408,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyPress(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1100,
+          "kind": "key",
+          "key": "F1"
+        },
+        {
+          "record": 1409,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1101,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1410,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyDown(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1102,
+          "kind": "key_down",
+          "key": "F1"
+        },
+        {
+          "record": 1411,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1103,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1412,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyUp(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1104,
+          "kind": "key_up",
+          "key": "F1"
+        },
+        {
+          "record": 1413,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((1000))",
+          "handler": "0x625fb0",
+          "loc": 1105,
+          "kind": "delay",
+          "expression": "(1000)"
+        },
+        {
+          "record": 1414,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1107,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1415,
+          "opcode": 27,
+          "source": "〔吃藥1鍵〕",
+          "handler": "0x6266f4",
+          "loc": 1108,
+          "kind": "global",
+          "name": "use_one"
+        },
+        {
+          "record": 1416,
+          "opcode": 2,
+          "source": "目前呼叫框架.暫存槽(2)=傳回值",
+          "handler": "0x625f7e",
+          "loc": 1108,
+          "kind": "assign",
+          "destination": "slot[2]",
+          "expression": "value"
+        },
+        {
+          "record": 1417,
+          "opcode": 4,
+          "source": "Sgn(目前呼叫框架.暫存槽(2)=1)",
+          "handler": "0x626047",
+          "loc": 1108,
+          "kind": "test",
+          "expression": "slot[2]==1"
+        },
+        {
+          "record": 1418,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1108,
+          "kind": "if_zero",
+          "target": 1427
+        },
+        {
+          "record": 1419,
+          "opcode": 30,
+          "source": "Call QMLibrary.TracePrint((\"按下1吃药\"))",
+          "handler": "0x625fb0",
+          "loc": 1109,
+          "kind": "log",
+          "text": "Call QMLibrary.TracePrint((\"按下1吃药\"))"
+        },
+        {
+          "record": 1420,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1110,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1421,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyPress(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1111,
+          "kind": "key",
+          "key": "1"
+        },
+        {
+          "record": 1422,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1112,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1423,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyDown(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1113,
+          "kind": "key_down",
+          "key": "1"
+        },
+        {
+          "record": 1424,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1114,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1425,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyUp(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1115,
+          "kind": "key_up",
+          "key": "1"
+        },
+        {
+          "record": 1426,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((1000))",
+          "handler": "0x625fb0",
+          "loc": 1116,
+          "kind": "delay",
+          "expression": "(1000)"
+        },
+        {
+          "record": 1427,
+          "opcode": 16,
+          "source": "",
+          "handler": "0x626126",
+          "loc": 1117,
+          "kind": "jump",
+          "target": 1387
+        },
+        {
+          "record": 1428,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1121,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1429,
+          "opcode": 2,
+          "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+          "handler": "0x625f7e",
+          "loc": 1122,
+          "kind": "frame_return_value"
+        },
+        {
+          "record": 1430,
+          "opcode": 13,
+          "source": "",
+          "handler": "0x626275",
+          "loc": 1122,
+          "kind": "return"
+        }
+      ],
+      "coordinates_only_used_as_presence": true,
+      "original_records_missing": false,
+      "runtime_color_backend_verified": false,
+      "matcher_native_fixture_replay_report": "verification/backend-replay.json",
+      "live_game_capture_verified": false
+    },
+    {
+      "entry": 1432,
+      "last": 1483,
+      "hp_label_percent": 70,
+      "name_status": "標籤依保留主流程類別次序及血條座標對應；入口原名配對仍需其他模組或執行證據核對",
+      "rect": [
+        796,
+        959,
+        800,
+        972
+      ],
+      "actions": [
+        {
+          "record": 1432,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1124,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1433,
+          "opcode": 2,
+          "source": "SET DM=CREATEOBJECT(\"dm.dmsoft\")",
+          "handler": "0x625f7e",
+          "loc": 1125,
+          "kind": "require_color_backend"
+        },
+        {
+          "record": 1434,
+          "opcode": 30,
+          "source": "Call DM.SETSHOWERRORMSG(0)",
+          "handler": "0x625fb0",
+          "loc": 1126,
+          "kind": "set_error_display"
+        },
+        {
+          "record": 1435,
+          "opcode": 2,
+          "source": "X1=796",
+          "handler": "0x625f7e",
+          "loc": 1127,
+          "kind": "assign",
+          "destination": "X1",
+          "expression": "796"
+        },
+        {
+          "record": 1436,
+          "opcode": 2,
+          "source": "Y1=959",
+          "handler": "0x625f7e",
+          "loc": 1128,
+          "kind": "assign",
+          "destination": "Y1",
+          "expression": "959"
+        },
+        {
+          "record": 1437,
+          "opcode": 2,
+          "source": "X2=800",
+          "handler": "0x625f7e",
+          "loc": 1129,
+          "kind": "assign",
+          "destination": "X2",
+          "expression": "800"
+        },
+        {
+          "record": 1438,
+          "opcode": 2,
+          "source": "Y2=972",
+          "handler": "0x625f7e",
+          "loc": 1130,
+          "kind": "assign",
+          "destination": "Y2",
+          "expression": "972"
+        },
+        {
+          "record": 1439,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1131,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1440,
+          "opcode": 4,
+          "source": "Sgn(vbTrue)",
+          "handler": "0x626047",
+          "loc": 1132,
+          "kind": "test",
+          "expression": "True"
+        },
+        {
+          "record": 1441,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1132,
+          "kind": "if_zero",
+          "target": 1481
+        },
+        {
+          "record": 1442,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((300))",
+          "handler": "0x625fb0",
+          "loc": 1133,
+          "kind": "delay",
+          "expression": "(300)"
+        },
+        {
+          "record": 1443,
+          "opcode": 30,
+          "source": "DM_RET=DM.FINDCOLOR(X1,Y1,X2,Y2,\"91100A-050505|8F110F-050505|980700-050505|900501-050505|640302-050505|930403-050505|6B0603-050505|670604-050505|780805-050505|840906-050505|8E0A06-050505|AA0C07-050505|900A07-050505|A80D08-050505|A70E08-050505|B83425-050505|AC372D-050505\",0.9,0,INTX,INTY)",
+          "handler": "0x625fb0",
+          "loc": 1134,
+          "kind": "find_color",
+          "color": "91100A-050505|8F110F-050505|980700-050505|900501-050505|640302-050505|930403-050505|6B0603-050505|670604-050505|780805-050505|840906-050505|8E0A06-050505|AA0C07-050505|900A07-050505|A80D08-050505|A70E08-050505|B83425-050505|AC372D-050505",
+          "similarity": 0.9,
+          "direction": 0,
+          "dispid": 38,
+          "vtable_byte_offset": 176
+        },
+        {
+          "record": 1444,
+          "opcode": 4,
+          "source": "Sgn((INTX>=0))",
+          "handler": "0x626047",
+          "loc": 1135,
+          "kind": "test",
+          "expression": "(INTX>=0)"
+        },
+        {
+          "record": 1445,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1135,
+          "kind": "if_zero",
+          "target": 1449
+        },
+        {
+          "record": 1446,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((200))",
+          "handler": "0x625fb0",
+          "loc": 1136,
+          "kind": "delay",
+          "expression": "(200)"
+        },
+        {
+          "record": 1447,
+          "opcode": 2,
+          "source": "〔不吃藥〕=0",
+          "handler": "0x625f7e",
+          "loc": 1138,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "0"
+        },
+        {
+          "record": 1448,
+          "opcode": 16,
+          "source": "",
+          "handler": "0x626126",
+          "loc": 1139,
+          "kind": "jump",
+          "target": 1480
+        },
+        {
+          "record": 1449,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1140,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1450,
+          "opcode": 2,
+          "source": "〔不吃藥〕=〔不吃藥〕+1",
+          "handler": "0x625f7e",
+          "loc": 1141,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "misses+1"
+        },
+        {
+          "record": 1451,
+          "opcode": 4,
+          "source": "Sgn((〔不吃藥〕>=3))",
+          "handler": "0x626047",
+          "loc": 1142,
+          "kind": "test",
+          "expression": "(misses>=3)"
+        },
+        {
+          "record": 1452,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1142,
+          "kind": "if_zero",
+          "target": 1480
+        },
+        {
+          "record": 1453,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1143,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1454,
+          "opcode": 2,
+          "source": "〔不吃藥〕=0",
+          "handler": "0x625f7e",
+          "loc": 1144,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "0"
+        },
+        {
+          "record": 1455,
+          "opcode": 27,
+          "source": "〔吃藥F1鍵〕",
+          "handler": "0x6266f4",
+          "loc": 1145,
+          "kind": "global",
+          "name": "use_f1"
+        },
+        {
+          "record": 1456,
+          "opcode": 2,
+          "source": "目前呼叫框架.暫存槽(1)=傳回值",
+          "handler": "0x625f7e",
+          "loc": 1145,
+          "kind": "assign",
+          "destination": "slot[1]",
+          "expression": "value"
+        },
+        {
+          "record": 1457,
+          "opcode": 4,
+          "source": "Sgn(目前呼叫框架.暫存槽(1)=1)",
+          "handler": "0x626047",
+          "loc": 1145,
+          "kind": "test",
+          "expression": "slot[1]==1"
+        },
+        {
+          "record": 1458,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1145,
+          "kind": "if_zero",
+          "target": 1467
+        },
+        {
+          "record": 1459,
+          "opcode": 30,
+          "source": "Call QMLibrary.TracePrint((\"按下F1吃药\"))",
+          "handler": "0x625fb0",
+          "loc": 1146,
+          "kind": "log",
+          "text": "Call QMLibrary.TracePrint((\"按下F1吃药\"))"
+        },
+        {
+          "record": 1460,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1147,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1461,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyPress(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1148,
+          "kind": "key",
+          "key": "F1"
+        },
+        {
+          "record": 1462,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1149,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1463,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyDown(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1150,
+          "kind": "key_down",
+          "key": "F1"
+        },
+        {
+          "record": 1464,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1151,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1465,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyUp(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1152,
+          "kind": "key_up",
+          "key": "F1"
+        },
+        {
+          "record": 1466,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((1000))",
+          "handler": "0x625fb0",
+          "loc": 1153,
+          "kind": "delay",
+          "expression": "(1000)"
+        },
+        {
+          "record": 1467,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1155,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1468,
+          "opcode": 27,
+          "source": "〔吃藥1鍵〕",
+          "handler": "0x6266f4",
+          "loc": 1156,
+          "kind": "global",
+          "name": "use_one"
+        },
+        {
+          "record": 1469,
+          "opcode": 2,
+          "source": "目前呼叫框架.暫存槽(2)=傳回值",
+          "handler": "0x625f7e",
+          "loc": 1156,
+          "kind": "assign",
+          "destination": "slot[2]",
+          "expression": "value"
+        },
+        {
+          "record": 1470,
+          "opcode": 4,
+          "source": "Sgn(目前呼叫框架.暫存槽(2)=1)",
+          "handler": "0x626047",
+          "loc": 1156,
+          "kind": "test",
+          "expression": "slot[2]==1"
+        },
+        {
+          "record": 1471,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1156,
+          "kind": "if_zero",
+          "target": 1480
+        },
+        {
+          "record": 1472,
+          "opcode": 30,
+          "source": "Call QMLibrary.TracePrint((\"按下1吃药\"))",
+          "handler": "0x625fb0",
+          "loc": 1157,
+          "kind": "log",
+          "text": "Call QMLibrary.TracePrint((\"按下1吃药\"))"
+        },
+        {
+          "record": 1473,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1158,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1474,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyPress(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1159,
+          "kind": "key",
+          "key": "1"
+        },
+        {
+          "record": 1475,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1160,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1476,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyDown(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1161,
+          "kind": "key_down",
+          "key": "1"
+        },
+        {
+          "record": 1477,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1162,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1478,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyUp(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1163,
+          "kind": "key_up",
+          "key": "1"
+        },
+        {
+          "record": 1479,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((1000))",
+          "handler": "0x625fb0",
+          "loc": 1164,
+          "kind": "delay",
+          "expression": "(1000)"
+        },
+        {
+          "record": 1480,
+          "opcode": 16,
+          "source": "",
+          "handler": "0x626126",
+          "loc": 1165,
+          "kind": "jump",
+          "target": 1440
+        },
+        {
+          "record": 1481,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1169,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1482,
+          "opcode": 2,
+          "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+          "handler": "0x625f7e",
+          "loc": 1170,
+          "kind": "frame_return_value"
+        },
+        {
+          "record": 1483,
+          "opcode": 13,
+          "source": "",
+          "handler": "0x626275",
+          "loc": 1170,
+          "kind": "return"
+        }
+      ],
+      "coordinates_only_used_as_presence": true,
+      "original_records_missing": false,
+      "runtime_color_backend_verified": false,
+      "matcher_native_fixture_replay_report": "verification/backend-replay.json",
+      "live_game_capture_verified": false
+    },
+    {
+      "entry": 1485,
+      "last": 1536,
+      "hp_label_percent": 6,
+      "name_status": "標籤依保留主流程類別次序及血條座標對應；入口原名配對仍需其他模組或執行證據核對",
+      "rect": [
+        638,
+        959,
+        642,
+        972
+      ],
+      "actions": [
+        {
+          "record": 1485,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1172,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1486,
+          "opcode": 2,
+          "source": "SET DM=CREATEOBJECT(\"dm.dmsoft\")",
+          "handler": "0x625f7e",
+          "loc": 1173,
+          "kind": "require_color_backend"
+        },
+        {
+          "record": 1487,
+          "opcode": 30,
+          "source": "Call DM.SETSHOWERRORMSG(0)",
+          "handler": "0x625fb0",
+          "loc": 1174,
+          "kind": "set_error_display"
+        },
+        {
+          "record": 1488,
+          "opcode": 2,
+          "source": "X1=638",
+          "handler": "0x625f7e",
+          "loc": 1175,
+          "kind": "assign",
+          "destination": "X1",
+          "expression": "638"
+        },
+        {
+          "record": 1489,
+          "opcode": 2,
+          "source": "Y1=959",
+          "handler": "0x625f7e",
+          "loc": 1176,
+          "kind": "assign",
+          "destination": "Y1",
+          "expression": "959"
+        },
+        {
+          "record": 1490,
+          "opcode": 2,
+          "source": "X2=642",
+          "handler": "0x625f7e",
+          "loc": 1177,
+          "kind": "assign",
+          "destination": "X2",
+          "expression": "642"
+        },
+        {
+          "record": 1491,
+          "opcode": 2,
+          "source": "Y2=972",
+          "handler": "0x625f7e",
+          "loc": 1178,
+          "kind": "assign",
+          "destination": "Y2",
+          "expression": "972"
+        },
+        {
+          "record": 1492,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1179,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1493,
+          "opcode": 4,
+          "source": "Sgn(vbTrue)",
+          "handler": "0x626047",
+          "loc": 1180,
+          "kind": "test",
+          "expression": "True"
+        },
+        {
+          "record": 1494,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1180,
+          "kind": "if_zero",
+          "target": 1534
+        },
+        {
+          "record": 1495,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((300))",
+          "handler": "0x625fb0",
+          "loc": 1181,
+          "kind": "delay",
+          "expression": "(300)"
+        },
+        {
+          "record": 1496,
+          "opcode": 30,
+          "source": "DM_RET=DM.FINDCOLOR(X1,Y1,X2,Y2,\"91100A-050505|8F110F-050505|980700-050505|900501-050505|640302-050505|930403-050505|6B0603-050505|670604-050505|780805-050505|840906-050505|8E0A06-050505|AA0C07-050505|900A07-050505|A80D08-050505|A70E08-050505|B83425-050505|AC372D-050505\",0.9,0,INTX,INTY)",
+          "handler": "0x625fb0",
+          "loc": 1182,
+          "kind": "find_color",
+          "color": "91100A-050505|8F110F-050505|980700-050505|900501-050505|640302-050505|930403-050505|6B0603-050505|670604-050505|780805-050505|840906-050505|8E0A06-050505|AA0C07-050505|900A07-050505|A80D08-050505|A70E08-050505|B83425-050505|AC372D-050505",
+          "similarity": 0.9,
+          "direction": 0,
+          "dispid": 38,
+          "vtable_byte_offset": 176
+        },
+        {
+          "record": 1497,
+          "opcode": 4,
+          "source": "Sgn((INTX>=0))",
+          "handler": "0x626047",
+          "loc": 1183,
+          "kind": "test",
+          "expression": "(INTX>=0)"
+        },
+        {
+          "record": 1498,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1183,
+          "kind": "if_zero",
+          "target": 1502
+        },
+        {
+          "record": 1499,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((200))",
+          "handler": "0x625fb0",
+          "loc": 1184,
+          "kind": "delay",
+          "expression": "(200)"
+        },
+        {
+          "record": 1500,
+          "opcode": 2,
+          "source": "〔不吃藥〕=0",
+          "handler": "0x625f7e",
+          "loc": 1186,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "0"
+        },
+        {
+          "record": 1501,
+          "opcode": 16,
+          "source": "",
+          "handler": "0x626126",
+          "loc": 1187,
+          "kind": "jump",
+          "target": 1533
+        },
+        {
+          "record": 1502,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1188,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1503,
+          "opcode": 2,
+          "source": "〔不吃藥〕=〔不吃藥〕+1",
+          "handler": "0x625f7e",
+          "loc": 1189,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "misses+1"
+        },
+        {
+          "record": 1504,
+          "opcode": 4,
+          "source": "Sgn((〔不吃藥〕>=3))",
+          "handler": "0x626047",
+          "loc": 1190,
+          "kind": "test",
+          "expression": "(misses>=3)"
+        },
+        {
+          "record": 1505,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1190,
+          "kind": "if_zero",
+          "target": 1533
+        },
+        {
+          "record": 1506,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1191,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1507,
+          "opcode": 2,
+          "source": "〔不吃藥〕=0",
+          "handler": "0x625f7e",
+          "loc": 1192,
+          "kind": "assign",
+          "destination": "misses",
+          "expression": "0"
+        },
+        {
+          "record": 1508,
+          "opcode": 27,
+          "source": "〔吃藥F1鍵〕",
+          "handler": "0x6266f4",
+          "loc": 1193,
+          "kind": "global",
+          "name": "use_f1"
+        },
+        {
+          "record": 1509,
+          "opcode": 2,
+          "source": "目前呼叫框架.暫存槽(1)=傳回值",
+          "handler": "0x625f7e",
+          "loc": 1193,
+          "kind": "assign",
+          "destination": "slot[1]",
+          "expression": "value"
+        },
+        {
+          "record": 1510,
+          "opcode": 4,
+          "source": "Sgn(目前呼叫框架.暫存槽(1)=1)",
+          "handler": "0x626047",
+          "loc": 1193,
+          "kind": "test",
+          "expression": "slot[1]==1"
+        },
+        {
+          "record": 1511,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1193,
+          "kind": "if_zero",
+          "target": 1520
+        },
+        {
+          "record": 1512,
+          "opcode": 30,
+          "source": "Call QMLibrary.TracePrint((\"按下F1吃药\"))",
+          "handler": "0x625fb0",
+          "loc": 1194,
+          "kind": "log",
+          "text": "Call QMLibrary.TracePrint((\"按下F1吃药\"))"
+        },
+        {
+          "record": 1513,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1195,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1514,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyPress(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1196,
+          "kind": "key",
+          "key": "F1"
+        },
+        {
+          "record": 1515,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1197,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1516,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyDown(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1198,
+          "kind": "key_down",
+          "key": "F1"
+        },
+        {
+          "record": 1517,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1199,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1518,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyUp(\"F1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1200,
+          "kind": "key_up",
+          "key": "F1"
+        },
+        {
+          "record": 1519,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((1000))",
+          "handler": "0x625fb0",
+          "loc": 1201,
+          "kind": "delay",
+          "expression": "(1000)"
+        },
+        {
+          "record": 1520,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1203,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1521,
+          "opcode": 27,
+          "source": "〔吃藥1鍵〕",
+          "handler": "0x6266f4",
+          "loc": 1204,
+          "kind": "global",
+          "name": "use_one"
+        },
+        {
+          "record": 1522,
+          "opcode": 2,
+          "source": "目前呼叫框架.暫存槽(2)=傳回值",
+          "handler": "0x625f7e",
+          "loc": 1204,
+          "kind": "assign",
+          "destination": "slot[2]",
+          "expression": "value"
+        },
+        {
+          "record": 1523,
+          "opcode": 4,
+          "source": "Sgn(目前呼叫框架.暫存槽(2)=1)",
+          "handler": "0x626047",
+          "loc": 1204,
+          "kind": "test",
+          "expression": "slot[2]==1"
+        },
+        {
+          "record": 1524,
+          "opcode": 6,
+          "source": "",
+          "handler": "0x62611c",
+          "loc": 1204,
+          "kind": "if_zero",
+          "target": 1533
+        },
+        {
+          "record": 1525,
+          "opcode": 30,
+          "source": "Call QMLibrary.TracePrint((\"按下1吃药\"))",
+          "handler": "0x625fb0",
+          "loc": 1205,
+          "kind": "log",
+          "text": "Call QMLibrary.TracePrint((\"按下1吃药\"))"
+        },
+        {
+          "record": 1526,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1206,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1527,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyPress(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1207,
+          "kind": "key",
+          "key": "1"
+        },
+        {
+          "record": 1528,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1208,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1529,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyDown(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1209,
+          "kind": "key_down",
+          "key": "1"
+        },
+        {
+          "record": 1530,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((50))",
+          "handler": "0x625fb0",
+          "loc": 1210,
+          "kind": "delay",
+          "expression": "(50)"
+        },
+        {
+          "record": 1531,
+          "opcode": 30,
+          "source": "Call QMLibrary.KeyUp(\"1\",g_iSimulateModeInVBSBlock,1)",
+          "handler": "0x625fb0",
+          "loc": 1211,
+          "kind": "key_up",
+          "key": "1"
+        },
+        {
+          "record": 1532,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((1000))",
+          "handler": "0x625fb0",
+          "loc": 1212,
+          "kind": "delay",
+          "expression": "(1000)"
+        },
+        {
+          "record": 1533,
+          "opcode": 16,
+          "source": "",
+          "handler": "0x626126",
+          "loc": 1213,
+          "kind": "jump",
+          "target": 1493
+        },
+        {
+          "record": 1534,
+          "opcode": 30,
+          "source": "Call QMLibrary.Delay((100))",
+          "handler": "0x625fb0",
+          "loc": 1217,
+          "kind": "delay",
+          "expression": "(100)"
+        },
+        {
+          "record": 1535,
+          "opcode": 2,
+          "source": "傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing",
+          "handler": "0x625f7e",
+          "loc": 1218,
+          "kind": "frame_return_value"
+        },
+        {
+          "record": 1536,
+          "opcode": 13,
+          "source": "",
+          "handler": "0x626275",
+          "loc": 1218,
+          "kind": "return"
+        }
+      ],
+      "coordinates_only_used_as_presence": true,
+      "original_records_missing": false,
+      "runtime_color_backend_verified": false,
+      "matcher_native_fixture_replay_report": "verification/backend-replay.json",
+      "live_game_capture_verified": false
+    }
+  ],
+  "requirement": "真實找色結果須由已驗證後端提供；不得把擷取錯誤或未知結果當作缺血。"
+}

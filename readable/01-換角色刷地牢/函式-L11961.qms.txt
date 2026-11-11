@@ -1,0 +1,43 @@
+# 領地牢三次周獎勵 — L11961
+# 入口 L11961，RETURN L12000；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L11961: Call QMLibrary.Delay((200))  # loc=10340 Runner=0x625fb0
+L11962: Call QMLibrary.TracePrint(("领地牢三次周奖励"))  # loc=10341 Runner=0x625fb0
+L11963: Call QMLibrary.TracePrint(("上下"))  # loc=10342 Runner=0x625fb0
+L11964: Call QMLibrary.Delay((1000))  # loc=10343 Runner=0x625fb0
+L11965: DM_RET=DM.FINDPIC(102,88,171,122,"C:\users\mymacro\shang.bmp","101010",0.8,0,INTX,INTY)  # loc=10344 Runner=0x625fb0
+L11966: last_test = Sgn((INTX>=0))  # loc=10345 Runner=0x626047
+L11967: if last_test == 0: goto L11970  # loc=10345 Runner=0x62611c
+L11968: Call QMLibrary.Delay((50))  # loc=10346 Runner=0x625fb0
+L11969: goto L11981  # loc=10347 Runner=0x626126
+L11970: Call QMLibrary.Delay((50))  # loc=10348 Runner=0x625fb0
+L11971: DM_RET=DM.FINDPIC(102,88,171,122,"C:\users\mymacro\xia.bmp","101010",0.8,0,INTX,INTY)  # loc=10349 Runner=0x625fb0
+L11972: last_test = Sgn((INTX>=0))  # loc=10350 Runner=0x626047
+L11973: if last_test == 0: goto L11981  # loc=10350 Runner=0x62611c
+L11974: Call QMLibrary.Delay((50))  # loc=10351 Runner=0x625fb0
+L11975: Call DM.MOVETO(85,99)  # loc=10352 Runner=0x625fb0
+L11976: Call QMLibrary.Delay((250))  # loc=10353 Runner=0x625fb0
+L11977: Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)  # loc=10354 Runner=0x625fb0
+L11978: Call QMLibrary.Delay((50))  # loc=10355 Runner=0x625fb0
+L11979: Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)  # loc=10356 Runner=0x625fb0
+L11980: Call QMLibrary.Delay((300))  # loc=10357 Runner=0x625fb0
+L11981: Call QMLibrary.Delay((200))  # loc=10360 Runner=0x625fb0
+L11982: Call QMLibrary.TracePrint(("点击再来一次"))  # loc=10361 Runner=0x625fb0
+L11983: Call DM.MOVETO(25,280)  # loc=10363 Runner=0x625fb0
+L11984: Call QMLibrary.Delay((500))  # loc=10364 Runner=0x625fb0
+L11985: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=10365 Runner=0x625fb0
+L11986: Call QMLibrary.Delay((100))  # loc=10366 Runner=0x625fb0
+L11987: Call DM.MOVETO(25,280)  # loc=10367 Runner=0x625fb0
+L11988: Call QMLibrary.Delay((100))  # loc=10368 Runner=0x625fb0
+L11989: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=10369 Runner=0x625fb0
+L11990: Call QMLibrary.Delay((1500))  # loc=10370 Runner=0x625fb0
+L11991: Call DM.MOVETO(225,855)  # loc=10371 Runner=0x625fb0
+L11992: Call QMLibrary.Delay((500))  # loc=10372 Runner=0x625fb0
+L11993: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=10373 Runner=0x625fb0
+L11994: Call QMLibrary.Delay((1500))  # loc=10374 Runner=0x625fb0
+L11995: Call QMLibrary.KeyPress("Enter",g_iSimulateModeInVBSBlock,1)  # loc=10375 Runner=0x625fb0
+L11996: Call QMLibrary.Delay((1500))  # loc=10376 Runner=0x625fb0
+L11997: Call QMLibrary.KeyPress("Esc",g_iSimulateModeInVBSBlock,1)  # loc=10377 Runner=0x625fb0
+L11998: Call QMLibrary.Delay((1500))  # loc=10378 Runner=0x625fb0
+L11999: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=10379 Runner=0x625f7e
+L12000: return caller  # loc=10379 Runner=0x626275

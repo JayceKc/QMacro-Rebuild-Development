@@ -1,0 +1,2118 @@
+{
+  "module": 1,
+  "entry": 433,
+  "boundary": 562,
+  "rows": [
+    {
+      "record": 433,
+      "location": 263,
+      "field_3": 1,
+      "source_sl": 365,
+      "source": "Sgn(vbTrue)",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "const": -1
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 434,
+      "location": 263,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 741,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 435,
+      "location": 264,
+      "field_3": 1,
+      "source_sl": 366,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 436,
+      "location": 265,
+      "field_3": 1,
+      "source_sl": 367,
+      "source": "Call QMLibrary.TracePrint((\"----------开始循环-----------\"))",
+      "kind": "trace",
+      "arguments": [
+        {
+          "const": "----------开始循环-----------"
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 437,
+      "location": 266,
+      "field_3": 1,
+      "source_sl": 368,
+      "source": "VFDDEA0D0CE9FB68B4D6A65757378756D",
+      "kind": "read_global",
+      "key": "VFDDEA0D0CE9FB68B4D6A65757378756D",
+      "candidate_opcode": 27,
+      "inferred": true
+    },
+    {
+      "record": 438,
+      "location": 266,
+      "field_3": 1,
+      "source_sl": 369,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 1,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 439,
+      "location": 266,
+      "field_3": 1,
+      "source_sl": 370,
+      "source": "Sgn(F2730835_2229_445E_97C7_l3F761277lDA(1)=4)",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "op": "=",
+              "args": [
+                {
+                  "name": "CUBE_ROOT_SLOT_1"
+                },
+                {
+                  "const": 4
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 440,
+      "location": 266,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 550,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 441,
+      "location": 267,
+      "field_3": 1,
+      "source_sl": 371,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 442,
+      "location": 268,
+      "field_3": 1,
+      "source_sl": 372,
+      "source": "V86C8D4CBB3A3C9ABF9A4AF887378756D=99",
+      "kind": "assign",
+      "name": "V86C8D4CBB3A3C9ABF9A4AF887378756D",
+      "value": {
+        "numeric": {
+          "const": 99
+        }
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 443,
+      "location": 269,
+      "field_3": 1,
+      "source_sl": 373,
+      "source": "Call QMLibrary.Delay((1000))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 1000
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 444,
+      "location": 270,
+      "field_3": 1,
+      "source_sl": 374,
+      "source": "Call DM.MOVETO(958,975)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 958
+          }
+        },
+        {
+          "numeric": {
+            "const": 975
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 445,
+      "location": 271,
+      "field_3": 1,
+      "source_sl": 375,
+      "source": "Call QMLibrary.Delay((200))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 200
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 446,
+      "location": 272,
+      "field_3": 1,
+      "source_sl": 376,
+      "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 0
+          }
+        },
+        {
+          "numeric": {
+            "name": "G_ISIMULATEMODEINVBSBLOCK"
+          }
+        },
+        {
+          "numeric": {
+            "const": 1
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 447,
+      "location": 273,
+      "field_3": 1,
+      "source_sl": 377,
+      "source": "Call QMLibrary.Delay((200))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 200
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 448,
+      "location": 274,
+      "field_3": 1,
+      "source_sl": 378,
+      "source": "Call DM.MOVETO(958,975)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 958
+          }
+        },
+        {
+          "numeric": {
+            "const": 975
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 449,
+      "location": 275,
+      "field_3": 1,
+      "source_sl": 379,
+      "source": "Call QMLibrary.Delay((200))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 200
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 450,
+      "location": 276,
+      "field_3": 1,
+      "source_sl": 380,
+      "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 0
+          }
+        },
+        {
+          "numeric": {
+            "name": "G_ISIMULATEMODEINVBSBLOCK"
+          }
+        },
+        {
+          "numeric": {
+            "const": 1
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 451,
+      "location": 277,
+      "field_3": 1,
+      "source_sl": 381,
+      "source": "Call QMLibrary.Delay((1000))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 1000
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 452,
+      "location": 278,
+      "field_3": 1,
+      "source_sl": 382,
+      "source": "Sgn(V8B92AAD7A5A4BDA3839B65757378756D=1)",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "op": "=",
+              "args": [
+                {
+                  "name": "V8B92AAD7A5A4BDA3839B65757378756D"
+                },
+                {
+                  "const": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 453,
+      "location": 278,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 458,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 454,
+      "location": 279,
+      "field_3": 1,
+      "source_sl": 383,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 455,
+      "location": 280,
+      "field_3": 1,
+      "source_sl": 384,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_VF0B9B3A9BBB6BB9C4D6A65757378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_VF0B9B3A9BBB6BB9C4D6A65757378756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 456,
+      "location": 280,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 10955,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 457,
+      "location": 280,
+      "field_3": 1,
+      "source_sl": 385,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 2,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 458,
+      "location": 282,
+      "field_3": 1,
+      "source_sl": 386,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 459,
+      "location": 283,
+      "field_3": 1,
+      "source_sl": 387,
+      "source": "Sgn(V85C1D7CAC4AEC88F4D6A65757378756D=1)",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "op": "=",
+              "args": [
+                {
+                  "name": "V85C1D7CAC4AEC88F4D6A65757378756D"
+                },
+                {
+                  "const": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 460,
+      "location": 283,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 465,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 461,
+      "location": 284,
+      "field_3": 1,
+      "source_sl": 388,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 462,
+      "location": 285,
+      "field_3": 1,
+      "source_sl": 389,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V85C1D7CAC4AEC88F9ADAD4CD7378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V85C1D7CAC4AEC88F9ADAD4CD7378756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 463,
+      "location": 285,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 11342,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 464,
+      "location": 285,
+      "field_3": 1,
+      "source_sl": 390,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(3)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 3,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 465,
+      "location": 287,
+      "field_3": 1,
+      "source_sl": 391,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 466,
+      "location": 288,
+      "field_3": 1,
+      "source_sl": 392,
+      "source": "Sgn(V8C86D0ADB3B6A3B1F0DBA58D7378756D=1)",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "op": "=",
+              "args": [
+                {
+                  "name": "V8C86D0ADB3B6A3B1F0DBA58D7378756D"
+                },
+                {
+                  "const": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 467,
+      "location": 288,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 472,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 468,
+      "location": 289,
+      "field_3": 1,
+      "source_sl": 393,
+      "source": "Call QMLibrary.Delay(100)",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 469,
+      "location": 290,
+      "field_3": 1,
+      "source_sl": 394,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V8C86D0ADB3B6BD90F9A4B3A9CEC9B5954D6A65757378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V8C86D0ADB3B6BD90F9A4B3A9CEC9B5954D6A65757378756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 470,
+      "location": 290,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 11961,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 471,
+      "location": 290,
+      "field_3": 1,
+      "source_sl": 395,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(4)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 4,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 472,
+      "location": 292,
+      "field_3": 1,
+      "source_sl": 396,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 473,
+      "location": 293,
+      "field_3": 1,
+      "source_sl": 399,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(5)=0",
+      "kind": "assign_root_slot",
+      "slot": 5,
+      "value": {
+        "numeric": {
+          "const": 0
+        }
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 474,
+      "location": 293,
+      "field_3": 1,
+      "source_sl": 397,
+      "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F761277lDA(5)",
+      "kind": "assign_temporary",
+      "value": {
+        "root_slot": 5
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 475,
+      "location": 293,
+      "field_3": 1,
+      "source_sl": 398,
+      "source": "V9BB2B5B7CCD2BFD14D6A65757378756D",
+      "kind": "write_global",
+      "key": "V9BB2B5B7CCD2BFD14D6A65757378756D",
+      "candidate_opcode": 28,
+      "inferred": true
+    },
+    {
+      "record": 476,
+      "location": 294,
+      "field_3": 1,
+      "source_sl": 400,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 477,
+      "location": 295,
+      "field_3": 1,
+      "source_sl": 401,
+      "source": "Sgn(vbTrue)",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "const": -1
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 478,
+      "location": 295,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 549,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 479,
+      "location": 296,
+      "field_3": 1,
+      "source_sl": 402,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 480,
+      "location": 297,
+      "field_3": 1,
+      "source_sl": 403,
+      "source": "Call QMLibrary.TracePrint((\"-----主控-----切角色\"))",
+      "kind": "trace",
+      "arguments": [
+        {
+          "const": "-----主控-----切角色"
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 481,
+      "location": 298,
+      "field_3": 1,
+      "source_sl": 404,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V8ABAD8B2BAD3756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V8ABAD8B2BAD3756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 482,
+      "location": 298,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 8795,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 483,
+      "location": 298,
+      "field_3": 1,
+      "source_sl": 405,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(6)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 6,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 484,
+      "location": 299,
+      "field_3": 1,
+      "source_sl": 406,
+      "source": "Call QMLibrary.Delay((1000))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 1000
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 485,
+      "location": 300,
+      "field_3": 1,
+      "source_sl": 407,
+      "source": "Call QMLibrary.TracePrint((\"-----主控-----找*色\"))",
+      "kind": "trace",
+      "arguments": [
+        {
+          "const": "-----主控-----找*色"
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 486,
+      "location": 301,
+      "field_3": 1,
+      "source_sl": 408,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V98B8A7B9BAD3756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V98B8A7B9BAD3756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 487,
+      "location": 301,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 3623,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 488,
+      "location": 301,
+      "field_3": 1,
+      "source_sl": 409,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(7)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 7,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 489,
+      "location": 302,
+      "field_3": 1,
+      "source_sl": 410,
+      "source": "Call QMLibrary.Delay((15000))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 15000
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 490,
+      "location": 303,
+      "field_3": 1,
+      "source_sl": 411,
+      "source": "Call QMLibrary.TracePrint((\"-----主控-----找按钮对话\"))",
+      "kind": "trace",
+      "arguments": [
+        {
+          "const": "-----主控-----找按钮对话"
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 491,
+      "location": 304,
+      "field_3": 1,
+      "source_sl": 412,
+      "source": "Sgn((VF68BB1C47378756D=0))",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "op": "=",
+              "args": [
+                {
+                  "name": "VF68BB1C47378756D"
+                },
+                {
+                  "const": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 492,
+      "location": 304,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 498,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 493,
+      "location": 305,
+      "field_3": 1,
+      "source_sl": 413,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 494,
+      "location": 306,
+      "field_3": 1,
+      "source_sl": 414,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V98B8D5C1B6DD756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V98B8D5C1B6DD756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 495,
+      "location": 306,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 3642,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 496,
+      "location": 306,
+      "field_3": 1,
+      "source_sl": 415,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(8)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 8,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 497,
+      "location": 306,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 511,
+      "candidate_opcode": 16,
+      "inferred": true
+    },
+    {
+      "record": 498,
+      "location": 307,
+      "field_3": 1,
+      "source_sl": 416,
+      "source": "Sgn((VF68BB1C47378756D=1))",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "op": "=",
+              "args": [
+                {
+                  "name": "VF68BB1C47378756D"
+                },
+                {
+                  "const": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 499,
+      "location": 307,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 505,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 500,
+      "location": 308,
+      "field_3": 1,
+      "source_sl": 417,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 501,
+      "location": 309,
+      "field_3": 1,
+      "source_sl": 418,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V98B8D3A1C8C8756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V98B8D3A1C8C8756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 502,
+      "location": 309,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 3838,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 503,
+      "location": 309,
+      "field_3": 1,
+      "source_sl": 419,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(9)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 9,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 504,
+      "location": 309,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 511,
+      "candidate_opcode": 16,
+      "inferred": true
+    },
+    {
+      "record": 505,
+      "location": 310,
+      "field_3": 1,
+      "source_sl": 420,
+      "source": "Sgn((VF68BB1C47378756D=2))",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "op": "=",
+              "args": [
+                {
+                  "name": "VF68BB1C47378756D"
+                },
+                {
+                  "const": 2
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 506,
+      "location": 310,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 511,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 507,
+      "location": 311,
+      "field_3": 1,
+      "source_sl": 421,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 508,
+      "location": 312,
+      "field_3": 1,
+      "source_sl": 422,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V98B8D5C1B6DD756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V98B8D5C1B6DD756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 509,
+      "location": 312,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 3642,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 510,
+      "location": 312,
+      "field_3": 1,
+      "source_sl": 423,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(10)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 10,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 511,
+      "location": 314,
+      "field_3": 1,
+      "source_sl": 424,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 512,
+      "location": 315,
+      "field_3": 1,
+      "source_sl": 425,
+      "source": "Call QMLibrary.TracePrint((\"-----主控-----修理\"))",
+      "kind": "trace",
+      "arguments": [
+        {
+          "const": "-----主控-----修理"
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 513,
+      "location": 316,
+      "field_3": 1,
+      "source_sl": 426,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V9DB4A5987378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V9DB4A5987378756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 514,
+      "location": 316,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 3479,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 515,
+      "location": 316,
+      "field_3": 1,
+      "source_sl": 427,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(11)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 11,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 516,
+      "location": 317,
+      "field_3": 1,
+      "source_sl": 428,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 517,
+      "location": 318,
+      "field_3": 1,
+      "source_sl": 429,
+      "source": "Sgn((V8B92AAD7A5A4BDA3839B65757378756D=1))",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "op": "=",
+              "args": [
+                {
+                  "name": "V8B92AAD7A5A4BDA3839B65757378756D"
+                },
+                {
+                  "const": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 518,
+      "location": 318,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 525,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 519,
+      "location": 319,
+      "field_3": 1,
+      "source_sl": 430,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 520,
+      "location": 320,
+      "field_3": 1,
+      "source_sl": 431,
+      "source": "Call QMLibrary.TracePrint((\"-----主控-----气息周任务\"))",
+      "kind": "trace",
+      "arguments": [
+        {
+          "const": "-----主控-----气息周任务"
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 521,
+      "location": 321,
+      "field_3": 1,
+      "source_sl": 432,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_VF0B9B3A9BBB6BB9C4D6A65757378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_VF0B9B3A9BBB6BB9C4D6A65757378756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 522,
+      "location": 321,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 10955,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 523,
+      "location": 321,
+      "field_3": 1,
+      "source_sl": 433,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(12)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 12,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 524,
+      "location": 322,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 526,
+      "candidate_opcode": 16,
+      "inferred": true
+    },
+    {
+      "record": 525,
+      "location": 323,
+      "field_3": 1,
+      "source_sl": 434,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 50
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 526,
+      "location": 325,
+      "field_3": 1,
+      "source_sl": 435,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 527,
+      "location": 326,
+      "field_3": 1,
+      "source_sl": 436,
+      "source": "Sgn((VF4C1DE947378756D=1))",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "op": "=",
+              "args": [
+                {
+                  "name": "VF4C1DE947378756D"
+                },
+                {
+                  "const": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 528,
+      "location": 326,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 535,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 529,
+      "location": 327,
+      "field_3": 1,
+      "source_sl": 437,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 530,
+      "location": 328,
+      "field_3": 1,
+      "source_sl": 438,
+      "source": "Call QMLibrary.TracePrint((\"-----主控-----公会签到\"))",
+      "kind": "trace",
+      "arguments": [
+        {
+          "const": "-----主控-----公会签到"
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 531,
+      "location": 329,
+      "field_3": 1,
+      "source_sl": 439,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_VF4C1DE94B4D1C0D04D6A65757378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_VF4C1DE94B4D1C0D04D6A65757378756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 532,
+      "location": 329,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 11169,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 533,
+      "location": 329,
+      "field_3": 1,
+      "source_sl": 440,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(13)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 13,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 534,
+      "location": 330,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 536,
+      "candidate_opcode": 16,
+      "inferred": true
+    },
+    {
+      "record": 535,
+      "location": 331,
+      "field_3": 1,
+      "source_sl": 441,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 50
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 536,
+      "location": 333,
+      "field_3": 1,
+      "source_sl": 442,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 537,
+      "location": 334,
+      "field_3": 1,
+      "source_sl": 443,
+      "source": "Call QMLibrary.TracePrint((\"-----主控-----按钮点击进本\"))",
+      "kind": "trace",
+      "arguments": [
+        {
+          "const": "-----主控-----按钮点击进本"
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 538,
+      "location": 335,
+      "field_3": 1,
+      "source_sl": 444,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_VFDDEA0D0C69BCE9AF092D4CB7378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_VFDDEA0D0C69BCE9AF092D4CB7378756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 539,
+      "location": 335,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 1020,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 540,
+      "location": 335,
+      "field_3": 1,
+      "source_sl": 445,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(14)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 14,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 541,
+      "location": 336,
+      "field_3": 1,
+      "source_sl": 446,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 542,
+      "location": 337,
+      "field_3": 1,
+      "source_sl": 447,
+      "source": "V8ED1B6A5B580BACFF9A4AF887378756D",
+      "kind": "read_global",
+      "key": "V8ED1B6A5B580BACFF9A4AF887378756D",
+      "candidate_opcode": 27,
+      "inferred": true
+    },
+    {
+      "record": 543,
+      "location": 337,
+      "field_3": 1,
+      "source_sl": 448,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(15)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 15,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 544,
+      "location": 337,
+      "field_3": 1,
+      "source_sl": 449,
+      "source": "Sgn(F2730835_2229_445E_97C7_l3F761277lDA(15)=0)",
+      "kind": "test",
+      "value": {
+        "numeric": {
+          "op": "SGN",
+          "args": [
+            {
+              "op": "=",
+              "args": [
+                {
+                  "name": "CUBE_ROOT_SLOT_15"
+                },
+                {
+                  "const": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 4,
+      "inferred": true
+    },
+    {
+      "record": 545,
+      "location": 337,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 548,
+      "candidate_opcode": 6,
+      "inferred": true
+    },
+    {
+      "record": 546,
+      "location": 338,
+      "field_3": 1,
+      "source_sl": 450,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 547,
+      "location": 339,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 549,
+      "candidate_opcode": 16,
+      "inferred": true
+    },
+    {
+      "record": 548,
+      "location": 340,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 477,
+      "candidate_opcode": 16,
+      "inferred": true
+    },
+    {
+      "record": 549,
+      "location": 342,
+      "field_3": 1,
+      "source_sl": 451,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 550,
+      "location": 343,
+      "field_3": 1,
+      "source_sl": 452,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 551,
+      "location": 344,
+      "field_3": 1,
+      "source_sl": 453,
+      "source": "V86C8D4CBB3A3C9ABF9A4AF887378756D=V86C8D4CBB3A3C9ABF9A4AF887378756D+99",
+      "kind": "assign",
+      "name": "V86C8D4CBB3A3C9ABF9A4AF887378756D",
+      "value": {
+        "numeric": {
+          "op": "+",
+          "args": [
+            {
+              "name": "V86C8D4CBB3A3C9ABF9A4AF887378756D"
+            },
+            {
+              "const": 99
+            }
+          ]
+        }
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 552,
+      "location": 345,
+      "field_3": 1,
+      "source_sl": 454,
+      "source": "Call QMLibrary.TracePrint((\"刷本累计次数\" & V86C8D4CBB3A3C9ABF9A4AF887378756D))",
+      "kind": "trace",
+      "arguments": [
+        {
+          "concat": [
+            {
+              "const": "刷本累计次数"
+            },
+            {
+              "numeric": {
+                "name": "V86C8D4CBB3A3C9ABF9A4AF887378756D"
+              }
+            }
+          ]
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 553,
+      "location": 346,
+      "field_3": 1,
+      "source_sl": 455,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 554,
+      "location": 347,
+      "field_3": 1,
+      "source_sl": 456,
+      "source": "Call QMLibrary.TracePrint((\"-----主控-----找图二\"))",
+      "kind": "trace",
+      "arguments": [
+        {
+          "const": "-----主控-----找图二"
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 556,
+      "location": 349,
+      "field_3": 1,
+      "source_sl": 457,
+      "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V98B8A8C9C586756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+      "kind": "frame_enter",
+      "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V98B8A8C9C586756D",
+      "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 557,
+      "location": 349,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "call",
+      "target": 4059,
+      "candidate_opcode": 12,
+      "inferred": true
+    },
+    {
+      "record": 558,
+      "location": 349,
+      "field_3": 1,
+      "source_sl": 458,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(16)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "assign_root_slot",
+      "slot": 16,
+      "value": {
+        "temporary": true
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 559,
+      "location": 350,
+      "field_3": 1,
+      "source_sl": 459,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "arguments": [
+        {
+          "numeric": {
+            "const": 100
+          }
+        }
+      ],
+      "candidate_opcode": 30,
+      "inferred": true
+    },
+    {
+      "record": 560,
+      "location": 351,
+      "field_3": 1,
+      "source_sl": 460,
+      "source": "V98B8D0C8BEC4BD904D6A65757378756D=0",
+      "kind": "assign",
+      "name": "V98B8D0C8BEC4BD904D6A65757378756D",
+      "value": {
+        "numeric": {
+          "const": 0
+        }
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    },
+    {
+      "record": 561,
+      "location": 352,
+      "field_3": 1,
+      "source_sl": 463,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(17)=0",
+      "kind": "assign_root_slot",
+      "slot": 17,
+      "value": {
+        "numeric": {
+          "const": 0
+        }
+      },
+      "candidate_opcode": 2,
+      "inferred": true
+    }
+  ],
+  "calls": [
+    {
+      "record": 456,
+      "target": 10955,
+      "retained_call": 11321
+    },
+    {
+      "record": 463,
+      "target": 11342,
+      "retained_call": 11328
+    },
+    {
+      "record": 470,
+      "target": 11961,
+      "retained_call": 11335
+    },
+    {
+      "record": 482,
+      "target": 8795,
+      "retained_call": 639
+    },
+    {
+      "record": 487,
+      "target": 3623,
+      "retained_call": 644
+    },
+    {
+      "record": 495,
+      "target": 3642,
+      "retained_call": 652
+    },
+    {
+      "record": 502,
+      "target": 3838,
+      "retained_call": 659
+    },
+    {
+      "record": 509,
+      "target": 3642,
+      "retained_call": 666
+    },
+    {
+      "record": 514,
+      "target": 3479,
+      "retained_call": 671
+    },
+    {
+      "record": 522,
+      "target": 10955,
+      "retained_call": 679
+    },
+    {
+      "record": 532,
+      "target": 11169,
+      "retained_call": 689
+    },
+    {
+      "record": 539,
+      "target": 1020,
+      "retained_call": 696
+    },
+    {
+      "record": 557,
+      "target": 4059,
+      "body_evidence": [
+        4058,
+        4062,
+        4071
+      ]
+    }
+  ],
+  "retained_mirrors": [
+    {
+      "candidate": [
+        443,
+        451
+      ],
+      "retained": [
+        11285,
+        11293
+      ],
+      "location_delta": 9475
+    },
+    {
+      "candidate": [
+        452,
+        471
+      ],
+      "retained": [
+        11317,
+        11336
+      ],
+      "location_delta": 9495
+    },
+    {
+      "candidate": [
+        477,
+        549
+      ],
+      "retained": [
+        634,
+        706
+      ],
+      "location_delta": 94
+    }
+  ],
+  "unresolved": [
+    555
+  ],
+  "retained_return": [
+    740,
+    433
+  ],
+  "source_program_sha256": "73383f6ab26a90b6a70526618d43eef5634c613649ebb3d803d6d1fc523f151c",
+  "original_values_recovered": 0
+}

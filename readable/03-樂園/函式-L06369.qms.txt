@@ -1,0 +1,54 @@
+# 子程序 — L06369
+# 入口 L06369，RETURN L06419；名稱未對應，以入口命名
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L06369: Call QMLibrary.Delay((50))  # loc=5680 Runner=0x625fb0
+L06370: 傳回值 = global.get(〔放技能ID〕)  # loc=5681 Runner=0x6266f4
+L06371: 目前呼叫框架.暫存槽(1)=傳回值  # loc=5681 Runner=0x625f7e
+L06372: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=5681 Runner=0x625fb0
+L06373: Call QMLibrary.Delay((50))  # loc=5682 Runner=0x625fb0
+L06374: 傳回值 = global.get(〔找怪ID〕)  # loc=5683 Runner=0x6266f4
+L06375: 目前呼叫框架.暫存槽(1)=傳回值  # loc=5683 Runner=0x625f7e
+L06376: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=5683 Runner=0x625fb0
+L06377: Call QMLibrary.Delay((50))  # loc=5684 Runner=0x625fb0
+L06378: 傳回值 = global.get(〔吃百分比藥ID〕)  # loc=5685 Runner=0x6266f4
+L06379: 目前呼叫框架.暫存槽(1)=傳回值  # loc=5685 Runner=0x625f7e
+L06380: Call QMLibrary.ThreadControl((目前呼叫框架.暫存槽(1)), 1)  # loc=5685 Runner=0x625fb0
+L06381: Call QMLibrary.Delay((50))  # loc=5686 Runner=0x625fb0
+L06382: Call QMLibrary.Delay((500))  # loc=5687 Runner=0x625fb0
+L06383: Randomize  # loc=5688 Runner=0x625f7e
+L06384: YDX=INT(30*RND+25)  # loc=5689 Runner=0x625f7e
+L06385: Randomize  # loc=5690 Runner=0x625f7e
+L06386: YDY=INT(17*RND+240)  # loc=5691 Runner=0x625f7e
+L06387: Call QMLibrary.Delay((50))  # loc=5692 Runner=0x625fb0
+L06388: Call DM.MOVETO(YDX,YDY)  # loc=5693 Runner=0x625fb0
+L06389: Call QMLibrary.Delay((200))  # loc=5694 Runner=0x625fb0
+L06390: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=5695 Runner=0x625fb0
+L06391: Call QMLibrary.Delay((500))  # loc=5696 Runner=0x625fb0
+L06392: Call DM.MOVETO(YDX,YDY)  # loc=5697 Runner=0x625fb0
+L06393: Call QMLibrary.Delay((100))  # loc=5698 Runner=0x625fb0
+L06394: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=5699 Runner=0x625fb0
+L06395: Call QMLibrary.Delay((500))  # loc=5700 Runner=0x625fb0
+L06396: Randomize  # loc=5701 Runner=0x625f7e
+L06397: X=INT(70*RND+910)  # loc=5702 Runner=0x625f7e
+L06398: Randomize  # loc=5703 Runner=0x625f7e
+L06399: Y=INT(20*RND+590)  # loc=5704 Runner=0x625f7e
+L06400: Call QMLibrary.Delay((50))  # loc=5705 Runner=0x625fb0
+L06401: Call DM.MOVETO(X,Y)  # loc=5706 Runner=0x625fb0
+L06402: Call QMLibrary.Delay((200))  # loc=5707 Runner=0x625fb0
+L06403: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=5708 Runner=0x625fb0
+L06404: Call QMLibrary.Delay((500))  # loc=5709 Runner=0x625fb0
+L06405: Randomize  # loc=5710 Runner=0x625f7e
+L06406: X=INT(70*RND+910)  # loc=5711 Runner=0x625f7e
+L06407: Randomize  # loc=5712 Runner=0x625f7e
+L06408: Y=INT(20*RND+590)  # loc=5713 Runner=0x625f7e
+L06409: Call QMLibrary.Delay((50))  # loc=5714 Runner=0x625fb0
+L06410: Call DM.MOVETO(X,Y)  # loc=5715 Runner=0x625fb0
+L06411: Call QMLibrary.Delay((200))  # loc=5716 Runner=0x625fb0
+L06412: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=5717 Runner=0x625fb0
+L06413: Call QMLibrary.Delay((100))  # loc=5718 Runner=0x625fb0
+L06414: Set 新呼叫框架=New 框架類別_〔開始打怪〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=5719 Runner=0x625f7e
+L06415: call L00839; resume L06416  # loc=5719 Runner=0x6261f2
+L06416: 目前呼叫框架.暫存槽(1)=傳回值  # loc=5719 Runner=0x625f7e
+L06417: Call QMLibrary.Delay((100))  # loc=5720 Runner=0x625fb0
+L06418: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=0 Runner=0x625f7e
+L06419: return caller  # loc=0 Runner=0x626275

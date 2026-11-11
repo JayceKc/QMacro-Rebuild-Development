@@ -1,0 +1,9 @@
+# V80D6AA847378756D.無限屏幕截圖 — L06457
+# 入口 L06457，RETURN L06461；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L06457: 目前呼叫框架.〔時間〕=YEAR(NOW) & MONTH(NOW) & DAY(NOW) & HOUR(NOW) & MINUTE(NOW) & SECOND(NOW)  # loc=27 Runner=0x625f7e
+L06458: PIC
+If IsEmpty(PIC) Then Set PIC=CreateObject("QMPlugin.Pic")  # loc=28 Runner=0x6268c4
+L06459: Call PIC.PRINTSCREEN(目前呼叫框架.〔左坐標〕,目前呼叫框架.〔上坐標〕,目前呼叫框架.〔右坐標〕,目前呼叫框架.〔下坐標〕,目前呼叫框架.〔保存圖片路徑〕 & 目前呼叫框架.〔時間〕 & "." & 目前呼叫框架.〔文件格式〕)  # loc=28 Runner=0x625fb0
+L06460: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=0 Runner=0x625f7e
+L06461: return caller  # loc=0 Runner=0x626275

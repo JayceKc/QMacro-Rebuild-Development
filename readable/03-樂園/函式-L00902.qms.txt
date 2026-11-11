@@ -1,0 +1,66 @@
+# 找綠色過門 — L00902
+# 入口 L00902，RETURN L00964；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L00902: Call QMLibrary.Delay((100))  # loc=707 Runner=0x625fb0
+L00903: Call QMLibrary.TracePrint(("开始打怪>>找过门.已开启"))  # loc=708 Runner=0x625fb0
+L00904: last_test = Sgn(〔幻境還是挑戰〕=0)  # loc=709 Runner=0x626047
+L00905: if last_test == 0: goto L00938  # loc=709 Runner=0x62611c
+L00906: Call QMLibrary.Delay((100))  # loc=710 Runner=0x625fb0
+L00907: last_test = Sgn(vbTrue)  # loc=711 Runner=0x626047
+L00908: if last_test == 0: goto L00937  # loc=711 Runner=0x62611c
+L00909: Call QMLibrary.Delay((400))  # loc=712 Runner=0x625fb0
+L00910: DM_RET=DM.FINDCOLOR(70,190,220,205,"FFFFFF-070707",0.9,0,INTX,INTY)  # loc=713 Runner=0x625fb0
+L00911: last_test = Sgn((INTX>0))  # loc=714 Runner=0x626047
+L00912: if last_test == 0: goto L00929  # loc=714 Runner=0x62611c
+L00913: Call QMLibrary.Delay((100))  # loc=715 Runner=0x625fb0
+L00914: DM_RET=DM.FINDCOLOR(185,240,240,260,"FFFFFF-070707",0.9,0,INTX,INTY)  # loc=716 Runner=0x625fb0
+L00915: last_test = Sgn((INTX>0))  # loc=717 Runner=0x626047
+L00916: if last_test == 0: goto L00928  # loc=717 Runner=0x62611c
+L00917: Call QMLibrary.Delay((50))  # loc=718 Runner=0x625fb0
+L00918: DM_RET=DM.FINDCOLOR(125,240,140,260,"FFFFFF-070707",0.9,0,INTX,INTY)  # loc=719 Runner=0x625fb0
+L00919: last_test = Sgn((INTX<0))  # loc=720 Runner=0x626047
+L00920: if last_test == 0: goto L00928  # loc=720 Runner=0x62611c
+L00921: Call QMLibrary.Delay((50))  # loc=721 Runner=0x625fb0
+L00922: DM_RET=DM.FINDCOLOR(153,240,165,260,"FFFFFF-070707",0.9,0,INTX,INTY)  # loc=722 Runner=0x625fb0
+L00923: last_test = Sgn((INTX<0))  # loc=723 Runner=0x626047
+L00924: if last_test == 0: goto L00928  # loc=723 Runner=0x62611c
+L00925: Call QMLibrary.Delay((50))  # loc=724 Runner=0x625fb0
+L00926: Call QMLibrary.TracePrint(("找到白色1"))  # loc=725 Runner=0x625fb0
+L00927: goto L00937  # loc=726 Runner=0x626126
+L00928: goto L00936  # loc=727 Runner=0x626126
+L00929: Call QMLibrary.Delay((1500))  # loc=731 Runner=0x625fb0
+L00930: DM_RET=DM.FINDCOLOR(70,190,220,205,"FFFFFF-070707",0.9,0,INTX,INTY)  # loc=732 Runner=0x625fb0
+L00931: last_test = Sgn((INTX<0))  # loc=733 Runner=0x626047
+L00932: if last_test == 0: goto L00936  # loc=733 Runner=0x62611c
+L00933: Call QMLibrary.Delay((100))  # loc=734 Runner=0x625fb0
+L00934: Call QMLibrary.TracePrint(("没找到,过门"))  # loc=735 Runner=0x625fb0
+L00935: goto L00937  # loc=736 Runner=0x626126
+L00936: goto L00907  # loc=737 Runner=0x626126
+L00937: goto L00962  # loc=738 Runner=0x626126
+L00938: last_test = Sgn(〔幻境還是挑戰〕=1)  # loc=740 Runner=0x626047
+L00939: if last_test == 0: goto L00962  # loc=740 Runner=0x62611c
+L00940: last_test = Sgn(vbTrue)  # loc=741 Runner=0x626047
+L00941: if last_test == 0: goto L00962  # loc=741 Runner=0x62611c
+L00942: Call QMLibrary.Delay((400))  # loc=742 Runner=0x625fb0
+L00943: 傳回值 = global.get(〔天選〕)  # loc=743 Runner=0x6266f4
+L00944: 目前呼叫框架.暫存槽(1)=傳回值  # loc=743 Runner=0x625fb0
+L00945: DM_RET=DM.FINDCOLOR(160,1,260,25,目前呼叫框架.暫存槽(1) & "-151515",0.9,0,INTX,INTY)  # loc=743 Runner=0x625f7e
+L00946: last_test = Sgn((INTX>0))  # loc=744 Runner=0x626047
+L00947: if last_test == 0: goto L00950  # loc=744 Runner=0x62611c
+L00948: Call QMLibrary.Delay((50))  # loc=745 Runner=0x625fb0
+L00949: goto L00961  # loc=746 Runner=0x626126
+L00950: Call QMLibrary.Delay(500)  # loc=747 Runner=0x625fb0
+L00951: 傳回值 = global.get(〔天選〕)  # loc=748 Runner=0x6266f4
+L00952: 目前呼叫框架.暫存槽(2)=傳回值  # loc=748 Runner=0x625fb0
+L00953: DM_RET=DM.FINDCOLOR(160,1,260,25,目前呼叫框架.暫存槽(2) & "-151515",0.9,0,INTX,INTY)  # loc=748 Runner=0x625f7e
+L00954: last_test = Sgn((INTX>0))  # loc=749 Runner=0x626047
+L00955: if last_test == 0: goto L00958  # loc=749 Runner=0x62611c
+L00956: Call QMLibrary.Delay((50))  # loc=750 Runner=0x625fb0
+L00957: goto L00961  # loc=751 Runner=0x626126
+L00958: Call QMLibrary.Delay((50))  # loc=752 Runner=0x625fb0
+L00959: Call QMLibrary.TracePrint(("没找到,过门"))  # loc=753 Runner=0x625fb0
+L00960: goto L00962  # loc=754 Runner=0x626126
+L00961: goto L00940  # loc=755 Runner=0x626126
+L00962: Call QMLibrary.Delay((100))  # loc=759 Runner=0x625fb0
+L00963: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=760 Runner=0x625f7e
+L00964: return caller  # loc=760 Runner=0x626275

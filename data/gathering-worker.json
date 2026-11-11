@@ -1,0 +1,278 @@
+{
+  "module": 8,
+  "entry": 890,
+  "last": 914,
+  "actions": [
+    {
+      "record": 890,
+      "opcode": 30,
+      "location": 831,
+      "source_sl": 766,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 891,
+      "opcode": 2,
+      "location": 832,
+      "source_sl": 767,
+      "source": "SET DM=CREATEOBJECT(\"dm.dmsoft\")",
+      "kind": "load_vision_intent"
+    },
+    {
+      "record": 892,
+      "opcode": 30,
+      "location": 833,
+      "source_sl": 768,
+      "source": "Call DM.SETSHOWERRORMSG(0)",
+      "kind": "set_show_error",
+      "value": 0
+    },
+    {
+      "record": 893,
+      "opcode": 30,
+      "location": 834,
+      "source_sl": 769,
+      "source": "Call QMLibrary.Delay(100)",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 894,
+      "opcode": 4,
+      "location": 835,
+      "source_sl": 770,
+      "source": "Sgn(vbTrue)",
+      "kind": "test",
+      "condition": "true"
+    },
+    {
+      "record": 895,
+      "opcode": 6,
+      "location": 835,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 913
+    },
+    {
+      "record": 896,
+      "opcode": 30,
+      "location": 836,
+      "source_sl": 771,
+      "source": "Call QMLibrary.Delay(500)",
+      "kind": "delay",
+      "milliseconds": 500
+    },
+    {
+      "record": 897,
+      "opcode": 27,
+      "location": 837,
+      "source_sl": 772,
+      "source": "V8186B4D47378756D",
+      "kind": "read_sdk",
+      "global_key": "V8186B4D47378756D"
+    },
+    {
+      "record": 898,
+      "opcode": 30,
+      "location": 837,
+      "source_sl": 773,
+      "source": "F2730835_2229_445E_97C7_l3F7612771DA.F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+      "kind": "store_sdk"
+    },
+    {
+      "record": 899,
+      "opcode": 2,
+      "location": 837,
+      "source_sl": 774,
+      "source": "DM_RET=DM.FINDCOLOR(160,1,260,25,F2730835_2229_445E_97C7_l3F7612771DA.F2730835_2229_445E_97C7_l3F761277lDA(1) & \"-151515\",0.9,0,INTX,INTY)",
+      "kind": "find_color",
+      "arguments": [
+        160,
+        1,
+        260,
+        25,
+        null,
+        0.9,
+        0
+      ]
+    },
+    {
+      "record": 900,
+      "opcode": 4,
+      "location": 838,
+      "source_sl": 775,
+      "source": "Sgn((INTX>0))",
+      "kind": "test",
+      "condition": "query_x>0"
+    },
+    {
+      "record": 901,
+      "opcode": 6,
+      "location": 838,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 912
+    },
+    {
+      "record": 902,
+      "opcode": 30,
+      "location": 839,
+      "source_sl": 776,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 903,
+      "opcode": 30,
+      "location": 840,
+      "source_sl": 777,
+      "source": "DM_RET=DM.FINDPIC(938,606,983,652,\"C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp\",\"151515\",0.8,0,INTX,INTY)",
+      "kind": "find_pic",
+      "arguments": [
+        938,
+        606,
+        983,
+        652,
+        "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+        "151515",
+        0.8,
+        0
+      ]
+    },
+    {
+      "record": 904,
+      "opcode": 4,
+      "location": 841,
+      "source_sl": 778,
+      "source": "Sgn((INTX>=0))",
+      "kind": "test",
+      "condition": "query_x>=0"
+    },
+    {
+      "record": 905,
+      "opcode": 6,
+      "location": 841,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 912
+    },
+    {
+      "record": 906,
+      "opcode": 30,
+      "location": 842,
+      "source_sl": 779,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "kind": "key_press"
+    },
+    {
+      "record": 907,
+      "opcode": 30,
+      "location": 843,
+      "source_sl": 780,
+      "source": "Call QMLibrary.Delay(50)",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 908,
+      "opcode": 30,
+      "location": 844,
+      "source_sl": 781,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "kind": "key_press"
+    },
+    {
+      "record": 909,
+      "opcode": 30,
+      "location": 845,
+      "source_sl": 782,
+      "source": "Call QMLibrary.Delay(70)",
+      "kind": "delay",
+      "milliseconds": 70
+    },
+    {
+      "record": 910,
+      "opcode": 30,
+      "location": 846,
+      "source_sl": 783,
+      "source": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)",
+      "kind": "key_press"
+    },
+    {
+      "record": 911,
+      "opcode": 30,
+      "location": 847,
+      "source_sl": 784,
+      "source": "Call QMLibrary.Delay(100)",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 912,
+      "opcode": 16,
+      "location": 848,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 894
+    },
+    {
+      "record": 913,
+      "opcode": 2,
+      "location": 849,
+      "source_sl": 785,
+      "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA.F273O835_2229_445E_97C7_l3F76l277lDA:Set F2730835_2229_445E_97C7_13F76l277lDA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_l3F7612771DA.F2730835_2229_445E_97C7_13F76l2771DA:Set F2730835_2229_445E_97C7_13F76l277lDA=Nothing",
+      "kind": "frame_restore"
+    },
+    {
+      "record": 914,
+      "opcode": 13,
+      "location": 850,
+      "source_sl": null,
+      "source": null,
+      "kind": "return"
+    }
+  ],
+  "source_program_sha256": "fc940a3dfc668afcf29707bd1332a538fd7b9bb400ef38b70c2fed7d7393640f",
+  "body_original_records": 25,
+  "normal_loop_records": [
+    890,
+    891,
+    892,
+    893,
+    894,
+    895,
+    896,
+    897,
+    898,
+    899,
+    900,
+    901,
+    902,
+    903,
+    904,
+    905,
+    906,
+    907,
+    908,
+    909,
+    910,
+    911,
+    912
+  ],
+  "normal_unreachable_records": [
+    913,
+    914
+  ],
+  "worker_identity_inferred": true,
+  "worker_start_original_record": null,
+  "sdk_source_unknown": true,
+  "original_body_guest_verified": true,
+  "full_module_restored": false
+}

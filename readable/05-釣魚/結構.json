@@ -1,0 +1,1336 @@
+{
+  "module": 5,
+  "name": "釣魚",
+  "routines": [
+    {
+      "entry": 541,
+      "last": 877,
+      "skip": 540,
+      "skip_to": 878,
+      "name": null,
+      "name_status": "名稱未對應，以入口命名",
+      "traces": [
+        "Call QMLibrary.TracePrint(\"按下G修理\")"
+      ],
+      "missing": [],
+      "calls": [
+        {
+          "at": 786,
+          "target": 879
+        },
+        {
+          "at": 804,
+          "target": 879
+        }
+      ],
+      "loops": [
+        {
+          "at": 643,
+          "target": 610
+        },
+        {
+          "at": 722,
+          "target": 647
+        },
+        {
+          "at": 754,
+          "target": 724
+        },
+        {
+          "at": 766,
+          "target": 756
+        }
+      ],
+      "conditions": [
+        {
+          "at": 543,
+          "false": 607,
+          "true": 544
+        },
+        {
+          "at": 566,
+          "false": 568,
+          "true": 567
+        },
+        {
+          "at": 608,
+          "false": 769,
+          "true": 609
+        },
+        {
+          "at": 611,
+          "false": 644,
+          "true": 612
+        },
+        {
+          "at": 616,
+          "false": 618,
+          "true": 617
+        },
+        {
+          "at": 620,
+          "false": 642,
+          "true": 621
+        },
+        {
+          "at": 648,
+          "false": 723,
+          "true": 649
+        },
+        {
+          "at": 652,
+          "false": 716,
+          "true": 653
+        },
+        {
+          "at": 657,
+          "false": 716,
+          "true": 658
+        },
+        {
+          "at": 666,
+          "false": 668,
+          "true": 667
+        },
+        {
+          "at": 670,
+          "false": 716,
+          "true": 671
+        },
+        {
+          "at": 674,
+          "false": 716,
+          "true": 675
+        },
+        {
+          "at": 678,
+          "false": 716,
+          "true": 679
+        },
+        {
+          "at": 718,
+          "false": 722,
+          "true": 719
+        },
+        {
+          "at": 725,
+          "false": 755,
+          "true": 726
+        },
+        {
+          "at": 731,
+          "false": 753,
+          "true": 732
+        },
+        {
+          "at": 757,
+          "false": 767,
+          "true": 758
+        },
+        {
+          "at": 761,
+          "false": 766,
+          "true": 762
+        },
+        {
+          "at": 770,
+          "false": 876,
+          "true": 771
+        },
+        {
+          "at": 773,
+          "false": 779,
+          "true": 774
+        },
+        {
+          "at": 780,
+          "false": 797,
+          "true": 781
+        },
+        {
+          "at": 783,
+          "false": 788,
+          "true": 784
+        },
+        {
+          "at": 798,
+          "false": 815,
+          "true": 799
+        },
+        {
+          "at": 801,
+          "false": 806,
+          "true": 802
+        },
+        {
+          "at": 816,
+          "false": 826,
+          "true": 817
+        },
+        {
+          "at": 827,
+          "false": 864,
+          "true": 828
+        },
+        {
+          "at": 865,
+          "false": 874,
+          "true": 866
+        }
+      ],
+      "external_operations": [
+        {
+          "at": 541,
+          "text": "Call QMLibrary.Delay(145)"
+        },
+        {
+          "at": 544,
+          "text": "Call QMLibrary.Delay(145)"
+        },
+        {
+          "at": 545,
+          "text": "Call QMLibrary.KeyDown(\"Alt\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 546,
+          "text": "Call QMLibrary.Delay(175)"
+        },
+        {
+          "at": 547,
+          "text": "Call QMLibrary.KeyDown(\"Alt\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 548,
+          "text": "Call QMLibrary.Delay(175)"
+        },
+        {
+          "at": 549,
+          "text": "Call QMLibrary.KeyDown(\"P\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 550,
+          "text": "Call QMLibrary.Delay(145)"
+        },
+        {
+          "at": 551,
+          "text": "Call QMLibrary.KeyUp(\"P\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 552,
+          "text": "Call QMLibrary.Delay(168)"
+        },
+        {
+          "at": 553,
+          "text": "Call QMLibrary.KeyUp(\"Alt\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 554,
+          "text": "Call QMLibrary.Delay(168)"
+        },
+        {
+          "at": 555,
+          "text": "Call QMLibrary.KeyUp(\"Alt\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 556,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 557,
+          "text": "Call QMLibrary.Delay((50))"
+        },
+        {
+          "at": 562,
+          "text": "Call QMLibrary.Delay((50))"
+        },
+        {
+          "at": 563,
+          "text": "Call DM.MOVETO(XLX,XLY)"
+        },
+        {
+          "at": 564,
+          "text": "Call QMLibrary.Delay(4000)"
+        },
+        {
+          "at": 567,
+          "text": "Call QMLibrary.Delay((5000))"
+        },
+        {
+          "at": 568,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 569,
+          "text": "Call QMLibrary.Delay(50)"
+        },
+        {
+          "at": 570,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 571,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 572,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 573,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 574,
+          "text": "Call DM.MOVETO(860,746)"
+        },
+        {
+          "at": 575,
+          "text": "Call QMLibrary.Delay(2000)"
+        },
+        {
+          "at": 576,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 577,
+          "text": "Call QMLibrary.Delay(50)"
+        },
+        {
+          "at": 578,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 579,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 580,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 581,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 582,
+          "text": "Call DM.MOVETO(740,815)"
+        },
+        {
+          "at": 583,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 584,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 585,
+          "text": "Call QMLibrary.Delay(50)"
+        },
+        {
+          "at": 586,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 587,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 588,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 589,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 590,
+          "text": "Call DM.MOVETO(906,582)"
+        },
+        {
+          "at": 591,
+          "text": "Call QMLibrary.Delay(200)"
+        },
+        {
+          "at": 592,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 593,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 594,
+          "text": "Call QMLibrary.KeyPress(\"Enter\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 595,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 596,
+          "text": "Call DM.MOVETO(906,626)"
+        },
+        {
+          "at": 597,
+          "text": "Call QMLibrary.Delay(200)"
+        },
+        {
+          "at": 598,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 599,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 600,
+          "text": "Call QMLibrary.KeyPress(\"Esc\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 601,
+          "text": "Call QMLibrary.Delay(2000)"
+        },
+        {
+          "at": 602,
+          "text": "Call QMLibrary.KeyPress(\"Esc\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 603,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 604,
+          "text": "Call DM.MOVETO(MX,MY)"
+        },
+        {
+          "at": 605,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 609,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 612,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 613,
+          "text": "Call QMLibrary.KeyPress(\"F2\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 614,
+          "text": "Call QMLibrary.Delay(4000)"
+        },
+        {
+          "at": 617,
+          "text": "Call QMLibrary.Delay((2000))"
+        },
+        {
+          "at": 618,
+          "text": "DM_RET=DM.FINDPIC(1303,277,1388,790,\"C:\\users\\mymacro\\zhuangy1.bmp|C:\\users\\mymacro\\zhuangy2.bmp|C:\\users\\mymacro\\zhuangy3.bmp\",\"191919\",0.8,0,INTX,INTY)"
+        },
+        {
+          "at": 621,
+          "text": "Call QMLibrary.Delay(200)"
+        },
+        {
+          "at": 624,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 625,
+          "text": "Call DM.MOVETO(XX,YY)"
+        },
+        {
+          "at": 626,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 627,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 628,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 629,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 630,
+          "text": "Call QMLibrary.Delay(700)"
+        },
+        {
+          "at": 631,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 632,
+          "text": "Call QMLibrary.Delay(1500)"
+        },
+        {
+          "at": 633,
+          "text": "Call DM.MOVETO(1454,853)"
+        },
+        {
+          "at": 634,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 635,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 636,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 637,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 638,
+          "text": "Call QMLibrary.Delay(700)"
+        },
+        {
+          "at": 639,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 640,
+          "text": "Call QMLibrary.Delay(12000)"
+        },
+        {
+          "at": 642,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 644,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 646,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 649,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 650,
+          "text": "DM_RET=DM.FINDCOLOR(160,1,260,25,〔天選〕 & \"-151515\",0.9,0,INTX,INTY)"
+        },
+        {
+          "at": 653,
+          "text": "Call QMLibrary.Delay(4000)"
+        },
+        {
+          "at": 655,
+          "text": "DM_RET=DM.FINDPIC(862,198,1097,407,\"C:\\users\\mymacro\\duihua1.bmp|C:\\users\\mymacro\\duihua2.bmp\",\"050505\",0.8,0,INTX,INTY)"
+        },
+        {
+          "at": 658,
+          "text": "Call QMLibrary.Delay((1000))"
+        },
+        {
+          "at": 659,
+          "text": "Call DM.MOVETO(960,540)"
+        },
+        {
+          "at": 660,
+          "text": "Call QMLibrary.Delay((200))"
+        },
+        {
+          "at": 661,
+          "text": "Call QMLibrary.KeyPress(\"G\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 662,
+          "text": "Call QMLibrary.Delay((100))"
+        },
+        {
+          "at": 663,
+          "text": "Call QMLibrary.TracePrint(\"按下G修理\")"
+        },
+        {
+          "at": 664,
+          "text": "Call QMLibrary.Delay((4000))"
+        },
+        {
+          "at": 667,
+          "text": "Call QMLibrary.Delay((5000))"
+        },
+        {
+          "at": 668,
+          "text": "DM_RET=DM.FINDCOLOR(952,416,988,443,\"D6C7B5-050505|EFEBD6-050505\",0.9,0,INTX,INTY)"
+        },
+        {
+          "at": 671,
+          "text": "Call QMLibrary.Delay((50))"
+        },
+        {
+          "at": 672,
+          "text": "DM_RET=DM.FINDCOLOR(953,664,986,694,\"D6C7B5-050505|EFEBD6-050505\",0.9,0,INTX,INTY)"
+        },
+        {
+          "at": 675,
+          "text": "Call QMLibrary.Delay((50))"
+        },
+        {
+          "at": 676,
+          "text": "DM_RET=DM.FINDCOLOR(1145,714,1180,746,\"D6C7B5-050505|EFEBD6-050505\",0.9,0,INTX,INTY)"
+        },
+        {
+          "at": 680,
+          "text": "Call QMLibrary.Delay((300))"
+        },
+        {
+          "at": 681,
+          "text": "Call DM.MOVETO(1029,856)"
+        },
+        {
+          "at": 682,
+          "text": "Call QMLibrary.Delay((300))"
+        },
+        {
+          "at": 683,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 684,
+          "text": "Call QMLibrary.Delay((500))"
+        },
+        {
+          "at": 685,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 686,
+          "text": "Call QMLibrary.Delay((500))"
+        },
+        {
+          "at": 687,
+          "text": "Call DM.MOVETO(860,746)"
+        },
+        {
+          "at": 688,
+          "text": "Call QMLibrary.Delay(2000)"
+        },
+        {
+          "at": 689,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 690,
+          "text": "Call QMLibrary.Delay(50)"
+        },
+        {
+          "at": 691,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 692,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 693,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 694,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 695,
+          "text": "Call DM.MOVETO(740,815)"
+        },
+        {
+          "at": 696,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 697,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 698,
+          "text": "Call QMLibrary.Delay(50)"
+        },
+        {
+          "at": 699,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 700,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 701,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 702,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 703,
+          "text": "Call DM.MOVETO(906,582)"
+        },
+        {
+          "at": 704,
+          "text": "Call QMLibrary.Delay(200)"
+        },
+        {
+          "at": 705,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 706,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 707,
+          "text": "Call QMLibrary.KeyPress(\"Enter\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 708,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 709,
+          "text": "Call DM.MOVETO(906,626)"
+        },
+        {
+          "at": 710,
+          "text": "Call QMLibrary.Delay(200)"
+        },
+        {
+          "at": 711,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 712,
+          "text": "Call QMLibrary.Delay(2000)"
+        },
+        {
+          "at": 713,
+          "text": "Call QMLibrary.KeyPress(\"Esc\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 714,
+          "text": "Call QMLibrary.Delay(4000)"
+        },
+        {
+          "at": 716,
+          "text": "Call QMLibrary.Delay((200))"
+        },
+        {
+          "at": 719,
+          "text": "Call QMLibrary.Delay((300))"
+        },
+        {
+          "at": 720,
+          "text": "Call QMLibrary.KeyPress(\"Esc\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 721,
+          "text": "Call QMLibrary.Delay((4000))"
+        },
+        {
+          "at": 723,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 726,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 727,
+          "text": "Call QMLibrary.KeyPress(\"F2\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 728,
+          "text": "Call QMLibrary.Delay(4000)"
+        },
+        {
+          "at": 729,
+          "text": "DM_RET=DM.FINDPIC(1303,277,1388,790,\"C:\\users\\mymacro\\taos1.bmp|C:\\users\\mymacro\\taos2.bmp\",\"191919\",0.8,0,INTX,INTY)"
+        },
+        {
+          "at": 732,
+          "text": "Call QMLibrary.Delay(200)"
+        },
+        {
+          "at": 735,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 736,
+          "text": "Call DM.MOVETO(XX,YY)"
+        },
+        {
+          "at": 737,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 738,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 739,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 740,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 741,
+          "text": "Call QMLibrary.Delay(700)"
+        },
+        {
+          "at": 742,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 743,
+          "text": "Call QMLibrary.Delay(1500)"
+        },
+        {
+          "at": 744,
+          "text": "Call DM.MOVETO(1454,853)"
+        },
+        {
+          "at": 745,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 746,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 747,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 748,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 749,
+          "text": "Call QMLibrary.Delay(700)"
+        },
+        {
+          "at": 750,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 751,
+          "text": "Call QMLibrary.Delay(12000)"
+        },
+        {
+          "at": 753,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 755,
+          "text": "Call QMLibrary.Delay(200)"
+        },
+        {
+          "at": 758,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 759,
+          "text": "DM_RET=DM.FINDCOLOR(160,1,260,25,〔天選〕 & \"-151515\",0.9,0,INTX,INTY)"
+        },
+        {
+          "at": 762,
+          "text": "Call QMLibrary.Delay(4000)"
+        },
+        {
+          "at": 763,
+          "text": "Call DM.MOVETO(MX,MY)"
+        },
+        {
+          "at": 764,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 767,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 771,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 774,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 775,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 776,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 777,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 781,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 784,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 788,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 789,
+          "text": "Call QMLibrary.KeyPress(\"F10\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 790,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 791,
+          "text": "Call QMLibrary.KeyPress(\"F10\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 792,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 793,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 794,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 795,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 799,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 802,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 806,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 807,
+          "text": "Call QMLibrary.KeyPress(\"F8\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 808,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 809,
+          "text": "Call QMLibrary.KeyPress(\"F8\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 810,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 811,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 812,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 813,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 817,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 818,
+          "text": "Call QMLibrary.KeyPress(\"F6\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 819,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 820,
+          "text": "Call QMLibrary.KeyPress(\"F6\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 821,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 822,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 823,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 824,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 828,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 829,
+          "text": "Call DM.MOVETO(1880,1027)"
+        },
+        {
+          "at": 830,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 831,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 832,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 833,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 834,
+          "text": "Call QMLibrary.Delay(2000)"
+        },
+        {
+          "at": 835,
+          "text": "Call DM.MOVETO(1860,920)"
+        },
+        {
+          "at": 836,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 837,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 838,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 839,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 840,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 841,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 842,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 843,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 844,
+          "text": "Call QMLibrary.Delay(4000)"
+        },
+        {
+          "at": 845,
+          "text": "Call DM.MOVETO(1515,740)"
+        },
+        {
+          "at": 846,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 847,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 848,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 849,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 850,
+          "text": "Call QMLibrary.Delay(700)"
+        },
+        {
+          "at": 851,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 852,
+          "text": "Call QMLibrary.Delay(2000)"
+        },
+        {
+          "at": 853,
+          "text": "Call QMLibrary.KeyPress(\"Enter\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 854,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 855,
+          "text": "Call DM.MOVETO(896,571)"
+        },
+        {
+          "at": 856,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 857,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 858,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 859,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 860,
+          "text": "Call QMLibrary.Delay(700)"
+        },
+        {
+          "at": 861,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 862,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 866,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 869,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 870,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 871,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 872,
+          "text": "Call QMLibrary.ExitScript(0)"
+        },
+        {
+          "at": 874,
+          "text": "Call QMLibrary.Delay(2000)"
+        },
+        {
+          "at": 875,
+          "text": "Call QMLibrary.Delay(100)"
+        }
+      ]
+    },
+    {
+      "entry": 879,
+      "last": 923,
+      "skip": 878,
+      "skip_to": 924,
+      "name": "返回莊園",
+      "name_status": "原名解碼並由直接 CALL 對應",
+      "traces": [],
+      "missing": [],
+      "calls": [],
+      "loops": [
+        {
+          "at": 910,
+          "target": 880
+        },
+        {
+          "at": 920,
+          "target": 912
+        }
+      ],
+      "conditions": [
+        {
+          "at": 881,
+          "false": 911,
+          "true": 882
+        },
+        {
+          "at": 887,
+          "false": 909,
+          "true": 888
+        },
+        {
+          "at": 913,
+          "false": 921,
+          "true": 914
+        },
+        {
+          "at": 917,
+          "false": 920,
+          "true": 918
+        }
+      ],
+      "external_operations": [
+        {
+          "at": 879,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 882,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 883,
+          "text": "Call QMLibrary.KeyPress(\"F2\",g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 884,
+          "text": "Call QMLibrary.Delay(4000)"
+        },
+        {
+          "at": 885,
+          "text": "DM_RET=DM.FINDPIC(1303,277,1388,790,\"C:\\users\\mymacro\\zhuangy1.bmp|C:\\users\\mymacro\\zhuangy2.bmp|C:\\users\\mymacro\\zhuangy3.bmp\",\"191919\",0.8,0,INTX,INTY)"
+        },
+        {
+          "at": 888,
+          "text": "Call QMLibrary.Delay(200)"
+        },
+        {
+          "at": 891,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 892,
+          "text": "Call DM.MOVETO(XX,YY)"
+        },
+        {
+          "at": 893,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 894,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 895,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 896,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 897,
+          "text": "Call QMLibrary.Delay(700)"
+        },
+        {
+          "at": 898,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 899,
+          "text": "Call QMLibrary.Delay(1500)"
+        },
+        {
+          "at": 900,
+          "text": "Call DM.MOVETO(1454,853)"
+        },
+        {
+          "at": 901,
+          "text": "Call QMLibrary.Delay(300)"
+        },
+        {
+          "at": 902,
+          "text": "Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 903,
+          "text": "Call QMLibrary.Delay(100)"
+        },
+        {
+          "at": 904,
+          "text": "Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 905,
+          "text": "Call QMLibrary.Delay(700)"
+        },
+        {
+          "at": 906,
+          "text": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+        },
+        {
+          "at": 907,
+          "text": "Call QMLibrary.Delay(12000)"
+        },
+        {
+          "at": 909,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 911,
+          "text": "Call QMLibrary.Delay(500)"
+        },
+        {
+          "at": 914,
+          "text": "Call QMLibrary.Delay(1000)"
+        },
+        {
+          "at": 915,
+          "text": "DM_RET=DM.FINDCOLOR(160,1,260,25,〔天選〕 & \"-151515\",0.9,0,INTX,INTY)"
+        },
+        {
+          "at": 918,
+          "text": "Call QMLibrary.Delay(4000)"
+        },
+        {
+          "at": 921,
+          "text": "Call QMLibrary.Delay(200)"
+        }
+      ]
+    }
+  ],
+  "events": [],
+  "event_header_version": 2053,
+  "event_consumed_bytes": 8,
+  "event_remaining_hex": "4c4c444530364236",
+  "event_trailer_semantics": "未確定；保留，不宣稱為已解密資料",
+  "interface_entry": 925
+}

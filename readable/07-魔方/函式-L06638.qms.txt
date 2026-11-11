@@ -1,0 +1,21 @@
+# 普攻 — L06638
+# 入口 L06638，RETURN L06655；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L06638: Call QMLibrary.Delay((100))  # loc=5770 Runner=0x625fb0
+L06639: last_test = Sgn(vbTrue)  # loc=5771 Runner=0x626047
+L06640: if last_test == 0: goto L06653  # loc=5771 Runner=0x62611c
+L06641: Call QMLibrary.Delay((1000))  # loc=5772 Runner=0x625fb0
+L06642: Call QMLibrary.Delay((1000))  # loc=5773 Runner=0x625fb0
+L06643: Call QMLibrary.Delay((1000))  # loc=5774 Runner=0x625fb0
+L06644: Call QMLibrary.Delay((1000))  # loc=5775 Runner=0x625fb0
+L06645: Call QMLibrary.Delay((1000))  # loc=5776 Runner=0x625fb0
+L06646: Call QMLibrary.KeyPress("C",g_iSimulateModeInVBSBlock,1)  # loc=5777 Runner=0x625fb0
+L06647: Call QMLibrary.Delay((300))  # loc=5778 Runner=0x625fb0
+L06648: Call QMLibrary.Delay((1000))  # loc=5779 Runner=0x625fb0
+L06649: Call QMLibrary.Delay((1000))  # loc=5780 Runner=0x625fb0
+L06650: Call QMLibrary.KeyPress("C",g_iSimulateModeInVBSBlock,1)  # loc=5781 Runner=0x625fb0
+L06651: Call QMLibrary.Delay((300))  # loc=5782 Runner=0x625fb0
+L06652: goto L06639  # loc=5783 Runner=0x626126
+L06653: Call QMLibrary.Delay((100))  # loc=5784 Runner=0x625fb0
+L06654: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=5785 Runner=0x625f7e
+L06655: return caller  # loc=5785 Runner=0x626275

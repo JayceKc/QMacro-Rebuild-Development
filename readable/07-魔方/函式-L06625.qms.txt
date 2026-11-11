@@ -1,0 +1,15 @@
+# 啊不吃啊 — L06625
+# 入口 L06625，RETURN L06636；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L06625: Call QMLibrary.Delay((100))  # loc=5759 Runner=0x625fb0
+L06626: last_test = Sgn(vbTrue)  # loc=5760 Runner=0x626047
+L06627: if last_test == 0: goto L06634  # loc=5760 Runner=0x62611c
+L06628: Call QMLibrary.Delay((300))  # loc=5761 Runner=0x625fb0
+L06629: Call QMLibrary.Delay((100))  # loc=5762 Runner=0x625fb0
+L06630: Call QMLibrary.Delay((200))  # loc=5763 Runner=0x625fb0
+L06631: Call QMLibrary.Delay((300))  # loc=5764 Runner=0x625fb0
+L06632: Call QMLibrary.Delay((300))  # loc=5765 Runner=0x625fb0
+L06633: goto L06626  # loc=5766 Runner=0x626126
+L06634: Call QMLibrary.Delay((100))  # loc=5767 Runner=0x625fb0
+L06635: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=5768 Runner=0x625f7e
+L06636: return caller  # loc=5768 Runner=0x626275

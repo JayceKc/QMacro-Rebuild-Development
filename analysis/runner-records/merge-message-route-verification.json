@@ -1,0 +1,369 @@
+{
+  "image_sha256": {
+    "outer": "8ebcc9becae724a139fc3a78a6464b2566304a0b7b9cccf4b0bc3bd0843c9c9f",
+    "runner": "a3099a9c7673af72b3899020cd8c6f9c2e944a3cd70e559c8f99362b3d7acecc"
+  },
+  "anchors": {
+    "outer": {
+      "0x40a118": {
+        "instruction": "call 0x406ae0",
+        "bytes": "e8c3c9ffff"
+      },
+      "0x40a121": {
+        "instruction": "call 0x406df0",
+        "bytes": "e8caccffff"
+      },
+      "0x40a12b": {
+        "instruction": "push 0x1f",
+        "bytes": "6a1f"
+      },
+      "0x40a132": {
+        "instruction": "call 0x42a190",
+        "bytes": "e859000200"
+      },
+      "0x42a217": {
+        "instruction": "mov byte ptr [ebp - 0x2f], cl",
+        "bytes": "884dd1"
+      },
+      "0x42a221": {
+        "instruction": "push eax",
+        "bytes": "50"
+      },
+      "0x42a226": {
+        "instruction": "call 0x604950",
+        "bytes": "e825a71d00"
+      },
+      "0x42a23f": {
+        "instruction": "call eax",
+        "bytes": "ffd0"
+      },
+      "0x42a412": {
+        "instruction": "mov byte ptr [ebp - 0x4b], 4",
+        "bytes": "c645b504"
+      },
+      "0x42a426": {
+        "instruction": "call 0x604950",
+        "bytes": "e825a51d00"
+      },
+      "0x604989": {
+        "instruction": "mov dword ptr [edi], eax",
+        "bytes": "8907"
+      },
+      "0x6049fe": {
+        "instruction": "call 0x627450",
+        "bytes": "e84d2a0200"
+      },
+      "0x604a14": {
+        "instruction": "call 0x62ce10",
+        "bytes": "e8f7830200"
+      },
+      "0x62ce4d": {
+        "instruction": "and ecx, 7",
+        "bytes": "83e107"
+      },
+      "0x62ce8d": {
+        "instruction": "mov byte ptr [ecx + esi - 1], bl",
+        "bytes": "885c31ff"
+      },
+      "0x62ceb0": {
+        "instruction": "call 0x42dc80",
+        "bytes": "e8cb0de0ff"
+      },
+      "0x62cf4e": {
+        "instruction": "call 0x42dc80",
+        "bytes": "e82d0de0ff"
+      },
+      "0x62cf5a": {
+        "instruction": "movsx edx, byte ptr [esi + ebx - 1]",
+        "bytes": "0fbe541eff"
+      }
+    },
+    "runner": {
+      "0x440d38": {
+        "instruction": "mov ecx, 0x444730",
+        "bytes": "b930474400"
+      },
+      "0x440d41": {
+        "instruction": "mov dword ptr [esp + 0x18], 0x41f",
+        "bytes": "c74424181f040000"
+      },
+      "0x440d62": {
+        "instruction": "call 0x43ee90",
+        "bytes": "e829e1ffff"
+      },
+      "0x441ae6": {
+        "instruction": "movzx eax, byte ptr [esi + 1]",
+        "bytes": "0fb64601"
+      },
+      "0x441af0": {
+        "instruction": "add eax, 0x400",
+        "bytes": "0500040000"
+      },
+      "0x441af5": {
+        "instruction": "push eax",
+        "bytes": "50"
+      },
+      "0x441b4a": {
+        "instruction": "mov eax, dword ptr [esi + 0xc]",
+        "bytes": "8b460c"
+      },
+      "0x441b58": {
+        "instruction": "call 0x670da0",
+        "bytes": "e843f22200"
+      },
+      "0x441b7a": {
+        "instruction": "call 0x671be0",
+        "bytes": "e861002300"
+      },
+      "0x441b95": {
+        "instruction": "jmp 0x441ae6",
+        "bytes": "e94cffffff"
+      },
+      "0x671c4e": {
+        "instruction": "call 0x453870",
+        "bytes": "e81d1cdeff"
+      },
+      "0x671c5a": {
+        "instruction": "movsx edx, byte ptr [esi + ebx - 1]",
+        "bytes": "0fbe541eff"
+      },
+      "0x444799": {
+        "instruction": "call 0x4ba9a0",
+        "bytes": "e802620700"
+      },
+      "0x44478d": {
+        "instruction": "mov ecx, dword ptr [ebx + 8]",
+        "bytes": "8b4b08"
+      },
+      "0x444790": {
+        "instruction": "mov eax, dword ptr [ebx + 0x14]",
+        "bytes": "8b4314"
+      },
+      "0x4447a2": {
+        "instruction": "push 0x11",
+        "bytes": "6a11"
+      },
+      "0x4447b0": {
+        "instruction": "mov edx, dword ptr [ebx + 0xc]",
+        "bytes": "8b530c"
+      },
+      "0x444811": {
+        "instruction": "jne 0x444856",
+        "bytes": "7543"
+      },
+      "0x444856": {
+        "instruction": "mov eax, dword ptr [esp + 0x30]",
+        "bytes": "8b442430"
+      },
+      "0x444862": {
+        "instruction": "mov esi, dword ptr [esp + 0x34]",
+        "bytes": "8b742434"
+      },
+      "0x41e4f3": {
+        "instruction": "mov eax, dword ptr [edi + 8]",
+        "bytes": "8b4708"
+      },
+      "0x41e4f8": {
+        "instruction": "call 0x4b69b0",
+        "bytes": "e8b3840900"
+      },
+      "0x41e510": {
+        "instruction": "cmp byte ptr [eax], 0x12",
+        "bytes": "803812"
+      },
+      "0x41e55c": {
+        "instruction": "mov eax, dword ptr [edi + 0xc]",
+        "bytes": "8b470c"
+      },
+      "0x41e561": {
+        "instruction": "call 0x4b69b0",
+        "bytes": "e84a840900"
+      },
+      "0x4448eb": {
+        "instruction": "call 0x4331c0",
+        "bytes": "e8d0e8feff"
+      },
+      "0x4448f6": {
+        "instruction": "xor edx, edx",
+        "bytes": "33d2"
+      },
+      "0x4448fa": {
+        "instruction": "call 0x445730",
+        "bytes": "e8310e0000"
+      },
+      "0x445766": {
+        "instruction": "mov edi, edx",
+        "bytes": "8bfa"
+      },
+      "0x4457af": {
+        "instruction": "cmp edi, ebx",
+        "bytes": "3bfb"
+      },
+      "0x4457e5": {
+        "instruction": "mov dword ptr [ebp - 0x4c], ebx",
+        "bytes": "895db4"
+      },
+      "0x4331f9": {
+        "instruction": "call 0x42deb0",
+        "bytes": "e8b2acffff"
+      },
+      "0x433205": {
+        "instruction": "je 0x433291",
+        "bytes": "0f8486000000"
+      },
+      "0x43322c": {
+        "instruction": "call 0x401dd0",
+        "bytes": "e89febfcff"
+      },
+      "0x433246": {
+        "instruction": "call 0x60d9c0",
+        "bytes": "e875a71d00"
+      },
+      "0x4309a2": {
+        "instruction": "mov eax, dword ptr [edi + 0x10]",
+        "bytes": "8b4710"
+      },
+      "0x4309a5": {
+        "instruction": "push 0x813348",
+        "bytes": "6848338100"
+      },
+      "0x4309b5": {
+        "instruction": "je 0x4309f5",
+        "bytes": "743e"
+      },
+      "0x4309ea": {
+        "instruction": "call 0x60d9c0",
+        "bytes": "e8d1cf1d00"
+      }
+    }
+  },
+  "des_cbc_cases": [
+    {
+      "image": "outer",
+      "mode": 1,
+      "input_hex": "0123456789abcdef0000000000000000",
+      "output_hex": "85e813540f0ab40567ae7a2961dfa345"
+    },
+    {
+      "image": "runner",
+      "mode": 0,
+      "input_hex": "85e813540f0ab40567ae7a2961dfa345",
+      "output_hex": "0123456789abcdef0000000000000000"
+    }
+  ],
+  "dispatch_cases": [
+    {
+      "header_byte": "0x1d",
+      "dispatch_key": "0x41d",
+      "stop": "0x441af8"
+    },
+    {
+      "header_byte": "0x1e",
+      "dispatch_key": "0x41e",
+      "stop": "0x441af8"
+    },
+    {
+      "header_byte": "0x1f",
+      "dispatch_key": "0x41f",
+      "stop": "0x441af8"
+    }
+  ],
+  "reply_tail_cases": [
+    {
+      "apply_eax": 0,
+      "reply_edx": 0,
+      "stop": "0x445730"
+    },
+    {
+      "apply_eax": 1,
+      "reply_edx": 0,
+      "stop": "0x445730"
+    },
+    {
+      "apply_eax": 305419896,
+      "reply_edx": 0,
+      "stop": "0x445730"
+    }
+  ],
+  "add_macro_gate_cases": [
+    {
+      "merge_part": "none",
+      "skip_merge": true,
+      "stop": "0x4309f5"
+    },
+    {
+      "merge_part": "NONE",
+      "skip_merge": false,
+      "stop": "0x4309b7"
+    },
+    {
+      "merge_part": "",
+      "skip_merge": false,
+      "stop": "0x4309b7"
+    },
+    {
+      "merge_part": "nones",
+      "skip_merge": false,
+      "stop": "0x4309b7"
+    },
+    {
+      "merge_part": "synthetic-long-merge-part",
+      "skip_merge": false,
+      "stop": "0x4309b7"
+    }
+  ],
+  "apply_route_cases": [
+    {
+      "macro_id_hex": "73686f7274",
+      "key_info_size": 3,
+      "populated_map": false,
+      "match": false,
+      "calls": [],
+      "result_eax": 0
+    },
+    {
+      "macro_id_hex": "6d697373696e67",
+      "key_info_size": 6,
+      "populated_map": true,
+      "match": false,
+      "calls": [
+        "lookup"
+      ],
+      "result_eax": 0
+    },
+    {
+      "macro_id_hex": "6d617463686564",
+      "key_info_size": 9,
+      "populated_map": true,
+      "match": true,
+      "calls": [
+        "lookup",
+        "executor",
+        "key_string",
+        "merge"
+      ],
+      "result_eax": 1
+    },
+    {
+      "macro_id_hex": "6c6f6e672d73796e7468657469632d696483",
+      "key_info_size": 18,
+      "populated_map": true,
+      "match": true,
+      "calls": [
+        "lookup",
+        "executor",
+        "key_string",
+        "merge"
+      ],
+      "result_eax": 0
+    }
+  ],
+  "original_values_recovered": 0,
+  "limitations": [
+    "No transport was opened and no original script was executed.",
+    "No reply was constructed and the merge function was stubbed.",
+    "Apply replay stubs map lookup, executor selection, string allocation and frees.",
+    "Dispatch replay ends before the OS call; registration is verified statically.",
+    "Cross-image DES-CBC replay uses a public test key; no real transport key was extracted."
+  ]
+}

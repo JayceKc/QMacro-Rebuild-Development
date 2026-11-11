@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "checked_records": 28022,
+  "counts": {
+    "30/decoded-text": 23211,
+    "2/text": 4811
+  },
+  "modules": [
+    {
+      "module": 1,
+      "checked_records": 9249,
+      "program_sha256": "73383f6ab26a90b6a70526618d43eef5634c613649ebb3d803d6d1fc523f151c",
+      "reading_pool_sha256": "286ac49acd22c48b4be2d2d42cef0c73cda9408534c2273aafb04c41fb793fba"
+    },
+    {
+      "module": 3,
+      "checked_records": 4608,
+      "program_sha256": "80b9c5724214dce32a3cb2e848843152caca456270a51cf4f76bc8f62c1b6295",
+      "reading_pool_sha256": "dd238ba20512371ffee41ef1b1be6d4a3710d36029091efa1aa46805f66bded5"
+    },
+    {
+      "module": 5,
+      "checked_records": 323,
+      "program_sha256": "e552b5f44c0cd59c8c584a92d36d5e1196189ddda1ff2f6e74cd4aa298ffa78f",
+      "reading_pool_sha256": "a8c02fa3e24f3c559dd64f0c99de464fc91a67e0809d1c990455346baf700f9c"
+    },
+    {
+      "module": 6,
+      "checked_records": 6655,
+      "program_sha256": "a45f0fafe45984a5260712ab56d7fa85af9f0523f00743ff1905ce3547123cfa",
+      "reading_pool_sha256": "5e348c8ac9480abadb9b077a6bac4b3c1a5103dbccad8dc227b76da4239ec303"
+    },
+    {
+      "module": 7,
+      "checked_records": 4723,
+      "program_sha256": "23fc895222d88367ea1afedc5929a06196444c14b01842eebeaf6e62fb8c7b64",
+      "reading_pool_sha256": "279b6e51e4a2b39f63ae3949ea72aee9a8a15c37e71bc7de15fe96020077e2d2"
+    },
+    {
+      "module": 8,
+      "checked_records": 839,
+      "program_sha256": "fc940a3dfc668afcf29707bd1332a538fd7b9bb400ef38b70c2fed7d7393640f",
+      "reading_pool_sha256": "1cdb0932d161f6b668ddc80e70b1fae796affce6e810c40e5edf9a87148bc938"
+    },
+    {
+      "module": 9,
+      "checked_records": 683,
+      "program_sha256": "bbca57d0f39890c3c992f209ee00375e7909dd386efff576771a4ecc65cae204",
+      "reading_pool_sha256": "886fdfecb685f4b43c9a70cf91632784d4588b563ac0165d74846d2346d9124a"
+    },
+    {
+      "module": 10,
+      "checked_records": 942,
+      "program_sha256": "5735d6f1f999787e42481a1bc9a6756976a5b18ff836a22e444413001f2f0b8f",
+      "reading_pool_sha256": "f4ff1fabedd9150ef1e54b444b5f75a25f8a88280d0cddfa3d1552b9fa35417f"
+    }
+  ],
+  "mismatches": [],
+  "rule": "decoded-text ->30; retained plain text ->2",
+  "original_missing_operands_recovered": false,
+  "limit": "Corroborates choosing text execution opcodes from retained encoding; does not recover absent branch/call operands or original record bytes."
+}

@@ -1,0 +1,56 @@
+import json,hashlib
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];PROJECT=ROOT if (ROOT/'programs/08.json').exists() else ROOT/'outputs/QMacro-Rebuild-Development'
+OUT=ROOT/'analysis/runner-records' if PROJECT==ROOT else ROOT/'outputs/runner-record-recovery'
+
+
+def main():
+    source=PROJECT/'verification' if PROJECT==ROOT else ROOT/'outputs/plugin-recovery'
+    text=json.loads((source/'runner-record-field3.json').read_text(encoding='utf8'));pairs=json.loads((source/'runner-protected-pairs.json').read_text())
+    assert text['ok'] and pairs['ok'] and text['image_sha256']==pairs['image_sha256']
+    modules=[]
+    for path in sorted((PROJECT/'programs').glob('[0-9][0-9].json')):
+        p=json.loads(path.read_text());positions=[i for i,r in enumerate(p['code']) if r[3]&1][:500];assert positions==p['missing_records']
+        modules.append({'module':path.stem,'records':len(p['code']),'protected_positions':positions,'complete_pair_payload_bytes':len(positions)*5,'program_sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
+    OUT.mkdir(parents=True,exist_ok=True)
+    report={'image_sha256':text['image_sha256'],'normal_cached_text_cases':48,'debug_dispatch_cases':288,'protected_pair_cpu_cases':18,
+        'modules':modules,'normal_cached_text_field_3_neutral_verified':True,'protection_bit_selection_verified':True,
+        'all_field_3_semantics_verified':False,'genuine_pair_sidecars_recovered':0,'original_script_executed':False,'os_api_called':False,
+        'text_report_sha256':hashlib.sha256((source/'runner-record-field3.json').read_bytes()).hexdigest(),
+        'pair_report_sha256':hashlib.sha256((source/'runner-protected-pairs.json').read_bytes()).hexdigest()}
+    (OUT/'record-field3-evidence.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+    lines=['# 記錄第四欄、文字執行與受保護配套資料','',
+        '結論：第四欄不能丟棄。其bit 0參與受保護指令的拆分／合併，但普通快取文字執行本身不讀取它。兩個階段必須分開解讀。','',
+        '## 原13-byte格式','',
+        '| 位移 | 大小 | 內容 |','| --- | --- | --- |',
+        '| +0 | 1 | opcode |','| +1 | 4 | location，低20bit是來源位置 |','| +5 | 4 | operand |','| +9 | 4 | 第四欄Field_3；bit 0為保護選取旗標 |','',
+        '## 拆分階段：先前保護證據，本輪加入原CPU核對','',
+        '原Runner在0x611a94檢查record+9的bit 0，依原順序取最多500筆。0x611a99..611aa1把每筆opcode及operand共5bytes存到配套buffer；0x611aad..611ab0把原記錄改成opcode255、operand0。location及整個Field_3不動。',
+        '匯回端0x60dc00依同一個bit選記錄，0x60dc06..60dc0d將五位元組pair寫回opcode與operand，達到配套筆數即停止。部分配套只會填回前幾筆；不能拿不相關模組的pair補洞。',
+        '本輪直接執行這兩個native迴圈：10組合成旗標／500上限／部分回填案例，加上全部8組真實記錄版面。真實版面用製造的opcode30/operand0填入原缺口，再由native匯出抹除，結果逐byte還原為現有缺口版面；之後native匯回與既有Python還原器逐byte一致。這只驗證版面與寫入規則，製造的pair不是找回的原指令。','',
+        '## 普通文字執行：48個原CPU案例','',
+        '入口0x625f4a經原dispatch table。opcode2在0x625f85呼叫0x623030並傳decode-mode=0；opcode30在0x625fb7傳decode-mode=1。兩者使用的是record+5的字串索引，不以Field_3決定解碼。',
+        '原快取getter及opcode30的UTF-16逐word取負數／還原都由原CPU指令執行；只在VBScript解譯器0x62a730及錯誤通報0x6236e0供應明示回傳值，不真的執行文字。48案包含兩opcode、ASCII／繁體／空字串、成功／失敗，Field_3分別0、1、80000000、FFFFFFFF。傳入文字、PC與location、讀取範圍及緩衝還原皆一致；沒有讀到record+9..12。',
+        '因此目前沒有證據要求新VM在正常快取文字路徑加一個Field_3分支；保護資料的匯入邏輯仍必須保留。這不是原Runner全生命週期相等的證明。','',
+        '## 除錯前置：288個原CPU案例','',
+        '沿0x6307d0除錯callback執行模式0/1/2、來源位置0/471、相同／不同來源行、有／無中斷點與行通知。critical-section與Windows訊息API都是記錄邊界，未呼叫系統；中斷點容器查找供應有／無結果，但原wrapper及其選擇、步進判斷、訊息參數繼續由native執行。',
+        '路徑在next-dispatch或0x630260暫停等待函式前停止。0、1、FFFFFFFF三種Field_3的語義結果及記錄讀取相同。沒有真正等待／恢復除錯器，沒有載原程式。未測的uncached配置、其他opcode、載入與其餘生命週期仍保留all_field_3_semantics_verified=false。','',
+        '## 本輪修正的還原器邊界','',
+        'recover_qmacro_key_info.py先前允許分支target等於record_count；原跳轉／呼叫handler會拒絕該一格越界，因此這四種分支已改為嚴格小於。新增測試涵蓋opcode5/12/6/16恰好落在末端外一格。工作建立opcode24使用不同函式，目前保留原工具的邊界政策，未將跳轉契約直接套用。另依已提取的Script兩byte記錄數標頭驗證完整長度、末端opcode22與最多8byte尾端資料，拒絕標頭與內容筆數不符的候選。既有加密ZIP／CRC／大小／錯誤目標檢查保留，工具測試現在10項。','',
+        '## 完整填回仍缺什麼','',
+        '目前真正的key_info／merge_part仍是0份。需要正確對應各模組的原始配套資料，或含原指令的未拆分Script。配套內部每筆5bytes，完整需要以下解壓後大小：','',
+        '| 唯一腳本組 | 記錄總數 | 未解pair | 完整pair資料大小 |','| --- | ---: | ---: | ---: |']
+    for m in modules:lines.append(f'| {m["module"]} | {m["records"]} | {len(m["protected_positions"])} | {m["complete_pair_payload_bytes"]} bytes |')
+    lines+=['',
+        '這些是原始pair payload大小，並非ZIP大小。既有證據指出包裝為Base64 ZIP、成員1、ZIP密碼!；這與qmcfile封裝密碼不同。ZIP CRC／原始大小只證明完整性，不會驗證macro_id對應。沒有新配套資料被發現，原3261筆未解記錄數不變。','',
+        '## 回查','',
+        '- [文字與除錯原CPU觀測](../../verification/runner-record-field3.json)',
+        '- [拆分／合併原CPU觀測](../../verification/runner-protected-pairs.json)',
+        '- [模組位置與配套大小](record-field3-evidence.json)',
+        '- source/verify_runner_record_field3.py、verify_runner_protected_pairs.py為原工作區CPU生成器，需已保存Runner映像與Unicorn；ZIP只附來源／報告，不宣稱能從零生成原映像。',
+        '- source/recover_qmacro_key_info.py與test_qmacro_key_info.py為可攜離線工具及測試；沒有真實key_info就不會產生原指令。','']
+    (OUT/'記錄第四欄與保護資料.md').write_text('\n'.join(lines),encoding='utf8')
+    print(json.dumps({'modules':len(modules),'protected_records':sum(len(m['protected_positions']) for m in modules),'original_values_recovered':0}))
+
+
+if __name__=='__main__':main()

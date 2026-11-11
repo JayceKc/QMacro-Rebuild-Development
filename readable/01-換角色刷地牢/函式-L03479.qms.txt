@@ -1,0 +1,146 @@
+# 修理 — L03479
+# 入口 L03479，RETURN L03621；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L03479: Call QMLibrary.Delay((100))  # loc=2808 Runner=0x625fb0
+L03480: Call QMLibrary.Delay((100))  # loc=2809 Runner=0x625fb0
+L03481: last_test = Sgn(〔找不到對話圖標〕>=20)  # loc=2810 Runner=0x626047
+L03482: if last_test == 0: goto L03485  # loc=2810 Runner=0x62611c
+L03483: Call QMLibrary.Delay((100))  # loc=2811 Runner=0x625fb0
+L03484: goto L03619  # loc=2812 Runner=0x626e48
+L03485: Call QMLibrary.Delay((100))  # loc=2814 Runner=0x625fb0
+L03486: Call QMLibrary.Delay((30))  # loc=2815 Runner=0x625fb0
+L03487: last_test = Sgn(vbTrue)  # loc=2816 Runner=0x626047
+L03488: if last_test == 0: goto L03502  # loc=2816 Runner=0x62611c
+L03489: Call QMLibrary.Delay(100)  # loc=2817 Runner=0x625fb0
+L03490: 傳回值 = global.get(〔天選〕)  # loc=2818 Runner=0x6266f4
+L03491: 目前呼叫框架.暫存槽(1)=傳回值  # loc=2818 Runner=0x625fb0
+L03492: DM_RET=DM.FINDCOLOR(160,1,260,25,目前呼叫框架.暫存槽(1) & "-151515",0.9,0,INTX,INTY)  # loc=2818 Runner=0x625f7e
+L03493: last_test = Sgn((INTX>0))  # loc=2819 Runner=0x626047
+L03494: if last_test == 0: goto L03498  # loc=2819 Runner=0x62611c
+L03495: Call QMLibrary.Delay((30))  # loc=2820 Runner=0x625fb0
+L03496: goto L03502  # loc=2821 Runner=0x626126
+L03497: goto L03501  # loc=2822 Runner=0x626126
+L03498: Call QMLibrary.Delay((30))  # loc=2823 Runner=0x625fb0
+L03499: Call QMLibrary.KeyPress("Esc",g_iSimulateModeInVBSBlock,1)  # loc=2824 Runner=0x625fb0
+L03500: Call QMLibrary.Delay((2000))  # loc=2825 Runner=0x625fb0
+L03501: goto L03487  # loc=2826 Runner=0x626126
+L03502: Call QMLibrary.Delay(100)  # loc=2828 Runner=0x625fb0
+L03503: 〔找不到銀幣〕=0  # loc=2829 Runner=0x625f7e
+L03504: Call QMLibrary.Delay((100))  # loc=2830 Runner=0x625fb0
+L03505: Call QMLibrary.TracePrint(("修理.已启动"))  # loc=2831 Runner=0x625fb0
+L03506: last_test = Sgn((〔會員〕=0))  # loc=2832 Runner=0x626047
+L03507: if last_test == 0: goto L03543  # loc=2832 Runner=0x62611c
+L03508: Call QMLibrary.Delay((200))  # loc=2833 Runner=0x625fb0
+L03509: Call QMLibrary.TracePrint("打开alt+P修理")  # loc=2835 Runner=0x625fb0
+L03510: Call QMLibrary.KeyDown("alt",g_iSimulateModeInVBSBlock,1)  # loc=2836 Runner=0x625fb0
+L03511: Call QMLibrary.Delay((100))  # loc=2837 Runner=0x625fb0
+L03512: Call QMLibrary.KeyDown("alt",g_iSimulateModeInVBSBlock,1)  # loc=2838 Runner=0x625fb0
+L03513: Call QMLibrary.Delay((100))  # loc=2839 Runner=0x625fb0
+L03514: Call QMLibrary.KeyDown("P",g_iSimulateModeInVBSBlock,1)  # loc=2840 Runner=0x625fb0
+L03515: Call QMLibrary.Delay((100))  # loc=2841 Runner=0x625fb0
+L03516: Call QMLibrary.KeyDown("P",g_iSimulateModeInVBSBlock,1)  # loc=2842 Runner=0x625fb0
+L03517: Call QMLibrary.Delay((100))  # loc=2843 Runner=0x625fb0
+L03518: Call QMLibrary.KeyUp("P",g_iSimulateModeInVBSBlock,1)  # loc=2844 Runner=0x625fb0
+L03519: Call QMLibrary.Delay((100))  # loc=2845 Runner=0x625fb0
+L03520: Call QMLibrary.KeyUp("alt",g_iSimulateModeInVBSBlock,1)  # loc=2846 Runner=0x625fb0
+L03521: Call QMLibrary.Delay((4000))  # loc=2847 Runner=0x625fb0
+L03522: last_test = Sgn(〔多等幾秒修理〕=1)  # loc=2848 Runner=0x626047
+L03523: if last_test == 0: goto L03525  # loc=2848 Runner=0x62611c
+L03524: Call QMLibrary.Delay((5000))  # loc=2849 Runner=0x625fb0
+L03525: Call QMLibrary.Delay((50))  # loc=2853 Runner=0x625fb0
+L03526: Randomize  # loc=2854 Runner=0x625f7e
+L03527: XLX=INT(10*RND+1185)  # loc=2855 Runner=0x625f7e
+L03528: Randomize  # loc=2856 Runner=0x625f7e
+L03529: XLY=INT(5*RND+715)  # loc=2857 Runner=0x625f7e
+L03530: Call QMLibrary.Delay((50))  # loc=2858 Runner=0x625fb0
+L03531: Call DM.MOVETO(XLX,XLY)  # loc=2859 Runner=0x625fb0
+L03532: Call QMLibrary.Delay((500))  # loc=2860 Runner=0x625fb0
+L03533: Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)  # loc=2861 Runner=0x625fb0
+L03534: Call QMLibrary.Delay((50))  # loc=2862 Runner=0x625fb0
+L03535: Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)  # loc=2863 Runner=0x625fb0
+L03536: Call QMLibrary.Delay((600))  # loc=2864 Runner=0x625fb0
+L03537: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=2865 Runner=0x625fb0
+L03538: Call QMLibrary.Delay((1000))  # loc=2866 Runner=0x625fb0
+L03539: last_test = Sgn(〔多等幾秒修理〕=1)  # loc=2867 Runner=0x626047
+L03540: if last_test == 0: goto L03542  # loc=2867 Runner=0x62611c
+L03541: Call QMLibrary.Delay((3000))  # loc=2868 Runner=0x625fb0
+L03542: goto L03599  # loc=2869 Runner=0x626126
+L03543: last_test = Sgn((〔會員〕=1))  # loc=2870 Runner=0x626047
+L03544: if last_test == 0: goto L03595  # loc=2870 Runner=0x62611c
+L03545: Call QMLibrary.Delay((100))  # loc=2871 Runner=0x625fb0
+L03546: last_test = Sgn(vbTrue)  # loc=2872 Runner=0x626047
+L03547: if last_test == 0: goto L03594  # loc=2872 Runner=0x62611c
+L03548: Call QMLibrary.Delay((200))  # loc=2873 Runner=0x625fb0
+L03549: Call DM.MOVETO(960,550)  # loc=2874 Runner=0x625fb0
+L03550: Call QMLibrary.Delay((500))  # loc=2875 Runner=0x625fb0
+L03551: last_test = Sgn(〔多等幾秒修理〕=1)  # loc=2876 Runner=0x626047
+L03552: if last_test == 0: goto L03554  # loc=2876 Runner=0x62611c
+L03553: Call QMLibrary.Delay((2000))  # loc=2877 Runner=0x625fb0
+L03554: Call QMLibrary.KeyPress("G",g_iSimulateModeInVBSBlock,1)  # loc=2879 Runner=0x625fb0
+L03555: Call QMLibrary.Delay((100))  # loc=2880 Runner=0x625fb0
+L03556: Call QMLibrary.TracePrint("按下G修理")  # loc=2881 Runner=0x625fb0
+L03557: Call QMLibrary.Delay((4000))  # loc=2882 Runner=0x625fb0
+L03558: last_test = Sgn(〔多等幾秒修理〕=1)  # loc=2883 Runner=0x626047
+L03559: if last_test == 0: goto L03561  # loc=2883 Runner=0x62611c
+L03560: Call QMLibrary.Delay((4000))  # loc=2884 Runner=0x625fb0
+L03561: DM_RET=DM.FINDCOLOR(952,416,988,443,"D6C7B5-050505|EFEBD6-050505",0.9,0,INTX,INTY)  # loc=2886 Runner=0x625fb0
+L03562: last_test = Sgn((INTX>=0))  # loc=2887 Runner=0x626047
+L03563: if last_test == 0: goto L03574  # loc=2887 Runner=0x62611c
+L03564: Call QMLibrary.Delay((50))  # loc=2888 Runner=0x625fb0
+L03565: DM_RET=DM.FINDCOLOR(953,664,986,694,"D6C7B5-050505|EFEBD6-050505",0.9,0,INTX,INTY)  # loc=2889 Runner=0x625fb0
+L03566: last_test = Sgn((INTX>=0))  # loc=2890 Runner=0x626047
+L03567: if last_test == 0: goto L03574  # loc=2890 Runner=0x62611c
+L03568: Call QMLibrary.Delay((50))  # loc=2891 Runner=0x625fb0
+L03569: DM_RET=DM.FINDCOLOR(1145,714,1180,746,"D6C7B5-050505|EFEBD6-050505",0.9,0,INTX,INTY)  # loc=2892 Runner=0x625fb0
+L03570: last_test = Sgn((INTX>=0))  # loc=2893 Runner=0x626047
+L03571: if last_test == 0: goto L03574  # loc=2893 Runner=0x62611c
+L03572: Call QMLibrary.Delay((50))  # loc=2894 Runner=0x625fb0
+L03573: goto L03594  # loc=2895 Runner=0x626126
+L03574: Call QMLibrary.Delay((300))  # loc=2899 Runner=0x625fb0
+L03575: Call QMLibrary.KeyPress("Esc",g_iSimulateModeInVBSBlock,1)  # loc=2900 Runner=0x625fb0
+L03576: Call QMLibrary.Delay((2000))  # loc=2901 Runner=0x625fb0
+L03577: last_test = Sgn(〔多等幾秒修理〕=1)  # loc=2902 Runner=0x626047
+L03578: if last_test == 0: goto L03580  # loc=2902 Runner=0x62611c
+L03579: Call QMLibrary.Delay((2000))  # loc=2903 Runner=0x625fb0
+L03580: Call QMLibrary.Delay((100))  # loc=2905 Runner=0x625fb0
+L03581: 〔找不到銀幣〕=〔找不到銀幣〕+1  # loc=2906 Runner=0x625f7e
+L03582: Call QMLibrary.Delay((100))  # loc=2907 Runner=0x625fb0
+L03583: last_test = Sgn(〔找不到銀幣〕>=15)  # loc=2908 Runner=0x626047
+L03584: if last_test == 0: goto L03592  # loc=2908 Runner=0x62611c
+L03585: Call QMLibrary.Delay((100))  # loc=2909 Runner=0x625fb0
+L03586: Set 新呼叫框架=New 框架類別_〔找按鈕〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=2910 Runner=0x625f7e
+L03587: call L03642; resume L03588  # loc=2910 Runner=0x6261f2
+L03588: 目前呼叫框架.暫存槽(1)=傳回值  # loc=2910 Runner=0x625f7e
+L03589: Call QMLibrary.Delay((100))  # loc=2911 Runner=0x625fb0
+L03590: 〔找不到銀幣〕=0  # loc=2912 Runner=0x625f7e
+L03591: goto L03619  # loc=2913 Runner=0x626e48
+L03592: Call QMLibrary.Delay((100))  # loc=2915 Runner=0x625fb0
+L03593: goto L03546  # loc=2916 Runner=0x626126
+L03594: goto L03599  # loc=2916 Runner=0x626126
+L03595: last_test = Sgn((〔會員〕=2))  # loc=2917 Runner=0x626047
+L03596: if last_test == 0: goto L03599  # loc=2917 Runner=0x62611c
+L03597: Call QMLibrary.Delay((100))  # loc=2918 Runner=0x625fb0
+L03598: goto L03619  # loc=2919 Runner=0x626e48
+L03599: Call QMLibrary.Delay((50))  # loc=2922 Runner=0x625fb0
+L03600: Randomize  # loc=2923 Runner=0x625f7e
+L03601: XLXX=INT(50*RND+1070)  # loc=2924 Runner=0x625f7e
+L03602: Randomize  # loc=2925 Runner=0x625f7e
+L03603: XLYY=INT(18*RND+670)  # loc=2926 Runner=0x625f7e
+L03604: Call QMLibrary.Delay((50))  # loc=2927 Runner=0x625fb0
+L03605: Call DM.MOVETO(XLXX,XLYY)  # loc=2928 Runner=0x625fb0
+L03606: Call QMLibrary.Delay((300))  # loc=2929 Runner=0x625fb0
+L03607: Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)  # loc=2930 Runner=0x625fb0
+L03608: Call QMLibrary.Delay((50))  # loc=2931 Runner=0x625fb0
+L03609: Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)  # loc=2932 Runner=0x625fb0
+L03610: Call QMLibrary.Delay((600))  # loc=2933 Runner=0x625fb0
+L03611: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=2934 Runner=0x625fb0
+L03612: Call QMLibrary.Delay((1000))  # loc=2935 Runner=0x625fb0
+L03613: Call QMLibrary.KeyDown("Esc",g_iSimulateModeInVBSBlock,1)  # loc=2936 Runner=0x625fb0
+L03614: Call QMLibrary.Delay((75))  # loc=2937 Runner=0x625fb0
+L03615: Call QMLibrary.KeyUp("Esc",g_iSimulateModeInVBSBlock,1)  # loc=2938 Runner=0x625fb0
+L03616: Call QMLibrary.Delay((50))  # loc=2939 Runner=0x625fb0
+L03617: 〔是否修理次數〕=0  # loc=2940 Runner=0x625f7e
+L03618: Call QMLibrary.Delay((500))  # loc=2941 Runner=0x625fb0
+L03619: Call QMLibrary.Delay((100))  # loc=2943 Runner=0x625fb0
+L03620: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=2944 Runner=0x625f7e
+L03621: return caller  # loc=2944 Runner=0x626275

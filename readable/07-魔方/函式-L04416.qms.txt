@@ -1,0 +1,67 @@
+# 不使用Z技能 — L04416
+# 入口 L04416，RETURN L04479；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L04416: Call QMLibrary.Delay((300))  # loc=3877 Runner=0x625fb0
+L04417: Call QMLibrary.TracePrint(("不使用Z技能"))  # loc=3878 Runner=0x625fb0
+L04418: SET DM=CREATEOBJECT("dm.dmsoft")  # loc=3879 Runner=0x625f7e
+L04419: Call DM.SETSHOWERRORMSG(0)  # loc=3880 Runner=0x625fb0
+L04420: Call QMLibrary.Delay((300))  # loc=3881 Runner=0x625fb0
+L04421: last_test = Sgn(vbTrue)  # loc=3882 Runner=0x626047
+L04422: if last_test == 0: goto L04477  # loc=3882 Runner=0x62611c
+L04423: Call QMLibrary.Delay((100))  # loc=3883 Runner=0x625fb0
+L04424: Call QMLibrary.Delay(100)  # loc=3884 Runner=0x625fb0
+L04425: Randomize  # loc=3885 Runner=0x625f7e
+L04426: YC=INT(116*RND+66)  # loc=3886 Runner=0x625f7e
+L04427: Call QMLibrary.Delay((100))  # loc=3887 Runner=0x625fb0
+L04428: Call QMLibrary.TracePrint(("不使用Z技能延迟" & YC & "ms"))  # loc=3888 Runner=0x625fb0
+L04429: Call QMLibrary.Delay((100))  # loc=3889 Runner=0x625fb0
+L04430: Randomize  # loc=3890 Runner=0x625f7e
+L04431: SJ=INT(4*RND+0)  # loc=3891 Runner=0x625f7e
+L04432: Call QMLibrary.Delay((100))  # loc=3892 Runner=0x625fb0
+L04433: Call QMLibrary.TracePrint(("随机" & SJ))  # loc=3893 Runner=0x625fb0
+L04434: Call QMLibrary.Delay((500))  # loc=3894 Runner=0x625fb0
+L04435: Call QMLibrary.Delay((100))  # loc=3895 Runner=0x625fb0
+L04436: last_test = Sgn(SJ=0)  # loc=3896 Runner=0x626047
+L04437: if last_test == 0: goto L04443  # loc=3896 Runner=0x62611c
+L04438: Call QMLibrary.Delay((100))  # loc=3897 Runner=0x625fb0
+L04439: Set 新呼叫框架=New 框架類別_〔隨機技能一〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=3898 Runner=0x625f7e
+L04440: call L03775; resume L04441  # loc=3898 Runner=0x6261f2
+L04441: 目前呼叫框架.暫存槽(1)=傳回值  # loc=3898 Runner=0x625f7e
+L04442: goto L04463  # loc=3898 Runner=0x626126
+L04443: last_test = Sgn(SJ=1)  # loc=3899 Runner=0x626047
+L04444: if last_test == 0: goto L04450  # loc=3899 Runner=0x62611c
+L04445: Call QMLibrary.Delay((100))  # loc=3900 Runner=0x625fb0
+L04446: Set 新呼叫框架=New 框架類別_〔隨機技能二〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=3901 Runner=0x625f7e
+L04447: call L03916; resume L04448  # loc=3901 Runner=0x6261f2
+L04448: 目前呼叫框架.暫存槽(2)=傳回值  # loc=3901 Runner=0x625f7e
+L04449: goto L04463  # loc=3901 Runner=0x626126
+L04450: last_test = Sgn(SJ=2)  # loc=3902 Runner=0x626047
+L04451: if last_test == 0: goto L04457  # loc=3902 Runner=0x62611c
+L04452: Call QMLibrary.Delay((100))  # loc=3903 Runner=0x625fb0
+L04453: Set 新呼叫框架=New 框架類別_〔隨機技能三〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=3904 Runner=0x625f7e
+L04454: call L04057; resume L04455  # loc=3904 Runner=0x6261f2
+L04455: 目前呼叫框架.暫存槽(3)=傳回值  # loc=3904 Runner=0x625f7e
+L04456: goto L04463  # loc=3904 Runner=0x626126
+L04457: last_test = Sgn(SJ=3)  # loc=3905 Runner=0x626047
+L04458: if last_test == 0: goto L04463  # loc=3905 Runner=0x62611c
+L04459: Call QMLibrary.Delay((100))  # loc=3906 Runner=0x625fb0
+L04460: Set 新呼叫框架=New 框架類別_〔隨機技能四〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=3907 Runner=0x625f7e
+L04461: call L04198; resume L04462  # loc=3907 Runner=0x6261f2
+L04462: 目前呼叫框架.暫存槽(4)=傳回值  # loc=3907 Runner=0x625f7e
+L04463: Call QMLibrary.Delay((200))  # loc=3909 Runner=0x625fb0
+L04464: 傳回值 = global.get(〔使用覺醒〕)  # loc=3910 Runner=0x6266f4
+L04465: 目前呼叫框架.暫存槽(5)=傳回值  # loc=3910 Runner=0x625f7e
+L04466: last_test = Sgn(目前呼叫框架.暫存槽(5)=1)  # loc=3910 Runner=0x626047
+L04467: if last_test == 0: goto L04475  # loc=3910 Runner=0x62611c
+L04468: Call QMLibrary.Delay((100))  # loc=3911 Runner=0x625fb0
+L04469: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=3912 Runner=0x625fb0
+L04470: Call QMLibrary.Delay((100))  # loc=3913 Runner=0x625fb0
+L04471: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=3914 Runner=0x625fb0
+L04472: Call QMLibrary.Delay((100))  # loc=3915 Runner=0x625fb0
+L04473: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=3916 Runner=0x625fb0
+L04474: Call QMLibrary.Delay((100))  # loc=3917 Runner=0x625fb0
+L04475: Call QMLibrary.Delay((100))  # loc=3919 Runner=0x625fb0
+L04476: goto L04421  # loc=3920 Runner=0x626126
+L04477: Call QMLibrary.Delay((100))  # loc=3921 Runner=0x625fb0
+L04478: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=3922 Runner=0x625f7e
+L04479: return caller  # loc=3922 Runner=0x626275

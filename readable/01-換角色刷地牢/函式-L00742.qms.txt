@@ -1,0 +1,98 @@
+# 覺醒 — L00742
+# 入口 L00742，RETURN L00836；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L00742: Call QMLibrary.Delay((100))  # loc=459 Runner=0x625fb0
+L00743: SET DM=CREATEOBJECT("dm.dmsoft")  # loc=460 Runner=0x625f7e
+L00744: Call DM.SETSHOWERRORMSG(0)  # loc=461 Runner=0x625fb0
+L00745: Call QMLibrary.TracePrint(("觉醒.已启动"))  # loc=462 Runner=0x625fb0
+L00746: Call QMLibrary.Delay((100))  # loc=463 Runner=0x625fb0
+L00747: 傳回值 = global.get(〔覺醒釋放〕)  # loc=464 Runner=0x6266f4
+L00748: 目前呼叫框架.暫存槽(1)=傳回值  # loc=464 Runner=0x625f7e
+L00749: last_test = Sgn(目前呼叫框架.暫存槽(1)=0)  # loc=464 Runner=0x626047
+L00750: if last_test == 0: goto L00782  # loc=464 Runner=0x62611c
+L00751: last_test = Sgn(vbTrue)  # loc=465 Runner=0x626047
+L00752: if last_test == 0: goto L00781  # loc=465 Runner=0x62611c
+L00753: Call QMLibrary.Delay((1000))  # loc=466 Runner=0x625fb0
+L00754: DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss.bmp|C:\users\mymacro\boss3.bmp|C:\users\mymacro\boss4.bmp","151515",0.8,0,INTX,INTY)  # loc=468 Runner=0x625fb0
+L00755: last_test = Sgn((INTX>=0))  # loc=469 Runner=0x626047
+L00756: if last_test == 0: goto L00780  # loc=469 Runner=0x62611c
+L00757: Call QMLibrary.Delay((500))  # loc=471 Runner=0x625fb0
+L00758: DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\bstou.bmp","000000",0.7,0,INTX,INTY)  # loc=472 Runner=0x625fb0
+L00759: last_test = Sgn((INTX<0))  # loc=473 Runner=0x626047
+L00760: if last_test == 0: goto L00780  # loc=473 Runner=0x62611c
+L00761: Call QMLibrary.Delay((500))  # loc=474 Runner=0x625fb0
+L00762: DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\bstou.bmp","000000",0.7,0,INTX,INTY)  # loc=475 Runner=0x625fb0
+L00763: last_test = Sgn((INTX<0))  # loc=476 Runner=0x626047
+L00764: if last_test == 0: goto L00780  # loc=476 Runner=0x62611c
+L00765: Call QMLibrary.Delay((100))  # loc=477 Runner=0x625fb0
+L00766: DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss.bmp|C:\users\mymacro\boss3.bmp|C:\users\mymacro\boss4.bmp","151515",0.8,0,INTX,INTY)  # loc=478 Runner=0x625fb0
+L00767: last_test = Sgn((INTX>=0))  # loc=479 Runner=0x626047
+L00768: if last_test == 0: goto L00780  # loc=479 Runner=0x62611c
+L00769: Call QMLibrary.Delay((50))  # loc=481 Runner=0x625fb0
+L00770: Call QMLibrary.TracePrint(("第二次确认很近.确认释放觉醒技能"))  # loc=482 Runner=0x625fb0
+L00771: Call QMLibrary.Delay((100))  # loc=483 Runner=0x625fb0
+L00772: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=484 Runner=0x625fb0
+L00773: Call QMLibrary.Delay((100))  # loc=485 Runner=0x625fb0
+L00774: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=486 Runner=0x625fb0
+L00775: Call QMLibrary.Delay((100))  # loc=487 Runner=0x625fb0
+L00776: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=488 Runner=0x625fb0
+L00777: Call QMLibrary.Delay((100))  # loc=489 Runner=0x625fb0
+L00778: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=490 Runner=0x625fb0
+L00779: Call QMLibrary.Delay((100))  # loc=491 Runner=0x625fb0
+L00780: goto L00751  # loc=492 Runner=0x626126
+L00781: goto L00834  # loc=493 Runner=0x626126
+L00782: 傳回值 = global.get(〔覺醒釋放〕)  # loc=497 Runner=0x6266f4
+L00783: 目前呼叫框架.暫存槽(2)=傳回值  # loc=497 Runner=0x625f7e
+L00784: last_test = Sgn(目前呼叫框架.暫存槽(2)=1)  # loc=497 Runner=0x626047
+L00785: if last_test == 0: goto L00792  # loc=497 Runner=0x62611c
+L00786: last_test = Sgn(vbTrue)  # loc=498 Runner=0x626047
+L00787: if last_test == 0: goto L00791  # loc=498 Runner=0x62611c
+L00788: Call QMLibrary.Delay(5000)  # loc=499 Runner=0x625fb0
+L00789: Call QMLibrary.Delay(5000)  # loc=500 Runner=0x625fb0
+L00790: goto L00786  # loc=501 Runner=0x626126
+L00791: goto L00834  # loc=501 Runner=0x626126
+L00792: 傳回值 = global.get(〔覺醒釋放〕)  # loc=502 Runner=0x6266f4
+L00793: 目前呼叫框架.暫存槽(3)=傳回值  # loc=502 Runner=0x625f7e
+L00794: last_test = Sgn(目前呼叫框架.暫存槽(3)=2)  # loc=502 Runner=0x626047
+L00795: if last_test == 0: goto L00834  # loc=502 Runner=0x62611c
+L00796: last_test = Sgn(vbTrue)  # loc=503 Runner=0x626047
+L00797: if last_test == 0: goto L00834  # loc=503 Runner=0x62611c
+L00798: Call QMLibrary.Delay((1000))  # loc=504 Runner=0x625fb0
+L00799: DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss.bmp|C:\users\mymacro\boss3.bmp|C:\users\mymacro\boss4.bmp","151515",0.8,0,INTX,INTY)  # loc=506 Runner=0x625fb0
+L00800: last_test = Sgn((INTX>=0))  # loc=507 Runner=0x626047
+L00801: if last_test == 0: goto L00833  # loc=507 Runner=0x62611c
+L00802: Call QMLibrary.Delay((300))  # loc=509 Runner=0x625fb0
+L00803: DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\bstou.bmp","000000",0.7,0,INTX,INTY)  # loc=510 Runner=0x625fb0
+L00804: last_test = Sgn((INTX<0))  # loc=511 Runner=0x626047
+L00805: if last_test == 0: goto L00833  # loc=511 Runner=0x62611c
+L00806: Call QMLibrary.Delay((300))  # loc=512 Runner=0x625fb0
+L00807: Call FindPic(1592,37,1892,297,"C:\users\mymacro\bstou.bmp",0.5,INTX,INTY)  # loc=513 Runner=0x625fb0
+L00808: last_test = Sgn((INTX<0))  # loc=514 Runner=0x626047
+L00809: if last_test == 0: goto L00833  # loc=514 Runner=0x62611c
+L00810: Call QMLibrary.Delay((300))  # loc=516 Runner=0x625fb0
+L00811: DM_RET=DM.FINDPIC(1592,37,1892,297,"C:\users\mymacro\bstou.bmp","000000",0.7,0,INTX,INTY)  # loc=517 Runner=0x625fb0
+L00812: last_test = Sgn((INTX<0))  # loc=518 Runner=0x626047
+L00813: if last_test == 0: goto L00833  # loc=518 Runner=0x62611c
+L00814: Call QMLibrary.Delay((300))  # loc=519 Runner=0x625fb0
+L00815: Call FindPic(1592,37,1892,297,"C:\users\mymacro\bstou.bmp",0.5,INTX,INTY)  # loc=520 Runner=0x625fb0
+L00816: last_test = Sgn((INTX<0))  # loc=521 Runner=0x626047
+L00817: if last_test == 0: goto L00833  # loc=521 Runner=0x62611c
+L00818: Call QMLibrary.Delay((100))  # loc=522 Runner=0x625fb0
+L00819: DM_RET=DM.FINDPIC(525,10,730,135,"C:\users\mymacro\boss.bmp|C:\users\mymacro\boss3.bmp|C:\users\mymacro\boss4.bmp","151515",0.8,0,INTX,INTY)  # loc=523 Runner=0x625fb0
+L00820: last_test = Sgn((INTX>=0))  # loc=524 Runner=0x626047
+L00821: if last_test == 0: goto L00833  # loc=524 Runner=0x62611c
+L00822: Call QMLibrary.Delay((50))  # loc=526 Runner=0x625fb0
+L00823: Call QMLibrary.TracePrint(("第二次确认很近.确认释放觉醒技能"))  # loc=527 Runner=0x625fb0
+L00824: Call QMLibrary.Delay((100))  # loc=528 Runner=0x625fb0
+L00825: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=529 Runner=0x625fb0
+L00826: Call QMLibrary.Delay((100))  # loc=530 Runner=0x625fb0
+L00827: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=531 Runner=0x625fb0
+L00828: Call QMLibrary.Delay((100))  # loc=532 Runner=0x625fb0
+L00829: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=533 Runner=0x625fb0
+L00830: Call QMLibrary.Delay((100))  # loc=534 Runner=0x625fb0
+L00831: Call QMLibrary.KeyPress("V",g_iSimulateModeInVBSBlock,1)  # loc=535 Runner=0x625fb0
+L00832: Call QMLibrary.Delay((100))  # loc=536 Runner=0x625fb0
+L00833: goto L00796  # loc=537 Runner=0x626126
+L00834: Call QMLibrary.Delay((100))  # loc=545 Runner=0x625fb0
+L00835: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=546 Runner=0x625f7e
+L00836: return caller  # loc=546 Runner=0x626275

@@ -1,0 +1,48 @@
+# 返回莊園 — L00879
+# 入口 L00879，RETURN L00923；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L00879: Call QMLibrary.Delay(500)  # loc=865 Runner=0x625fb0
+L00880: last_test = Sgn(vbTrue)  # loc=866 Runner=0x626047
+L00881: if last_test == 0: goto L00911  # loc=866 Runner=0x62611c
+L00882: Call QMLibrary.Delay(500)  # loc=867 Runner=0x625fb0
+L00883: Call QMLibrary.KeyPress("F2",g_iSimulateModeInVBSBlock,1)  # loc=868 Runner=0x625fb0
+L00884: Call QMLibrary.Delay(4000)  # loc=869 Runner=0x625fb0
+L00885: DM_RET=DM.FINDPIC(1303,277,1388,790,"C:\users\mymacro\zhuangy1.bmp|C:\users\mymacro\zhuangy2.bmp|C:\users\mymacro\zhuangy3.bmp","191919",0.8,0,INTX,INTY)  # loc=871 Runner=0x625fb0
+L00886: last_test = Sgn((INTX>=0))  # loc=872 Runner=0x626047
+L00887: if last_test == 0: goto L00909  # loc=872 Runner=0x62611c
+L00888: Call QMLibrary.Delay(200)  # loc=873 Runner=0x625fb0
+L00889: XX=INTX+15  # loc=874 Runner=0x625f7e
+L00890: YY=INTY+15  # loc=875 Runner=0x625f7e
+L00891: Call QMLibrary.Delay(100)  # loc=876 Runner=0x625fb0
+L00892: Call DM.MOVETO(XX,YY)  # loc=877 Runner=0x625fb0
+L00893: Call QMLibrary.Delay(300)  # loc=878 Runner=0x625fb0
+L00894: Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)  # loc=879 Runner=0x625fb0
+L00895: Call QMLibrary.Delay(100)  # loc=880 Runner=0x625fb0
+L00896: Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)  # loc=881 Runner=0x625fb0
+L00897: Call QMLibrary.Delay(700)  # loc=882 Runner=0x625fb0
+L00898: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=883 Runner=0x625fb0
+L00899: Call QMLibrary.Delay(1500)  # loc=884 Runner=0x625fb0
+L00900: Call DM.MOVETO(1454,853)  # loc=885 Runner=0x625fb0
+L00901: Call QMLibrary.Delay(300)  # loc=886 Runner=0x625fb0
+L00902: Call QMLibrary.MouseClick(3,g_iSimulateModeInVBSBlock,1)  # loc=887 Runner=0x625fb0
+L00903: Call QMLibrary.Delay(100)  # loc=888 Runner=0x625fb0
+L00904: Call QMLibrary.MouseClick(6,g_iSimulateModeInVBSBlock,1)  # loc=889 Runner=0x625fb0
+L00905: Call QMLibrary.Delay(700)  # loc=890 Runner=0x625fb0
+L00906: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=891 Runner=0x625fb0
+L00907: Call QMLibrary.Delay(12000)  # loc=892 Runner=0x625fb0
+L00908: goto L00911  # loc=893 Runner=0x626126
+L00909: Call QMLibrary.Delay(500)  # loc=895 Runner=0x625fb0
+L00910: goto L00880  # loc=896 Runner=0x626126
+L00911: Call QMLibrary.Delay(500)  # loc=897 Runner=0x625fb0
+L00912: last_test = Sgn(vbTrue)  # loc=898 Runner=0x626047
+L00913: if last_test == 0: goto L00921  # loc=899 Runner=0x62611c
+L00914: Call QMLibrary.Delay(1000)  # loc=900 Runner=0x625fb0
+L00915: DM_RET=DM.FINDCOLOR(160,1,260,25,〔天選〕 & "-151515",0.9,0,INTX,INTY)  # loc=902 Runner=0x625fb0
+L00916: last_test = Sgn((INTX>=0))  # loc=903 Runner=0x626047
+L00917: if last_test == 0: goto L00920  # loc=903 Runner=0x62611c
+L00918: Call QMLibrary.Delay(4000)  # loc=904 Runner=0x625fb0
+L00919: goto L00921  # loc=905 Runner=0x626126
+L00920: goto L00912  # loc=906 Runner=0x626126
+L00921: Call QMLibrary.Delay(200)  # loc=908 Runner=0x625fb0
+L00922: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=0 Runner=0x625f7e
+L00923: return caller  # loc=0 Runner=0x626275

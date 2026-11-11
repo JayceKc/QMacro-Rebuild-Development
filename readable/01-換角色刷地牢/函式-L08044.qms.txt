@@ -1,0 +1,280 @@
+# 找怪 — L08044
+# 入口 L08044，RETURN L08320；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L08044: Call QMLibrary.Delay((200))  # loc=6951 Runner=0x625fb0
+L08045: SET DM=CREATEOBJECT("dm.dmsoft")  # loc=6952 Runner=0x625f7e
+L08046: Call DM.SETSHOWERRORMSG(0)  # loc=6953 Runner=0x625fb0
+L08047: Call QMLibrary.Delay(100)  # loc=6954 Runner=0x625fb0
+L08048: 〔鼠標〕=DM.ENABLEREALMOUSE(2,10,60)  # loc=6955 Runner=0x625fb0
+L08049: Call QMLibrary.TracePrint("鼠标" & 〔鼠標〕)  # loc=6956 Runner=0x625fb0
+L08050: Call QMLibrary.Delay(100)  # loc=6957 Runner=0x625fb0
+L08051: Call QMLibrary.TracePrint(("走位>>找怪.已开启"))  # loc=6958 Runner=0x625fb0
+L08052: XX1=1743.0  # loc=6959 Runner=0x625f7e
+L08053: YY1=168.0  # loc=6960 Runner=0x625f7e
+L08054: 〔派〕=3.1415926  # loc=6961 Runner=0x625f7e
+L08055: 〔無目標〕=0  # loc=6962 Runner=0x625f7e
+L08056: 〔幾次〕=0  # loc=6963 Runner=0x625f7e
+L08057: Call QMLibrary.Delay((100))  # loc=6964 Runner=0x625fb0
+L08058: last_test = Sgn(vbTrue)  # loc=6965 Runner=0x626047
+L08059: if last_test == 0: goto L08318  # loc=6965 Runner=0x62611c
+L08060: Call QMLibrary.Delay((50))  # loc=6966 Runner=0x625fb0
+L08061: Call QMLibrary.Delay((50))  # loc=6968 Runner=0x625fb0
+L08062: INTXX=0  # loc=6969 Runner=0x625f7e
+L08063: INTYY=0  # loc=6970 Runner=0x625f7e
+L08064: Call QMLibrary.Delay((50))  # loc=6971 Runner=0x625fb0
+L08065: 傳回值 = global.get(〔按鈕界面〕)  # loc=6972 Runner=0x6266f4
+L08066: 目前呼叫框架.暫存槽(1)=傳回值  # loc=6972 Runner=0x625f7e
+L08067: last_test = Sgn(目前呼叫框架.暫存槽(1)=4)  # loc=6972 Runner=0x626047
+L08068: if last_test == 0: goto L08080  # loc=6972 Runner=0x62611c
+L08069: Call QMLibrary.Delay((50))  # loc=6973 Runner=0x625fb0
+L08070: DM_RET=DM.FINDCOLOR(1610,60,1880,286,"ffbc1e-070707|fdba21-070707|fdbc1f-070707|FDB927-070707|FCB916-070707|FFBC18-070707|FDBB1F-070707|FEBD11-070707|FFC225-070707|FCBD1E-070707|FBBE11-070707|FEC620-070707|F7BE29-070707|F9BE22-070707|FFBC24-070707|FFB619-070707|EEB826-070707|FFBD27-070707|F7C136-070707",1,4,INTXX,INTYY)  # loc=6974 Runner=0x625fb0
+L08071: last_test = Sgn((INTXX>0))  # loc=6975 Runner=0x626047
+L08072: if last_test == 0: goto L08080  # loc=6975 Runner=0x62611c
+L08073: Call QMLibrary.Delay((50))  # loc=6976 Runner=0x625fb0
+L08074: Set 新呼叫框架=New 框架類別_〔計算走位〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=6977 Runner=0x625f7e
+L08075: call L07706; resume L08076  # loc=6977 Runner=0x6261f2
+L08076: 目前呼叫框架.暫存槽(2)=傳回值  # loc=6977 Runner=0x625f7e
+L08077: 〔無目標〕=0  # loc=6978 Runner=0x625f7e
+L08078: Call QMLibrary.Delay((50))  # loc=6979 Runner=0x625fb0
+L08079: goto L08061  # loc=6980 Runner=0x626e48
+L08080: Call QMLibrary.Delay((50))  # loc=6983 Runner=0x625fb0
+L08081: 傳回值 = global.get(〔層數〕)  # loc=6984 Runner=0x6266f4
+L08082: 目前呼叫框架.暫存槽(3)=傳回值  # loc=6984 Runner=0x625f7e
+L08083: 傳回值 = global.get(〔按鈕界面〕)  # loc=6984 Runner=0x6266f4
+L08084: 目前呼叫框架.暫存槽(4)=傳回值  # loc=6984 Runner=0x625f7e
+L08085: last_test = Sgn(目前呼叫框架.暫存槽(4)=3 and 目前呼叫框架.暫存槽(3)=3)  # loc=6984 Runner=0x626047
+L08086: if last_test == 0: goto L08096  # loc=6984 Runner=0x62611c
+L08087: Call QMLibrary.Delay((50))  # loc=6985 Runner=0x625fb0
+L08088: DM_RET=DM.FINDPIC(500,50,1460,700,"C:\users\mymacro\tfliehen1.bmp|C:\users\mymacro\tfliehen2.bmp|C:\users\mymacro\tfliehen3.bmp|C:\users\mymacro\tfliehen4.bmp|C:\users\mymacro\tfliehen5.bmp|C:\users\mymacro\tfliehen6.bmp","151515",0.8,1,INTXX,INTYY)  # loc=6987 Runner=0x625fb0
+L08089: last_test = Sgn((INTXX>0))  # loc=6988 Runner=0x626047
+L08090: if last_test == 0: goto L08096  # loc=6988 Runner=0x62611c
+L08091: Call QMLibrary.Delay((50))  # loc=6989 Runner=0x625fb0
+L08092: Call DM.MOVETO(INTXX+30,INTYY+90)  # loc=6990 Runner=0x625fb0
+L08093: Call QMLibrary.Delay((100))  # loc=6991 Runner=0x625fb0
+L08094: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6992 Runner=0x625fb0
+L08095: Call QMLibrary.Delay((50))  # loc=6993 Runner=0x625fb0
+L08096: Call QMLibrary.Delay((50))  # loc=6996 Runner=0x625fb0
+L08097: 傳回值 = global.get(〔按鈕界面〕)  # loc=6997 Runner=0x6266f4
+L08098: 目前呼叫框架.暫存槽(5)=傳回值  # loc=6997 Runner=0x625f7e
+L08099: last_test = Sgn(目前呼叫框架.暫存槽(5)=3)  # loc=6997 Runner=0x626047
+L08100: if last_test == 0: goto L08119  # loc=6997 Runner=0x62611c
+L08101: Call QMLibrary.Delay((50))  # loc=6998 Runner=0x625fb0
+L08102: 傳回值 = global.get(〔層數〕)  # loc=6999 Runner=0x6266f4
+L08103: 目前呼叫框架.暫存槽(6)=傳回值  # loc=6999 Runner=0x625f7e
+L08104: 傳回值 = global.get(〔層數〕)  # loc=6999 Runner=0x6266f4
+L08105: 目前呼叫框架.暫存槽(7)=傳回值  # loc=6999 Runner=0x625f7e
+L08106: last_test = Sgn(目前呼叫框架.暫存槽(7)=1 or 目前呼叫框架.暫存槽(6)=2)  # loc=6999 Runner=0x626047
+L08107: if last_test == 0: goto L08119  # loc=6999 Runner=0x62611c
+L08108: Call QMLibrary.Delay((50))  # loc=7000 Runner=0x625fb0
+L08109: DM_RET=DM.FINDCOLOR(1610,60,1880,286,"4e88ff-030303|7fd6ff-030303|63a7ff-030303|5796F7-030303|528CF6-030303|649AFA-030303",1,4,INTXX,INTYY)  # loc=7002 Runner=0x625fb0
+L08110: last_test = Sgn((INTXX>0))  # loc=7003 Runner=0x626047
+L08111: if last_test == 0: goto L08119  # loc=7003 Runner=0x62611c
+L08112: Call QMLibrary.Delay((50))  # loc=7005 Runner=0x625fb0
+L08113: Set 新呼叫框架=New 框架類別_〔計算走位〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=7006 Runner=0x625f7e
+L08114: call L07706; resume L08115  # loc=7006 Runner=0x6261f2
+L08115: 目前呼叫框架.暫存槽(8)=傳回值  # loc=7006 Runner=0x625f7e
+L08116: 〔無目標〕=0  # loc=7007 Runner=0x625f7e
+L08117: Call QMLibrary.Delay((50))  # loc=7008 Runner=0x625fb0
+L08118: goto L08061  # loc=7009 Runner=0x626e48
+L08119: Call QMLibrary.Delay((50))  # loc=7013 Runner=0x625fb0
+L08120: 傳回值 = global.get(〔按鈕界面〕)  # loc=7014 Runner=0x6266f4
+L08121: 目前呼叫框架.暫存槽(9)=傳回值  # loc=7014 Runner=0x625f7e
+L08122: last_test = Sgn(目前呼叫框架.暫存槽(9)=4)  # loc=7014 Runner=0x626047
+L08123: if last_test == 0: goto L08143  # loc=7014 Runner=0x62611c
+L08124: Call QMLibrary.Delay((50))  # loc=7015 Runner=0x625fb0
+L08125: DM_RET=DM.FINDPIC(1,1,1920,1080,"C:\users\mymacro\chibang1.bmp|C:\users\mymacro\chibang2.bmp|C:\users\mymacro\chibang3.bmp|C:\users\mymacro\chibang4.bmp|C:\users\mymacro\chibang5.bmp|C:\users\mymacro\chibang6.bmp|C:\users\mymacro\chibang7.bmp|C:\users\mymacro\chibang8.bmp|C:\users\mymacro\chibang9.bmp|C:\users\mymacro\chibang10.bmp|C:\users\mymacro\chibang11.bmp|C:\users\mymacro\chibang12.bmp|C:\users\mymacro\chibang13.bmp|C:\users\mymacro\chibang14.bmp|C:\users\mymacro\chibang15.bmp|","151515",0.8,1,INTXX,INTYY)  # loc=7016 Runner=0x625fb0
+L08126: last_test = Sgn((INTXX>0) and (INTYY<=530))  # loc=7017 Runner=0x626047
+L08127: if last_test == 0: goto L08135  # loc=7017 Runner=0x62611c
+L08128: Call QMLibrary.Delay((50))  # loc=7018 Runner=0x625fb0
+L08129: Call DM.MOVETO(INTXX,INTYY+250)  # loc=7019 Runner=0x625fb0
+L08130: Call QMLibrary.Delay((50))  # loc=7020 Runner=0x625fb0
+L08131: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=7021 Runner=0x625fb0
+L08132: Call QMLibrary.Delay((50))  # loc=7022 Runner=0x625fb0
+L08133: goto L08061  # loc=7023 Runner=0x626e48
+L08134: goto L08143  # loc=7023 Runner=0x626126
+L08135: last_test = Sgn((INTXX>0) and (INTYY>530))  # loc=7024 Runner=0x626047
+L08136: if last_test == 0: goto L08143  # loc=7024 Runner=0x62611c
+L08137: Call QMLibrary.Delay((50))  # loc=7025 Runner=0x625fb0
+L08138: Call DM.MOVETO(INTXX,INTYY)  # loc=7026 Runner=0x625fb0
+L08139: Call QMLibrary.Delay((50))  # loc=7027 Runner=0x625fb0
+L08140: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=7028 Runner=0x625fb0
+L08141: Call QMLibrary.Delay((50))  # loc=7029 Runner=0x625fb0
+L08142: goto L08061  # loc=7030 Runner=0x626e48
+L08143: Call QMLibrary.Delay((50))  # loc=7033 Runner=0x625fb0
+L08144: DM_RET=DM.FINDCOLOR(1610,60,1880,286,"a61e1c-070707|931416-070707|6c0909-070707|9D0E24-070707|8D1223-070707|98152A-070707|961728-070707",1,4,INTXX,INTYY)  # loc=7035 Runner=0x625fb0
+L08145: last_test = Sgn((INTXX>0))  # loc=7036 Runner=0x626047
+L08146: if last_test == 0: goto L08154  # loc=7036 Runner=0x62611c
+L08147: Call QMLibrary.Delay((50))  # loc=7038 Runner=0x625fb0
+L08148: Set 新呼叫框架=New 框架類別_〔計算走位〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=7039 Runner=0x625f7e
+L08149: call L07706; resume L08150  # loc=7039 Runner=0x6261f2
+L08150: 目前呼叫框架.暫存槽(10)=傳回值  # loc=7039 Runner=0x625f7e
+L08151: 〔無目標〕=0  # loc=7040 Runner=0x625f7e
+L08152: Call QMLibrary.Delay((50))  # loc=7041 Runner=0x625fb0
+L08153: goto L08061  # loc=7042 Runner=0x626e48
+L08154: Call QMLibrary.Delay((30))  # loc=7044 Runner=0x625fb0
+L08155: 傳回值 = global.get(〔圖四〕)  # loc=7045 Runner=0x6266f4
+L08156: 目前呼叫框架.暫存槽(11)=傳回值  # loc=7045 Runner=0x625f7e
+L08157: 傳回值 = global.get(〔按鈕界面〕)  # loc=7045 Runner=0x6266f4
+L08158: 目前呼叫框架.暫存槽(12)=傳回值  # loc=7045 Runner=0x625f7e
+L08159: last_test = Sgn(目前呼叫框架.暫存槽(12)=4 and 目前呼叫框架.暫存槽(11)=402)  # loc=7045 Runner=0x626047
+L08160: if last_test == 0: goto L08165  # loc=7045 Runner=0x62611c
+L08161: Call QMLibrary.Delay((20))  # loc=7046 Runner=0x625fb0
+L08162: Set 新呼叫框架=New 框架類別_〔圖402檢測跳躍〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=7047 Runner=0x625f7e
+L08163: call L13351; resume L08164  # loc=7047 Runner=0x6261f2
+L08164: 目前呼叫框架.暫存槽(13)=傳回值  # loc=7047 Runner=0x625f7e
+L08165: Call QMLibrary.Delay((30))  # loc=7049 Runner=0x625fb0
+L08166: 傳回值 = global.get(〔按鈕界面〕)  # loc=7051 Runner=0x6266f4
+L08167: 目前呼叫框架.暫存槽(14)=傳回值  # loc=7051 Runner=0x625f7e
+L08168: last_test = Sgn(目前呼叫框架.暫存槽(14)=4)  # loc=7051 Runner=0x626047
+L08169: if last_test == 0: goto L08191  # loc=7051 Runner=0x62611c
+L08170: 傳回值 = global.get(〔圖四〕)  # loc=7052 Runner=0x6266f4
+L08171: 目前呼叫框架.暫存槽(15)=傳回值  # loc=7052 Runner=0x625f7e
+L08172: last_test = Sgn(目前呼叫框架.暫存槽(15)=405)  # loc=7052 Runner=0x626047
+L08173: if last_test == 0: goto L08176  # loc=7052 Runner=0x62611c
+L08174: DM_RET=DM.FINDPIC(613,222,1310,715,"C:\users\mymacro\xuetiao1.bmp|C:\users\mymacro\xuetiao2.bmp|C:\users\mymacro\xuetiao5.bmp|C:\users\mymacro\xuetiao101.bmp|C:\users\mymacro\xuetiao102.bmp|C:\users\mymacro\xuetiao103.bmp|C:\users\mymacro\xuetiao104.bmp|C:\users\mymacro\xuetiao105.bmp|C:\users\mymacro\xuetiao106.bmp","151515",0.9,2,INTXX,INTYY)  # loc=7053 Runner=0x625fb0
+L08175: goto L08177  # loc=7054 Runner=0x626126
+L08176: DM_RET=DM.FINDPIC(613,222,1310,715,"C:\users\mymacro\xuetiao1.bmp|C:\users\mymacro\xuetiao2.bmp|C:\users\mymacro\xuetiao5.bmp|C:\users\mymacro\xuetiao101.bmp|C:\users\mymacro\xuetiao102.bmp|C:\users\mymacro\xuetiao103.bmp|C:\users\mymacro\xuetiao104.bmp|C:\users\mymacro\xuetiao105.bmp|C:\users\mymacro\xuetiao106.bmp","151515",0.9,1,INTXX,INTYY)  # loc=7055 Runner=0x625fb0
+L08177: last_test = Sgn((INTXX>0))  # loc=7057 Runner=0x626047
+L08178: if last_test == 0: goto L08190  # loc=7057 Runner=0x62611c
+L08179: Call QMLibrary.Delay((50))  # loc=7058 Runner=0x625fb0
+L08180: Call DM.MOVETO(INTXX,INTYY)  # loc=7059 Runner=0x625fb0
+L08181: Call QMLibrary.Delay((50))  # loc=7060 Runner=0x625fb0
+L08182: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=7061 Runner=0x625fb0
+L08183: Call QMLibrary.Delay((50))  # loc=7062 Runner=0x625fb0
+L08184: 傳回值 = global.get(〔圖四行進速度〕)  # loc=7063 Runner=0x6266f4
+L08185: 目前呼叫框架.暫存槽(16)=傳回值  # loc=7063 Runner=0x625f7e
+L08186: last_test = Sgn(目前呼叫框架.暫存槽(16)=0)  # loc=7063 Runner=0x626047
+L08187: if last_test == 0: goto L08190  # loc=7063 Runner=0x62611c
+L08188: Call QMLibrary.Delay((20))  # loc=7064 Runner=0x625fb0
+L08189: goto L08061  # loc=7065 Runner=0x626e48
+L08190: goto L08199  # loc=7066 Runner=0x626126
+L08191: DM_RET=DM.FINDPIC(700,300,1220,750,"C:\users\mymacro\xuetiao1.bmp|C:\users\mymacro\xuetiao2.bmp|C:\users\mymacro\xuetiao101.bmp|C:\users\mymacro\xuetiao102.bmp|C:\users\mymacro\xuetiao103.bmp|C:\users\mymacro\xuetiao104.bmp|C:\users\mymacro\xuetiao105.bmp|C:\users\mymacro\xuetiao106.bmp","151515",0.9,1,INTXX,INTYY)  # loc=7069 Runner=0x625fb0
+L08192: last_test = Sgn((INTXX>0))  # loc=7070 Runner=0x626047
+L08193: if last_test == 0: goto L08199  # loc=7070 Runner=0x62611c
+L08194: Call QMLibrary.Delay((50))  # loc=7071 Runner=0x625fb0
+L08195: Call DM.MOVETO(INTXX,INTYY)  # loc=7072 Runner=0x625fb0
+L08196: Call QMLibrary.Delay((50))  # loc=7073 Runner=0x625fb0
+L08197: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=7074 Runner=0x625fb0
+L08198: Call QMLibrary.Delay((50))  # loc=7075 Runner=0x625fb0
+L08199: Call QMLibrary.Delay((50))  # loc=7078 Runner=0x625fb0
+L08200: 傳回值 = global.get(〔按鈕界面〕)  # loc=7079 Runner=0x6266f4
+L08201: 目前呼叫框架.暫存槽(17)=傳回值  # loc=7079 Runner=0x625f7e
+L08202: last_test = Sgn(目前呼叫框架.暫存槽(17)=4)  # loc=7079 Runner=0x626047
+L08203: if last_test == 0: goto L08224  # loc=7079 Runner=0x62611c
+L08204: Call QMLibrary.Delay((50))  # loc=7080 Runner=0x625fb0
+L08205: 傳回值 = global.get(〔圖四行進速度〕)  # loc=7081 Runner=0x6266f4
+L08206: 目前呼叫框架.暫存槽(18)=傳回值  # loc=7081 Runner=0x625f7e
+L08207: last_test = Sgn(目前呼叫框架.暫存槽(18)=2)  # loc=7081 Runner=0x626047
+L08208: if last_test == 0: goto L08214  # loc=7081 Runner=0x62611c
+L08209: Call QMLibrary.Delay((20))  # loc=7082 Runner=0x625fb0
+L08210: Set 新呼叫框架=New 框架類別_〔圖四地牢找怪〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=7083 Runner=0x625f7e
+L08211: call L12617; resume L08212  # loc=7083 Runner=0x6261f2
+L08212: 目前呼叫框架.暫存槽(19)=傳回值  # loc=7083 Runner=0x625f7e
+L08213: goto L08224  # loc=7084 Runner=0x626126
+L08214: 〔幾次〕=〔幾次〕+1  # loc=7086 Runner=0x625f7e
+L08215: Call QMLibrary.Delay((20))  # loc=7087 Runner=0x625fb0
+L08216: last_test = Sgn(〔幾次〕>=2)  # loc=7088 Runner=0x626047
+L08217: if last_test == 0: goto L08224  # loc=7088 Runner=0x62611c
+L08218: Call QMLibrary.Delay((20))  # loc=7089 Runner=0x625fb0
+L08219: 〔幾次〕=0  # loc=7090 Runner=0x625f7e
+L08220: Call QMLibrary.Delay((50))  # loc=7091 Runner=0x625fb0
+L08221: Set 新呼叫框架=New 框架類別_〔圖四地牢找怪〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=7092 Runner=0x625f7e
+L08222: call L12617; resume L08223  # loc=7092 Runner=0x6261f2
+L08223: 目前呼叫框架.暫存槽(20)=傳回值  # loc=7092 Runner=0x625f7e
+L08224: Call QMLibrary.Delay((50))  # loc=7096 Runner=0x625fb0
+L08225: 傳回值 = global.get(〔層數〕)  # loc=7098 Runner=0x6266f4
+L08226: 目前呼叫框架.暫存槽(21)=傳回值  # loc=7098 Runner=0x625f7e
+L08227: 傳回值 = global.get(〔按鈕界面〕)  # loc=7098 Runner=0x6266f4
+L08228: 目前呼叫框架.暫存槽(22)=傳回值  # loc=7098 Runner=0x625f7e
+L08229: last_test = Sgn(目前呼叫框架.暫存槽(22)=3 and 目前呼叫框架.暫存槽(21)=3)  # loc=7098 Runner=0x626047
+L08230: if last_test == 0: goto L08259  # loc=7098 Runner=0x62611c
+L08231: Call QMLibrary.Delay((50))  # loc=7099 Runner=0x625fb0
+L08232: 傳回值 = global.get(〔卡點〕)  # loc=7100 Runner=0x6266f4
+L08233: 目前呼叫框架.暫存槽(23)=傳回值  # loc=7100 Runner=0x625f7e
+L08234: last_test = Sgn(目前呼叫框架.暫存槽(23)=313)  # loc=7100 Runner=0x626047
+L08235: if last_test == 0: goto L08248  # loc=7100 Runner=0x62611c
+L08236: Call QMLibrary.Delay((50))  # loc=7101 Runner=0x625fb0
+L08237: DM_RET=DM.FINDCOLOR(1610,60,1880,286,"DE3239-080808|EC373E-080808|E64042-080808|F56366-080808|E6ABB4-050505|F5A9BA-050505|E3B1BD-050505|BA6C71-050505|AB797A-050505",1,8,INTXX,INTYY)  # loc=7102 Runner=0x625fb0
+L08238: last_test = Sgn((INTXX>0))  # loc=7103 Runner=0x626047
+L08239: if last_test == 0: goto L08247  # loc=7103 Runner=0x62611c
+L08240: Call QMLibrary.Delay((50))  # loc=7105 Runner=0x625fb0
+L08241: Set 新呼叫框架=New 框架類別_〔計算走位〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=7106 Runner=0x625f7e
+L08242: call L07706; resume L08243  # loc=7106 Runner=0x6261f2
+L08243: 目前呼叫框架.暫存槽(24)=傳回值  # loc=7106 Runner=0x625f7e
+L08244: 〔無目標〕=0  # loc=7107 Runner=0x625f7e
+L08245: Call QMLibrary.Delay((50))  # loc=7108 Runner=0x625fb0
+L08246: goto L08061  # loc=7109 Runner=0x626e48
+L08247: goto L08259  # loc=7110 Runner=0x626126
+L08248: Call QMLibrary.Delay((50))  # loc=7112 Runner=0x625fb0
+L08249: DM_RET=DM.FINDCOLOR(1610,60,1880,286,"DE3239-080808|EC373E-080808|E64042-080808|F56366-080808|E6ABB4-050505|F5A9BA-050505|E3B1BD-050505|BA6C71-050505|AB797A-050505",1,4,INTXX,INTYY)  # loc=7113 Runner=0x625fb0
+L08250: last_test = Sgn((INTXX>0))  # loc=7114 Runner=0x626047
+L08251: if last_test == 0: goto L08259  # loc=7114 Runner=0x62611c
+L08252: Call QMLibrary.Delay((50))  # loc=7116 Runner=0x625fb0
+L08253: Set 新呼叫框架=New 框架類別_〔計算走位〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=7117 Runner=0x625f7e
+L08254: call L07706; resume L08255  # loc=7117 Runner=0x6261f2
+L08255: 目前呼叫框架.暫存槽(25)=傳回值  # loc=7117 Runner=0x625f7e
+L08256: 〔無目標〕=0  # loc=7118 Runner=0x625f7e
+L08257: Call QMLibrary.Delay((50))  # loc=7119 Runner=0x625fb0
+L08258: goto L08061  # loc=7120 Runner=0x626e48
+L08259: Call QMLibrary.Delay((50))  # loc=7124 Runner=0x625fb0
+L08260: DM_RET=DM.FINDCOLOR(1610,60,1880,286,"b36816-050505|7b4700-050505|814a00-050505|945203-050505|B9892F-050505|C89756-050505|CD8C3A-050505",1,4,INTXX,INTYY)  # loc=7126 Runner=0x625fb0
+L08261: last_test = Sgn((INTXX>0))  # loc=7127 Runner=0x626047
+L08262: if last_test == 0: goto L08270  # loc=7127 Runner=0x62611c
+L08263: Call QMLibrary.Delay((50))  # loc=7129 Runner=0x625fb0
+L08264: Set 新呼叫框架=New 框架類別_〔計算走位〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=7130 Runner=0x625f7e
+L08265: call L07706; resume L08266  # loc=7130 Runner=0x6261f2
+L08266: 目前呼叫框架.暫存槽(26)=傳回值  # loc=7130 Runner=0x625f7e
+L08267: 〔無目標〕=0  # loc=7131 Runner=0x625f7e
+L08268: Call QMLibrary.Delay((50))  # loc=7132 Runner=0x625fb0
+L08269: goto L08061  # loc=7133 Runner=0x626e48
+L08270: Call QMLibrary.Delay((50))  # loc=7135 Runner=0x625fb0
+L08271: 傳回值 = global.get(〔按鈕界面〕)  # loc=7136 Runner=0x6266f4
+L08272: 目前呼叫框架.暫存槽(27)=傳回值  # loc=7136 Runner=0x625f7e
+L08273: last_test = Sgn(目前呼叫框架.暫存槽(27)=3)  # loc=7136 Runner=0x626047
+L08274: if last_test == 0: goto L08286  # loc=7136 Runner=0x62611c
+L08275: Call QMLibrary.Delay((50))  # loc=7137 Runner=0x625fb0
+L08276: DM_RET=DM.FINDCOLOR(1610,60,1880,286,"cd1919-050505|d01818-050505|C40625-050505|B80A25-050505|B50E2D-050505|B1022B-050505|AA0325-050505",1,4,INTXX,INTYY)  # loc=7138 Runner=0x625fb0
+L08277: last_test = Sgn((INTXX>0))  # loc=7139 Runner=0x626047
+L08278: if last_test == 0: goto L08286  # loc=7139 Runner=0x62611c
+L08279: Call QMLibrary.Delay((50))  # loc=7141 Runner=0x625fb0
+L08280: Set 新呼叫框架=New 框架類別_〔計算走位〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=7142 Runner=0x625f7e
+L08281: call L07706; resume L08282  # loc=7142 Runner=0x6261f2
+L08282: 目前呼叫框架.暫存槽(28)=傳回值  # loc=7142 Runner=0x625f7e
+L08283: 〔無目標〕=0  # loc=7143 Runner=0x625f7e
+L08284: Call QMLibrary.Delay((50))  # loc=7144 Runner=0x625fb0
+L08285: goto L08061  # loc=7145 Runner=0x626e48
+L08286: Call QMLibrary.Delay((100))  # loc=7148 Runner=0x625fb0
+L08287: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=7149 Runner=0x625fb0
+L08288: Call QMLibrary.Delay((300))  # loc=7150 Runner=0x625fb0
+L08289: 〔無目標〕=〔無目標〕+1  # loc=7151 Runner=0x625f7e
+L08290: Call QMLibrary.Delay((100))  # loc=7152 Runner=0x625fb0
+L08291: last_test = Sgn(〔無目標〕>3)  # loc=7153 Runner=0x626047
+L08292: if last_test == 0: goto L08316  # loc=7153 Runner=0x62611c
+L08293: Call QMLibrary.Delay((50))  # loc=7154 Runner=0x625fb0
+L08294: 〔無目標〕=0  # loc=7155 Runner=0x625f7e
+L08295: 傳回值 = global.get(〔圖三〕)  # loc=7156 Runner=0x6266f4
+L08296: 目前呼叫框架.暫存槽(29)=傳回值  # loc=7156 Runner=0x625f7e
+L08297: 傳回值 = global.get(〔層數〕)  # loc=7156 Runner=0x6266f4
+L08298: 目前呼叫框架.暫存槽(30)=傳回值  # loc=7156 Runner=0x625f7e
+L08299: last_test = Sgn(目前呼叫框架.暫存槽(30)=3 and 目前呼叫框架.暫存槽(29)=309)  # loc=7156 Runner=0x626047
+L08300: if last_test == 0: goto L08304  # loc=7156 Runner=0x62611c
+L08301: Call QMLibrary.Delay((50))  # loc=7157 Runner=0x625fb0
+L08302: Call DM.MOVETO(1111,300)  # loc=7158 Runner=0x625fb0
+L08303: goto L08315  # loc=7158 Runner=0x626126
+L08304: 傳回值 = global.get(〔圖三〕)  # loc=7159 Runner=0x6266f4
+L08305: 目前呼叫框架.暫存槽(31)=傳回值  # loc=7159 Runner=0x625f7e
+L08306: 傳回值 = global.get(〔層數〕)  # loc=7159 Runner=0x6266f4
+L08307: 目前呼叫框架.暫存槽(32)=傳回值  # loc=7159 Runner=0x625f7e
+L08308: last_test = Sgn(目前呼叫框架.暫存槽(32)=3 and 目前呼叫框架.暫存槽(31)=316)  # loc=7159 Runner=0x626047
+L08309: if last_test == 0: goto L08313  # loc=7159 Runner=0x62611c
+L08310: Call QMLibrary.Delay((50))  # loc=7160 Runner=0x625fb0
+L08311: Call DM.MOVETO(1111,300)  # loc=7161 Runner=0x625fb0
+L08312: goto L08315  # loc=7162 Runner=0x626126
+L08313: Call QMLibrary.Delay((50))  # loc=7163 Runner=0x625fb0
+L08314: Call DM.MOVETO(960,560)  # loc=7164 Runner=0x625fb0
+L08315: Call QMLibrary.Delay((100))  # loc=7166 Runner=0x625fb0
+L08316: Call QMLibrary.Delay((100))  # loc=7168 Runner=0x625fb0
+L08317: goto L08058  # loc=7169 Runner=0x626126
+L08318: Call QMLibrary.Delay((100))  # loc=7170 Runner=0x625fb0
+L08319: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=7171 Runner=0x625f7e
+L08320: return caller  # loc=7171 Runner=0x626275

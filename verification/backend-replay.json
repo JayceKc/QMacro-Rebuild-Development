@@ -1,0 +1,44 @@
+{
+  "utc": "2026-11-07T23:15:51.029496+00:00",
+  "ok": true,
+  "results": [
+    {
+      "test": "test_original_color_replay.py",
+      "exit_code": 0,
+      "output": "test_center_heap_generalizes_to_rectangles (__main__.NativeColorReplay.test_center_heap_generalizes_to_rectangles) ... ok\r\ntest_native_center_removal_order (__main__.NativeColorReplay.test_native_center_removal_order) ... ok\r\ntest_picture_input_ordering_and_color_priority (__main__.NativeColorReplay.test_picture_input_ordering_and_color_priority) ... ok\r\ntest_rectangle_and_direction_native_fixtures (__main__.NativeColorReplay.test_rectangle_and_direction_native_fixtures) ... ok\r\ntest_single_pixel_matches_actual_native_observations (__main__.NativeColorReplay.test_single_pixel_matches_actual_native_observations) ... ok\r\ntest_sparse_axis_order_matches_native (__main__.NativeColorReplay.test_sparse_axis_order_matches_native) ... ok\r\ntest_unverified_or_broken_inputs_raise_instead_of_low_hp (__main__.NativeColorReplay.test_unverified_or_broken_inputs_raise_instead_of_low_hp) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 7 tests in 0.013s\r\n\r\nOK\r\n"
+    },
+    {
+      "test": "test_original_image_replay.py",
+      "exit_code": 0,
+      "output": "....\r\n----------------------------------------------------------------------\r\nRan 4 tests in 0.075s\r\n\r\nOK\r\n"
+    },
+    {
+      "test": "test_qmacro_screen.py",
+      "exit_code": 0,
+      "output": "test_native_offscreen_bitmap_channel_and_row_order (__main__.ScreenTests.test_native_offscreen_bitmap_channel_and_row_order) ... ok\r\ntest_no_capture_when_foreground_unverified (__main__.ScreenTests.test_no_capture_when_foreground_unverified) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 2 tests in 0.001s\r\n\r\nOK\r\n"
+    },
+    {
+      "test": "test_qmacro_potion.py",
+      "exit_code": 0,
+      "output": "test_capture_error_cannot_become_low_hp (__main__.PotionTests.test_capture_error_cannot_become_low_hp) ... ok\r\ntest_capture_failure_keeps_request_and_counter (__main__.PotionTests.test_capture_failure_keeps_request_and_counter) ... ok\r\ntest_captured_pixels_drive_original_counter_and_key_decision (__main__.PotionTests.test_captured_pixels_drive_original_counter_and_key_decision) ... ok\r\ntest_color_present_never_uses_potion (__main__.PotionTests.test_color_present_never_uses_potion) ... ok\r\ntest_exact_preserved_coverage (__main__.PotionTests.test_exact_preserved_coverage) ... ok\r\ntest_exclusive_capture_edges_are_not_valid_results (__main__.PotionTests.test_exclusive_capture_edges_are_not_valid_results) ... ok\r\ntest_nonconsecutive_absences_reset_counter (__main__.PotionTests.test_nonconsecutive_absences_reset_counter) ... ok\r\ntest_only_x_output_controls_branch (__main__.PotionTests.test_only_x_output_controls_branch) ... ok\r\ntest_repeat_trigger_and_original_hold_release_delay (__main__.PotionTests.test_repeat_trigger_and_original_hold_release_delay) ... ok\r\ntest_three_absences_all_key_checkbox_combinations (__main__.PotionTests.test_three_absences_all_key_checkbox_combinations) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 10 tests in 0.014s\r\n\r\nOK\r\n"
+    }
+  ],
+  "sha256": {
+    "work\\qmacro_color.py": "731dc5b9ae34424694fa683593527ce7e9bf862088a2b4cb222ea460272f8ff6",
+    "work\\qmacro_picture.py": "6a2f1877a088c200340bc16b3ffdfe6dbf11f4a949bcaea77361a99859e51960",
+    "work\\qmacro_screen.py": "1f808e6a33080b29a19bfeab53ae44572b01cfb79df7bc435551bbd631323c1a",
+    "work\\qmacro_potion.py": "4232699d089277560297ecf84ff15151c5a62554e392f29b1836bd5d2a018512",
+    "outputs\\plugin-recovery\\original-color-oracle-valid-157.json": "a204ae8afd97ecaff4c015eb56a2438732c98a40e554063019b0c2da1ec7f8db",
+    "outputs\\plugin-recovery\\original-color-oracle-boundaries.json": "378eecd5b9dc06b20a42799a57700ccf99ee18870037242f33820853385571ce",
+    "outputs\\plugin-recovery\\picture-input-oracle-reset-outputs.json": "5afb99c8f82dc68c61cc86695acd84984d20713ab918d64268e7fdd3d5a7238a",
+    "outputs\\plugin-recovery\\picture-input-oracle-center.json": "9cd43d725abbb36d99af7e0c8f01f5c934f72a40b824b8755a513d737c3e1f97",
+    "outputs\\plugin-recovery\\original-image-oracle.json": "a87a132115e0a7a33a51f2748cc399f5701abc64caed05f0ab446a0ebba3e726",
+    "outputs\\plugin-recovery\\original-image-oracle-extended.json": "6e346ca14be23421749538d9698c6be38f6bbe48d8e12263b2057481853f75c8"
+  },
+  "native_color_samples": 416,
+  "native_picture_distinct_parameter_sets": 77,
+  "native_picture_samples_including_repeat": 141,
+  "live_game_capture_verified": false,
+  "live_game_potion_verified": false,
+  "full_program_restored": false
+}

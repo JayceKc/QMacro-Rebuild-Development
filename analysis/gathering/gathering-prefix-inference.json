@@ -1,0 +1,601 @@
+{
+  "module": 8,
+  "source_program_sha256": "fc940a3dfc668afcf29707bd1332a538fd7b9bb400ef38b70c2fed7d7393640f",
+  "entry": 7,
+  "worker_wrapper_entry": 82,
+  "worker_body_candidate": 890,
+  "unresolved": [
+    78,
+    89
+  ],
+  "rows": [
+    {
+      "record": 7,
+      "location": 1,
+      "kind": "statement",
+      "sl": 6,
+      "readable": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 8,
+      "location": 5,
+      "kind": "statement",
+      "sl": 7,
+      "readable": "SET WS=CREATEOBJECT(\"Wscript.Shell\")"
+    },
+    {
+      "record": 9,
+      "location": 6,
+      "kind": "statement",
+      "sl": 8,
+      "readable": "Call WS.RUN(\"regsvr32 atl.dll /s\")"
+    },
+    {
+      "record": 10,
+      "location": 7,
+      "kind": "statement",
+      "sl": 9,
+      "readable": "SET WS=nothing"
+    },
+    {
+      "record": 11,
+      "location": 9,
+      "kind": "statement",
+      "sl": 10,
+      "readable": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 12,
+      "location": 10,
+      "kind": "statement",
+      "sl": 11,
+      "readable": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\\fz\",\"fz.dll\")"
+    },
+    {
+      "record": 13,
+      "location": 11,
+      "kind": "statement",
+      "sl": 12,
+      "readable": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\",\"fzreg.dll\")"
+    },
+    {
+      "record": 14,
+      "location": 12,
+      "kind": "statement",
+      "sl": 13,
+      "readable": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\",\"*.bmp\")"
+    },
+    {
+      "record": 15,
+      "location": 13,
+      "kind": "statement",
+      "sl": 14,
+      "readable": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 16,
+      "location": 15,
+      "kind": "statement",
+      "sl": 15,
+      "readable": "Call QMLibrary.TracePrint(QMLibrary.CallAPI2(\"C:\\users\\mymacro\\fzreg.dll\", \"SetDllPathW\", \"C:\\users\\mymacro\\fz\\fz.dll\", 0))"
+    },
+    {
+      "record": 17,
+      "location": 16,
+      "kind": "statement",
+      "sl": 16,
+      "readable": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 18,
+      "location": 18,
+      "kind": "statement",
+      "sl": 17,
+      "readable": "SET DM=CREATEOBJECT(\"dm.dmsoft\")"
+    },
+    {
+      "record": 19,
+      "location": 19,
+      "kind": "statement",
+      "sl": 18,
+      "readable": "Call DM.SETSHOWERRORMSG(0)"
+    },
+    {
+      "record": 20,
+      "location": 20,
+      "kind": "statement",
+      "sl": 19,
+      "readable": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 21,
+      "location": 21,
+      "kind": "statement",
+      "sl": 20,
+      "readable": "〔版本〕=DM.VER()"
+    },
+    {
+      "record": 22,
+      "location": 23,
+      "kind": "condition",
+      "sl": 21,
+      "readable": "Sgn((〔版本〕=7.2450))"
+    },
+    {
+      "record": 23,
+      "location": 23,
+      "kind": "if_zero",
+      "target": 26
+    },
+    {
+      "record": 24,
+      "location": 24,
+      "kind": "statement",
+      "sl": 22,
+      "readable": "Call QMLibrary.TracePrint((\"成功\"))"
+    },
+    {
+      "record": 25,
+      "location": 25,
+      "kind": "jump",
+      "target": 27
+    },
+    {
+      "record": 26,
+      "location": 26,
+      "kind": "statement",
+      "sl": 23,
+      "readable": "Call QMLibrary.TracePrint((\"失败\"))"
+    },
+    {
+      "record": 27,
+      "location": 28,
+      "kind": "statement",
+      "sl": 24,
+      "readable": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 28,
+      "location": 29,
+      "kind": "empty_string_slot",
+      "sl": 25,
+      "readable": ""
+    },
+    {
+      "record": 29,
+      "location": 30,
+      "kind": "statement",
+      "sl": 26,
+      "readable": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 30,
+      "location": 31,
+      "kind": "statement",
+      "sl": 27,
+      "readable": "〔鼠標〕=DM.ENABLEREALMOUSE(2,10,60)"
+    },
+    {
+      "record": 31,
+      "location": 32,
+      "kind": "statement",
+      "sl": 28,
+      "readable": "Call QMLibrary.TracePrint(\"鼠标\" & 〔鼠標〕)"
+    },
+    {
+      "record": 32,
+      "location": 33,
+      "kind": "statement",
+      "sl": 29,
+      "readable": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 33,
+      "location": 34,
+      "kind": "statement",
+      "sl": 30,
+      "readable": "〔索引〕=ARRAY(0,1,2,3,4,5,6,7,8,9,10)"
+    },
+    {
+      "record": 34,
+      "location": 35,
+      "kind": "statement",
+      "sl": 31,
+      "readable": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 35,
+      "location": 36,
+      "kind": "ui_read",
+      "sl": 32,
+      "readable": "Form1.ComboBox1.ListIndex"
+    },
+    {
+      "record": 36,
+      "location": 36,
+      "kind": "statement",
+      "sl": 33,
+      "readable": "暫存槽(1)=傳回值"
+    },
+    {
+      "record": 37,
+      "location": 36,
+      "kind": "statement",
+      "sl": 34,
+      "readable": "〔功能〕=〔索引〕(暫存槽(1))"
+    },
+    {
+      "record": 38,
+      "location": 37,
+      "kind": "statement",
+      "sl": 35,
+      "readable": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 39,
+      "location": 38,
+      "kind": "ui_read",
+      "sl": 36,
+      "readable": "Form1.ComboBox2.ListIndex"
+    },
+    {
+      "record": 40,
+      "location": 38,
+      "kind": "statement",
+      "sl": 37,
+      "readable": "暫存槽(1)=傳回值"
+    },
+    {
+      "record": 41,
+      "location": 38,
+      "kind": "statement",
+      "sl": 38,
+      "readable": "〔修理〕=〔索引〕(暫存槽(1))"
+    },
+    {
+      "record": 42,
+      "location": 39,
+      "kind": "statement",
+      "sl": 39,
+      "readable": "Call QMLibrary.Delay(50)"
+    },
+    {
+      "record": 43,
+      "location": 40,
+      "kind": "ui_read",
+      "sl": 40,
+      "readable": "Form1.ComboBox3.ListIndex"
+    },
+    {
+      "record": 44,
+      "location": 40,
+      "kind": "statement",
+      "sl": 41,
+      "readable": "暫存槽(1)=傳回值"
+    },
+    {
+      "record": 45,
+      "location": 40,
+      "kind": "statement",
+      "sl": 42,
+      "readable": "〔完成之后〕=〔索引〕(暫存槽(1))"
+    },
+    {
+      "record": 46,
+      "location": 41,
+      "kind": "statement",
+      "sl": 43,
+      "readable": "Call QMLibrary.Delay(50)"
+    },
+    {
+      "record": 47,
+      "location": 42,
+      "kind": "statement",
+      "sl": 46,
+      "readable": "暫存槽(1)=QMLibrary.GetGlobalVar(\"MMVerifyCode\", 0)"
+    },
+    {
+      "record": 48,
+      "location": 42,
+      "kind": "statement",
+      "sl": 44,
+      "readable": "傳回值=暫存槽(1)"
+    },
+    {
+      "record": 49,
+      "location": 42,
+      "kind": "shared_write",
+      "sl": 45,
+      "readable": "〔天選〕"
+    },
+    {
+      "record": 50,
+      "location": 43,
+      "kind": "statement",
+      "sl": 47,
+      "readable": "Call QMLibrary.Delay((50))"
+    },
+    {
+      "record": 51,
+      "location": 44,
+      "kind": "ui_read",
+      "sl": 48,
+      "readable": "Form1.CheckBox3.Value"
+    },
+    {
+      "record": 52,
+      "location": 44,
+      "kind": "statement",
+      "sl": 49,
+      "readable": "暫存槽(1)=傳回值"
+    },
+    {
+      "record": 53,
+      "location": 44,
+      "kind": "condition",
+      "sl": 50,
+      "readable": "Sgn(暫存槽(1)=1)"
+    },
+    {
+      "record": 54,
+      "location": 44,
+      "kind": "if_zero",
+      "target": 57
+    },
+    {
+      "record": 55,
+      "location": 45,
+      "kind": "statement",
+      "sl": 51,
+      "readable": "〔沒有活力回家〕=1"
+    },
+    {
+      "record": 56,
+      "location": 46,
+      "kind": "jump",
+      "target": 58
+    },
+    {
+      "record": 57,
+      "location": 47,
+      "kind": "statement",
+      "sl": 52,
+      "readable": "〔沒有活力回家〕=0"
+    },
+    {
+      "record": 58,
+      "location": 49,
+      "kind": "statement",
+      "sl": 53,
+      "readable": "Call QMLibrary.Delay((50))"
+    },
+    {
+      "record": 59,
+      "location": 50,
+      "kind": "ui_read",
+      "sl": 54,
+      "readable": "Form1.CheckBox2.Value"
+    },
+    {
+      "record": 60,
+      "location": 50,
+      "kind": "statement",
+      "sl": 55,
+      "readable": "暫存槽(1)=傳回值"
+    },
+    {
+      "record": 61,
+      "location": 50,
+      "kind": "condition",
+      "sl": 56,
+      "readable": "Sgn(暫存槽(1)=1)"
+    },
+    {
+      "record": 62,
+      "location": 50,
+      "kind": "if_zero",
+      "target": 65
+    },
+    {
+      "record": 63,
+      "location": 51,
+      "kind": "statement",
+      "sl": 57,
+      "readable": "〔沒有耐久回家〕=1"
+    },
+    {
+      "record": 64,
+      "location": 52,
+      "kind": "jump",
+      "target": 66
+    },
+    {
+      "record": 65,
+      "location": 53,
+      "kind": "statement",
+      "sl": 58,
+      "readable": "〔沒有耐久回家〕=0"
+    },
+    {
+      "record": 66,
+      "location": 57,
+      "kind": "statement",
+      "sl": 59,
+      "readable": "Call QMLibrary.Delay((50))"
+    },
+    {
+      "record": 67,
+      "location": 58,
+      "kind": "statement",
+      "sl": 60,
+      "readable": "Randomize"
+    },
+    {
+      "record": 68,
+      "location": 59,
+      "kind": "statement",
+      "sl": 61,
+      "readable": "YDX=INT(5*RND+35)"
+    },
+    {
+      "record": 69,
+      "location": 60,
+      "kind": "statement",
+      "sl": 62,
+      "readable": "Randomize"
+    },
+    {
+      "record": 70,
+      "location": 61,
+      "kind": "statement",
+      "sl": 63,
+      "readable": "YDY=INT(10*RND+10)"
+    },
+    {
+      "record": 71,
+      "location": 62,
+      "kind": "statement",
+      "sl": 64,
+      "readable": "Call QMLibrary.Delay((200))"
+    },
+    {
+      "record": 72,
+      "location": 63,
+      "kind": "statement",
+      "sl": 65,
+      "readable": "Call DM.MOVETO(YDX,YDY)"
+    },
+    {
+      "record": 73,
+      "location": 64,
+      "kind": "statement",
+      "sl": 66,
+      "readable": "Call QMLibrary.Delay((300))"
+    },
+    {
+      "record": 74,
+      "location": 65,
+      "kind": "statement",
+      "sl": 67,
+      "readable": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+    },
+    {
+      "record": 75,
+      "location": 66,
+      "kind": "statement",
+      "sl": 68,
+      "readable": "Call QMLibrary.Delay((2000))"
+    },
+    {
+      "record": 76,
+      "location": 67,
+      "kind": "statement",
+      "sl": 69,
+      "readable": "Call QMLibrary.TracePrint((\">>>>>>脚本启动\"))"
+    },
+    {
+      "record": 77,
+      "location": 68,
+      "kind": "condition",
+      "sl": 70,
+      "readable": "Sgn(〔功能〕=1 or 〔功能〕=2 or 〔功能〕=3)"
+    },
+    {
+      "record": 78,
+      "location": 68,
+      "kind": "if_zero_unresolved"
+    },
+    {
+      "record": 79,
+      "location": 69,
+      "kind": "statement",
+      "sl": 71,
+      "readable": "Call QMLibrary.Delay((100))"
+    },
+    {
+      "record": 80,
+      "location": 70,
+      "kind": "worker_start",
+      "target": 82
+    },
+    {
+      "record": 81,
+      "location": 70,
+      "kind": "jump",
+      "target": 85
+    },
+    {
+      "record": 82,
+      "location": 70,
+      "kind": "statement",
+      "sl": 72,
+      "readable": "Set 新呼叫框架=New 框架類別_〔挖礦按G游戲〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架"
+    },
+    {
+      "record": 83,
+      "location": 70,
+      "kind": "worker_body_candidate",
+      "target": 890
+    },
+    {
+      "record": 84,
+      "location": 70,
+      "kind": "worker_iteration_end"
+    },
+    {
+      "record": 85,
+      "location": 70,
+      "kind": "statement",
+      "sl": 73,
+      "readable": "暫存槽(1)=傳回值"
+    },
+    {
+      "record": 86,
+      "location": 70,
+      "kind": "statement",
+      "sl": 76,
+      "readable": "暫存槽(2)=暫存槽(1)"
+    },
+    {
+      "record": 87,
+      "location": 70,
+      "kind": "statement",
+      "sl": 74,
+      "readable": "傳回值=暫存槽(2)"
+    },
+    {
+      "record": 88,
+      "location": 70,
+      "kind": "shared_write",
+      "sl": 75,
+      "readable": "〔挖礦按G游戲ID〕"
+    }
+  ],
+  "evidence": {
+    "version_condition": {
+      "reference": "09 reconstructed L26-L30",
+      "limit": "Matching string order and line widths; branch targets inferred."
+    },
+    "ui_read": {
+      "reference": "10 original L67-L71 and 09 reconstructed L37-L39",
+      "limit": "Preserved UI read and temp template; module08 property labels from its own SL."
+    },
+    "worker_start": {
+      "reference": "07 original L717-L725; 08 declaration L5, body L890-L914, ID read L917",
+      "limit": "Template fits L80-L88 of a ten-record group; L89 remains unresolved."
+    },
+    "downstream_settings": {
+      "34": 593,
+      "38": 921,
+      "42": 1391,
+      "51": 1435,
+      "57": 1152
+    },
+    "downstream_shared_color_reads": [
+      599,
+      897
+    ]
+  },
+  "original_records_recovered": 0,
+  "original_records_overwritten": 0
+}

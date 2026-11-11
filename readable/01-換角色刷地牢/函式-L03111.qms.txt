@@ -1,0 +1,15 @@
+# 吃藥空轉 — L03111
+# 入口 L03111，RETURN L03122；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L03111: Call QMLibrary.Delay((100))  # loc=2489 Runner=0x625fb0
+L03112: Call QMLibrary.Delay((100))  # loc=2490 Runner=0x625fb0
+L03113: last_test = Sgn(vbTrue)  # loc=2491 Runner=0x626047
+L03114: if last_test == 0: goto L03120  # loc=2491 Runner=0x62611c
+L03115: Call QMLibrary.Delay((6000))  # loc=2492 Runner=0x625fb0
+L03116: Call QMLibrary.Delay((5000))  # loc=2493 Runner=0x625fb0
+L03117: Call QMLibrary.Delay((10000))  # loc=2494 Runner=0x625fb0
+L03118: Call QMLibrary.Delay((8000))  # loc=2495 Runner=0x625fb0
+L03119: goto L03113  # loc=2496 Runner=0x626126
+L03120: Call QMLibrary.Delay((100))  # loc=2497 Runner=0x625fb0
+L03121: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=2498 Runner=0x625f7e
+L03122: return caller  # loc=2498 Runner=0x626275

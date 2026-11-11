@@ -1,0 +1,380 @@
+Public QMLibrary
+Set QMLibrary_Stub = CreateObject("QMDispatch.QMLibrary")	'脚本结束的时候会自动delete，不需要显式调用QMLibrary = NULL
+Set QMLibrary = QMLibrary_Stub.GetQMLibraryObject()
+Set QUIMethodObj = QMLibrary.GetQUIMethodObject()
+
+Public QMVBSRoutine
+Set QMVBSRoutine = CreateObject("QMDispatch.QMVBSRoutine")
+
+g_iSimulateModeInVBSBlock = 0
+
+Function SetSimMode(SimMode)
+g_iSimulateModeInVBSBlock = SimMode
+End Function
+
+Function KeyPress(KeyCode, Count)
+	QMLibrary.KeyPress KeyCode, g_iSimulateModeInVBSBlock, Count 
+End Function
+
+Function KeyDown(KeyCode, Count)
+	QMLibrary.KeyDown KeyCode, g_iSimulateModeInVBSBlock, Count 
+End Function
+
+Function KeyUp(KeyCode, Count)
+	QMLibrary.KeyUp KeyCode, g_iSimulateModeInVBSBlock, Count 
+End Function
+
+Function KeyGroup(KeyCodes)
+	QMLibrary.KeyGroup KeyCodes, g_iSimulateModeInVBSBlock
+End Function
+
+Function LeftClick(Count)
+	QMLibrary.MouseClick 0, g_iSimulateModeInVBSBlock, Count
+End Function
+
+Function RightClick(Count)
+	QMLibrary.MouseClick 2, g_iSimulateModeInVBSBlock, Count
+End Function
+
+Function MiddleClick(Count)
+	QMLibrary.MouseClick 1, g_iSimulateModeInVBSBlock, Count
+End Function
+
+Function LeftDoubleClick(Count)
+	QMLibrary.MouseClick 9, g_iSimulateModeInVBSBlock, Count
+End Function
+
+Function LeftDown(Count)
+	QMLibrary.MouseClick 3, g_iSimulateModeInVBSBlock, Count
+End Function
+
+Function LeftUp(Count)
+	QMLibrary.MouseClick 6, g_iSimulateModeInVBSBlock, Count
+End Function
+
+Function RightDown(Count)
+	QMLibrary.MouseClick 5, g_iSimulateModeInVBSBlock, Count
+End Function
+
+Function RightUp(Count)
+	QMLibrary.MouseClick 8, g_iSimulateModeInVBSBlock, Count
+End Function
+
+Function MoveTo(MoveX, MoveY)
+	QMLibrary.MouseMove MoveX, MoveY, g_iSimulateModeInVBSBlock, 0
+End Function
+
+Function MoveR(MoveX, MoveY)
+	QMLibrary.MouseMove MoveX, MoveY, g_iSimulateModeInVBSBlock, 1
+End Function
+
+Function MouseWheel(Movement)
+	QMLibrary.MouseWheel Movement, g_iSimulateModeInVBSBlock
+End Function
+
+Function KeyPressH(KeyCode, Count)
+	QMLibrary.KeyPress KeyCode, 1, Count 
+End Function
+
+Function KeyDownH(KeyCode, Count)
+	QMLibrary.KeyDown KeyCode, 1, Count 
+End Function
+
+Function KeyUpH(KeyCode, Count)
+	QMLibrary.KeyUp KeyCode, 1, Count 
+End Function
+
+Function LeftClickH(Count)
+	QMLibrary.MouseClick 0, 1, Count
+End Function
+
+Function RightClickH(Count)
+	QMLibrary.MouseClick 2, 1, Count
+End Function
+
+Function MiddleClickH(Count)
+	QMLibrary.MouseClick 1, 1, Count
+End Function
+
+Function LeftDoubleClickH(Count)
+	QMLibrary.MouseClick 9, 1, Count
+End Function
+
+Function LeftDownH(Count)
+	QMLibrary.MouseClick 3, 1, Count
+End Function
+
+Function LeftUpH(Count)
+	QMLibrary.MouseClick 6, 1, Count
+End Function
+
+Function RightDownH(Count)
+	QMLibrary.MouseClick 5, 1, Count
+End Function
+
+Function RightUpH(Count)
+	QMLibrary.MouseClick 8, 1, Count
+End Function
+
+Function MoveToH(MoveX, MoveY)
+	QMLibrary.MouseMove MoveX, MoveY, 1, 0
+End Function
+
+Function MoveRH(MoveX, MoveY)
+	QMLibrary.MouseMove MoveX, MoveY, 1, 1
+End Function
+
+Function MouseWheelH(Movement)
+	QMLibrary.MouseWheel Movement, 1
+End Function
+
+Function KeyPressS(KeyCode, Count)
+	QMLibrary.KeyPress KeyCode, 2, Count 
+End Function
+
+Function KeyDownS(KeyCode, Count)
+	QMLibrary.KeyDown KeyCode, 2, Count 
+End Function
+
+Function KeyUpS(KeyCode, Count)
+	QMLibrary.KeyUp KeyCode, 2, Count 
+End Function
+
+Function LeftClickS(Count)
+	QMLibrary.MouseClick 0, 2, Count
+End Function
+
+Function RightClickS(Count)
+	QMLibrary.MouseClick 2, 2, Count
+End Function
+
+Function MiddleClickS(Count)
+	QMLibrary.MouseClick 1, 2, Count
+End Function
+
+Function LeftDoubleClickS(Count)
+	QMLibrary.MouseClick 9, 2, Count
+End Function
+
+Function LeftDownS(Count)
+	QMLibrary.MouseClick 3, 2, Count
+End Function
+
+Function LeftUpS(Count)
+	QMLibrary.MouseClick 6, 2, Count
+End Function
+
+Function RightDownS(Count)
+	QMLibrary.MouseClick 5, 2, Count
+End Function
+
+Function RightUpS(Count)
+	QMLibrary.MouseClick 8, 2, Count
+End Function
+
+Function MoveToS(MoveX, MoveY)
+	QMLibrary.MouseMove MoveX, MoveY, 2, 0
+End Function
+
+Function MoveRS(MoveX, MoveY)
+	QMLibrary.MouseMove MoveX, MoveY, 2, 1
+End Function
+
+Function MouseWheelS(Movement)
+	QMLibrary.MouseWheel Movement, 2
+End Function
+
+Function SaveMousePos
+	QMLibrary.MousePosSaveRestore 1
+End Function
+
+Function RestoreMousePos
+	QMLibrary.MousePosSaveRestore 0
+End Function
+
+Function LockMouse
+	QMLibrary.MousePosLockUnlock 1
+End Function
+
+Function UnlockMouse
+	QMLibrary.MousePosLockUnlock 0
+End Function
+
+Function WaitKey
+	WaitKey = QMLibrary.ScanKeyMouse(1,1)
+End Function
+
+Function GetLastKey
+	GetLastKey = QMLibrary.ScanKeyMouse(0,1)
+End Function
+
+Function WaitClick
+	WaitClick = QMLibrary.ScanKeyMouse(1,0)
+End Function
+
+Function GetLastClick
+	GetLastClick = QMLibrary.ScanKeyMouse(0,0)
+End Function
+
+Function Delay(DelayTime)
+	QMLibrary.Delay DelayTime
+End Function
+
+Function MessageBox(MessageText)
+	QMLibrary.MessageNotify 1,MessageText
+End Function
+
+Function SayString(MessageText)
+	QMLibrary.SayString MessageText, 0
+End Function
+
+Function Beep
+	QMLibrary.MessageNotify 0,""
+End Function
+
+Function EndScript
+	QMLibrary.EndScript
+End Function
+
+Function PutAttachment(PutPath)
+	QMLibrary.PutAttachment PutPath
+End Function
+
+Function TracePrint(PrintContent)
+	QMLibrary.TracePrint PrintContent
+End Function
+
+Function LogStart(LogFileName)
+	QMLibrary.OpenLog  LogFileName
+End Function
+
+Function LogStop()
+	QMLibrary.CloseLog
+End Function
+
+Function ExitScript()
+	QMLibrary.ExitScript	0
+End Function
+
+Function RestartScript()
+	QMLibrary.ExitScript	1
+End Function
+
+Function StopThread(ThreadID)
+	QMLibrary.ThreadControl ThreadID, 0
+End Function
+
+Function PauseThread(ThreadID)
+	QMLibrary.ThreadControl ThreadID, 1
+End Function
+
+Function ContinueThread(ThreadID)
+	QMLibrary.ThreadControl ThreadID, 2
+End Function
+
+Function GetThreadId()
+	GetThreadId = QMLibrary.GetThreadId()
+End Function
+
+Function GetMacroID()
+	GetMacroID = QMLibrary.GetMacroID()
+End Function
+
+Function GetExeDir()
+	GetExeDir = QMLibrary.GetExeDir()
+End Function
+
+Function GetEnv(Name)
+	GetEnv = QMLibrary.GetEnvironmentVariable(Name) 
+End Function
+
+Function GetEnvironmentVar(Name)
+	GetEnvironmentVar = GetEnv(Name)
+End Function
+
+Function SetEnv(Name, Value)
+	SetEnv = QMLibrary.SetEnvironmentVariable(Name,Value) 
+End Function
+
+Function SetEnvironmentVar(Name, Value)
+	SetEnvironmentVar = SetEnv(Name, Value)
+End Function
+
+Function CompColor(XPos, YPos, ColorToComp, CompType)
+	CompColor = QMLibrary.CompColor(XPos, YPos, ColorToComp, CompType)
+End Function
+
+Function RunApp(AppPath)	'这个函数用来运行一个外部程序
+	Call QMLibrary.RunApp(AppPath)
+End Function
+
+Function GetCursorPos(ByRef CursorX,ByRef CursorY)	'这个函数用来得到鼠标当前位置
+	CursorPos = QMLibrary.GetCursorPos()
+	CursorY = CursorPos Mod 8192
+	CursorX = CInt(CursorPos / 8192)
+End Function
+
+Function GetPixelColor(PosX,PosY)	'这个函数得到某个指定点的颜色（用字符串表示）
+	GetPixelColor = QMLibrary.GetPixelColor(PosX,PosY)
+End Function
+
+Function FindColor(iLeft,iTop,iRight,iBottom,szColor,ByRef FoundX,ByRef FoundY)	'这个函数用来从某个矩形范围内查找指定的颜色，按从左到右，从上到下的顺序查找
+	FoundPixel = QMLibrary.FindColor(iLeft,iTop,iRight,iBottom,szColor,0)
+	FoundX = CInt(FoundPixel / 8192)
+	FoundY = FoundPixel Mod 8192
+	FindColor = FoundPixel
+End Function
+
+Function FindCenterColor(iLeft,iTop,iRight,iBottom,szColor,ByRef FoundX,ByRef FoundY)	'这个函数用来从某个矩形范围内查找指定的颜色，按从中间到四周的顺序查找
+	FoundPixel = QMLibrary.FindColor(iLeft,iTop,iRight,iBottom,szColor,1)
+	FoundX = CInt(FoundPixel / 8192)
+	FoundY = FoundPixel Mod 8192
+	FindCenterColor = FoundPixel
+end Function
+
+Function FindColorEx(iLeft,iTop,iRight,iBottom,szColor,iType,fSimilar,ByRef FoundX,ByRef FoundY)	'这个函数用来从某个矩形范围内模糊查找指定的颜色
+	FoundPixel = QMLibrary.FindColor(iLeft,iTop,iRight,iBottom,szColor,iType,fSimilar)
+	FoundX = CInt(FoundPixel / 8192)
+	FoundY = FoundPixel Mod 8192
+	FindColorEx = FoundPixel
+End Function
+
+Function ReadMemory(dwAddress, iType, ByRef ReadValue)  '这个函数用于读取当前进程的内存地址
+	If iType=0 Then
+		ReadValue = CByte(QMLibrary.ReadMemory(dwAddress, iType))
+	Else
+		ReadValue = CLng(QMLibrary.ReadMemory(dwAddress, iType))
+	End If 
+End Function
+
+Function FindPic(iLeft,iTop,iRight,iBottom,szFileName,fSimilar,ByRef FoundX,ByRef FoundY)
+'这个函数用于在屏幕范围内查找图片
+	FoundPixel = QMLibrary.FindPic(iLeft,iTop,iRight,iBottom,szFileName,fSimilar)
+	FoundX = CInt(FoundPixel / 8192)
+	FoundY = FoundPixel Mod 8192
+	FindPic = FoundPixel
+End Function
+
+Function FindPicEx(iLeft,iTop,iRight,iBottom,szFileName,fSimilar,szTransparentColor,ByRef FoundX,ByRef FoundY)
+'这个函数用于在屏幕范围内查找图片,支持自定义透明色
+	FoundPixel = QMLibrary.FindPic(iLeft,iTop,iRight,iBottom,szFileName,fSimilar,szTransparentColor)
+	FoundX = CInt(FoundPixel / 8192)
+	FoundY = FoundPixel Mod 8192
+	FindPicEx = FoundPixel
+End Function
+
+Function GetCursorShape(iType)
+'这个函数得到当前鼠标的形状特征（用一个整数表示，对这个整数进行比较，相当于对鼠标形状进行比较）
+	GetCursorShape=CLng(QMLibrary.GetCursorShape(iType))
+End Function
+
+rem ====================下面的VBS函数仅仅是为了保持兼容性而保留，不推荐使用==============================
+Function GetScreenResolution(ByRef ScreenX, ByRef ScreenY)	'这个函数用于得到当前屏幕分辨率  ==>今后请使用GetSysInfo.dll插件
+	Resolution = QMLibrary.GetScreenResolution()
+	ScreenX = CInt(Resolution / 8192)
+	ScreenY = Resolution Mod 8192
+End Function
+
+Function SetCursorPos(CursorX,CursorY)	'这个函数用来设置鼠标当前位置  ====>今后请使用按键精灵的MoveTo命令
+	QMLibrary.MouseMove CursorX, CursorY, 0, 0
+End function

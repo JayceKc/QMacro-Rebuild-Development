@@ -1,0 +1,704 @@
+{
+  "module": 5,
+  "entry": 277,
+  "boundary": 320,
+  "rows": [
+    {
+      "record": 277,
+      "location": 280,
+      "source_sl": 229,
+      "source": "Call QMLibrary.Delay(100)",
+      "kind": "delay",
+      "milliseconds": 100,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 278,
+      "location": 281,
+      "source_sl": 230,
+      "source": "DM_RET=DM.FINDCOLOR(160,1,260,25,V8186B4D47378756D & \"-151515\",0.9,0,INTX,INTY)",
+      "kind": "find_color",
+      "rect": [
+        160,
+        1,
+        260,
+        25
+      ],
+      "spec": {
+        "concat": [
+          {
+            "role": "sdk_marker"
+          },
+          {
+            "const": "-151515"
+          }
+        ]
+      },
+      "similarity": 0.9,
+      "direction": 0,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 279,
+      "location": 282,
+      "source_sl": 231,
+      "source": "Sgn((INTX>=0))",
+      "kind": "test",
+      "condition": {
+        "ge": [
+          {
+            "role": "query_x"
+          },
+          {
+            "const": 0
+          }
+        ]
+      },
+      "candidate_opcode": 4,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 280,
+      "location": 282,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 311,
+      "candidate_opcode": 6,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 281,
+      "location": 283,
+      "source_sl": 232,
+      "source": "Call QMLibrary.Delay(50)",
+      "kind": "delay",
+      "milliseconds": 50,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 282,
+      "location": 284,
+      "source_sl": 233,
+      "source": "Call FindColorEx(887,917,912,930,\"40752B\",0,0.9,INTX,INTY)",
+      "kind": "builtin_color",
+      "rect": [
+        887,
+        917,
+        912,
+        930
+      ],
+      "color": "40752B",
+      "direction": 0,
+      "similarity": 0.9,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 283,
+      "location": 285,
+      "source_sl": 234,
+      "source": "Sgn(INTX>0 And INTY>0)",
+      "kind": "test",
+      "condition": {
+        "all": [
+          {
+            "gt": [
+              {
+                "role": "query_x"
+              },
+              {
+                "const": 0
+              }
+            ]
+          },
+          {
+            "gt": [
+              {
+                "role": "query_y"
+              },
+              {
+                "const": 0
+              }
+            ]
+          }
+        ]
+      },
+      "candidate_opcode": 4,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 284,
+      "location": 285,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 286,
+      "candidate_opcode": 6,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 285,
+      "location": 286,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 317,
+      "candidate_opcode": 16,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 286,
+      "location": 288,
+      "source_sl": 235,
+      "source": "Call QMLibrary.Delay(100)",
+      "kind": "delay",
+      "milliseconds": 100,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 287,
+      "location": 289,
+      "source_sl": 236,
+      "source": "Call FindColorEx(887,917,912,930,\"35DF86\",0,0.9,INTX,INTY)",
+      "kind": "builtin_color",
+      "rect": [
+        887,
+        917,
+        912,
+        930
+      ],
+      "color": "35DF86",
+      "direction": 0,
+      "similarity": 0.9,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 288,
+      "location": 290,
+      "source_sl": 237,
+      "source": "Sgn(INTX>0 And INTY>0)",
+      "kind": "test",
+      "condition": {
+        "all": [
+          {
+            "gt": [
+              {
+                "role": "query_x"
+              },
+              {
+                "const": 0
+              }
+            ]
+          },
+          {
+            "gt": [
+              {
+                "role": "query_y"
+              },
+              {
+                "const": 0
+              }
+            ]
+          }
+        ]
+      },
+      "candidate_opcode": 4,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 289,
+      "location": 290,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 291,
+      "candidate_opcode": 6,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 290,
+      "location": 291,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 317,
+      "candidate_opcode": 16,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 291,
+      "location": 293,
+      "source_sl": 238,
+      "source": "Call QMLibrary.Delay(100)",
+      "kind": "delay",
+      "milliseconds": 100,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 292,
+      "location": 294,
+      "source_sl": 239,
+      "source": "Call FindColorEx(887,917,912,930,\"31B972\",0,0.9,INTX,INTY)",
+      "kind": "builtin_color",
+      "rect": [
+        887,
+        917,
+        912,
+        930
+      ],
+      "color": "31B972",
+      "direction": 0,
+      "similarity": 0.9,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 293,
+      "location": 295,
+      "source_sl": 240,
+      "source": "Sgn(INTX>0 And INTY>0)",
+      "kind": "test",
+      "condition": {
+        "all": [
+          {
+            "gt": [
+              {
+                "role": "query_x"
+              },
+              {
+                "const": 0
+              }
+            ]
+          },
+          {
+            "gt": [
+              {
+                "role": "query_y"
+              },
+              {
+                "const": 0
+              }
+            ]
+          }
+        ]
+      },
+      "candidate_opcode": 4,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 294,
+      "location": 295,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 296,
+      "candidate_opcode": 6,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 295,
+      "location": 296,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 317,
+      "candidate_opcode": 16,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 296,
+      "location": 298,
+      "source_sl": 241,
+      "source": "Call QMLibrary.Delay(100)",
+      "kind": "delay",
+      "milliseconds": 100,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 297,
+      "location": 299,
+      "source_sl": 242,
+      "source": "Call FindColorEx(887,917,912,930,\"3F722A\",0,0.9,INTX,INTY)",
+      "kind": "builtin_color",
+      "rect": [
+        887,
+        917,
+        912,
+        930
+      ],
+      "color": "3F722A",
+      "direction": 0,
+      "similarity": 0.9,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 298,
+      "location": 300,
+      "source_sl": 243,
+      "source": "Sgn(INTX>0 And INTY>0)",
+      "kind": "test",
+      "condition": {
+        "all": [
+          {
+            "gt": [
+              {
+                "role": "query_x"
+              },
+              {
+                "const": 0
+              }
+            ]
+          },
+          {
+            "gt": [
+              {
+                "role": "query_y"
+              },
+              {
+                "const": 0
+              }
+            ]
+          }
+        ]
+      },
+      "candidate_opcode": 4,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 299,
+      "location": 300,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 301,
+      "candidate_opcode": 6,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 300,
+      "location": 301,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 317,
+      "candidate_opcode": 16,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 301,
+      "location": 303,
+      "source_sl": 244,
+      "source": "Call QMLibrary.Delay(100)",
+      "kind": "delay",
+      "milliseconds": 100,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 302,
+      "location": 304,
+      "source_sl": 245,
+      "source": "DM_RET=DM.FINDCOLOR(874,917,900,933,\"2B7540-050505|72B931-050505|86DF35-050505|2A723F-050505\",0.9,0,INTX,INTY)",
+      "kind": "find_color",
+      "rect": [
+        874,
+        917,
+        900,
+        933
+      ],
+      "spec": {
+        "const": "2B7540-050505|72B931-050505|86DF35-050505|2A723F-050505"
+      },
+      "similarity": 0.9,
+      "direction": 0,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 303,
+      "location": 305,
+      "source_sl": 246,
+      "source": "Sgn(INTX>0)",
+      "kind": "test",
+      "condition": {
+        "gt": [
+          {
+            "role": "query_x"
+          },
+          {
+            "const": 0
+          }
+        ]
+      },
+      "candidate_opcode": 4,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 304,
+      "location": 305,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 306,
+      "candidate_opcode": 6,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 305,
+      "location": 306,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 317,
+      "candidate_opcode": 16,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 306,
+      "location": 308,
+      "source_sl": 247,
+      "source": "Call QMLibrary.Delay(100)",
+      "kind": "delay",
+      "milliseconds": 100,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 307,
+      "location": 309,
+      "source_sl": 248,
+      "source": "DM_RET=DM.FINDCOLOR(898,917,902,931,\"2E7F47-050505|2F8245-050505|439B53-050505|38904F-050505|48A459-050505|2C743F-050505|2A6F3C-050505|297142-050505|409851-050505|318547-050505|3E8853-050505|409851-050505\",0.9,0,INTX,INTY)",
+      "kind": "find_color",
+      "rect": [
+        898,
+        917,
+        902,
+        931
+      ],
+      "spec": {
+        "const": "2E7F47-050505|2F8245-050505|439B53-050505|38904F-050505|48A459-050505|2C743F-050505|2A6F3C-050505|297142-050505|409851-050505|318547-050505|3E8853-050505|409851-050505"
+      },
+      "similarity": 0.9,
+      "direction": 0,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 308,
+      "location": 310,
+      "source_sl": 249,
+      "source": "Sgn((INTX>0))",
+      "kind": "test",
+      "condition": {
+        "gt": [
+          {
+            "role": "query_x"
+          },
+          {
+            "const": 0
+          }
+        ]
+      },
+      "candidate_opcode": 4,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 309,
+      "location": 310,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 311,
+      "candidate_opcode": 6,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 310,
+      "location": 311,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 317,
+      "candidate_opcode": 16,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 311,
+      "location": 314,
+      "source_sl": 250,
+      "source": "Call QMLibrary.Delay(100)",
+      "kind": "delay",
+      "milliseconds": 100,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 312,
+      "location": 315,
+      "source_sl": 251,
+      "source": "Call QMLibrary.KeyPress(\"B\",g_iSimulateModeInVBSBlock,1)",
+      "kind": "key_press",
+      "arguments": [
+        {
+          "const": "B"
+        },
+        {
+          "role": "simulation_mode"
+        },
+        {
+          "const": 1
+        }
+      ],
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 313,
+      "location": 316,
+      "source_sl": 252,
+      "source": "Call QMLibrary.Delay(4000)",
+      "kind": "delay",
+      "milliseconds": 4000,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 314,
+      "location": 317,
+      "source_sl": 253,
+      "source": "Sgn(VFB8AD0BDCFC0B6869DB4A5987378756D=1)",
+      "kind": "test",
+      "condition": {
+        "equals": [
+          {
+            "role": "slow_repair"
+          },
+          {
+            "const": 1
+          }
+        ]
+      },
+      "candidate_opcode": 4,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 315,
+      "location": 317,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 317,
+      "candidate_opcode": 6,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 316,
+      "location": 318,
+      "source_sl": 254,
+      "source": "Call QMLibrary.Delay((4000))",
+      "kind": "delay",
+      "milliseconds": 4000,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 317,
+      "location": 320,
+      "source_sl": 255,
+      "source": "Call QMLibrary.Delay(20)",
+      "kind": "delay",
+      "milliseconds": 20,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 318,
+      "location": 321,
+      "source_sl": 256,
+      "source": "Call QMLibrary.Delay(500)",
+      "kind": "delay",
+      "milliseconds": 500,
+      "candidate_opcode": 30,
+      "field_3": 1,
+      "inferred": true
+    },
+    {
+      "record": 319,
+      "location": 323,
+      "field_3": 1,
+      "source_sl": null,
+      "source": null,
+      "kind": "unresolved_control",
+      "candidate_opcode": null,
+      "inferred": true
+    }
+  ],
+  "unresolved": [
+    319
+  ],
+  "reference": {
+    "module": 8,
+    "records": [
+      1356,
+      1374
+    ],
+    "record_delta": 1074,
+    "location_delta": 980
+  },
+  "sdk_miss_alternatives": [
+    311,
+    317
+  ],
+  "original_values_recovered": 0,
+  "source_program_sha256": "e552b5f44c0cd59c8c584a92d36d5e1196189ddda1ff2f6e74cd4aa298ffa78f"
+}

@@ -1,0 +1,65 @@
+{
+  "module": 9,
+  "name": "09-渴望島",
+  "bindings": [
+    {
+      "property": "Form1.ComboBox2.ListIndex",
+      "sl": 34,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "direct_local_dataflow",
+      "destination": "〔技能釋放〕",
+      "sources": [
+        34,
+        35,
+        36
+      ],
+      "expression": "〔技能釋放〕=〔索引〕(暫存槽(1))",
+      "index_array": {
+        "sl": 32,
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "source_strings": [
+        {
+          "sl": 34,
+          "readable": "Form1.ComboBox2.ListIndex"
+        },
+        {
+          "sl": 35,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 36,
+          "readable": "〔技能釋放〕=〔索引〕(暫存槽(1))"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.InputBox2.Text",
+      "sl": 88,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "unresolved",
+      "destination": null,
+      "sources": [
+        88
+      ],
+      "source_strings": [
+        {
+          "sl": 88,
+          "readable": "Form1.InputBox2.Text"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    }
+  ],
+  "branch_operands_recovered": false
+}

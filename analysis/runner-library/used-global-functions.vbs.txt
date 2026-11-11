@@ -1,0 +1,20 @@
+Function GetCursorPos(ByRef CursorX,ByRef CursorY)	'这个函数用来得到鼠标当前位置
+	CursorPos = QMLibrary.GetCursorPos()
+	CursorY = CursorPos Mod 8192
+	CursorX = CInt(CursorPos / 8192)
+End Function
+
+Function FindColorEx(iLeft,iTop,iRight,iBottom,szColor,iType,fSimilar,ByRef FoundX,ByRef FoundY)	'这个函数用来从某个矩形范围内模糊查找指定的颜色
+	FoundPixel = QMLibrary.FindColor(iLeft,iTop,iRight,iBottom,szColor,iType,fSimilar)
+	FoundX = CInt(FoundPixel / 8192)
+	FoundY = FoundPixel Mod 8192
+	FindColorEx = FoundPixel
+End Function
+
+Function FindPic(iLeft,iTop,iRight,iBottom,szFileName,fSimilar,ByRef FoundX,ByRef FoundY)
+'这个函数用于在屏幕范围内查找图片
+	FoundPixel = QMLibrary.FindPic(iLeft,iTop,iRight,iBottom,szFileName,fSimilar)
+	FoundX = CInt(FoundPixel / 8192)
+	FoundY = FoundPixel Mod 8192
+	FindPic = FoundPixel
+End Function

@@ -1,0 +1,3417 @@
+{
+  "module": 8,
+  "entry": 689,
+  "last": 888,
+  "actions": [
+    {
+      "record": 689,
+      "opcode": 30,
+      "location": 649,
+      "source_sl": 603,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 690,
+      "opcode": 4,
+      "location": 650,
+      "source_sl": 604,
+      "source": "Sgn(INTXX=0 or INTYY=0)",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "OR",
+            "args": [
+              {
+                "op": "=",
+                "args": [
+                  {
+                    "name": "INTXX"
+                  },
+                  {
+                    "const": 0
+                  }
+                ]
+              },
+              {
+                "op": "=",
+                "args": [
+                  {
+                    "name": "INTYY"
+                  },
+                  {
+                    "const": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 691,
+      "opcode": 6,
+      "location": 650,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 694
+    },
+    {
+      "record": 692,
+      "opcode": 30,
+      "location": 651,
+      "source_sl": 605,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 693,
+      "opcode": 5,
+      "location": 652,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 886
+    },
+    {
+      "record": 694,
+      "opcode": 30,
+      "location": 654,
+      "source_sl": 606,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 695,
+      "opcode": 4,
+      "location": 655,
+      "source_sl": 607,
+      "source": "Sgn(INTXX<0 or INTYY<0)",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "OR",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "name": "INTXX"
+                  },
+                  {
+                    "const": 0
+                  }
+                ]
+              },
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "name": "INTYY"
+                  },
+                  {
+                    "const": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 696,
+      "opcode": 6,
+      "location": 655,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 699
+    },
+    {
+      "record": 697,
+      "opcode": 30,
+      "location": 656,
+      "source_sl": 608,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 698,
+      "opcode": 5,
+      "location": 657,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 886
+    },
+    {
+      "record": 699,
+      "opcode": 30,
+      "location": 659,
+      "source_sl": 609,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 700,
+      "opcode": 2,
+      "location": 660,
+      "source_sl": 610,
+      "source": "Randomize",
+      "kind": "randomize"
+    },
+    {
+      "record": 701,
+      "opcode": 2,
+      "location": 661,
+      "source_sl": 611,
+      "source": "X=INT(15*RND-15)",
+      "kind": "random_int",
+      "name": "X"
+    },
+    {
+      "record": 702,
+      "opcode": 30,
+      "location": 662,
+      "source_sl": 612,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 703,
+      "opcode": 2,
+      "location": 663,
+      "source_sl": 613,
+      "source": "Randomize",
+      "kind": "randomize"
+    },
+    {
+      "record": 704,
+      "opcode": 2,
+      "location": 664,
+      "source_sl": 614,
+      "source": "Y=INT(15*RND-15)",
+      "kind": "random_int",
+      "name": "Y"
+    },
+    {
+      "record": 705,
+      "opcode": 30,
+      "location": 665,
+      "source_sl": 615,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 706,
+      "opcode": 4,
+      "location": 666,
+      "source_sl": 616,
+      "source": "Sgn((INTYY<YY1 and INTXX=XX1))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "name": "INTYY"
+                  },
+                  {
+                    "name": "YY1"
+                  }
+                ]
+              },
+              {
+                "op": "=",
+                "args": [
+                  {
+                    "name": "INTXX"
+                  },
+                  {
+                    "name": "XX1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 707,
+      "opcode": 6,
+      "location": 666,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 710
+    },
+    {
+      "record": 708,
+      "opcode": 2,
+      "location": 667,
+      "source_sl": 617,
+      "source": "V8689D8B2C5B0756D=90",
+      "kind": "assign",
+      "name": "V8689D8B2C5B0756D",
+      "expr": {
+        "const": 90
+      }
+    },
+    {
+      "record": 709,
+      "opcode": 16,
+      "location": 667,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 741
+    },
+    {
+      "record": 710,
+      "opcode": 4,
+      "location": 668,
+      "source_sl": 618,
+      "source": "Sgn((INTYY>YY1 and INTXX=XX1))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "INTYY"
+                  },
+                  {
+                    "name": "YY1"
+                  }
+                ]
+              },
+              {
+                "op": "=",
+                "args": [
+                  {
+                    "name": "INTXX"
+                  },
+                  {
+                    "name": "XX1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 711,
+      "opcode": 6,
+      "location": 668,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 714
+    },
+    {
+      "record": 712,
+      "opcode": 2,
+      "location": 669,
+      "source_sl": 619,
+      "source": "V8689D8B2C5B0756D=270",
+      "kind": "assign",
+      "name": "V8689D8B2C5B0756D",
+      "expr": {
+        "const": 270
+      }
+    },
+    {
+      "record": 713,
+      "opcode": 16,
+      "location": 670,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 741
+    },
+    {
+      "record": 714,
+      "opcode": 2,
+      "location": 671,
+      "source_sl": 620,
+      "source": "VF6CBD3BD7378756D=ATN((YY1-INTYY)/(XX1-INTXX))",
+      "kind": "assign",
+      "name": "VF6CBD3BD7378756D",
+      "expr": {
+        "op": "ATN",
+        "args": [
+          {
+            "op": "/",
+            "args": [
+              {
+                "op": "-",
+                "args": [
+                  {
+                    "name": "YY1"
+                  },
+                  {
+                    "name": "INTYY"
+                  }
+                ]
+              },
+              {
+                "op": "-",
+                "args": [
+                  {
+                    "name": "XX1"
+                  },
+                  {
+                    "name": "INTXX"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 715,
+      "opcode": 30,
+      "location": 672,
+      "source_sl": 621,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 716,
+      "opcode": 2,
+      "location": 673,
+      "source_sl": 622,
+      "source": "V8689D8B2C5B0756D=VF6CBD3BD7378756D/V88A365757378756D*180",
+      "kind": "assign",
+      "name": "V8689D8B2C5B0756D",
+      "expr": {
+        "op": "*",
+        "args": [
+          {
+            "op": "/",
+            "args": [
+              {
+                "name": "VF6CBD3BD7378756D"
+              },
+              {
+                "name": "V88A365757378756D"
+              }
+            ]
+          },
+          {
+            "const": 180
+          }
+        ]
+      }
+    },
+    {
+      "record": 717,
+      "opcode": 30,
+      "location": 674,
+      "source_sl": 623,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 718,
+      "opcode": 4,
+      "location": 675,
+      "source_sl": 624,
+      "source": "Sgn((INTYY>YY1 and XX1>INTXX))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "INTYY"
+                  },
+                  {
+                    "name": "YY1"
+                  }
+                ]
+              },
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "XX1"
+                  },
+                  {
+                    "name": "INTXX"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 719,
+      "opcode": 6,
+      "location": 675,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 722
+    },
+    {
+      "record": 720,
+      "opcode": 2,
+      "location": 676,
+      "source_sl": 625,
+      "source": "V8689D8B2C5B0756D=V8689D8B2C5B0756D*-1+180",
+      "kind": "assign",
+      "name": "V8689D8B2C5B0756D",
+      "expr": {
+        "op": "+",
+        "args": [
+          {
+            "op": "*",
+            "args": [
+              {
+                "name": "V8689D8B2C5B0756D"
+              },
+              {
+                "op": "UNARY-",
+                "args": [
+                  {
+                    "const": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "const": 180
+          }
+        ]
+      }
+    },
+    {
+      "record": 721,
+      "opcode": 16,
+      "location": 676,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 741
+    },
+    {
+      "record": 722,
+      "opcode": 4,
+      "location": 677,
+      "source_sl": 626,
+      "source": "Sgn((INTYY>YY1 and INTXX>XX1))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "INTYY"
+                  },
+                  {
+                    "name": "YY1"
+                  }
+                ]
+              },
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "INTXX"
+                  },
+                  {
+                    "name": "XX1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 723,
+      "opcode": 6,
+      "location": 677,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 726
+    },
+    {
+      "record": 724,
+      "opcode": 2,
+      "location": 678,
+      "source_sl": 627,
+      "source": "V8689D8B2C5B0756D=360-V8689D8B2C5B0756D",
+      "kind": "assign",
+      "name": "V8689D8B2C5B0756D",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "const": 360
+          },
+          {
+            "name": "V8689D8B2C5B0756D"
+          }
+        ]
+      }
+    },
+    {
+      "record": 725,
+      "opcode": 16,
+      "location": 678,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 741
+    },
+    {
+      "record": 726,
+      "opcode": 4,
+      "location": 679,
+      "source_sl": 628,
+      "source": "Sgn((INTXX<XX1 and INTYY<YY1))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "name": "INTXX"
+                  },
+                  {
+                    "name": "XX1"
+                  }
+                ]
+              },
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "name": "INTYY"
+                  },
+                  {
+                    "name": "YY1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 727,
+      "opcode": 6,
+      "location": 679,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 730
+    },
+    {
+      "record": 728,
+      "opcode": 2,
+      "location": 680,
+      "source_sl": 629,
+      "source": "V8689D8B2C5B0756D=180-V8689D8B2C5B0756D",
+      "kind": "assign",
+      "name": "V8689D8B2C5B0756D",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "const": 180
+          },
+          {
+            "name": "V8689D8B2C5B0756D"
+          }
+        ]
+      }
+    },
+    {
+      "record": 729,
+      "opcode": 16,
+      "location": 680,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 741
+    },
+    {
+      "record": 730,
+      "opcode": 4,
+      "location": 681,
+      "source_sl": 630,
+      "source": "Sgn((INTYY<YY1 and INTXX>XX1))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "name": "INTYY"
+                  },
+                  {
+                    "name": "YY1"
+                  }
+                ]
+              },
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "INTXX"
+                  },
+                  {
+                    "name": "XX1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 731,
+      "opcode": 6,
+      "location": 681,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 734
+    },
+    {
+      "record": 732,
+      "opcode": 2,
+      "location": 682,
+      "source_sl": 631,
+      "source": "V8689D8B2C5B0756D=V8689D8B2C5B0756D*-1",
+      "kind": "assign",
+      "name": "V8689D8B2C5B0756D",
+      "expr": {
+        "op": "*",
+        "args": [
+          {
+            "name": "V8689D8B2C5B0756D"
+          },
+          {
+            "op": "UNARY-",
+            "args": [
+              {
+                "const": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 733,
+      "opcode": 16,
+      "location": 682,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 741
+    },
+    {
+      "record": 734,
+      "opcode": 4,
+      "location": 683,
+      "source_sl": 632,
+      "source": "Sgn((INTYY=YY1 and INTXX>XX1))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "=",
+                "args": [
+                  {
+                    "name": "INTYY"
+                  },
+                  {
+                    "name": "YY1"
+                  }
+                ]
+              },
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "INTXX"
+                  },
+                  {
+                    "name": "XX1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 735,
+      "opcode": 6,
+      "location": 683,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 738
+    },
+    {
+      "record": 736,
+      "opcode": 2,
+      "location": 684,
+      "source_sl": 633,
+      "source": "V8689D8B2C5B0756D=0",
+      "kind": "assign",
+      "name": "V8689D8B2C5B0756D",
+      "expr": {
+        "const": 0
+      }
+    },
+    {
+      "record": 737,
+      "opcode": 16,
+      "location": 684,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 741
+    },
+    {
+      "record": 738,
+      "opcode": 4,
+      "location": 685,
+      "source_sl": 634,
+      "source": "Sgn((INTYY=YY1 and INTXX<XX1))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "=",
+                "args": [
+                  {
+                    "name": "INTYY"
+                  },
+                  {
+                    "name": "YY1"
+                  }
+                ]
+              },
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "name": "INTXX"
+                  },
+                  {
+                    "name": "XX1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 739,
+      "opcode": 6,
+      "location": 685,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 741
+    },
+    {
+      "record": 740,
+      "opcode": 2,
+      "location": 686,
+      "source_sl": 635,
+      "source": "V8689D8B2C5B0756D=180",
+      "kind": "assign",
+      "name": "V8689D8B2C5B0756D",
+      "expr": {
+        "const": 180
+      }
+    },
+    {
+      "record": 741,
+      "opcode": 30,
+      "location": 689,
+      "source_sl": 636,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 742,
+      "opcode": 4,
+      "location": 690,
+      "source_sl": 637,
+      "source": "Sgn((0<=V8689D8B2C5B0756D and V8689D8B2C5B0756D<=10))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<=",
+                "args": [
+                  {
+                    "const": 0
+                  },
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  }
+                ]
+              },
+              {
+                "op": "<=",
+                "args": [
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  },
+                  {
+                    "const": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 743,
+      "opcode": 6,
+      "location": 690,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 758
+    },
+    {
+      "record": 744,
+      "opcode": 30,
+      "location": 691,
+      "source_sl": 638,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 745,
+      "opcode": 30,
+      "location": 692,
+      "source_sl": 639,
+      "source": "Call DM.MOVETO(1291+X,197+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1291
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 197
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 746,
+      "opcode": 30,
+      "location": 693,
+      "source_sl": 640,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 747,
+      "opcode": 30,
+      "location": 694,
+      "source_sl": 641,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 748,
+      "opcode": 30,
+      "location": 695,
+      "source_sl": 642,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 749,
+      "opcode": 30,
+      "location": 696,
+      "source_sl": 643,
+      "source": "Call DM.MOVETO(1311+X,775+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1311
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 775
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 750,
+      "opcode": 30,
+      "location": 697,
+      "source_sl": 644,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 751,
+      "opcode": 30,
+      "location": 698,
+      "source_sl": 645,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 752,
+      "opcode": 30,
+      "location": 699,
+      "source_sl": 646,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 753,
+      "opcode": 30,
+      "location": 700,
+      "source_sl": 647,
+      "source": "Call DM.MOVETO(1432+X,478+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1432
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 478
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 754,
+      "opcode": 30,
+      "location": 701,
+      "source_sl": 648,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 755,
+      "opcode": 30,
+      "location": 702,
+      "source_sl": 649,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 756,
+      "opcode": 30,
+      "location": 703,
+      "source_sl": 650,
+      "source": "Call QMLibrary.Delay((500))",
+      "kind": "delay",
+      "milliseconds": 500
+    },
+    {
+      "record": 757,
+      "opcode": 16,
+      "location": 704,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 885
+    },
+    {
+      "record": 758,
+      "opcode": 4,
+      "location": 705,
+      "source_sl": 651,
+      "source": "Sgn((350<V8689D8B2C5B0756D and V8689D8B2C5B0756D<=360))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "const": 350
+                  },
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  }
+                ]
+              },
+              {
+                "op": "<=",
+                "args": [
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  },
+                  {
+                    "const": 360
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 759,
+      "opcode": 6,
+      "location": 705,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 774
+    },
+    {
+      "record": 760,
+      "opcode": 30,
+      "location": 706,
+      "source_sl": 652,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 761,
+      "opcode": 30,
+      "location": 707,
+      "source_sl": 653,
+      "source": "Call DM.MOVETO(1291+X,197+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1291
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 197
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 762,
+      "opcode": 30,
+      "location": 708,
+      "source_sl": 654,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 763,
+      "opcode": 30,
+      "location": 709,
+      "source_sl": 655,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 764,
+      "opcode": 30,
+      "location": 710,
+      "source_sl": 656,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 765,
+      "opcode": 30,
+      "location": 711,
+      "source_sl": 657,
+      "source": "Call DM.MOVETO(1311+X,775+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1311
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 775
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 766,
+      "opcode": 30,
+      "location": 712,
+      "source_sl": 658,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 767,
+      "opcode": 30,
+      "location": 713,
+      "source_sl": 659,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 768,
+      "opcode": 30,
+      "location": 714,
+      "source_sl": 660,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 769,
+      "opcode": 30,
+      "location": 715,
+      "source_sl": 661,
+      "source": "Call DM.MOVETO(1432+X,478+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1432
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 478
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 770,
+      "opcode": 30,
+      "location": 716,
+      "source_sl": 662,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 771,
+      "opcode": 30,
+      "location": 717,
+      "source_sl": 663,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 772,
+      "opcode": 30,
+      "location": 718,
+      "source_sl": 664,
+      "source": "Call QMLibrary.Delay((500))",
+      "kind": "delay",
+      "milliseconds": 500
+    },
+    {
+      "record": 773,
+      "opcode": 16,
+      "location": 719,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 885
+    },
+    {
+      "record": 774,
+      "opcode": 4,
+      "location": 720,
+      "source_sl": 665,
+      "source": "Sgn((10<V8689D8B2C5B0756D and V8689D8B2C5B0756D<=80))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "const": 10
+                  },
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  }
+                ]
+              },
+              {
+                "op": "<=",
+                "args": [
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  },
+                  {
+                    "const": 80
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 775,
+      "opcode": 6,
+      "location": 720,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 790
+    },
+    {
+      "record": 776,
+      "opcode": 30,
+      "location": 721,
+      "source_sl": 666,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 777,
+      "opcode": 30,
+      "location": 722,
+      "source_sl": 667,
+      "source": "Call DM.MOVETO(997+X,56+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 997
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 56
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 778,
+      "opcode": 30,
+      "location": 723,
+      "source_sl": 668,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 779,
+      "opcode": 30,
+      "location": 724,
+      "source_sl": 669,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 780,
+      "opcode": 30,
+      "location": 725,
+      "source_sl": 670,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 781,
+      "opcode": 30,
+      "location": 726,
+      "source_sl": 671,
+      "source": "Call DM.MOVETO(1426+X,488+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1426
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 488
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 782,
+      "opcode": 30,
+      "location": 727,
+      "source_sl": 672,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 783,
+      "opcode": 30,
+      "location": 728,
+      "source_sl": 673,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 784,
+      "opcode": 30,
+      "location": 729,
+      "source_sl": 674,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 785,
+      "opcode": 30,
+      "location": 730,
+      "source_sl": 675,
+      "source": "Call DM.MOVETO(1348+X,169+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1348
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 169
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 786,
+      "opcode": 30,
+      "location": 731,
+      "source_sl": 676,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 787,
+      "opcode": 30,
+      "location": 732,
+      "source_sl": 677,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 788,
+      "opcode": 30,
+      "location": 733,
+      "source_sl": 678,
+      "source": "Call QMLibrary.Delay((500))",
+      "kind": "delay",
+      "milliseconds": 500
+    },
+    {
+      "record": 789,
+      "opcode": 16,
+      "location": 734,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 885
+    },
+    {
+      "record": 790,
+      "opcode": 4,
+      "location": 735,
+      "source_sl": 679,
+      "source": "Sgn((80<V8689D8B2C5B0756D and V8689D8B2C5B0756D<=100))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "const": 80
+                  },
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  }
+                ]
+              },
+              {
+                "op": "<=",
+                "args": [
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  },
+                  {
+                    "const": 100
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 791,
+      "opcode": 6,
+      "location": 735,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 806
+    },
+    {
+      "record": 792,
+      "opcode": 30,
+      "location": 736,
+      "source_sl": 680,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 793,
+      "opcode": 30,
+      "location": 737,
+      "source_sl": 681,
+      "source": "Call DM.MOVETO(542+X,273+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 542
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 273
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 794,
+      "opcode": 30,
+      "location": 738,
+      "source_sl": 682,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 795,
+      "opcode": 30,
+      "location": 739,
+      "source_sl": 683,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 796,
+      "opcode": 30,
+      "location": 740,
+      "source_sl": 684,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 797,
+      "opcode": 30,
+      "location": 741,
+      "source_sl": 685,
+      "source": "Call DM.MOVETO(1350+X,281+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1350
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 281
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 798,
+      "opcode": 30,
+      "location": 742,
+      "source_sl": 686,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 799,
+      "opcode": 30,
+      "location": 743,
+      "source_sl": 687,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 800,
+      "opcode": 30,
+      "location": 744,
+      "source_sl": 688,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 801,
+      "opcode": 30,
+      "location": 745,
+      "source_sl": 689,
+      "source": "Call DM.MOVETO(964+X,181+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 964
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 181
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 802,
+      "opcode": 30,
+      "location": 746,
+      "source_sl": 690,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 803,
+      "opcode": 30,
+      "location": 747,
+      "source_sl": 691,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 804,
+      "opcode": 30,
+      "location": 748,
+      "source_sl": 692,
+      "source": "Call QMLibrary.Delay((500))",
+      "kind": "delay",
+      "milliseconds": 500
+    },
+    {
+      "record": 805,
+      "opcode": 16,
+      "location": 749,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 885
+    },
+    {
+      "record": 806,
+      "opcode": 4,
+      "location": 750,
+      "source_sl": 693,
+      "source": "Sgn((100<V8689D8B2C5B0756D and V8689D8B2C5B0756D<=170))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "const": 100
+                  },
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  }
+                ]
+              },
+              {
+                "op": "<=",
+                "args": [
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  },
+                  {
+                    "const": 170
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 807,
+      "opcode": 6,
+      "location": 750,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 822
+    },
+    {
+      "record": 808,
+      "opcode": 30,
+      "location": 751,
+      "source_sl": 694,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 809,
+      "opcode": 30,
+      "location": 752,
+      "source_sl": 695,
+      "source": "Call DM.MOVETO(962+X,200+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 962
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 200
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 810,
+      "opcode": 30,
+      "location": 753,
+      "source_sl": 696,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 811,
+      "opcode": 30,
+      "location": 754,
+      "source_sl": 697,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 812,
+      "opcode": 30,
+      "location": 755,
+      "source_sl": 698,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 813,
+      "opcode": 30,
+      "location": 756,
+      "source_sl": 699,
+      "source": "Call DM.MOVETO(562+X,491+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 562
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 491
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 814,
+      "opcode": 30,
+      "location": 757,
+      "source_sl": 700,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 815,
+      "opcode": 30,
+      "location": 758,
+      "source_sl": 701,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 816,
+      "opcode": 30,
+      "location": 759,
+      "source_sl": 702,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 817,
+      "opcode": 30,
+      "location": 760,
+      "source_sl": 703,
+      "source": "Call DM.MOVETO(643+X,206+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 643
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 206
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 818,
+      "opcode": 30,
+      "location": 761,
+      "source_sl": 704,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 819,
+      "opcode": 30,
+      "location": 762,
+      "source_sl": 705,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 820,
+      "opcode": 30,
+      "location": 763,
+      "source_sl": 706,
+      "source": "Call QMLibrary.Delay((500))",
+      "kind": "delay",
+      "milliseconds": 500
+    },
+    {
+      "record": 821,
+      "opcode": 16,
+      "location": 764,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 885
+    },
+    {
+      "record": 822,
+      "opcode": 4,
+      "location": 765,
+      "source_sl": 707,
+      "source": "Sgn((170<V8689D8B2C5B0756D and V8689D8B2C5B0756D<=190))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "const": 170
+                  },
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  }
+                ]
+              },
+              {
+                "op": "<=",
+                "args": [
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  },
+                  {
+                    "const": 190
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 823,
+      "opcode": 6,
+      "location": 765,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 838
+    },
+    {
+      "record": 824,
+      "opcode": 30,
+      "location": 766,
+      "source_sl": 708,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 825,
+      "opcode": 30,
+      "location": 767,
+      "source_sl": 709,
+      "source": "Call DM.MOVETO(591+X,218+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 591
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 218
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 826,
+      "opcode": 30,
+      "location": 768,
+      "source_sl": 710,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 827,
+      "opcode": 30,
+      "location": 769,
+      "source_sl": 711,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 828,
+      "opcode": 30,
+      "location": 770,
+      "source_sl": 712,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 829,
+      "opcode": 30,
+      "location": 771,
+      "source_sl": 713,
+      "source": "Call DM.MOVETO(595+X,791+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 595
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 791
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 830,
+      "opcode": 30,
+      "location": 772,
+      "source_sl": 714,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 831,
+      "opcode": 30,
+      "location": 773,
+      "source_sl": 715,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 832,
+      "opcode": 30,
+      "location": 774,
+      "source_sl": 716,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 833,
+      "opcode": 30,
+      "location": 775,
+      "source_sl": 717,
+      "source": "Call DM.MOVETO(442+X,463+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 442
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 463
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 834,
+      "opcode": 30,
+      "location": 776,
+      "source_sl": 718,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 835,
+      "opcode": 30,
+      "location": 777,
+      "source_sl": 719,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 836,
+      "opcode": 30,
+      "location": 778,
+      "source_sl": 720,
+      "source": "Call QMLibrary.Delay((500))",
+      "kind": "delay",
+      "milliseconds": 500
+    },
+    {
+      "record": 837,
+      "opcode": 16,
+      "location": 779,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 885
+    },
+    {
+      "record": 838,
+      "opcode": 4,
+      "location": 780,
+      "source_sl": 721,
+      "source": "Sgn((190<V8689D8B2C5B0756D and V8689D8B2C5B0756D<=260))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "const": 190
+                  },
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  }
+                ]
+              },
+              {
+                "op": "<=",
+                "args": [
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  },
+                  {
+                    "const": 260
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 839,
+      "opcode": 6,
+      "location": 780,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 854
+    },
+    {
+      "record": 840,
+      "opcode": 30,
+      "location": 781,
+      "source_sl": 722,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 841,
+      "opcode": 30,
+      "location": 782,
+      "source_sl": 723,
+      "source": "Call DM.MOVETO(474+X,476+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 474
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 476
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 842,
+      "opcode": 30,
+      "location": 783,
+      "source_sl": 724,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 843,
+      "opcode": 30,
+      "location": 784,
+      "source_sl": 725,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 844,
+      "opcode": 30,
+      "location": 785,
+      "source_sl": 726,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 845,
+      "opcode": 30,
+      "location": 786,
+      "source_sl": 727,
+      "source": "Call DM.MOVETO(921+X,870+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 921
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 870
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 846,
+      "opcode": 30,
+      "location": 787,
+      "source_sl": 728,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 847,
+      "opcode": 30,
+      "location": 788,
+      "source_sl": 729,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 848,
+      "opcode": 30,
+      "location": 789,
+      "source_sl": 730,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 849,
+      "opcode": 30,
+      "location": 790,
+      "source_sl": 731,
+      "source": "Call DM.MOVETO(600+X,751+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 600
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 751
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 850,
+      "opcode": 30,
+      "location": 791,
+      "source_sl": 732,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 851,
+      "opcode": 30,
+      "location": 792,
+      "source_sl": 733,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 852,
+      "opcode": 30,
+      "location": 793,
+      "source_sl": 734,
+      "source": "Call QMLibrary.Delay((500))",
+      "kind": "delay",
+      "milliseconds": 500
+    },
+    {
+      "record": 853,
+      "opcode": 16,
+      "location": 794,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 885
+    },
+    {
+      "record": 854,
+      "opcode": 4,
+      "location": 795,
+      "source_sl": 735,
+      "source": "Sgn((260<V8689D8B2C5B0756D and V8689D8B2C5B0756D<=280))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "const": 260
+                  },
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  }
+                ]
+              },
+              {
+                "op": "<=",
+                "args": [
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  },
+                  {
+                    "const": 280
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 855,
+      "opcode": 6,
+      "location": 795,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 870
+    },
+    {
+      "record": 856,
+      "opcode": 30,
+      "location": 796,
+      "source_sl": 736,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 857,
+      "opcode": 30,
+      "location": 797,
+      "source_sl": 737,
+      "source": "Call DM.MOVETO(597+X,698+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 597
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 698
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 858,
+      "opcode": 30,
+      "location": 798,
+      "source_sl": 738,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 859,
+      "opcode": 30,
+      "location": 799,
+      "source_sl": 739,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 860,
+      "opcode": 30,
+      "location": 800,
+      "source_sl": 740,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 861,
+      "opcode": 30,
+      "location": 801,
+      "source_sl": 741,
+      "source": "Call DM.MOVETO(1417+X,714+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1417
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 714
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 862,
+      "opcode": 30,
+      "location": 802,
+      "source_sl": 742,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 863,
+      "opcode": 30,
+      "location": 803,
+      "source_sl": 743,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 864,
+      "opcode": 30,
+      "location": 804,
+      "source_sl": 744,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 865,
+      "opcode": 30,
+      "location": 805,
+      "source_sl": 745,
+      "source": "Call DM.MOVETO(1024+X,902+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1024
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 902
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 866,
+      "opcode": 30,
+      "location": 806,
+      "source_sl": 746,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 867,
+      "opcode": 30,
+      "location": 807,
+      "source_sl": 747,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 868,
+      "opcode": 30,
+      "location": 808,
+      "source_sl": 748,
+      "source": "Call QMLibrary.Delay((500))",
+      "kind": "delay",
+      "milliseconds": 500
+    },
+    {
+      "record": 869,
+      "opcode": 16,
+      "location": 809,
+      "source_sl": null,
+      "source": null,
+      "kind": "jump",
+      "target": 885
+    },
+    {
+      "record": 870,
+      "opcode": 4,
+      "location": 810,
+      "source_sl": 749,
+      "source": "Sgn((280<V8689D8B2C5B0756D and V8689D8B2C5B0756D<=350))",
+      "kind": "test",
+      "expr": {
+        "op": "SGN",
+        "args": [
+          {
+            "op": "AND",
+            "args": [
+              {
+                "op": "<",
+                "args": [
+                  {
+                    "const": 280
+                  },
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  }
+                ]
+              },
+              {
+                "op": "<=",
+                "args": [
+                  {
+                    "name": "V8689D8B2C5B0756D"
+                  },
+                  {
+                    "const": 350
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": 871,
+      "opcode": 6,
+      "location": 810,
+      "source_sl": null,
+      "source": null,
+      "kind": "if_zero",
+      "target": 885
+    },
+    {
+      "record": 872,
+      "opcode": 30,
+      "location": 811,
+      "source_sl": 750,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 873,
+      "opcode": 30,
+      "location": 812,
+      "source_sl": 751,
+      "source": "Call DM.MOVETO(1518+X,470+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1518
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 470
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 874,
+      "opcode": 30,
+      "location": 813,
+      "source_sl": 752,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 875,
+      "opcode": 30,
+      "location": 814,
+      "source_sl": 753,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 876,
+      "opcode": 30,
+      "location": 815,
+      "source_sl": 754,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 877,
+      "opcode": 30,
+      "location": 816,
+      "source_sl": 755,
+      "source": "Call DM.MOVETO(1068+X,850+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1068
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 850
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 878,
+      "opcode": 30,
+      "location": 817,
+      "source_sl": 756,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 879,
+      "opcode": 30,
+      "location": 818,
+      "source_sl": 757,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 880,
+      "opcode": 30,
+      "location": 819,
+      "source_sl": 758,
+      "source": "Call QMLibrary.Delay((100))",
+      "kind": "delay",
+      "milliseconds": 100
+    },
+    {
+      "record": 881,
+      "opcode": 30,
+      "location": 820,
+      "source_sl": 759,
+      "source": "Call DM.MOVETO(1531+X,729+Y)",
+      "kind": "move_to",
+      "arguments": [
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 1531
+            },
+            {
+              "name": "X"
+            }
+          ]
+        },
+        {
+          "op": "+",
+          "args": [
+            {
+              "const": 729
+            },
+            {
+              "name": "Y"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": 882,
+      "opcode": 30,
+      "location": 821,
+      "source_sl": 760,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 883,
+      "opcode": 30,
+      "location": 822,
+      "source_sl": 761,
+      "source": "Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)",
+      "kind": "mouse_click",
+      "arguments": [
+        {
+          "const": 2
+        },
+        {
+          "name": "G_ISIMULATEMODEINVBSBLOCK"
+        },
+        {
+          "const": 1
+        }
+      ]
+    },
+    {
+      "record": 884,
+      "opcode": 30,
+      "location": 823,
+      "source_sl": 762,
+      "source": "Call QMLibrary.Delay((500))",
+      "kind": "delay",
+      "milliseconds": 500
+    },
+    {
+      "record": 885,
+      "opcode": 30,
+      "location": 826,
+      "source_sl": 763,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 886,
+      "opcode": 30,
+      "location": 828,
+      "source_sl": 764,
+      "source": "Call QMLibrary.Delay((50))",
+      "kind": "delay",
+      "milliseconds": 50
+    },
+    {
+      "record": 887,
+      "opcode": 2,
+      "location": 829,
+      "source_sl": 765,
+      "source": "F2730835_2229_445E_97C7_l3F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA.F273O835_2229_445E_97C7_l3F76l277lDA:Set F2730835_2229_445E_97C7_13F76l277lDA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_l3F7612771DA.F2730835_2229_445E_97C7_13F76l2771DA:Set F2730835_2229_445E_97C7_13F76l277lDA=Nothing",
+      "kind": "frame_restore"
+    },
+    {
+      "record": 888,
+      "opcode": 13,
+      "location": 829,
+      "source_sl": null,
+      "source": null,
+      "kind": "return"
+    }
+  ],
+  "angle_name": "V8689D8B2C5B0756D",
+  "pi_name": "V88A365757378756D",
+  "source_action_sha256": "46145c51722bd2e9dd27262822a7e9d660c1eafd95b23e550445daef302b3e96",
+  "source_program_sha256": "fc940a3dfc668afcf29707bd1332a538fd7b9bb400ef38b70c2fed7d7393640f",
+  "original_rng_equivalent": false,
+  "original_body_guest_verified": true,
+  "guest_report_sha256": "f5b52e9c224240226b53b42984f12fd0d274a7c08c9881430f6d235a945b42c5",
+  "controlled_cases": 146,
+  "full_module_restored": false
+}

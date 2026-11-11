@@ -1,0 +1,101 @@
+{
+  "program_sha256": "5735d6f1f999787e42481a1bc9a6756976a5b18ff836a22e444413001f2f0b8f",
+  "entry": 1551,
+  "loop": 1560,
+  "body_end": 1638,
+  "all_88_original_records_present": true,
+  "stages": [
+    {
+      "stage": 1,
+      "query_record": 1565,
+      "query_source_sl": 1267,
+      "source": "DM_RET=DM.FINDCOLOR(160,1,260,25,F2730835_2229_445E_97C7_l3F7612771DA.F2730835_2229_445E_97C7_l3F761277lDA(1) & \"-151515\",0.9,0,INTX,INTY)",
+      "condition_record": 1566,
+      "condition_source": "Sgn((INTX>=0))",
+      "failure_jump_record": 1567,
+      "failure_target": 1635,
+      "next_loop_target": 1560
+    },
+    {
+      "stage": 2,
+      "query_record": 1569,
+      "query_source_sl": 1270,
+      "source": "DM_RET=DM.FINDPIC(1495,288,1540,550,\"C:\\users\\mymacro\\si.bmp\",\"000000\",0.8,0,INTX,INTY)",
+      "condition_record": 1570,
+      "condition_source": "Sgn((INTX>=0))",
+      "failure_jump_record": 1571,
+      "failure_target": 1635,
+      "next_loop_target": 1560
+    },
+    {
+      "stage": 3,
+      "query_record": 1575,
+      "query_source_sl": 1275,
+      "source": "DM_RET=DM.FINDCOLOR(160,1,260,25,F2730835_2229_445E_97C7_l3F7612771DA.F2730835_2229_445E_97C7_l3F761277lDA(2) & \"-151515\",0.9,0,INTX,INTY)",
+      "condition_record": 1576,
+      "condition_source": "Sgn((INTX>=0))",
+      "failure_jump_record": 1577,
+      "failure_target": 1635,
+      "next_loop_target": 1560
+    },
+    {
+      "stage": 4,
+      "query_record": 1579,
+      "query_source_sl": 1278,
+      "source": "DM_RET=DM.FINDCOLOR(1291,162,1479,209,\"FFD200-050505\",0.9,0,INTX,INTY)",
+      "condition_record": 1580,
+      "condition_source": "Sgn((INTX>=0))",
+      "failure_jump_record": 1581,
+      "failure_target": 1635,
+      "next_loop_target": 1560
+    },
+    {
+      "stage": 5,
+      "query_record": 1585,
+      "query_source_sl": 1283,
+      "source": "DM_RET=DM.FINDCOLOR(160,1,260,25,F2730835_2229_445E_97C7_l3F7612771DA.F2730835_2229_445E_97C7_l3F761277lDA(3) & \"-151515\",0.9,0,INTX,INTY)",
+      "condition_record": 1586,
+      "condition_source": "Sgn((INTX>=0))",
+      "failure_jump_record": 1587,
+      "failure_target": 1635,
+      "next_loop_target": 1560
+    },
+    {
+      "stage": 6,
+      "query_record": 1589,
+      "query_source_sl": 1286,
+      "source": "DM_RET=DM.FINDPIC(1495,288,1540,550,\"C:\\users\\mymacro\\si.bmp\",\"050505\",0.8,0,INTX,INTY)",
+      "condition_record": 1590,
+      "condition_source": "Sgn((INTX>=0))",
+      "failure_jump_record": 1591,
+      "failure_target": 1635,
+      "next_loop_target": 1560
+    },
+    {
+      "stage": 7,
+      "query_record": 1595,
+      "query_source_sl": 1291,
+      "source": "DM_RET=DM.FINDCOLOR(160,1,260,25,F2730835_2229_445E_97C7_l3F7612771DA.F2730835_2229_445E_97C7_l3F761277lDA(4) & \"-151515\",0.9,0,INTX,INTY)",
+      "condition_record": 1596,
+      "condition_source": "Sgn((INTX>=0))",
+      "failure_jump_record": 1597,
+      "failure_target": 1635,
+      "next_loop_target": 1560
+    },
+    {
+      "stage": 8,
+      "query_record": 1599,
+      "query_source_sl": 1294,
+      "source": "DM_RET=DM.FINDCOLOR(1291,162,1479,209,\"FFD200-050505\",0.9,0,INTX,INTY)",
+      "condition_record": 1600,
+      "condition_source": "Sgn((INTX>=0))",
+      "failure_jump_record": 1601,
+      "failure_target": 1635,
+      "next_loop_target": 1560
+    }
+  ],
+  "sdk_marker_recovered": false,
+  "class_entry_mapping_inferred": true,
+  "runtime_test_status": "18 controlled original-body guest cases passed; 596 owned translation events match",
+  "original_script_executed_by_this_generator": false
+}

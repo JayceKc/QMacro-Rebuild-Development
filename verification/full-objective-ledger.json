@@ -1,0 +1,346 @@
+{
+  "objective": "整套還原成功",
+  "status": "active",
+  "full_completion_proven": false,
+  "modules": [
+    {
+      "module": 1,
+      "name": "換角色刷地牢",
+      "preserved_record_count": 13611,
+      "unresolved_original_records": 500,
+      "routine_blocks": 60,
+      "saved_callbacks": [],
+      "readable_flow_exists": true,
+      "full_entry_to_end_recovered": false,
+      "all_branches_and_callbacks_verified": false,
+      "runtime_state": "保留資料與繁體介面可由新核心載入；完整入口尚未重建。戰鬥與副本子程序已接入2290筆，60組固定副本比對4946事件，觀測1562筆。戰鬥啟停及找怪走位另接入2163筆，64組固定副本比對2939事件，含全部25個所選工作啟動位置，尚有4個待接入口。已接通前述入口並保留擷取子程序，另新增1352筆，23組固定副本核對2392事件，觀測新段547筆；正式重啟生命週期未驗證。地圖與換角色另接入5678筆，60組固定副本核對6835事件，觀測新段3205筆；原始主入口與其餘分支仍未完成。進本、道具欄及其餘保留子程序另接入1291筆，20組固定副本核對1612事件，觀測新段642筆。找圖計數30筆已接入，3組固定副本核對回傳和換列；合計接入12804筆，另有307筆可讀記錄已分類待接。主流程尾段再接入179筆，3組固定副本核對1497事件及缺失回跳。全部13111筆可讀記錄已納入索引與事件模型，500筆缺失仍待還原；預設入口及Form1控制路徑已核對，真實介面與並行仍未驗證。從原入口到主迴圈回跳已有 2 組合成重播，附未解位置的順序通過假設",
+      "complete": false,
+      "missing_position_candidates": {
+        "candidate_positions": 496,
+        "unresolved_positions": [
+          62,
+          101,
+          315,
+          555
+        ],
+        "plans": [
+          {
+            "file": "battle-chaos-multi-cycle.json",
+            "positions": 128
+          },
+          {
+            "file": "battle-chaos-multi-entry.json",
+            "positions": 81
+          },
+          {
+            "file": "battle-checkbox-setup.json",
+            "positions": 107
+          },
+          {
+            "file": "battle-entry-routes.json",
+            "positions": 36
+          },
+          {
+            "file": "battle-first-screen.json",
+            "positions": 45
+          },
+          {
+            "file": "battle-startup.json",
+            "positions": 99
+          }
+        ]
+      }
+    },
+    {
+      "module": 3,
+      "name": "樂園",
+      "preserved_record_count": 6463,
+      "unresolved_original_records": 328,
+      "routine_blocks": 38,
+      "saved_callbacks": [],
+      "readable_flow_exists": true,
+      "full_entry_to_end_recovered": false,
+      "all_branches_and_callbacks_verified": false,
+      "runtime_state": "保留資料與繁體介面可由新核心載入；完整入口尚未重建。戰鬥與副本子程序已接入1870筆，45組固定副本比對4098事件，觀測1287筆。戰鬥啟停及找怪走位另接入397筆，34組固定副本比對2541事件，含全部17個所選工作啟動位置，尚有2個待接入口。已接通前述入口並保留擷取子程序，另新增241筆，6組固定副本核對628事件，觀測新段233筆；正式重啟生命週期未驗證。地圖與換角色另接入2798筆，37組固定副本核對4455事件，觀測新段1833筆；原始主入口與其餘分支仍未完成。進本、道具欄及其餘保留子程序另接入715筆，18組固定副本核對1072事件，觀測新段381筆。找圖計數30筆已接入，3組固定副本核對回傳和換列；合計接入6051筆，另有84筆可讀記錄已分類待接。全部6135筆可讀記錄已納入索引與事件模型，328筆缺失仍待還原；預設入口及Form1控制路徑已核對，真實介面與並行仍未驗證。從原入口到主迴圈回跳已有 2 組合成重播，附未解位置的順序通過假設",
+      "complete": false,
+      "missing_position_candidates": {
+        "candidate_positions": 326,
+        "unresolved_positions": [
+          40,
+          77
+        ],
+        "plans": [
+          {
+            "file": "battle-checkbox-setup.json",
+            "positions": 41
+          },
+          {
+            "file": "battle-entry-routes.json",
+            "positions": 13
+          },
+          {
+            "file": "battle-first-screen.json",
+            "positions": 42
+          },
+          {
+            "file": "battle-paradise-cycle.json",
+            "positions": 150
+          },
+          {
+            "file": "battle-startup.json",
+            "positions": 80
+          }
+        ]
+      }
+    },
+    {
+      "module": 5,
+      "name": "釣魚",
+      "preserved_record_count": 929,
+      "unresolved_original_records": 500,
+      "routine_blocks": 2,
+      "saved_callbacks": [],
+      "readable_flow_exists": true,
+      "full_entry_to_end_recovered": false,
+      "all_branches_and_callbacks_verified": false,
+      "runtime_state": "釣魚382筆具名狀態機已建立；77組原文副本路徑及5243外部事件一致，實際覆蓋365筆，17筆在首次停止之後未執行。前500位置在六項額外結構假設下有176個唯一對齊位置，仍非原指令復原且有大量候選，完整入口尚未重建。另接入36筆主流程尾段與11筆宿主記錄，429筆可讀記錄已納入；4案核對33事件與缺失回跳，另核對預設入口和Form1",
+      "complete": false,
+      "missing_position_candidates": {
+        "candidate_positions": 496,
+        "unresolved_positions": [
+          26,
+          116,
+          139,
+          319
+        ],
+        "plans": [
+          {
+            "file": "fishing-catch.json",
+            "positions": 87
+          },
+          {
+            "file": "fishing-finish-modes.json",
+            "positions": 184
+          },
+          {
+            "file": "fishing-marker-scan.json",
+            "positions": 42
+          },
+          {
+            "file": "fishing-repair-dispatch.json",
+            "positions": 73
+          },
+          {
+            "file": "fishing-startup.json",
+            "positions": 110
+          }
+        ]
+      }
+    },
+    {
+      "module": 6,
+      "name": "單混沌地牢",
+      "preserved_record_count": 10295,
+      "unresolved_original_records": 500,
+      "routine_blocks": 53,
+      "saved_callbacks": [
+        {
+          "event": "CLICK.FORM1.BUTTON1",
+          "entry": 73,
+          "return": 86,
+          "missing": 0
+        }
+      ],
+      "readable_flow_exists": true,
+      "full_entry_to_end_recovered": false,
+      "all_branches_and_callbacks_verified": false,
+      "runtime_state": "介面清除回呼已用記錄物件在副本驗證；完整入口尚未重建。戰鬥與副本子程序已接入2245筆，60組固定副本比對4800事件，觀測1481筆。戰鬥啟停及找怪走位另接入2146筆，62組固定副本比對2902事件，含全部23個所選工作啟動位置，尚有2個待接入口。已接通前述入口並保留擷取子程序，另新增1059筆，15組固定副本核對1568事件，觀測新段319筆；正式重啟生命週期未驗證。地圖與換角色另接入2753筆，16組固定副本核對1617事件，觀測新段917筆；原始主入口與其餘分支仍未完成。進本、道具欄及其餘保留子程序另接入1431筆，25組固定副本核對2698事件，觀測新段836筆。找圖計數30筆已接入，3組固定副本核對回傳和換列；合計接入9664筆，另有131筆可讀記錄已分類待接。主流程尾段再接入2筆，1組固定副本核對1事件及缺失回跳。全部9795筆可讀記錄已納入索引與事件模型，500筆缺失仍待還原；預設入口及Form1控制路徑已核對，真實介面與並行仍未驗證。從原入口到主迴圈回跳已有 2 組合成重播，附未解位置的順序通過假設",
+      "complete": false,
+      "missing_position_candidates": {
+        "candidate_positions": 494,
+        "unresolved_positions": [
+          56,
+          110,
+          321,
+          415,
+          499,
+          500
+        ],
+        "plans": [
+          {
+            "file": "battle-chaos-cycle.json",
+            "positions": 133
+          },
+          {
+            "file": "battle-chaos-first-fight.json",
+            "positions": 57
+          },
+          {
+            "file": "battle-chaos-workers.json",
+            "positions": 33
+          },
+          {
+            "file": "battle-checkbox-setup.json",
+            "positions": 97
+          },
+          {
+            "file": "battle-entry-routes.json",
+            "positions": 22
+          },
+          {
+            "file": "battle-first-screen.json",
+            "positions": 60
+          },
+          {
+            "file": "battle-startup.json",
+            "positions": 92
+          }
+        ]
+      }
+    },
+    {
+      "module": 7,
+      "name": "魔方",
+      "preserved_record_count": 6820,
+      "unresolved_original_records": 500,
+      "routine_blocks": 29,
+      "saved_callbacks": [],
+      "readable_flow_exists": true,
+      "full_entry_to_end_recovered": false,
+      "all_branches_and_callbacks_verified": false,
+      "runtime_state": "6320筆保留指令均已接入模型。四批270組固定副本觀測3894筆。入口尾端20組核對694事件、17次等待及八個擷取位置，正常入口與回跳分別在L31及L451遇缺失。L31至L530原500缺失、未覆蓋分支、正式UI及工作並行仍待還原",
+      "complete": false
+    },
+    {
+      "module": 8,
+      "name": "挖礦採花",
+      "preserved_record_count": 1626,
+      "unresolved_original_records": 500,
+      "routine_blocks": 5,
+      "saved_callbacks": [],
+      "readable_flow_exists": true,
+      "full_entry_to_end_recovered": false,
+      "all_branches_and_callbacks_verified": false,
+      "runtime_state": "採集主流程保留段已與五個子程序銜接；1116筆事件動作、390組受控案例／14851事件一致，明記覆蓋1104筆。L7..506共500筆仍缺，回L432明示停止；完整入口與Field_3其餘階段、真實執行緒／遊戲未證；另已核對48文字、288除錯前置與18拆分／合併CPU案例。新增10筆宣告、派送和介面結尾，1126筆可讀記錄均已接入；預設入口停於L7，3組Form1副本案例核對15步",
+      "complete": false
+    },
+    {
+      "module": 9,
+      "name": "渴望島",
+      "preserved_record_count": 1038,
+      "unresolved_original_records": 104,
+      "routine_blocks": 10,
+      "saved_callbacks": [],
+      "readable_flow_exists": true,
+      "full_entry_to_end_recovered": false,
+      "all_branches_and_callbacks_verified": false,
+      "runtime_state": "新增104位置語義入口、128候選配置；原10個子程序有24+54受控案例。控制邊界仍有推定，併發及遊戲整體未驗證。全部934筆可讀指令已接入；30組副本核對4647事件，另驗預設入口及Form1；推定初始化與缺失位置分開",
+      "complete": false
+    },
+    {
+      "module": 10,
+      "name": "自動按技能",
+      "preserved_record_count": 1644,
+      "unresolved_original_records": 329,
+      "routine_blocks": 14,
+      "saved_callbacks": [
+        {
+          "event": "CHANGE.FORM1.INPUTBOX1",
+          "entry": 66,
+          "return": 73,
+          "missing": 0
+        }
+      ],
+      "readable_flow_exists": true,
+      "full_entry_to_end_recovered": false,
+      "all_branches_and_callbacks_verified": false,
+      "runtime_state": "明示重建入口新增286筆，1280設定及28文字案例已驗證；原技能64、吃藥48受控案例已比對；復活18副本案例及596事件亦已比對；v3一種設定有使用者遊戲動作確認。全部1315筆可讀指令已接入；41組副本核對5621事件，另驗預設入口及Form1；推定初始化與缺失位置分開",
+      "complete": false
+    }
+  ],
+  "obligations": [
+    {
+      "id": "all-eight-module-behavior",
+      "requirement": "八組腳本入口、條件、迴圈、子程序與結束可對應並執行",
+      "status": "incomplete",
+      "evidence": "modules",
+      "remaining": "八組42426筆資料均可載入，3261筆原缺失仍保留。下表列出四組候選覆蓋。01、03、06 已用同一份設定重播到首個主迴圈回跳，05 有合成主流程案例。09、10 有獨立語義入口。仍需核對未解位置、剩餘分支、正式宿主與工作協調。"
+    },
+    {
+      "id": "original-name-and-provenance",
+      "requirement": "原名、推定名分開，所有解讀可回查原記錄或位址",
+      "status": "partial",
+      "evidence": "../qmacro-readable-analysis",
+      "remaining": "部分入口名稱仍未對應；09最後一個主體與第一次打怪類別以排除法推定。新專案readable/附八組逐筆流程及各子程序Runner位址，推定與原記錄分開"
+    },
+    {
+      "id": "plugin-calls",
+      "requirement": "找圖、找色、滑鼠及附件操作與原外掛有對應的行為",
+      "status": "partial",
+      "evidence": "../plugin-recovery/script-plugin-call-contracts.json",
+      "remaining": "8種API的3494處呼叫契約已核對；C#後端比對FindColor416筆、FindPic141筆（77種不同條件），另11個檔名清單案例與92個色碼清單案例通過；找色空項目為黑色候選，已修正兩套後端，不能比照找圖省略。已加小區域GDI取圖與模組圖片解析器，遊戲實際擷取/效能未證。原MoveToEx96個回傳字串樣本取得，但背景游標不可讀，不能證實移動效果"
+    },
+    {
+      "id": "runner-global-library",
+      "requirement": "原Runner全域函式與DM外掛分別對應，不遺漏未加物件前綴的呼叫",
+      "status": "partial",
+      "evidence": "../runner-vbs-library/library-source-map.json",
+      "remaining": "已提取9925 bytes、86函式含原註解；八組保留SL另有全域FindPic43、FindColorEx31、GetCursorPos2。內建找色為BGR、右下包含、float32相似度與嚴格L1容差、方殼中心掃描、-8193未命中。Python及C#比對80色/220圖片供應影像CPU案例；自有VBScript包裝與唯讀BuiltinVisionService已接入開發核心。原BMP列索引/24到32轉換與377種一般BMP及10個正負高度/padding案例一致，另4個擷取標頭確認32bpp負高度。原檔名Attachment前綴、載入/資源生命週期、正式遊戲宿主與游標失敗策略仍待核對；沒有啟動原程式或系統擷取API"
+    },
+    {
+      "id": "workers",
+      "requirement": "主執行緒、工作執行緒、共享變數及停止恢復流程一致",
+      "status": "partial",
+      "evidence": "../QMacro-Rebuild-Development/source/QMacroDryRunHost.cs",
+      "remaining": "STA工作引擎、標量共享、暫停恢復通過自有測試；原暫停旗標19案、ID選取9案、停止位元16案、ExitScript包裝8案有CPU證據。修正90處ExitScript(0)所需參數；53處ThreadControl mode0已提供指定工作合作式停止政策並驗證不影響其他工作，非原通知/清理完全等同。3處重新啟動仍明確拒絕。88個啟動點、原時間與停止細節未全部核對"
+    },
+    {
+      "id": "traditional-ui",
+      "requirement": "繁體中文介面與每個模組的設定、回呼對應",
+      "status": "partial",
+      "evidence": "../QMacro-Rebuild-Development/verification/ui-render-verification.json",
+      "remaining": "20份繁體介面276元件已渲染驗證；20張內嵌背景逐位元組還原。91處UI屬性引用均對應存在元件，53直接資料流、32條件讀取。兩原回呼已在副本驗證，模組10設定模型比對1280案；完整啟動及外層視窗尚未接入"
+    },
+    {
+      "id": "assets",
+      "requirement": "卡號及帳戶資料分開保存並核對圖片與動態產物",
+      "status": "partial",
+      "evidence": "../restored-ui-pictures/manifest.json",
+      "remaining": "20張原UI圖片依卡號/帳戶分開，保留PictureName與目錄，包裝重組與SHA驗證通過；附件圖片3048份已按20容器分開保留並核對雜湊（含重複；1個DMDM內容有4份副本），同名ta.bmp兩種內容不合併。21個靜態名稱尚未找到，2個空token不是缺檔；八張技能圖有動態Capture來源。空密碼及既有候選都未解DMDM"
+    },
+    {
+      "id": "sdk-initialization",
+      "requirement": "初始化及驗證碼來源有可驗證解讀，或獨立重建有明確語義對應",
+      "status": "incomplete",
+      "evidence": "../initialization-recovery/10-重建初始化.md",
+      "remaining": "模組10入口以保留SL重建，跳轉/部分工作身分標示推定，原329缺失未動；1280設定與28文字案使用記錄工作替身。SDK來源實測Empty仍未解，舊DLL註冊由獨立後端取代，不能任填色碼"
+    },
+    {
+      "id": "scope-matched-verification",
+      "requirement": "每組腳本與分支回呼皆經相應範圍驗證",
+      "status": "incomplete",
+      "evidence": "../QMacro-Rebuild-Development/verification",
+      "remaining": "原技能64案例與12464事件、吃藥48受控案例與1296事件、復活18受控案例與596事件相符；09原文24首次戰鬥及54技能/找怪案例通過，另128例只驗證重建候選；釣魚兩主體77組副本原文與5243事件亦相符（RNG在原賦值後受控覆寫，非原時序/RNG等同）。採集主段與五個主體390組副本原文／14851事件一致，覆蓋1104/1116筆；未覆蓋12筆包括9筆停止後、2筆G迴圈外、L592缺失前綴可能入口。原CPU新增Field_3正常快取文字48、除錯前置288、拆分／合併18案，非全生命週期；500缺失前綴未執行。中心重合的原溢位亦保留。另189個CPU案例核對五類新分支與九類只前進指令。遊戲成功證據仍只涵蓋v3管理員版、不使用Z、中速的一次使用者測試"
+    },
+    {
+      "id": "cube-preserved-routines",
+      "requirement": "魔方接周任務、換角色及完成後操作逐筆重建並對照原文",
+      "status": "partial",
+      "evidence": "../QMacro-Rebuild-Development/analysis/cube/魔方_可讀流程.md",
+      "remaining": "三段191原文副本案例與26668事件一致，2120筆與218條有效條件邊有觀測。L1677上層與五個子程序共3977筆，31原文案例核對5151事件、70次父框架恢復和3處介面文字寫入。此批涵蓋43個呼叫位置中的7個，工作並行與正式介面仍待驗證。"
+    }
+  ],
+  "native_call_coverage": {
+    "distinct_methods": 8,
+    "calls": 3494,
+    "unknown_method_calls": 0,
+    "arity_mismatches": 0
+  },
+  "current_next_work": [
+    "接上自有找圖、找色與正式介面後端",
+    "接上四段完整吃藥流程並驗證真實遊戲擷取",
+    "接上已比對的復活與真實後端；繼續還原缺失初始化、執行緒協調",
+    "逐組接入其餘七套流程並驗證"
+  ],
+  "rule": "新增模擬測試或單一技能成功不能使整套完成；只有所有範圍要求均被證實才能完成目標。"
+}

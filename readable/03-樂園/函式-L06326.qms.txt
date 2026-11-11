@@ -1,0 +1,45 @@
+# 子程序 — L06326
+# 入口 L06326，RETURN L06367；名稱未對應，以入口命名
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L06326: Call QMLibrary.Delay((100))  # loc=5642 Runner=0x625fb0
+L06327: Call QMLibrary.TracePrint("检查是否没次数了")  # loc=5643 Runner=0x625fb0
+L06328: 〔沒次數了〕=1  # loc=5644 Runner=0x625f7e
+L06329: Call QMLibrary.Delay(100)  # loc=5645 Runner=0x625fb0
+L06330: 傳回值 = global.get(〔天選〕)  # loc=5646 Runner=0x6266f4
+L06331: 目前呼叫框架.暫存槽(1)=傳回值  # loc=5646 Runner=0x625fb0
+L06332: DM_RET=DM.FINDCOLOR(160,1,260,25,目前呼叫框架.暫存槽(1) & "-151515",0.9,0,INTX,INTY)  # loc=5646 Runner=0x625f7e
+L06333: last_test = Sgn((INTX>0))  # loc=5647 Runner=0x626047
+L06334: if last_test == 0: goto L06345  # loc=5647 Runner=0x62611c
+L06335: Call QMLibrary.Delay((100))  # loc=5648 Runner=0x625fb0
+L06336: DM_RET=DM.FINDCOLOR(219,150,232,169,"6DD004-080808|5FB504-080808|73DC04-080808|6ACB05-080808|67C404-080808|6BCC04-080808|6ED104-080808|64BF04-080808|71AF30-080808|79BF35-080808|6BAB28-080808|7FBE3C-080808|4E8511-080808|80B545-080808|78E167-080808|7DDC6D-080808|6FCD5F-080808|6CCC5E-080808|63FF49-080808|57DB41-080808|5FF346-080808|5AE943-080808|5CEB45-080808",0.9,0,INTX,INTY)  # loc=5649 Runner=0x625fb0
+L06337: last_test = Sgn((INTX>0))  # loc=5650 Runner=0x626047
+L06338: if last_test == 0: goto L06345  # loc=5650 Runner=0x62611c
+L06339: Call QMLibrary.Delay((100))  # loc=5651 Runner=0x625fb0
+L06340: DM_RET=DM.FINDCOLOR(50,240,150,260,"FFFFFF-070707",0.9,0,INTX,INTY)  # loc=5652 Runner=0x625fb0
+L06341: last_test = Sgn((INTX>0))  # loc=5653 Runner=0x626047
+L06342: if last_test == 0: goto L06345  # loc=5653 Runner=0x62611c
+L06343: Call QMLibrary.Delay((100))  # loc=5654 Runner=0x625fb0
+L06344: 〔沒次數了〕=0  # loc=5655 Runner=0x625f7e
+L06345: Call QMLibrary.Delay(500)  # loc=5659 Runner=0x625fb0
+L06346: last_test = Sgn(〔沒次數了〕=1)  # loc=5660 Runner=0x626047
+L06347: if last_test == 0: goto L06365  # loc=5660 Runner=0x62611c
+L06348: Call QMLibrary.Delay(100)  # loc=5661 Runner=0x625fb0
+L06349: 傳回值 = global.get(〔天選〕)  # loc=5662 Runner=0x6266f4
+L06350: 目前呼叫框架.暫存槽(1)=傳回值  # loc=5662 Runner=0x625fb0
+L06351: DM_RET=DM.FINDCOLOR(160,1,260,25,目前呼叫框架.暫存槽(1) & "-151515",0.9,0,INTX,INTY)  # loc=5662 Runner=0x625f7e
+L06352: last_test = Sgn((INTX>0))  # loc=5663 Runner=0x626047
+L06353: if last_test == 0: goto L06364  # loc=5663 Runner=0x62611c
+L06354: Call QMLibrary.Delay((100))  # loc=5664 Runner=0x625fb0
+L06355: DM_RET=DM.FINDCOLOR(219,150,232,169,"6DD004-080808|5FB504-080808|73DC04-080808|6ACB05-080808|67C404-080808|6BCC04-080808|6ED104-080808|64BF04-080808|71AF30-080808|79BF35-080808|6BAB28-080808|7FBE3C-080808|4E8511-080808|80B545-080808|78E167-080808|7DDC6D-080808|6FCD5F-080808|6CCC5E-080808|63FF49-080808|57DB41-080808|5FF346-080808|5AE943-080808|5CEB45-080808",0.9,0,INTX,INTY)  # loc=5665 Runner=0x625fb0
+L06356: last_test = Sgn((INTX>0))  # loc=5666 Runner=0x626047
+L06357: if last_test == 0: goto L06364  # loc=5666 Runner=0x62611c
+L06358: Call QMLibrary.Delay((100))  # loc=5667 Runner=0x625fb0
+L06359: DM_RET=DM.FINDCOLOR(50,240,150,260,"FFFFFF-070707",0.9,0,INTX,INTY)  # loc=5668 Runner=0x625fb0
+L06360: last_test = Sgn((INTX>0))  # loc=5669 Runner=0x626047
+L06361: if last_test == 0: goto L06364  # loc=5669 Runner=0x62611c
+L06362: Call QMLibrary.Delay((100))  # loc=5670 Runner=0x625fb0
+L06363: 〔沒次數了〕=0  # loc=5671 Runner=0x625f7e
+L06364: Call QMLibrary.Delay(100)  # loc=5675 Runner=0x625fb0
+L06365: Call QMLibrary.Delay(100)  # loc=5677 Runner=0x625fb0
+L06366: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=5678 Runner=0x625f7e
+L06367: return caller  # loc=5678 Runner=0x626275

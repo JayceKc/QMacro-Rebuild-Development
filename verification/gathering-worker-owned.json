@@ -1,0 +1,6477 @@
+{
+  "ok": true,
+  "cases": [
+    {
+      "id": 0,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 1,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 2,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 3,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 4,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 5,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 6,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": -1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": -1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 7,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 8,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 9,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 10,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 982,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 982,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 11,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 982,
+          "y": 607,
+          "return_value": 1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 982,
+          "y": 607,
+          "return_value": 1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 12,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": -1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": -1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 13,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": -1,
+          "y": -1,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": false
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 14,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 15,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 16,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 982,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 982,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 17,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 982,
+          "y": 607,
+          "return_value": 1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "A0B0C0"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "A0B0C0-151515",
+            0.9,
+            0
+          ],
+          "x": 259,
+          "y": 2,
+          "return_value": 0
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 982,
+          "y": 607,
+          "return_value": 1
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            0,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 912,
+          "kind": "jump"
+        }
+      ],
+      "next_record": 894,
+      "loops": 2,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 18,
+      "records": [],
+      "events": [],
+      "next_record": 890,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 19,
+      "records": [
+        890
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        }
+      ],
+      "next_record": 891,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 20,
+      "records": [
+        890,
+        891
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        }
+      ],
+      "next_record": 892,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 21,
+      "records": [
+        890,
+        891,
+        892
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        }
+      ],
+      "next_record": 893,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 22,
+      "records": [
+        890,
+        891,
+        892,
+        893
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        }
+      ],
+      "next_record": 894,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 23,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        }
+      ],
+      "next_record": 895,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 24,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        }
+      ],
+      "next_record": 896,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 25,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        }
+      ],
+      "next_record": 897,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 26,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        }
+      ],
+      "next_record": 898,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 27,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        }
+      ],
+      "next_record": 899,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 28,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        }
+      ],
+      "next_record": 900,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 29,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        }
+      ],
+      "next_record": 901,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 30,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        }
+      ],
+      "next_record": 902,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 31,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        }
+      ],
+      "next_record": 903,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 32,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        }
+      ],
+      "next_record": 904,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 33,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        }
+      ],
+      "next_record": 905,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 34,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        }
+      ],
+      "next_record": 906,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 35,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        }
+      ],
+      "next_record": 907,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 36,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        }
+      ],
+      "next_record": 908,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 37,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        }
+      ],
+      "next_record": 909,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 38,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        }
+      ],
+      "next_record": 910,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 39,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        }
+      ],
+      "next_record": 911,
+      "loops": 0,
+      "reason": "fixture_stop"
+    },
+    {
+      "id": 40,
+      "records": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911
+      ],
+      "events": [
+        {
+          "record": 890,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 891,
+          "kind": "load_vision_intent",
+          "value": "dm.dmsoft"
+        },
+        {
+          "record": 892,
+          "kind": "set_show_error",
+          "value": 0
+        },
+        {
+          "record": 893,
+          "kind": "delay",
+          "value": 100
+        },
+        {
+          "record": 894,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 895,
+          "kind": "if_zero"
+        },
+        {
+          "record": 896,
+          "kind": "delay",
+          "value": 500
+        },
+        {
+          "record": 897,
+          "kind": "read_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 898,
+          "kind": "store_sdk",
+          "value": "112233"
+        },
+        {
+          "record": 899,
+          "kind": "find_color",
+          "arguments": [
+            160,
+            1,
+            260,
+            25,
+            "112233-151515",
+            0.9,
+            0
+          ],
+          "x": 160,
+          "y": 2,
+          "return_value": 1
+        },
+        {
+          "record": 900,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 901,
+          "kind": "if_zero"
+        },
+        {
+          "record": 902,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 903,
+          "kind": "find_pic",
+          "arguments": [
+            938,
+            606,
+            983,
+            652,
+            "C:\\users\\mymacro\\kuangG1.bmp|C:\\users\\mymacro\\kuangG2.bmp|C:\\users\\mymacro\\kuangG3.bmp|C:\\users\\mymacro\\kuangG4.bmp",
+            "151515",
+            0.8,
+            0
+          ],
+          "x": 938,
+          "y": 607,
+          "return_value": 0
+        },
+        {
+          "record": 904,
+          "kind": "test",
+          "result": true
+        },
+        {
+          "record": 905,
+          "kind": "if_zero"
+        },
+        {
+          "record": 906,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        },
+        {
+          "record": 907,
+          "kind": "delay",
+          "value": 50
+        },
+        {
+          "record": 908,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        },
+        {
+          "record": 909,
+          "kind": "delay",
+          "value": 70
+        },
+        {
+          "record": 910,
+          "kind": "key_press",
+          "value": [
+            "G",
+            3,
+            1
+          ]
+        },
+        {
+          "record": 911,
+          "kind": "delay",
+          "value": 100
+        }
+      ],
+      "next_record": 912,
+      "loops": 0,
+      "reason": "fixture_stop"
+    }
+  ],
+  "case_count": 41,
+  "source_plan_sha256": "fe68b0bb2fff901e72e467467810d853488dadce57ae432f3e3f9b0f10d1a225",
+  "case_spec_sha256": "dfde3a6bfff6dc6553dadfc52b6be535b690e3df92ece4d7a823eb8338391382",
+  "owned_source_sha256": {
+    "qmacro_gathering_worker.py": "db4401700db9b423c2e04e7238914d3f000f8bdf6fab2ed04e925a768e8ffb28",
+    "replay_gathering_worker.py": "d685d1cc580209745e6a9e3222d2afe040e90a2c0432cb36bf9ae0b906c6209d"
+  },
+  "original_code_executed": false,
+  "game_input_sent": false,
+  "full_module_restored": false
+}

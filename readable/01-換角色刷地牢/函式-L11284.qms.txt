@@ -1,0 +1,60 @@
+# 三層打完切角色 — L11284
+# 入口 L11284，RETURN L11340；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L11284: Call QMLibrary.Delay((100))  # loc=9739 Runner=0x625fb0
+L11285: Call QMLibrary.Delay((1000))  # loc=9744 Runner=0x625fb0
+L11286: Call DM.MOVETO(958,975)  # loc=9745 Runner=0x625fb0
+L11287: Call QMLibrary.Delay((200))  # loc=9746 Runner=0x625fb0
+L11288: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9747 Runner=0x625fb0
+L11289: Call QMLibrary.Delay((200))  # loc=9748 Runner=0x625fb0
+L11290: Call DM.MOVETO(958,975)  # loc=9749 Runner=0x625fb0
+L11291: Call QMLibrary.Delay((200))  # loc=9750 Runner=0x625fb0
+L11292: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9751 Runner=0x625fb0
+L11293: Call QMLibrary.Delay((1000))  # loc=9752 Runner=0x625fb0
+L11294: last_test = Sgn(vbTrue)  # loc=9753 Runner=0x626047
+L11295: if last_test == 0: goto L11316  # loc=9753 Runner=0x62611c
+L11296: Call QMLibrary.Delay((100))  # loc=9754 Runner=0x625fb0
+L11297: 傳回值 = global.get(〔天選〕)  # loc=9755 Runner=0x6266f4
+L11298: 目前呼叫框架.暫存槽(1)=傳回值  # loc=9755 Runner=0x625fb0
+L11299: DM_RET=DM.FINDCOLOR(160,1,260,25,目前呼叫框架.暫存槽(1) & "-151515",0.9,0,INTX,INTY)  # loc=9755 Runner=0x625f7e
+L11300: last_test = Sgn((INTX>=0))  # loc=9756 Runner=0x626047
+L11301: if last_test == 0: goto L11304  # loc=9756 Runner=0x62611c
+L11302: Call QMLibrary.Delay((50))  # loc=9757 Runner=0x625fb0
+L11303: goto L11316  # loc=9758 Runner=0x626126
+L11304: Call QMLibrary.Delay((100))  # loc=9760 Runner=0x625fb0
+L11305: Call QMLibrary.KeyPress("Esc",g_iSimulateModeInVBSBlock,1)  # loc=9761 Runner=0x625fb0
+L11306: Call QMLibrary.Delay((100))  # loc=9762 Runner=0x625fb0
+L11307: Call DM.MOVETO(958,975)  # loc=9763 Runner=0x625fb0
+L11308: Call QMLibrary.Delay((200))  # loc=9764 Runner=0x625fb0
+L11309: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9765 Runner=0x625fb0
+L11310: Call QMLibrary.Delay((200))  # loc=9766 Runner=0x625fb0
+L11311: Call DM.MOVETO(958,975)  # loc=9767 Runner=0x625fb0
+L11312: Call QMLibrary.Delay((200))  # loc=9768 Runner=0x625fb0
+L11313: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=9769 Runner=0x625fb0
+L11314: Call QMLibrary.Delay((1000))  # loc=9770 Runner=0x625fb0
+L11315: goto L11294  # loc=9771 Runner=0x626126
+L11316: Call QMLibrary.Delay((100))  # loc=9772 Runner=0x625fb0
+L11317: last_test = Sgn(〔氣息周任務〕=1)  # loc=9773 Runner=0x626047
+L11318: if last_test == 0: goto L11323  # loc=9773 Runner=0x62611c
+L11319: Call QMLibrary.Delay((100))  # loc=9774 Runner=0x625fb0
+L11320: Set 新呼叫框架=New 框架類別_〔接周任務〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=9775 Runner=0x625f7e
+L11321: call L10955; resume L11322  # loc=9775 Runner=0x6261f2
+L11322: 目前呼叫框架.暫存槽(1)=傳回值  # loc=9775 Runner=0x625f7e
+L11323: Call QMLibrary.Delay((100))  # loc=9777 Runner=0x625fb0
+L11324: last_test = Sgn(〔全部分解〕=1)  # loc=9778 Runner=0x626047
+L11325: if last_test == 0: goto L11330  # loc=9778 Runner=0x62611c
+L11326: Call QMLibrary.Delay((100))  # loc=9779 Runner=0x625fb0
+L11327: Set 新呼叫框架=New 框架類別_〔全部分解裝備〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=9780 Runner=0x625f7e
+L11328: call L11342; resume L11329  # loc=9780 Runner=0x6261f2
+L11329: 目前呼叫框架.暫存槽(1)=傳回值  # loc=9780 Runner=0x625f7e
+L11330: Call QMLibrary.Delay((100))  # loc=9782 Runner=0x625fb0
+L11331: last_test = Sgn(〔領地牢周獎勵〕=1)  # loc=9783 Runner=0x626047
+L11332: if last_test == 0: goto L11337  # loc=9783 Runner=0x62611c
+L11333: Call QMLibrary.Delay(100)  # loc=9784 Runner=0x625fb0
+L11334: Set 新呼叫框架=New 框架類別_〔領地牢三次周獎勵〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=9785 Runner=0x625f7e
+L11335: call L11961; resume L11336  # loc=9785 Runner=0x6261f2
+L11336: 目前呼叫框架.暫存槽(1)=傳回值  # loc=9785 Runner=0x625f7e
+L11337: Call QMLibrary.Delay(100)  # loc=9787 Runner=0x625fb0
+L11338: Call QMLibrary.Delay((100))  # loc=9789 Runner=0x625fb0
+L11339: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=9790 Runner=0x625f7e
+L11340: return caller  # loc=9790 Runner=0x626275

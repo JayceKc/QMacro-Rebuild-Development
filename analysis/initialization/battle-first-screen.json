@@ -1,0 +1,2712 @@
+[
+  {
+    "module": 1,
+    "entry": 270,
+    "boundary": 315,
+    "rows": [
+      {
+        "record": 270,
+        "location": 145,
+        "field_3": 1,
+        "source_sl": 238,
+        "source": "Randomize",
+        "kind": "randomize",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 271,
+        "location": 146,
+        "field_3": 1,
+        "source_sl": 239,
+        "source": "YDX=INT(5*RND+35)",
+        "kind": "random_int",
+        "name": "YDX",
+        "span": 5,
+        "lower": {
+          "numeric": {
+            "const": 35
+          }
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 272,
+        "location": 147,
+        "field_3": 1,
+        "source_sl": 240,
+        "source": "Randomize",
+        "kind": "randomize",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 273,
+        "location": 148,
+        "field_3": 1,
+        "source_sl": 241,
+        "source": "YDY=INT(10*RND+10)",
+        "kind": "random_int",
+        "name": "YDY",
+        "span": 10,
+        "lower": {
+          "numeric": {
+            "const": 10
+          }
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 274,
+        "location": 149,
+        "field_3": 1,
+        "source_sl": 242,
+        "source": "Call QMLibrary.Delay((50))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 50
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 275,
+        "location": 150,
+        "field_3": 1,
+        "source_sl": 243,
+        "source": "Call DM.MOVETO(YDX,YDY)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "name": "YDX"
+            }
+          },
+          {
+            "numeric": {
+              "name": "YDY"
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 276,
+        "location": 151,
+        "field_3": 1,
+        "source_sl": 244,
+        "source": "Call QMLibrary.Delay((1000))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 277,
+        "location": 152,
+        "field_3": 1,
+        "source_sl": 245,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 278,
+        "location": 153,
+        "field_3": 1,
+        "source_sl": 246,
+        "source": "Call QMLibrary.Delay((1000))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 279,
+        "location": 154,
+        "field_3": 1,
+        "source_sl": 247,
+        "source": "Call QMLibrary.TracePrint((\">>>>>>脚本启动\"))",
+        "kind": "trace",
+        "arguments": [
+          {
+            "const": ">>>>>>脚本启动"
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 280,
+        "location": 155,
+        "field_3": 1,
+        "source_sl": 248,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 281,
+        "location": 157,
+        "field_3": 1,
+        "source_sl": 249,
+        "source": "Call QMLibrary.Delay((300))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 300
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 282,
+        "location": 159,
+        "field_3": 1,
+        "source_sl": 250,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 283,
+        "location": 160,
+        "field_3": 1,
+        "source_sl": 251,
+        "source": "V8186B4D47378756D",
+        "kind": "read_global",
+        "key": "V8186B4D47378756D",
+        "candidate_opcode": 27,
+        "inferred": true
+      },
+      {
+        "record": 284,
+        "location": 160,
+        "field_3": 1,
+        "source_sl": 252,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "kind": "assign_root_slot",
+        "slot": 1,
+        "value": {
+          "temporary": true
+        },
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 285,
+        "location": 160,
+        "field_3": 1,
+        "source_sl": 253,
+        "source": "DM_RET=DM.FINDCOLOR(160,1,260,25,F2730835_2229_445E_97C7_l3F761277lDA(1) & \"-151515\",0.9,0,INTX,INTY)",
+        "kind": "find_color",
+        "rect": [
+          160,
+          1,
+          260,
+          25
+        ],
+        "spec": {
+          "concat": [
+            {
+              "root_slot": 1
+            },
+            {
+              "const": "-151515"
+            }
+          ]
+        },
+        "similarity": 0.9,
+        "direction": 0,
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 286,
+        "location": 161,
+        "field_3": 1,
+        "source_sl": 254,
+        "source": "Sgn((INTX>0))",
+        "kind": "test",
+        "value": {
+          "numeric": {
+            "op": "SGN",
+            "args": [
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "INTX"
+                  },
+                  {
+                    "const": 0
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "candidate_opcode": 4,
+        "inferred": true
+      },
+      {
+        "record": 287,
+        "location": 161,
+        "field_3": 1,
+        "source_sl": null,
+        "source": null,
+        "kind": "if_zero",
+        "target": 315,
+        "candidate_opcode": 6,
+        "inferred": true
+      },
+      {
+        "record": 288,
+        "location": 162,
+        "field_3": 1,
+        "source_sl": 255,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 289,
+        "location": 163,
+        "field_3": 1,
+        "source_sl": 256,
+        "source": "DM_RET=DM.FINDCOLOR(1637,72,1860,274,\"A39D8D-000000|A29D8E-000000|A39D91-000000|A39D8F-00000|A49B92-000000\",1,0,INTX,INTY)",
+        "kind": "find_color",
+        "rect": [
+          1637,
+          72,
+          1860,
+          274
+        ],
+        "spec": {
+          "const": "A39D8D-000000|A29D8E-000000|A39D91-000000|A39D8F-00000|A49B92-000000"
+        },
+        "similarity": 1.0,
+        "direction": 0,
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 290,
+        "location": 164,
+        "field_3": 1,
+        "source_sl": 257,
+        "source": "Sgn((INTX>0))",
+        "kind": "test",
+        "value": {
+          "numeric": {
+            "op": "SGN",
+            "args": [
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "INTX"
+                  },
+                  {
+                    "const": 0
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "candidate_opcode": 4,
+        "inferred": true
+      },
+      {
+        "record": 291,
+        "location": 164,
+        "field_3": 1,
+        "source_sl": null,
+        "source": null,
+        "kind": "if_zero",
+        "target": 315,
+        "candidate_opcode": 6,
+        "inferred": true
+      },
+      {
+        "record": 292,
+        "location": 165,
+        "field_3": 1,
+        "source_sl": 258,
+        "source": "Call QMLibrary.Delay((50))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 50
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 293,
+        "location": 166,
+        "field_3": 1,
+        "source_sl": 259,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 294,
+        "location": 167,
+        "field_3": 1,
+        "source_sl": 260,
+        "source": "Call DM.MOVETO(1904,283)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1904
+            }
+          },
+          {
+            "numeric": {
+              "const": 283
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 295,
+        "location": 168,
+        "field_3": 1,
+        "source_sl": 261,
+        "source": "Call QMLibrary.Delay(200)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 200
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 296,
+        "location": 169,
+        "field_3": 1,
+        "source_sl": 262,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 297,
+        "location": 170,
+        "field_3": 1,
+        "source_sl": 263,
+        "source": "Call QMLibrary.Delay(1000)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 298,
+        "location": 171,
+        "field_3": 1,
+        "source_sl": 264,
+        "source": "Call QMLibrary.KeyPress(\"Enter\",g_iSimulateModeInVBSBlock,1)",
+        "kind": "key_press",
+        "arguments": [
+          {
+            "const": "Enter"
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 299,
+        "location": 172,
+        "field_3": 1,
+        "source_sl": 265,
+        "source": "Call QMLibrary.Delay(600)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 600
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 300,
+        "location": 173,
+        "field_3": 1,
+        "source_sl": 266,
+        "source": "Call QMLibrary.KeyPress(\"Enter\",g_iSimulateModeInVBSBlock,1)",
+        "kind": "key_press",
+        "arguments": [
+          {
+            "const": "Enter"
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 301,
+        "location": 174,
+        "field_3": 1,
+        "source_sl": 267,
+        "source": "Call QMLibrary.Delay(600)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 600
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 302,
+        "location": 175,
+        "field_3": 1,
+        "source_sl": 268,
+        "source": "Call DM.MOVETO(1907,90)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1907
+            }
+          },
+          {
+            "numeric": {
+              "const": 90
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 303,
+        "location": 176,
+        "field_3": 1,
+        "source_sl": 269,
+        "source": "Call QMLibrary.Delay(200)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 200
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 304,
+        "location": 177,
+        "field_3": 1,
+        "source_sl": 270,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 305,
+        "location": 178,
+        "field_3": 1,
+        "source_sl": 271,
+        "source": "Call QMLibrary.Delay(700)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 700
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 306,
+        "location": 179,
+        "field_3": 1,
+        "source_sl": 272,
+        "source": "Call DM.MOVETO(1874,103)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1874
+            }
+          },
+          {
+            "numeric": {
+              "const": 103
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 307,
+        "location": 180,
+        "field_3": 1,
+        "source_sl": 273,
+        "source": "Call QMLibrary.Delay(200)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 200
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 308,
+        "location": 181,
+        "field_3": 1,
+        "source_sl": 274,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 309,
+        "location": 182,
+        "field_3": 1,
+        "source_sl": 275,
+        "source": "Call QMLibrary.Delay(300)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 300
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 310,
+        "location": 183,
+        "field_3": 1,
+        "source_sl": 276,
+        "source": "Call DM.MOVETO(1873,73)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1873
+            }
+          },
+          {
+            "numeric": {
+              "const": 73
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 311,
+        "location": 184,
+        "field_3": 1,
+        "source_sl": 277,
+        "source": "Call QMLibrary.Delay(200)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 200
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 312,
+        "location": 185,
+        "field_3": 1,
+        "source_sl": 278,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 313,
+        "location": 186,
+        "field_3": 1,
+        "source_sl": 279,
+        "source": "Call QMLibrary.Delay(50)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 50
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 314,
+        "location": 187,
+        "field_3": 1,
+        "source_sl": 280,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      }
+    ],
+    "call_sites": [],
+    "original_values_recovered": 0,
+    "source_program_sha256": "73383f6ab26a90b6a70526618d43eef5634c613649ebb3d803d6d1fc523f151c"
+  },
+  {
+    "module": 3,
+    "entry": 163,
+    "boundary": 205,
+    "rows": [
+      {
+        "record": 163,
+        "location": 85,
+        "field_3": 1,
+        "source_sl": 147,
+        "source": "Randomize",
+        "kind": "randomize",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 164,
+        "location": 86,
+        "field_3": 1,
+        "source_sl": 148,
+        "source": "YDX=INT(5*RND+35)",
+        "kind": "random_int",
+        "name": "YDX",
+        "span": 5,
+        "lower": {
+          "numeric": {
+            "const": 35
+          }
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 165,
+        "location": 87,
+        "field_3": 1,
+        "source_sl": 149,
+        "source": "Randomize",
+        "kind": "randomize",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 166,
+        "location": 88,
+        "field_3": 1,
+        "source_sl": 150,
+        "source": "YDY=INT(10*RND+10)",
+        "kind": "random_int",
+        "name": "YDY",
+        "span": 10,
+        "lower": {
+          "numeric": {
+            "const": 10
+          }
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 167,
+        "location": 89,
+        "field_3": 1,
+        "source_sl": 151,
+        "source": "Call QMLibrary.Delay((50))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 50
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 168,
+        "location": 90,
+        "field_3": 1,
+        "source_sl": 152,
+        "source": "Call DM.MOVETO(YDX,YDY)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "name": "YDX"
+            }
+          },
+          {
+            "numeric": {
+              "name": "YDY"
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 169,
+        "location": 91,
+        "field_3": 1,
+        "source_sl": 153,
+        "source": "Call QMLibrary.Delay((1000))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 170,
+        "location": 92,
+        "field_3": 1,
+        "source_sl": 154,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 171,
+        "location": 93,
+        "field_3": 1,
+        "source_sl": 155,
+        "source": "Call QMLibrary.Delay((1000))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 172,
+        "location": 94,
+        "field_3": 1,
+        "source_sl": 156,
+        "source": "Call QMLibrary.TracePrint((\">>>>>>脚本启动\"))",
+        "kind": "trace",
+        "arguments": [
+          {
+            "const": ">>>>>>脚本启动"
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 173,
+        "location": 95,
+        "field_3": 1,
+        "source_sl": 157,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 174,
+        "location": 96,
+        "field_3": 1,
+        "source_sl": 158,
+        "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_VF89EAAAAA5A0A5AF8CC6D8A67378756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+        "kind": "frame_enter",
+        "class_name": "F2730835_2229_445E_97C7_13F761277lDA_VF89EAAAAA5A0A5AF8CC6D8A67378756D",
+        "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 175,
+        "location": 96,
+        "field_3": 1,
+        "source_sl": null,
+        "source": null,
+        "kind": "call",
+        "target": 6099,
+        "candidate_opcode": 12,
+        "inferred": true
+      },
+      {
+        "record": 176,
+        "location": 96,
+        "field_3": 1,
+        "source_sl": 159,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "kind": "assign_root_slot",
+        "slot": 1,
+        "value": {
+          "temporary": true
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 177,
+        "location": 97,
+        "field_3": 1,
+        "source_sl": 160,
+        "source": "Call QMLibrary.Delay((300))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 300
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 178,
+        "location": 98,
+        "field_3": 1,
+        "source_sl": 161,
+        "source": "Call QMLibrary.TracePrint((\">>>>>>找按钮对话\"))",
+        "kind": "trace",
+        "arguments": [
+          {
+            "const": ">>>>>>找按钮对话"
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 179,
+        "location": 99,
+        "field_3": 1,
+        "source_sl": 162,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 180,
+        "location": 100,
+        "field_3": 1,
+        "source_sl": 163,
+        "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V98B8D5C1B6DD756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+        "kind": "frame_enter",
+        "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V98B8D5C1B6DD756D",
+        "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 181,
+        "location": 100,
+        "field_3": 1,
+        "source_sl": null,
+        "source": null,
+        "kind": "call",
+        "target": 2446,
+        "candidate_opcode": 12,
+        "inferred": true
+      },
+      {
+        "record": 182,
+        "location": 100,
+        "field_3": 1,
+        "source_sl": 164,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "kind": "assign_root_slot",
+        "slot": 1,
+        "value": {
+          "temporary": true
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 183,
+        "location": 101,
+        "field_3": 1,
+        "source_sl": 165,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 184,
+        "location": 102,
+        "field_3": 1,
+        "source_sl": 166,
+        "source": "V9BB2A4D97378756D=0",
+        "kind": "assign",
+        "name": "V9BB2A4D97378756D",
+        "value": {
+          "numeric": {
+            "const": 0
+          }
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 185,
+        "location": 103,
+        "field_3": 1,
+        "source_sl": 167,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 186,
+        "location": 104,
+        "field_3": 1,
+        "source_sl": 168,
+        "source": "Sgn(vbTrue)",
+        "kind": "test",
+        "value": {
+          "numeric": {
+            "op": "SGN",
+            "args": [
+              {
+                "const": -1
+              }
+            ]
+          }
+        },
+        "candidate_opcode": 4,
+        "inferred": true
+      },
+      {
+        "record": 187,
+        "location": 104,
+        "field_3": 1,
+        "source_sl": null,
+        "source": null,
+        "kind": "if_zero",
+        "target": 205,
+        "candidate_opcode": 6,
+        "inferred": true
+      },
+      {
+        "record": 188,
+        "location": 105,
+        "field_3": 1,
+        "source_sl": 169,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 189,
+        "location": 106,
+        "field_3": 1,
+        "source_sl": 170,
+        "source": "Call QMLibrary.TracePrint((\">>>>>>切角色\"))",
+        "kind": "trace",
+        "arguments": [
+          {
+            "const": ">>>>>>切角色"
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 190,
+        "location": 107,
+        "field_3": 1,
+        "source_sl": 171,
+        "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V8ABAD8B2BAD3756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+        "kind": "frame_enter",
+        "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V8ABAD8B2BAD3756D",
+        "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 191,
+        "location": 107,
+        "field_3": 1,
+        "source_sl": null,
+        "source": null,
+        "kind": "call",
+        "target": 3260,
+        "candidate_opcode": 12,
+        "inferred": true
+      },
+      {
+        "record": 192,
+        "location": 107,
+        "field_3": 1,
+        "source_sl": 172,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "kind": "assign_root_slot",
+        "slot": 1,
+        "value": {
+          "temporary": true
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 193,
+        "location": 108,
+        "field_3": 1,
+        "source_sl": 173,
+        "source": "Call QMLibrary.Delay((1000))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 194,
+        "location": 109,
+        "field_3": 1,
+        "source_sl": 174,
+        "source": "Call QMLibrary.TracePrint((\">>>>>>找*色\"))",
+        "kind": "trace",
+        "arguments": [
+          {
+            "const": ">>>>>>找*色"
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 195,
+        "location": 110,
+        "field_3": 1,
+        "source_sl": 175,
+        "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V98B8A7B9BAD3756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+        "kind": "frame_enter",
+        "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V98B8A7B9BAD3756D",
+        "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 196,
+        "location": 110,
+        "field_3": 1,
+        "source_sl": null,
+        "source": null,
+        "kind": "call",
+        "target": 2427,
+        "candidate_opcode": 12,
+        "inferred": true
+      },
+      {
+        "record": 197,
+        "location": 110,
+        "field_3": 1,
+        "source_sl": 176,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(2)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "kind": "assign_root_slot",
+        "slot": 2,
+        "value": {
+          "temporary": true
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 198,
+        "location": 111,
+        "field_3": 1,
+        "source_sl": 177,
+        "source": "Call QMLibrary.Delay((15000))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 15000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 199,
+        "location": 112,
+        "field_3": 1,
+        "source_sl": 178,
+        "source": "Call QMLibrary.TracePrint((\">>>>>>找按钮对话\"))",
+        "kind": "trace",
+        "arguments": [
+          {
+            "const": ">>>>>>找按钮对话"
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 200,
+        "location": 113,
+        "field_3": 1,
+        "source_sl": 179,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 201,
+        "location": 114,
+        "field_3": 1,
+        "source_sl": 180,
+        "source": "Set F2730835_2229_445E_97C7_13F76l277lDA=New F2730835_2229_445E_97C7_13F761277lDA_V98B8D5C1B6DD756D:Set F2730835_2229_445E_97C7_13F76l277lDA.F2730835_2229_445E_97C7_13F76l2771DA=F2730835_2229_445E_97C7_l3F7612771DA:Set F2730835_2229_445E_97C7_l3F7612771DA=F2730835_2229_445E_97C7_13F76l277lDA",
+        "kind": "frame_enter",
+        "class_name": "F2730835_2229_445E_97C7_13F761277lDA_V98B8D5C1B6DD756D",
+        "parent_field": "F2730835_2229_445E_97C7_13F76l2771DA",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 202,
+        "location": 114,
+        "field_3": 1,
+        "source_sl": null,
+        "source": null,
+        "kind": "call",
+        "target": 2446,
+        "candidate_opcode": 12,
+        "inferred": true
+      },
+      {
+        "record": 203,
+        "location": 114,
+        "field_3": 1,
+        "source_sl": 181,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(3)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "kind": "assign_root_slot",
+        "slot": 3,
+        "value": {
+          "temporary": true
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 204,
+        "location": 115,
+        "field_3": 1,
+        "source_sl": 182,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      }
+    ],
+    "call_sites": [
+      {
+        "record": 175,
+        "target": 6099,
+        "frame_sl": 158,
+        "name": "掉线重新连接",
+        "retained_references": [],
+        "evidence": "candidate from connection-marker search"
+      },
+      {
+        "record": 181,
+        "target": 2446,
+        "frame_sl": 163,
+        "name": "找按钮",
+        "retained_references": [
+          546,
+          3195
+        ],
+        "evidence": "same frame and retained call target"
+      },
+      {
+        "record": 191,
+        "target": 3260,
+        "frame_sl": 171,
+        "name": "切角色",
+        "retained_references": [],
+        "evidence": "candidate from character switching traces"
+      },
+      {
+        "record": 196,
+        "target": 2427,
+        "frame_sl": 175,
+        "name": "找绿色",
+        "retained_references": [
+          743,
+          764,
+          2121,
+          2160,
+          2199,
+          2238,
+          3191,
+          3243
+        ],
+        "evidence": "same frame and retained call target"
+      },
+      {
+        "record": 202,
+        "target": 2446,
+        "frame_sl": 180,
+        "name": "找按钮",
+        "retained_references": [
+          546,
+          3195
+        ],
+        "evidence": "same frame and retained call target"
+      }
+    ],
+    "original_values_recovered": 0,
+    "source_program_sha256": "80b9c5724214dce32a3cb2e848843152caca456270a51cf4f76bc8f62c1b6295"
+  },
+  {
+    "module": 6,
+    "entry": 261,
+    "boundary": 321,
+    "rows": [
+      {
+        "record": 261,
+        "location": 138,
+        "field_3": 1,
+        "source_sl": 221,
+        "source": "Randomize",
+        "kind": "randomize",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 262,
+        "location": 139,
+        "field_3": 1,
+        "source_sl": 222,
+        "source": "YDX=INT(5*RND+35)",
+        "kind": "random_int",
+        "name": "YDX",
+        "span": 5,
+        "lower": {
+          "numeric": {
+            "const": 35
+          }
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 263,
+        "location": 140,
+        "field_3": 1,
+        "source_sl": 223,
+        "source": "Randomize",
+        "kind": "randomize",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 264,
+        "location": 141,
+        "field_3": 1,
+        "source_sl": 224,
+        "source": "YDY=INT(10*RND+10)",
+        "kind": "random_int",
+        "name": "YDY",
+        "span": 10,
+        "lower": {
+          "numeric": {
+            "const": 10
+          }
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 265,
+        "location": 142,
+        "field_3": 1,
+        "source_sl": 225,
+        "source": "Call QMLibrary.Delay((50))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 50
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 266,
+        "location": 143,
+        "field_3": 1,
+        "source_sl": 226,
+        "source": "Call DM.MOVETO(YDX,YDY)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "name": "YDX"
+            }
+          },
+          {
+            "numeric": {
+              "name": "YDY"
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 267,
+        "location": 144,
+        "field_3": 1,
+        "source_sl": 227,
+        "source": "Call QMLibrary.Delay((300))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 300
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 268,
+        "location": 145,
+        "field_3": 1,
+        "source_sl": 228,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 269,
+        "location": 146,
+        "field_3": 1,
+        "source_sl": 229,
+        "source": "Call QMLibrary.Delay((1000))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 270,
+        "location": 147,
+        "field_3": 1,
+        "source_sl": 230,
+        "source": "Call QMLibrary.TracePrint((\">>>>>>脚本启动\"))",
+        "kind": "trace",
+        "arguments": [
+          {
+            "const": ">>>>>>脚本启动"
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 271,
+        "location": 148,
+        "field_3": 1,
+        "source_sl": 231,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 272,
+        "location": 149,
+        "field_3": 1,
+        "source_sl": 232,
+        "source": "Call QMLibrary.Delay((200))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 200
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 273,
+        "location": 150,
+        "field_3": 1,
+        "source_sl": 233,
+        "source": "Call QMLibrary.Delay((50))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 50
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 274,
+        "location": 151,
+        "field_3": 1,
+        "source_sl": 234,
+        "source": "Randomize",
+        "kind": "randomize",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 275,
+        "location": 152,
+        "field_3": 1,
+        "source_sl": 235,
+        "source": "YDX=INT(5*RND+35)",
+        "kind": "random_int",
+        "name": "YDX",
+        "span": 5,
+        "lower": {
+          "numeric": {
+            "const": 35
+          }
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 276,
+        "location": 153,
+        "field_3": 1,
+        "source_sl": 236,
+        "source": "Randomize",
+        "kind": "randomize",
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 277,
+        "location": 154,
+        "field_3": 1,
+        "source_sl": 237,
+        "source": "YDY=INT(10*RND+10)",
+        "kind": "random_int",
+        "name": "YDY",
+        "span": 10,
+        "lower": {
+          "numeric": {
+            "const": 10
+          }
+        },
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 278,
+        "location": 155,
+        "field_3": 1,
+        "source_sl": 238,
+        "source": "Call QMLibrary.Delay((50))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 50
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 279,
+        "location": 156,
+        "field_3": 1,
+        "source_sl": 239,
+        "source": "Call DM.MOVETO(YDX,YDY)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "name": "YDX"
+            }
+          },
+          {
+            "numeric": {
+              "name": "YDY"
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 280,
+        "location": 157,
+        "field_3": 1,
+        "source_sl": 240,
+        "source": "Call QMLibrary.Delay((300))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 300
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 281,
+        "location": 158,
+        "field_3": 1,
+        "source_sl": 241,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 282,
+        "location": 159,
+        "field_3": 1,
+        "source_sl": 242,
+        "source": "Call QMLibrary.Delay((1000))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 283,
+        "location": 160,
+        "field_3": 1,
+        "source_sl": 243,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 284,
+        "location": 161,
+        "field_3": 1,
+        "source_sl": 244,
+        "source": "Call DM.MOVETO(958,975)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 958
+            }
+          },
+          {
+            "numeric": {
+              "const": 975
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 285,
+        "location": 162,
+        "field_3": 1,
+        "source_sl": 245,
+        "source": "Call QMLibrary.Delay((500))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 500
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 286,
+        "location": 163,
+        "field_3": 1,
+        "source_sl": 246,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 287,
+        "location": 164,
+        "field_3": 1,
+        "source_sl": 247,
+        "source": "Call QMLibrary.Delay((1000))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 288,
+        "location": 166,
+        "field_3": 1,
+        "source_sl": 248,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 289,
+        "location": 167,
+        "field_3": 1,
+        "source_sl": 249,
+        "source": "V8186B4D47378756D",
+        "kind": "read_global",
+        "key": "V8186B4D47378756D",
+        "candidate_opcode": 27,
+        "inferred": true
+      },
+      {
+        "record": 290,
+        "location": 167,
+        "field_3": 1,
+        "source_sl": 250,
+        "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA",
+        "kind": "assign_root_slot",
+        "slot": 1,
+        "value": {
+          "temporary": true
+        },
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 291,
+        "location": 167,
+        "field_3": 1,
+        "source_sl": 251,
+        "source": "DM_RET=DM.FINDCOLOR(160,1,260,25,F2730835_2229_445E_97C7_l3F761277lDA(1) & \"-151515\",0.9,0,INTX,INTY)",
+        "kind": "find_color",
+        "rect": [
+          160,
+          1,
+          260,
+          25
+        ],
+        "spec": {
+          "concat": [
+            {
+              "root_slot": 1
+            },
+            {
+              "const": "-151515"
+            }
+          ]
+        },
+        "similarity": 0.9,
+        "direction": 0,
+        "candidate_opcode": 2,
+        "inferred": true
+      },
+      {
+        "record": 292,
+        "location": 168,
+        "field_3": 1,
+        "source_sl": 252,
+        "source": "Sgn((INTX>0))",
+        "kind": "test",
+        "value": {
+          "numeric": {
+            "op": "SGN",
+            "args": [
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "INTX"
+                  },
+                  {
+                    "const": 0
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "candidate_opcode": 4,
+        "inferred": true
+      },
+      {
+        "record": 293,
+        "location": 168,
+        "field_3": 1,
+        "source_sl": null,
+        "source": null,
+        "kind": "if_zero",
+        "target": 321,
+        "candidate_opcode": 6,
+        "inferred": true
+      },
+      {
+        "record": 294,
+        "location": 169,
+        "field_3": 1,
+        "source_sl": 253,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 295,
+        "location": 170,
+        "field_3": 1,
+        "source_sl": 254,
+        "source": "DM_RET=DM.FINDCOLOR(1637,72,1860,274,\"A39D8D-000000|A29D8E-000000|A39D91-000000|A39D8F-00000|A49B92-000000\",1,0,INTX,INTY)",
+        "kind": "find_color",
+        "rect": [
+          1637,
+          72,
+          1860,
+          274
+        ],
+        "spec": {
+          "const": "A39D8D-000000|A29D8E-000000|A39D91-000000|A39D8F-00000|A49B92-000000"
+        },
+        "similarity": 1.0,
+        "direction": 0,
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 296,
+        "location": 171,
+        "field_3": 1,
+        "source_sl": 255,
+        "source": "Sgn((INTX>0))",
+        "kind": "test",
+        "value": {
+          "numeric": {
+            "op": "SGN",
+            "args": [
+              {
+                "op": ">",
+                "args": [
+                  {
+                    "name": "INTX"
+                  },
+                  {
+                    "const": 0
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "candidate_opcode": 4,
+        "inferred": true
+      },
+      {
+        "record": 297,
+        "location": 171,
+        "field_3": 1,
+        "source_sl": null,
+        "source": null,
+        "kind": "if_zero",
+        "target": 321,
+        "candidate_opcode": 6,
+        "inferred": true
+      },
+      {
+        "record": 298,
+        "location": 172,
+        "field_3": 1,
+        "source_sl": 256,
+        "source": "Call QMLibrary.Delay((50))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 50
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 299,
+        "location": 173,
+        "field_3": 1,
+        "source_sl": 257,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 300,
+        "location": 174,
+        "field_3": 1,
+        "source_sl": 258,
+        "source": "Call DM.MOVETO(1904,283)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1904
+            }
+          },
+          {
+            "numeric": {
+              "const": 283
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 301,
+        "location": 175,
+        "field_3": 1,
+        "source_sl": 259,
+        "source": "Call QMLibrary.Delay(200)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 200
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 302,
+        "location": 176,
+        "field_3": 1,
+        "source_sl": 260,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 303,
+        "location": 177,
+        "field_3": 1,
+        "source_sl": 261,
+        "source": "Call QMLibrary.Delay(1000)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1000
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 304,
+        "location": 178,
+        "field_3": 1,
+        "source_sl": 262,
+        "source": "Call QMLibrary.KeyPress(\"Enter\",g_iSimulateModeInVBSBlock,1)",
+        "kind": "key_press",
+        "arguments": [
+          {
+            "const": "Enter"
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 305,
+        "location": 179,
+        "field_3": 1,
+        "source_sl": 263,
+        "source": "Call QMLibrary.Delay(600)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 600
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 306,
+        "location": 180,
+        "field_3": 1,
+        "source_sl": 264,
+        "source": "Call QMLibrary.KeyPress(\"Enter\",g_iSimulateModeInVBSBlock,1)",
+        "kind": "key_press",
+        "arguments": [
+          {
+            "const": "Enter"
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 307,
+        "location": 181,
+        "field_3": 1,
+        "source_sl": 265,
+        "source": "Call QMLibrary.Delay(600)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 600
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 308,
+        "location": 182,
+        "field_3": 1,
+        "source_sl": 266,
+        "source": "Call DM.MOVETO(1907,90)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1907
+            }
+          },
+          {
+            "numeric": {
+              "const": 90
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 309,
+        "location": 183,
+        "field_3": 1,
+        "source_sl": 267,
+        "source": "Call QMLibrary.Delay(200)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 200
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 310,
+        "location": 184,
+        "field_3": 1,
+        "source_sl": 268,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 311,
+        "location": 185,
+        "field_3": 1,
+        "source_sl": 269,
+        "source": "Call QMLibrary.Delay(700)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 700
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 312,
+        "location": 186,
+        "field_3": 1,
+        "source_sl": 270,
+        "source": "Call DM.MOVETO(1874,103)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1874
+            }
+          },
+          {
+            "numeric": {
+              "const": 103
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 313,
+        "location": 187,
+        "field_3": 1,
+        "source_sl": 271,
+        "source": "Call QMLibrary.Delay(200)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 200
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 314,
+        "location": 188,
+        "field_3": 1,
+        "source_sl": 272,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 315,
+        "location": 189,
+        "field_3": 1,
+        "source_sl": 273,
+        "source": "Call QMLibrary.Delay(300)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 300
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 316,
+        "location": 190,
+        "field_3": 1,
+        "source_sl": 274,
+        "source": "Call DM.MOVETO(1873,73)",
+        "kind": "move_to",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 1873
+            }
+          },
+          {
+            "numeric": {
+              "const": 73
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 317,
+        "location": 191,
+        "field_3": 1,
+        "source_sl": 275,
+        "source": "Call QMLibrary.Delay(200)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 200
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 318,
+        "location": 192,
+        "field_3": 1,
+        "source_sl": 276,
+        "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)",
+        "kind": "mouse_click",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 0
+            }
+          },
+          {
+            "numeric": {
+              "name": "G_ISIMULATEMODEINVBSBLOCK"
+            }
+          },
+          {
+            "numeric": {
+              "const": 1
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 319,
+        "location": 193,
+        "field_3": 1,
+        "source_sl": 277,
+        "source": "Call QMLibrary.Delay(50)",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 50
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      },
+      {
+        "record": 320,
+        "location": 194,
+        "field_3": 1,
+        "source_sl": 278,
+        "source": "Call QMLibrary.Delay((100))",
+        "kind": "delay",
+        "arguments": [
+          {
+            "numeric": {
+              "const": 100
+            }
+          }
+        ],
+        "candidate_opcode": 30,
+        "inferred": true
+      }
+    ],
+    "call_sites": [],
+    "original_values_recovered": 0,
+    "source_program_sha256": "a45f0fafe45984a5260712ab56d7fa85af9f0523f00743ff1905ce3547123cfa",
+    "matching_daily_screen": {
+      "chaos": [
+        289,
+        320
+      ],
+      "daily": [
+        283,
+        314
+      ]
+    }
+  }
+]

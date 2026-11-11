@@ -1,0 +1,152 @@
+# 重啟小功能 — L11725
+# 入口 L11725，RETURN L11873；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L11725: Call QMLibrary.Delay((100))  # loc=10141 Runner=0x625fb0
+L11726: Call QMLibrary.TracePrint(("监控重启>>>开始"))  # loc=10142 Runner=0x625fb0
+L11727: Call QMLibrary.Delay((100))  # loc=10143 Runner=0x625fb0
+L11728: Call QMLibrary.Delay((10000))  # loc=10144 Runner=0x625fb0
+L11729: Call QMLibrary.Delay((10000))  # loc=10145 Runner=0x625fb0
+L11730: Call QMLibrary.Delay((10000))  # loc=10146 Runner=0x625fb0
+L11731: Call QMLibrary.TracePrint(("00:30"))  # loc=10147 Runner=0x625fb0
+L11732: Call QMLibrary.Delay((10000))  # loc=10148 Runner=0x625fb0
+L11733: Call QMLibrary.Delay((10000))  # loc=10149 Runner=0x625fb0
+L11734: Call QMLibrary.Delay((10000))  # loc=10150 Runner=0x625fb0
+L11735: Call QMLibrary.TracePrint(("01:00"))  # loc=10151 Runner=0x625fb0
+L11736: Call QMLibrary.Delay((10000))  # loc=10152 Runner=0x625fb0
+L11737: Call QMLibrary.Delay((10000))  # loc=10153 Runner=0x625fb0
+L11738: Call QMLibrary.Delay((10000))  # loc=10154 Runner=0x625fb0
+L11739: Call QMLibrary.TracePrint(("01:30"))  # loc=10155 Runner=0x625fb0
+L11740: Call QMLibrary.Delay((10000))  # loc=10156 Runner=0x625fb0
+L11741: Call QMLibrary.Delay((10000))  # loc=10157 Runner=0x625fb0
+L11742: Call QMLibrary.Delay((10000))  # loc=10158 Runner=0x625fb0
+L11743: Call QMLibrary.TracePrint(("02:00"))  # loc=10159 Runner=0x625fb0
+L11744: Call QMLibrary.Delay((10000))  # loc=10160 Runner=0x625fb0
+L11745: Call QMLibrary.Delay((10000))  # loc=10161 Runner=0x625fb0
+L11746: Call QMLibrary.Delay((10000))  # loc=10162 Runner=0x625fb0
+L11747: Call QMLibrary.TracePrint(("02:30"))  # loc=10163 Runner=0x625fb0
+L11748: Call QMLibrary.Delay((10000))  # loc=10164 Runner=0x625fb0
+L11749: Call QMLibrary.Delay((10000))  # loc=10165 Runner=0x625fb0
+L11750: Call QMLibrary.Delay((10000))  # loc=10166 Runner=0x625fb0
+L11751: Call QMLibrary.TracePrint(("03:00"))  # loc=10167 Runner=0x625fb0
+L11752: Call QMLibrary.Delay((10000))  # loc=10168 Runner=0x625fb0
+L11753: Call QMLibrary.Delay((10000))  # loc=10169 Runner=0x625fb0
+L11754: Call QMLibrary.Delay((10000))  # loc=10170 Runner=0x625fb0
+L11755: Call QMLibrary.TracePrint(("03:30"))  # loc=10171 Runner=0x625fb0
+L11756: Call QMLibrary.Delay((10000))  # loc=10172 Runner=0x625fb0
+L11757: Call QMLibrary.Delay((10000))  # loc=10173 Runner=0x625fb0
+L11758: Call QMLibrary.Delay((10000))  # loc=10174 Runner=0x625fb0
+L11759: Call QMLibrary.TracePrint(("04:00"))  # loc=10175 Runner=0x625fb0
+L11760: Call QMLibrary.Delay((10000))  # loc=10176 Runner=0x625fb0
+L11761: Call QMLibrary.Delay((10000))  # loc=10177 Runner=0x625fb0
+L11762: Call QMLibrary.Delay((10000))  # loc=10178 Runner=0x625fb0
+L11763: Call QMLibrary.TracePrint(("04:30"))  # loc=10179 Runner=0x625fb0
+L11764: Call QMLibrary.Delay((10000))  # loc=10180 Runner=0x625fb0
+L11765: Call QMLibrary.Delay((10000))  # loc=10181 Runner=0x625fb0
+L11766: Call QMLibrary.Delay((10000))  # loc=10182 Runner=0x625fb0
+L11767: Call QMLibrary.TracePrint(("05:00"))  # loc=10183 Runner=0x625fb0
+L11768: Call QMLibrary.Delay((10000))  # loc=10184 Runner=0x625fb0
+L11769: Call QMLibrary.Delay((10000))  # loc=10185 Runner=0x625fb0
+L11770: Call QMLibrary.Delay((10000))  # loc=10186 Runner=0x625fb0
+L11771: Call QMLibrary.TracePrint(("05:30"))  # loc=10187 Runner=0x625fb0
+L11772: Call QMLibrary.Delay((10000))  # loc=10188 Runner=0x625fb0
+L11773: Call QMLibrary.Delay((10000))  # loc=10189 Runner=0x625fb0
+L11774: Call QMLibrary.Delay((10000))  # loc=10190 Runner=0x625fb0
+L11775: Call QMLibrary.TracePrint(("06:00"))  # loc=10191 Runner=0x625fb0
+L11776: Call QMLibrary.Delay((10000))  # loc=10192 Runner=0x625fb0
+L11777: Call QMLibrary.Delay((10000))  # loc=10193 Runner=0x625fb0
+L11778: Call QMLibrary.Delay((10000))  # loc=10194 Runner=0x625fb0
+L11779: Call QMLibrary.TracePrint(("06:30"))  # loc=10195 Runner=0x625fb0
+L11780: Call QMLibrary.Delay((10000))  # loc=10196 Runner=0x625fb0
+L11781: Call QMLibrary.Delay((10000))  # loc=10197 Runner=0x625fb0
+L11782: Call QMLibrary.Delay((10000))  # loc=10198 Runner=0x625fb0
+L11783: Call QMLibrary.TracePrint(("07:00"))  # loc=10199 Runner=0x625fb0
+L11784: Call QMLibrary.Delay((10000))  # loc=10200 Runner=0x625fb0
+L11785: Call QMLibrary.Delay((10000))  # loc=10201 Runner=0x625fb0
+L11786: Call QMLibrary.Delay((10000))  # loc=10202 Runner=0x625fb0
+L11787: Call QMLibrary.TracePrint(("07:30"))  # loc=10203 Runner=0x625fb0
+L11788: Call QMLibrary.Delay((10000))  # loc=10204 Runner=0x625fb0
+L11789: Call QMLibrary.Delay((10000))  # loc=10205 Runner=0x625fb0
+L11790: Call QMLibrary.Delay((10000))  # loc=10206 Runner=0x625fb0
+L11791: Call QMLibrary.TracePrint(("08:00"))  # loc=10207 Runner=0x625fb0
+L11792: Call QMLibrary.Delay((10000))  # loc=10208 Runner=0x625fb0
+L11793: Call QMLibrary.Delay((10000))  # loc=10209 Runner=0x625fb0
+L11794: Call QMLibrary.Delay((10000))  # loc=10210 Runner=0x625fb0
+L11795: Call QMLibrary.TracePrint(("08:30"))  # loc=10211 Runner=0x625fb0
+L11796: Call QMLibrary.Delay((10000))  # loc=10212 Runner=0x625fb0
+L11797: Call QMLibrary.Delay((10000))  # loc=10213 Runner=0x625fb0
+L11798: Call QMLibrary.Delay((10000))  # loc=10214 Runner=0x625fb0
+L11799: Call QMLibrary.TracePrint(("09:00"))  # loc=10215 Runner=0x625fb0
+L11800: Call QMLibrary.Delay((10000))  # loc=10216 Runner=0x625fb0
+L11801: Call QMLibrary.Delay((10000))  # loc=10217 Runner=0x625fb0
+L11802: Call QMLibrary.Delay((10000))  # loc=10218 Runner=0x625fb0
+L11803: Call QMLibrary.TracePrint(("09:30"))  # loc=10219 Runner=0x625fb0
+L11804: Call QMLibrary.Delay((10000))  # loc=10220 Runner=0x625fb0
+L11805: Call QMLibrary.Delay((10000))  # loc=10221 Runner=0x625fb0
+L11806: Call QMLibrary.Delay((10000))  # loc=10222 Runner=0x625fb0
+L11807: Call QMLibrary.TracePrint(("10:00"))  # loc=10223 Runner=0x625fb0
+L11808: Call QMLibrary.Delay((300))  # loc=10224 Runner=0x625fb0
+L11809: Set 新呼叫框架=New 框架類別_〔V80D6AA847378756D.無限屏幕截圖〕:新呼叫框架.〔左坐標〕=0:新呼叫框架.〔上坐標〕=0:新呼叫框架.〔右坐標〕=1920:新呼叫框架.〔下坐標〕=1080:新呼叫框架.〔保存圖片路徑〕="C:\方舟混沌\":新呼叫框架.〔文件格式〕="bmp":Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=10225 Runner=0x625f7e
+L11810: call L13605; resume L11811  # loc=10225 Runner=0x6261f2
+L11811: Call QMLibrary.Delay((300))  # loc=10226 Runner=0x625fb0
+L11812: Call QMLibrary.TracePrint(("监控重启>>>结束>>>截图游戏画面,并重启主程序"))  # loc=10227 Runner=0x625fb0
+L11813: Call QMLibrary.Delay((300))  # loc=10228 Runner=0x625fb0
+L11814: 傳回值 = global.get(〔放技能ID〕)  # loc=10229 Runner=0x6266f4
+L11815: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10229 Runner=0x625f7e
+L11816: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(1), 0)  # loc=10229 Runner=0x625fb0
+L11817: Call QMLibrary.Delay((200))  # loc=10230 Runner=0x625fb0
+L11818: 傳回值 = global.get(〔找怪ID〕)  # loc=10231 Runner=0x6266f4
+L11819: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10231 Runner=0x625f7e
+L11820: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(1), 0)  # loc=10231 Runner=0x625fb0
+L11821: Call QMLibrary.Delay((200))  # loc=10232 Runner=0x625fb0
+L11822: 傳回值 = global.get(〔吃藥ID〕)  # loc=10233 Runner=0x6266f4
+L11823: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10233 Runner=0x625f7e
+L11824: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(1), 0)  # loc=10233 Runner=0x625fb0
+L11825: Call QMLibrary.Delay((200))  # loc=10234 Runner=0x625fb0
+L11826: 傳回值 = global.get(〔吃百分比藥ID〕)  # loc=10235 Runner=0x6266f4
+L11827: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10235 Runner=0x625f7e
+L11828: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(1), 0)  # loc=10235 Runner=0x625fb0
+L11829: Call QMLibrary.Delay((200))  # loc=10236 Runner=0x625fb0
+L11830: 傳回值 = global.get(〔按GID〕)  # loc=10237 Runner=0x6266f4
+L11831: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10237 Runner=0x625f7e
+L11832: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(1), 0)  # loc=10237 Runner=0x625fb0
+L11833: Call QMLibrary.Delay((200))  # loc=10238 Runner=0x625fb0
+L11834: 傳回值 = global.get(〔監控死亡ID〕)  # loc=10239 Runner=0x6266f4
+L11835: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10239 Runner=0x625f7e
+L11836: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(1), 0)  # loc=10239 Runner=0x625fb0
+L11837: Call QMLibrary.Delay((200))  # loc=10240 Runner=0x625fb0
+L11838: 傳回值 = global.get(〔找塔圖ID〕)  # loc=10241 Runner=0x6266f4
+L11839: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10241 Runner=0x625f7e
+L11840: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(1), 0)  # loc=10241 Runner=0x625fb0
+L11841: Call QMLibrary.Delay((200))  # loc=10242 Runner=0x625fb0
+L11842: 傳回值 = global.get(〔紫門打完撿東西ID〕)  # loc=10243 Runner=0x6266f4
+L11843: 目前呼叫框架.暫存槽(1)=傳回值  # loc=10243 Runner=0x625f7e
+L11844: Call QMLibrary.ThreadControl(目前呼叫框架.暫存槽(1), 0)  # loc=10243 Runner=0x625fb0
+L11845: Call QMLibrary.Delay((200))  # loc=10244 Runner=0x625fb0
+L11846: Call QMLibrary.Delay((1000))  # loc=10245 Runner=0x625fb0
+L11847: Call QMLibrary.MouseMove(40,20,g_iSimulateModeInVBSBlock,0)  # loc=10246 Runner=0x625fb0
+L11848: Call QMLibrary.Delay((500))  # loc=10247 Runner=0x625fb0
+L11849: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=10248 Runner=0x625fb0
+L11850: Call QMLibrary.Delay((1500))  # loc=10249 Runner=0x625fb0
+L11851: Call FindColorEx(160,1,260,25,"31D74A",0,0.9,INTX,INTY)  # loc=10250 Runner=0x625fb0
+L11852: last_test = Sgn((INTX>=0))  # loc=10251 Runner=0x626047
+L11853: if last_test == 0: goto L11856  # loc=10251 Runner=0x62611c
+L11854: Call QMLibrary.Delay((100))  # loc=10252 Runner=0x625fb0
+L11855: goto L11865  # loc=10253 Runner=0x626126
+L11856: Call QMLibrary.Delay((500))  # loc=10254 Runner=0x625fb0
+L11857: Call FindColorEx(160,1,260,25,"33D74A",0,0.9,INTX,INTY)  # loc=10255 Runner=0x625fb0
+L11858: last_test = Sgn((INTX>=0))  # loc=10256 Runner=0x626047
+L11859: if last_test == 0: goto L11862  # loc=10256 Runner=0x62611c
+L11860: Call QMLibrary.Delay((100))  # loc=10257 Runner=0x625fb0
+L11861: goto L11865  # loc=10258 Runner=0x626126
+L11862: Call QMLibrary.Delay((100))  # loc=10259 Runner=0x625fb0
+L11863: Call QMLibrary.KeyPress("Esc",g_iSimulateModeInVBSBlock,1)  # loc=10260 Runner=0x625fb0
+L11864: Call QMLibrary.Delay((3000))  # loc=10261 Runner=0x625fb0
+L11865: Call QMLibrary.Delay((500))  # loc=10264 Runner=0x625fb0
+L11866: Call QMLibrary.MouseMove(958,975,g_iSimulateModeInVBSBlock,0)  # loc=10265 Runner=0x625fb0
+L11867: Call QMLibrary.Delay((500))  # loc=10266 Runner=0x625fb0
+L11868: Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)  # loc=10267 Runner=0x625fb0
+L11869: Call QMLibrary.Delay((1000))  # loc=10268 Runner=0x625fb0
+L11870: Call QMLibrary.ExitScript(1)  # loc=10269 Runner=0x625fb0
+L11871: Call QMLibrary.Delay((300))  # loc=10270 Runner=0x625fb0
+L11872: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=10271 Runner=0x625f7e
+L11873: return caller  # loc=10271 Runner=0x626275

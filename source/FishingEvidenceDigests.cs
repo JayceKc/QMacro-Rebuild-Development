@@ -1,0 +1,1 @@
+public static class FishingEvidenceDigests {public const string Program="e552b5f44c0cd59c8c584a92d36d5e1196189ddda1ff2f6e74cd4aa298ffa78f";public const string Cases="09b9ba0b035f7a400117c17ae3204aa936bfe129077539b5f7296589e15fa080";}

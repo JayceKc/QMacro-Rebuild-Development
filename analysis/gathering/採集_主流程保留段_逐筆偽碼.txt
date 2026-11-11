@@ -1,0 +1,192 @@
+# 採集主流程保留段 L507..688＋原跳過函式鏈
+
+這是四個受控入口的逐筆偽碼，並非原L7入口已恢復。命中缺失L432會明確停止。原變數名稱見data/gathering-main-suffix.json的name_roles。
+
+L507: 等待 100 ms  // op=30, loc=471, SL=447, field_3=1
+L508: mouse_click(2, simulation_mode, 1)  // op=30, loc=472, SL=448, field_3=1
+L509: 等待 1000 ms  // op=30, loc=473, SL=449, field_3=1
+L510: fallback_attempts = (fallback_attempts + 1)  // op=2, loc=474, SL=450, field_3=1
+L511: 等待 1000 ms  // op=30, loc=475, SL=451, field_3=1
+L512: condition = SGN((fallback_attempts > 5))  // op=4, loc=476, SL=452, field_3=1
+L513: 若 condition = 0，跳到 L538  // op=6, loc=476, SL=None, field_3=1
+L514: 等待 50 ms  // op=30, loc=477, SL=453, field_3=1
+L515: fallback_attempts = 0  // op=2, loc=478, SL=454, field_3=1
+L516: walk_repeats = 0  // op=2, loc=479, SL=455, field_3=1
+L517: move_to_ex(860, 440, 200, 200)  // op=30, loc=480, SL=456, field_3=1
+L518: 等待 200 ms  // op=30, loc=481, SL=457, field_3=1
+L519: mouse_click(0, simulation_mode, 1)  // op=30, loc=482, SL=458, field_3=1
+L520: 等待 200 ms  // op=30, loc=483, SL=459, field_3=1
+L521: 初始化原亂數來源  // op=2, loc=484, SL=460, field_3=1
+L522: recovery_delay = 受控整數 [66, 181]  // op=2, loc=485, SL=461, field_3=1
+L523: 等待 100 ms  // op=30, loc=486, SL=462, field_3=1
+L524: key_press("Q", simulation_mode, 1)  // op=30, loc=487, SL=463, field_3=1
+L525: 等待 recovery_delay ms  // op=30, loc=488, SL=464, field_3=1
+L526: key_press("F", simulation_mode, 1)  // op=30, loc=489, SL=465, field_3=1
+L527: 等待 recovery_delay ms  // op=30, loc=490, SL=466, field_3=1
+L528: key_press("E", simulation_mode, 1)  // op=30, loc=491, SL=467, field_3=1
+L529: 等待 recovery_delay ms  // op=30, loc=492, SL=468, field_3=1
+L530: key_press("A", simulation_mode, 1)  // op=30, loc=493, SL=469, field_3=1
+L531: 等待 recovery_delay ms  // op=30, loc=494, SL=470, field_3=1
+L532: key_press("D", simulation_mode, 1)  // op=30, loc=495, SL=471, field_3=1
+L533: 等待 recovery_delay ms  // op=30, loc=496, SL=472, field_3=1
+L534: key_press("R", simulation_mode, 1)  // op=30, loc=497, SL=473, field_3=1
+L535: 等待 recovery_delay ms  // op=30, loc=498, SL=474, field_3=1
+L536: key_press("S", simulation_mode, 1)  // op=30, loc=499, SL=475, field_3=1
+L537: 等待 recovery_delay ms  // op=30, loc=500, SL=476, field_3=1
+L538: 等待 700 ms  // op=30, loc=502, SL=477, field_3=1
+L539: 跳到 L580  // op=16, loc=503, SL=None, field_3=1
+L540: 等待 50 ms  // op=30, loc=504, SL=478, field_3=1
+L541: target_x, target_y = find_color(ROI=[1593, 38, 1891, 296], "38B8EE-030303|117EB7-030303|88B53B-030303|89B83F-030303|95BC4C-030303|85AE3F-030303|85B336-030303|88AF41-030303|2FAFDA-030303|2167BC-030303|0D5492-030303|115C86-030303", similarity=1.0, dir=4)  // op=30, loc=506, SL=479, field_3=1
+L542: condition = SGN((target_x > 0))  // op=4, loc=507, SL=480, field_3=1
+L543: 若 condition = 0，跳到 L580  // op=6, loc=507, SL=None, field_3=1
+L544: 記錄 "找到小地图双采图标"  // op=30, loc=508, SL=481, field_3=1
+L545: 等待 50 ms  // op=30, loc=509, SL=482, field_3=1
+L546: 保存parent並建立 walk 呼叫框架  // op=2, loc=510, SL=483, field_3=1
+L547: 呼叫 L689  // op=12, loc=510, SL=None, field_3=1
+L548: root_slot[12] = temporary（可能是Empty）  // op=2, loc=510, SL=484, field_3=1
+L549: 等待 100 ms  // op=30, loc=511, SL=485, field_3=1
+L550: walk_repeats = (walk_repeats + 1)  // op=2, loc=512, SL=486, field_3=1
+L551: 等待 50 ms  // op=30, loc=513, SL=487, field_3=1
+L552: condition = SGN((walk_repeats > 10))  // op=4, loc=514, SL=488, field_3=1
+L553: 若 condition = 0，跳到 L580  // op=6, loc=514, SL=None, field_3=1
+L554: 等待 100 ms  // op=30, loc=515, SL=489, field_3=1
+L555: key_press("Space", simulation_mode, 1)  // op=30, loc=516, SL=490, field_3=1
+L556: 等待 100 ms  // op=30, loc=517, SL=491, field_3=1
+L557: move_to_ex(860, 440, 200, 200)  // op=30, loc=518, SL=492, field_3=1
+L558: 等待 100 ms  // op=30, loc=519, SL=493, field_3=1
+L559: mouse_click(0, simulation_mode, 1)  // op=30, loc=520, SL=494, field_3=1
+L560: 等待 100 ms  // op=30, loc=521, SL=495, field_3=1
+L561: walk_repeats = 5  // op=2, loc=522, SL=496, field_3=1
+L562: 等待 100 ms  // op=30, loc=523, SL=497, field_3=1
+L563: 初始化原亂數來源  // op=2, loc=524, SL=498, field_3=1
+L564: recovery_delay = 受控整數 [66, 181]  // op=2, loc=525, SL=499, field_3=1
+L565: 等待 100 ms  // op=30, loc=526, SL=500, field_3=1
+L566: key_press("Q", simulation_mode, 1)  // op=30, loc=527, SL=501, field_3=1
+L567: 等待 recovery_delay ms  // op=30, loc=528, SL=502, field_3=1
+L568: key_press("F", simulation_mode, 1)  // op=30, loc=529, SL=503, field_3=1
+L569: 等待 recovery_delay ms  // op=30, loc=530, SL=504, field_3=1
+L570: key_press("E", simulation_mode, 1)  // op=30, loc=531, SL=505, field_3=1
+L571: 等待 recovery_delay ms  // op=30, loc=532, SL=506, field_3=1
+L572: key_press("A", simulation_mode, 1)  // op=30, loc=533, SL=507, field_3=1
+L573: 等待 recovery_delay ms  // op=30, loc=534, SL=508, field_3=1
+L574: key_press("D", simulation_mode, 1)  // op=30, loc=535, SL=509, field_3=1
+L575: 等待 recovery_delay ms  // op=30, loc=536, SL=510, field_3=1
+L576: key_press("R", simulation_mode, 1)  // op=30, loc=537, SL=511, field_3=1
+L577: 等待 recovery_delay ms  // op=30, loc=538, SL=512, field_3=1
+L578: key_press("S", simulation_mode, 1)  // op=30, loc=539, SL=513, field_3=1
+L579: 等待 recovery_delay ms  // op=30, loc=540, SL=514, field_3=1
+L580: 跳到 L591  // op=16, loc=541, SL=None, field_3=1
+L581: 等待 500 ms  // op=30, loc=546, SL=515, field_3=1
+L582: sdk_miss_count = (sdk_miss_count + 1)  // op=2, loc=547, SL=516, field_3=1
+L583: 等待 500 ms  // op=30, loc=548, SL=517, field_3=1
+L584: condition = SGN((sdk_miss_count >= 3))  // op=4, loc=549, SL=518, field_3=1
+L585: 若 condition = 0，跳到 L591  // op=6, loc=549, SL=None, field_3=1
+L586: 等待 100 ms  // op=30, loc=550, SL=519, field_3=1
+L587: key_press("Esc", simulation_mode, 1)  // op=30, loc=551, SL=520, field_3=1
+L588: 等待 100 ms  // op=30, loc=552, SL=521, field_3=1
+L589: sdk_miss_count = 0  // op=2, loc=553, SL=522, field_3=1
+L590: 等待 4000 ms  // op=30, loc=554, SL=523, field_3=1
+L591: 跳到 L432  // op=16, loc=555, SL=None, field_3=1
+L592: 跳到 L688  // op=16, loc=556, SL=None, field_3=1
+L593: condition = SGN((gather_mode = 3))  // op=4, loc=558, SL=524, field_3=1
+L594: 若 condition = 0，跳到 L688  // op=6, loc=558, SL=None, field_3=1
+L595: 等待 100 ms  // op=30, loc=560, SL=525, field_3=1
+L596: condition = SGN(-1)  // op=4, loc=561, SL=526, field_3=1
+L597: 若 condition = 0，跳到 L688  // op=6, loc=561, SL=None, field_3=1
+L598: 等待 100 ms  // op=30, loc=562, SL=527, field_3=1
+L599: temporary = 讀取共享值 sdk_marker [原鍵 V8186B4D47378756D]  // op=27, loc=563, SL=528, field_3=1
+L600: root_slot[13] = temporary（可能是Empty）  // op=30, loc=563, SL=529, field_3=1
+L601: query_x, query_y = find_color(ROI=[160, 1, 260, 25], root_slot[13] & "-151515", similarity=0.9, dir=0)  // op=2, loc=563, SL=530, field_3=1
+L602: condition = SGN((query_x > 0))  // op=4, loc=564, SL=531, field_3=1
+L603: 若 condition = 0，跳到 L677  // op=6, loc=564, SL=None, field_3=1
+L604: 等待 50 ms  // op=30, loc=565, SL=532, field_3=1
+L605: 保存parent並建立 check_vitality 呼叫框架  // op=2, loc=566, SL=533, field_3=1
+L606: 呼叫 L1344  // op=12, loc=566, SL=None, field_3=1
+L607: root_slot[14] = temporary（可能是Empty）  // op=2, loc=566, SL=534, field_3=1
+L608: 等待 50 ms  // op=30, loc=567, SL=535, field_3=1
+L609: query_x, query_y = find_pic(ROI=[1364, 55, 1476, 119], "C:\\users\\mymacro\\shgj1.bmp|C:\\users\\mymacro\\shgj2.bmp|C:\\users\\mymacro\\shgj3.bmp|C:\\users\\mymacro\\shgj4.bmp", similarity=0.9, dir=0)  // op=30, loc=568, SL=536, field_3=1
+L610: condition = SGN((query_x > 0))  // op=4, loc=569, SL=537, field_3=1
+L611: 若 condition = 0，跳到 L617  // op=6, loc=569, SL=None, field_3=1
+L612: 等待 100 ms  // op=30, loc=570, SL=538, field_3=1
+L613: 保存parent並建立 tool_red 呼叫框架  // op=2, loc=571, SL=539, field_3=1
+L614: 呼叫 L916  // op=12, loc=571, SL=None, field_3=1
+L615: root_slot[15] = temporary（可能是Empty）  // op=2, loc=571, SL=540, field_3=1
+L616: 等待 100 ms  // op=30, loc=572, SL=541, field_3=1
+L617: 等待 50 ms  // op=30, loc=574, SL=542, field_3=1
+L618: target_x = 0  // op=2, loc=575, SL=543, field_3=1
+L619: target_y = 0  // op=2, loc=576, SL=544, field_3=1
+L620: 等待 50 ms  // op=30, loc=577, SL=545, field_3=1
+L621: target_x, target_y = find_pic(ROI=[658, 208, 1389, 775], "C:\\users\\mymacro\\chutou1.bmp|C:\\users\\mymacro\\chutou2.bmp", similarity=0.9, dir=0)  // op=30, loc=579, SL=546, field_3=1
+L622: condition = SGN((target_x > 0))  // op=4, loc=580, SL=547, field_3=1
+L623: 若 condition = 0，跳到 L639  // op=6, loc=580, SL=None, field_3=1
+L624: 記錄 "找到锄头图标"  // op=30, loc=581, SL=548, field_3=1
+L625: 等待 100 ms  // op=30, loc=582, SL=549, field_3=1
+L626: key_press("S", simulation_mode, 1)  // op=30, loc=583, SL=550, field_3=1
+L627: 等待 500 ms  // op=30, loc=584, SL=551, field_3=1
+L628: key_press("G", simulation_mode, 1)  // op=30, loc=585, SL=552, field_3=1
+L629: 等待 200 ms  // op=30, loc=586, SL=553, field_3=1
+L630: key_press("G", simulation_mode, 1)  // op=30, loc=587, SL=554, field_3=1
+L631: 等待 2000 ms  // op=30, loc=588, SL=555, field_3=1
+L632: target_x = 0  // op=2, loc=589, SL=556, field_3=1
+L633: 等待 1000 ms  // op=30, loc=590, SL=557, field_3=1
+L634: 等待 3000 ms  // op=30, loc=591, SL=558, field_3=1
+L635: mining_counter = 0  // op=2, loc=592, SL=559, field_3=1
+L636: walk_repeats = 0  // op=2, loc=593, SL=560, field_3=1
+L637: 等待 100 ms  // op=30, loc=594, SL=561, field_3=1
+L638: 跳到 L676  // op=16, loc=595, SL=None, field_3=1
+L639: 等待 100 ms  // op=30, loc=596, SL=562, field_3=1
+L640: target_x, target_y = find_pic(ROI=[1, 1, 1920, 977], "C:\\users\\mymacro\\kwmingzi1.bmp|C:\\users\\mymacro\\kwmingzi2.bmp|C:\\users\\mymacro\\kwmingzi3.bmp|C:\\users\\mymacro\\kwmingzi4.bmp|C:\\users\\mymacro\\kwmingzi5.bmp|C:\\users\\mymacro\\kwmingzi6.bmp|C:\\users\\mymacro\\kwmingzi7.bmp|C:\\users\\mymacro\\kwmingzi8.bmp|C:\\users\\mymacro\\kwmingzi9.bmp|C:\\users\\mymacro\\kwmingzi10.bmp", similarity=0.9, dir=0)  // op=30, loc=598, SL=563, field_3=1
+L641: condition = SGN((target_x > 0))  // op=4, loc=599, SL=564, field_3=1
+L642: 若 condition = 0，跳到 L666  // op=6, loc=599, SL=None, field_3=1
+L643: 等待 50 ms  // op=30, loc=600, SL=565, field_3=1
+L644: 記錄 "找到矿物名字"  // op=30, loc=601, SL=566, field_3=1
+L645: 等待 50 ms  // op=30, loc=602, SL=567, field_3=1
+L646: move_to(target_x, target_y)  // op=30, loc=603, SL=568, field_3=1
+L647: 等待 100 ms  // op=30, loc=604, SL=569, field_3=1
+L648: mouse_click(2, simulation_mode, 1)  // op=30, loc=605, SL=570, field_3=1
+L649: 等待 1000 ms  // op=30, loc=606, SL=571, field_3=1
+L650: history_x3 = history_x2  // op=2, loc=607, SL=572, field_3=1
+L651: history_y3 = history_y2  // op=2, loc=608, SL=573, field_3=1
+L652: history_x2 = history_x1  // op=2, loc=609, SL=574, field_3=1
+L653: history_y2 = history_y1  // op=2, loc=610, SL=575, field_3=1
+L654: history_x1 = target_x  // op=2, loc=611, SL=576, field_3=1
+L655: history_y1 = target_y  // op=2, loc=612, SL=577, field_3=1
+L656: condition = SGN(((((history_x1 = history_x2) AND (history_x2 = history_x3)) AND (history_y1 = history_y2)) AND (history_y2 = history_y3)))  // op=4, loc=613, SL=578, field_3=1
+L657: 若 condition = 0，跳到 L663  // op=6, loc=613, SL=None, field_3=1
+L658: move_to((target_x + 10), (target_y + 60))  // op=30, loc=614, SL=579, field_3=1
+L659: 等待 100 ms  // op=30, loc=615, SL=580, field_3=1
+L660: mouse_click(2, simulation_mode, 1)  // op=30, loc=616, SL=581, field_3=1
+L661: 等待 1000 ms  // op=30, loc=617, SL=582, field_3=1
+L662: history_x2 = 0  // op=2, loc=618, SL=583, field_3=1
+L663: 等待 1000 ms  // op=30, loc=620, SL=584, field_3=1
+L664: 等待 700 ms  // op=30, loc=621, SL=585, field_3=1
+L665: 跳到 L676  // op=16, loc=622, SL=None, field_3=1
+L666: 等待 100 ms  // op=30, loc=623, SL=586, field_3=1
+L667: target_x, target_y = find_color(ROI=[1593, 38, 1891, 296], "38B8EE-030303|117EB7-030303|2FAFDA-030303|2167BC-030303|0D5492-030303|115C86-030303", similarity=1.0, dir=4)  // op=30, loc=625, SL=587, field_3=1
+L668: condition = SGN((target_x > 0))  // op=4, loc=626, SL=588, field_3=1
+L669: 若 condition = 0，跳到 L676  // op=6, loc=626, SL=None, field_3=1
+L670: 記錄 "找到小地图矿图标"  // op=30, loc=627, SL=589, field_3=1
+L671: 等待 50 ms  // op=30, loc=628, SL=590, field_3=1
+L672: 保存parent並建立 walk 呼叫框架  // op=2, loc=629, SL=591, field_3=1
+L673: 呼叫 L689  // op=12, loc=629, SL=None, field_3=1
+L674: root_slot[16] = temporary（可能是Empty）  // op=2, loc=629, SL=592, field_3=1
+L675: 等待 100 ms  // op=30, loc=630, SL=593, field_3=1
+L676: 跳到 L687  // op=16, loc=631, SL=None, field_3=1
+L677: 等待 500 ms  // op=30, loc=635, SL=594, field_3=1
+L678: sdk_miss_count = (sdk_miss_count + 1)  // op=2, loc=636, SL=595, field_3=1
+L679: 等待 500 ms  // op=30, loc=637, SL=596, field_3=1
+L680: condition = SGN((sdk_miss_count >= 3))  // op=4, loc=638, SL=597, field_3=1
+L681: 若 condition = 0，跳到 L687  // op=6, loc=638, SL=None, field_3=1
+L682: 等待 100 ms  // op=30, loc=639, SL=598, field_3=1
+L683: key_press("Esc", simulation_mode, 1)  // op=30, loc=640, SL=599, field_3=1
+L684: 等待 100 ms  // op=30, loc=641, SL=600, field_3=1
+L685: sdk_miss_count = 0  // op=2, loc=642, SL=601, field_3=1
+L686: 等待 4000 ms  // op=30, loc=643, SL=602, field_3=1
+L687: 跳到 L596  // op=16, loc=644, SL=None, field_3=1
+L688: 跳到 L889  // op=16, loc=648, SL=None, field_3=0
+L889: 跳到 L915  // op=16, loc=830, SL=None, field_3=0
+L915: 跳到 L1276  // op=16, loc=852, SL=None, field_3=0
+L1276: 跳到 L1343  // op=16, loc=1192, SL=None, field_3=0
+L1343: 跳到 L1621  // op=16, loc=1255, SL=None, field_3=0
+L1621: 跳到 L1625  // op=16, loc=0, SL=None, field_3=0
+L1625: 原op22只前進，下一個PC=1626超出原code末端，程式結束  // op=22, loc=0, SL=None, field_3=0

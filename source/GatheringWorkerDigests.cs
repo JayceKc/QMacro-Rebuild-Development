@@ -1,0 +1,1 @@
+public static class GatheringWorkerDigests {public const string Program="fc940a3dfc668afcf29707bd1332a538fd7b9bb400ef38b70c2fed7d7393640f";public const string Cases="dfde3a6bfff6dc6553dadfc52b6be535b690e3df92ece4d7a823eb8338391382";}

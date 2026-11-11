@@ -1,0 +1,15 @@
+# 子程序 — L01538
+# 入口 L01538，RETURN L01549；名稱未對應，以入口命名
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L01538: Call QMLibrary.Delay((100))  # loc=1220 Runner=0x625fb0
+L01539: last_test = Sgn(vbTrue)  # loc=1221 Runner=0x626047
+L01540: if last_test == 0: goto L01547  # loc=1221 Runner=0x62611c
+L01541: Call QMLibrary.Delay((300))  # loc=1222 Runner=0x625fb0
+L01542: Call QMLibrary.Delay((100))  # loc=1223 Runner=0x625fb0
+L01543: Call QMLibrary.Delay((200))  # loc=1224 Runner=0x625fb0
+L01544: Call QMLibrary.Delay((300))  # loc=1225 Runner=0x625fb0
+L01545: Call QMLibrary.Delay((300))  # loc=1226 Runner=0x625fb0
+L01546: goto L01539  # loc=1227 Runner=0x626126
+L01547: Call QMLibrary.Delay((100))  # loc=1228 Runner=0x625fb0
+L01548: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=1229 Runner=0x625f7e
+L01549: return caller  # loc=1229 Runner=0x626275

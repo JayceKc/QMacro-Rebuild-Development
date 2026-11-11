@@ -1,0 +1,175 @@
+# 計算走位 — L07706
+# 入口 L07706，RETURN L07877；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L07706: Call QMLibrary.Delay((50))  # loc=6651 Runner=0x625fb0
+L07707: last_test = Sgn(INTXX=0 or INTYY=0)  # loc=6652 Runner=0x626047
+L07708: if last_test == 0: goto L07711  # loc=6652 Runner=0x62611c
+L07709: Call QMLibrary.Delay((50))  # loc=6653 Runner=0x625fb0
+L07710: goto L07875  # loc=6654 Runner=0x626e48
+L07711: Call QMLibrary.Delay((50))  # loc=6656 Runner=0x625fb0
+L07712: last_test = Sgn(INTXX<0 or INTYY<0)  # loc=6657 Runner=0x626047
+L07713: if last_test == 0: goto L07716  # loc=6657 Runner=0x62611c
+L07714: Call QMLibrary.Delay((50))  # loc=6658 Runner=0x625fb0
+L07715: goto L07875  # loc=6659 Runner=0x626e48
+L07716: Call QMLibrary.Delay((50))  # loc=6661 Runner=0x625fb0
+L07717: Randomize  # loc=6662 Runner=0x625f7e
+L07718: X=INT(15*RND-15)  # loc=6663 Runner=0x625f7e
+L07719: Call QMLibrary.Delay((50))  # loc=6664 Runner=0x625fb0
+L07720: Randomize  # loc=6665 Runner=0x625f7e
+L07721: Y=INT(15*RND-15)  # loc=6666 Runner=0x625f7e
+L07722: Call QMLibrary.Delay((50))  # loc=6667 Runner=0x625fb0
+L07723: last_test = Sgn((INTYY<YY1 and INTXX=XX1))  # loc=6668 Runner=0x626047
+L07724: if last_test == 0: goto L07727  # loc=6668 Runner=0x62611c
+L07725: 〔算角度〕=90  # loc=6669 Runner=0x625f7e
+L07726: goto L07758  # loc=6669 Runner=0x626126
+L07727: last_test = Sgn((INTYY>YY1 and INTXX=XX1))  # loc=6670 Runner=0x626047
+L07728: if last_test == 0: goto L07731  # loc=6670 Runner=0x62611c
+L07729: 〔算角度〕=270  # loc=6671 Runner=0x625f7e
+L07730: goto L07758  # loc=6672 Runner=0x626126
+L07731: 〔弧度〕=ATN((YY1-INTYY)/(XX1-INTXX))  # loc=6673 Runner=0x625f7e
+L07732: Call QMLibrary.Delay((50))  # loc=6674 Runner=0x625fb0
+L07733: 〔算角度〕=〔弧度〕/〔派〕*180  # loc=6675 Runner=0x625f7e
+L07734: Call QMLibrary.Delay((50))  # loc=6676 Runner=0x625fb0
+L07735: last_test = Sgn((INTYY>YY1 and XX1>INTXX))  # loc=6677 Runner=0x626047
+L07736: if last_test == 0: goto L07739  # loc=6677 Runner=0x62611c
+L07737: 〔算角度〕=〔算角度〕*-1+180  # loc=6678 Runner=0x625f7e
+L07738: goto L07758  # loc=6678 Runner=0x626126
+L07739: last_test = Sgn((INTYY>YY1 and INTXX>XX1))  # loc=6679 Runner=0x626047
+L07740: if last_test == 0: goto L07743  # loc=6679 Runner=0x62611c
+L07741: 〔算角度〕=360-〔算角度〕  # loc=6680 Runner=0x625f7e
+L07742: goto L07758  # loc=6680 Runner=0x626126
+L07743: last_test = Sgn((INTXX<XX1 and INTYY<YY1))  # loc=6681 Runner=0x626047
+L07744: if last_test == 0: goto L07747  # loc=6681 Runner=0x62611c
+L07745: 〔算角度〕=180-〔算角度〕  # loc=6682 Runner=0x625f7e
+L07746: goto L07758  # loc=6682 Runner=0x626126
+L07747: last_test = Sgn((INTYY<YY1 and INTXX>XX1))  # loc=6683 Runner=0x626047
+L07748: if last_test == 0: goto L07751  # loc=6683 Runner=0x62611c
+L07749: 〔算角度〕=〔算角度〕*-1  # loc=6684 Runner=0x625f7e
+L07750: goto L07758  # loc=6684 Runner=0x626126
+L07751: last_test = Sgn((INTYY=YY1 and INTXX>XX1))  # loc=6685 Runner=0x626047
+L07752: if last_test == 0: goto L07755  # loc=6685 Runner=0x62611c
+L07753: 〔算角度〕=0  # loc=6686 Runner=0x625f7e
+L07754: goto L07758  # loc=6686 Runner=0x626126
+L07755: last_test = Sgn((INTYY=YY1 and INTXX<XX1))  # loc=6687 Runner=0x626047
+L07756: if last_test == 0: goto L07758  # loc=6687 Runner=0x62611c
+L07757: 〔算角度〕=180  # loc=6688 Runner=0x625f7e
+L07758: Call QMLibrary.Delay((50))  # loc=6691 Runner=0x625fb0
+L07759: last_test = Sgn((0<=〔算角度〕 and 〔算角度〕<=10))  # loc=6692 Runner=0x626047
+L07760: if last_test == 0: goto L07771  # loc=6692 Runner=0x62611c
+L07761: Call QMLibrary.Delay((50))  # loc=6693 Runner=0x625fb0
+L07762: Call DM.MOVETO(950+X,460+Y)  # loc=6694 Runner=0x625fb0
+L07763: Call QMLibrary.Delay((50))  # loc=6695 Runner=0x625fb0
+L07764: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6696 Runner=0x625fb0
+L07765: Call QMLibrary.Delay((50))  # loc=6697 Runner=0x625fb0
+L07766: Call DM.MOVETO(1180+X,540+Y)  # loc=6698 Runner=0x625fb0
+L07767: Call QMLibrary.Delay((50))  # loc=6699 Runner=0x625fb0
+L07768: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6700 Runner=0x625fb0
+L07769: Call QMLibrary.Delay((50))  # loc=6701 Runner=0x625fb0
+L07770: goto L07874  # loc=6702 Runner=0x626126
+L07771: last_test = Sgn((350<〔算角度〕 and 〔算角度〕<=360))  # loc=6703 Runner=0x626047
+L07772: if last_test == 0: goto L07783  # loc=6703 Runner=0x62611c
+L07773: Call QMLibrary.Delay((50))  # loc=6704 Runner=0x625fb0
+L07774: Call DM.MOVETO(950+X,460+Y)  # loc=6705 Runner=0x625fb0
+L07775: Call QMLibrary.Delay((50))  # loc=6706 Runner=0x625fb0
+L07776: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6707 Runner=0x625fb0
+L07777: Call QMLibrary.Delay((50))  # loc=6708 Runner=0x625fb0
+L07778: Call DM.MOVETO(1180+X,540+Y)  # loc=6709 Runner=0x625fb0
+L07779: Call QMLibrary.Delay((50))  # loc=6710 Runner=0x625fb0
+L07780: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6711 Runner=0x625fb0
+L07781: Call QMLibrary.Delay((50))  # loc=6712 Runner=0x625fb0
+L07782: goto L07874  # loc=6713 Runner=0x626126
+L07783: last_test = Sgn((10<〔算角度〕 and 〔算角度〕<=80))  # loc=6714 Runner=0x626047
+L07784: if last_test == 0: goto L07799  # loc=6714 Runner=0x62611c
+L07785: Call QMLibrary.Delay((50))  # loc=6715 Runner=0x625fb0
+L07786: Call DM.MOVETO(1170+X,540+Y)  # loc=6716 Runner=0x625fb0
+L07787: Call QMLibrary.Delay((50))  # loc=6717 Runner=0x625fb0
+L07788: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6718 Runner=0x625fb0
+L07789: Call QMLibrary.Delay((50))  # loc=6719 Runner=0x625fb0
+L07790: Call DM.MOVETO(960+X,330+Y)  # loc=6720 Runner=0x625fb0
+L07791: Call QMLibrary.Delay((50))  # loc=6721 Runner=0x625fb0
+L07792: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6722 Runner=0x625fb0
+L07793: Call QMLibrary.Delay((50))  # loc=6723 Runner=0x625fb0
+L07794: Call DM.MOVETO(1170+X,415+Y)  # loc=6724 Runner=0x625fb0
+L07795: Call QMLibrary.Delay((50))  # loc=6725 Runner=0x625fb0
+L07796: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6726 Runner=0x625fb0
+L07797: Call QMLibrary.Delay((50))  # loc=6727 Runner=0x625fb0
+L07798: goto L07874  # loc=6728 Runner=0x626126
+L07799: last_test = Sgn((80<〔算角度〕 and 〔算角度〕<=100))  # loc=6729 Runner=0x626047
+L07800: if last_test == 0: goto L07807  # loc=6729 Runner=0x62611c
+L07801: Call QMLibrary.Delay((50))  # loc=6730 Runner=0x625fb0
+L07802: Call DM.MOVETO(960+X,330+Y)  # loc=6731 Runner=0x625fb0
+L07803: Call QMLibrary.Delay((50))  # loc=6732 Runner=0x625fb0
+L07804: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6733 Runner=0x625fb0
+L07805: Call QMLibrary.Delay((50))  # loc=6734 Runner=0x625fb0
+L07806: goto L07874  # loc=6735 Runner=0x626126
+L07807: last_test = Sgn((100<〔算角度〕 and 〔算角度〕<=170))  # loc=6736 Runner=0x626047
+L07808: if last_test == 0: goto L07823  # loc=6736 Runner=0x62611c
+L07809: Call QMLibrary.Delay((50))  # loc=6737 Runner=0x625fb0
+L07810: Call DM.MOVETO(750+X,540+Y)  # loc=6738 Runner=0x625fb0
+L07811: Call QMLibrary.Delay((50))  # loc=6739 Runner=0x625fb0
+L07812: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6740 Runner=0x625fb0
+L07813: Call QMLibrary.Delay((50))  # loc=6741 Runner=0x625fb0
+L07814: Call DM.MOVETO(960+X,330+Y)  # loc=6742 Runner=0x625fb0
+L07815: Call QMLibrary.Delay((50))  # loc=6743 Runner=0x625fb0
+L07816: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6744 Runner=0x625fb0
+L07817: Call QMLibrary.Delay((50))  # loc=6745 Runner=0x625fb0
+L07818: Call DM.MOVETO(773+X,415+Y)  # loc=6746 Runner=0x625fb0
+L07819: Call QMLibrary.Delay((50))  # loc=6747 Runner=0x625fb0
+L07820: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6748 Runner=0x625fb0
+L07821: Call QMLibrary.Delay((50))  # loc=6749 Runner=0x625fb0
+L07822: goto L07874  # loc=6750 Runner=0x626126
+L07823: last_test = Sgn((170<〔算角度〕 and 〔算角度〕<=190))  # loc=6751 Runner=0x626047
+L07824: if last_test == 0: goto L07831  # loc=6751 Runner=0x62611c
+L07825: Call QMLibrary.Delay((50))  # loc=6752 Runner=0x625fb0
+L07826: Call DM.MOVETO(740+X,540+Y)  # loc=6753 Runner=0x625fb0
+L07827: Call QMLibrary.Delay((50))  # loc=6754 Runner=0x625fb0
+L07828: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6755 Runner=0x625fb0
+L07829: Call QMLibrary.Delay((50))  # loc=6756 Runner=0x625fb0
+L07830: goto L07874  # loc=6757 Runner=0x626126
+L07831: last_test = Sgn((190<〔算角度〕 and 〔算角度〕<=260))  # loc=6758 Runner=0x626047
+L07832: if last_test == 0: goto L07847  # loc=6758 Runner=0x62611c
+L07833: Call QMLibrary.Delay((50))  # loc=6759 Runner=0x625fb0
+L07834: Call DM.MOVETO(960+X,710+Y)  # loc=6760 Runner=0x625fb0
+L07835: Call QMLibrary.Delay((50))  # loc=6761 Runner=0x625fb0
+L07836: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6762 Runner=0x625fb0
+L07837: Call QMLibrary.Delay((50))  # loc=6763 Runner=0x625fb0
+L07838: Call DM.MOVETO(750+X,540+Y)  # loc=6764 Runner=0x625fb0
+L07839: Call QMLibrary.Delay((50))  # loc=6765 Runner=0x625fb0
+L07840: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6766 Runner=0x625fb0
+L07841: Call QMLibrary.Delay((50))  # loc=6767 Runner=0x625fb0
+L07842: Call DM.MOVETO(811+X,625+Y)  # loc=6768 Runner=0x625fb0
+L07843: Call QMLibrary.Delay((50))  # loc=6769 Runner=0x625fb0
+L07844: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6770 Runner=0x625fb0
+L07845: Call QMLibrary.Delay((50))  # loc=6771 Runner=0x625fb0
+L07846: goto L07874  # loc=6772 Runner=0x626126
+L07847: last_test = Sgn((260<〔算角度〕 and 〔算角度〕<=280))  # loc=6773 Runner=0x626047
+L07848: if last_test == 0: goto L07859  # loc=6773 Runner=0x62611c
+L07849: Call QMLibrary.Delay((50))  # loc=6774 Runner=0x625fb0
+L07850: Call DM.MOVETO(820+X,652+Y)  # loc=6775 Runner=0x625fb0
+L07851: Call QMLibrary.Delay((50))  # loc=6776 Runner=0x625fb0
+L07852: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6777 Runner=0x625fb0
+L07853: Call QMLibrary.Delay((50))  # loc=6778 Runner=0x625fb0
+L07854: Call DM.MOVETO(960+X,710+Y)  # loc=6779 Runner=0x625fb0
+L07855: Call QMLibrary.Delay((50))  # loc=6780 Runner=0x625fb0
+L07856: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6781 Runner=0x625fb0
+L07857: Call QMLibrary.Delay((50))  # loc=6782 Runner=0x625fb0
+L07858: goto L07874  # loc=6783 Runner=0x626126
+L07859: last_test = Sgn((280<〔算角度〕 and 〔算角度〕<=350))  # loc=6784 Runner=0x626047
+L07860: if last_test == 0: goto L07874  # loc=6784 Runner=0x62611c
+L07861: Call QMLibrary.Delay((50))  # loc=6785 Runner=0x625fb0
+L07862: Call DM.MOVETO(1170+X,540+Y)  # loc=6786 Runner=0x625fb0
+L07863: Call QMLibrary.Delay((50))  # loc=6787 Runner=0x625fb0
+L07864: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6788 Runner=0x625fb0
+L07865: Call QMLibrary.Delay((50))  # loc=6789 Runner=0x625fb0
+L07866: Call DM.MOVETO(960+X,710+Y)  # loc=6790 Runner=0x625fb0
+L07867: Call QMLibrary.Delay((50))  # loc=6791 Runner=0x625fb0
+L07868: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6792 Runner=0x625fb0
+L07869: Call QMLibrary.Delay((50))  # loc=6793 Runner=0x625fb0
+L07870: Call DM.MOVETO(1150+X,625+Y)  # loc=6794 Runner=0x625fb0
+L07871: Call QMLibrary.Delay((50))  # loc=6795 Runner=0x625fb0
+L07872: Call QMLibrary.MouseClick(2,g_iSimulateModeInVBSBlock,1)  # loc=6796 Runner=0x625fb0
+L07873: Call QMLibrary.Delay((50))  # loc=6797 Runner=0x625fb0
+L07874: Call QMLibrary.Delay((50))  # loc=6800 Runner=0x625fb0
+L07875: Call QMLibrary.Delay((50))  # loc=6802 Runner=0x625fb0
+L07876: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=6803 Runner=0x625f7e
+L07877: return caller  # loc=6803 Runner=0x626275

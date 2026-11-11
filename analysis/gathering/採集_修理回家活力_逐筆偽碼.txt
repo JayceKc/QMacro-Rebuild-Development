@@ -1,0 +1,712 @@
+# 模組08三個保留主體：名稱為語義重建；L/SL可回查原記錄。
+# 等待、按鍵、讀圖均為事件；本檔不執行原文或遊戲操作。
+
+
+procedure tool_red  // L916..L1275
+L916: 等待 145 ms  // op=30, loc=853, SL=786
+L917: temporary = 讀取共享值 worker_id [原鍵 V80B0DA86C3CC32BE83A5D23C3778756D]  // op=27, loc=854, SL=787
+L918: current_frame.slot[1] = temporary  // op=2, loc=854, SL=788
+L919: thread_control(current_frame.slot[1], 1)  // op=30, loc=854, SL=789
+L920: 等待 145 ms  // op=30, loc=855, SL=790
+L921: condition = SGN((repair_strategy = 0))  // op=4, loc=856, SL=791
+L922: 若 condition = 0，跳到 L982  // op=6, loc=856, SL=None
+L923: 等待 145 ms  // op=30, loc=857, SL=792
+L924: key_down("Alt", simulation_mode, 1)  // op=30, loc=858, SL=793
+L925: 等待 175 ms  // op=30, loc=859, SL=794
+L926: key_down("Alt", simulation_mode, 1)  // op=30, loc=860, SL=795
+L927: 等待 175 ms  // op=30, loc=861, SL=796
+L928: key_down("P", simulation_mode, 1)  // op=30, loc=862, SL=797
+L929: 等待 145 ms  // op=30, loc=863, SL=798
+L930: key_up("P", simulation_mode, 1)  // op=30, loc=864, SL=799
+L931: 等待 168 ms  // op=30, loc=865, SL=800
+L932: key_up("Alt", simulation_mode, 1)  // op=30, loc=866, SL=801
+L933: 等待 168 ms  // op=30, loc=867, SL=802
+L934: key_up("Alt", simulation_mode, 1)  // op=30, loc=868, SL=803
+L935: 等待 500 ms  // op=30, loc=869, SL=804
+L936: 等待 50 ms  // op=30, loc=871, SL=805
+L937: 初始化原亂數來源（事件重播不偽造時鐘）  // op=2, loc=872, SL=806
+L938: random_x = 受控整數 [1233, 1252]  // op=2, loc=873, SL=807
+L939: 初始化原亂數來源（事件重播不偽造時鐘）  // op=2, loc=874, SL=808
+L940: random_y = 受控整數 [695, 709]  // op=2, loc=875, SL=809
+L941: 等待 50 ms  // op=30, loc=876, SL=810
+L942: move_to(random_x, random_y)  // op=30, loc=877, SL=811
+L943: 等待 4000 ms  // op=30, loc=878, SL=812
+L944: mouse_click(3, simulation_mode, 1)  // op=30, loc=879, SL=813
+L945: 等待 50 ms  // op=30, loc=880, SL=814
+L946: mouse_click(6, simulation_mode, 1)  // op=30, loc=881, SL=815
+L947: 等待 100 ms  // op=30, loc=882, SL=816
+L948: mouse_click(0, simulation_mode, 1)  // op=30, loc=883, SL=817
+L949: 等待 500 ms  // op=30, loc=884, SL=818
+L950: move_to(860, 746)  // op=30, loc=885, SL=819
+L951: 等待 2000 ms  // op=30, loc=886, SL=820
+L952: mouse_click(3, simulation_mode, 1)  // op=30, loc=887, SL=821
+L953: 等待 50 ms  // op=30, loc=888, SL=822
+L954: mouse_click(6, simulation_mode, 1)  // op=30, loc=889, SL=823
+L955: 等待 100 ms  // op=30, loc=890, SL=824
+L956: mouse_click(0, simulation_mode, 1)  // op=30, loc=891, SL=825
+L957: 等待 500 ms  // op=30, loc=892, SL=826
+L958: move_to(740, 815)  // op=30, loc=893, SL=827
+L959: 等待 1000 ms  // op=30, loc=894, SL=828
+L960: mouse_click(3, simulation_mode, 1)  // op=30, loc=895, SL=829
+L961: 等待 50 ms  // op=30, loc=896, SL=830
+L962: mouse_click(6, simulation_mode, 1)  // op=30, loc=897, SL=831
+L963: 等待 100 ms  // op=30, loc=898, SL=832
+L964: mouse_click(0, simulation_mode, 1)  // op=30, loc=899, SL=833
+L965: 等待 500 ms  // op=30, loc=900, SL=834
+L966: move_to(906, 582)  // op=30, loc=901, SL=835
+L967: 等待 200 ms  // op=30, loc=902, SL=836
+L968: mouse_click(0, simulation_mode, 1)  // op=30, loc=903, SL=837
+L969: 等待 1000 ms  // op=30, loc=904, SL=838
+L970: key_press("Enter", simulation_mode, 1)  // op=30, loc=905, SL=839
+L971: 等待 1000 ms  // op=30, loc=906, SL=840
+L972: move_to(906, 626)  // op=30, loc=907, SL=841
+L973: 等待 200 ms  // op=30, loc=908, SL=842
+L974: mouse_click(0, simulation_mode, 1)  // op=30, loc=909, SL=843
+L975: 等待 1000 ms  // op=30, loc=910, SL=844
+L976: key_press("Esc", simulation_mode, 1)  // op=30, loc=911, SL=845
+L977: 等待 2000 ms  // op=30, loc=912, SL=846
+L978: key_press("Esc", simulation_mode, 1)  // op=30, loc=913, SL=847
+L979: 等待 1000 ms  // op=30, loc=914, SL=848
+L980: 等待 500 ms  // op=30, loc=915, SL=849
+L981: 跳到 L1269  // op=16, loc=915, SL=None
+L982: condition = SGN((repair_strategy = 1))  // op=4, loc=916, SL=850
+L983: 若 condition = 0，跳到 L1141  // op=6, loc=916, SL=None
+L984: 等待 500 ms  // op=30, loc=917, SL=851
+L985: condition = SGN(-1)  // op=4, loc=918, SL=852
+L986: 若 condition = 0，跳到 L1016  // op=6, loc=918, SL=None
+L987: 等待 500 ms  // op=30, loc=919, SL=853
+L988: key_press("F2", simulation_mode, 1)  // op=30, loc=920, SL=854
+L989: 等待 4000 ms  // op=30, loc=921, SL=855
+L990: query_x, query_y = find_pic(ROI=[1303, 277, 1388, 790], "C:\\users\\mymacro\\zhuangy1.bmp|C:\\users\\mymacro\\zhuangy2.bmp", delta="191919", similarity=0.8, direction=0)  // op=30, loc=923, SL=856
+L991: condition = SGN((query_x >= 0))  // op=4, loc=924, SL=857
+L992: 若 condition = 0，跳到 L1014  // op=6, loc=924, SL=None
+L993: 等待 200 ms  // op=30, loc=925, SL=858
+L994: move_x = (query_x + 15)  // op=2, loc=926, SL=859
+L995: move_y = (query_y + 15)  // op=2, loc=927, SL=860
+L996: 等待 100 ms  // op=30, loc=928, SL=861
+L997: move_to(move_x, move_y)  // op=30, loc=929, SL=862
+L998: 等待 300 ms  // op=30, loc=930, SL=863
+L999: mouse_click(3, simulation_mode, 1)  // op=30, loc=931, SL=864
+L1000: 等待 100 ms  // op=30, loc=932, SL=865
+L1001: mouse_click(6, simulation_mode, 1)  // op=30, loc=933, SL=866
+L1002: 等待 700 ms  // op=30, loc=934, SL=867
+L1003: mouse_click(0, simulation_mode, 1)  // op=30, loc=935, SL=868
+L1004: 等待 1500 ms  // op=30, loc=936, SL=869
+L1005: move_to(1454, 853)  // op=30, loc=937, SL=870
+L1006: 等待 300 ms  // op=30, loc=938, SL=871
+L1007: mouse_click(3, simulation_mode, 1)  // op=30, loc=939, SL=872
+L1008: 等待 100 ms  // op=30, loc=940, SL=873
+L1009: mouse_click(6, simulation_mode, 1)  // op=30, loc=941, SL=874
+L1010: 等待 700 ms  // op=30, loc=942, SL=875
+L1011: mouse_click(0, simulation_mode, 1)  // op=30, loc=943, SL=876
+L1012: 等待 12000 ms  // op=30, loc=944, SL=877
+L1013: 跳到 L1016  // op=16, loc=945, SL=None
+L1014: 等待 500 ms  // op=30, loc=947, SL=878
+L1015: 跳到 L985  // op=16, loc=948, SL=None
+L1016: 等待 100 ms  // op=30, loc=949, SL=879
+L1017: repair_silver_state = 9  // op=2, loc=951, SL=880
+L1018: 等待 100 ms  // op=30, loc=952, SL=881
+L1019: condition = SGN(-1)  // op=4, loc=953, SL=882
+L1020: 若 condition = 0，跳到 L1094  // op=6, loc=953, SL=None
+L1021: 等待 1000 ms  // op=30, loc=954, SL=883
+L1022: temporary = 讀取共享值 sdk_marker [原鍵 V8186B4D47378756D]  // op=27, loc=956, SL=884
+L1023: current_frame.slot[1] = temporary  // op=30, loc=956, SL=885
+L1024: query_x, query_y = find_color(ROI=[160, 1, 260, 25], current_frame.slot[1] & "-151515", similarity=0.9, direction=0)  // op=2, loc=956, SL=886
+L1025: condition = SGN((query_x >= 0))  // op=4, loc=957, SL=887
+L1026: 若 condition = 0，跳到 L1087  // op=6, loc=957, SL=None
+L1027: 等待 4000 ms  // op=30, loc=958, SL=888
+L1028: repair_silver_state = 0  // op=2, loc=959, SL=889
+L1029: query_x, query_y = find_pic(ROI=[862, 198, 1097, 407], "C:\\users\\mymacro\\duihua1.bmp|C:\\users\\mymacro\\duihua2.bmp", delta="050505", similarity=0.8, direction=0)  // op=30, loc=961, SL=890
+L1030: condition = SGN((query_x >= 0))  // op=4, loc=962, SL=891
+L1031: 若 condition = 0，跳到 L1087  // op=6, loc=962, SL=None
+L1032: 等待 1000 ms  // op=30, loc=963, SL=892
+L1033: move_to(960, 540)  // op=30, loc=964, SL=893
+L1034: 等待 200 ms  // op=30, loc=965, SL=894
+L1035: key_press("G", simulation_mode, 1)  // op=30, loc=966, SL=895
+L1036: 等待 100 ms  // op=30, loc=967, SL=896
+L1037: 記錄 "按下G修理"  // op=30, loc=968, SL=897
+L1038: 等待 4000 ms  // op=30, loc=969, SL=898
+L1039: query_x, query_y = find_color(ROI=[952, 416, 988, 443], "D6C7B5-050505|EFEBD6-050505", similarity=0.9, direction=0)  // op=30, loc=970, SL=899
+L1040: condition = SGN((query_x >= 0))  // op=4, loc=971, SL=900
+L1041: 若 condition = 0，跳到 L1087  // op=6, loc=971, SL=None
+L1042: 等待 50 ms  // op=30, loc=972, SL=901
+L1043: query_x, query_y = find_color(ROI=[953, 664, 986, 694], "D6C7B5-050505|EFEBD6-050505", similarity=0.9, direction=0)  // op=30, loc=973, SL=902
+L1044: condition = SGN((query_x >= 0))  // op=4, loc=974, SL=903
+L1045: 若 condition = 0，跳到 L1087  // op=6, loc=974, SL=None
+L1046: 等待 50 ms  // op=30, loc=975, SL=904
+L1047: query_x, query_y = find_color(ROI=[1145, 714, 1180, 746], "D6C7B5-050505|EFEBD6-050505", similarity=0.9, direction=0)  // op=30, loc=976, SL=905
+L1048: condition = SGN((query_x >= 0))  // op=4, loc=977, SL=906
+L1049: 若 condition = 0，跳到 L1087  // op=6, loc=977, SL=None
+L1050: repair_silver_state = 1  // op=2, loc=978, SL=907
+L1051: 等待 300 ms  // op=30, loc=979, SL=908
+L1052: move_to(1029, 856)  // op=30, loc=980, SL=909
+L1053: 等待 300 ms  // op=30, loc=981, SL=910
+L1054: mouse_click(0, simulation_mode, 1)  // op=30, loc=982, SL=911
+L1055: 等待 500 ms  // op=30, loc=983, SL=912
+L1056: mouse_click(0, simulation_mode, 1)  // op=30, loc=984, SL=913
+L1057: 等待 500 ms  // op=30, loc=985, SL=914
+L1058: move_to(860, 746)  // op=30, loc=986, SL=915
+L1059: 等待 2000 ms  // op=30, loc=987, SL=916
+L1060: mouse_click(3, simulation_mode, 1)  // op=30, loc=988, SL=917
+L1061: 等待 50 ms  // op=30, loc=989, SL=918
+L1062: mouse_click(6, simulation_mode, 1)  // op=30, loc=990, SL=919
+L1063: 等待 100 ms  // op=30, loc=991, SL=920
+L1064: mouse_click(0, simulation_mode, 1)  // op=30, loc=992, SL=921
+L1065: 等待 500 ms  // op=30, loc=993, SL=922
+L1066: move_to(740, 815)  // op=30, loc=994, SL=923
+L1067: 等待 1000 ms  // op=30, loc=995, SL=924
+L1068: mouse_click(3, simulation_mode, 1)  // op=30, loc=996, SL=925
+L1069: 等待 50 ms  // op=30, loc=997, SL=926
+L1070: mouse_click(6, simulation_mode, 1)  // op=30, loc=998, SL=927
+L1071: 等待 100 ms  // op=30, loc=999, SL=928
+L1072: mouse_click(0, simulation_mode, 1)  // op=30, loc=1000, SL=929
+L1073: 等待 500 ms  // op=30, loc=1001, SL=930
+L1074: move_to(906, 582)  // op=30, loc=1002, SL=931
+L1075: 等待 200 ms  // op=30, loc=1003, SL=932
+L1076: mouse_click(0, simulation_mode, 1)  // op=30, loc=1004, SL=933
+L1077: 等待 1000 ms  // op=30, loc=1005, SL=934
+L1078: key_press("Enter", simulation_mode, 1)  // op=30, loc=1006, SL=935
+L1079: 等待 1000 ms  // op=30, loc=1007, SL=936
+L1080: move_to(906, 626)  // op=30, loc=1008, SL=937
+L1081: 等待 200 ms  // op=30, loc=1009, SL=938
+L1082: mouse_click(0, simulation_mode, 1)  // op=30, loc=1010, SL=939
+L1083: 等待 2000 ms  // op=30, loc=1011, SL=940
+L1084: key_press("Esc", simulation_mode, 1)  // op=30, loc=1012, SL=941
+L1085: 等待 4000 ms  // op=30, loc=1013, SL=942
+L1086: 跳到 L1094  // op=16, loc=1014, SL=None
+L1087: 等待 200 ms  // op=30, loc=1020, SL=943
+L1088: condition = SGN((repair_silver_state = 0))  // op=4, loc=1021, SL=944
+L1089: 若 condition = 0，跳到 L1093  // op=6, loc=1021, SL=None
+L1090: 等待 300 ms  // op=30, loc=1022, SL=945
+L1091: key_press("Esc", simulation_mode, 1)  // op=30, loc=1023, SL=946
+L1092: 等待 4000 ms  // op=30, loc=1024, SL=947
+L1093: 跳到 L1019  // op=16, loc=1025, SL=None
+L1094: 等待 500 ms  // op=30, loc=1027, SL=948
+L1095: condition = SGN(-1)  // op=4, loc=1028, SL=949
+L1096: 若 condition = 0，跳到 L1126  // op=6, loc=1029, SL=None
+L1097: 等待 500 ms  // op=30, loc=1030, SL=950
+L1098: key_press("F2", simulation_mode, 1)  // op=30, loc=1031, SL=951
+L1099: 等待 4000 ms  // op=30, loc=1032, SL=952
+L1100: query_x, query_y = find_pic(ROI=[1303, 277, 1388, 790], "C:\\users\\mymacro\\taos1.bmp|C:\\users\\mymacro\\taos2.bmp", delta="191919", similarity=0.8, direction=0)  // op=30, loc=1034, SL=953
+L1101: condition = SGN((query_x >= 0))  // op=4, loc=1035, SL=954
+L1102: 若 condition = 0，跳到 L1124  // op=6, loc=1035, SL=None
+L1103: 等待 200 ms  // op=30, loc=1036, SL=955
+L1104: move_x = (query_x + 15)  // op=2, loc=1037, SL=956
+L1105: move_y = (query_y + 15)  // op=2, loc=1038, SL=957
+L1106: 等待 100 ms  // op=30, loc=1039, SL=958
+L1107: move_to(move_x, move_y)  // op=30, loc=1040, SL=959
+L1108: 等待 300 ms  // op=30, loc=1041, SL=960
+L1109: mouse_click(3, simulation_mode, 1)  // op=30, loc=1042, SL=961
+L1110: 等待 100 ms  // op=30, loc=1043, SL=962
+L1111: mouse_click(6, simulation_mode, 1)  // op=30, loc=1044, SL=963
+L1112: 等待 700 ms  // op=30, loc=1045, SL=964
+L1113: mouse_click(0, simulation_mode, 1)  // op=30, loc=1046, SL=965
+L1114: 等待 1500 ms  // op=30, loc=1047, SL=966
+L1115: move_to(1454, 853)  // op=30, loc=1048, SL=967
+L1116: 等待 300 ms  // op=30, loc=1049, SL=968
+L1117: mouse_click(3, simulation_mode, 1)  // op=30, loc=1050, SL=969
+L1118: 等待 100 ms  // op=30, loc=1051, SL=970
+L1119: mouse_click(6, simulation_mode, 1)  // op=30, loc=1052, SL=971
+L1120: 等待 700 ms  // op=30, loc=1053, SL=972
+L1121: mouse_click(0, simulation_mode, 1)  // op=30, loc=1054, SL=973
+L1122: 等待 12000 ms  // op=30, loc=1055, SL=974
+L1123: 跳到 L1126  // op=16, loc=1056, SL=None
+L1124: 等待 500 ms  // op=30, loc=1058, SL=975
+L1125: 跳到 L1095  // op=16, loc=1059, SL=None
+L1126: 等待 200 ms  // op=30, loc=1060, SL=976
+L1127: condition = SGN(-1)  // op=4, loc=1061, SL=977
+L1128: 若 condition = 0，跳到 L1139  // op=6, loc=1061, SL=None
+L1129: 等待 1000 ms  // op=30, loc=1062, SL=978
+L1130: temporary = 讀取共享值 sdk_marker [原鍵 V8186B4D47378756D]  // op=27, loc=1064, SL=979
+L1131: current_frame.slot[2] = temporary  // op=30, loc=1064, SL=980
+L1132: query_x, query_y = find_color(ROI=[160, 1, 260, 25], current_frame.slot[2] & "-151515", similarity=0.9, direction=0)  // op=2, loc=1064, SL=981
+L1133: condition = SGN((query_x >= 0))  // op=4, loc=1065, SL=982
+L1134: 若 condition = 0，跳到 L1138  // op=6, loc=1065, SL=None
+L1135: 等待 4000 ms  // op=30, loc=1066, SL=983
+L1136: 等待 1000 ms  // op=30, loc=1067, SL=984
+L1137: 跳到 L1139  // op=16, loc=1068, SL=None
+L1138: 跳到 L1127  // op=16, loc=1069, SL=None
+L1139: 等待 500 ms  // op=30, loc=1071, SL=985
+L1140: 跳到 L1269  // op=16, loc=1071, SL=None
+L1141: condition = SGN((repair_strategy = 2))  // op=4, loc=1072, SL=986
+L1142: 若 condition = 0，跳到 L1149  // op=6, loc=1072, SL=None
+L1143: 等待 500 ms  // op=30, loc=1073, SL=987
+L1144: 等待 100 ms  // op=30, loc=1074, SL=988
+L1145: 結束腳本 ExitScript(0)  // op=30, loc=1075, SL=989
+L1146: 等待 100 ms  // op=30, loc=1076, SL=990
+L1147: 等待 100 ms  // op=30, loc=1077, SL=991
+L1148: 跳到 L1269  // op=16, loc=1077, SL=None
+L1149: condition = SGN((repair_strategy = 3))  // op=4, loc=1078, SL=992
+L1150: 若 condition = 0，跳到 L1178  // op=6, loc=1078, SL=None
+L1151: 等待 100 ms  // op=30, loc=1079, SL=993
+L1152: condition = SGN((home_on_no_durability = 1))  // op=4, loc=1080, SL=994
+L1153: 若 condition = 0，跳到 L1158  // op=6, loc=1080, SL=None
+L1154: 等待 100 ms  // op=30, loc=1081, SL=995
+L1155: 建立 返回莊園 呼叫框架，保存 parent  // op=2, loc=1082, SL=996
+L1156: 呼叫 返回莊園 L1277  // op=12, loc=1082, SL=None
+L1157: current_frame.slot[3] = temporary  // op=2, loc=1082, SL=997
+L1158: 等待 1000 ms  // op=30, loc=1084, SL=998
+L1159: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1085, SL=999
+L1160: 等待 100 ms  // op=30, loc=1086, SL=1000
+L1161: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1087, SL=1001
+L1162: 等待 100 ms  // op=30, loc=1088, SL=1002
+L1163: key_down("alt", simulation_mode, 1)  // op=30, loc=1089, SL=1003
+L1164: 等待 100 ms  // op=30, loc=1090, SL=1004
+L1165: key_down("alt", simulation_mode, 1)  // op=30, loc=1091, SL=1005
+L1166: 等待 100 ms  // op=30, loc=1092, SL=1006
+L1167: key_up("alt", simulation_mode, 1)  // op=30, loc=1093, SL=1007
+L1168: 等待 100 ms  // op=30, loc=1094, SL=1008
+L1169: key_up("ctrl", simulation_mode, 1)  // op=30, loc=1095, SL=1009
+L1170: 等待 1000 ms  // op=30, loc=1096, SL=1010
+L1171: key_press("F10", simulation_mode, 1)  // op=30, loc=1097, SL=1011
+L1172: 等待 100 ms  // op=30, loc=1098, SL=1012
+L1173: key_press("F10", simulation_mode, 1)  // op=30, loc=1099, SL=1013
+L1174: 等待 100 ms  // op=30, loc=1100, SL=1014
+L1175: 結束腳本 ExitScript(0)  // op=30, loc=1101, SL=1015
+L1176: 等待 100 ms  // op=30, loc=1102, SL=1016
+L1177: 跳到 L1269  // op=16, loc=1102, SL=None
+L1178: condition = SGN((repair_strategy = 4))  // op=4, loc=1103, SL=1017
+L1179: 若 condition = 0，跳到 L1207  // op=6, loc=1103, SL=None
+L1180: 等待 100 ms  // op=30, loc=1104, SL=1018
+L1181: condition = SGN((home_on_no_durability = 1))  // op=4, loc=1105, SL=1019
+L1182: 若 condition = 0，跳到 L1187  // op=6, loc=1105, SL=None
+L1183: 等待 100 ms  // op=30, loc=1106, SL=1020
+L1184: 建立 返回莊園 呼叫框架，保存 parent  // op=2, loc=1107, SL=1021
+L1185: 呼叫 返回莊園 L1277  // op=12, loc=1107, SL=None
+L1186: current_frame.slot[4] = temporary  // op=2, loc=1107, SL=1022
+L1187: 等待 1000 ms  // op=30, loc=1109, SL=1023
+L1188: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1110, SL=1024
+L1189: 等待 100 ms  // op=30, loc=1111, SL=1025
+L1190: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1112, SL=1026
+L1191: 等待 100 ms  // op=30, loc=1113, SL=1027
+L1192: key_down("alt", simulation_mode, 1)  // op=30, loc=1114, SL=1028
+L1193: 等待 100 ms  // op=30, loc=1115, SL=1029
+L1194: key_down("alt", simulation_mode, 1)  // op=30, loc=1116, SL=1030
+L1195: 等待 100 ms  // op=30, loc=1117, SL=1031
+L1196: key_up("alt", simulation_mode, 1)  // op=30, loc=1118, SL=1032
+L1197: 等待 100 ms  // op=30, loc=1119, SL=1033
+L1198: key_up("ctrl", simulation_mode, 1)  // op=30, loc=1120, SL=1034
+L1199: 等待 1000 ms  // op=30, loc=1121, SL=1035
+L1200: key_press("F8", simulation_mode, 1)  // op=30, loc=1122, SL=1036
+L1201: 等待 100 ms  // op=30, loc=1123, SL=1037
+L1202: key_press("F8", simulation_mode, 1)  // op=30, loc=1124, SL=1038
+L1203: 等待 100 ms  // op=30, loc=1125, SL=1039
+L1204: 結束腳本 ExitScript(0)  // op=30, loc=1126, SL=1040
+L1205: 等待 100 ms  // op=30, loc=1127, SL=1041
+L1206: 跳到 L1269  // op=16, loc=1127, SL=None
+L1207: condition = SGN((repair_strategy = 5))  // op=4, loc=1128, SL=1042
+L1208: 若 condition = 0，跳到 L1229  // op=6, loc=1128, SL=None
+L1209: 等待 1000 ms  // op=30, loc=1129, SL=1043
+L1210: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1130, SL=1044
+L1211: 等待 100 ms  // op=30, loc=1131, SL=1045
+L1212: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1132, SL=1046
+L1213: 等待 100 ms  // op=30, loc=1133, SL=1047
+L1214: key_down("alt", simulation_mode, 1)  // op=30, loc=1134, SL=1048
+L1215: 等待 100 ms  // op=30, loc=1135, SL=1049
+L1216: key_down("alt", simulation_mode, 1)  // op=30, loc=1136, SL=1050
+L1217: 等待 100 ms  // op=30, loc=1137, SL=1051
+L1218: key_up("alt", simulation_mode, 1)  // op=30, loc=1138, SL=1052
+L1219: 等待 100 ms  // op=30, loc=1139, SL=1053
+L1220: key_up("ctrl", simulation_mode, 1)  // op=30, loc=1140, SL=1054
+L1221: 等待 1000 ms  // op=30, loc=1141, SL=1055
+L1222: key_press("F6", simulation_mode, 1)  // op=30, loc=1142, SL=1056
+L1223: 等待 100 ms  // op=30, loc=1143, SL=1057
+L1224: key_press("F6", simulation_mode, 1)  // op=30, loc=1144, SL=1058
+L1225: 等待 100 ms  // op=30, loc=1145, SL=1059
+L1226: 結束腳本 ExitScript(0)  // op=30, loc=1146, SL=1060
+L1227: 等待 100 ms  // op=30, loc=1147, SL=1061
+L1228: 跳到 L1269  // op=16, loc=1147, SL=None
+L1229: condition = SGN((repair_strategy = 6))  // op=4, loc=1148, SL=1062
+L1230: 若 condition = 0，跳到 L1269  // op=6, loc=1148, SL=None
+L1231: 等待 1000 ms  // op=30, loc=1149, SL=1063
+L1232: move_to(1880, 1027)  // op=30, loc=1150, SL=1064
+L1233: 等待 300 ms  // op=30, loc=1151, SL=1065
+L1234: mouse_click(3, simulation_mode, 1)  // op=30, loc=1152, SL=1066
+L1235: 等待 100 ms  // op=30, loc=1153, SL=1067
+L1236: mouse_click(6, simulation_mode, 1)  // op=30, loc=1154, SL=1068
+L1237: 等待 1500 ms  // op=30, loc=1155, SL=1069
+L1238: move_to(1860, 950)  // op=30, loc=1156, SL=1070
+L1239: 等待 300 ms  // op=30, loc=1157, SL=1071
+L1240: mouse_click(3, simulation_mode, 1)  // op=30, loc=1158, SL=1072
+L1241: 等待 100 ms  // op=30, loc=1159, SL=1073
+L1242: mouse_click(6, simulation_mode, 1)  // op=30, loc=1160, SL=1074
+L1243: 等待 300 ms  // op=30, loc=1161, SL=1075
+L1244: mouse_click(3, simulation_mode, 1)  // op=30, loc=1162, SL=1076
+L1245: 等待 100 ms  // op=30, loc=1163, SL=1077
+L1246: mouse_click(6, simulation_mode, 1)  // op=30, loc=1164, SL=1078
+L1247: 等待 4000 ms  // op=30, loc=1165, SL=1079
+L1248: 記錄 "退出游戏"  // op=30, loc=1166, SL=1080
+L1249: 等待 100 ms  // op=30, loc=1167, SL=1081
+L1250: move_to(1515, 740)  // op=30, loc=1168, SL=1082
+L1251: 等待 300 ms  // op=30, loc=1169, SL=1083
+L1252: mouse_click(3, simulation_mode, 1)  // op=30, loc=1170, SL=1084
+L1253: 等待 100 ms  // op=30, loc=1171, SL=1085
+L1254: mouse_click(6, simulation_mode, 1)  // op=30, loc=1172, SL=1086
+L1255: 等待 2000 ms  // op=30, loc=1173, SL=1087
+L1256: key_press("Enter", simulation_mode, 1)  // op=30, loc=1174, SL=1088
+L1257: 等待 100 ms  // op=30, loc=1175, SL=1089
+L1258: key_press("Enter", simulation_mode, 1)  // op=30, loc=1176, SL=1090
+L1259: 等待 300 ms  // op=30, loc=1177, SL=1091
+L1260: key_press("End", simulation_mode, 1)  // op=30, loc=1178, SL=1092
+L1261: 等待 100 ms  // op=30, loc=1179, SL=1093
+L1262: key_press("End", simulation_mode, 1)  // op=30, loc=1180, SL=1094
+L1263: 等待 100 ms  // op=30, loc=1181, SL=1095
+L1264: key_press("F12", simulation_mode, 1)  // op=30, loc=1182, SL=1096
+L1265: 等待 100 ms  // op=30, loc=1183, SL=1097
+L1266: key_press("F12", simulation_mode, 1)  // op=30, loc=1184, SL=1098
+L1267: 等待 100 ms  // op=30, loc=1185, SL=1099
+L1268: 結束腳本 ExitScript(0)  // op=30, loc=1186, SL=1100
+L1269: 等待 100 ms  // op=30, loc=1188, SL=1101
+L1270: temporary = 讀取共享值 worker_id [原鍵 V80B0DA86C3CC32BE83A5D23C3778756D]  // op=27, loc=1189, SL=1102
+L1271: current_frame.slot[1] = temporary  // op=2, loc=1189, SL=1103
+L1272: thread_control(current_frame.slot[1], 2)  // op=30, loc=1189, SL=1104
+L1273: 等待 100 ms  // op=30, loc=1190, SL=1105
+L1274: temporary = current_frame.return_value（未賦值時 Empty）；恢復 parent，釋放暫存框架  // op=2, loc=1191, SL=1106
+L1275: 返回呼叫端  // op=13, loc=1191, SL=None
+
+procedure return_home  // L1277..L1342
+L1277: 等待 200 ms  // op=30, loc=1193, SL=1107
+L1278: sdk_miss_count = 0  // op=2, loc=1194, SL=1108
+L1279: 等待 200 ms  // op=30, loc=1195, SL=1109
+L1280: condition = SGN(-1)  // op=4, loc=1196, SL=1110
+L1281: 若 condition = 0，跳到 L1328  // op=6, loc=1196, SL=None
+L1282: 等待 500 ms  // op=30, loc=1197, SL=1111
+L1283: key_press("F2", simulation_mode, 1)  // op=30, loc=1198, SL=1112
+L1284: 等待 4000 ms  // op=30, loc=1199, SL=1113
+L1285: query_x, query_y = find_pic(ROI=[1303, 277, 1388, 790], "C:\\users\\mymacro\\zhuangy1.bmp|C:\\users\\mymacro\\zhuangy2.bmp", delta="191919", similarity=0.8, direction=0)  // op=30, loc=1201, SL=1114
+L1286: condition = SGN((query_x >= 0))  // op=4, loc=1202, SL=1115
+L1287: 若 condition = 0，跳到 L1309  // op=6, loc=1202, SL=None
+L1288: 等待 200 ms  // op=30, loc=1203, SL=1116
+L1289: move_x = (query_x + 15)  // op=2, loc=1204, SL=1117
+L1290: move_y = (query_y + 15)  // op=2, loc=1205, SL=1118
+L1291: 等待 100 ms  // op=30, loc=1206, SL=1119
+L1292: move_to(move_x, move_y)  // op=30, loc=1207, SL=1120
+L1293: 等待 300 ms  // op=30, loc=1208, SL=1121
+L1294: mouse_click(3, simulation_mode, 1)  // op=30, loc=1209, SL=1122
+L1295: 等待 100 ms  // op=30, loc=1210, SL=1123
+L1296: mouse_click(6, simulation_mode, 1)  // op=30, loc=1211, SL=1124
+L1297: 等待 700 ms  // op=30, loc=1212, SL=1125
+L1298: mouse_click(0, simulation_mode, 1)  // op=30, loc=1213, SL=1126
+L1299: 等待 1500 ms  // op=30, loc=1214, SL=1127
+L1300: move_to(1454, 853)  // op=30, loc=1215, SL=1128
+L1301: 等待 300 ms  // op=30, loc=1216, SL=1129
+L1302: mouse_click(3, simulation_mode, 1)  // op=30, loc=1217, SL=1130
+L1303: 等待 100 ms  // op=30, loc=1218, SL=1131
+L1304: mouse_click(6, simulation_mode, 1)  // op=30, loc=1219, SL=1132
+L1305: 等待 700 ms  // op=30, loc=1220, SL=1133
+L1306: mouse_click(0, simulation_mode, 1)  // op=30, loc=1221, SL=1134
+L1307: 等待 12000 ms  // op=30, loc=1222, SL=1135
+L1308: 跳到 L1328  // op=16, loc=1223, SL=None
+L1309: 等待 500 ms  // op=30, loc=1225, SL=1136
+L1310: temporary = 讀取共享值 sdk_marker [原鍵 V8186B4D47378756D]  // op=27, loc=1226, SL=1137
+L1311: current_frame.slot[1] = temporary  // op=30, loc=1226, SL=1138
+L1312: query_x, query_y = find_color(ROI=[160, 1, 260, 25], current_frame.slot[1] & "-050505", similarity=0.9, direction=0)  // op=2, loc=1226, SL=1139
+L1313: condition = SGN((query_x > 0))  // op=4, loc=1227, SL=1140
+L1314: 若 condition = 0，跳到 L1317  // op=6, loc=1227, SL=None
+L1315: 等待 50 ms  // op=30, loc=1228, SL=1141
+L1316: 跳到 L1327  // op=16, loc=1229, SL=None
+L1317: 等待 500 ms  // op=30, loc=1230, SL=1142
+L1318: sdk_miss_count = (sdk_miss_count + 1)  // op=2, loc=1231, SL=1143
+L1319: 等待 500 ms  // op=30, loc=1232, SL=1144
+L1320: condition = SGN((sdk_miss_count >= 3))  // op=4, loc=1233, SL=1145
+L1321: 若 condition = 0，跳到 L1327  // op=6, loc=1233, SL=None
+L1322: 等待 100 ms  // op=30, loc=1234, SL=1146
+L1323: key_press("Esc", simulation_mode, 1)  // op=30, loc=1235, SL=1147
+L1324: 等待 100 ms  // op=30, loc=1236, SL=1148
+L1325: sdk_miss_count = 0  // op=2, loc=1237, SL=1149
+L1326: 等待 4000 ms  // op=30, loc=1238, SL=1150
+L1327: 跳到 L1280  // op=16, loc=1239, SL=None
+L1328: 等待 500 ms  // op=30, loc=1242, SL=1151
+L1329: condition = SGN(-1)  // op=4, loc=1243, SL=1152
+L1330: 若 condition = 0，跳到 L1340  // op=6, loc=1244, SL=None
+L1331: 等待 1000 ms  // op=30, loc=1245, SL=1153
+L1332: temporary = 讀取共享值 sdk_marker [原鍵 V8186B4D47378756D]  // op=27, loc=1247, SL=1154
+L1333: current_frame.slot[1] = temporary  // op=30, loc=1247, SL=1155
+L1334: query_x, query_y = find_color(ROI=[160, 1, 260, 25], current_frame.slot[1] & "-151515", similarity=0.9, direction=0)  // op=2, loc=1247, SL=1156
+L1335: condition = SGN((query_x >= 0))  // op=4, loc=1248, SL=1157
+L1336: 若 condition = 0，跳到 L1339  // op=6, loc=1248, SL=None
+L1337: 等待 4000 ms  // op=30, loc=1249, SL=1158
+L1338: 跳到 L1340  // op=16, loc=1250, SL=None
+L1339: 跳到 L1329  // op=16, loc=1251, SL=None
+L1340: 等待 200 ms  // op=30, loc=1253, SL=1159
+L1341: temporary = current_frame.return_value（未賦值時 Empty）；恢復 parent，釋放暫存框架  // op=2, loc=1254, SL=1160
+L1342: 返回呼叫端  // op=13, loc=1254, SL=None
+
+procedure check_vitality  // L1344..L1620
+L1344: 等待 50 ms  // op=30, loc=1256, SL=1161
+L1345: sdk_miss_count = 0  // op=2, loc=1257, SL=1162
+L1346: 等待 50 ms  // op=30, loc=1258, SL=1163
+L1347: condition = SGN(-1)  // op=4, loc=1259, SL=1164
+L1348: 若 condition = 0，跳到 L1390  // op=6, loc=1259, SL=None
+L1349: 等待 100 ms  // op=30, loc=1260, SL=1165
+L1350: temporary = 讀取共享值 sdk_marker [原鍵 V8186B4D47378756D]  // op=27, loc=1261, SL=1166
+L1351: current_frame.slot[1] = temporary  // op=30, loc=1261, SL=1167
+L1352: query_x, query_y = find_color(ROI=[160, 1, 260, 25], current_frame.slot[1] & "-151515", similarity=0.9, direction=0)  // op=2, loc=1261, SL=1168
+L1353: condition = SGN((query_x > 0))  // op=4, loc=1262, SL=1169
+L1354: 若 condition = 0，跳到 L1376  // op=6, loc=1262, SL=None
+L1355: 等待 50 ms  // op=30, loc=1263, SL=1170
+L1356: query_x, query_y = builtin_color(ROI=[875, 917, 896, 932], "40752B", similarity=0.9, direction=0)  // op=30, loc=1264, SL=1171
+L1357: condition = SGN((query_x > 0))  // op=4, loc=1265, SL=1172
+L1358: 若 condition = 0，跳到 L1360  // op=6, loc=1265, SL=None
+L1359: 跳到 L1390  // op=16, loc=1266, SL=None
+L1360: 等待 100 ms  // op=30, loc=1268, SL=1173
+L1361: query_x, query_y = builtin_color(ROI=[875, 917, 896, 932], "35DF86", similarity=0.9, direction=0)  // op=30, loc=1269, SL=1174
+L1362: condition = SGN((query_x > 0))  // op=4, loc=1270, SL=1175
+L1363: 若 condition = 0，跳到 L1365  // op=6, loc=1270, SL=None
+L1364: 跳到 L1390  // op=16, loc=1271, SL=None
+L1365: 等待 100 ms  // op=30, loc=1273, SL=1176
+L1366: query_x, query_y = builtin_color(ROI=[875, 917, 896, 932], "31B972", similarity=0.9, direction=0)  // op=30, loc=1274, SL=1177
+L1367: condition = SGN((query_x > 0))  // op=4, loc=1275, SL=1178
+L1368: 若 condition = 0，跳到 L1370  // op=6, loc=1275, SL=None
+L1369: 跳到 L1390  // op=16, loc=1276, SL=None
+L1370: 等待 100 ms  // op=30, loc=1278, SL=1179
+L1371: query_x, query_y = builtin_color(ROI=[875, 917, 896, 932], "3F722A", similarity=0.9, direction=0)  // op=30, loc=1279, SL=1180
+L1372: condition = SGN((query_x > 0))  // op=4, loc=1280, SL=1181
+L1373: 若 condition = 0，跳到 L1375  // op=6, loc=1280, SL=None
+L1374: 跳到 L1390  // op=16, loc=1281, SL=None
+L1375: 跳到 L1386  // op=16, loc=1282, SL=None
+L1376: 等待 500 ms  // op=30, loc=1284, SL=1182
+L1377: sdk_miss_count = (sdk_miss_count + 1)  // op=2, loc=1285, SL=1183
+L1378: 等待 500 ms  // op=30, loc=1286, SL=1184
+L1379: condition = SGN((sdk_miss_count >= 3))  // op=4, loc=1287, SL=1185
+L1380: 若 condition = 0，跳到 L1386  // op=6, loc=1287, SL=None
+L1381: 等待 100 ms  // op=30, loc=1288, SL=1186
+L1382: key_press("Esc", simulation_mode, 1)  // op=30, loc=1289, SL=1187
+L1383: 等待 100 ms  // op=30, loc=1290, SL=1188
+L1384: sdk_miss_count = 0  // op=2, loc=1291, SL=1189
+L1385: 等待 4000 ms  // op=30, loc=1292, SL=1190
+L1386: 等待 100 ms  // op=30, loc=1295, SL=1191
+L1387: key_press("B", simulation_mode, 1)  // op=30, loc=1296, SL=1192
+L1388: 等待 4000 ms  // op=30, loc=1297, SL=1193
+L1389: 跳到 L1347  // op=16, loc=1298, SL=None
+L1390: 等待 50 ms  // op=30, loc=1299, SL=1194
+L1391: condition = SGN((vitality_finish_mode = 0))  // op=4, loc=1300, SL=1195
+L1392: 若 condition = 0，跳到 L1413  // op=6, loc=1300, SL=None
+L1393: 等待 50 ms  // op=30, loc=1301, SL=1196
+L1394: condition = SGN(-1)  // op=4, loc=1302, SL=1197
+L1395: 若 condition = 0，跳到 L1412  // op=6, loc=1302, SL=None
+L1396: 等待 50 ms  // op=30, loc=1303, SL=1198
+L1397: query_x, query_y = find_color(ROI=[898, 917, 902, 931], "2E7F47-050505|2F8245-050505|439B53-050505|38904F-050505|48A459-050505|2C743F-050505|2A6F3C-050505|297142-050505|409851-050505|318547-050505|3E8853-050505|409851-050505", similarity=0.9, direction=0)  // op=30, loc=1304, SL=1199
+L1398: condition = SGN((query_x >= 0))  // op=4, loc=1305, SL=1200
+L1399: 若 condition = 0，跳到 L1403  // op=6, loc=1305, SL=None
+L1400: 等待 100 ms  // op=30, loc=1306, SL=1201
+L1401: vitality_miss_count = 0  // op=2, loc=1307, SL=1202
+L1402: 跳到 L1412  // op=16, loc=1308, SL=None
+L1403: 等待 100 ms  // op=30, loc=1310, SL=1203
+L1404: vitality_miss_count = (vitality_miss_count + 1)  // op=2, loc=1311, SL=1204
+L1405: 等待 1000 ms  // op=30, loc=1312, SL=1205
+L1406: condition = SGN((vitality_miss_count >= 5))  // op=4, loc=1313, SL=1206
+L1407: 若 condition = 0，跳到 L1410  // op=6, loc=1313, SL=None
+L1408: 等待 1000 ms  // op=30, loc=1314, SL=1207
+L1409: 結束腳本 ExitScript(0)  // op=30, loc=1315, SL=1208
+L1410: 等待 100 ms  // op=30, loc=1317, SL=1209
+L1411: 跳到 L1394  // op=16, loc=1318, SL=None
+L1412: 跳到 L1618  // op=16, loc=1318, SL=None
+L1413: condition = SGN((vitality_finish_mode = 1))  // op=4, loc=1319, SL=1210
+L1414: 若 condition = 0，跳到 L1462  // op=6, loc=1319, SL=None
+L1415: 等待 50 ms  // op=30, loc=1320, SL=1211
+L1416: condition = SGN(-1)  // op=4, loc=1321, SL=1212
+L1417: 若 condition = 0，跳到 L1461  // op=6, loc=1321, SL=None
+L1418: 等待 50 ms  // op=30, loc=1322, SL=1213
+L1419: query_x, query_y = find_color(ROI=[898, 917, 902, 931], "2E7F47-050505|2F8245-050505|439B53-050505|38904F-050505|48A459-050505|2C743F-050505|2A6F3C-050505|297142-050505|409851-050505|318547-050505|3E8853-050505|409851-050505", similarity=0.9, direction=0)  // op=30, loc=1323, SL=1214
+L1420: condition = SGN((query_x >= 0))  // op=4, loc=1324, SL=1215
+L1421: 若 condition = 0，跳到 L1425  // op=6, loc=1324, SL=None
+L1422: 等待 100 ms  // op=30, loc=1325, SL=1216
+L1423: vitality_miss_count = 0  // op=2, loc=1326, SL=1217
+L1424: 跳到 L1461  // op=16, loc=1327, SL=None
+L1425: 等待 100 ms  // op=30, loc=1329, SL=1218
+L1426: vitality_miss_count = (vitality_miss_count + 1)  // op=2, loc=1330, SL=1219
+L1427: 等待 1000 ms  // op=30, loc=1331, SL=1220
+L1428: condition = SGN((vitality_miss_count >= 5))  // op=4, loc=1332, SL=1221
+L1429: 若 condition = 0，跳到 L1459  // op=6, loc=1332, SL=None
+L1430: 等待 100 ms  // op=30, loc=1333, SL=1222
+L1431: temporary = 讀取共享值 worker_id [原鍵 V80B0DA86C3CC32BE83A5D23C3778756D]  // op=27, loc=1334, SL=1223
+L1432: current_frame.slot[1] = temporary  // op=2, loc=1334, SL=1224
+L1433: thread_control(current_frame.slot[1], 1)  // op=30, loc=1334, SL=1225
+L1434: 等待 145 ms  // op=30, loc=1335, SL=1226
+L1435: condition = SGN((home_on_no_vitality = 1))  // op=4, loc=1336, SL=1227
+L1436: 若 condition = 0，跳到 L1441  // op=6, loc=1336, SL=None
+L1437: 等待 100 ms  // op=30, loc=1337, SL=1228
+L1438: 建立 返回莊園 呼叫框架，保存 parent  // op=2, loc=1338, SL=1229
+L1439: 呼叫 返回莊園 L1277  // op=12, loc=1338, SL=None
+L1440: current_frame.slot[2] = temporary  // op=2, loc=1338, SL=1230
+L1441: 等待 1000 ms  // op=30, loc=1340, SL=1231
+L1442: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1341, SL=1232
+L1443: 等待 100 ms  // op=30, loc=1342, SL=1233
+L1444: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1343, SL=1234
+L1445: 等待 100 ms  // op=30, loc=1344, SL=1235
+L1446: key_down("alt", simulation_mode, 1)  // op=30, loc=1345, SL=1236
+L1447: 等待 100 ms  // op=30, loc=1346, SL=1237
+L1448: key_down("alt", simulation_mode, 1)  // op=30, loc=1347, SL=1238
+L1449: 等待 100 ms  // op=30, loc=1348, SL=1239
+L1450: key_up("alt", simulation_mode, 1)  // op=30, loc=1349, SL=1240
+L1451: 等待 100 ms  // op=30, loc=1350, SL=1241
+L1452: key_up("ctrl", simulation_mode, 1)  // op=30, loc=1351, SL=1242
+L1453: 等待 1000 ms  // op=30, loc=1352, SL=1243
+L1454: key_press("F10", simulation_mode, 1)  // op=30, loc=1353, SL=1244
+L1455: 等待 100 ms  // op=30, loc=1354, SL=1245
+L1456: key_press("F10", simulation_mode, 1)  // op=30, loc=1355, SL=1246
+L1457: 等待 100 ms  // op=30, loc=1356, SL=1247
+L1458: 結束腳本 ExitScript(0)  // op=30, loc=1357, SL=1248
+L1459: 等待 100 ms  // op=30, loc=1359, SL=1249
+L1460: 跳到 L1416  // op=16, loc=1360, SL=None
+L1461: 跳到 L1618  // op=16, loc=1360, SL=None
+L1462: condition = SGN((vitality_finish_mode = 2))  // op=4, loc=1361, SL=1250
+L1463: 若 condition = 0，跳到 L1511  // op=6, loc=1361, SL=None
+L1464: 等待 50 ms  // op=30, loc=1362, SL=1251
+L1465: condition = SGN(-1)  // op=4, loc=1363, SL=1252
+L1466: 若 condition = 0，跳到 L1510  // op=6, loc=1363, SL=None
+L1467: 等待 50 ms  // op=30, loc=1364, SL=1253
+L1468: query_x, query_y = find_color(ROI=[898, 917, 902, 931], "2E7F47-050505|2F8245-050505|439B53-050505|38904F-050505|48A459-050505|2C743F-050505|2A6F3C-050505|297142-050505|409851-050505|318547-050505|3E8853-050505|409851-050505", similarity=0.9, direction=0)  // op=30, loc=1365, SL=1254
+L1469: condition = SGN((query_x >= 0))  // op=4, loc=1366, SL=1255
+L1470: 若 condition = 0，跳到 L1474  // op=6, loc=1366, SL=None
+L1471: 等待 100 ms  // op=30, loc=1367, SL=1256
+L1472: vitality_miss_count = 0  // op=2, loc=1368, SL=1257
+L1473: 跳到 L1510  // op=16, loc=1369, SL=None
+L1474: 等待 100 ms  // op=30, loc=1371, SL=1258
+L1475: vitality_miss_count = (vitality_miss_count + 1)  // op=2, loc=1372, SL=1259
+L1476: 等待 1000 ms  // op=30, loc=1373, SL=1260
+L1477: condition = SGN((vitality_miss_count >= 5))  // op=4, loc=1374, SL=1261
+L1478: 若 condition = 0，跳到 L1508  // op=6, loc=1374, SL=None
+L1479: 等待 100 ms  // op=30, loc=1375, SL=1262
+L1480: temporary = 讀取共享值 worker_id [原鍵 V80B0DA86C3CC32BE83A5D23C3778756D]  // op=27, loc=1376, SL=1263
+L1481: current_frame.slot[3] = temporary  // op=2, loc=1376, SL=1264
+L1482: thread_control(current_frame.slot[3], 1)  // op=30, loc=1376, SL=1265
+L1483: 等待 145 ms  // op=30, loc=1377, SL=1266
+L1484: condition = SGN((home_on_no_vitality = 1))  // op=4, loc=1378, SL=1267
+L1485: 若 condition = 0，跳到 L1490  // op=6, loc=1378, SL=None
+L1486: 等待 100 ms  // op=30, loc=1379, SL=1268
+L1487: 建立 返回莊園 呼叫框架，保存 parent  // op=2, loc=1380, SL=1269
+L1488: 呼叫 返回莊園 L1277  // op=12, loc=1380, SL=None
+L1489: current_frame.slot[4] = temporary  // op=2, loc=1380, SL=1270
+L1490: 等待 1000 ms  // op=30, loc=1382, SL=1271
+L1491: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1383, SL=1272
+L1492: 等待 100 ms  // op=30, loc=1384, SL=1273
+L1493: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1385, SL=1274
+L1494: 等待 100 ms  // op=30, loc=1386, SL=1275
+L1495: key_down("alt", simulation_mode, 1)  // op=30, loc=1387, SL=1276
+L1496: 等待 100 ms  // op=30, loc=1388, SL=1277
+L1497: key_down("alt", simulation_mode, 1)  // op=30, loc=1389, SL=1278
+L1498: 等待 100 ms  // op=30, loc=1390, SL=1279
+L1499: key_up("alt", simulation_mode, 1)  // op=30, loc=1391, SL=1280
+L1500: 等待 100 ms  // op=30, loc=1392, SL=1281
+L1501: key_up("ctrl", simulation_mode, 1)  // op=30, loc=1393, SL=1282
+L1502: 等待 1000 ms  // op=30, loc=1394, SL=1283
+L1503: key_press("F8", simulation_mode, 1)  // op=30, loc=1395, SL=1284
+L1504: 等待 100 ms  // op=30, loc=1396, SL=1285
+L1505: key_press("F8", simulation_mode, 1)  // op=30, loc=1397, SL=1286
+L1506: 等待 100 ms  // op=30, loc=1398, SL=1287
+L1507: 結束腳本 ExitScript(0)  // op=30, loc=1399, SL=1288
+L1508: 等待 100 ms  // op=30, loc=1401, SL=1289
+L1509: 跳到 L1465  // op=16, loc=1402, SL=None
+L1510: 跳到 L1618  // op=16, loc=1402, SL=None
+L1511: condition = SGN((vitality_finish_mode = 3))  // op=4, loc=1403, SL=1290
+L1512: 若 condition = 0，跳到 L1554  // op=6, loc=1403, SL=None
+L1513: 等待 50 ms  // op=30, loc=1404, SL=1291
+L1514: condition = SGN(-1)  // op=4, loc=1405, SL=1292
+L1515: 若 condition = 0，跳到 L1553  // op=6, loc=1405, SL=None
+L1516: 等待 50 ms  // op=30, loc=1406, SL=1293
+L1517: query_x, query_y = find_color(ROI=[898, 917, 902, 931], "2E7F47-050505|2F8245-050505|439B53-050505|38904F-050505|48A459-050505|2C743F-050505|2A6F3C-050505|297142-050505|409851-050505|318547-050505|3E8853-050505|409851-050505", similarity=0.9, direction=0)  // op=30, loc=1407, SL=1294
+L1518: condition = SGN((query_x >= 0))  // op=4, loc=1408, SL=1295
+L1519: 若 condition = 0，跳到 L1523  // op=6, loc=1408, SL=None
+L1520: 等待 100 ms  // op=30, loc=1409, SL=1296
+L1521: vitality_miss_count = 0  // op=2, loc=1410, SL=1297
+L1522: 跳到 L1553  // op=16, loc=1411, SL=None
+L1523: 等待 100 ms  // op=30, loc=1413, SL=1298
+L1524: vitality_miss_count = (vitality_miss_count + 1)  // op=2, loc=1414, SL=1299
+L1525: 等待 1000 ms  // op=30, loc=1415, SL=1300
+L1526: condition = SGN((vitality_miss_count >= 5))  // op=4, loc=1416, SL=1301
+L1527: 若 condition = 0，跳到 L1551  // op=6, loc=1416, SL=None
+L1528: 等待 100 ms  // op=30, loc=1417, SL=1302
+L1529: temporary = 讀取共享值 worker_id [原鍵 V80B0DA86C3CC32BE83A5D23C3778756D]  // op=27, loc=1418, SL=1303
+L1530: current_frame.slot[5] = temporary  // op=2, loc=1418, SL=1304
+L1531: thread_control(current_frame.slot[5], 1)  // op=30, loc=1418, SL=1305
+L1532: 等待 145 ms  // op=30, loc=1419, SL=1306
+L1533: 等待 1000 ms  // op=30, loc=1420, SL=1307
+L1534: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1421, SL=1308
+L1535: 等待 100 ms  // op=30, loc=1422, SL=1309
+L1536: key_down("ctrl", simulation_mode, 1)  // op=30, loc=1423, SL=1310
+L1537: 等待 100 ms  // op=30, loc=1424, SL=1311
+L1538: key_down("alt", simulation_mode, 1)  // op=30, loc=1425, SL=1312
+L1539: 等待 100 ms  // op=30, loc=1426, SL=1313
+L1540: key_down("alt", simulation_mode, 1)  // op=30, loc=1427, SL=1314
+L1541: 等待 100 ms  // op=30, loc=1428, SL=1315
+L1542: key_up("alt", simulation_mode, 1)  // op=30, loc=1429, SL=1316
+L1543: 等待 100 ms  // op=30, loc=1430, SL=1317
+L1544: key_up("ctrl", simulation_mode, 1)  // op=30, loc=1431, SL=1318
+L1545: 等待 1000 ms  // op=30, loc=1432, SL=1319
+L1546: key_press("F6", simulation_mode, 1)  // op=30, loc=1433, SL=1320
+L1547: 等待 100 ms  // op=30, loc=1434, SL=1321
+L1548: key_press("F6", simulation_mode, 1)  // op=30, loc=1435, SL=1322
+L1549: 等待 100 ms  // op=30, loc=1436, SL=1323
+L1550: 結束腳本 ExitScript(0)  // op=30, loc=1437, SL=1324
+L1551: 等待 100 ms  // op=30, loc=1439, SL=1325
+L1552: 跳到 L1514  // op=16, loc=1440, SL=None
+L1553: 跳到 L1618  // op=16, loc=1440, SL=None
+L1554: condition = SGN((vitality_finish_mode = 4))  // op=4, loc=1441, SL=1326
+L1555: 若 condition = 0，跳到 L1617  // op=6, loc=1441, SL=None
+L1556: 等待 50 ms  // op=30, loc=1442, SL=1327
+L1557: condition = SGN(-1)  // op=4, loc=1443, SL=1328
+L1558: 若 condition = 0，跳到 L1616  // op=6, loc=1443, SL=None
+L1559: 等待 50 ms  // op=30, loc=1444, SL=1329
+L1560: query_x, query_y = find_color(ROI=[898, 917, 902, 931], "2E7F47-050505|2F8245-050505|439B53-050505|38904F-050505|48A459-050505|2C743F-050505|2A6F3C-050505|297142-050505|409851-050505|318547-050505|3E8853-050505|409851-050505", similarity=0.9, direction=0)  // op=30, loc=1445, SL=1330
+L1561: condition = SGN((query_x >= 0))  // op=4, loc=1446, SL=1331
+L1562: 若 condition = 0，跳到 L1566  // op=6, loc=1446, SL=None
+L1563: 等待 100 ms  // op=30, loc=1447, SL=1332
+L1564: vitality_miss_count = 0  // op=2, loc=1448, SL=1333
+L1565: 跳到 L1616  // op=16, loc=1449, SL=None
+L1566: 等待 100 ms  // op=30, loc=1451, SL=1334
+L1567: vitality_miss_count = (vitality_miss_count + 1)  // op=2, loc=1452, SL=1335
+L1568: 等待 1000 ms  // op=30, loc=1453, SL=1336
+L1569: condition = SGN((vitality_miss_count >= 5))  // op=4, loc=1454, SL=1337
+L1570: 若 condition = 0，跳到 L1614  // op=6, loc=1454, SL=None
+L1571: 等待 100 ms  // op=30, loc=1455, SL=1338
+L1572: temporary = 讀取共享值 worker_id [原鍵 V80B0DA86C3CC32BE83A5D23C3778756D]  // op=27, loc=1456, SL=1339
+L1573: current_frame.slot[6] = temporary  // op=2, loc=1456, SL=1340
+L1574: thread_control(current_frame.slot[6], 1)  // op=30, loc=1456, SL=1341
+L1575: 等待 145 ms  // op=30, loc=1457, SL=1342
+L1576: 等待 1000 ms  // op=30, loc=1458, SL=1343
+L1577: move_to(1880, 1027)  // op=30, loc=1459, SL=1344
+L1578: 等待 300 ms  // op=30, loc=1460, SL=1345
+L1579: mouse_click(3, simulation_mode, 1)  // op=30, loc=1461, SL=1346
+L1580: 等待 100 ms  // op=30, loc=1462, SL=1347
+L1581: mouse_click(6, simulation_mode, 1)  // op=30, loc=1463, SL=1348
+L1582: 等待 1500 ms  // op=30, loc=1464, SL=1349
+L1583: move_to(1860, 950)  // op=30, loc=1465, SL=1350
+L1584: 等待 300 ms  // op=30, loc=1466, SL=1351
+L1585: mouse_click(3, simulation_mode, 1)  // op=30, loc=1467, SL=1352
+L1586: 等待 100 ms  // op=30, loc=1468, SL=1353
+L1587: mouse_click(6, simulation_mode, 1)  // op=30, loc=1469, SL=1354
+L1588: 等待 300 ms  // op=30, loc=1470, SL=1355
+L1589: mouse_click(3, simulation_mode, 1)  // op=30, loc=1471, SL=1356
+L1590: 等待 100 ms  // op=30, loc=1472, SL=1357
+L1591: mouse_click(6, simulation_mode, 1)  // op=30, loc=1473, SL=1358
+L1592: 等待 4000 ms  // op=30, loc=1474, SL=1359
+L1593: 記錄 "退出游戏"  // op=30, loc=1475, SL=1360
+L1594: 等待 100 ms  // op=30, loc=1476, SL=1361
+L1595: move_to(1515, 740)  // op=30, loc=1477, SL=1362
+L1596: 等待 300 ms  // op=30, loc=1478, SL=1363
+L1597: mouse_click(3, simulation_mode, 1)  // op=30, loc=1479, SL=1364
+L1598: 等待 100 ms  // op=30, loc=1480, SL=1365
+L1599: mouse_click(6, simulation_mode, 1)  // op=30, loc=1481, SL=1366
+L1600: 等待 2000 ms  // op=30, loc=1482, SL=1367
+L1601: key_press("Enter", simulation_mode, 1)  // op=30, loc=1483, SL=1368
+L1602: 等待 100 ms  // op=30, loc=1484, SL=1369
+L1603: key_press("Enter", simulation_mode, 1)  // op=30, loc=1485, SL=1370
+L1604: 等待 300 ms  // op=30, loc=1486, SL=1371
+L1605: key_press("End", simulation_mode, 1)  // op=30, loc=1487, SL=1372
+L1606: 等待 100 ms  // op=30, loc=1488, SL=1373
+L1607: key_press("End", simulation_mode, 1)  // op=30, loc=1489, SL=1374
+L1608: 等待 100 ms  // op=30, loc=1490, SL=1375
+L1609: key_press("F12", simulation_mode, 1)  // op=30, loc=1491, SL=1376
+L1610: 等待 100 ms  // op=30, loc=1492, SL=1377
+L1611: key_press("F12", simulation_mode, 1)  // op=30, loc=1493, SL=1378
+L1612: 等待 100 ms  // op=30, loc=1494, SL=1379
+L1613: 結束腳本 ExitScript(0)  // op=30, loc=1495, SL=1380
+L1614: 等待 100 ms  // op=30, loc=1497, SL=1381
+L1615: 跳到 L1557  // op=16, loc=1498, SL=None
+L1616: 跳到 L1618  // op=16, loc=1499, SL=None
+L1617: 等待 400 ms  // op=30, loc=1500, SL=1382
+L1618: 等待 50 ms  // op=30, loc=1502, SL=1383
+L1619: temporary = current_frame.return_value（未賦值時 Empty）；恢復 parent，釋放暫存框架  // op=2, loc=0, SL=1384
+L1620: 返回呼叫端  // op=13, loc=0, SL=None

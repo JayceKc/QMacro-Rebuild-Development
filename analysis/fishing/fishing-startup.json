@@ -1,0 +1,1121 @@
+{
+  "module": 5,
+  "entry": 4,
+  "boundary": 115,
+  "rows": [
+    {
+      "record": 4,
+      "location": 1,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 3,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 5,
+      "location": 2,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "observe_cursor",
+      "source_sl": 4,
+      "source": "Call GetCursorPos(MX,MY)"
+    },
+    {
+      "record": 6,
+      "location": 3,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 5,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 7,
+      "location": 4,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "intent",
+      "source_sl": 6,
+      "source": "Call QMLibrary.MouseClick(0,g_iSimulateModeInVBSBlock,1)"
+    },
+    {
+      "record": 8,
+      "location": 5,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 7,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 9,
+      "location": 6,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "observe_sdk",
+      "source_sl": 8,
+      "source": "V8186B4D47378756D=QMLibrary.GetGlobalVar(\"MMVerifyCode\", 0)"
+    },
+    {
+      "record": 10,
+      "location": 7,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 9,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 11,
+      "location": 8,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 50,
+      "source_sl": 10,
+      "source": "Call QMLibrary.Delay((50))"
+    },
+    {
+      "record": 12,
+      "location": 9,
+      "field_3": 1,
+      "candidate_opcode": 4,
+      "kind": "test",
+      "condition": "sdk_empty",
+      "source_sl": 11,
+      "source": "Sgn(V8186B4D47378756D=\"\")"
+    },
+    {
+      "record": 13,
+      "location": 9,
+      "field_3": 1,
+      "candidate_opcode": 6,
+      "kind": "if_zero",
+      "target": 23
+    },
+    {
+      "record": 14,
+      "location": 10,
+      "field_3": 1,
+      "candidate_opcode": 4,
+      "kind": "test",
+      "condition": "always",
+      "source_sl": 12,
+      "source": "Sgn(vbTrue)"
+    },
+    {
+      "record": 15,
+      "location": 10,
+      "field_3": 1,
+      "candidate_opcode": 6,
+      "kind": "if_zero",
+      "target": 23
+    },
+    {
+      "record": 16,
+      "location": 11,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 1000,
+      "source_sl": 13,
+      "source": "Call QMLibrary.Delay((1000))"
+    },
+    {
+      "record": 17,
+      "location": 12,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 2000,
+      "source_sl": 14,
+      "source": "Call QMLibrary.Delay((2000))"
+    },
+    {
+      "record": 18,
+      "location": 13,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 3000,
+      "source_sl": 15,
+      "source": "Call QMLibrary.Delay((3000))"
+    },
+    {
+      "record": 19,
+      "location": 14,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 4000,
+      "source_sl": 16,
+      "source": "Call QMLibrary.Delay((4000))"
+    },
+    {
+      "record": 20,
+      "location": 15,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 5000,
+      "source_sl": 17,
+      "source": "Call QMLibrary.Delay((5000))"
+    },
+    {
+      "record": 21,
+      "location": 16,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 50,
+      "source_sl": 18,
+      "source": "Call QMLibrary.Delay((50))"
+    },
+    {
+      "record": 22,
+      "location": 18,
+      "field_3": 1,
+      "candidate_opcode": 16,
+      "kind": "jump",
+      "target": 14
+    },
+    {
+      "record": 23,
+      "location": 19,
+      "field_3": 1,
+      "candidate_opcode": 4,
+      "kind": "test",
+      "condition": "sdk_sentinel",
+      "source_sl": 19,
+      "source": "Sgn(V8186B4D47378756D=\"4AD733\")"
+    },
+    {
+      "record": 24,
+      "location": 19,
+      "field_3": 1,
+      "candidate_opcode": 6,
+      "kind": "if_zero",
+      "target": 36
+    },
+    {
+      "record": 25,
+      "location": 20,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 50,
+      "source_sl": 20,
+      "source": "Call QMLibrary.Delay(50)"
+    },
+    {
+      "record": 26,
+      "location": 21,
+      "field_3": 1,
+      "candidate_opcode": null,
+      "kind": "unresolved_control"
+    },
+    {
+      "record": 27,
+      "location": 22,
+      "field_3": 1,
+      "candidate_opcode": 4,
+      "kind": "test",
+      "condition": "always",
+      "source_sl": 21,
+      "source": "Sgn(vbTrue)"
+    },
+    {
+      "record": 28,
+      "location": 22,
+      "field_3": 1,
+      "candidate_opcode": 6,
+      "kind": "if_zero",
+      "target": 36
+    },
+    {
+      "record": 29,
+      "location": 23,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 1000,
+      "source_sl": 22,
+      "source": "Call QMLibrary.Delay((1000))"
+    },
+    {
+      "record": 30,
+      "location": 24,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 2000,
+      "source_sl": 23,
+      "source": "Call QMLibrary.Delay((2000))"
+    },
+    {
+      "record": 31,
+      "location": 25,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 3000,
+      "source_sl": 24,
+      "source": "Call QMLibrary.Delay((3000))"
+    },
+    {
+      "record": 32,
+      "location": 26,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 4000,
+      "source_sl": 25,
+      "source": "Call QMLibrary.Delay((4000))"
+    },
+    {
+      "record": 33,
+      "location": 27,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 5000,
+      "source_sl": 26,
+      "source": "Call QMLibrary.Delay((5000))"
+    },
+    {
+      "record": 34,
+      "location": 28,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 50,
+      "source_sl": 27,
+      "source": "Call QMLibrary.Delay((50))"
+    },
+    {
+      "record": 35,
+      "location": 30,
+      "field_3": 1,
+      "candidate_opcode": 16,
+      "kind": "jump",
+      "target": 27
+    },
+    {
+      "record": 36,
+      "location": 34,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "intent",
+      "source_sl": 28,
+      "source": "SET WS=CREATEOBJECT(\"Wscript.Shell\")"
+    },
+    {
+      "record": 37,
+      "location": 35,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "intent",
+      "source_sl": 29,
+      "source": "Call WS.RUN(\"regsvr32 atl.dll /s\")"
+    },
+    {
+      "record": 38,
+      "location": 36,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "intent",
+      "source_sl": 30,
+      "source": "SET WS=nothing"
+    },
+    {
+      "record": 39,
+      "location": 38,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 31,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 40,
+      "location": 39,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "intent",
+      "source_sl": 32,
+      "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\\fz\",\"fz.dll\")"
+    },
+    {
+      "record": 41,
+      "location": 40,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "intent",
+      "source_sl": 33,
+      "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\",\"fzreg.dll\")"
+    },
+    {
+      "record": 42,
+      "location": 41,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "intent",
+      "source_sl": 34,
+      "source": "Call QMLibrary.ExtractAttachment(\"C:\\users\\mymacro\",\"*.bmp\")"
+    },
+    {
+      "record": 43,
+      "location": 42,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 35,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 44,
+      "location": 44,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "intent",
+      "source_sl": 36,
+      "source": "Call QMLibrary.TracePrint(QMLibrary.CallAPI2(\"C:\\users\\mymacro\\fzreg.dll\", \"SetDllPathW\", \"C:\\users\\mymacro\\fz\\fz.dll\", 0))"
+    },
+    {
+      "record": 45,
+      "location": 45,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 37,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 46,
+      "location": 47,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "intent",
+      "source_sl": 38,
+      "source": "SET DM=CREATEOBJECT(\"dm.dmsoft\")"
+    },
+    {
+      "record": 47,
+      "location": 48,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "intent",
+      "source_sl": 39,
+      "source": "Call DM.SETSHOWERRORMSG(0)"
+    },
+    {
+      "record": 48,
+      "location": 49,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 40,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 49,
+      "location": 50,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "intent",
+      "source_sl": 41,
+      "source": "VFD8CD4CB7378756D=DM.VER()"
+    },
+    {
+      "record": 50,
+      "location": 52,
+      "field_3": 1,
+      "candidate_opcode": 4,
+      "kind": "test",
+      "condition": "version",
+      "source_sl": 42,
+      "source": "Sgn((VFD8CD4CB7378756D=7.2450))"
+    },
+    {
+      "record": 51,
+      "location": 52,
+      "field_3": 1,
+      "candidate_opcode": 6,
+      "kind": "if_zero",
+      "target": 54
+    },
+    {
+      "record": 52,
+      "location": 53,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "trace",
+      "message": "成功",
+      "source_sl": 43,
+      "source": "Call QMLibrary.TracePrint((\"成功\"))"
+    },
+    {
+      "record": 53,
+      "location": 54,
+      "field_3": 1,
+      "candidate_opcode": 16,
+      "kind": "jump",
+      "target": 55
+    },
+    {
+      "record": 54,
+      "location": 55,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "trace",
+      "message": "失敗",
+      "source_sl": 44,
+      "source": "Call QMLibrary.TracePrint((\"失败\"))"
+    },
+    {
+      "record": 55,
+      "location": 57,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 45,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 56,
+      "location": 58,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "intent",
+      "source_sl": 46,
+      "source": "V8799D49F7378756D=DM.ENABLEREALMOUSE(2,10,60)"
+    },
+    {
+      "record": 57,
+      "location": 59,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "intent",
+      "source_sl": 47,
+      "source": "Call QMLibrary.TracePrint(\"鼠标\" & V8799D49F7378756D)"
+    },
+    {
+      "record": 58,
+      "location": 60,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 48,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 59,
+      "location": 61,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "intent",
+      "source_sl": 49,
+      "source": "V869DB7887378756D=ARRAY(0,1,2,3,4,5,6,7,8,9,10)"
+    },
+    {
+      "record": 60,
+      "location": 62,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 50,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 61,
+      "location": 63,
+      "field_3": 1,
+      "candidate_opcode": 37,
+      "kind": "read_ui",
+      "property": "Form1.ComboBox1.ListIndex",
+      "source_sl": 51,
+      "source": "Form1.ComboBox1.ListIndex"
+    },
+    {
+      "record": 62,
+      "location": 63,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "store_ui_slot",
+      "slot": 1,
+      "source_sl": 52,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA"
+    },
+    {
+      "record": 63,
+      "location": 63,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "select",
+      "key": "V8080D6BCA5D6CF9E4D6A65757378756D",
+      "source_sl": 53,
+      "source": "V8080D6BCA5D6CF9E4D6A65757378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))"
+    },
+    {
+      "record": 64,
+      "location": 64,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 100,
+      "source_sl": 54,
+      "source": "Call QMLibrary.Delay(100)"
+    },
+    {
+      "record": 65,
+      "location": 65,
+      "field_3": 1,
+      "candidate_opcode": 37,
+      "kind": "read_ui",
+      "property": "Form1.ComboBox2.ListIndex",
+      "source_sl": 55,
+      "source": "Form1.ComboBox2.ListIndex"
+    },
+    {
+      "record": 66,
+      "location": 65,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "store_ui_slot",
+      "slot": 1,
+      "source_sl": 56,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA"
+    },
+    {
+      "record": 67,
+      "location": 65,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "select",
+      "key": "V9DB4A5987378756D",
+      "source_sl": 57,
+      "source": "V9DB4A5987378756D=V869DB7887378756D(F2730835_2229_445E_97C7_l3F761277lDA(1))"
+    },
+    {
+      "record": 68,
+      "location": 66,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 50,
+      "source_sl": 58,
+      "source": "Call QMLibrary.Delay(50)"
+    },
+    {
+      "record": 69,
+      "location": 67,
+      "field_3": 1,
+      "candidate_opcode": 37,
+      "kind": "read_ui",
+      "property": "Form1.CheckBox1.Value",
+      "source_sl": 59,
+      "source": "Form1.CheckBox1.Value"
+    },
+    {
+      "record": 70,
+      "location": 67,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "store_ui_slot",
+      "slot": 1,
+      "source_sl": 60,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA"
+    },
+    {
+      "record": 71,
+      "location": 67,
+      "field_3": 1,
+      "candidate_opcode": 4,
+      "kind": "test",
+      "condition": "checked",
+      "source_sl": 61,
+      "source": "Sgn(F2730835_2229_445E_97C7_l3F761277lDA(1)=1)"
+    },
+    {
+      "record": 72,
+      "location": 67,
+      "field_3": 1,
+      "candidate_opcode": 6,
+      "kind": "if_zero",
+      "target": 75
+    },
+    {
+      "record": 73,
+      "location": 68,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "V859CB696C584756D",
+      "value": 1,
+      "source_sl": 62,
+      "source": "V859CB696C584756D=1"
+    },
+    {
+      "record": 74,
+      "location": 69,
+      "field_3": 1,
+      "candidate_opcode": 16,
+      "kind": "jump",
+      "target": 76
+    },
+    {
+      "record": 75,
+      "location": 70,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "V859CB696C584756D",
+      "value": 0,
+      "source_sl": 63,
+      "source": "V859CB696C584756D=0"
+    },
+    {
+      "record": 76,
+      "location": 72,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 20,
+      "source_sl": 64,
+      "source": "Call QMLibrary.Delay(20)"
+    },
+    {
+      "record": 77,
+      "location": 73,
+      "field_3": 1,
+      "candidate_opcode": 37,
+      "kind": "read_ui",
+      "property": "Form1.CheckBox2.Value",
+      "source_sl": 65,
+      "source": "Form1.CheckBox2.Value"
+    },
+    {
+      "record": 78,
+      "location": 73,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "store_ui_slot",
+      "slot": 1,
+      "source_sl": 66,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA"
+    },
+    {
+      "record": 79,
+      "location": 73,
+      "field_3": 1,
+      "candidate_opcode": 4,
+      "kind": "test",
+      "condition": "checked",
+      "source_sl": 67,
+      "source": "Sgn(F2730835_2229_445E_97C7_l3F761277lDA(1)=1)"
+    },
+    {
+      "record": 80,
+      "location": 73,
+      "field_3": 1,
+      "candidate_opcode": 6,
+      "kind": "if_zero",
+      "target": 83
+    },
+    {
+      "record": 81,
+      "location": 74,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "VF89CA89FC8A0C9BF4D6A65757378756D",
+      "value": 1,
+      "source_sl": 68,
+      "source": "VF89CA89FC8A0C9BF4D6A65757378756D=1"
+    },
+    {
+      "record": 82,
+      "location": 75,
+      "field_3": 1,
+      "candidate_opcode": 16,
+      "kind": "jump",
+      "target": 84
+    },
+    {
+      "record": 83,
+      "location": 76,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "VF89CA89FC8A0C9BF4D6A65757378756D",
+      "value": 0,
+      "source_sl": 69,
+      "source": "VF89CA89FC8A0C9BF4D6A65757378756D=0"
+    },
+    {
+      "record": 84,
+      "location": 78,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 20,
+      "source_sl": 70,
+      "source": "Call QMLibrary.Delay(20)"
+    },
+    {
+      "record": 85,
+      "location": 79,
+      "field_3": 1,
+      "candidate_opcode": 37,
+      "kind": "read_ui",
+      "property": "Form1.CheckBox3.Value",
+      "source_sl": 71,
+      "source": "Form1.CheckBox3.Value"
+    },
+    {
+      "record": 86,
+      "location": 79,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "store_ui_slot",
+      "slot": 1,
+      "source_sl": 72,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA"
+    },
+    {
+      "record": 87,
+      "location": 79,
+      "field_3": 1,
+      "candidate_opcode": 4,
+      "kind": "test",
+      "condition": "checked",
+      "source_sl": 73,
+      "source": "Sgn(F2730835_2229_445E_97C7_l3F761277lDA(1)=1)"
+    },
+    {
+      "record": 88,
+      "location": 79,
+      "field_3": 1,
+      "candidate_opcode": 6,
+      "kind": "if_zero",
+      "target": 91
+    },
+    {
+      "record": 89,
+      "location": 80,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "VFDA1AFDBC7B6B8CE9BD365757378756D",
+      "value": 1,
+      "source_sl": 74,
+      "source": "VFDA1AFDBC7B6B8CE9BD365757378756D=1"
+    },
+    {
+      "record": 90,
+      "location": 81,
+      "field_3": 1,
+      "candidate_opcode": 16,
+      "kind": "jump",
+      "target": 92
+    },
+    {
+      "record": 91,
+      "location": 82,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "VFDA1AFDBC7B6B8CE9BD365757378756D",
+      "value": 0,
+      "source_sl": 75,
+      "source": "VFDA1AFDBC7B6B8CE9BD365757378756D=0"
+    },
+    {
+      "record": 92,
+      "location": 84,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 20,
+      "source_sl": 76,
+      "source": "Call QMLibrary.Delay(20)"
+    },
+    {
+      "record": 93,
+      "location": 85,
+      "field_3": 1,
+      "candidate_opcode": 37,
+      "kind": "read_ui",
+      "property": "Form1.CheckBox4.Value",
+      "source_sl": 77,
+      "source": "Form1.CheckBox4.Value"
+    },
+    {
+      "record": 94,
+      "location": 85,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "store_ui_slot",
+      "slot": 1,
+      "source_sl": 78,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA"
+    },
+    {
+      "record": 95,
+      "location": 85,
+      "field_3": 1,
+      "candidate_opcode": 4,
+      "kind": "test",
+      "condition": "checked",
+      "source_sl": 79,
+      "source": "Sgn(F2730835_2229_445E_97C7_l3F761277lDA(1)=1)"
+    },
+    {
+      "record": 96,
+      "location": 85,
+      "field_3": 1,
+      "candidate_opcode": 6,
+      "kind": "if_zero",
+      "target": 99
+    },
+    {
+      "record": 97,
+      "location": 86,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "VFDA1AFDBC7B6B9959AC0A89FC0B1756D",
+      "value": 1,
+      "source_sl": 80,
+      "source": "VFDA1AFDBC7B6B9959AC0A89FC0B1756D=1"
+    },
+    {
+      "record": 98,
+      "location": 87,
+      "field_3": 1,
+      "candidate_opcode": 16,
+      "kind": "jump",
+      "target": 100
+    },
+    {
+      "record": 99,
+      "location": 88,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "VFDA1AFDBC7B6B9959AC0A89FC0B1756D",
+      "value": 0,
+      "source_sl": 81,
+      "source": "VFDA1AFDBC7B6B9959AC0A89FC0B1756D=0"
+    },
+    {
+      "record": 100,
+      "location": 90,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 20,
+      "source_sl": 82,
+      "source": "Call QMLibrary.Delay(20)"
+    },
+    {
+      "record": 101,
+      "location": 91,
+      "field_3": 1,
+      "candidate_opcode": 37,
+      "kind": "read_ui",
+      "property": "Form1.CheckBox5.Value",
+      "source_sl": 83,
+      "source": "Form1.CheckBox5.Value"
+    },
+    {
+      "record": 102,
+      "location": 91,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "store_ui_slot",
+      "slot": 1,
+      "source_sl": 84,
+      "source": "F2730835_2229_445E_97C7_l3F761277lDA(1)=F2730835_2229_445E_97C7_l3F76l2771DA"
+    },
+    {
+      "record": 103,
+      "location": 91,
+      "field_3": 1,
+      "candidate_opcode": 4,
+      "kind": "test",
+      "condition": "checked",
+      "source_sl": 85,
+      "source": "Sgn(F2730835_2229_445E_97C7_l3F761277lDA(1)=1)"
+    },
+    {
+      "record": 104,
+      "location": 91,
+      "field_3": 1,
+      "candidate_opcode": 6,
+      "kind": "if_zero",
+      "target": 107
+    },
+    {
+      "record": 105,
+      "location": 92,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "VFB8AD0BDCFC0B6869DB4A5987378756D",
+      "value": 1,
+      "source_sl": 86,
+      "source": "VFB8AD0BDCFC0B6869DB4A5987378756D=1"
+    },
+    {
+      "record": 106,
+      "location": 93,
+      "field_3": 1,
+      "candidate_opcode": 16,
+      "kind": "jump",
+      "target": 108
+    },
+    {
+      "record": 107,
+      "location": 94,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "VFB8AD0BDCFC0B6869DB4A5987378756D",
+      "value": 0,
+      "source_sl": 87,
+      "source": "VFB8AD0BDCFC0B6869DB4A5987378756D=0"
+    },
+    {
+      "record": 108,
+      "location": 96,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 20,
+      "source_sl": 88,
+      "source": "Call QMLibrary.Delay(20)"
+    },
+    {
+      "record": 109,
+      "location": 97,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "VF89CA4BECFC0C1A34D6A65757378756D",
+      "value": 0,
+      "source_sl": 89,
+      "source": "VF89CA4BECFC0C1A34D6A65757378756D=0"
+    },
+    {
+      "record": 110,
+      "location": 98,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 20,
+      "source_sl": 90,
+      "source": "Call QMLibrary.Delay(20)"
+    },
+    {
+      "record": 111,
+      "location": 99,
+      "field_3": 1,
+      "candidate_opcode": 2,
+      "kind": "set",
+      "key": "CS",
+      "value": 0,
+      "source_sl": 91,
+      "source": "CS=0"
+    },
+    {
+      "record": 112,
+      "location": 100,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 20,
+      "source_sl": 92,
+      "source": "Call QMLibrary.Delay(20)"
+    },
+    {
+      "record": 113,
+      "location": 101,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 20,
+      "source_sl": 93,
+      "source": "Call QMLibrary.Delay(20)"
+    },
+    {
+      "record": 114,
+      "location": 102,
+      "field_3": 1,
+      "candidate_opcode": 30,
+      "kind": "delay",
+      "milliseconds": 40,
+      "source_sl": 94,
+      "source": "Call QMLibrary.Delay(40)"
+    }
+  ],
+  "settings": [
+    {
+      "property": "Form1.ComboBox1.ListIndex",
+      "key": "V8080D6BCA5D6CF9E4D6A65757378756D",
+      "original_name": "完成之后"
+    },
+    {
+      "property": "Form1.ComboBox2.ListIndex",
+      "key": "V9DB4A5987378756D",
+      "original_name": "修理"
+    },
+    {
+      "property": "Form1.CheckBox1.Value",
+      "key": "V859CB696C584756D",
+      "original_name": "撒鱼饵"
+    },
+    {
+      "property": "Form1.CheckBox2.Value",
+      "key": "VF89CA89FC8A0C9BF4D6A65757378756D",
+      "original_name": "钓完回家"
+    },
+    {
+      "property": "Form1.CheckBox3.Value",
+      "key": "VFDA1AFDBC7B6B8CE9BD365757378756D",
+      "original_name": "八十次停止"
+    },
+    {
+      "property": "Form1.CheckBox4.Value",
+      "key": "VFDA1AFDBC7B6B9959AC0A89FC0B1756D",
+      "original_name": "八十次跳转完成"
+    },
+    {
+      "property": "Form1.CheckBox5.Value",
+      "key": "VFB8AD0BDCFC0B6869DB4A5987378756D",
+      "original_name": "多等几秒修理"
+    }
+  ],
+  "source_program_sha256": "e552b5f44c0cd59c8c584a92d36d5e1196189ddda1ff2f6e74cd4aa298ffa78f",
+  "original_values_recovered": 0,
+  "unresolved_records": [
+    26
+  ],
+  "retained_restart": {
+    "record": 539,
+    "target": 115,
+    "candidate_first_statement_sl": 95
+  }
+}

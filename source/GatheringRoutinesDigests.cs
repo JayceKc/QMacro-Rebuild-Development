@@ -1,0 +1,1 @@
+public static class GatheringRoutinesDigests {public const string Program="fc940a3dfc668afcf29707bd1332a538fd7b9bb400ef38b70c2fed7d7393640f";public const string Cases="b65344088c8a75fd7b0ed791937f830d6478fc7a851d1fa2a5bcdd0380a62ac6";}

@@ -1,0 +1,242 @@
+{
+  "module": 5,
+  "name": "05-釣魚",
+  "bindings": [
+    {
+      "property": "Form1.ComboBox1.ListIndex",
+      "sl": 51,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "direct_local_dataflow",
+      "destination": "〔完成之后〕",
+      "sources": [
+        51,
+        52,
+        53
+      ],
+      "expression": "〔完成之后〕=〔索引〕(暫存槽(1))",
+      "index_array": {
+        "sl": 49,
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "source_strings": [
+        {
+          "sl": 51,
+          "readable": "Form1.ComboBox1.ListIndex"
+        },
+        {
+          "sl": 52,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 53,
+          "readable": "〔完成之后〕=〔索引〕(暫存槽(1))"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.ComboBox2.ListIndex",
+      "sl": 55,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "direct_local_dataflow",
+      "destination": "〔修理〕",
+      "sources": [
+        55,
+        56,
+        57
+      ],
+      "expression": "〔修理〕=〔索引〕(暫存槽(1))",
+      "index_array": {
+        "sl": 49,
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "source_strings": [
+        {
+          "sl": 55,
+          "readable": "Form1.ComboBox2.ListIndex"
+        },
+        {
+          "sl": 56,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 57,
+          "readable": "〔修理〕=〔索引〕(暫存槽(1))"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.CheckBox1.Value",
+      "sl": 59,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "conditional_read",
+      "destination": null,
+      "sources": [
+        59,
+        60,
+        61
+      ],
+      "condition": "Sgn(暫存槽(1)=1)",
+      "source_strings": [
+        {
+          "sl": 59,
+          "readable": "Form1.CheckBox1.Value"
+        },
+        {
+          "sl": 60,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 61,
+          "readable": "Sgn(暫存槽(1)=1)"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.CheckBox2.Value",
+      "sl": 65,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "conditional_read",
+      "destination": null,
+      "sources": [
+        65,
+        66,
+        67
+      ],
+      "condition": "Sgn(暫存槽(1)=1)",
+      "source_strings": [
+        {
+          "sl": 65,
+          "readable": "Form1.CheckBox2.Value"
+        },
+        {
+          "sl": 66,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 67,
+          "readable": "Sgn(暫存槽(1)=1)"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.CheckBox3.Value",
+      "sl": 71,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "conditional_read",
+      "destination": null,
+      "sources": [
+        71,
+        72,
+        73
+      ],
+      "condition": "Sgn(暫存槽(1)=1)",
+      "source_strings": [
+        {
+          "sl": 71,
+          "readable": "Form1.CheckBox3.Value"
+        },
+        {
+          "sl": 72,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 73,
+          "readable": "Sgn(暫存槽(1)=1)"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.CheckBox4.Value",
+      "sl": 77,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "conditional_read",
+      "destination": null,
+      "sources": [
+        77,
+        78,
+        79
+      ],
+      "condition": "Sgn(暫存槽(1)=1)",
+      "source_strings": [
+        {
+          "sl": 77,
+          "readable": "Form1.CheckBox4.Value"
+        },
+        {
+          "sl": 78,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 79,
+          "readable": "Sgn(暫存槽(1)=1)"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    },
+    {
+      "property": "Form1.CheckBox5.Value",
+      "sl": 83,
+      "control_exists": true,
+      "surviving_records": [],
+      "classification": "conditional_read",
+      "destination": null,
+      "sources": [
+        83,
+        84,
+        85
+      ],
+      "condition": "Sgn(暫存槽(1)=1)",
+      "source_strings": [
+        {
+          "sl": 83,
+          "readable": "Form1.CheckBox5.Value"
+        },
+        {
+          "sl": 84,
+          "readable": "暫存槽(1)=傳回值"
+        },
+        {
+          "sl": 85,
+          "readable": "Sgn(暫存槽(1)=1)"
+        }
+      ],
+      "limits": "Dataflow from retained source only; erased branch addresses and runtime ordering are not thereby recovered."
+    }
+  ],
+  "branch_operands_recovered": false
+}

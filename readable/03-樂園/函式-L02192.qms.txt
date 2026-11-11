@@ -1,0 +1,41 @@
+# 吃百分比藥70 — L02192
+# 入口 L02192，RETURN L02229；原名解碼並由直接 CALL 對應
+# 此為有標籤的偽碼；保留精確分支以避免錯誤結構化。
+L02192: Call QMLibrary.Delay((100))  # loc=1826 Runner=0x625fb0
+L02193: SET DM=CREATEOBJECT("dm.dmsoft")  # loc=1827 Runner=0x625f7e
+L02194: Call DM.SETSHOWERRORMSG(0)  # loc=1828 Runner=0x625fb0
+L02195: X1=796  # loc=1829 Runner=0x625f7e
+L02196: Y1=959  # loc=1830 Runner=0x625f7e
+L02197: X2=800  # loc=1831 Runner=0x625f7e
+L02198: Y2=972  # loc=1832 Runner=0x625f7e
+L02199: Set 新呼叫框架=New 框架類別_〔找綠色〕:Set 新呼叫框架.上層呼叫框架=目前呼叫框架:Set 目前呼叫框架=新呼叫框架  # loc=1833 Runner=0x625f7e
+L02200: call L02427; resume L02201  # loc=1833 Runner=0x6261f2
+L02201: 目前呼叫框架.暫存槽(1)=傳回值  # loc=1833 Runner=0x625f7e
+L02202: Call QMLibrary.Delay((100))  # loc=1834 Runner=0x625fb0
+L02203: last_test = Sgn(vbTrue)  # loc=1835 Runner=0x626047
+L02204: if last_test == 0: goto L02227  # loc=1835 Runner=0x62611c
+L02205: Call QMLibrary.Delay((300))  # loc=1836 Runner=0x625fb0
+L02206: DM_RET=DM.FINDCOLOR(X1,Y1,X2,Y2,"91100A-151515|8F110F-151515|980700-151515|900501-151515|640302-151515|930403-151515|6B0603-151515|670604-151515|780805-151515|840906-151515|8E0A06-151515|AA0C07-151515|900A07-151515|A80D08-151515|A70E08-151515|B83425-151515|AC372D-151515",0.9,0,INTX,INTY)  # loc=1837 Runner=0x625fb0
+L02207: last_test = Sgn((INTX>=0))  # loc=1838 Runner=0x626047
+L02208: if last_test == 0: goto L02212  # loc=1838 Runner=0x62611c
+L02209: Call QMLibrary.Delay((200))  # loc=1839 Runner=0x625fb0
+L02210: 〔不吃百分比藥〕=0  # loc=1841 Runner=0x625f7e
+L02211: goto L02226  # loc=1842 Runner=0x626126
+L02212: Call QMLibrary.Delay((100))  # loc=1843 Runner=0x625fb0
+L02213: 〔不吃百分比藥〕=〔不吃百分比藥〕+1  # loc=1844 Runner=0x625f7e
+L02214: last_test = Sgn((〔不吃百分比藥〕>=3))  # loc=1845 Runner=0x626047
+L02215: if last_test == 0: goto L02226  # loc=1845 Runner=0x62611c
+L02216: Call QMLibrary.Delay((50))  # loc=1846 Runner=0x625fb0
+L02217: 〔不吃百分比藥〕=0  # loc=1847 Runner=0x625f7e
+L02218: Call QMLibrary.TracePrint(("按下1吃药"))  # loc=1848 Runner=0x625fb0
+L02219: Call QMLibrary.Delay((100))  # loc=1849 Runner=0x625fb0
+L02220: Call QMLibrary.KeyPress("1",g_iSimulateModeInVBSBlock,1)  # loc=1850 Runner=0x625fb0
+L02221: Call QMLibrary.Delay((100))  # loc=1851 Runner=0x625fb0
+L02222: Call QMLibrary.KeyDown("1",g_iSimulateModeInVBSBlock,1)  # loc=1852 Runner=0x625fb0
+L02223: Call QMLibrary.Delay((50))  # loc=1853 Runner=0x625fb0
+L02224: Call QMLibrary.KeyUp("1",g_iSimulateModeInVBSBlock,1)  # loc=1854 Runner=0x625fb0
+L02225: Call QMLibrary.Delay((1000))  # loc=1855 Runner=0x625fb0
+L02226: goto L02203  # loc=1856 Runner=0x626126
+L02227: Call QMLibrary.Delay((100))  # loc=1859 Runner=0x625fb0
+L02228: 傳回值=目前呼叫框架.函式回傳欄位:Set 新呼叫框架=目前呼叫框架:Set 目前呼叫框架=目前呼叫框架.上層呼叫框架:Set 新呼叫框架=Nothing  # loc=1860 Runner=0x625f7e
+L02229: return caller  # loc=1860 Runner=0x626275
